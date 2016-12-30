@@ -1,0 +1,49 @@
+# Global Property
+title-text: ""
+title-font: "Sans Regular 12"
+title-color: "#000000"
+message-font: "Fixed Regular 13"
+message-color: "#FFFFFF"
+message-bg-color: "#f6f6f6"
+desktop-color: "#000000"
+desktop-image: "background.jpg"
+terminal-box: "menu_bkg_*.png"
+terminal-font: "Fixed Regular 13"
+
+# Show the boot menu
++ boot_menu {
+		left = 15%
+		width = 70%
+		top = 15%
+		height = 70%
+		item_font = "Sans Regular 12"
+		selected_item_font = "Sans Regular 14"
+		item_color = "#5698fc"
+		selected_item_color = "#5698fc"
+		item_height = 38
+		item_padding = 15
+		item_spacing = 5
+		icon_width = 32
+		icon_height = 32
+		item_icon_space = 20
+		selected_item_pixmap_style= "select_bkg_*.png"
+		menu_pixmap_style = "menu_bkg_*.png"
+		scrollbar = true
+		scrollbar_width = 24
+		scrollbar_thumb = "sb_thumb_*.png"
+		scrollbar_frame = "sb_frame_*.png"
+}
+# Show a styled horizontal progress bar
++ progress_bar {
+		id = "__timeout__"
+		left = 15%
+		width = 70%
+		top = 88%
+		height = 12
+		show_text = true
+		font = "Sans Regular 10"
+		text_color = "255, 255, 255"
+		text = "@TIMEOUT_NOTIFICATION_LONG@"
+		bar_style = "progress_bar_*.png"
+		highlight_style = "progress_highlight_*.png"
+}
