@@ -204,6 +204,7 @@ video_fb:
 verify: crypto extcmd mpi gcry_sha1
 minix3_be:
 trig:
+android: video boot relocator mmap
 msdospart: disk parttool
 priority_queue:
 gcry_twofish: crypto
