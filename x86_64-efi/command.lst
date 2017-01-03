@@ -17,6 +17,7 @@
 *hello: hello
 *help: help
 *hexdump: hexdump
+*hiddenentry: normal
 *inb: iorw
 *inl: iorw
 *inw: iorw

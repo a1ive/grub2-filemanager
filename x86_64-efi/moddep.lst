@@ -5,6 +5,7 @@ macho:
 gcry_des: crypto
 memrw: extcmd
 terminfo: extcmd
+f2fs: fshelp
 part_gpt:
 romfs: fshelp
 read:
