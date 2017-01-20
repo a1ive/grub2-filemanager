@@ -99,6 +99,7 @@ help: minicmd
 hexdump_random: random
 initrd16: linux16
 initrd: linux
+initrdefi: linuxefi
 keymap: keylayouts
 kfreebsd_loadenv: bsd
 kfreebsd_module: bsd
@@ -115,9 +116,11 @@ legacy_password: legacycfg
 legacy_source: legacycfg
 linux16: linux16
 linux: linux
+linuxefi: linuxefi
 list_trusted: verify
 loadbios: loadbios
 loadfont: font
+loadmemmaxefi: linuxefi
 lscoreboot: cbls
 lsefi: lsefi
 lsefimmap: lsefimmap

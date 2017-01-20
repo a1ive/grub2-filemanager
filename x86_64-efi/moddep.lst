@@ -171,6 +171,7 @@ progress: normal
 kernel:
 usbtest: usb
 relocator: mmap
+linuxefi: boot
 acpi: extcmd mmap
 tga: bufio bitmap
 reboot:
@@ -210,6 +211,7 @@ msdospart: disk parttool
 priority_queue:
 gcry_twofish: crypto
 part_dfly:
+fbinst:
 xnu_uuid_test: functional_test
 diskfilter:
 testload:
