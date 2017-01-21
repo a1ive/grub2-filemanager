@@ -120,7 +120,6 @@ linuxefi: linuxefi
 list_trusted: verify
 loadbios: loadbios
 loadfont: font
-loadmemmaxefi: linuxefi
 lscoreboot: cbls
 lsefi: lsefi
 lsefimmap: lsefimmap
@@ -129,6 +128,7 @@ lsfonts: font
 lsmmap: lsmmap
 lsmod: minicmd
 lssal: lssal
+lua: lua
 macppcbless: macbless
 mactelbless: macbless
 module2: multiboot2
@@ -139,6 +139,7 @@ nativedisk: nativedisk
 net_add_addr: net
 net_add_dns: net
 net_add_route: net
+net_bootp6: net
 net_bootp: net
 net_del_addr: net
 net_del_dns: net
