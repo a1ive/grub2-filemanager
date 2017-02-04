@@ -11,6 +11,8 @@
 *extract_syslinux_entries_source: syslinuxcfg
 *file: file
 *functional_test: functional_test
+*fwconfig: fwconfig
+*getenv: getenv
 *gettext: gettext
 *hashsum: hashsum
 *hdparm: hdparm
@@ -47,6 +49,7 @@
 *sha256sum: hashsum
 *sha512sum: hashsum
 *sleep: sleep
+*smbios: smbios
 *submenu: normal
 *syslinux_configfile: syslinuxcfg
 *syslinux_source: syslinuxcfg
@@ -93,6 +96,7 @@ fakebios: loadbios
 false: true
 fix_video: fixvideo
 fwsetup: efifwsetup
+gptrepair: gptrepair
 gptsync: gptsync
 halt: halt
 help: minicmd
@@ -164,9 +168,12 @@ read: read
 reboot: reboot
 return: normal
 rmmod: minicmd
+search.disk_uuid: search_disk_uuid
 search.file: search_fs_file
 search.fs_label: search_label
 search.fs_uuid: search_fs_uuid
+search.part_label: search_part_label
+search.part_uuid: search_part_uuid
 setparams: normal
 shift: normal
 source: configfile

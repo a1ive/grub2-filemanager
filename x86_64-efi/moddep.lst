@@ -37,16 +37,19 @@ shift_test: functional_test
 ohci: cs5536 usb boot
 afs: fshelp
 spkmodem: terminfo
+search_part_label: gpt
 usb_keyboard: usb keylayouts
 xzio: crypto
 syslinuxcfg: extcmd normal
 search_fs_file:
 usbms: scsi usb
 test_blockarg: extcmd normal
+getenv: extcmd
 true:
 affs: fshelp
 iso9660: fshelp
 exfat: fshelp
+smbios: extcmd
 setjmp_test: functional_test setjmp
 gfxterm: font video
 efinet: net
@@ -56,6 +59,7 @@ xfs: fshelp
 testspeed: extcmd normal
 cpio_be: archelp
 functional_test: btrfs extcmd video video_fb
+gptrepair: gpt
 bswap_test: functional_test
 sleep: extcmd normal
 memdisk:
@@ -95,6 +99,7 @@ hdparm: extcmd
 gcry_blowfish: crypto
 test:
 nilfs2: fshelp
+search_disk_uuid: gpt
 gcry_rsa: verify mpi
 cryptodisk: crypto extcmd procfs
 nativedisk:
@@ -154,6 +159,7 @@ archelp:
 raid6rec: diskfilter
 http: net
 zfs: gzio
+search_part_uuid: gpt
 lsefisystab:
 minix2:
 lsacpi: extcmd acpi
@@ -182,6 +188,7 @@ efi_uga: video video_fb
 dm_nv: diskfilter
 cmp_test: functional_test
 luks: cryptodisk crypto pbkdf2
+gpt: gcry_crc crypto disk
 font: bufio video
 raid5rec: diskfilter
 crc64: crypto
@@ -193,6 +200,7 @@ crc: btrfs
 cbmemc: normal cbtable terminfo
 hfsplus: fshelp
 gcry_cast5: crypto
+fwconfig: extcmd
 extcmd:
 squash4: fshelp lzopio xzio gzio
 part_plan:
@@ -200,7 +208,7 @@ minix_be:
 gcry_whirlpool: crypto
 gcry_tiger: crypto
 fixvideo:
-search: search_fs_uuid search_fs_file extcmd search_label
+search: search_fs_uuid search_fs_file search_part_uuid extcmd search_disk_uuid search_part_label search_label
 lspci: extcmd
 cbtime: cbtable
 video_fb:
