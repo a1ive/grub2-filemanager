@@ -25,7 +25,7 @@ function main{
 			if test -d $device; then
 				icon="img";
 				probe --set=fs -f $device;
-				probe --set=label -l $device;
+				probe --set=label -l -q $device;
 				if test $fs = "udf" -o $fs = "iso9660"; then
 					icon="iso";
 				elif test $device = "(memdisk)" -o $device = "(proc)"; then

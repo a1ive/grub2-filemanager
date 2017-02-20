@@ -92,7 +92,7 @@ video_bochs: video video_fb
 bufio:
 usbserial_ftdi: serial usb usbserial_common
 legacy_password_test: functional_test legacycfg
-lua: setjmp normal
+lua: btrfs setjmp normal
 cpuid: extcmd
 bfs: fshelp
 hdparm: extcmd
@@ -145,7 +145,7 @@ multiboot: net video boot relocator mmap
 gcry_crc: crypto
 png: bufio bitmap
 jpeg: bufio bitmap
-dd: disk extcmd
+dd: disk
 macbless: disk
 div_test: functional_test div
 regexp: extcmd normal

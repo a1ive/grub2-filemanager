@@ -25,7 +25,7 @@ insmod fat;
 insmod loopback;
 insmod regexp;
 
-search --set -f /efi/boot/bootx64.efi
+search -s -f -q /efi/boot/bootx64.efi
 
 loadfont ${prefix}/fonts/unicode.pf2.xz
 
