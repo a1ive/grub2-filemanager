@@ -29,6 +29,10 @@ function CheckLinuxType {
 	set devname=;
 	set devuuid=;
 	regexp --set=isofile '(\/.*$)' $file_name;
+	regexp --set=devname '(^\([hc][d].*\))' $file_name;
+	probe -u $devname --set=devuuid;
+	probe -q --set=devlbl --label (loop);
+	probe -u (loop) --set=loopuuid;
 	if test -f (loop)/casper/vmlinuz*; then
 		set icon="ubuntu";
 		set distro="Ubuntu";
@@ -48,8 +52,6 @@ function CheckLinuxType {
 		set distro="Arch Linux";
 		set vmlinuz_img="(loop)/arch/boot/x86_64/vmlinuz*";
 		set initrd_img="(loop)/arch/boot/x86_64/archiso.img";
-		regexp --set=devname '(^\([hc][d].*\))' $file_name;
-		probe -u $devname --set=devuuid;
 		set imgdevpath="/dev/disk/by-uuid/$devuuid";
 		set kcmdline="archisodevice=/dev/loop0";
 		set loopiso="img_dev=$imgdevpath img_loop=$isofile";
@@ -60,14 +62,12 @@ function CheckLinuxType {
 		set distro="Fedora";
 		set vmlinuz_img="(loop)/isolinux/vmlinuz*";
 		set initrd_img="(loop)/isolinux/initrd*";
-		probe --set=devlbl --label (loop)
 		set kcmdline="rd.live.image quiet";
 		set loopiso="root=live:CDLABEL=$devlbl iso-scan/filename=$isofile";
 		funcISOBoot;
 		if test -f (loop)/images/pxeboot/vmlinuz*; then
 			menuentry "作为 $distro 安装光盘 启动" --class $icon{
 				set gfxpayload=keep;
-				probe -u (loop) --set=loopuuid;
 				linux (loop)/images/pxeboot/vmlinuz* boot=images quiet iso-scan/filename=$isofile inst.stage2=hd:UUID=$loopuuid;
 				initrd (loop)/images/pxeboot/initrd*;
 			}
@@ -85,8 +85,6 @@ function CheckLinuxType {
 		set distro="OpenSUSE"
 		set vmlinuz_img="(loop)/boot/x86_64/loader/linux";
 		set initrd_img="(loop)/boot/x86_64/loader/initrd";
-		regexp --set=devname '(^\([hc][d].*\))' $file_name;
-		probe -u $devname --set=devuuid;
 		set imgdevpath="/dev/disk/by-uuid/$devuuid";
 		set kcmdline=" ";
 		set loopiso="isofrom_system=$isofile isofrom_device=$imgdevpath";
@@ -145,9 +143,6 @@ function CheckLinuxType {
 		set distro="Manjaro";
 		set vmlinuz_img="(loop)/manjaro/boot/x86_64/manjaro";
 		set initrd_img="(loop)/manjaro/boot/x86_64/manjaro.img";
-		regexp --set=devname '(^\([hc][d].*\))' $file_name;
-		probe -u $devname --set=devuuid;
-		probe --set=devlbl --label (loop)
 		set imgdevpath="/dev/disk/by-uuid/$devuuid";
 		set kcmdline="misobasedir=manjaro nouveau.modeset=1 i915.modeset=1 radeon.modeset=1 logo.nologo overlay=free showopts";
 		set loopiso="img_dev=$imgdevpath img_loop=$isofile misolabel=$devlbl";
@@ -165,8 +160,6 @@ function CheckLinuxType {
 		set distro="Arch Linux"
 		set vmlinuz_img="(loop)/boot/vmlinuz_*";
 		set initrd_img="(loop)/boot/initramfs_*.img";
-		regexp --set=devname '(^\([hc][d].*\))' $file_name;
-		probe -u $devname --set=devuuid;
 		set imgdevpath="/dev/disk/by-uuid/$devuuid";
 		set kcmdline=" ";
 		set loopiso="iso_loop_dev=$imgdevpath iso_loop_path=$isofile";
@@ -176,8 +169,6 @@ function CheckLinuxType {
 		set distro="antiX";
 		set vmlinuz_img="(loop)/antiX/vmlinuz";
 		set initrd_img="(loop)/antiX/initrd.*";
-		regexp --set=devname '(^\([hc][d].*\))' $file_name;
-		probe -u $devname --set=devuuid;
 		set kcmdline="from=hd splash=v disable=lx";
 		set loopiso="from=$isofile root=UUID=$devuuid";
 		funcISOBoot;
