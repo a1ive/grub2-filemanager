@@ -1,5 +1,6 @@
 *acpi: acpi
 *all_functional_test: functional_test
+*apple_gmux: apple_gmux
 *background_image: gfxterm_background
 *cat: cat
 *cpuid: cpuid
@@ -164,6 +165,7 @@ parttool: parttool
 password: password
 password_pbkdf2: password_pbkdf2
 play: play
+raiddump: raiddump
 read: read
 reboot: reboot
 return: normal
