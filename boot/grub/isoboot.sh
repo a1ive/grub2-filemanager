@@ -153,8 +153,8 @@ function CheckLinuxType {
 		set loopiso="img_dev=$imgdevpath img_loop=$isofile misolabel=$devlbl";
 		funcISOBoot;
 	elif test -f (loop)/pmagic/bzImage -a -f (loop)/initramfs; then
-		set icon="slackware"
-		set distro="Parted Magic"
+		set icon="slackware";
+		set distro="Parted Magic";
 		set vmlinuz_img="(loop)/pmagic/bzImage";
 		set initrd_img="(loop)/pmagic/initrd.img (loop)/pmagic/fu.img (loop)/pmagic/m32.img";
 		set kcmdline="eject=no load_ramdisk=1";
@@ -171,18 +171,21 @@ function CheckLinuxType {
 		set kcmdline=" ";
 		set loopiso="iso_loop_dev=$imgdevpath iso_loop_path=$isofile";
 		funcISOBoot;
-	else
-		menuentry "作为 Linux LiveCD 启动 (手动输入参数)" --class gnu-linux{
-			set gfxpayload=keep;
-			echo "请输入Linux内核路径，例如 /boot/vmlinuz";
-			read $linux_kernel;
-			echo "请输入Linux initrd路径，例如 /boot/initrd.gz";
-			read $linux_initrd;
-			echo "请输入Linux内核启动参数"
-			read $linux_cmdline;
-			linux (loop)$linux_kernel $cmdline;
-			initrd (loop)$linux_initrd;
-			boot
+	elif test -f (loop)/antiX/vmlinuz -a -f (loop)/antiX/initrd.*; then
+		set icon="debian";
+		set distro="antiX";
+		set vmlinuz_img="(loop)/antiX/vmlinuz";
+		set initrd_img="(loop)/antiX/initrd.*";
+		regexp --set=devname '(^\([hc][d].*\))' $file_name;
+		probe -u $devname --set=devuuid;
+		set kcmdline="from=hd splash=v disable=lx";
+		set loopiso="from=$isofile root=UUID=$devuuid";
+		funcISOBoot;
+	elif test -f (loop)/boot/grub/loopback.cfg; then
+		menuentry "作为 Linux LiveCD 启动" $isofile --class gnu-linux{
+			set iso_path="$2"; export iso_path;
+			root=(loop);
+			configfile /boot/grub/loopback.cfg
 		}
 	fi
 }
