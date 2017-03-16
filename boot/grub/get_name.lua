@@ -15,32 +15,18 @@
 -- You should have received a copy of the GNU General Public License
 -- along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-root = grub.getenv ("fm_path")
+local realname = grub.getenv ("file_name")
 encoding = grub.getenv ("encoding")
 if encoding == nil then
 	encoding = "utf8"
 end
 
-if (root == nil) or (root == "") then
+if (realname == nil) then
 	return 1;
 else
-	d_list = ""
-	f_list = ""
-	local function enum_file (name)
-		local path = root .. "/" .. name
-		if (encoding == "gbk") then
-			name = grub.toutf8(name)
-		end
-		name = string.gsub(name, " ", ":")
-		if grub.file_exist (path) then
-			f_list = name .. "\n" .. f_list
-		elseif (name ~= "." and name ~= "..") then
-			d_list = name .. "\n" .. d_list
-		end
+	realname = string.gsub(realname, ":", " ")
+	if (encoding == "gbk") then
+		realname = grub.fromutf8(realname)
 	end
-	grub.enum_file (enum_file,root .. "/")
-	grub.setenv ("f_list", f_list)
-	grub.setenv ("d_list", d_list)
+	grub.setenv ("file_name", realname)
 end
-
-	

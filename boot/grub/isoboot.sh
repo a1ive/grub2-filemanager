@@ -20,13 +20,13 @@ function CheckLinuxType {
 	set isofile=;
 	set devname=;
 	set devuuid=;
-	regexp --set=isofile '(\/.*$)' $file_name;
-	regexp --set=devname '(^\([hc][d].*\))' $file_name;
-	probe -u $devname --set=devuuid;
+	regexp --set=isofile '(\/.*$)' "$file_name";
+	regexp --set=devname '(^\([hc][d].*\))' "$file_name";
+	probe -u "$devname" --set=devuuid;
 	probe -q --set=devlbl --label (loop);
 	probe -u (loop) --set=loopuuid;
 	if test -f (loop)/boot/grub/loopback.cfg; then
-		menuentry "作为 Loopback ISO 启动 (推荐)" $isofile --class gnu-linux{
+		menuentry "作为 Loopback ISO 启动 (推荐)" "$isofile" --class gnu-linux{
 			set iso_path="$2"; export iso_path;
 			root=(loop);
 			configfile /boot/grub/loopback.cfg

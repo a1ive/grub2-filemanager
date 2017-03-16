@@ -33,7 +33,7 @@ set locale_dir=${prefix}/locale; export locale_dir
 
 set lang=zh_CN; export lang
 
-set gfxmode=auto; export gfxmode
+set gfxmode=1024x768; export gfxmode
 set gfxpayload=keep; export gfxpayload
 terminal_output gfxterm
 
@@ -41,5 +41,7 @@ set color_normal=white/black
 set color_highlight=black/white
 
 set theme=${prefix}/themes/slack/theme.txt; export theme
+
+set encoding="utf8"; export encoding;
 
 configfile $prefix/main.sh;
