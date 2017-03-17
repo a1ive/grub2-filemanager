@@ -173,6 +173,7 @@ gcry_rmd160: crypto
 fat: fshelp
 gpxe_epic100: gpxe_legacy gpxe
 ufs1_be:
+getkey:
 archelp:
 raid6rec: diskfilter
 http: net

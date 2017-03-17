@@ -97,6 +97,7 @@ fakebios: loadbios
 false: true
 fix_video: fixvideo
 fwsetup: efifwsetup
+getkey: getkey
 gptrepair: gptrepair
 gptsync: gptsync
 halt: halt

@@ -126,10 +126,7 @@ function open{
 		fi
 	fi
 	menuentry "查看文本内容"  --class txt{
-		set pager=1;
-		cat "$file_name";
-		echo -n "Press [ESC] to continue...";
-		sleep --interruptible 999;
+		lua $prefix/cat_file.lua;
 	}
 	menuentry "查看文件信息"  --class info{
 		set pager=1;
