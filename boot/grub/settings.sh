@@ -1,4 +1,4 @@
-menuentry "编码设置(E): $encoding" --class settings --hotkey=e {
+menuentry "编码设置(D): $encoding" --class settings --hotkey=d {
 	if [ "$encoding" = "gbk" ]; then
 		encoding="utf8";
 	else

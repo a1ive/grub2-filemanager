@@ -27,7 +27,6 @@ else
 	grub.cls()
 	print ("File: " .. file .. " Size: " .. grub.file_getsize(data))
 	print ("Encoding: " .. encoding)
-	local linenum = 1
 	while (grub.file_eof(data) == false)
 	do
 		line = grub.file_getline (data)
@@ -35,14 +34,6 @@ else
 			line = grub.toutf8(line)
 		end
 		print (line)
-		if (linenum % 20 == 0) then
-			print ("当前行数: " .. linenum .. " 按任意键继续，按[ESC]退出")
-			if (grub.getkey() == 27) then
-				return 1
-			end
-			grub.cls()
-		end
-		linenum = linenum + 1
 	end
 	print ("EOF")
 	print ("按任意键退出...")
