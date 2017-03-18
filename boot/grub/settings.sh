@@ -60,9 +60,11 @@ submenu "分辨率设置(R):  $gfxmode" --class settings --hotkey=r {
 		configfile $prefix/settings.sh;
 	}
 }
-menuentry "EFI固件设置(F)" --class settings --hotkey=f {
-	fwsetup;
-}
+if regexp 'efi' "$grub_platform"; then
+	menuentry "EFI固件设置(F)" --class settings --hotkey=f {
+		fwsetup;
+	}
+fi
 menuentry "返回(B)" --class go-previous --hotkey=b {
 	configfile $prefix/main.sh;
 }

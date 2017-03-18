@@ -58,9 +58,7 @@ function main{
 			file_name="${path}/${name}";
 			menuentry "$name" "$file_name" --class dir{
 				file_name="$2";
-				echo "selected $file_name";
 				lua $prefix/get_name.lua;
-				echo "real path $file_name";
 				path="$file_name"; export path; configfile $prefix/main.sh;
 			}
 		done
@@ -102,9 +100,11 @@ function open{
 			export path; configfile $prefix/main.sh;
 		}
 	elif regexp 'efi' $file_type; then
-		menuentry "作为EFI可执行文件运行"  --class uefi{
-			chainloader "$file_name";
-		}
+		if regexp 'efi' $grub_platform; then
+			menuentry "作为EFI可执行文件运行"  --class uefi{
+				chainloader "$file_name";
+			}
+		fi
 	elif regexp 'image' $file_type; then
 		menuentry "作为图像打开" --class png{
 			background_image "$file_name";
@@ -117,6 +117,11 @@ function open{
 			loopback img "$file_name";
 			path=""; export path; configfile $prefix/main.sh;
 		}
+		if regexp 'pc' $grub_platform; then
+			menuentry "Map Boot" --class exe{
+				echo;
+			}
+		fi
 	elif regexp 'tar' $file_type; then
 		menuentry "作为压缩文件打开" --class 7z{
 			loopback tar "$file_name";
@@ -129,9 +134,15 @@ function open{
 		}
 		source $prefix/isoboot.sh;
 		CheckLinuxType;
-		if test -f (loop)/efi/boot/bootx64.efi; then
-			menuentry "运行bootx64.efi (不推荐)" --class iso{
-				chainloader (loop)/efi/boot/bootx64.efi;
+		if regexp 'efi' $grub_platform; then
+			if test -f (loop)/efi/boot/bootx64.efi; then
+				menuentry "运行bootx64.efi (不推荐)" --class iso{
+					chainloader (loop)/efi/boot/bootx64.efi;
+				}
+			fi
+		else
+			menuentry "Map Boot" --class exe{
+				echo;
 			}
 		fi
 	fi
