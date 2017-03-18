@@ -14,18 +14,17 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-set pager=1
-insmod all_video; insmod video_bochs; insmod video_cirrus;
-insmod efi_gop; insmod efi_uga;
-insmod gfxterm; insmod gfxterm_background; insmod gfxmenu;
-insmod jpeg; insmod png; insmod tga;
-insmod font;
-insmod gzio; insmod xzio;
-insmod fat;
-insmod loopback;
-insmod regexp;
-
-search -s -f -q /efi/boot/bootx64.efi
+set pager=1;
+if regexp 'pc' "$grub_platform"; then
+	modlist="915resolution all_video bitmap bitmap_scale blocklist cat cmp cpuid crc datetime dd disk drivemap elf file getkey gfxmenu gfxterm gfxterm_background gfxterm_menu gptsync hashsum hexdump hwmatch jpeg loadenv lsapm macho memdisk multiboot multiboot2 net offsetio parttool png procfs random search_fs_uuid search_label sendkey squash4 syslinuxcfg terminfo tga time trig true vbe vga video video_bochs video_cirrus video_colors video_fb videoinfo xnu";
+	
+else
+	modlist="all_video video_bochs video_cirrus efi_gop efi_uga gfxterm gfxterm_background gfxmenu jpeg png tga font";
+	search -s -f -q /efi/boot/bootx64.efi;
+fi
+for module in $modlist; do
+	insmod $module;
+done;
 
 loadfont ${prefix}/fonts/unicode.pf2.xz
 

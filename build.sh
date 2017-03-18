@@ -2,7 +2,7 @@
 case "$( uname -m )" in
     i?86) mkimage="grub-mkimage32" ;;
     x86_64) mkimage="grub-mkimage64" ;;
-  esac
+esac
 
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 
