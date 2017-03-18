@@ -41,8 +41,8 @@ else
 			file_icon = "7z"
 		elseif file_extn == "lz" or file_extn == "zip" or file_extn == "lzma" then
 			file_icon = "7z"
-		elseif file_extn == "xz" or file_extn == "gz" then
-			file_icon = "7z"
+		elseif file_extn == "tar" or file_extn == "xz" or file_extn == "gz" or file_extn == "cpio" then
+			file_type, file_icon = "tar", "7z"
 		elseif file_extn == "wim" then
 			file_icon = "wim"
 		elseif file_extn == "exe" then

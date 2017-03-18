@@ -112,6 +112,16 @@ function open{
 			sleep --interruptible 999;
 			background_image ${prefix}/themes/slack/black.png
 		}
+	elif regexp 'disk' $file_type; then
+		menuentry "挂载镜像" --class img{
+			loopback img "$file_name";
+			path=""; export path; configfile $prefix/main.sh;
+		}
+	elif regexp 'tar' $file_type; then
+		menuentry "作为压缩文件打开" --class 7z{
+			loopback tar "$file_name";
+			path="(tar)"; export path; configfile $prefix/main.sh;
+		}
 	elif regexp 'iso' $file_type; then
 		loopback loop "$file_name";
 		menuentry "查看ISO内容"  --class iso{
