@@ -4,7 +4,7 @@ set initrd_img="(loop)/isolinux/initrd*";
 set loopiso="root=live:CDLABEL=$devlbl iso-scan/filename=$isofile";
 if test -f (loop)/images/pxeboot/vmlinuz*; then
 			menuentry "作为 Fedora 安装光盘 启动" --class $icon{
-				linux (loop)/images/pxeboot/vmlinuz* boot=images quiet iso-scan/filename=$isofile inst.stage2=hd:UUID=$loopuuid;
+				linux (loop)/images/pxeboot/vmlinuz* boot=images quiet iso-scan/filename="$isofile" inst.stage2=hd:UUID="$loopuuid";
 				initrd (loop)/images/pxeboot/initrd*;
 			}
 fi

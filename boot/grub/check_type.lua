@@ -27,8 +27,10 @@ else
 		file_extn = string.lower(file_extn)
 		if file_extn == "iso" then
 			file_type, file_icon = "iso", "iso"
-		elseif file_extn == "img" or file_extn == "vhd" then
+		elseif file_extn == "img" or file_extn == "ima" then
 			file_type, file_icon = "disk", "img"
+		elseif file_extn == "vhd" then
+			file_icon = "img"
 		elseif file_extn == "jpg" or file_extn == "png" or file_extn == "tga" then
 			file_type, file_icon = "image", "png"
 		elseif file_extn == "bmp" or file_extn == "gif" then
@@ -49,9 +51,10 @@ else
 			file_icon = "exe"
 		elseif file_extn == "cfg" then
 			file_type = "cfg"
+		elseif file_extn == "lst" then
+			file_type = "lst"
 		end
 	end
 	grub.setenv ("file_type",file_type)
 	grub.setenv ("file_icon",file_icon)
 end
-	

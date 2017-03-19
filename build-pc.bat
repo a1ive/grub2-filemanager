@@ -5,8 +5,6 @@ rd /s /q build
 md build
 xcopy /s /e /y /i boot build\boot
 md build\boot\grub\i386-pc
-copy i386-pc\efiemu64.o build\boot\grub\i386-pc\
-copy i386-pc\efiemu32.o build\boot\grub\i386-pc\
 set /p modlist= < legacy\insmod.lst
 :CPMOD
 for /f "tokens=1,*" %%a in ("%modlist%") do (

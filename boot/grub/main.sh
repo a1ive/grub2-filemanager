@@ -118,9 +118,18 @@ function open{
 			path=""; export path; configfile $prefix/main.sh;
 		}
 		if regexp 'pc' $grub_platform; then
-			menuentry "Map Boot" --class exe{
-				echo;
+			menuentry "使用memdisk加载为软盘" --class img{
+				linux16 $prefix/tools/memdisk floppy raw;
+				initrd16 "$file_name";
 			}
+			menuentry "使用memdisk加载为硬盘" --class img{
+				linux16 $prefix/tools/memdisk harddisk raw;
+				initrd16 "$file_name";
+			}
+			#menuentry "作为软盘镜像仿真启动" --class img{
+			#	lua $prefix/to_g4d.lua;
+			#	linux $prefix/tools/grub.exe --config-file="map --mem $g4d (fd0);map --hook;chainloader (fd0)+1;rootnoverify (fd0)";
+			#}
 		fi
 	elif regexp 'tar' $file_type; then
 		menuentry "作为压缩文件打开" --class 7z{
@@ -141,10 +150,45 @@ function open{
 				}
 			fi
 		else
-			menuentry "Map Boot" --class exe{
-				echo;
+			menuentry "使用memdisk加载ISO" --class iso{
+				loopback -d loop;
+				linux16 $prefix/tools/memdisk iso raw;
+				initrd16 "$file_name";
 			}
+			#menuentry "ISO仿真启动" --class iso{
+			#	lua $prefix/to_g4d.lua;
+			#	linux $prefix/tools/grub.exe --config-file="map $g4d (0xff);map --hook;chainloader (0xff)";
+			#}
 		fi
+	fi
+	if regexp 'pc' $grub_platform; then
+		if file --is-x86-bios-bootsector "$file_name"; then
+			menuentry "作为BIOS引导扇区加载"  --class img{
+				chainloader --force "$file_name";
+			}
+		elif regexp '.*\/[0-9a-zA-Z]+[lL][dD][rR]$' "$file_name"; then
+			menuentry "作为NTLDR加载"  --class wim{
+				ntldr "$file_name";
+			}
+		#elif regexp 'lst' $file_type; then
+		#	menuentry "作为GRUB4DOS菜单加载"  --class ms-dos{
+		#		lua $prefix/to_g4d.lua;
+		#		linux $prefix/tools/grub.exe --config-file="$g4d";
+		#	}
+		fi
+	fi
+	if file --is-x86-multiboot "$file_name"; then
+		menuentry "作为multiboot内核加载"  --class exe{
+			multiboot "$file_name";
+		}
+	elif file --is-x86-multiboot2 "$file_name"; then
+		menuentry "作为multiboot2内核加载"  --class exe{
+			multiboot2 "$file_name";
+		}
+	elif file --is-x86-linux "$file_name"; then
+		menuentry "作为linux内核加载"  --class exe{
+			linux16 "$file_name";
+		}
 	fi
 	menuentry "查看文本内容"  --class txt{
 		lua $prefix/cat_file.lua;

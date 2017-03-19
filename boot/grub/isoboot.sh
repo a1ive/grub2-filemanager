@@ -21,7 +21,7 @@ function CheckLinuxType {
 	set devname=;
 	set devuuid=;
 	regexp --set=isofile '(\/.*$)' "$file_name";
-	regexp --set=devname '(^\([hc][d].*\))' "$file_name";
+	regexp --set=devname '^(\([0-9a-zA-Z,]+\)).*$' "$file_name";
 	probe -u "$devname" --set=devuuid;
 	probe -q --set=devlbl --label (loop);
 	probe -u (loop) --set=loopuuid;

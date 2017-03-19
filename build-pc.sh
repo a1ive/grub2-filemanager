@@ -20,8 +20,6 @@ mkdir build
 cp -r boot build/
 
 mkdir build/boot/grub/i386-pc
-cp i386-pc/efiemu64.o build/boot/grub/i386-pc/
-cp i386-pc/efiemu32.o build/boot/grub/i386-pc/
 for modules in $(cat legacy/insmod.lst)
 do
 	echo "copying ${modules}.mod"
