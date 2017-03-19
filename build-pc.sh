@@ -20,6 +20,8 @@ mkdir build
 cp -r boot build/
 
 mkdir build/boot/grub/i386-pc
+cp i386-pc/efiemu64.o build/boot/grub/i386-pc/
+cp i386-pc/efiemu32.o build/boot/grub/i386-pc/
 for modules in $(cat legacy/insmod.lst)
 do
 	echo "copying ${modules}.mod"
@@ -40,4 +42,4 @@ $mkimage -d ./i386-pc -p "(memdisk)/boot/grub" -c ./legacy/legacy.cfg -o ./build
 cat i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 
-mkisofs -R -J -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
+mkisofs -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
