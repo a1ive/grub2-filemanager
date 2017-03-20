@@ -13,37 +13,47 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+
 for dev in (*); do
-        test -e ${dev};
-        if test "$?" = "1"; then
-                continue;
-        fi;
-        regexp --set=device '\((.*)\)' $dev;
-        if regexp 'efi' $grub_platform; then
-	        if test -f ($device)/efi/microsoft/boot/bootmgfw.efi; then
-        	        menuentry "启动位于${device}的 Windows 操作系统 " $device --class wim{
-        	                set root=$2
-        	                chainloader ($root)/efi/microsoft/boot/bootmgfw.efi;
-        	        }
-        	fi;
-        	if test -f ($device)/efi/boot/bootx64.efi; then
-        	        menuentry "加载位于${device}的启动管理器 " $device --class uefi{
-        	                set root=$2
-        	                chainloader ($root)/efi/boot/bootx64.efi;
-        	        }
-        	fi;
-        	if test -f ($device)/System/Library/CoreServices/boot.efi; then
-        	        menuentry "启动位于${device}的 macOS " $device --class macOS{
-        	                set root=$2
-        	                chainloader ($root)/System/Library/CoreServices/boot.efi;
-        	        }
-        	fi;
-        else
-        	menuentry "启动${device}" $device --class img{
-        		set root=$2
-        		chainloader +1;
+	if test -e $dev; then
+		regexp --set=device '\((.*)\)' $dev;
+    else
+		continue;
+	fi;
+    if regexp 'efi' $grub_platform; then
+		if test -f ($device)/efi/microsoft/boot/bootmgfw.efi; then
+        	menuentry "启动位于${device}的 Windows 操作系统 " $device --class wim{
+        	    set root=$2;
+        	    chainloader ($root)/efi/microsoft/boot/bootmgfw.efi;
         	}
-        fi
+        fi;
+        if test -f ($device)/efi/boot/bootx64.efi; then
+            menuentry "加载位于${device}的启动管理器 " $device --class uefi{
+                set root=$2;
+				chainloader ($root)/efi/boot/bootx64.efi;
+			}
+        fi;
+        if test -f ($device)/System/Library/CoreServices/boot.efi; then
+        	menuentry "启动位于${device}的 macOS " $device --class macOS{
+        	    set root=$2;
+        	    chainloader ($root)/System/Library/CoreServices/boot.efi;
+			}
+        fi;
+    else
+		probe --set=bootable -b $device;
+		if regexp 'bootable' "$bootable"; then
+			menuentry "启动${device}" $device --class img{
+				set root=$2;
+				if regexp '^hd[0-9a-zA-Z,]+$' $root; then
+					regexp -s devnum '^hd([0-9]+).*$' $root;
+					if test "devnum" != "0"; then
+						drivemap -s (hd0) ($root);
+					fi
+				fi
+				chainloader --force --bpb +1;
+			}
+		fi;
+    fi;
 done;
 menuentry "重启计算机" --class reboot{
 	reboot;

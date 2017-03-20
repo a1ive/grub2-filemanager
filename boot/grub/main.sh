@@ -38,13 +38,13 @@ function main{
 					continue;
 				elif test -w "$device"; then
 					icon="hdd";
-				fi
+				fi;
 				menuentry "$device [$fs] $label" "$device" --class $icon{
 					path="$2"; export path; configfile $prefix/main.sh;
 				}
 				unset label;unset fs;
-			fi
-		done
+			fi;
+		done;
 	else
 		default=1;
 		menuentry "返回" --class go-previous{
@@ -61,11 +61,11 @@ function main{
 				lua $prefix/get_name.lua;
 				path="$file_name"; export path; configfile $prefix/main.sh;
 			}
-		done
+		done;
 		for name in $f_list; do
 			if ! regexp --set=file_extn '^.*\.(.*$)' "$name"; then
 				file_extn="";
-			fi
+			fi;
 			file_name="${path}/${name}";
 			lua $prefix/check_type.lua;
 			menuentry "$name" "$path" "$file_type" --class $file_icon {
@@ -76,8 +76,8 @@ function main{
 				main_ops="open"; export main_ops;
 				export path; configfile $prefix/main.sh;
 			}
-		done
-	fi
+		done;
+	fi;
 	hiddenmenu;
 }
 function open{
@@ -110,7 +110,7 @@ function open{
 			background_image "$file_name";
 			echo -n "Press [ESC] to continue...";
 			sleep --interruptible 999;
-			background_image ${prefix}/themes/slack/black.png
+			background_image ${prefix}/themes/slack/black.png;
 		}
 	elif regexp 'disk' $file_type; then
 		menuentry "挂载镜像" --class img{
@@ -128,7 +128,7 @@ function open{
 				echo "正在加载 $file_name";
 				initrd16 "$file_name";
 			}
-		fi
+		fi;
 	elif regexp 'tar' $file_type; then
 		menuentry "作为压缩文件打开" --class 7z{
 			loopback tar "$file_name";
@@ -147,8 +147,8 @@ function open{
 				linux16 $prefix/tools/memdisk iso raw;
 				initrd16 "$file_name";
 			}
-		fi
-	fi
+		fi;
+	fi;
 	if regexp 'pc' $grub_platform; then
 		if file --is-x86-bios-bootsector "$file_name"; then
 			menuentry "作为BIOS引导扇区加载"  --class img{
@@ -158,8 +158,8 @@ function open{
 			menuentry "作为NTLDR加载"  --class wim{
 				ntldr "$file_name";
 			}
-		fi
-	fi
+		fi;
+	fi;
 	if file --is-x86-multiboot "$file_name"; then
 		menuentry "作为multiboot内核加载"  --class exe{
 			multiboot "$file_name";
@@ -172,7 +172,7 @@ function open{
 		menuentry "作为linux内核加载"  --class exe{
 			linux16 "$file_name";
 		}
-	fi
+	fi;
 	menuentry "查看文本内容"  --class txt{
 		lua $prefix/cat_file.lua;
 	}
@@ -198,4 +198,4 @@ elif regexp 'llua' "$main_ops"; then
 	echo -n "Press [ESC] to continue...";
 	sleep --interruptible 999;
 	export path; configfile $prefix/main.sh;
-fi
+fi;
