@@ -120,16 +120,14 @@ function open{
 		if regexp 'pc' $grub_platform; then
 			menuentry "使用memdisk加载为软盘" --class img{
 				linux16 $prefix/tools/memdisk floppy raw;
+				echo "正在加载 $file_name";
 				initrd16 "$file_name";
 			}
 			menuentry "使用memdisk加载为硬盘" --class img{
 				linux16 $prefix/tools/memdisk harddisk raw;
+				echo "正在加载 $file_name";
 				initrd16 "$file_name";
 			}
-			#menuentry "作为软盘镜像仿真启动" --class img{
-			#	lua $prefix/to_g4d.lua;
-			#	linux $prefix/tools/grub.exe --config-file="map --mem $g4d (fd0);map --hook;chainloader (fd0)+1;rootnoverify (fd0)";
-			#}
 		fi
 	elif regexp 'tar' $file_type; then
 		menuentry "作为压缩文件打开" --class 7z{
@@ -143,22 +141,12 @@ function open{
 		}
 		source $prefix/isoboot.sh;
 		CheckLinuxType;
-		if regexp 'efi' $grub_platform; then
-			if test -f (loop)/efi/boot/bootx64.efi; then
-				menuentry "运行bootx64.efi (不推荐)" --class iso{
-					chainloader (loop)/efi/boot/bootx64.efi;
-				}
-			fi
-		else
+		if regexp 'pc' $grub_platform; then
 			menuentry "使用memdisk加载ISO" --class iso{
 				loopback -d loop;
 				linux16 $prefix/tools/memdisk iso raw;
 				initrd16 "$file_name";
 			}
-			#menuentry "ISO仿真启动" --class iso{
-			#	lua $prefix/to_g4d.lua;
-			#	linux $prefix/tools/grub.exe --config-file="map $g4d (0xff);map --hook;chainloader (0xff)";
-			#}
 		fi
 	fi
 	if regexp 'pc' $grub_platform; then
@@ -170,11 +158,6 @@ function open{
 			menuentry "作为NTLDR加载"  --class wim{
 				ntldr "$file_name";
 			}
-		#elif regexp 'lst' $file_type; then
-		#	menuentry "作为GRUB4DOS菜单加载"  --class ms-dos{
-		#		lua $prefix/to_g4d.lua;
-		#		linux $prefix/tools/grub.exe --config-file="$g4d";
-		#	}
 		fi
 	fi
 	if file --is-x86-multiboot "$file_name"; then

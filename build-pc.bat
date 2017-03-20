@@ -14,7 +14,6 @@ for /f "tokens=1,*" %%a in ("%modlist%") do (
 )
 
 md build\boot\grub\tools
-copy legacy\grub.exe build\boot\grub\tools\
 copy legacy\memdisk build\boot\grub\tools\
 copy legacy\wimboot build\boot\grub\tools\
 

@@ -51,8 +51,6 @@ else
 			file_icon = "exe"
 		elseif file_extn == "cfg" then
 			file_type = "cfg"
-		elseif file_extn == "lst" then
-			file_type = "lst"
 		end
 	end
 	grub.setenv ("file_type",file_type)
