@@ -158,6 +158,10 @@ function open{
 			menuentry "作为NTLDR加载"  --class wim{
 				ntldr "$file_name";
 			}
+		elif regexp '.*\/[bB][oO][oO][tT][mM][gG][rR]$' "$file_name"; then
+			menuentry "作为BOOTMGR加载"  --class wim{
+				ntldr "$file_name";
+			}
 		fi;
 	fi;
 	if file --is-x86-multiboot "$file_name"; then
