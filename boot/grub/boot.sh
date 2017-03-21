@@ -55,12 +55,6 @@ for dev in (*); do
 		fi;
     fi;
 done;
-menuentry "重启计算机" --class reboot{
-	reboot;
-}
-menuentry "关闭计算机" --class halt{
-	halt;
-}
 menuentry "返回" --class go-previous{
 	configfile $prefix/main.sh;
 }

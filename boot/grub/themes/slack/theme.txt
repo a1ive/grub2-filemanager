@@ -32,8 +32,8 @@ terminal-font: "Fixed Regular 13"
 # Show an informational message.
 + hbox {
 		top = 90%
-		left = 30%
-		width = 40%
+		left = 25%
+		width = 50%
 		+ image {file = "small/boot.png"}
 		+ label {text = " 启动[B] " color = "#5698fc" align = "center"}
 		+ image {file = "small/settings.png"}
@@ -42,4 +42,8 @@ terminal-font: "Fixed Regular 13"
 		+ label {text = " Lua[L] " color = "#5698fc" align = "center"}
 		+ image {file = "small/shell.png"}
 		+ label {text = " 命令行[C] " color = "#5698fc" align = "center"}
+		+ image {file = "small/reboot.png"}
+		+ label {text = " 重启[R] " color = "#5698fc" align = "center"}
+		+ image {file = "small/halt.png"}
+		+ label {text = " 关机[H] " color = "#5698fc" align = "center"}
 }

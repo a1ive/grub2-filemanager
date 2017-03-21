@@ -23,7 +23,12 @@ function hiddenmenu {
 	hiddenentry "Boot" --hotkey=b {
 		configfile $prefix/boot.sh;
 	}
-	#hiddenentry "GRUB Shell" --hotkey=c;
+	hiddenentry "Reboot" --hotkey=r{
+		reboot;
+	}
+	hiddenentry "Halt" --hotkey=h{
+		halt;
+	}
 }
 function main{
 	if test -z "$path"; then
