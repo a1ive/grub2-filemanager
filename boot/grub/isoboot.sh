@@ -60,7 +60,7 @@ function CheckLinuxType {
 		source $prefix/distro/slackware.sh;
 	elif test -f (loop)/manjaro/boot/*/vmlinuz*; then
 		source $prefix/distro/manjaro.sh;
-	elif test -f (loop)/pmagic/bzImage -a -f (loop)/initrd*; then
+	elif test -f (loop)/pmagic/bzImage -a -f (loop)/pmagic/initrd*; then
 		source $prefix/distro/pmagic.sh;
 	elif test -f (loop)/boot/initramfs_*.img -a -f (loop)/boot/vmlinuz_*; then
 		source $prefix/distro/archboot.sh;
