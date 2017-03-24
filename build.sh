@@ -34,7 +34,14 @@ rm -r build/boot
 $mkimage -d ./i386-pc -p "(memdisk)/boot/grub" -c ./legacy/legacy.cfg -o ./build/core.img -O i386-pc $builtin
 cat i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
-mkisofs -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
+geniso=$(which genisoimage)
+if [ -e "$geniso" ]
+then
+	echo "found genisoimage : $geniso"
+else
+	geniso=$(which mkisofs)
+fi
+$geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 
 echo "efi common files"
 find ./boot | cpio -o -H newc > ./build/memdisk.cpio
