@@ -14,6 +14,12 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
+if search --set=external -q -f /boot/grub/external_menu.cfg; then
+	menuentry "加载外置菜单: ($external)/boot/grub/external_menu.cfg" "$external" --class cfg{
+		set root=$2;
+		configfile ($root)/boot/grub/external_menu.cfg;
+    }
+fi
 for dev in (*); do
 	if test -e $dev; then
 		regexp --set=device '\((.*)\)' $dev;
