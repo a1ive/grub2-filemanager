@@ -183,7 +183,8 @@ function open{
 		}
 	fi;
 	menuentry "查看文本内容"  --class txt{
-		lua $prefix/cat_file.lua;
+		main_ops="text"; export main_ops;
+		configfile $prefix/main.sh;
 	}
 	menuentry "查看文件信息"  --class info{
 		set pager=1;
@@ -207,4 +208,20 @@ elif regexp 'llua' "$main_ops"; then
 	echo -n "Press [ESC] to continue...";
 	sleep --interruptible 999;
 	export path; configfile $prefix/main.sh;
+elif regexp 'text' "$main_ops"; then
+	theme=${prefix}/themes/slack/text.txt
+	hiddenentry " " --hotkey=n{
+		if [ "$encoding" = "gbk" ]; then
+			encoding="utf8";
+		else
+			encoding="gbk";
+		fi
+		export encoding;
+		configfile $prefix/main.sh;
+	}
+	hiddenentry " " --hotkey=q{
+		theme=${prefix}/themes/slack/theme.txt; export theme;
+		main_ops="open"; export main_ops; configfile $prefix/main.sh;
+	}
+	lua $prefix/cat_file.lua;
 fi;

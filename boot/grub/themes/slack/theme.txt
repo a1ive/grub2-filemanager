@@ -23,7 +23,10 @@ terminal-box: "term_bkg_*.png"
 		item_icon_space = 20
 		selected_item_pixmap_style= "select_bkg_*.png"
 		menu_pixmap_style = "menu_bkg_*.png"
-		scrollbar = false
+		scrollbar = true
+		scrollbar_width = 6
+        scrollbar_thumb = "sb_thumb_*.png"
+        scrollbar_frame = "sb_frame_*.png"
 }
 # Show an informational message.
 + hbox {
