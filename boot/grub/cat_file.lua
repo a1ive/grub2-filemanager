@@ -24,19 +24,13 @@ if (file == nil) then
 	return 1
 else
 	data = grub.file_open(file)
-	grub.cls()
-	print ("File: " .. file .. " Size: " .. grub.file_getsize(data))
-	print ("Encoding: " .. encoding)
 	while (grub.file_eof(data) == false)
 	do
 		line = grub.file_getline (data)
 		if (encoding == "gbk") then
 			line = grub.toutf8(line)
 		end
-		print (line)
+		grub.add_menu ("echo;", line)
 	end
-	print ("EOF")
-	print ("按任意键退出...")
-	grub.getkey()
 	return 0
 end
