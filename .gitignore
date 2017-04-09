@@ -1,4 +1,4 @@
-*.efi
-*.iso
+grubfm*.efi
+grubfm.iso
 build
-tools/non-free/*/*
+tools/non-free/*
