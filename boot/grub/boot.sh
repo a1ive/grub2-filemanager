@@ -33,11 +33,18 @@ for dev in (*); do
         	    chainloader ($root)/efi/microsoft/boot/bootmgfw.efi;
         	}
         fi;
-        if test -f ($device)/efi/boot/bootx64.efi; then
-            menuentry "加载位于${device}的启动管理器 " $device --class uefi{
-                set root=$2;
-				chainloader ($root)/efi/boot/bootx64.efi;
-			}
+		if regexp 'efi64' "$grub_firmware"; then
+			if test -f ($device)/efi/boot/bootx64.efi; then
+				menuentry "加载位于${device}的启动管理器 " $device --class uefi{
+					set root=$2; chainloader ($root)/efi/boot/bootx64.efi;
+				}
+			fi;
+		else
+			if test -f ($device)/efi/boot/bootia32.efi; then
+				menuentry "加载位于${device}的启动管理器 " $device --class uefi{
+					set root=$2; chainloader ($root)/efi/boot/bootia32.efi;
+				}
+			fi;
         fi;
         if test -f ($device)/System/Library/CoreServices/boot.efi; then
         	menuentry "启动位于${device}的 macOS " $device --class macOS{

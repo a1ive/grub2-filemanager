@@ -152,6 +152,17 @@ function open{
 				linux16 $prefix/tools/memdisk iso raw;
 				initrd16 "$file_name";
 			}
+		else
+			if regexp 'efi32' "$grub_firmware"; then
+				set efi_file="bootia32.efi";
+			else
+				set efi_file="bootx64.efi";
+			fi;
+			if test -f "(loop)/efi/boot/${efi_file}"; then
+				menuentry "仅加载EFI文件" --class uefi{
+					chainloader (loop)/efi/boot/${efi_file};
+				}
+			fi;
 		fi;
 	fi;
 	if regexp 'pc' $grub_platform; then

@@ -15,7 +15,6 @@ for /f "tokens=1,*" %%a in ("%modlist%") do (
 )
 md build\boot\grub\tools
 copy legacy\memdisk build\boot\grub\tools\
-copy legacy\wimboot build\boot\grub\tools\
 cd build
 %~dp0\find ./boot | %~dp0\cpio -o -H newc > ./fm.loop
 cd ..
@@ -32,8 +31,8 @@ find ./boot | cpio.exe -o -H newc > ./build/memdisk.cpio
 set /p modules= < mods.lst
 
 @echo i386-efi
-grub-mkimage\grub-mkimage.exe -m build\memdisk.cpio -d i386-efi -p (memdisk)/boot/grub -c config.cfg -o grubfmia32.efi -O i386-efi %modules%
+grub-mkimage\grub-mkimage.exe -m build\memdisk.cpio -d i386-efi -p (memdisk)/boot/grub -c config32.cfg -o grubfmia32.efi -O i386-efi %modules%
 
 @echo x86_64-efi
-grub-mkimage\grub-mkimage.exe -m build\memdisk.cpio -d x86_64-efi -p (memdisk)/boot/grub -c config.cfg -o grubfmx64.efi -O x86_64-efi %modules%
+grub-mkimage\grub-mkimage.exe -m build\memdisk.cpio -d x86_64-efi -p (memdisk)/boot/grub -c config64.cfg -o grubfmx64.efi -O x86_64-efi %modules%
 del build\memdisk.cpio

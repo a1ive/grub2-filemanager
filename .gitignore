@@ -1,3 +1,4 @@
 *.efi
 *.iso
 build
+tools/non-free/*/*
