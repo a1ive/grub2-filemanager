@@ -28,7 +28,7 @@ function CheckLinuxType {
 	if test -f (loop)/boot/grub/loopback.cfg; then
 		menuentry "作为 Loopback ISO 启动 (推荐)" "$isofile" --class gnu-linux{
 			set iso_path="$2"; export iso_path;
-			root=(loop);
+			root=loop;
 			configfile /boot/grub/loopback.cfg
 		}
 	fi
@@ -42,7 +42,7 @@ function CheckLinuxType {
 		source $prefix/distro/fedora.sh;
 	elif test -f (loop)/live/vmlinuz*; then
 		source $prefix/distro/debian.sh;
-	elif test -f (loop)/isolinux/gentoo64; then
+	elif test -f (loop)/isolinux/gentoo*; then
 		source $prefix/distro/gentoo.sh;
 	elif test -f (loop)/sysrcd.dat; then
 		source $prefix/distro/sysrcd.sh;
