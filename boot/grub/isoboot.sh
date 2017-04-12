@@ -64,7 +64,7 @@ function CheckLinuxType {
 		source $prefix/distro/pmagic.sh;
 	elif test -f (loop)/boot/initramfs_*.img -a -f (loop)/boot/vmlinuz_*; then
 		source $prefix/distro/archboot.sh;
-	elif test -f (loop)/antiX/vmlinuz -a -f (loop)/antiX/initrd.*; then
+	elif test -f (loop)/antiX/vmlinuz -a -f (loop)/antiX/initrd.gz; then
 		source $prefix/distro/antix.sh;
 	fi
 }
