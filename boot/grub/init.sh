@@ -19,8 +19,12 @@ if regexp 'pc' "$grub_platform"; then
 	modlist="915resolution all_video bitmap bitmap_scale blocklist cat cmp cpuid crc datetime dd disk drivemap elf file getkey gfxmenu gfxterm gfxterm_background gfxterm_menu gptsync hashsum hexdump hwmatch jpeg loadenv lsapm macho memdisk multiboot multiboot2 net offsetio parttool png procfs random search_fs_uuid search_label sendkey squash4 syslinuxcfg terminfo tga time trig true vbe vga video video_bochs video_cirrus video_colors video_fb videoinfo xnu";
 else
 	modlist="all_video video_bochs video_cirrus efi_gop efi_uga gfxterm gfxterm_background gfxmenu jpeg png tga font";
-	search -s -f -q /efi/boot/bootia32.efi;
-	search -s -f -q /efi/boot/bootx64.efi;
+	search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
+	if regexp 'efi32' "$grub_firmware"; then
+		search -s -f -q /efi/boot/bootia32.efi;
+	else
+		search -s -f -q /efi/boot/bootx64.efi;
+	fi
 fi
 for module in $modlist; do
 	insmod $module;
