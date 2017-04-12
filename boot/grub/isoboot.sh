@@ -36,7 +36,7 @@ function CheckLinuxType {
 		source $prefix/distro/minitool.sh;
 	elif test -f (loop)/casper/vmlinuz*; then
 		source $prefix/distro/ubuntu.sh;
-	elif test -f (loop)/arch/boot/x86_64/vmlinuz*; then
+	elif test -d (loop)/arch; then
 		source $prefix/distro/arch.sh;
 	elif test -d (loop)/LiveOS -o -f (loop)/images/pxeboot/vmlinuz*; then
 		source $prefix/distro/fedora.sh;
