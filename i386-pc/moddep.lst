@@ -1,26 +1,20 @@
-gpxe_davicom: gpxe_legacy gpxe pci
 videotest: font video gfxmenu
 odc: archelp
 loopback: extcmd
 macho:
-gpxe_smc9000: gpxe_legacy gpxe
 gcry_des: crypto
 memrw: extcmd
-gpxe_tulip: gpxe_legacy gpxe pci
-gpxe_3c90x: gpxe gpxe_nvs
 terminfo: extcmd
 f2fs: fshelp
 part_gpt:
 romfs: fshelp
 read:
-gpxe_i2c_bit: gpxe gpxe_bitbash
 aout:
 gcry_arcfour: crypto
 vga_text:
 tftp: net priority_queue
 newc: archelp
 minix2_be:
-gpxe_eepro100: gpxe_legacy gpxe
 elf:
 videotest_checksum: font functional_test video_fb
 password_pbkdf2: crypto gcry_sha512 pbkdf2 normal
@@ -57,9 +51,7 @@ affs: fshelp
 iso9660: fshelp
 exfat: fshelp
 smbios: extcmd acpi
-gpxe_rtl8139: gpxe_spi_bit gpxe gpxe_nvs gpxe_threewire
 setjmp_test: functional_test setjmp
-gpxe_legacy: gpxe
 gfxterm: font video
 disk:
 xfs: fshelp
@@ -97,7 +89,6 @@ cmdline_cat_test: font functional_test procfs normal video_fb
 part_sun:
 cbtable:
 plan9: extcmd video boot relocator
-gpxe_spi:
 sendkey: extcmd boot
 pbkdf2_test: functional_test pbkdf2 gcry_sha1
 video_bochs: video pci video_fb
@@ -109,7 +100,6 @@ cpuid: extcmd
 hwmatch: normal pci
 bfs: fshelp
 hdparm: extcmd
-gpxe_sis900: gpxe_legacy gpxe pci
 gcry_blowfish: crypto
 test:
 nilfs2: fshelp
@@ -122,7 +112,6 @@ signature_test: functional_test procfs
 ata: scsi
 udf: fshelp
 gzio:
-gpxe_3c595: gpxe_legacy gpxe
 xnu_uuid: gcry_md5
 uhci: usb pci
 pata: ata pci
@@ -145,12 +134,9 @@ iorw: extcmd
 xnu: macho bitmap_scale random extcmd video bitmap boot efiemu relocator mmap
 mmap: boot
 exfctest: functional_test
-gpxe_nvs:
 zfsinfo: zfs
 ldm: part_gpt diskfilter part_msdos
 cmostest:
-gpxe_threewire: gpxe
-gpxe_natsemi: gpxe_spi_bit gpxe gpxe_nvs gpxe_threewire
 eval: normal
 part_dvh:
 ext2: fshelp
@@ -159,14 +145,12 @@ net: priority_queue bufio datetime boot
 drivemap: extcmd boot mmap
 part_acorn:
 videoinfo: video
-gpxe_dmfe: gpxe_legacy gpxe pci
 btrfs: lzopio gzio
 lsmmap:
 bitmap:
 vbe: video video_fb
 ntfs: fshelp
 multiboot: net vbe video boot relocator mmap lsapm
-gpxe_ns8390: gpxe_legacy gpxe
 gcry_crc: crypto
 png: bufio bitmap
 jpeg: bufio bitmap
@@ -177,10 +161,8 @@ regexp: extcmd normal
 parttool: normal
 usbserial_pl2303: serial usb usbserial_common
 cpio: archelp
-gpxe_infiniband: gpxe
 gcry_rmd160: crypto
 fat: fshelp
-gpxe_epic100: gpxe_legacy gpxe
 ufs1_be:
 truecrypt: video boot relocator mmap gzio
 getkey:
@@ -190,8 +172,6 @@ ntldr: chain video boot relocator
 http: net
 zfs: gzio
 search_part_uuid: gpt
-gpxe_ns83820: gpxe_legacy gpxe pci
-gpxe_3c5x9: gpxe_legacy gpxe
 minix2:
 mda_text:
 lsacpi: extcmd acpi
@@ -200,7 +180,6 @@ loadenv: disk extcmd
 bitmap_scale: bitmap
 probe: extcmd
 minix3:
-gpxe_bitbash:
 tar: archelp
 hfs: fshelp
 procfs: archelp
@@ -215,15 +194,12 @@ tga: bufio bitmap
 reboot: relocator
 serial: extcmd terminfo
 zfscrypt: crypto pbkdf2 zfs extcmd gcry_sha1 gcry_rijndael
-gpxe_3c529: gpxe_3c5x9 gpxe_legacy
 dm_nv: diskfilter
 cmp_test: functional_test
 luks: cryptodisk crypto pbkdf2
-gpxe_ne2k_isa: gpxe_legacy gpxe
 gpt: gcry_crc crypto disk
 font: bufio video
 raid5rec: diskfilter
-gpxe_w89c840: gpxe_legacy gpxe
 crc64: crypto
 datetime:
 ctz_test: functional_test
@@ -239,10 +215,8 @@ extcmd:
 squash4: fshelp lzopio xzio gzio
 part_plan:
 minix_be:
-gpxe_pnic: gpxe
 gcry_whirlpool: crypto
 pxe: net boot
-gpxe_eepro: gpxe_legacy gpxe
 gcry_tiger: crypto
 search: search_fs_uuid search_fs_file search_part_uuid extcmd search_disk_uuid search_part_label search_label
 lspci: extcmd pci
@@ -256,9 +230,7 @@ msdospart: disk parttool
 priority_queue:
 gcry_twofish: crypto
 part_dfly:
-fbinst:
 xnu_uuid_test: functional_test
-gpxe_ipoib: gpxe_infiniband gpxe
 diskfilter:
 testload:
 part_apple:
@@ -295,7 +267,6 @@ gcry_rfc2268: crypto
 mdraid1x: diskfilter
 mpi: crypto
 legacycfg: linux password crypto gcry_md5 normal
-gpxe_spi_bit: gpxe_bitbash
 play:
 part_amiga:
 minix:
@@ -304,7 +275,6 @@ gcry_serpent: crypto
 gcry_md4: crypto
 gcry_md5: crypto
 part_msdos:
-gpxe: gpxe_nvs pci
 gcry_camellia: crypto
 at_keyboard: keylayouts boot
 all_video: vbe vga video_bochs video_cirrus
