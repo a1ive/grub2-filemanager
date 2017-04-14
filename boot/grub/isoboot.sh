@@ -38,6 +38,8 @@ function CheckLinuxType {
 		source $prefix/distro/ubuntu.sh;
 	elif test -d (loop)/arch; then
 		source $prefix/distro/arch.sh;
+	elif test -d (loop)/blackarch; then
+		source $prefix/distro/blackarch.sh;
 	elif test -d (loop)/LiveOS -o -f (loop)/images/pxeboot/vmlinuz*; then
 		source $prefix/distro/fedora.sh;
 	elif test -f (loop)/live/vmlinuz*; then
@@ -64,7 +66,5 @@ function CheckLinuxType {
 		source $prefix/distro/pmagic.sh;
 	elif test -f (loop)/antiX/vmlinuz -a -f (loop)/antiX/initrd.gz; then
 		source $prefix/distro/antix.sh;
-	elif test -f (loop)/boot/initramfs_x86_64.img -a -f (loop)/boot/vmlinuz_x86_64; then
-		source $prefix/distro/archboot.sh;
 	fi
 }
