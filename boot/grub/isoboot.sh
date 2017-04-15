@@ -38,6 +38,8 @@ function CheckLinuxType {
 		source $prefix/distro/ubuntu.sh;
 	elif test -d (loop)/arch; then
 		source $prefix/distro/arch.sh;
+	elif test -d (loop)/parabola; then
+		source $prefix/distro/parabola.sh;
 	elif test -d (loop)/blackarch; then
 		source $prefix/distro/blackarch.sh;
 	elif test -d (loop)/LiveOS -o -f (loop)/images/pxeboot/vmlinuz*; then
@@ -46,6 +48,10 @@ function CheckLinuxType {
 		source $prefix/distro/debian.sh;
 	elif test -f (loop)/isolinux/gentoo*; then
 		source $prefix/distro/gentoo.sh;
+	elif test -f (loop)/isolinux/pentoo; then
+		source $prefix/distro/pentoo.sh;
+	elif test -f (loop)/boot/sabayon; then
+		source $prefix/distro/sabayon.sh;
 	elif test -f (loop)/sysrcd.dat; then
 		source $prefix/distro/sysrcd.sh;
 	elif test -f (loop)/boot/x86_64/loader/linux; then
@@ -66,5 +72,7 @@ function CheckLinuxType {
 		source $prefix/distro/pmagic.sh;
 	elif test -f (loop)/antiX/vmlinuz -a -f (loop)/antiX/initrd.gz; then
 		source $prefix/distro/antix.sh;
+	elif test -f (loop)/boot/core.gz -a -f (loop)/boot/vmlinuz; then
+		source $prefix/distro/tinycore.sh;
 	fi
 }
