@@ -24,27 +24,18 @@ else
 		search -s -f -q /efi/boot/bootia32.efi;
 	else
 		search -s -f -q /efi/boot/bootx64.efi;
-	fi
-fi
+	fi;
+fi;
 for module in $modlist; do
 	insmod $module;
 done;
-
-loadfont ${prefix}/fonts/unicode.pf2.xz
-
-set locale_dir=${prefix}/locale; export locale_dir
-
-set lang=zh_CN; export lang
-
-set gfxmode=1024x768; export gfxmode
-set gfxpayload=keep; export gfxpayload
-terminal_output gfxterm
-
-set color_normal=white/black
-set color_highlight=black/white
-
-set theme=${prefix}/themes/slack/theme.txt; export theme
-
+loadfont ${prefix}/fonts/unicode.pf2.xz;
+set locale_dir=${prefix}/locale; export locale_dir;
+set lang=zh_CN; export lang;
+set gfxmode=1024x768; export gfxmode;
+set gfxpayload=keep; export gfxpayload;
+terminal_output gfxterm;
+set color_normal=white/black;
+set color_highlight=black/white;
 set encoding="utf8"; export encoding;
-
 configfile $prefix/main.sh;

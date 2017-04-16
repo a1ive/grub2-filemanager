@@ -228,8 +228,10 @@ function open{
 }
 
 if test -z "$main_ops"; then
+	set theme=${prefix}/themes/slack/theme.txt; export theme;
 	main;
 elif regexp 'open' "$main_ops"; then
+	set theme=${prefix}/themes/slack/theme.txt; export theme;
 	unset main_ops;
 	open;
 elif regexp 'llua' "$main_ops"; then

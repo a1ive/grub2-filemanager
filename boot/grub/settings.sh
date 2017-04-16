@@ -13,7 +13,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
-
+set theme=${prefix}/themes/slack/extern.txt; export theme;
 function setgfx{
 	set gfxmode="$1";
 	terminal_output gfxterm;

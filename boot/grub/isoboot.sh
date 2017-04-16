@@ -29,6 +29,7 @@ function CheckLinuxType {
 		menuentry "作为 Loopback ISO 启动 (推荐)" "$isofile" --class gnu-linux{
 			set iso_path="$2"; export iso_path;
 			root=loop;
+			set theme=${prefix}/themes/slack/extern.txt; export theme;
 			configfile /boot/grub/loopback.cfg
 		}
 	fi
