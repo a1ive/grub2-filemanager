@@ -125,13 +125,23 @@ function open{
 		if regexp 'pc' $grub_platform; then
 			menuentry "使用memdisk加载为软盘" --class img{
 				linux16 $prefix/tools/memdisk floppy raw;
-				echo "正在加载 $file_name";
+				echo "Loading $file_name";
 				initrd16 "$file_name";
+			}
+			menuentry "使用GRUB4DOS加载为软盘" --class img{
+				set map_dev="(fd0)";
+				lua $prefix/g4d_path.lua;
+				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
 			menuentry "使用memdisk加载为硬盘" --class img{
 				linux16 $prefix/tools/memdisk harddisk raw;
-				echo "正在加载 $file_name";
+				echo "Loading $file_name";
 				initrd16 "$file_name";
+			}
+			menuentry "使用GRUB4DOS加载为硬盘" --class img{
+				set map_dev="(hd0)";
+				lua $prefix/g4d_path.lua;
+				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
 		fi;
 	elif regexp 'tar' $file_type; then
@@ -151,6 +161,11 @@ function open{
 				loopback -d loop;
 				linux16 $prefix/tools/memdisk iso raw;
 				initrd16 "$file_name";
+			}
+			menuentry "使用GRUB4DOS加载ISO" --class iso{
+				set map_dev="(hd32)";
+				lua $prefix/g4d_path.lua;
+				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
 		else
 			if regexp 'efi32' "$grub_firmware"; then

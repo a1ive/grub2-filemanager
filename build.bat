@@ -15,6 +15,7 @@ for /f "tokens=1,*" %%a in ("%modlist%") do (
 )
 md build\boot\grub\tools
 copy legacy\memdisk build\boot\grub\tools\
+copy legacy\grub.exe build\boot\grub\tools\
 cd build
 %~dp0\find ./boot | %~dp0\cpio -o -H newc > ./fm.loop
 cd ..
