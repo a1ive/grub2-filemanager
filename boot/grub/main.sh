@@ -205,7 +205,11 @@ function open{
 		}
 	elif file --is-x86-linux "$file_name"; then
 		menuentry "作为linux内核加载"  --class exe{
-			linux16 "$file_name";
+			if regexp 'pc' $grub_platform; then
+				linux16 "$file_name";
+			else
+				linux "$file_name";
+			fi;
 		}
 	fi;
 	menuentry "查看文本内容"  --class txt{
