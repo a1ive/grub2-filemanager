@@ -26,6 +26,7 @@ do
 done
 mkdir build/boot/grub/tools
 cp legacy/memdisk build/boot/grub/tools/
+cp legacy/grub.exe build/boot/grub/tools/
 cd build
 find ./boot | cpio -o -H newc > ./fm.loop
 cd ..
