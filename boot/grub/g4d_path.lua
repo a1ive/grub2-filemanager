@@ -45,6 +45,6 @@ else
 end
 print (g4dcmd)
 grub.setenv ("g4dcmd", g4dcmd)
-print ("按任意键继续")
-grub.getkey()
+--print ("按任意键继续")
+--grub.getkey()
 return 0
