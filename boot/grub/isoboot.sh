@@ -33,9 +33,7 @@ function CheckLinuxType {
 			configfile /boot/grub/loopback.cfg
 		}
 	fi
-	if test -f (loop)/casper/tinycore.gz; then
-		source $prefix/distro/minitool.sh;
-	elif test -f (loop)/casper/vmlinuz*; then
+	if test -f (loop)/casper/vmlinuz*; then
 		source $prefix/distro/ubuntu.sh;
 	elif test -d (loop)/arch; then
 		source $prefix/distro/arch.sh;
@@ -63,7 +61,7 @@ function CheckLinuxType {
 		source $prefix/distro/slax.sh;
 	elif test -d (loop)/wifislax*; then
 		source $prefix/distro/wifislax.sh;
-	elif test -f (loop,msdos1)/dat10.dat -a -f (loop,msdos1)/dat11.dat; then
+	elif test -f (loop)/dat*.dat; then
 		source $prefix/distro/acronis.sh;
 	elif test -f (loop)/kernels/huge.s/bzImage; then
 		source $prefix/distro/slackware.sh;
