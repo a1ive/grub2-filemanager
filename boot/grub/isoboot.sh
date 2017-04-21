@@ -73,5 +73,9 @@ function CheckLinuxType {
 		source $prefix/distro/antix.sh;
 	elif test -f (loop)/boot/core.gz -a -f (loop)/boot/vmlinuz; then
 		source $prefix/distro/tinycore.sh;
+	elif test -f (loop)/casper/tinycore.gz; then
+		source $prefix/distro/minitool.sh;
+	elif test -f (loop)/boot/bzImage -a -f (loop)/boot/rootfs4.gz; then
+		source $prefix/distro/slitaz.sh;
 	fi
 }
