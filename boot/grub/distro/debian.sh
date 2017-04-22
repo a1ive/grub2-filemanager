@@ -1,6 +1,10 @@
 set icon="debian";
-set vmlinuz_img="(loop)/live/vmlinuz*";
-set initrd_img="(loop)/live/initrd*";
+if test -f (loop)/live/vmlinuz; then
+	set vmlinuz_img="(loop)/live/vmlinuz";
+else
+	set vmlinuz_img="(loop)/live/vmlinuz*";
+fi
+set initrd_img="(loop)/live/initrd.*";
 set loopiso="findiso=${isofile}";
 
 menuentry "作为 Debian LiveCD 启动" --class $icon{

@@ -179,10 +179,18 @@ function open{
 				}
 			fi;
 		fi;
+	elif regexp 'pf2' $file_type; then
+		menuentry "加载pf2字库文件" --class pf2{
+			loadfont "$file_name";
+		}
+	elif regexp 'mod' $file_type; then
+		menuentry "加载GRUB 2模块" --class mod{
+			insmod "$file_name";
+		}
 	fi;
 	if regexp 'pc' $grub_platform; then
 		if file --is-x86-bios-bootsector "$file_name"; then
-			menuentry "作为BIOS引导扇区加载"  --class img{
+			menuentry "作为BIOS引导扇区加载"  --class bin{
 				chainloader --force "$file_name";
 			}
 		elif regexp '.*\/[0-9a-zA-Z]+[lL][dD][rR]$' "$file_name"; then

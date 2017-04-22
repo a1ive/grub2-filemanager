@@ -51,6 +51,14 @@ else
 			file_icon = "exe"
 		elseif file_extn == "cfg" then
 			file_type = "cfg"
+		elseif file_extn == "pf2" then
+			file_type, file_icon = "pf2", "pf2"
+		elseif file_extn == "mod" then
+			file_type, file_icon = "mod", "mod"
+		elseif file_extn == "mbr" then
+			file_type, file_icon = "mbr", "bin"
+		elseif file_extn == "sh" then
+			file_icon = "cfg"
 		end
 	end
 	grub.setenv ("file_type",file_type)

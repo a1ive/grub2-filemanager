@@ -43,7 +43,7 @@ function CheckLinuxType {
 		source $prefix/distro/blackarch.sh;
 	elif test -d (loop)/LiveOS -o -f (loop)/images/pxeboot/vmlinuz*; then
 		source $prefix/distro/fedora.sh;
-	elif test -f (loop)/live/vmlinuz*; then
+	elif test -f (loop)/live/vmlinuz* -a -f (loop)/live/initrd.*; then
 		source $prefix/distro/debian.sh;
 	elif test -f (loop)/isolinux/gentoo*; then
 		source $prefix/distro/gentoo.sh;
