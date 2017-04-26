@@ -13,6 +13,7 @@
 *functional_test: functional_test
 *fwconfig: fwconfig
 *getenv: getenv
+*getkey: getkey
 *gettext: gettext
 *hashsum: hashsum
 *hdparm: hdparm
@@ -100,7 +101,6 @@ fwsetup: efifwsetup
 gdbstub: gdb
 gdbstub_break: gdb
 gdbstub_stop: gdb
-getkey: getkey
 gptrepair: gptrepair
 gptsync: gptsync
 halt: halt

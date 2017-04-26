@@ -156,7 +156,7 @@ cpio: archelp
 gcry_rmd160: crypto
 fat: fshelp
 ufs1_be:
-getkey:
+getkey: extcmd
 archelp:
 raid6rec: diskfilter
 http: net

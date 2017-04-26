@@ -165,7 +165,7 @@ gcry_rmd160: crypto
 fat: fshelp
 ufs1_be:
 truecrypt: video boot relocator mmap gzio
-getkey:
+getkey: extcmd
 archelp:
 raid6rec: diskfilter
 ntldr: chain video boot relocator

@@ -12,6 +12,7 @@
 *file: file
 *functional_test: functional_test
 *fwconfig: fwconfig
+*getkey: getkey
 *gettext: gettext
 *halt: halt
 *hashsum: hashsum
@@ -107,7 +108,6 @@ freedos: freedos
 gdbstub: gdb
 gdbstub_break: gdb
 gdbstub_stop: gdb
-getkey: getkey
 gptrepair: gptrepair
 gptsync: gptsync
 help: minicmd

@@ -1,3 +1,6 @@
 grubfm*.efi
 grubfm.iso
 build
+*.der
+*.pem
+*.rsa
