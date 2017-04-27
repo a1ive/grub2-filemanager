@@ -65,7 +65,7 @@ function CheckLinuxType {
 		source $prefix/distro/acronis.sh;
 	elif test -f (loop)/kernels/huge.s/bzImage; then
 		source $prefix/distro/slackware.sh;
-	elif test -f (loop)/manjaro/boot/*/vmlinuz*; then
+	elif test -d (loop)/manjaro; then
 		source $prefix/distro/manjaro.sh;
 	elif test -f (loop)/pmagic/bzImage -a -f (loop)/pmagic/initrd*; then
 		source $prefix/distro/pmagic.sh;
