@@ -147,6 +147,7 @@ part_acorn:
 videoinfo: video
 btrfs: lzopio gzio
 lsmmap:
+strtoull_test: functional_test
 bitmap:
 vbe: video video_fb
 ntfs: fshelp

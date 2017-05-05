@@ -139,6 +139,7 @@ part_acorn:
 videoinfo: video
 btrfs: lzopio gzio
 lsmmap: mmap
+strtoull_test: functional_test
 bitmap:
 ntfs: fshelp
 multiboot: net video boot relocator mmap
