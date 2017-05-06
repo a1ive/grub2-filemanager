@@ -168,7 +168,7 @@ function open{
 				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
 		else
-			if regexp 'efi32' "$grub_firmware"; then
+			if regexp 'i386' "$grub_cpu"; then
 				set efi_file="bootia32.efi";
 			else
 				set efi_file="bootx64.efi";

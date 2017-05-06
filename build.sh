@@ -48,8 +48,8 @@ find ./boot | cpio -o -H newc > ./build/memdisk.cpio
 modules=$(cat mods.lst) 
 
 echo "x86_64-efi"
-$mkimage -m ./build/memdisk.cpio -d ./x86_64-efi -p "(memdisk)/boot/grub" -c config64.cfg -o grubfmx64.efi -O x86_64-efi $modules
+$mkimage -m ./build/memdisk.cpio -d ./x86_64-efi -p "(memdisk)/boot/grub" -c config.cfg -o grubfmx64.efi -O x86_64-efi $modules
 
 echo "i386-efi"
-$mkimage -m ./build/memdisk.cpio -d ./i386-efi -p "(memdisk)/boot/grub" -c config32.cfg -o grubfmia32.efi -O i386-efi $modules
+$mkimage -m ./build/memdisk.cpio -d ./i386-efi -p "(memdisk)/boot/grub" -c config.cfg -o grubfmia32.efi -O i386-efi $modules
 rm build/*
