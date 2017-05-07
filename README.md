@@ -38,5 +38,5 @@ https://github.com/a1ive/grub2-filemanager/releases
 #### Systemd-boot 
 	efi /grubfm.efi
 ## 源码 
-许可协议: GNU GPL v3.0 
+许可协议: GNU GPL v3.0  
 修改版GRUB: https://github.com/a1ive/grub2-mod
