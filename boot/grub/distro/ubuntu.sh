@@ -7,3 +7,8 @@ menuentry "作为 Ubuntu LiveCD 启动" --class $icon{
 	linux $vmlinuz_img $kcmdline $loopiso;
 	initrd $initrd_img;
 }
+menuentry "作为 Ubuntu LiveCD 启动 (persistent)" --class $icon{
+	set kcmdline="boot=casper noprompt noeject persistent";
+	linux $vmlinuz_img $kcmdline $loopiso;
+	initrd $initrd_img;
+}
