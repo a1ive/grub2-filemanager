@@ -98,6 +98,19 @@ function open{
 			regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
 			syslinux_configfile $file_name;
 		}
+	elif regexp 'lst' $file_type; then
+		if regexp 'pc' $grub_platform; then
+			menuentry "作为GRUB4DOS菜单打开"  --class cfg{
+				set g4d_param="config";
+				lua $prefix/g4d_path.lua;
+				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+			}
+		else
+			menuentry "作为GRUB Legacy菜单打开"  --class cfg{
+				regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
+				legacy_configfile "$file_name";
+			}
+		fi;
 	elif regexp 'lua' $file_type; then
 		menuentry "作为Lua脚本加载"  --class lua{
 			regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
@@ -129,7 +142,7 @@ function open{
 				initrd16 "$file_name";
 			}
 			menuentry "使用GRUB4DOS加载为软盘" --class img{
-				set map_dev="(fd0)";
+				set g4d_param="(fd0)";
 				lua $prefix/g4d_path.lua;
 				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
@@ -139,7 +152,7 @@ function open{
 				initrd16 "$file_name";
 			}
 			menuentry "使用GRUB4DOS加载为硬盘" --class img{
-				set map_dev="(hd0)";
+				set g4d_param="(hd0)";
 				lua $prefix/g4d_path.lua;
 				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
@@ -163,7 +176,7 @@ function open{
 				initrd16 "$file_name";
 			}
 			menuentry "使用GRUB4DOS加载ISO" --class iso{
-				set map_dev="(hd32)";
+				set g4d_param="(hd32)";
 				lua $prefix/g4d_path.lua;
 				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
@@ -202,6 +215,11 @@ function open{
 				ntldr "$file_name";
 			}
 		fi;
+		menuentry "作为GRUB4DOS外部命令加载"  --class bin{
+			set g4d_param="command";
+			lua $prefix/g4d_path.lua;
+			linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+		}
 	fi;
 	if file --is-x86-multiboot "$file_name"; then
 		menuentry "作为multiboot内核加载"  --class exe{

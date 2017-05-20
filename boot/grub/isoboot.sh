@@ -77,5 +77,9 @@ function CheckLinuxType {
 		source $prefix/distro/minitool.sh;
 	elif test -f (loop)/boot/bzImage -a -f (loop)/boot/rootfs4.gz; then
 		source $prefix/distro/slitaz.sh;
+	elif test -f (loop)/isolinux/vmlinuz -a -f (loop)/isolinux/initrd.gz -a -f (loop)/livecd.sqfs; then
+		source $prefix/distro/pclinuxos.sh;
+	elif test -f (loop)/boot/bzImage -a -f (loop)/boot/initrd.gz; then
+		source $prefix/distro/4m.sh
 	fi
 }

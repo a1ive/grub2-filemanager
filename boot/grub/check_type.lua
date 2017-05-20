@@ -59,6 +59,8 @@ else
 			file_type, file_icon = "mbr", "bin"
 		elseif file_extn == "sh" then
 			file_icon = "cfg"
+		elseif file_extn == "lst" then
+			file_type, file_icon = "lst", "cfg"
 		end
 	end
 	grub.setenv ("file_type",file_type)
