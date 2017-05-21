@@ -249,7 +249,7 @@ hello: extcmd
 scsi:
 cat: extcmd
 ahci: ata boot pci
-normal: terminal crypto extcmd boot gettext
+normal: terminal crypto bufio extcmd boot gettext
 linux16: video boot relocator mmap
 ufs1:
 mdraid09: diskfilter
