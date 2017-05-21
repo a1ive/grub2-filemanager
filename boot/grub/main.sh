@@ -253,11 +253,10 @@ function open{
 	hiddenmenu;
 }
 
+set theme=${prefix}/themes/slack/theme.txt; export theme;
 if test -z "$main_ops"; then
-	set theme=${prefix}/themes/slack/theme.txt; export theme;
 	main;
 elif regexp 'open' "$main_ops"; then
-	set theme=${prefix}/themes/slack/theme.txt; export theme;
 	unset main_ops;
 	open;
 elif regexp 'llua' "$main_ops"; then
@@ -278,7 +277,6 @@ elif regexp 'text' "$main_ops"; then
 		configfile $prefix/main.sh;
 	}
 	hiddenentry " " --hotkey=q{
-		theme=${prefix}/themes/slack/theme.txt; export theme;
 		main_ops="open"; export main_ops; configfile $prefix/main.sh;
 	}
 	lua $prefix/cat_file.lua;
