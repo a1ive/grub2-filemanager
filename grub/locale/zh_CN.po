@@ -1,0 +1,1127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: grub 1.97+20110101\n"
+"Report-Msgid-Bugs-To: bug-grub@gnu.org\n"
+"POT-Creation-Date: 2017-03-15 09:41+0100\n"
+"PO-Revision-Date: 2011-12-04 21:02+0800\n"
+"Last-Translator: Aron Xu <happyaron.xu@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+
+msgid " - Total size unknown"
+msgstr " - 总量未知"
+
+msgid "%ds"
+msgstr "%d 秒"
+
+msgid "%ds remaining."
+msgstr "剩余 %d 秒。"
+
+msgid ""
+"%s appears to contain a %s filesystem which isn't known to reserve space for "
+"DOS-style boot.  Installing GRUB there could result in FILESYSTEM "
+"DESTRUCTION if valuable data is overwritten by grub-setup (--skip-fs-probe "
+"disables this check, use at your own risk)"
+msgstr ""
+"%s 中似乎包含一个不为 DOS 引导保留空间的 %s 文件系统。在此处安装 GRUB 可能导"
+"致 grub-setup 覆盖重要数据从而损坏文件系统(--skip-fs-probe 参数可以禁用这个检"
+"查，使用该选项风险自负)"
+
+msgid ""
+"%s appears to contain a %s partition map which isn't known to reserve space "
+"for DOS-style boot.  Installing GRUB there could result in FILESYSTEM "
+"DESTRUCTION if valuable data is overwritten by grub-setup (--skip-fs-probe "
+"disables this check, use at your own risk)"
+msgstr ""
+"%s 中似乎包含一个不为 DOS 引导保留空间的 %s 分区。在此处安装 GRUB 可能导致 "
+"grub-setup 覆盖重要数据从而损坏文件系统(--skip-fs-probe 参数可以禁用这个检"
+"查，使用该选项风险自负)"
+
+msgid "%s, with Linux %s"
+msgstr "%s，Linux %s"
+
+msgid "%s, with Linux %s (recovery mode)"
+msgstr "%s，Linux %s (恢复模式)"
+
+msgid "%s, with Xen %s and Linux %s"
+msgstr "%s，Xen %s 和 Linux %s"
+
+msgid "%s, with Xen %s and Linux %s (recovery mode)"
+msgstr "%s，Xen %s 和 Linux %s (恢复模式)"
+
+msgid "%s, with kFreeBSD %s"
+msgstr "%s，kFreeBSD %s"
+
+msgid "%s, with kFreeBSD %s (recovery mode)"
+msgstr "%s，kFreeBSd %s (恢复模式)"
+
+msgid "%s, with kernel %s (via %s)"
+msgstr "%s，%s 内核(通过 %s)"
+
+msgid "%s, with kernel %s (via %s, recovery mode)"
+msgstr "%s，%s 内核(通过 %s，恢复模式)"
+
+msgid "%s: error:"
+msgstr "%s：错误："
+
+msgid "%s: info:"
+msgstr "%s：信息："
+
+msgid "- Last modification time %d-%02d-%02d %02d:%02d:%02d %s"
+msgstr "- 最近更改 %d-%02d-%02d %02d:%02d:%02d %s"
+
+msgid "-l | -r | [-s] grubdev osdisk."
+msgstr "-l | -r | [-s] grub设备 系统磁盘"
+
+msgid "ADDR"
+msgstr "地址"
+
+msgid "ADDR VALUE [MASK]"
+msgstr "地址 值 [掩码]"
+
+msgid "ADDR1,MASK1[,ADDR2,MASK2[,...]]"
+msgstr "地址1,掩码1[,地址2,掩码2[,...]]"
+
+msgid "ASCII"
+msgstr "ASCII"
+
+msgid "Accept DOS-style CR/NL line endings."
+msgstr "接受 DOS 风格的 CR/NL 行结尾。"
+
+msgid "Active input terminals:"
+msgstr "活动输入终端："
+
+msgid "Active output terminals:"
+msgstr "活动输出终端："
+
+msgid "Ask for file name to reboot from."
+msgstr "从指定文件重新启动。"
+
+msgid ""
+"Attempting to install GRUB to a disk with multiple partition labels or both "
+"partition label and filesystem.  This is not supported yet."
+msgstr ""
+"正在试图将 GRUB 安装至有多个分区标签的磁盘，或同时有分区标签和文件系统的磁"
+"盘。这样的操作尚未被支持。"
+
+msgid ""
+"Attempting to install GRUB to a partitionless disk or to a partition.  This "
+"is a BAD idea."
+msgstr "正在试图将 GRUB 安装至未分区的磁盘或一个分区。这是一个坏主意。"
+
+msgid "Available input terminals:"
+msgstr "可用输入终端："
+
+msgid "Available output terminals:"
+msgstr "可用输入终端："
+
+msgid "BLOCK"
+msgstr "块"
+
+msgid "Base directory for hash list."
+msgstr "哈希列表文件所在目录。"
+
+msgid "Boot an operating system."
+msgstr "引导操作系统。"
+
+msgid "Boot into single mode."
+msgstr "以单用户模式启动"
+
+msgid "Boot with debug messages."
+msgstr "显示调试信息。"
+
+msgid "Boot with verbose messages."
+msgstr "启动时显示完整信息。"
+
+msgid "Booting a command list"
+msgstr "正在按照命令列表进行引导"
+
+msgid "Change configured devices."
+msgstr "更改此前配置的设备。"
+
+msgid "Check Alt key."
+msgstr "检查 Alt 键。"
+
+msgid "Check Control key."
+msgstr "检查 Ctrl 键。"
+
+msgid "Check Shift key."
+msgstr "检查 Shift 键。"
+
+msgid "Check for CPU features."
+msgstr "检查 CPU 特性。"
+
+msgid "Check key modifier status."
+msgstr "检查修饰键状态。"
+
+msgid "Clear the screen."
+msgstr "清屏。"
+
+msgid "Commands:"
+msgstr "命令："
+
+msgid "Compare FILE with local file LOCAL."
+msgstr "比较指定文件与本地文件。"
+
+msgid "Compare two files."
+msgstr "比较两个文件。"
+
+msgid "Compute or check hash checksum."
+msgstr "计算或校验哈希校验和。"
+
+msgid "Configure serial port."
+msgstr "配置串行端口。"
+
+msgid "Continue loops"
+msgstr "继续循环"
+
+msgid "Copy FILE to local file LOCAL."
+msgstr "复制文件到本地位置。"
+
+msgid "Create a blank environment block file."
+msgstr "创建一个空的环境块文件。"
+
+msgid "DEVICE"
+msgstr "设备"
+
+msgid "DEVICE [PARTITION[+/-[TYPE]]] ..."
+msgstr "设备 [分区[+/-[类型]]] ..."
+
+msgid "DEVICE must be an OS device (e.g. /dev/sda)."
+msgstr "指定的设备必须是一个操作系统设备(例如 /dev/sda)。"
+
+msgid "DEVICE_NAME"
+msgstr "设备名称"
+
+msgid "DIR"
+msgstr "DIR"
+
+msgid "DIRECTORY [OSBundleRequired]"
+msgstr "目录 [OSBundleRequired]"
+
+msgid "Debug tool for filesystem driver."
+msgstr "文件系统驱动调试工具。"
+
+msgid "Define a submenu."
+msgstr "定义一个子菜单。"
+
+msgid "Delete variables."
+msgstr "删除变量。"
+
+msgid "Determine driver."
+msgstr "指定驱动。"
+
+msgid "Determine filesystem UUID."
+msgstr "指定文件系统 UUID。"
+
+msgid "Determine filesystem label."
+msgstr "指定文件系统卷标。"
+
+msgid "Determine filesystem type."
+msgstr "指定文件系统类型"
+
+msgid "Determine partition map type."
+msgstr "指定分区表类型。"
+
+msgid "Device %s:"
+msgstr "设备 %s："
+
+msgid "Disable ACPI."
+msgstr "禁用 ACPI。"
+
+msgid "Disable SMP."
+msgstr "禁用 SMP。"
+
+msgid "Disable all boot output."
+msgstr "禁用所有引导输出。"
+
+msgid "Disable/enable SMART (0/1)."
+msgstr "禁用/启用 SMART (0/1)。"
+
+msgid "Display a line of text."
+msgstr "显示文本"
+
+msgid "Display blocklist of FILE."
+msgstr "显示指定文件的块列表。"
+
+msgid "Display output on all consoles."
+msgstr "在所有控制台显示输出。"
+
+msgid "Display the usage of this command and exit."
+msgstr "显示此命令的用法并退出。"
+
+msgid "Display this help and exit."
+msgstr "显示此帮助并退出。"
+
+msgid "Do not output the trailing newline."
+msgstr "末尾不输出额外空行。"
+
+msgid "Do not print messages."
+msgstr "安静模式。"
+
+msgid "Do not probe any floppy drive."
+msgstr "不检测任何软盘驱动器。"
+
+msgid "Do not use APM to halt the computer."
+msgstr "不使用 APM 关闭计算机。"
+
+msgid "Do nothing, successfully."
+msgstr "未进行操作，成功。"
+
+msgid "Do nothing, unsuccessfully."
+msgstr "未进行操作，失败。"
+
+msgid "Don't display boot diagnostic messages."
+msgstr "不显示引导对话消息。"
+
+msgid "Don't load host tables specified by comma-separated list."
+msgstr "不载入指定的主机表(多个表用逗号分隔)。"
+
+msgid "Don't reboot, just halt."
+msgstr "直接关机。"
+
+msgid "Don't stop after first error."
+msgstr "第一次出现错误时不停止。"
+
+msgid "ENVVAR"
+msgstr "环境变量"
+
+msgid "ENVVAR [ENVVAR] ..."
+msgstr "环境变量 [环境变量] ..."
+
+msgid "ESC at any time exits."
+msgstr "任何时候按下 ESC 均可退出。"
+
+msgid "EXPRESSION"
+msgstr "表达式"
+
+msgid "EXPRESSION ]"
+msgstr "表达式 ]"
+
+msgid ""
+"Embedding is not possible.  GRUB can only be installed in this setup by "
+"using blocklists.  However, blocklists are UNRELIABLE and their use is "
+"discouraged."
+msgstr ""
+"无法嵌入。在此次安装中 GRUB 只能通过使用块列表安装。但是块列表是不可信赖的，"
+"不推荐使用。"
+
+msgid "Enable interpretation of backslash escapes."
+msgstr "启用反斜杠转义"
+
+msgid "Enter in KDB on boot."
+msgstr "启动后进入 KDB。"
+
+msgid "Enter normal mode."
+msgstr "进入普通模式。"
+
+msgid "Enter password: "
+msgstr "输入口令："
+
+msgid "Enter username: "
+msgstr "输入用户名："
+
+msgid "Error in parsing command line arguments\n"
+msgstr "解析命令行参数出错\n"
+
+msgid "Evaluate an expression."
+msgstr "执行该表达式。"
+
+msgid "Exit from GRUB."
+msgstr "退出 GRUB。"
+
+msgid "Exit from loops"
+msgstr "退出循环"
+
+msgid "Exit from normal mode."
+msgstr "退出普通模式。"
+
+msgid "Export variables."
+msgstr "导出变量。"
+
+msgid "FILE"
+msgstr "文件"
+
+msgid "FILE [ARG ...]"
+msgstr "文件 [参数 ...]"
+
+msgid "FILE..."
+msgstr "文件..."
+
+msgid "FILE1 FILE2"
+msgstr "文件1 文件2"
+
+msgid "FILENAME COMMAND"
+msgstr "文件名 命令"
+
+msgid "FROM[K|M|G] TO[K|M|G]"
+msgstr "从[K|M|G] 到[K|M|G]"
+
+msgid "Failed to boot both default and fallback entries.\n"
+msgstr "引导默认启动项和会滚启动想均失败。\n"
+
+msgid "Filesystem cannot be accessed"
+msgstr "无法访问文件系统"
+
+msgid "Filesystem type %s"
+msgstr "文件系统类型 %s"
+
+msgid ""
+"Fill hybrid MBR of GPT drive DEVICE. Specified partitions will be a part of "
+"hybrid MBR. Up to 3 partitions are allowed. TYPE is an MBR type. + means "
+"that partition is active. Only one partition can be active."
+msgstr ""
+"重写指定 GPT 设备的混合 MBR，指定的分区会成为混合 MBR 的一部分(不超过三个)。"
+"类型指 MBR 类型，+ 代表该分区是活动分区(只能有一个活动分区)。"
+
+msgid "Finalize loading of EFI emulator."
+msgstr "完成载入 EFI 模拟器。"
+
+msgid ""
+"First try the device HINT. If HINT ends in comma, also try subpartitions"
+msgstr "首先尝试设备 HINT，如果 HINT 以逗号结尾则同时尝试其子分区"
+
+msgid "Fix video problem."
+msgstr "修正显示问题"
+
+msgid "Freeze ATA security settings until reset."
+msgstr "禁止更改 ATA 安全设置直到此设置被重置。"
+
+msgid "GNU GRUB  version %s"
+msgstr "GNU GRUB  %s 版"
+
+msgid "Get crc32 checksum of FILE."
+msgstr "计算文件的 CRC32 校验和。"
+
+msgid "Get/set ATA disk parameters."
+msgstr "获取或设定 ATA 磁盘参数。"
+
+msgid "HASH"
+msgstr "哈希值"
+
+msgid "HINT"
+msgstr "线索"
+
+msgid "Halt the system, if possible using APM."
+msgstr "优先使用 APM 关闭计算机。"
+
+msgid ""
+"Halts the computer.  This command does not work on all firmware "
+"implementations."
+msgstr "关机(在某些计算机上无效)。"
+
+msgid "Handle N bytes in output file."
+msgstr "处理输出文件中的 N 字节。"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "IMAGE_PATH COMMANDS"
+msgstr "IMAGE_PATH 命令"
+
+msgid "Insert a module."
+msgstr "插入一个模块。"
+
+msgid "Invalid command %s.\n"
+msgstr "无效命令%s。\n"
+
+msgid "Invalid device `%s'.\n"
+msgstr "无效的设备“%s”。\n"
+
+msgid "Invalid disk count.\n"
+msgstr "磁盘计数无效。\n"
+
+msgid "Invoke user configuration routing."
+msgstr "使用用户配置路径。"
+
+msgid "List PCI devices."
+msgstr "列出 PCI 设备。"
+
+msgid "List all files."
+msgstr "列出全部文件。"
+
+msgid ""
+"List available video modes. If resolution is given show only modes matching "
+"it."
+msgstr "列出可用显示模式。如果已指定分辨率，则只显示匹配的模式。"
+
+msgid "List devices and files."
+msgstr "列出设备和文件。"
+
+msgid "List devices or files."
+msgstr "列出设备或文件。"
+
+msgid "List files in PATH."
+msgstr "列出 PATH 变量中的文件。"
+
+msgid "List memory map provided by firmware."
+msgstr "列出默认的内存映射。"
+
+msgid "List or select an input terminal."
+msgstr "列出或选择一个输入终端。"
+
+msgid "List or select an output terminal."
+msgstr "列出或选择一个输出终端。"
+
+msgid "List the current variables."
+msgstr "列出当前变量。"
+
+msgid "List the loaded fonts."
+msgstr "列出已加载的字库。"
+
+msgid "List variables from environment block file."
+msgstr "显示环境变量文件内容。"
+
+msgid "Load 64-bit XNU image."
+msgstr "载入 64 位 XNU 镜像。"
+
+msgid "Load BIOS dump."
+msgstr "载入 BIOS 转储。"
+
+msgid "Load FreeBSD env."
+msgstr "载入 FreeBSD 环境。"
+
+msgid "Load FreeBSD kernel module (ELF)."
+msgstr "载入 FreeBSD 内核模块(ELF)。"
+
+msgid "Load FreeBSD kernel module."
+msgstr "载入 FreeBSD 内核模块。"
+
+msgid "Load Linux."
+msgstr "载入 Linux。"
+
+msgid "Load NTLDR or BootMGR."
+msgstr "载入 NTLDR 或 BootMGR。"
+
+msgid "Load NetBSD kernel module (ELF)."
+msgstr "载入 NetBSD 内核模块(ELF)。"
+
+msgid "Load NetBSD kernel module."
+msgstr "载入 NetBSD 内核模块。"
+
+msgid "Load XNU extension directory."
+msgstr "载入 XNU 扩展目录。"
+
+msgid "Load XNU extension package."
+msgstr "载入 XNU 扩展包。"
+
+msgid "Load XNU extension."
+msgstr "载入 XNU 扩展。"
+
+msgid "Load XNU image."
+msgstr "载入 XNU 内核镜像。"
+
+msgid "Load a keyboard layout."
+msgstr "载入一个键盘布局。"
+
+msgid "Load a multiboot 2 kernel."
+msgstr "载入 multiboot 2 内核。"
+
+msgid "Load a multiboot 2 module."
+msgstr "载入 multiboot 2 模块。"
+
+msgid "Load a multiboot kernel."
+msgstr "载入 multiboot 内核。"
+
+msgid "Load a multiboot module."
+msgstr "载入 multiboot 模块。"
+
+msgid "Load a splash image for XNU."
+msgstr "载入引导画面。"
+
+msgid "Load and initialize EFI emulator."
+msgstr "载入并初始化 EFI 模拟器。"
+
+msgid "Load another boot loader."
+msgstr "载入其他引导程序。"
+
+msgid "Load another config file without changing context."
+msgstr "载入另外的配置文件(不改变环境)。"
+
+msgid "Load another config file."
+msgstr "载入另外的配置文件。"
+
+msgid "Load background image for active terminal."
+msgstr "为活动终端加载背景图像。"
+
+msgid "Load host ACPI tables and tables specified by arguments."
+msgstr "载入 ACPI 主机表和用户指定的表。"
+
+msgid "Load initrd."
+msgstr "载入 initrd。"
+
+msgid "Load kernel of FreeBSD."
+msgstr "载入 FreeBSD 内核。"
+
+msgid "Load kernel of NetBSD."
+msgstr "载入 NetBSD 内核。"
+
+msgid "Load kernel of OpenBSD."
+msgstr "载入 OpenBSD 内核。"
+
+msgid "Load only tables specified by comma-separated list."
+msgstr "只载入指定的主机表(多个表用逗号分隔)。"
+
+msgid "Load the same file in multiple ways."
+msgstr "以多种方式载入同一个文件。"
+
+msgid "Load variables from environment block file."
+msgstr "载入环境变量文件。"
+
+msgid "Loading GNU Mach ..."
+msgstr "载入 GNU Mach ..."
+
+msgid "Loading Linux %s ..."
+msgstr "载入 Linux %s ..."
+
+msgid "Loading Xen %s ..."
+msgstr "载入 Xen %s ..."
+
+msgid "Loading initial ramdisk ..."
+msgstr "载入初始化内存盘..."
+
+msgid "Loading kernel of FreeBSD %s ..."
+msgstr "载入 FreeBSD 内核 %s ..."
+
+msgid "Loading the Hurd ..."
+msgstr "载入 Hurd ..."
+
+msgid "MODULE"
+msgstr "模块"
+
+msgid "Manage the BIOS drive mappings."
+msgstr "管理 BIOS 设备映射。"
+
+msgid "Manipulate PCI devices."
+msgstr "操作 PCI 设备。"
+
+msgid "Menu entry type."
+msgstr "菜单项类型。"
+
+msgid ""
+"Minimal BASH-like line editing is supported. For the first word, TAB lists "
+"possible command completions. Anywhere else TAB lists possible device or "
+"file completions. %s"
+msgstr ""
+"支持最小化的类 Bash 行编辑。对于第一个单词 Tab 列出可用的命令名补全；对于其他"
+"位置 Tab 列出可能的设备或文件。%s"
+
+msgid ""
+"Minimum Emacs-like screen editing is supported. TAB lists completions. Press "
+"Ctrl-x or F10 to boot, Ctrl-c or F2 for a command-line or ESC to discard "
+"edits and return to the GRUB menu."
+msgstr ""
+"支持最小化的类 Emacs 屏幕编辑。Tab 列出可补全项，Ctrl-x 或 F10 进行引导，"
+"Ctrl-c 或 F2 进入命令行，ESC 放弃编辑并返回菜单。"
+
+msgid "NAME [VARIABLE] [HINTS]"
+msgstr "名称 [变量] [提示]"
+
+msgid "NUMBER_OF_SECONDS"
+msgstr "秒数"
+
+msgid "No command is specified.\n"
+msgstr "没有指定命令。\n"
+
+msgid "No device is specified.\n"
+msgstr "没有指定设备。\n"
+
+msgid "Not enough parameters to command.\n"
+msgstr "命令参数不够。\n"
+
+msgid "Options:"
+msgstr "选项："
+
+msgid "PARTITION COMMANDS"
+msgstr "分区 命令"
+
+msgid "PORT"
+msgstr "端口"
+
+msgid "PORT VALUE [MASK]"
+msgstr "端口 值 [掩码]"
+
+msgid "Parse legacy config in new context"
+msgstr "在新环境下解析旧版配置"
+
+msgid "Parse legacy config in same context"
+msgstr "在相同环境下解析旧版配置"
+
+msgid "Partition %s:"
+msgstr "分区 %s："
+
+msgid "Perform both direct and reverse mappings."
+msgstr "同时进行直接和保留映射。"
+
+msgid "Play a tune."
+msgstr "播放测试声音。"
+
+msgid "Possible arguments are:"
+msgstr "可用参数："
+
+msgid "Possible commands are:"
+msgstr "可用命令："
+
+msgid "Possible devices are:"
+msgstr "可用设备："
+
+msgid "Possible files are:"
+msgstr "可用文件："
+
+msgid "Possible partitions are:"
+msgstr "可用分区："
+
+msgid "Possible things are:"
+msgstr "可用事物："
+
+msgid "Press any key to continue..."
+msgstr "按任意键继续..."
+
+msgid "Print a block list."
+msgstr "显示块列表。"
+
+msgid "Print and execute block argument."
+msgstr "输出并执行块参数。"
+
+msgid "Print drive identity and settings."
+msgstr "显示硬盘识别信息和设置。"
+
+msgid "Print sizes in a human readable format."
+msgstr "使用易读的格式显示文件大小。"
+
+msgid "REGEXP STRING"
+msgstr "正则表达式 字符串"
+
+msgid "Read only LENGTH bytes."
+msgstr "读取指定长度(字节)。"
+
+msgid "Reboot the computer."
+msgstr "重新启动计算机。"
+
+msgid "Remove a module."
+msgstr "删除模块。"
+
+msgid "Remove an environment variable."
+msgstr "删除一个环境变量。"
+
+msgid "Remove any memory regions in specified range."
+msgstr "删除指定范围内的全部内存区域。"
+
+msgid "Reset all mappings to the default values."
+msgstr "重置所有映射为默认值。"
+
+msgid "Retrieve device info."
+msgstr "获取设备信息。"
+
+msgid "Return from a function."
+msgstr "从一个函数返回。"
+
+msgid "STRING"
+msgstr "字符串"
+
+msgid "Save read value into variable VARNAME."
+msgstr "将读取的值存入变量 VARNAME。"
+
+msgid "Save variables to environment block file."
+msgstr "保存变量到文件。"
+
+msgid ""
+"Search devices by UUID. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr "按 UUID 搜索。如果指定了变量，找到的第一个设备会被保存到变量中。"
+
+msgid "Search devices by a file."
+msgstr "按文件搜索设备。"
+
+msgid "Search devices by a filesystem UUID."
+msgstr "按文件系统 UUID 搜索设备。"
+
+msgid "Search devices by a filesystem label."
+msgstr "按文件系统卷标搜索设备。"
+
+msgid ""
+"Search devices by file. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+"搜索含有指定文件的设备。如果指定了变量，找到的第一个设备会被保存到变量中。"
+
+msgid ""
+"Search devices by label. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr "按卷标搜索。如果指定了变量，找到的第一个设备会被保存到变量中。"
+
+msgid ""
+"Set Advanced Power Management\n"
+"(1=low, ..., 254=high, 255=off)."
+msgstr ""
+"设置高级电源管理模式\n"
+"(1=最低，...，254=最高，255=关闭)。"
+
+msgid ""
+"Set Automatic Acoustic Management\n"
+"(0=off, 128=quiet, ..., 254=fast)."
+msgstr ""
+"设置硬盘声音管理模式\n"
+"(0=关闭，128=静音，...，254=高速)。"
+
+msgid "Set OEMID of RSDP, XSDT and RSDT."
+msgstr "设置 RSDP，XSDT 和 RSDT 中的 OEMID。"
+
+msgid "Set OEMTABLE ID of RSDP, XSDT and RSDT."
+msgstr "设置 RSDP，XSDT 和 RSDT 中的 OEMTABLE ID。"
+
+msgid "Set OEMTABLE revision of RSDP, XSDT and RSDT."
+msgstr "设置 RSDP，XSDT 和 RSDT 中的 OEMTABLE 版本信息。"
+
+msgid "Set a variable to return value."
+msgstr "设置用于返回值的变量。"
+
+msgid "Set a variable to the first device found."
+msgstr "为找到的第一个设备设置变量。"
+
+msgid "Set an environment variable."
+msgstr "设置一个环境变量。"
+
+msgid "Set creator field of RSDP, XSDT and RSDT."
+msgstr "设置 RSDP，XSDT 和 RSDT 中的制造商信息。"
+
+msgid "Set creator revision of RSDP, XSDT and RSDT."
+msgstr "设置 RSDP，XSDT 和 RSDT 中的制造商版本信息。"
+
+msgid "Set debug environment variable."
+msgstr "设置调试环境变量。"
+
+msgid "Set drive to sleep mode."
+msgstr "设置驱动器为休眠模式。"
+
+msgid "Set drive to standby mode."
+msgstr "设置驱动器为等待模式。"
+
+msgid "Set positional parameters."
+msgstr "设定位置参数。"
+
+msgid "Set root device."
+msgstr "设置根设备。"
+
+msgid ""
+"Set standby timeout\n"
+"(0=off, 1=5s, 2=10s, ..., 240=20m, 241=30m, ...)."
+msgstr ""
+"设置等待时间\n"
+"(0=关闭，1=5秒，2=10秒，...，240=20分，241=30分，...)。"
+
+msgid "Set terminfo type of TERM  to TYPE.\n"
+msgstr "设置指定终端的 terminfo 为指定的类型。\n"
+
+msgid "Set the serial port address."
+msgstr "设置串行端口地址。"
+
+msgid "Set the serial port parity."
+msgstr "设置串行端口奇偶校验。"
+
+msgid "Set the serial port speed."
+msgstr "设置串行端口速度。"
+
+msgid "Set the serial port stop bits."
+msgstr "设置串行端口停止位。"
+
+msgid "Set the serial port word length."
+msgstr "设置串行端口字长。"
+
+msgid "Set the serial unit."
+msgstr "设置串行单元。"
+
+msgid ""
+"Set up images to boot from DEVICE.\n"
+"\n"
+"You should not normally run this program directly.  Use grub-install instead."
+msgstr ""
+"设置从指定设备引导所使用的镜像。\n"
+"\n"
+"您通常不应直接使用此程序，请换用 grub-install。"
+
+msgid "Set user password (PBKDF2). "
+msgstr "设置用户命令(PBKDF2)。"
+
+msgid "Set user password (plaintext). Unrecommended and insecure."
+msgstr "设置用户口令(纯文本)(不推荐且不安全)。"
+
+msgid "Set variable with user input."
+msgstr "将用户输入值保存到变量。"
+
+msgid "Set variables."
+msgstr "设置变量。"
+
+msgid "Show ACPI information."
+msgstr "显示 ACPI 信息。"
+
+msgid "Show APM information."
+msgstr "显示 APM 信息。"
+
+msgid "Show a help message."
+msgstr "显示帮助消息。"
+
+msgid "Show a long list with more detailed information."
+msgstr "列出详细信息。"
+
+msgid "Show loaded modules."
+msgstr "显示已加载的模块。"
+
+msgid "Show the contents of a file."
+msgstr "显示文件内容。"
+
+msgid "Show the current mappings."
+msgstr "显示当前映射。"
+
+msgid "Show this message."
+msgstr "显示此消息。"
+
+msgid "Skip N bytes from output file."
+msgstr "跳过输出文件的 N 字节。"
+
+msgid "Skip offset bytes from the beginning of file."
+msgstr "跳过文件头部偏移字节。"
+
+msgid "Specify filename."
+msgstr "指定文件名。"
+
+msgid "Specify hash to use."
+msgstr "指定要使用的哈希值。"
+
+msgid "Specify one or more font files to load."
+msgstr "指定一个或多个要加载的字库。"
+
+msgid "Terminal is ASCII-only [default]."
+msgstr "终端仅使用 ASCII [默认]。"
+
+msgid "Terminal is logical-ordered UTF-8."
+msgstr "终端使用按逻辑排序的 UTF-8。"
+
+msgid "Terminal is visually-ordered UTF-8."
+msgstr "终端使用按可视性排序的 UTF-8。"
+
+msgid "Test USB support."
+msgstr "测试 USB 支持。"
+
+msgid "Test if REGEXP matches STRING."
+msgstr "测试正则表达式是否匹配相应的字符串。"
+
+msgid "Test video subsystem in mode WxH."
+msgstr "在 WxH 模似下测试显示子系统。"
+
+msgid "Test video subsystem."
+msgstr "测试显示子系统。"
+
+msgid "The highlighted entry will be executed automatically in %ds."
+msgstr "高亮显示的启动项将在 %d 秒后自动执行。"
+
+msgid "Tool to edit environment block."
+msgstr "编辑环境块的工具。"
+
+msgid "Translates the string with the current settings."
+msgstr "使用当前设置翻译字符串。"
+
+msgid "USER PASSWORD"
+msgstr "用户 口令"
+
+msgid "USER PBKDF2_PASSWORD"
+msgstr "用户 PBKDF2_PASSWORD"
+
+msgid "UTF-8"
+msgstr "UTF-8"
+
+msgid "Uncompress file before checksumming."
+msgstr "检查校验和前解压文件。"
+
+msgid "Unknown command `%s'.\n"
+msgstr "未知命令 %s。\n"
+
+msgid "Unload EFI emulator."
+msgstr "卸载 EFI 模拟器。"
+
+msgid "Usage:"
+msgstr "用法："
+
+msgid "Use GDB remote debugger instead of DDB."
+msgstr "使用 GDB 远程调试工具替代 DDB。"
+
+msgid "Use serial console."
+msgstr "使用串行终端。"
+
+msgid "VARNAME"
+msgstr "VARNAME"
+
+msgid "Verbose countdown."
+msgstr "显示倒计时。"
+
+msgid "WIDTHxHEIGHT."
+msgstr "宽度x高度。"
+
+msgid "Wait for a specified number of seconds."
+msgstr "等待指定时间(秒)。"
+
+msgid "Wait for keypress after every line of output."
+msgstr "每输出一行后暂停(按任意键继续)。"
+
+msgid "Warning: invalid background color `%s'\n"
+msgstr "警告：无效的背景色 `%s'\n"
+
+msgid "Warning: invalid foreground color `%s'\n"
+msgstr "警告：无效的前景色 `%s'\n"
+
+msgid "Warning: syntax error (missing slash) in `%s'\n"
+msgstr "警告：%s 中有语法错误(缺少斜杠)\n"
+
+msgid "You need to specify at least one command.\n"
+msgstr "您至少需要指定一个命令。\n"
+
+msgid "Your embedding area is unusually small.  core.img won't fit in it."
+msgstr "您的嵌入区域过小，无法装入 core.img。"
+
+msgid "[--append|--remove] [TERMINAL1] [TERMINAL2] ..."
+msgstr "[--append|--remove] [终端1] [终端2] ..."
+
+msgid "[--md5] PASSWD [FILE]"
+msgstr "[--md5] 口令 [文件]"
+
+msgid "[--no-mem-option] [--type=TYPE] FILE [ARG ...]"
+msgstr "[--no-mem-option] [--type=类型] 文件 [参数 ...]"
+
+msgid "[-c FILE [-p PREFIX]] [FILE1 [FILE2 ...]]"
+msgstr "[-c 文件 [-p 前缀]] [文件1 [文件2 ...]]"
+
+msgid "[-e|-n] STRING"
+msgstr "[-e|-n] 字符串"
+
+msgid "[-f FILE]"
+msgstr "[-f 文件]"
+
+msgid "[-f FILE] variable_name [...]"
+msgstr "[-f 文件] 变量名 [...]"
+
+msgid "[-f|-l|-u|-s|-n] [--hint HINT [--hint HINT] ...] NAME"
+msgstr "[-f|-l|-u|-s|-n] [--hint 线索 [--hint 线索] ...] 名称"
+
+msgid "[-l|-h|-a] [FILE ...]"
+msgstr "[-l|-h|-a] [文件 ...]"
+
+msgid "[-m (stretch|normal)] FILE"
+msgstr "[-m (stretch|normal)] 文件"
+
+msgid "[ARG]"
+msgstr "[参数]"
+
+msgid "[ENVVAR=VALUE]"
+msgstr "[环境变量=值]"
+
+msgid "[ENVVAR]"
+msgstr "[环境变量]"
+
+msgid "[NUMBER:]VARNAME"
+msgstr "[数字:]变量名"
+
+msgid "[OPTIONS...]"
+msgstr "[选项...]"
+
+msgid "[OPTIONS] DISK"
+msgstr "[选项] 磁盘"
+
+msgid "[OPTIONS] FILE_OR_DEVICE"
+msgstr "[选项] 文件或设备"
+
+msgid "[PATTERN ...]"
+msgstr "[模式 ...]"
+
+msgid "[USERLIST]"
+msgstr "[用户列表]"
+
+msgid "[VALUE]..."
+msgstr "[值]..."
+
+msgid "[[-a|-u|-v] [-g WxH] TERM [TYPE]]"
+msgstr "[[-a|-u|-v] [-g WxH] 终端 [类型]]"
+
+msgid "[[year-]month-day] [hour:minute[:second]]"
+msgstr "[[年-]月-日] [时:分[:秒]]"
+
+msgid "attempting to read the core image `%s' from GRUB"
+msgstr "正在尝试从 GRUB 读取核心镜像“%s”"
+
+msgid "attempting to read the core image `%s' from GRUB again"
+msgstr "正在尝试再次从 GRUB 读取核心镜像“%s”"
+
+msgid "blocklist FILE"
+msgstr "blocklist 文件"
+
+msgid "cannot compress the kernel image"
+msgstr "无法压缩内核镜像"
+
+msgid "cannot read `%s' correctly"
+msgstr "无法正确读取“%s”"
+
+msgid "cmp FILE LOCAL"
+msgstr "cmp 文件 本地文件"
+
+msgid "compare fail at offset %llu"
+msgstr "在 %llu 处比较失败"
+
+msgid "cp FILE LOCAL"
+msgstr "cp 文件 本地文件"
+
+msgid "crc FILE"
+msgstr "crc 文件"
+
+msgid "device count exceeds limit"
+msgstr "设备计数超过限制"
+
+msgid "diskboot.img size must be %u bytes"
+msgstr "diskboot.img 的大小必须为 %u 字节"
+
+msgid "embedding is not possible, but this is required for cross-disk install"
+msgstr "无法嵌入，但在跨盘安装时是必须的"
+
+msgid "error: %s.\n"
+msgstr "错误：%s。\n"
+
+msgid "hex FILE"
+msgstr "hex 文件"
+
+msgid "invalid skip value %lld"
+msgstr "无效的跳过值 %lld"
+
+msgid "ls PATH"
+msgstr "ls PATH"
+
+msgid "no terminal specified"
+msgstr "没有指定终端。"
+
+msgid "no terminator in the core image"
+msgstr "核心镜像中没有终止符"
+
+msgid "non-sector-aligned data is found in the core file"
+msgstr "核心文件中发现未对齐的扇区"
+
+msgid "read error at offset %llu: %s"
+msgstr "在偏移 %llu 处发生读取错误：%s"
+
+msgid "the first sector of the core file is not sector-aligned"
+msgstr "核心文件的第一扇区未对齐"
+
+msgid "the sectors of the core file are too fragmented"
+msgstr "核心文件的扇区碎片太多"
+
+msgid "the size of `%s' is not %u"
+msgstr "“%s”的大小不是 %u"
+
+msgid "the size of `%s' is too large"
+msgstr "“%s”的尺寸太大"
+
+msgid "the size of `%s' is too small"
+msgstr "“%s”的尺寸太小"
+
+msgid "unable to identify a filesystem in %s; safety check can't be performed"
+msgstr "无法在 %s 中识别文件系统，无法执行安全性检测"

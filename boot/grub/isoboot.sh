@@ -26,7 +26,7 @@ function CheckLinuxType {
 	probe -q --set=devlbl --label (loop);
 	probe -u (loop) --set=loopuuid;
 	if test -f (loop)/boot/grub/loopback.cfg; then
-		menuentry "作为 Loopback ISO 启动 (推荐)" "$isofile" --class gnu-linux{
+		menuentry $"Boot ISO (Loopback)" "$isofile" --class gnu-linux{
 			set iso_path="$2"; export iso_path;
 			root=loop;
 			set theme=${prefix}/themes/slack/extern.txt; export theme;

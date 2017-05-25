@@ -9,15 +9,19 @@ function CHSLocale {
 		kcmdline="${kcmdline} locale=zh_CN.UTF-8";
 	fi;
 }
-menuentry "作为 Ubuntu LiveCD 启动" --class $icon{
+menuentry $"Boot Ubuntu From ISO" --class $icon{
 	set kcmdline="boot=casper noprompt noeject";
-	CHSLocale;
+	if [ "${lang}" == "zh_CN" ]; then
+		CHSLocale;
+	fi;
 	linux $vmlinuz_img $kcmdline $loopiso;
 	initrd $initrd_img;
 }
-menuentry "作为 Ubuntu LiveCD 启动 (persistent)" --class $icon{
+menuentry $"Boot Ubuntu From ISO (persistent)" --class $icon{
 	set kcmdline="boot=casper noprompt noeject persistent";
-	CHSLocale;
+	if [ "${lang}" == "zh_CN" ]; then
+		CHSLocale;
+	fi;
 	linux $vmlinuz_img $kcmdline $loopiso;
 	initrd $initrd_img;
 }

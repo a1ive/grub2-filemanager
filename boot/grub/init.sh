@@ -29,9 +29,10 @@ fi;
 for module in $modlist; do
 	insmod $module;
 done;
-loadfont ${prefix}/fonts/unicode.pf2.xz;
-set locale_dir=${prefix}/locale; export locale_dir;
-set lang=zh_CN; export lang;
+loadfont ${prefix}/fonts/unicode.xz;
+set locale_dir=${prefix}/locale;set secondary_locale_dir=${prefix}/locale/fm;
+export locale_dir; export secondary_locale_dir;
+source ${prefix}/lang.sh; export lang;
 set gfxmode=1024x768; export gfxmode;
 set gfxpayload=keep; export gfxpayload;
 terminal_output gfxterm;

@@ -18,29 +18,28 @@ function CHSLocale {
 	fi;
 }
 function ReadUsername {
-	echo "请输入登录用户名？默认:user 超级用户:root Devuan:devuan";
+	echo $"Please input the username. Default:user Super User:root Devuan:devuan";
 	read username;
 	if test -z "$username"; then
 		username="user";
 	fi;
 	kcmdline="${kcmdline} username=${username}";
 }
-menuentry "作为 Debian LiveCD 启动" --class $icon{
+menuentry $"Boot Debian Live From ISO" --class $icon{
 	set kcmdline="boot=live config";
-	CHSLocale;
+	if [ "${lang}" == "zh_CN" ]; then
+		CHSLocale;
+	fi;
 	ReadUsername;
 	linux $vmlinuz_img $kcmdline $loopiso;
 	initrd $initrd_img;
 }
-menuentry "作为 Debian Overlay CD 启动 (适用于 Clonezilla/GParted)" --class $icon{
+menuentry $"Boot Debian Overlay From ISO (Clonezilla/GParted)" --class $icon{
 	set kcmdline="boot=live config union=overlay";
-	CHSLocale;
+	if [ "${lang}" == "zh_CN" ]; then
+		CHSLocale;
+	fi;
 	ReadUsername;
-	linux $vmlinuz_img $kcmdline $loopiso;
-	initrd $initrd_img;
-}
-menuentry "作为 Debian LiveCD 启动 (安全模式)" --class $icon{
-	set kcmdline="boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash";
 	linux $vmlinuz_img $kcmdline $loopiso;
 	initrd $initrd_img;
 }

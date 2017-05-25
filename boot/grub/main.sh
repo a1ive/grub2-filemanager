@@ -52,7 +52,7 @@ function main{
 		done;
 	else
 		default=1;
-		menuentry "返回" --class go-previous{
+		menuentry $"Back" --class go-previous{
 			if ! regexp --set=lpath '(^.*)/.*$' "$path"; then
 				lpath="";
 			fi
@@ -61,7 +61,7 @@ function main{
 		fm_path="$path"; lua $prefix/enum_file.lua;
 		for name in $d_list; do
 			file_name="${path}/${name}";
-			menuentry "$name" "$file_name" --class dir{
+			menuentry "${name}" "$file_name" --class dir{
 				file_name="$2";
 				lua $prefix/get_name.lua;
 				path="$file_name"; export path; configfile $prefix/main.sh;
@@ -86,96 +86,96 @@ function main{
 	hiddenmenu;
 }
 function open{
-	menuentry "返回"  --class go-previous{
+	menuentry $"Back"  --class go-previous{
 		export path; configfile $prefix/main.sh;
 	}
 	if regexp 'cfg' $file_type; then
-		menuentry "作为Grub2菜单打开"  --class cfg{
+		menuentry ""  --class cfg{
 			regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
 			configfile "$file_name";
 		}
-		menuentry "作为Syslinux菜单打开"  --class cfg{
+		menuentry $"Open As Grub2 Menu"  --class cfg{
 			regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
 			syslinux_configfile $file_name;
 		}
 	elif regexp 'lst' $file_type; then
 		if regexp 'pc' $grub_platform; then
-			menuentry "作为GRUB4DOS菜单打开"  --class cfg{
+			menuentry $"Open As GRUB4DOS Menu"  --class cfg{
 				set g4d_param="config";
 				lua $prefix/g4d_path.lua;
 				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
 		else
-			menuentry "作为GRUB Legacy菜单打开"  --class cfg{
+			menuentry $"Open As GRUB-Legacy Menu"  --class cfg{
 				regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
 				legacy_configfile "$file_name";
 			}
 		fi;
 	elif regexp 'lua' $file_type; then
-		menuentry "作为Lua脚本加载"  --class lua{
+		menuentry $"Open As Lua Script"  --class lua{
 			regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
 			main_ops="llua"; export main_ops;
 			export path; configfile $prefix/main.sh;
 		}
 	elif regexp 'efi' $file_type; then
 		if regexp 'efi' $grub_platform; then
-			menuentry "作为EFI可执行文件运行"  --class uefi{
+			menuentry $"Open As EFI"  --class uefi{
 				chainloader "$file_name";
 			}
 		fi
 	elif regexp 'image' $file_type; then
-		menuentry "作为图像打开" --class png{
+		menuentry $"Open As Image" --class png{
 			background_image "$file_name";
-			echo -n "Press [ESC] to continue...";
+			echo -n $"Press [ESC] to continue...";
 			sleep --interruptible 999;
 			background_image ${prefix}/themes/slack/black.png;
 		}
 	elif regexp 'disk' $file_type; then
-		menuentry "挂载镜像" --class img{
+		menuentry $"Mount Image" --class img{
 			loopback img "$file_name";
 			path=""; export path; configfile $prefix/main.sh;
 		}
 		if regexp 'pc' $grub_platform; then
-			menuentry "使用memdisk加载为软盘" --class img{
+			menuentry $"Boot Floppy Image (memdisk)" --class img{
 				linux16 $prefix/tools/memdisk floppy raw;
 				echo "Loading $file_name";
 				initrd16 "$file_name";
 			}
-			menuentry "使用GRUB4DOS加载为软盘" --class img{
+			menuentry $"Boot Floppy Image (GRUB4DOS)" --class img{
 				set g4d_param="(fd0)";
 				lua $prefix/g4d_path.lua;
 				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
-			menuentry "使用memdisk加载为硬盘" --class img{
+			menuentry $"Boot Hard Drive Image (memdisk)" --class img{
 				linux16 $prefix/tools/memdisk harddisk raw;
 				echo "Loading $file_name";
 				initrd16 "$file_name";
 			}
-			menuentry "使用GRUB4DOS加载为硬盘" --class img{
+			menuentry $"Boot Hard Drive Image (GRUB4DOS)" --class img{
 				set g4d_param="(hd0)";
 				lua $prefix/g4d_path.lua;
 				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 			}
 		fi;
 	elif regexp 'tar' $file_type; then
-		menuentry "作为压缩文件打开" --class 7z{
+		menuentry $"Open As Archiver" --class 7z{
 			loopback tar "$file_name";
 			path="(tar)"; export path; configfile $prefix/main.sh;
 		}
 	elif regexp 'iso' $file_type; then
 		loopback loop "$file_name";
-		menuentry "查看ISO内容"  --class iso{
+		menuentry $"Mount ISO"  --class iso{
 			path="(loop)"; export path; configfile $prefix/main.sh;
 		}
 		source $prefix/isoboot.sh;
 		CheckLinuxType;
 		if regexp 'pc' $grub_platform; then
-			menuentry "使用memdisk加载ISO" --class iso{
+			menuentry $"Boot ISO (memdisk)" --class iso{
 				loopback -d loop;
 				linux16 $prefix/tools/memdisk iso raw;
 				initrd16 "$file_name";
 			}
-			menuentry "使用GRUB4DOS加载ISO" --class iso{
+			menuentry $"Boot ISO (GRUB4DOS)" --class iso{
 				set g4d_param="(hd32)";
 				lua $prefix/g4d_path.lua;
 				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
@@ -187,50 +187,50 @@ function open{
 				set efi_file="bootx64.efi";
 			fi;
 			if test -f "(loop)/efi/boot/${efi_file}"; then
-				menuentry "仅加载EFI文件" --class uefi{
+				menuentry $"Boot EFI Files" --class uefi{
 					chainloader (loop)/efi/boot/${efi_file};
 				}
 			fi;
 		fi;
 	elif regexp 'pf2' $file_type; then
-		menuentry "加载pf2字库文件" --class pf2{
+		menuentry $"Open As Font" --class pf2{
 			loadfont "$file_name";
 		}
 	elif regexp 'mod' $file_type; then
-		menuentry "加载GRUB 2模块" --class mod{
+		menuentry $"Insert Grub2 Module" --class mod{
 			insmod "$file_name";
 		}
 	fi;
 	if regexp 'pc' $grub_platform; then
 		if file --is-x86-bios-bootsector "$file_name"; then
-			menuentry "作为BIOS引导扇区加载"  --class bin{
+			menuentry $"Chainload BIOS Boot Sector"  --class bin{
 				chainloader --force "$file_name";
 			}
 		elif regexp '.*\/[0-9a-zA-Z]+[lL][dD][rR]$' "$file_name"; then
-			menuentry "作为NTLDR加载"  --class wim{
+			menuentry $"Chainload NTLDR"  --class wim{
 				ntldr "$file_name";
 			}
 		elif regexp '.*\/[bB][oO][oO][tT][mM][gG][rR]$' "$file_name"; then
-			menuentry "作为BOOTMGR加载"  --class wim{
+			menuentry $"Chainload BOOTMGR"  --class wim{
 				ntldr "$file_name";
 			}
 		fi;
-		menuentry "作为GRUB4DOS外部命令加载"  --class bin{
+		menuentry $"Open As GRUB4DOS MOD"  --class bin{
 			set g4d_param="command";
 			lua $prefix/g4d_path.lua;
 			linux $prefix/tools/grub.exe --config-file=$g4dcmd;
 		}
 	fi;
 	if file --is-x86-multiboot "$file_name"; then
-		menuentry "作为multiboot内核加载"  --class exe{
+		menuentry $"Boot Multiboot Kernel"  --class exe{
 			multiboot "$file_name";
 		}
 	elif file --is-x86-multiboot2 "$file_name"; then
-		menuentry "作为multiboot2内核加载"  --class exe{
+		menuentry $"Boot Multiboot2 Kernel"  --class exe{
 			multiboot2 "$file_name";
 		}
 	elif file --is-x86-linux "$file_name"; then
-		menuentry "作为linux内核加载"  --class exe{
+		menuentry $"Boot Linux Kernel"  --class exe{
 			if regexp 'pc' $grub_platform; then
 				linux16 "$file_name";
 			else
@@ -238,16 +238,16 @@ function open{
 			fi;
 		}
 	fi;
-	menuentry "查看文本内容"  --class txt{
+	menuentry $"Open As Text"  --class txt{
 		main_ops="text"; export main_ops;
 		configfile $prefix/main.sh;
 	}
-	menuentry "查看文件信息"  --class info{
+	menuentry $"File Info"  --class info{
 		set pager=1;
 		echo "Path"; echo "$file_name";
 		echo "CRC32"; crc32 "$file_name";
 		echo "hexdump"; hexdump "$file_name";
-		echo -n "Press [ESC] to continue...";
+		echo -n $"Press [ESC] to continue...";
 		sleep --interruptible 999;
 	}
 	hiddenmenu;
@@ -262,7 +262,7 @@ elif regexp 'open' "$main_ops"; then
 elif regexp 'llua' "$main_ops"; then
 	main_ops="open"; export main_ops;
 	lua "$file_name";
-	echo -n "Press [ESC] to continue...";
+	echo -n $"Press [ESC] to continue...";
 	sleep --interruptible 999;
 	export path; configfile $prefix/main.sh;
 elif regexp 'text' "$main_ops"; then

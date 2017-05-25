@@ -1,0 +1,2039 @@
+# Traditional Chinese translation for grub.
+# Copyright (C) 2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the grub package.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: grub 1.97+20110101\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-01 14:01+0100\n"
+"PO-Revision-Date: 2011-07-25 02:26+0800\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"Language: \n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: grub-core/commands/acpi.c:38
+msgid "Don't load host tables specified by comma-separated list."
+msgstr "不要載入用半形逗號隔開的列表所指定的主控表。"
+
+#: grub-core/commands/acpi.c:41
+msgid "Load only tables specified by comma-separated list."
+msgstr "僅載入用半形逗號隔開的列表所指定的主控表。"
+
+#: grub-core/commands/acpi.c:42
+msgid "Expose v1 tables."
+msgstr "顯露 v1 表。"
+
+#: grub-core/commands/acpi.c:43
+msgid "Expose v2 and v3 tables."
+msgstr "顯露 v2 以及 v3 表。"
+
+#: grub-core/commands/acpi.c:44
+msgid "Set OEMID of RSDP, XSDT and RSDT."
+msgstr "設定 RSDP、XSDT、RSDT 的 OEMID。"
+
+#: grub-core/commands/acpi.c:46
+msgid "Set OEMTABLE ID of RSDP, XSDT and RSDT."
+msgstr "設定 RSDP、XSDT、RSDT 的 OEMTABLE ID。"
+
+#: grub-core/commands/acpi.c:48
+msgid "Set OEMTABLE revision of RSDP, XSDT and RSDT."
+msgstr "設定 RSDP、XSDT、RSDT 的 OEMTABLE 修訂版本。"
+
+#: grub-core/commands/acpi.c:50
+msgid "Set creator field of RSDP, XSDT and RSDT."
+msgstr "設定 RSDP、XSDT、RSDT 的建立者欄位。"
+
+#: grub-core/commands/acpi.c:52
+msgid "Set creator revision of RSDP, XSDT and RSDT."
+msgstr "設定 RSDP、XSDT、RSDT 的建立者修訂版。"
+
+#: grub-core/commands/acpi.c:53
+msgid "Don't update EBDA. May fix failures or hangs on some. BIOSes but makes it ineffective with OS not receiving RSDP from GRUB."
+msgstr "不要更新 EBDA。這也許能修正某些 BIOS 上的失敗或凍住，但可能會讓 OS 無法從 GRUB 接收 RSDP 而變得沒效率。"
+
+#: grub-core/commands/acpi.c:761
+msgid "[-1|-2] [--exclude=TABLE1,TABLE2|--load-only=table1,table2] FILE1 [FILE2] [...]"
+msgstr "[-1|-2] [--exclude=TABLE1,TABLE2|--load-only=table1,table2] FILE1 [FILE2] [...]"
+
+#: grub-core/commands/acpi.c:764
+msgid "Load host ACPI tables and tables specified by arguments."
+msgstr "載入主控 ACPI 表以及透過引數指定的表。"
+
+#: grub-core/commands/blocklist.c:114 grub-core/commands/cat.c:95
+#: grub-core/commands/configfile.c:63 grub-core/commands/configfile.c:66
+#: grub-core/commands/configfile.c:72 grub-core/commands/configfile.c:78
+#: grub-core/commands/configfile.c:84 grub-core/commands/hashsum.c:31
+#: grub-core/commands/legacycfg.c:757 grub-core/commands/legacycfg.c:762
+#: grub-core/commands/legacycfg.c:767 grub-core/commands/legacycfg.c:772
+#: grub-core/commands/minicmd.c:202 grub-core/commands/testload.c:148
+#: grub-core/efiemu/main.c:316 grub-core/loader/i386/bsd.c:1945
+#: grub-core/loader/i386/bsd.c:1948 grub-core/loader/i386/bsd.c:1951
+#: util/grub-setup.c:671 util/grub-setup.c:673 util/grub-setup.c:677
+msgid "FILE"
+msgstr "FILE"
+
+#: grub-core/commands/blocklist.c:114
+msgid "Print a block list."
+msgstr "列印區塊清單。"
+
+#: grub-core/commands/boot.c:190
+msgid "Boot an operating system."
+msgstr "啟動作業系統。"
+
+#: grub-core/commands/cat.c:30
+msgid "Accept DOS-style CR/NL line endings."
+msgstr "接受 DOS 風格的 CR/NL 列結尾。"
+
+#: grub-core/commands/cat.c:95 grub-core/commands/minicmd.c:202
+msgid "Show the contents of a file."
+msgstr "顯示檔案的內容。"
+
+#: grub-core/commands/cmp.c:112
+msgid "FILE1 FILE2"
+msgstr "FILE1 FILE2"
+
+#: grub-core/commands/cmp.c:112
+msgid "Compare two files."
+msgstr "比較兩個檔案。"
+
+#: grub-core/commands/configfile.c:63
+msgid "Load another config file."
+msgstr "載入另一個組態檔。"
+
+#: grub-core/commands/configfile.c:67 grub-core/commands/configfile.c:85
+msgid "Load another config file without changing context."
+msgstr "載入另一個組態檔而不變更情境。"
+
+#: grub-core/commands/configfile.c:73 grub-core/commands/configfile.c:79
+msgid "Load another config file without changing context but take only menuentries."
+msgstr "載入另一個組態檔而不變更情境，僅擷取選單條目。"
+
+#: grub-core/commands/date.c:139
+msgid "[[year-]month-day] [hour:minute[:second]]"
+msgstr "[[year-]month-day] [hour:minute[:second]]"
+
+#: grub-core/commands/date.c:140
+msgid "Command to display/set current datetime."
+msgstr "顯示/設定目前日期時間的指令。"
+
+#: grub-core/commands/echo.c:28
+msgid "Do not output the trailing newline."
+msgstr "不要輸出曳尾換列。"
+
+#: grub-core/commands/echo.c:29
+msgid "Enable interpretation of backslash escapes."
+msgstr "啟用反斜線跳出解譯。"
+
+#: grub-core/commands/echo.c:132
+msgid "[-e|-n] STRING"
+msgstr "[-e|-n] STRING"
+
+#: grub-core/commands/echo.c:132
+msgid "Display a line of text."
+msgstr "顯示文字的一列。"
+
+#: grub-core/commands/efi/fixvideo.c:103
+msgid "Fix video problem."
+msgstr "修正視訊問題。"
+
+#: grub-core/commands/efi/loadbios.c:207
+msgid "Fake BIOS."
+msgstr "偽 BIOS。"
+
+#: grub-core/commands/efi/loadbios.c:211
+msgid "Load BIOS dump."
+msgstr "載入 BIOS 傾印。"
+
+#: grub-core/commands/gptsync.c:244
+msgid "DEVICE [PARTITION[+/-[TYPE]]] ..."
+msgstr "DEVICE [PARTITION[+/-[TYPE]]] ..."
+
+#: grub-core/commands/gptsync.c:245
+msgid "Fill hybrid MBR of GPT drive DEVICE. Specified partitions will be a part of hybrid MBR. Up to 3 partitions are allowed. TYPE is an MBR type. + means that partition is active. Only one partition can be active."
+msgstr "填入 GPT 裝置 DEVICE 的混合式 MBR。指定的分割區會成為混合式 MBR 的一部分。最多允許 3 個分割區。TYPE 為 MBR 類型。+ 代表分割區為 active，僅有一個分割區能有 active 標籤。"
+
+#: grub-core/commands/halt.c:39
+msgid "Halts the computer.  This command does not work on all firmware implementations."
+msgstr "關閉電腦。這個指令不是對所有的韌體實作都有用。"
+
+#: grub-core/commands/hashsum.c:30
+msgid "Specify hash to use."
+msgstr "指定要使用的雜湊。"
+
+#: grub-core/commands/hashsum.c:30
+msgid "HASH"
+msgstr "HASH"
+
+#: grub-core/commands/hashsum.c:31
+msgid "Check hash list file."
+msgstr "檢查雜湊清單檔。"
+
+#: grub-core/commands/hashsum.c:32
+msgid "Base directory for hash list."
+msgstr "雜湊清單的基礎目錄。"
+
+#: grub-core/commands/hashsum.c:32
+msgid "DIRECTORY"
+msgstr "DIRECTORY"
+
+#: grub-core/commands/hashsum.c:34
+msgid "Don't stop after first error."
+msgstr "在第一個錯誤後不要停止。"
+
+#: grub-core/commands/hashsum.c:35
+msgid "Uncompress file before checksumming."
+msgstr "在處理校驗計算碼前解壓縮檔案。"
+
+#: grub-core/commands/hashsum.c:260 grub-core/commands/hashsum.c:265
+#: grub-core/commands/hashsum.c:270 grub-core/commands/hashsum.c:275
+#: grub-core/commands/hashsum.c:280 grub-core/commands/hashsum.c:286
+msgid "Compute or check hash checksum."
+msgstr "計算或檢查雜湊校驗計算碼。"
+
+#: grub-core/commands/hashsum.c:263 grub-core/commands/hashsum.c:268
+#: grub-core/commands/hashsum.c:273 grub-core/commands/hashsum.c:278
+#: grub-core/commands/hashsum.c:284
+msgid "[-c FILE [-p PREFIX]] [FILE1 [FILE2 ...]]"
+msgstr "[-c FILE [-p PREFIX]] [FILE1 [FILE2 ...]]"
+
+#: grub-core/commands/hdparm.c:30
+msgid ""
+"Set Advanced Power Management\n"
+"(1=low, ..., 254=high, 255=off)."
+msgstr ""
+"設定進階能源管理\n"
+"(1=低，...254=高，255=關)。"
+
+#: grub-core/commands/hdparm.c:33
+msgid "Check power mode."
+msgstr "檢查能源模式。"
+
+#: grub-core/commands/hdparm.c:34
+msgid "Freeze ATA security settings until reset."
+msgstr "凍結 ATA 安全設定直至重設為止。"
+
+#: grub-core/commands/hdparm.c:36
+msgid "Check SMART health status."
+msgstr "檢查 SMART 健康狀態。"
+
+#: grub-core/commands/hdparm.c:37
+msgid ""
+"Set Automatic Acoustic Management\n"
+"(0=off, 128=quiet, ..., 254=fast)."
+msgstr ""
+"設定自動聽覺管理\n"
+"(0=關，128=安靜，...254=快)。"
+
+#: grub-core/commands/hdparm.c:40
+msgid ""
+"Set standby timeout\n"
+"(0=off, 1=5s, 2=10s, ..., 240=20m, 241=30m, ...)."
+msgstr ""
+"設定待機逾時期\n"
+"(0=關，1=5秒，2=10秒，...240=20分，241=30分...)。"
+
+#: grub-core/commands/hdparm.c:43
+msgid "Set drive to standby mode."
+msgstr "設定裝置為待機模式。"
+
+#: grub-core/commands/hdparm.c:44
+msgid "Set drive to sleep mode."
+msgstr "設定裝置為睡眠模式。"
+
+#: grub-core/commands/hdparm.c:45
+msgid "Print drive identity and settings."
+msgstr "列印裝置識別與設定。"
+
+#: grub-core/commands/hdparm.c:47
+msgid "Dump contents of ATA IDENTIFY sector."
+msgstr "傾印 ATA IDENTIFY 磁區內容。"
+
+#: grub-core/commands/hdparm.c:49
+msgid "Disable/enable SMART (0/1)."
+msgstr "停用/啟用 SMART (0/1)。"
+
+#: grub-core/commands/hdparm.c:50
+msgid "Do not print messages."
+msgstr "不要列印訊息。"
+
+#: grub-core/commands/hdparm.c:413
+msgid "[OPTIONS] DISK"
+msgstr "[OPTIONS] DISK"
+
+#: grub-core/commands/hdparm.c:414
+msgid "Get/set ATA disk parameters."
+msgstr "取得/設定 ATA 磁碟參數。"
+
+#: grub-core/commands/help.c:118 grub-core/lib/arg.c:110
+msgid "Usage:"
+msgstr "用法："
+
+#: grub-core/commands/help.c:134
+msgid "[PATTERN ...]"
+msgstr "[PATTERN ...]"
+
+#: grub-core/commands/help.c:135
+msgid "Show a help message."
+msgstr "顯示幫助訊息。"
+
+#: grub-core/commands/hexdump.c:29
+msgid "Skip offset bytes from the beginning of file."
+msgstr "跳過檔案開頭的偏移位元組。"
+
+#: grub-core/commands/hexdump.c:31
+msgid "Read only LENGTH bytes."
+msgstr "僅讀取 LENGTH 位元組。"
+
+#: grub-core/commands/hexdump.c:123
+msgid "[OPTIONS] FILE_OR_DEVICE"
+msgstr "[OPTIONS] FILE_OR_DEVICE"
+
+#: grub-core/commands/hexdump.c:124
+msgid "Dump the contents of a file or memory."
+msgstr "傾印檔案或記憶體的內容。"
+
+#: grub-core/commands/i386/cpuid.c:37
+msgid "Check for long mode flag (default)."
+msgstr "檢查 long 模式旗幟 (預設)。"
+
+#: grub-core/commands/i386/cpuid.c:92
+msgid "Check for CPU features."
+msgstr "檢查 CPU 功能。"
+
+#: grub-core/commands/i386/pc/drivemap.c:38
+msgid "Show the current mappings."
+msgstr "顯示目前的映射關係。"
+
+#: grub-core/commands/i386/pc/drivemap.c:39
+msgid "Reset all mappings to the default values."
+msgstr "將所有映射關係重設為預設值。"
+
+#: grub-core/commands/i386/pc/drivemap.c:40
+msgid "Perform both direct and reverse mappings."
+msgstr "執行直接映射關係以及反轉映射關係。"
+
+#: grub-core/commands/i386/pc/drivemap.c:406
+msgid "-l | -r | [-s] grubdev osdisk."
+msgstr "-l | -r | [-s] grubdev osdisk。"
+
+#: grub-core/commands/i386/pc/drivemap.c:407
+msgid "Manage the BIOS drive mappings."
+msgstr "管理 BIOS 裝置映射關係。"
+
+#: grub-core/commands/i386/pc/halt.c:29
+msgid "Do not use APM to halt the computer."
+msgstr "不要使用 APM 來關閉電腦。"
+
+#: grub-core/commands/i386/pc/halt.c:118
+msgid "Halt the system, if possible using APM."
+msgstr "關閉系統，如果可能的話使用 APM。"
+
+#: grub-core/commands/i386/pc/lsapm.c:105
+msgid "Show APM information."
+msgstr "顯示 APM 資訊。"
+
+#: grub-core/commands/i386/pc/play.c:266
+msgid "FILE | TEMPO [PITCH1 DURATION1] [PITCH2 DURATION2] ... "
+msgstr "FILE | TEMPO [PITCH1 DURATION1] [PITCH2 DURATION2] ... "
+
+#: grub-core/commands/i386/pc/play.c:267
+msgid "Play a tune."
+msgstr "播放音調。"
+
+#: grub-core/commands/i386/pc/pxecmd.c:46
+msgid "Unload PXE environment."
+msgstr "卸載 PXE 環境。"
+
+#: grub-core/commands/ieee1275/suspend.c:43
+msgid "Return to Open Firmware prompt."
+msgstr "返回 Open Firmware 提示。"
+
+#: grub-core/commands/iorw.c:32 grub-core/commands/memrw.c:31
+msgid "Save read value into variable VARNAME."
+msgstr "儲存讀取值至變數 VARNAME。"
+
+#: grub-core/commands/iorw.c:33
+msgid "VARNAME"
+msgstr "VARNAME"
+
+#: grub-core/commands/iorw.c:121 grub-core/commands/iorw.c:124
+#: grub-core/commands/iorw.c:127
+msgid "PORT"
+msgstr "PORT"
+
+#: grub-core/commands/iorw.c:121
+msgid "Read byte from PORT."
+msgstr "從 PORT 讀取位元組。"
+
+#: grub-core/commands/iorw.c:124
+msgid "Read word from PORT."
+msgstr "從 PORT 讀取單詞。"
+
+#: grub-core/commands/iorw.c:127
+msgid "Read dword from PORT."
+msgstr "從 PORT 讀取 dword。"
+
+#: grub-core/commands/iorw.c:130 grub-core/commands/iorw.c:134
+msgid "PORT VALUE [MASK]"
+msgstr "PORT VALUE [MASK]"
+
+#: grub-core/commands/iorw.c:131
+msgid "Write byte VALUE to PORT."
+msgstr "將位元組 VALUE 寫入 PORT。"
+
+#: grub-core/commands/iorw.c:135
+msgid "Write word VALUE to PORT."
+msgstr "將單詞 VALUE 寫入 PORT。"
+
+#: grub-core/commands/iorw.c:138 grub-core/commands/memrw.c:132
+#: grub-core/commands/memrw.c:135 grub-core/commands/memrw.c:138
+msgid "ADDR VALUE [MASK]"
+msgstr "ADDR VALUE [MASK]"
+
+#: grub-core/commands/iorw.c:139
+msgid "Write dword VALUE to PORT."
+msgstr "將 dword VALUE 寫入 PORT。"
+
+#: grub-core/commands/keylayouts.c:291
+msgid "Load a keyboard layout."
+msgstr "載入鍵盤配置。"
+
+#: grub-core/commands/keystatus.c:28
+msgid "Check Shift key."
+msgstr "檢查 Shift 鍵。"
+
+#: grub-core/commands/keystatus.c:29
+msgid "Check Control key."
+msgstr "檢查 Ctrl 鍵。"
+
+#: grub-core/commands/keystatus.c:30
+msgid "Check Alt key."
+msgstr "檢查 Alt 鍵。"
+
+#: grub-core/commands/keystatus.c:100
+msgid "[--shift] [--ctrl] [--alt]"
+msgstr "[--shift] [--ctrl] [--alt]"
+
+#: grub-core/commands/keystatus.c:101
+msgid "Check key modifier status."
+msgstr "檢查按鍵的修飾鍵狀態。"
+
+#: grub-core/commands/legacycfg.c:758
+msgid "Parse legacy config in same context"
+msgstr "於相同情境解析舊式組態"
+
+#: grub-core/commands/legacycfg.c:763
+msgid "Parse legacy config in new context"
+msgstr "於新情境解析舊式組態"
+
+#: grub-core/commands/legacycfg.c:768
+msgid "Parse legacy config in same context taking onl entries"
+msgstr "於相同情境解析舊式組態，僅擷取條目"
+
+#: grub-core/commands/legacycfg.c:773
+msgid "Parse legacy config in new context taking onl entries"
+msgstr "於新情境解析舊式組態，僅擷取條目"
+
+#: grub-core/commands/legacycfg.c:777
+msgid "[--no-mem-option] [--type=TYPE] FILE [ARG ...]"
+msgstr "[--no-mem-option] [--type=TYPE] FILE [ARG ...]"
+
+#: grub-core/commands/legacycfg.c:778
+msgid "Simulate grub-legacy kernel command"
+msgstr "模擬 grub-legacy 內核指令"
+
+#: grub-core/commands/legacycfg.c:782 grub-core/commands/legacycfg.c:786
+msgid "FILE [ARG ...]"
+msgstr "FILE [ARG ...]"
+
+#: grub-core/commands/legacycfg.c:783
+msgid "Simulate grub-legacy initrd command"
+msgstr "模擬 grub-legacy initrd 指令"
+
+#: grub-core/commands/legacycfg.c:787
+msgid "Simulate grub-legacy modulenounzip command"
+msgstr "模擬 grub-legacy modulenounzip 指令"
+
+#: grub-core/commands/legacycfg.c:791 grub-core/commands/legacycfg.c:796
+msgid "[--md5] PASSWD [FILE]"
+msgstr "[--md5] PASSWD [FILE]"
+
+#: grub-core/commands/legacycfg.c:792
+msgid "Simulate grub-legacy password command"
+msgstr "模擬 grub-legacy password 指令"
+
+#: grub-core/commands/legacycfg.c:797
+msgid "Simulate grub-legacy password command in menuentry mode"
+msgstr "於選單條目模式模擬 grub-legacy password 指令"
+
+#: grub-core/commands/loadenv.c:33
+msgid "Specify filename."
+msgstr "指定檔名。"
+
+#: grub-core/commands/loadenv.c:378 grub-core/commands/loadenv.c:382
+msgid "[-f FILE]"
+msgstr "[-f FILE]"
+
+#: grub-core/commands/loadenv.c:379
+msgid "Load variables from environment block file."
+msgstr "從環境區塊檔載入變數。"
+
+#: grub-core/commands/loadenv.c:383
+msgid "List variables from environment block file."
+msgstr "從環境區塊檔列出變數。"
+
+#: grub-core/commands/loadenv.c:387
+msgid "[-f FILE] variable_name [...]"
+msgstr "[-f FILE] variable_name [...]"
+
+#: grub-core/commands/loadenv.c:388
+msgid "Save variables to environment block file."
+msgstr "儲存變數至環境區塊檔。"
+
+#: grub-core/commands/ls.c:37
+msgid "Show a long list with more detailed information."
+msgstr "顯示有更多詳細資訊的長清單。"
+
+#: grub-core/commands/ls.c:38
+msgid "Print sizes in a human readable format."
+msgstr "以人類可理解的格式列印大小。"
+
+#: grub-core/commands/ls.c:39
+msgid "List all files."
+msgstr "列出所有檔案。"
+
+#: grub-core/commands/ls.c:273
+msgid "[-l|-h|-a] [FILE ...]"
+msgstr "[-l|-h|-a] [FILE ...]"
+
+#: grub-core/commands/ls.c:274
+msgid "List devices and files."
+msgstr "列出裝置與檔案。"
+
+#: grub-core/commands/lsacpi.c:194
+msgid "Show v1 tables only."
+msgstr "僅顯示 v1 表。"
+
+#: grub-core/commands/lsacpi.c:195
+msgid "Show v2 and v3 tablesv only."
+msgstr "僅顯示 v2 與 v3 表。"
+
+#: grub-core/commands/lsacpi.c:241
+msgid "[-1|-2]"
+msgstr "[-1|-2]"
+
+#: grub-core/commands/lsacpi.c:242
+msgid "Show ACPI information."
+msgstr "顯示 ACPI 資訊。"
+
+#: grub-core/commands/lsmmap.c:66
+msgid "List memory map provided by firmware."
+msgstr "列出韌體提供的記憶體映射。"
+
+#: grub-core/commands/lspci.c:228
+msgid "List PCI devices."
+msgstr "列出 PCI 裝置。"
+
+#: grub-core/commands/memrw.c:123 grub-core/commands/memrw.c:126
+#: grub-core/commands/memrw.c:129 grub-core/commands/minicmd.c:208
+msgid "ADDR"
+msgstr "ADDR"
+
+#: grub-core/commands/memrw.c:123
+msgid "Read byte from ADDR."
+msgstr "從 ADDR 讀取位元組。"
+
+#: grub-core/commands/memrw.c:126
+msgid "Read word from ADDR."
+msgstr "從 ADDR 讀取單詞。"
+
+#: grub-core/commands/memrw.c:129
+msgid "Read dword from ADDR."
+msgstr "從 ADDR 讀取 dword。"
+
+#: grub-core/commands/memrw.c:132
+msgid "Write byte VALUE to ADDR."
+msgstr "將位元組 VALUE 寫入 ADDR。"
+
+#: grub-core/commands/memrw.c:135
+msgid "Write word VALUE to ADDR."
+msgstr "將單詞 VALUE 寫入 ADDR。"
+
+#: grub-core/commands/memrw.c:138
+msgid "Write dword VALUE to ADDR."
+msgstr "將 dword VALUE 寫入 ADDR。"
+
+#: grub-core/commands/menuentry.c:31
+msgid "Menu entry type."
+msgstr "選單條目類型。"
+
+#: grub-core/commands/menuentry.c:33
+msgid "Users allowed to boot this entry."
+msgstr "使用者可以藉由此條目開機。"
+
+#: grub-core/commands/menuentry.c:35
+msgid "Keyboard key for this entry."
+msgstr "此條目的鍵盤按鍵。"
+
+#: grub-core/commands/menuentry.c:37
+msgid "Menu entry definition as a string."
+msgstr "選單條目定義為字串。"
+
+#: grub-core/commands/menuentry.c:293 grub-core/commands/menuentry.c:297
+#: grub-core/tests/test_blockarg.c:44
+msgid "BLOCK"
+msgstr "BLOCK"
+
+#: grub-core/commands/menuentry.c:293
+msgid "Define a menuentry."
+msgstr "定義選單條目。"
+
+#: grub-core/commands/menuentry.c:297
+msgid "Define a submenu."
+msgstr "定義子選單。"
+
+#: grub-core/commands/minicmd.c:205
+msgid "Show this message."
+msgstr "顯示這個訊息。"
+
+#: grub-core/commands/minicmd.c:208
+msgid "Dump memory."
+msgstr "傾印記憶體。"
+
+#: grub-core/commands/minicmd.c:211 grub-core/kern/corecmd.c:193
+msgid "MODULE"
+msgstr "MODULE"
+
+#: grub-core/commands/minicmd.c:211
+msgid "Remove a module."
+msgstr "移除模組。"
+
+#: grub-core/commands/minicmd.c:214
+msgid "Show loaded modules."
+msgstr "顯示載入的模組。"
+
+#: grub-core/commands/minicmd.c:217
+msgid "Exit from GRUB."
+msgstr "離開 GRUB。"
+
+#: grub-core/commands/parttool.c:324
+msgid "PARTITION COMMANDS"
+msgstr "PARTITION COMMANDS"
+
+#: grub-core/commands/password.c:83
+msgid "USER PASSWORD"
+msgstr "USER PASSWORD"
+
+#: grub-core/commands/password.c:84
+msgid "Set user password (plaintext). Unrecommended and insecure."
+msgstr "設定使用者密碼 (純文字)。不建議且不安全。"
+
+#: grub-core/commands/password_pbkdf2.c:190
+msgid "USER PBKDF2_PASSWORD"
+msgstr "USER PBKDF2_PASSWORD"
+
+#: grub-core/commands/password_pbkdf2.c:191
+msgid "Set user password (PBKDF2). "
+msgstr "設定使用者密碼 (PBKDF2)。"
+
+#: grub-core/commands/probe.c:38
+msgid "Set a variable to return value."
+msgstr "設定要傳回值的變數。"
+
+#: grub-core/commands/probe.c:39
+msgid "Determine driver."
+msgstr "判斷驅動程式。"
+
+#: grub-core/commands/probe.c:40
+msgid "Determine partition map type."
+msgstr "判斷分割對應類型。"
+
+#: grub-core/commands/probe.c:41
+msgid "Determine filesystem type."
+msgstr "判斷檔案系統類型。"
+
+#: grub-core/commands/probe.c:42
+msgid "Determine filesystem UUID."
+msgstr "判斷檔案系統 UUID。"
+
+#: grub-core/commands/probe.c:43
+msgid "Determine filesystem label."
+msgstr "判斷檔案系統標籤。"
+
+#: grub-core/commands/probe.c:153
+msgid "[DEVICE]"
+msgstr "[DEVICE]"
+
+#: grub-core/commands/probe.c:154
+msgid "Retrieve device info."
+msgstr "擷取裝置資訊。"
+
+#: grub-core/commands/read.c:83
+msgid "[ENVVAR]"
+msgstr "[ENVVAR]"
+
+#: grub-core/commands/read.c:84
+msgid "Set variable with user input."
+msgstr "以使用者輸入設定變數。"
+
+#: grub-core/commands/reboot.c:39
+msgid "Reboot the computer."
+msgstr "重新開機。"
+
+#: grub-core/commands/regexp.c:33
+msgid "Variable names to update with matches."
+msgstr "要用符合項目來更新的變數名稱。"
+
+#: grub-core/commands/regexp.c:34
+msgid "[NUMBER:]VARNAME"
+msgstr "[NUMBER:]VARNAME"
+
+#: grub-core/commands/regexp.c:138
+msgid "REGEXP STRING"
+msgstr "REGEXP STRING"
+
+#: grub-core/commands/regexp.c:139
+msgid "Test if REGEXP matches STRING."
+msgstr "測試 REGEXP 是否能比對到 STRING。"
+
+#: grub-core/commands/search.c:230
+msgid "NAME [VARIABLE] [HINTS]"
+msgstr "NAME [VARIABLE] [HINTS]"
+
+#: grub-core/commands/search_file.c:5
+msgid "Search devices by file. If VARIABLE is specified, the first device found is set to a variable."
+msgstr "透過檔案搜尋裝置。若有指定 VARIABLE，變數會被設為第一個找到的裝置。"
+
+#: grub-core/commands/search_label.c:5
+msgid "Search devices by label. If VARIABLE is specified, the first device found is set to a variable."
+msgstr "透過標籤搜尋裝置。若有指定 VARIABLE，變數會被設為第一個找到的裝置。"
+
+#: grub-core/commands/search_uuid.c:5
+msgid "Search devices by UUID. If VARIABLE is specified, the first device found is set to a variable."
+msgstr "透過 UUID 搜尋裝置。若有指定 VARIABLE，變數會被設為第一個找到的裝置。"
+
+#: grub-core/commands/search_wrap.c:32
+msgid "Search devices by a file."
+msgstr "透過檔案搜尋裝置。"
+
+#: grub-core/commands/search_wrap.c:33
+msgid "Search devices by a filesystem label."
+msgstr "透過檔案系統標籤搜尋裝置。"
+
+#: grub-core/commands/search_wrap.c:35
+msgid "Search devices by a filesystem UUID."
+msgstr "透過檔案系統 UUID 搜尋裝置。"
+
+#: grub-core/commands/search_wrap.c:38
+msgid "Set a variable to the first device found."
+msgstr "將變數設為第一個找到的裝置。"
+
+#: grub-core/commands/search_wrap.c:39
+msgid "Do not probe any floppy drive."
+msgstr "不要探測任何軟碟裝置。"
+
+#: grub-core/commands/search_wrap.c:41
+msgid "First try the device HINT. If HINT ends in comma, also try subpartitions"
+msgstr "先嘗試裝置 HINT。若 HINT 以半形逗號結尾，也會嘗試子分割區"
+
+#: grub-core/commands/search_wrap.c:42
+msgid "HINT"
+msgstr "HINT"
+
+#: grub-core/commands/search_wrap.c:94
+msgid "[-f|-l|-u|-s|-n] [--hint HINT [--hint HINT] ...] NAME"
+msgstr "[-f|-l|-u|-s|-n] [--hint HINT [--hint HINT] ...] NAME"
+
+#: grub-core/commands/search_wrap.c:96
+msgid "Search devices by file, filesystem label or filesystem UUID. If --set is specified, the first device found is set to a variable. If no variable name is specified, \"root\" is used."
+msgstr "透過檔案、檔案系統標籤或檔案系統 UUID 搜尋裝置。若有指定 --set，變數會被設為第一個找到的裝置。如果沒有指定變數名稱，會使用「root」。"
+
+#: grub-core/commands/setpci.c:333
+msgid "[-s POSITION] [-d DEVICE] [-v VAR] [REGISTER][=VALUE[:MASK]]"
+msgstr "[-s POSITION] [-d DEVICE] [-v VAR] [REGISTER][=VALUE[:MASK]]"
+
+#: grub-core/commands/setpci.c:335
+msgid "Manipulate PCI devices."
+msgstr "處理 PCI 裝置。"
+
+#: grub-core/commands/sleep.c:30
+msgid "Verbose countdown."
+msgstr "冗長倒數。"
+
+#: grub-core/commands/sleep.c:31
+msgid "Interruptible with ESC."
+msgstr "可以用 ESC 中斷。"
+
+#: grub-core/commands/sleep.c:104
+msgid "NUMBER_OF_SECONDS"
+msgstr "NUMBER_OF_SECONDS"
+
+#: grub-core/commands/sleep.c:105
+msgid "Wait for a specified number of seconds."
+msgstr "等候指定的秒數。"
+
+#: grub-core/commands/terminal.c:87
+msgid "no terminal specified"
+msgstr "未指定終端機"
+
+#: grub-core/commands/terminal.c:216
+msgid "Active input terminals:"
+msgstr "使用中輸入終端機："
+
+#: grub-core/commands/terminal.c:217
+msgid "Available input terminals:"
+msgstr "可用的輸入終端機："
+
+#: grub-core/commands/terminal.c:231
+msgid "Active output terminals:"
+msgstr "使用中輸出終端機："
+
+#: grub-core/commands/terminal.c:232
+msgid "Available output terminals:"
+msgstr "可用的輸出終端機："
+
+#: grub-core/commands/terminal.c:241 grub-core/commands/terminal.c:246
+msgid "[--append|--remove] [TERMINAL1] [TERMINAL2] ..."
+msgstr "[--append|--remove] [TERMINAL1] [TERMINAL2] ..."
+
+#: grub-core/commands/terminal.c:243
+msgid "List or select an input terminal."
+msgstr "列出或選取輸入終端機。"
+
+#: grub-core/commands/terminal.c:248
+msgid "List or select an output terminal."
+msgstr "列出或選取輸出終端機。"
+
+#: grub-core/commands/test.c:425
+msgid "EXPRESSION ]"
+msgstr "EXPRESSION ]"
+
+#: grub-core/commands/test.c:425 grub-core/commands/test.c:428
+msgid "Evaluate an expression."
+msgstr "評估表述式。"
+
+#: grub-core/commands/test.c:428
+msgid "EXPRESSION"
+msgstr "EXPRESSION"
+
+#: grub-core/commands/testload.c:149
+msgid "Load the same file in multiple ways."
+msgstr "以多種方式載入相同檔案。"
+
+#: grub-core/commands/true.c:47
+msgid "Do nothing, successfully."
+msgstr "什麼事都不做，成功。"
+
+#: grub-core/commands/true.c:50
+msgid "Do nothing, unsuccessfully."
+msgstr "什麼事都不做，未成功。"
+
+#: grub-core/commands/usbtest.c:210
+msgid "Test USB support."
+msgstr "測試 USB 支援。"
+
+#: grub-core/commands/videoinfo.c:166 grub-core/commands/videoinfo.c:171
+msgid "List available video modes. If resolution is given show only modes matching it."
+msgstr "列出可用的視訊模式。若有給定解析度，僅顯示符合的模式。"
+
+#: grub-core/commands/videotest.c:203
+msgid "Test video subsystem in mode WxH."
+msgstr "以 WxH 模式測試視訊子系統。"
+
+#: grub-core/commands/videotest.c:206
+msgid "Test video subsystem."
+msgstr "測試視訊子系統。"
+
+#: grub-core/commands/xnu_uuid.c:92
+msgid "GRUBUUID [VARNAME]"
+msgstr "GRUBUUID [VARNAME]"
+
+#: grub-core/commands/xnu_uuid.c:93
+msgid "Transform 64-bit UUID to format suitable for XNU."
+msgstr "轉換 64 位元 UUID 為適合 XNU 的格式。"
+
+#: grub-core/disk/loopback.c:39
+msgid "Delete the loopback device entry."
+msgstr "刪除迴返裝置條目。"
+
+#: grub-core/disk/loopback.c:225
+msgid "[-d|-p] DEVICENAME FILE."
+msgstr "[-d|-p] DEVICENAME FILE。"
+
+#: grub-core/disk/loopback.c:226
+msgid "Make a device of a file."
+msgstr "製作一個檔案的裝置。"
+
+#: grub-core/efiemu/main.c:317
+msgid "Load and initialize EFI emulator."
+msgstr "載入並初始化 EFI 模擬器。"
+
+#: grub-core/efiemu/main.c:321
+msgid "Finalize loading of EFI emulator."
+msgstr "終止 EFI 模擬器的載入。"
+
+#: grub-core/efiemu/main.c:324
+msgid "Unload EFI emulator."
+msgstr "卸載 EFI 模擬器。"
+
+#: grub-core/font/font_cmd.c:66
+msgid "FILE..."
+msgstr "FILE..."
+
+#: grub-core/font/font_cmd.c:67
+msgid "Specify one or more font files to load."
+msgstr "指定一個或多個要載入的字型檔。"
+
+#: grub-core/font/font_cmd.c:70
+msgid "List the loaded fonts."
+msgstr "列出已載入的字型。"
+
+#: grub-core/gettext/gettext.c:380
+msgid "STRING"
+msgstr "STRING"
+
+#: grub-core/gettext/gettext.c:381
+msgid "Translates the string with the current settings."
+msgstr "以目前設定值來翻譯字串。"
+
+#: grub-core/gfxmenu/gui_progress_bar.c:281 grub-core/normal/menu_text.c:328
+#, c-format
+msgid "The highlighted entry will be executed automatically in %ds."
+msgstr "被突顯的條目會在 %d 秒內自動執行。"
+
+#. TRANSLATORS:  's' stands for seconds.
+#. It's a standalone timeout notification.
+#. Please use the short form in your language.
+#: grub-core/gfxmenu/gui_progress_bar.c:286
+#, c-format
+msgid "%ds remaining."
+msgstr "剩下 %d 秒。"
+
+#. TRANSLATORS:  's' stands for seconds.
+#. It's a standalone timeout notification.
+#. Please use the shortest form available in you language.
+#: grub-core/gfxmenu/gui_progress_bar.c:291
+#, c-format
+msgid "%ds"
+msgstr "%d 秒"
+
+#: grub-core/hello/hello.c:43
+msgid "Say \"Hello World\"."
+msgstr "說「世界好」。"
+
+#: grub-core/kern/corecmd.c:183
+msgid "[ENVVAR=VALUE]"
+msgstr "[ENVVAR=VALUE]"
+
+#: grub-core/kern/corecmd.c:184
+msgid "Set an environment variable."
+msgstr "設定環境變數。"
+
+#: grub-core/kern/corecmd.c:188
+msgid "ENVVAR"
+msgstr "ENVVAR"
+
+#: grub-core/kern/corecmd.c:189
+msgid "Remove an environment variable."
+msgstr "移除環境變數。"
+
+#: grub-core/kern/corecmd.c:191
+msgid "[ARG]"
+msgstr "[ARG]"
+
+#: grub-core/kern/corecmd.c:191
+msgid "List devices or files."
+msgstr "列出裝置或檔案。"
+
+#: grub-core/kern/corecmd.c:193
+msgid "Insert a module."
+msgstr "插入模組。"
+
+#: grub-core/kern/emu/hostdisk.c:901 util/grub-setup.c:647
+#, c-format
+msgid "cannot open `%s'"
+msgstr "無法開啟「%s」"
+
+#: grub-core/kern/emu/hostdisk.c:1415
+msgid "device count exceeds limit"
+msgstr "裝置計數超出限制"
+
+#: grub-core/kern/emu/misc.c:81
+#, c-format
+msgid "%s: warn:"
+msgstr "%s：警告："
+
+#: grub-core/kern/emu/misc.c:97
+#, c-format
+msgid "%s: info:"
+msgstr "%s：資訊："
+
+#: grub-core/kern/emu/misc.c:112
+#, c-format
+msgid "%s: error:"
+msgstr "%s：錯誤："
+
+#: grub-core/kern/err.c:127
+#, c-format
+msgid "error: %s.\n"
+msgstr "錯誤：%s。\n"
+
+#: grub-core/lib/arg.c:34
+msgid "Display this help and exit."
+msgstr "顯示本幫助並離開。"
+
+#: grub-core/lib/arg.c:36
+msgid "Display the usage of this command and exit."
+msgstr "顯示本指令的用法並離開。"
+
+#: grub-core/loader/efi/appleloader.c:325
+msgid "Boot legacy system."
+msgstr "啟動舊式系統。"
+
+#: grub-core/loader/efi/chainloader.c:340
+#: grub-core/loader/i386/pc/chainloader.c:168
+msgid "Load another boot loader."
+msgstr "載入另一個開機載入程式。"
+
+#: grub-core/loader/i386/bsd.c:95
+msgid "Display output on all consoles."
+msgstr "顯示輸出於所有主控臺。"
+
+#: grub-core/loader/i386/bsd.c:96 grub-core/loader/i386/bsd.c:130
+#: grub-core/loader/i386/bsd.c:159
+msgid "Use serial console."
+msgstr "使用序列主控臺。"
+
+#: grub-core/loader/i386/bsd.c:97 grub-core/loader/i386/bsd.c:123
+#: grub-core/loader/i386/bsd.c:147
+msgid "Ask for file name to reboot from."
+msgstr "詢問要從何重新開機的檔名。"
+
+#: grub-core/loader/i386/bsd.c:98
+msgid "Use CDROM as root."
+msgstr "使用 CDROM 作為根。"
+
+#: grub-core/loader/i386/bsd.c:99
+msgid "Invoke user configuration routing."
+msgstr "喚起使用者組態路由。"
+
+#: grub-core/loader/i386/bsd.c:100 grub-core/loader/i386/bsd.c:127
+#: grub-core/loader/i386/bsd.c:150
+msgid "Enter in KDB on boot."
+msgstr "開機時進入 KDB。"
+
+#: grub-core/loader/i386/bsd.c:101
+msgid "Use GDB remote debugger instead of DDB."
+msgstr "使用 GDB 遠端除錯器取代 DDB。"
+
+#: grub-core/loader/i386/bsd.c:102
+msgid "Disable all boot output."
+msgstr "停用所有開機輸出。"
+
+#: grub-core/loader/i386/bsd.c:104
+msgid "Wait for keypress after every line of output."
+msgstr "在每列輸出後等候按鍵按壓。"
+
+#: grub-core/loader/i386/bsd.c:106
+msgid "Use compiled-in rootdev."
+msgstr "使用內編譯的 rootdev。"
+
+#: grub-core/loader/i386/bsd.c:107 grub-core/loader/i386/bsd.c:126
+#: grub-core/loader/i386/bsd.c:153
+msgid "Boot into single mode."
+msgstr "啟動單人模式。"
+
+#: grub-core/loader/i386/bsd.c:108 grub-core/loader/i386/bsd.c:154
+msgid "Boot with verbose messages."
+msgstr "以冗長訊息開機。"
+
+#: grub-core/loader/i386/bsd.c:124 grub-core/loader/i386/bsd.c:148
+msgid "Don't reboot, just halt."
+msgstr "不要重新開機，關機就好。"
+
+#: grub-core/loader/i386/bsd.c:125 grub-core/loader/i386/bsd.c:149
+msgid "Change configured devices."
+msgstr "變更已設定的裝置。"
+
+#: grub-core/loader/i386/bsd.c:128 grub-core/loader/i386/bsd.c:157
+#: util/grub-fstest.c:355
+msgid "Set root device."
+msgstr "設定根裝置。"
+
+#: grub-core/loader/i386/bsd.c:130
+msgid "comUNIT[,SPEED]"
+msgstr "comUNIT[,SPEED]"
+
+#: grub-core/loader/i386/bsd.c:145
+msgid "Disable SMP."
+msgstr "停用 SMP。"
+
+#: grub-core/loader/i386/bsd.c:146
+msgid "Disable ACPI."
+msgstr "停用 ACPI。"
+
+#: grub-core/loader/i386/bsd.c:152
+msgid "Don't display boot diagnostic messages."
+msgstr "不要顯示開機診斷訊息。"
+
+#: grub-core/loader/i386/bsd.c:155
+msgid "Boot with debug messages."
+msgstr "以除錯訊息開機。"
+
+#: grub-core/loader/i386/bsd.c:156
+msgid "Supress normal output (warnings remain)."
+msgstr "抑制一般輸出 (仍保留警告訊息)。"
+
+#: grub-core/loader/i386/bsd.c:157 util/grub-setup.c:825
+msgid "DEVICE"
+msgstr "DEVICE"
+
+#: grub-core/loader/i386/bsd.c:159
+msgid "[ADDR|comUNIT][,SPEED]"
+msgstr "[ADDR|comUNIT][,SPEED]"
+
+#: grub-core/loader/i386/bsd.c:1945
+msgid "Load kernel of FreeBSD."
+msgstr "載入 FreeBSD 內核。"
+
+#: grub-core/loader/i386/bsd.c:1948
+msgid "Load kernel of OpenBSD."
+msgstr "載入 OpenBSD 內核。"
+
+#: grub-core/loader/i386/bsd.c:1951
+msgid "Load kernel of NetBSD."
+msgstr "載入 NetBSD 內核。"
+
+#: grub-core/loader/i386/bsd.c:1955
+msgid "Load FreeBSD env."
+msgstr "載入 FreeBSD env。"
+
+#: grub-core/loader/i386/bsd.c:1958
+msgid "Load FreeBSD kernel module."
+msgstr "載入 FreeBSD 內核模組。"
+
+#: grub-core/loader/i386/bsd.c:1961
+msgid "Load NetBSD kernel module."
+msgstr "載入 NetBSD 內核模組。"
+
+#: grub-core/loader/i386/bsd.c:1964
+msgid "Load NetBSD kernel module (ELF)."
+msgstr "載入 NetBSD 內核模組 (ELF)。"
+
+#: grub-core/loader/i386/bsd.c:1967
+msgid "Load FreeBSD kernel module (ELF)."
+msgstr "載入 FreeBSD 內核模組 (ELF)。"
+
+#: grub-core/loader/i386/linux.c:986 grub-core/loader/i386/pc/linux.c:444
+#: grub-core/loader/mips/linux.c:430
+#: grub-core/loader/powerpc/ieee1275/linux.c:376
+#: grub-core/loader/sparc64/ieee1275/linux.c:521
+msgid "Load Linux."
+msgstr "載入 Linux。"
+
+#: grub-core/loader/i386/linux.c:988 grub-core/loader/i386/pc/linux.c:447
+#: grub-core/loader/mips/linux.c:432
+#: grub-core/loader/powerpc/ieee1275/linux.c:378
+#: grub-core/loader/sparc64/ieee1275/linux.c:523
+msgid "Load initrd."
+msgstr "載入 initrd。"
+
+#: grub-core/loader/i386/pc/ntldr.c:150
+msgid "Load NTLDR or BootMGR."
+msgstr "載入 NTLDR 或 BootMGR。"
+
+#: grub-core/loader/i386/xnu.c:1128
+msgid "Load device-properties dump."
+msgstr "載入裝置屬性傾印。"
+
+#: grub-core/loader/multiboot.c:337
+msgid "Load a multiboot 2 kernel."
+msgstr "載入 multiboot 2 內核。"
+
+#: grub-core/loader/multiboot.c:340
+msgid "Load a multiboot 2 module."
+msgstr "載入 multiboot 2 模組。"
+
+#: grub-core/loader/multiboot.c:343
+msgid "Load a multiboot kernel."
+msgstr "載入 multiboot 內核。"
+
+#: grub-core/loader/multiboot.c:346
+msgid "Load a multiboot module."
+msgstr "載入 multiboot 模組。"
+
+#: grub-core/loader/xnu.c:1449
+msgid "Load XNU image."
+msgstr "載入 XNU 映像。"
+
+#: grub-core/loader/xnu.c:1451
+msgid "Load 64-bit XNU image."
+msgstr "載入 64 位元 XNU 映像。"
+
+#: grub-core/loader/xnu.c:1453
+msgid "Load XNU extension package."
+msgstr "載入 XNU 擴充套件。"
+
+#: grub-core/loader/xnu.c:1455
+msgid "Load XNU extension."
+msgstr "載入 XNU 擴充。"
+
+#: grub-core/loader/xnu.c:1457
+msgid "DIRECTORY [OSBundleRequired]"
+msgstr "DIRECTORY [OSBundleRequired]"
+
+#: grub-core/loader/xnu.c:1458
+msgid "Load XNU extension directory."
+msgstr "載入 XNU 擴充目錄。"
+
+#: grub-core/loader/xnu.c:1464
+msgid "Load a splash image for XNU."
+msgstr "為 XNU 載入 splash 影像。"
+
+#: grub-core/loader/xnu.c:1469
+msgid "Load XNU hibernate image."
+msgstr "載入 XNU 休眠映像。"
+
+#: grub-core/mmap/mmap.c:471
+msgid "ADDR1,MASK1[,ADDR2,MASK2[,...]]"
+msgstr "ADDR1,MASK1[,ADDR2,MASK2[,...]]"
+
+#: grub-core/mmap/mmap.c:472
+msgid "Declare memory regions as badram."
+msgstr "宣告記憶體區域為 badram。"
+
+#: grub-core/mmap/mmap.c:474
+msgid "FROM[K|M|G] TO[K|M|G]"
+msgstr "FROM[K|M|G] TO[K|M|G]"
+
+#: grub-core/mmap/mmap.c:475
+msgid "Remove any memory regions in specified range."
+msgstr "移除任何指定範圍內的記憶體區域。"
+
+#: grub-core/normal/auth.c:216
+msgid "Enter username: "
+msgstr "輸入使用者名稱："
+
+#: grub-core/normal/auth.c:221
+msgid "Enter password: "
+msgstr "輸入密碼："
+
+#: grub-core/normal/auth.c:265
+msgid "[USERLIST]"
+msgstr "[USERLIST]"
+
+#: grub-core/normal/auth.c:265
+msgid "Authenticate users"
+msgstr "驗證使用者"
+
+#: grub-core/normal/cmdline.c:174 grub-core/normal/menu_entry.c:1073
+msgid "Possible commands are:"
+msgstr "可能的指令有："
+
+#: grub-core/normal/cmdline.c:177 grub-core/normal/menu_entry.c:1077
+msgid "Possible devices are:"
+msgstr "可能的裝置有："
+
+#: grub-core/normal/cmdline.c:180 grub-core/normal/menu_entry.c:1081
+msgid "Possible files are:"
+msgstr "可能的檔案有："
+
+#: grub-core/normal/cmdline.c:183 grub-core/normal/menu_entry.c:1085
+msgid "Possible partitions are:"
+msgstr "可能的分割區有："
+
+#: grub-core/normal/cmdline.c:186 grub-core/normal/menu_entry.c:1089
+msgid "Possible arguments are:"
+msgstr "可能的參數有："
+
+#: grub-core/normal/cmdline.c:189 grub-core/normal/menu_entry.c:1093
+msgid "Possible things are:"
+msgstr "可能的東西有："
+
+#: grub-core/normal/color.c:81
+#, c-format
+msgid "Warning: syntax error (missing slash) in `%s'\n"
+msgstr "警告：語法錯誤 (遺失正斜線) 於「%s」\n"
+
+#: grub-core/normal/color.c:90
+#, c-format
+msgid "Warning: invalid foreground color `%s'\n"
+msgstr "警告：無效的前景色彩「%s」\n"
+
+#: grub-core/normal/color.c:96
+#, c-format
+msgid "Warning: invalid background color `%s'\n"
+msgstr "警告：無效的背景色彩「%s」\n"
+
+#: grub-core/normal/context.c:223
+msgid "ENVVAR [ENVVAR] ..."
+msgstr "ENVVAR [ENVVAR] ..."
+
+#: grub-core/normal/context.c:224
+msgid "Export variables."
+msgstr "輸出變數。"
+
+#: grub-core/normal/dyncmd.c:159
+msgid "not loaded"
+msgstr "未載入"
+
+#: grub-core/normal/main.c:212
+#, c-format
+msgid "GNU GRUB  version %s"
+msgstr "GNU GRUB 版本 %s"
+
+#: grub-core/normal/main.c:357
+#, c-format
+msgid "Minimal BASH-like line editing is supported. For the first word, TAB lists possible command completions. Anywhere else TAB lists possible device or file completions. %s"
+msgstr "支援最基本的類 BASH 列編輯。對於輸入的第一個單詞，TAB 可以列出可能的指令補完。其他地方的 TAB 可以列出可能的裝置或檔案補完。%s"
+
+#: grub-core/normal/main.c:360
+msgid "ESC at any time exits."
+msgstr "任何時刻的 ESC 都能離開。"
+
+#: grub-core/normal/main.c:494
+msgid "Clear the screen."
+msgstr "清除畫面。"
+
+#: grub-core/normal/main.c:502
+msgid "Enter normal mode."
+msgstr "輸入一般密碼。"
+
+#: grub-core/normal/main.c:504
+msgid "Exit from normal mode."
+msgstr "離開一般模式。"
+
+#: grub-core/normal/menu.c:48 grub-core/normal/menu_entry.c:1443
+msgid "Press any key to continue..."
+msgstr "按下任意鍵繼續..."
+
+#: grub-core/normal/menu.c:551
+#, c-format
+msgid "Booting '%s'"
+msgstr "正在啟動「%s」"
+
+#: grub-core/normal/menu.c:563
+#, c-format
+msgid "Falling back to '%s'"
+msgstr "正在退回「%s」"
+
+#: grub-core/normal/menu.c:579
+msgid "Failed to boot both default and fallback entries.\n"
+msgstr "無法啟動預設條目以及後備條目。\n"
+
+#: grub-core/normal/menu_entry.c:1198
+msgid "Booting a command list"
+msgstr "正在啟動指令清單"
+
+#: grub-core/normal/menu_text.c:123
+msgid "Minimum Emacs-like screen editing is supported. TAB lists completions. Press Ctrl-x or F10 to boot, Ctrl-c or F2 for a command-line or ESC to discard edits and return to the GRUB menu."
+msgstr "支援基本的類 Emacs 編輯畫面。TAB 鍵可以列出補完。按下 Ctrl-x 或是 F10 可以開機，Ctrl-c 或 F12 可以取得指令列，而 ESC 可以放棄編輯並返回 GRUB 選單。"
+
+#: grub-core/normal/menu_text.c:130
+#, c-format
+msgid "Use the %C and %C keys to select which entry is highlighted.\n"
+msgstr "使用 %C 以及 %C 鍵來選取要突顯哪個條目。\n"
+
+#: grub-core/normal/menu_text.c:147
+msgid "Press enter to boot the selected OS, 'e' to edit the commands before booting or 'c' for a command-line. ESC to return previous menu.\n"
+msgstr "按下 enter 啟動所選 OS，按下「e」在啟動前編輯指令，或是「c」取得指令列。按下 ESC 返回前個選單。\n"
+
+#: grub-core/normal/menu_text.c:155
+msgid "Press enter to boot the selected OS, 'e' to edit the commands before booting or 'c' for a command-line.\n"
+msgstr "按下 enter 啟動所選 OS，按下「e」在啟動前編輯指令，或是「c」取得指令列。\n"
+
+#: grub-core/normal/misc.c:42
+#, c-format
+msgid "Partition %s:"
+msgstr "分割區 %s："
+
+#: grub-core/normal/misc.c:47
+#, c-format
+msgid "Device %s:"
+msgstr "裝置 %s："
+
+#: grub-core/normal/misc.c:53
+msgid "Filesystem cannot be accessed"
+msgstr "無法存取檔案系統"
+
+#: grub-core/normal/misc.c:64
+#, c-format
+msgid "Filesystem type %s"
+msgstr "檔案系統類型 %s"
+
+#: grub-core/normal/misc.c:74
+#, c-format
+msgid "- Label \"%s\""
+msgstr "- 標籤「%s」"
+
+#: grub-core/normal/misc.c:89
+#, c-format
+msgid "- Last modification time %d-%02d-%02d %02d:%02d:%02d %s"
+msgstr "- 上次修改時間 %d-%02d-%02d %02d:%02d:%02d %s"
+
+#: grub-core/normal/misc.c:112
+msgid "Not a known filesystem"
+msgstr "非已知檔案系統"
+
+#: grub-core/normal/misc.c:115
+#, c-format
+msgid " - Partition start at %u"
+msgstr " - 分割區起始於 %u"
+
+#: grub-core/normal/misc.c:118
+msgid " - Total size unknown"
+msgstr " - 總大小未知"
+
+#: grub-core/normal/misc.c:121
+#, c-format
+msgid " - Total size %u sectors"
+msgstr " - 總大小 %u 個磁區"
+
+#: grub-core/script/main.c:54 grub-core/script/main.c:56
+#: grub-core/script/main.c:58 grub-core/script/main.c:63
+msgid "[n]"
+msgstr "[n]"
+
+#: grub-core/script/main.c:54
+msgid "Exit from loops"
+msgstr "離開迴圈"
+
+#: grub-core/script/main.c:56
+msgid "Continue loops"
+msgstr "繼續迴圈"
+
+#: grub-core/script/main.c:58
+msgid "Shift positional parameters."
+msgstr "推移位置參數。"
+
+#: grub-core/script/main.c:60
+msgid "[VALUE]..."
+msgstr "[VALUE]..."
+
+#: grub-core/script/main.c:61
+msgid "Set positional parameters."
+msgstr "設定位置參數。"
+
+#: grub-core/script/main.c:63
+msgid "Return from a function."
+msgstr "從函式回傳。"
+
+#: grub-core/term/gfxterm.c:1211
+msgid "[-m (stretch|normal)] FILE"
+msgstr "[-m (stretch|normal)] FILE"
+
+#: grub-core/term/gfxterm.c:1212
+msgid "Load background image for active terminal."
+msgstr "為使用中終端機載入背景映像。"
+
+#: grub-core/term/serial.c:35
+msgid "Set the serial unit."
+msgstr "設定序列單位。"
+
+#: grub-core/term/serial.c:36
+msgid "Set the serial port address."
+msgstr "設定序列埠位址。"
+
+#: grub-core/term/serial.c:37
+msgid "Set the serial port speed."
+msgstr "設定序列埠速度。"
+
+#: grub-core/term/serial.c:38
+msgid "Set the serial port word length."
+msgstr "設定序列埠單詞長度。"
+
+#: grub-core/term/serial.c:39
+msgid "Set the serial port parity."
+msgstr "設定序列埠同位。"
+
+#: grub-core/term/serial.c:40
+msgid "Set the serial port stop bits."
+msgstr "設定序列埠停止位元。"
+
+#: grub-core/term/serial.c:344
+msgid "[OPTIONS...]"
+msgstr "[OPTIONS...]"
+
+#: grub-core/term/serial.c:345
+msgid "Configure serial port."
+msgstr "設定序列埠。"
+
+#: grub-core/term/terminfo.c:526
+msgid "ASCII"
+msgstr "ASCII"
+
+#: grub-core/term/terminfo.c:529
+msgid "UTF-8"
+msgstr "UTF-8"
+
+#: grub-core/term/terminfo.c:531
+msgid "UTF-8 visual"
+msgstr "UTF-8 視覺"
+
+#: grub-core/term/terminfo.c:534
+msgid "Unknown"
+msgstr "未知"
+
+#: grub-core/term/terminfo.c:551
+msgid "Terminal is ASCII-only [default]."
+msgstr "終端機僅為 ASCII [預設]。"
+
+#: grub-core/term/terminfo.c:552
+msgid "Terminal is logical-ordered UTF-8."
+msgstr "終端機為邏輯排序 UTF-8。"
+
+#: grub-core/term/terminfo.c:553
+msgid "Terminal is visually-ordered UTF-8."
+msgstr "終端機為視覺排序 UTF-8。"
+
+#: grub-core/term/terminfo.c:555
+msgid "Terminal has given geometry."
+msgstr "終端機已給定幾何狀態。"
+
+#: grub-core/term/terminfo.c:556
+msgid "WIDTHxHEIGHT."
+msgstr "WIDTHxHEIGHT。"
+
+#: grub-core/term/terminfo.c:633
+msgid "[[-a|-u|-v] [-g WxH] TERM [TYPE]]"
+msgstr "[[-a|-u|-v] [-g WxH] TERM [TYPE]]"
+
+#: grub-core/term/terminfo.c:634
+msgid "Set terminfo type of TERM  to TYPE.\n"
+msgstr "將 TERM 的 terminfo 類型設定為 TYPE。\n"
+
+#: grub-core/tests/test_blockarg.c:45
+msgid "Print and execute block argument."
+msgstr "列印執行區塊引數。"
+
+#: util/grub-editenv.c:39 util/grub-fstest.c:347
+msgid "Commands:"
+msgstr "指令："
+
+#: util/grub-editenv.c:41
+msgid "Create a blank environment block file."
+msgstr "建立空白環境區塊檔。"
+
+#: util/grub-editenv.c:43
+msgid "List the current variables."
+msgstr "列出目前的變數。"
+
+#: util/grub-editenv.c:45
+msgid "Set variables."
+msgstr "設定變數。"
+
+#: util/grub-editenv.c:47
+msgid "Delete variables."
+msgstr "刪除變數。"
+
+#: util/grub-editenv.c:49
+msgid "Options:"
+msgstr "選項："
+
+#: util/grub-editenv.c:50 util/grub-fstest.c:360 util/grub-setup.c:686
+msgid "Print verbose messages."
+msgstr "列印冗長訊息。"
+
+#: util/grub-editenv.c:76
+msgid "You need to specify at least one command.\n"
+msgstr "您必須指定至少一個指令。\n"
+
+#: util/grub-editenv.c:101
+msgid "FILENAME COMMAND"
+msgstr "FILENAME COMMAND"
+
+#: util/grub-editenv.c:102
+msgid "Tool to edit environment block."
+msgstr "編輯環境區塊的工具。"
+
+#: util/grub-editenv.c:104
+#, c-format
+msgid "If FILENAME is '-', the default value %s is used."
+msgstr "若 FILENAME 為「-」，將使用預設值 %s。"
+
+#: util/grub-editenv.c:276 util/grub-setup.c:866
+msgid "Error in parsing command line arguments\n"
+msgstr "解析指令列引數時發生錯誤\n"
+
+#: util/grub-editenv.c:306
+#, c-format
+msgid "Unknown command `%s'.\n"
+msgstr "未知指令「%s」。\n"
+
+#: util/grub-fstest.c:52
+#, c-format
+msgid "can't find command %s"
+msgstr "無法尋找指令 %s"
+
+#: util/grub-fstest.c:81
+msgid "can't open device"
+msgstr "無法開啟裝置"
+
+#: util/grub-fstest.c:96
+#, c-format
+msgid "disk read fails at offset %lld, length %d"
+msgstr "於偏移 %lld 處磁碟讀取失敗，長度 %d"
+
+#: util/grub-fstest.c:114
+#, c-format
+msgid "cannot open file %s"
+msgstr "無法開啟檔案 %s"
+
+#: util/grub-fstest.c:122
+#, c-format
+msgid "invalid skip value %lld"
+msgstr "無效的跳過值 %lld"
+
+#: util/grub-fstest.c:140 util/grub-fstest.c:195
+#, c-format
+msgid "read error at offset %llu: %s"
+msgstr "讀取偏移 %llu 處時發生錯誤：%s"
+
+#: util/grub-fstest.c:167
+msgid "write error"
+msgstr "寫入發生錯誤"
+
+#: util/grub-fstest.c:177 util/grub-fstest.c:216
+msgid "open error"
+msgstr "開啟發生錯誤"
+
+#: util/grub-fstest.c:206
+#, c-format
+msgid "compare fail at offset %llu"
+msgstr "比較偏移 %llu 處的失敗"
+
+#: util/grub-fstest.c:221
+msgid "seek error"
+msgstr "查詢發生錯誤"
+
+#: util/grub-fstest.c:292
+msgid "loopback command fails"
+msgstr "迴返指令失敗"
+
+#: util/grub-fstest.c:348
+msgid "ls PATH"
+msgstr "ls PATH"
+
+#: util/grub-fstest.c:348
+msgid "List files in PATH."
+msgstr "列出 PATH 內的檔案。"
+
+#: util/grub-fstest.c:349
+msgid "cp FILE LOCAL"
+msgstr "cp FILE LOCAL"
+
+#: util/grub-fstest.c:349
+msgid "Copy FILE to local file LOCAL."
+msgstr "複製 FILE 至本地檔案 LOCAL。"
+
+#: util/grub-fstest.c:350
+msgid "cmp FILE LOCAL"
+msgstr "cmp FILE LOCAL"
+
+#: util/grub-fstest.c:350
+msgid "Compare FILE with local file LOCAL."
+msgstr "比較 FILE 與本地檔案 LOCAL。"
+
+#: util/grub-fstest.c:351
+msgid "hex FILE"
+msgstr "hex FILE"
+
+#: util/grub-fstest.c:351
+msgid "Hex dump FILE."
+msgstr "以十六進位傾印 FILE。"
+
+#: util/grub-fstest.c:352
+msgid "crc FILE"
+msgstr "crc FILE"
+
+#: util/grub-fstest.c:352
+msgid "Get crc32 checksum of FILE."
+msgstr "取得 FILE 的 crc32 校驗計算碼。"
+
+#: util/grub-fstest.c:353
+msgid "blocklist FILE"
+msgstr "blocklist FILE"
+
+#: util/grub-fstest.c:353
+msgid "Display blocklist of FILE."
+msgstr "顯示 FILE 的區塊檔案。"
+
+#: util/grub-fstest.c:355
+msgid "DEVICE_NAME"
+msgstr "DEVICE_NAME"
+
+#: util/grub-fstest.c:356
+msgid "Skip N bytes from output file."
+msgstr "跳過輸出檔的 N 位元組。"
+
+#: util/grub-fstest.c:357
+msgid "Handle N bytes in output file."
+msgstr "處理輸出檔的 N 位元組。"
+
+#: util/grub-fstest.c:358
+msgid "N input files."
+msgstr "N 個輸出檔。"
+
+#: util/grub-fstest.c:359
+msgid "Set debug environment variable."
+msgstr "設定除錯環境變數。"
+
+#: util/grub-fstest.c:399
+msgid "Invalid disk count.\n"
+msgstr "無效的磁碟計數。\n"
+
+#: util/grub-fstest.c:404
+msgid "Disk count must precede disks list.\n"
+msgstr "磁碟計數必須在磁碟清單之前。\n"
+
+#: util/grub-fstest.c:420
+msgid "No command is specified.\n"
+msgstr "未指定指令。\n"
+
+#: util/grub-fstest.c:425
+msgid "Not enough parameters to command.\n"
+msgstr "指令缺少足夠的參數。\n"
+
+#: util/grub-fstest.c:441
+msgid "Must use absolute path.\n"
+msgstr "必須使用絕對路徑。\n"
+
+#: util/grub-fstest.c:484
+#, c-format
+msgid "Invalid command %s.\n"
+msgstr "無效指令 %s。\n"
+
+#: util/grub-fstest.c:497
+msgid "IMAGE_PATH COMMANDS"
+msgstr "IMAGE_PATH COMMANDS"
+
+#: util/grub-fstest.c:498
+msgid "Debug tool for filesystem driver."
+msgstr "檔案系統驅動程式的除錯工具。"
+
+#: util/grub-mkimage.c:493 util/grub-mkimage.c:534
+msgid "the core image is too small"
+msgstr "核心映像過小"
+
+#: util/grub-mkimage.c:504 util/grub-mkimage.c:538 util/grub-mkimage.c:556
+msgid "cannot compress the kernel image"
+msgstr "無法壓縮內核映像"
+
+#: util/grub-mkimage.c:671
+msgid "prefix is too long"
+msgstr "前綴過長"
+
+#: util/grub-mkimage.c:835
+#, c-format
+msgid "core image is too big (%p > %p)"
+msgstr "核心映像過大 (%p > %p)"
+
+#: util/grub-mkimage.c:841
+msgid "the core image is too big"
+msgstr "核心映像過大"
+
+#: util/grub-mkimage.c:860
+#, c-format
+msgid "diskboot.img size must be %u bytes"
+msgstr "diskboot.img 大小必須為 %u 位元組"
+
+#: util/grub-mkimage.c:1374
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "試試「%s --help」以取得更多資訊。\n"
+
+#: util/grub-mkimage.c:1393
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [MODULES]\n"
+"\n"
+"Make a bootable image of GRUB.\n"
+"\n"
+"  -d, --directory=DIR     use images and modules under DIR [default=%s/@platform@]\n"
+"  -p, --prefix=DIR        set grub_prefix directory [default=%s]\n"
+"  -m, --memdisk=FILE      embed FILE as a memdisk image\n"
+"  -c, --config=FILE       embed FILE as boot config\n"
+"  -n, --note              add NOTE segment for CHRP Open Firmware\n"
+"  -o, --output=FILE       output a generated image to FILE [default=stdout]\n"
+"  -O, --format=FORMAT     generate an image in format\n"
+"                          available formats: %s\n"
+"  -C, --compression=(xz|none|auto)  choose the compression to use\n"
+"  -h, --help              display this message and exit\n"
+"  -V, --version           print version information and exit\n"
+"  -v, --verbose           print verbose messages\n"
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"用法：%s [OPTION]... [MODULES]\n"
+"\n"
+"建立 GRUB 的可開機映像。\n"
+"\n"
+"  -d, --directory=DIR     使用 DIR 下的映像與模組 [預設=%s/@platform@]\n"
+"  -p, --prefix=DIR        設定 grub_prefix 目錄 [預設=%s]\n"
+"  -m, --memdisk=FILE      將 FILE 內嵌為 memdisk 映像\n"
+"  -c, --config=FILE       將 FILE 內嵌為開機組態\n"
+"  -n, --note              為 CHRP Open Firmware 加入 NOTE 區段\n"
+"  -o, --output=FILE       將產生的映像輸出至 FILE [預設=stdout]\n"
+"  -O, --format=FORMAT     產生可使用格式的映像檔：\n"
+"                          %s\n"
+"  -C, --compression=(xz|none|auto)  選擇要使用的壓縮方式\n"
+"  -h, --help              顯示本訊息並離開\n"
+"  -V, --version           列印版本資訊並離開\n"
+"  -v, --verbose           列印冗長訊息\n"
+"\n"
+"請回報臭蟲至 <%s>。\n"
+
+#: util/grub-mkimage.c:1549
+#, c-format
+msgid "cannot open %s"
+msgstr "無法開啟 %s"
+
+#: util/grub-setup.c:214
+msgid "the first sector of the core file is not sector-aligned"
+msgstr "核心檔的第一磁區不是磁區對齊形式"
+
+#: util/grub-setup.c:228
+msgid "non-sector-aligned data is found in the core file"
+msgstr "在核心檔內找到非磁區對齊形式的資料"
+
+#: util/grub-setup.c:244
+msgid "the sectors of the core file are too fragmented"
+msgstr "核心檔的磁區過於零散"
+
+#: util/grub-setup.c:257
+#, c-format
+msgid "the size of `%s' is not %u"
+msgstr "「%s」的大小不是 %u"
+
+#: util/grub-setup.c:267
+#, c-format
+msgid "the size of `%s' is too small"
+msgstr "「%s」的大小過小"
+
+#: util/grub-setup.c:270
+#, c-format
+msgid "the size of `%s' is too large"
+msgstr "「%s」的大小過大"
+
+#: util/grub-setup.c:363
+#, c-format
+msgid "unable to identify a filesystem in %s; safety check can't be performed"
+msgstr "無法辨識 %s 內的檔案系統；無法執行安全檢查"
+
+#: util/grub-setup.c:366
+#, c-format
+msgid "%s appears to contain a %s filesystem which isn't known to reserve space for DOS-style boot.  Installing GRUB there could result in FILESYSTEM DESTRUCTION if valuable data is overwritten by grub-setup (--skip-fs-probe disables this check, use at your own risk)"
+msgstr "%s 似乎包含 %s 檔案系統，該檔案系統不知道是否為 DOS 式開機所保留的空間。如果那裡存有富價值的資料，將 GRUB 安裝在那裡可能會導致「檔案系統摧毀」，資料會被 grub-setup 覆寫 (加上 --skip-fs-probe 可以停用本檢查，但請自行承擔風險)"
+
+#: util/grub-setup.c:378
+#, c-format
+msgid "%s appears to contain a %s partition map which isn't known to reserve space for DOS-style boot.  Installing GRUB there could result in FILESYSTEM DESTRUCTION if valuable data is overwritten by grub-setup (--skip-fs-probe disables this check, use at your own risk)"
+msgstr "%s 似乎包含 %s 分割區映射，該映射不知道是否為 DOS 式開機所保留的空間。如果那裡存有富價值的資料，將 GRUB 安裝在那裡可能會導致「檔案系統摧毀」，資料會被 grub-setup 覆寫 (加上 --skip-fs-probe 可以停用本檢查，但請自行承擔風險)"
+
+#: util/grub-setup.c:388
+msgid "Attempting to install GRUB to a partitionless disk or to a partition.  This is a BAD idea."
+msgstr "正試圖安裝 GRUB 至無分割的磁碟，或是某分割區上。這是個「壞」主意。"
+
+#: util/grub-setup.c:393
+msgid "Attempting to install GRUB to a disk with multiple partition labels or both partition label and filesystem.  This is not supported yet."
+msgstr "正試圖安裝 GRUB 至有多分割區標籤，或有分割區以及檔案系統的磁碟上。這尚未支援。"
+
+#: util/grub-setup.c:482
+msgid "embedding is not possible, but this is required when the root device is on a RAID array or LVM volume"
+msgstr "不可能內嵌，但是這對於根裝置位於 RAID 陣列或是 LVM 儲區上時來說是必要的"
+
+#: util/grub-setup.c:487
+msgid "embedding is not possible, but this is required for cross-disk install"
+msgstr "不可能內嵌，但是這對於跨磁碟安裝來說是必要的"
+
+#: util/grub-setup.c:491
+msgid "Embedding is not possible.  GRUB can only be installed in this setup by using blocklists.  However, blocklists are UNRELIABLE and their use is discouraged."
+msgstr "不可能內嵌。GRUB 在本設置中僅能藉由區塊清單來安裝。然而，使用區塊清單不僅「不可靠」甚至令人挫折。"
+
+#: util/grub-setup.c:495
+msgid "will not proceed with blocklists"
+msgstr "不會繼續處理區塊清單"
+
+#: util/grub-setup.c:514
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB"
+msgstr "正試圖從 GRUB 讀取核心映像「%s」"
+
+#: util/grub-setup.c:515
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB again"
+msgstr "正試圖從 GRUB 再次讀取核心映像「%s」"
+
+#: util/grub-setup.c:574
+#, c-format
+msgid "cannot read `%s' correctly"
+msgstr "無法正確讀取「%s」"
+
+#: util/grub-setup.c:589
+msgid "no terminator in the core image"
+msgstr "核心映像內沒有終止器"
+
+#: util/grub-setup.c:601
+msgid "failed to read the first sector of the core image"
+msgstr "無法讀取核心映像的第一磁區"
+
+#: util/grub-setup.c:607
+msgid "failed to read the rest sectors of the core image"
+msgstr "無法讀取核心映像的剩餘磁區"
+
+#: util/grub-setup.c:672
+#, c-format
+msgid "Use FILE as the boot image [default=%s]"
+msgstr "使用 FILE 作為開機映像 [預設=%s]"
+
+#: util/grub-setup.c:674
+#, c-format
+msgid "Use FILE as the core image [default=%s]"
+msgstr "使用 FILE 作為核心映像 [預設=%s]"
+
+#: util/grub-setup.c:675
+msgid "DIR"
+msgstr "DIR"
+
+#: util/grub-setup.c:676
+#, c-format
+msgid "Use GRUB files in the directory DIR [default=%s]"
+msgstr "使用 DIR 目錄內的 GRUB 檔 [預設=%s]"
+
+#: util/grub-setup.c:678
+#, c-format
+msgid "Use FILE as the device map [default=%s]"
+msgstr "使用 FILE 作為裝置映射 [預設=%s]"
+
+#: util/grub-setup.c:679
+msgid "DEV"
+msgstr "DEV"
+
+#: util/grub-setup.c:680
+msgid "Use DEV as the root device [default=guessed]"
+msgstr "使用 DEV 作為根裝置 [預設=guessed]"
+
+#: util/grub-setup.c:682
+msgid "Install even if problems are detected"
+msgstr "即使偵測到問題也要安裝"
+
+#: util/grub-setup.c:684
+msgid "Do not probe for filesystems in DEVICE"
+msgstr "不要探測 DEVICE 內的檔案系統"
+
+#: util/grub-setup.c:688
+msgid "Make the drive also bootable as floppy (default for fdX devices). May break on some BIOSes."
+msgstr "讓裝置也可以作為軟碟開機 (為 fdX 裝置的預設值)。在某些 BIOS 上可能會失敗。"
+
+#: util/grub-setup.c:807
+#, c-format
+msgid "Unknown extra argument `%s'.\n"
+msgstr "未知的額外引數「%s」。\n"
+
+#: util/grub-setup.c:813
+msgid "No device is specified.\n"
+msgstr "沒有指定裝置。\n"
+
+#: util/grub-setup.c:826
+msgid ""
+"Set up images to boot from DEVICE.\n"
+"\n"
+"You should not normally run this program directly.  Use grub-install instead."
+msgstr ""
+"設置要從 DEVICE 啟動的裝置。\n"
+"\n"
+"您應該不能直接執行這個程式。請改用 grub-install。"
+
+#: util/grub-setup.c:830
+msgid "DEVICE must be an OS device (e.g. /dev/sda)."
+msgstr "DEVICE 必須為 OS 裝置 (例：/dev/sda)。"
+
+#: util/grub-setup.c:900
+#, c-format
+msgid "Invalid device `%s'.\n"
+msgstr "無效的裝置「%s」。\n"
+
+#: util/grub-setup.c:920
+#, c-format
+msgid "invalid root device `%s'"
+msgstr "無效的根裝置「%s」"
+
+#: util/grub-setup.c:934
+msgid "cannot guess the root device. Specify the option `--root-device'"
+msgstr "無法猜測根裝置。請指定「--root-device」選項"
+
+#: util/grub.d/10_hurd.in:84 util/grub.d/10_hurd.in:108
+#, c-format
+msgid "Loading GNU Mach ..."
+msgstr "正在載入 GNU Mach ..."
+
+#: util/grub.d/10_hurd.in:91 util/grub.d/10_hurd.in:114
+#, c-format
+msgid "Loading the Hurd ..."
+msgstr "正在載入 Hurd ..."
+
+#: util/grub.d/10_kfreebsd.in:74
+#, c-format
+msgid "%s, with kFreeBSD %s (recovery mode)"
+msgstr "%s，採用 kFreeBSD %s (復原模式)"
+
+#: util/grub.d/10_kfreebsd.in:76
+#, c-format
+msgid "%s, with kFreeBSD %s"
+msgstr "%s，採用 kFreeBSD %s"
+
+#: util/grub.d/10_kfreebsd.in:87
+#, c-format
+msgid "Loading kernel of FreeBSD %s ..."
+msgstr "正在載入 FreeBSD %s 的內核 ..."
+
+#: util/grub.d/10_linux.in:61
+#, c-format
+msgid "%s, with Linux %s (recovery mode)"
+msgstr "%s，採用 Linux %s (復原模式)"
+
+#: util/grub.d/10_linux.in:63
+#, c-format
+msgid "%s, with Linux %s"
+msgstr "%s，採用 Linux %s"
+
+#: util/grub.d/10_linux.in:97 util/grub.d/20_linux_xen.in:77
+#, c-format
+msgid "Loading Linux %s ..."
+msgstr "正在載入 Linux %s ..."
+
+#: util/grub.d/10_linux.in:103 util/grub.d/20_linux_xen.in:85
+#, c-format
+msgid "Loading initial ramdisk ..."
+msgstr "正在載入初始 ramdisk ..."
+
+#: util/grub.d/10_netbsd.in:44
+#, c-format
+msgid "%s, with kernel %s (via %s, recovery mode)"
+msgstr "%s，採用內核 %s (透過 %s，復原模式)"
+
+#: util/grub.d/10_netbsd.in:46
+#, c-format
+msgid "%s, with kernel %s (via %s)"
+msgstr "%s，採用內核 %s (透過 %s)"
+
+#: util/grub.d/20_linux_xen.in:63
+#, c-format
+msgid "%s, with Xen %s and Linux %s (recovery mode)"
+msgstr "%s，採用 Xen %s 與 Linux %s (復原模式)"
+
+#: util/grub.d/20_linux_xen.in:65
+#, c-format
+msgid "%s, with Xen %s and Linux %s"
+msgstr "%s，採用 Xen %s 與 Linux %s"
+
+#: util/grub.d/20_linux_xen.in:76
+#, c-format
+msgid "Loading Xen %s ..."
+msgstr "正在載入 Xen %s ..."

@@ -5,7 +5,7 @@ if test -f (loop)/parabola/boot/x86_64/vmlinuz* -a -f (loop)/parabola/boot/x86_6
 	set initrd_img="(loop)/parabola/boot/x86_64/parabolaiso.img";
 	set kcmdline="earlymodules=loop";
 	set loopiso="img_dev=$imgdevpath img_loop=$isofile parabolaisolabel=$devlbl";
-	menuentry "作为 Parabola GNU/Linux LiveCD 启动" --class $icon{
+	menuentry $"Boot Parabola GNU/Linux From ISO" --class $icon{
 		linux $vmlinuz_img $kcmdline $loopiso;
 		initrd $initrd_img;
 	}

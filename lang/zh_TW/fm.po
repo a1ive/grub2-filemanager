@@ -1,0 +1,313 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: grub\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-24 09:41+0800\n"
+"PO-Revision-Date: 2017-05-24 21:02+0800\n"
+"Last-Translator: A1ive\n"
+"Language-Team: Chinese (traditional)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: \n"
+
+#: main.sh:55 main.sh:89 settings.sh:67 boot.sh:71
+msgid "Back"
+msgstr "返回"
+
+#: main.sh:97
+msgid "Open As Grub2 Menu"
+msgstr "作爲Grub2菜單打開"
+
+#: main.sh:103
+msgid "Open As GRUB4DOS Menu"
+msgstr "作爲GRUB4DOS菜單打開"
+
+#: main.sh:109
+msgid "Open As GRUB-Legacy Menu"
+msgstr "作爲GRUB-Legacy菜單打開"
+
+#: main.sh:115
+msgid "Open As Lua Script"
+msgstr "作爲Lua腳本加載"
+
+#: main.sh:121
+msgid "Open As EFI"
+msgstr "作爲EFI可執行文件運行"
+
+#: main.sh:127
+msgid "Open As Image"
+msgstr "作爲圖像打開"
+
+#: main.sh:129 main.sh:250 main.sh:265
+msgid "Press [ESC] to continue..."
+msgstr "按 [ESC] 繼續 ..."
+
+#: main.sh:134
+msgid "Mount Image"
+msgstr "掛載鏡像"
+
+#: main.sh:139
+msgid "Boot Floppy Image (memdisk)"
+msgstr "使用memdisk加載爲軟盤"
+
+#: main.sh:144
+msgid "Boot Floppy Image (GRUB4DOS)"
+msgstr "使用GRUB4DOS加載爲軟盤"
+
+#: main.sh:149
+msgid "Boot Hard Drive Image (memdisk)"
+msgstr "使用memdisk加載爲硬盤"
+
+#: main.sh:154
+msgid "Boot Hard Drive Image (GRUB4DOS)"
+msgstr "使用GRUB4DOS加載爲硬盤"
+
+#: main.sh:161
+msgid "Open As Archiver"
+msgstr "作爲壓縮文件打開"
+
+#: main.sh:167
+msgid "Mount ISO"
+msgstr "查看ISO內容"
+
+#: main.sh:173
+msgid "Boot ISO (memdisk)"
+msgstr "使用memdisk加載ISO"
+
+#: main.sh:178
+msgid "Boot ISO (GRUB4DOS)"
+msgstr "使用GRUB4DOS加載ISO"
+
+#: main.sh:190
+msgid "Boot EFI Files"
+msgstr "僅加載EFI文件"
+
+#: main.sh:196
+msgid "Open As Font"
+msgstr "加載pf2字庫文件"
+
+#: main.sh:200
+msgid "Insert Grub2 Module"
+msgstr "加載GRUB 2模塊"
+
+#: main.sh:206
+msgid "Chainload BIOS Boot Sector"
+msgstr "作爲BIOS引導扇區加載"
+
+#: main.sh:210
+msgid "Chainload NTLDR"
+msgstr "作爲NTLDR加載"
+
+#: main.sh:214
+msgid "Chainload BOOTMGR"
+msgstr "作爲BOOTMGR加載"
+
+#: main.sh:218
+msgid "Open As GRUB4DOS MOD"
+msgstr "作爲GRUB4DOS外部命令加載"
+
+#: main.sh:225
+msgid "Boot Multiboot Kernel"
+msgstr "作爲multiboot內核加載"
+
+#: main.sh:229
+msgid "Boot Multiboot2 Kernel"
+msgstr "作爲multiboot2內核加載"
+
+#: main.sh:233
+msgid "Boot Linux Kernel"
+msgstr "作爲linux內核加載"
+
+#: main.sh:241
+msgid "Open As Text"
+msgstr "查看文本內容"
+
+#: main.sh:245
+msgid "File Info"
+msgstr "查看文件信息"
+
+#: settings.sh:23
+msgid "Encoding: $encoding"
+msgstr "編碼設置: $encoding"
+
+#: settings.sh:32
+msgid "Resolution (R):  $gfxmode"
+msgstr "分辨率設置(R):  $gfxmode"
+
+#: settings.sh:63
+msgid "EFI Firmware Setup"
+msgstr "EFI固件設置"
+
+#: boot.sh:18
+msgid "Load External Menu: ($external)/boot/grub/external_menu.cfg"
+msgstr "加載外置菜單: ($external)/boot/grub/external_menu.cfg"
+
+#: boot.sh:31
+msgid "Boot Windows on ${device}"
+msgstr "啓動位於${device}的 Windows 操作系統"
+
+#: boot.sh:38 boot.sh:44 boot.sh:58
+msgid "Chainload ${device}"
+msgstr "啓動${device}"
+
+#: boot.sh:18
+msgid "Boot macOS on ${device}"
+msgstr "啓動位於${device}的 macOS"
+
+#: isoboot.sh:29
+msgid "Boot ISO (Loopback)"
+msgstr "作爲 Loopback ISO 啓動 (推薦)"
+
+#: distro/4m.sh:4
+msgid "Boot 4MLinux From ISO"
+msgstr "作爲 4MLinux ISO 啓動"
+
+#: distro/acronis.sh:6
+msgid "Boot Acronis True Image From ISO"
+msgstr "作爲 Acronis True Image ISO 啓動"
+
+#: distro/acronis.sh:12
+msgid "Boot Acronis Backup From ISO"
+msgstr "作爲 Acronis Backup Advanced ISO 啓動"
+
+#: distro/acronis.sh:20
+msgid "Boot Acronis Disk Director From ISO"
+msgstr "作爲 Acronis Disk Director ISO 啓動"
+
+#: distro/antix.sh:5
+msgid "Boot antiX From ISO"
+msgstr "作爲 antiX LiveCD 啓動"
+
+#: distro/antix.sh:10
+msgid "Boot antiX From ISO (Safe Mode)"
+msgstr "作爲 antiX LiveCD 啓動 (安全模式)"
+
+#: distro/arch.sh:8 distro/arch:27
+msgid "Boot Arch Linux From ISO"
+msgstr "作爲 Arch Linux LiveCD 啓動"
+
+#: distro/arch.sh:17
+msgid "Boot Archboot From ISO"
+msgstr "作爲 Archboot ISO 啓動"
+
+#: distro/blackarch.sh:8
+msgid "Boot BlackArch From ISO (x86_64)"
+msgstr "作爲 BlackArch LiveCD 啓動 (x86_64)"
+
+#: distro/blackarch.sh:18
+msgid "Boot BlackArch From ISO (i386)"
+msgstr "作爲 BlackArch LiveCD 啓動 (i386)"
+
+#: distro/debian.sh:21
+msgid "Please input the username. Default:user Super User:root Devuan:devuan"
+msgstr "請輸入登錄用戶名。默認:user 超級用戶:root Devuan:devuan"
+
+#: distro/debian.sh:28
+msgid "Boot Debian Live From ISO"
+msgstr "作爲 Debian LiveCD 啓動"
+
+#: distro/debian.sh:37
+msgid "Boot Debian Overlay From ISO (Clonezilla/GParted)"
+msgstr "作爲 Debian Overlay CD 啓動 (適用於 Clonezilla/GParted)"
+
+#: distro/fedora.sh:6
+msgid "Boot Fedora/CentOS From ISO (Installation CD)"
+msgstr "作爲 Fedora 安裝光盤 啓動"
+
+#: distro/fedora.sh:11
+msgid "Boot Fedora From ISO (Live CD)"
+msgstr "作爲 Fedora LiveCD 啓動"
+
+#: distro/fedora.sh:16
+msgid "Boot Fedora From ISO (Live CD, Fail Safe)"
+msgstr "作爲 Fedora LiveCD 啓動 (安全模式)"
+
+#: distro/fedora.sh:21
+msgid "Boot Fedora From ISO (Live CD, Rescue)"
+msgstr "作爲 Fedora LiveCD 啓動 (救援模式)"
+
+#: distro/gentoo.sh:9
+msgid "Boot Gentoo From ISO"
+msgstr "作爲 Gentoo LiveDVD 啓動"
+
+#: distro/manjaro.sh:5
+msgid "Boot Manjaro From ISO"
+msgstr "作爲 Manjaro LiveCD 啓動"
+
+#: distro/manjaro.sh:10
+msgid "Boot Manjaro From ISO (non-free drivers)"
+msgstr "作爲 Manjaro LiveCD 啓動 (加載閉源驅動)"
+
+#: distro/minitool.sh:5
+msgid "Boot MiniTool Partition Wizard From ISO"
+msgstr "作爲 MiniTool Partition Wizard ISO 啓動"
+
+#: distro/parabola.sh:8
+msgid "Boot Parabola GNU/Linux From ISO"
+msgstr "作爲 Parabola GNU/Linux LiveCD 啓動"
+
+#: distro/pclinuxos.sh:5
+msgid "Boot PCLinuxOS From ISO"
+msgstr "作爲 PCLinuxOS LiveCD 啓動"
+
+#: distro/pentoo.sh:5
+msgid "Boot Pentoo From ISO"
+msgstr "作爲 Pentoo LiveDVD 啓動"
+
+#: distro/pmagic.sh:7
+msgid "Boot Parted Magic From ISO (x86_64)"
+msgstr "作爲 Parted Magic LiveCD 啓動 (x86_64)"
+
+#: distro/pmagic.sh:12
+msgid "Boot Parted Magic From ISO (i686)"
+msgstr "作爲 Parted Magic LiveCD 啓動 (i686)"
+
+#: distro/porteus.sh:9
+msgid "Boot Porteus From ISO"
+msgstr "作爲 Porteus LiveCD 啓動"
+
+#: distro/sabayon.sh:5
+msgid "Boot Sabayon From ISO"
+msgstr "作爲 Sabayon LiveDVD 啓動"
+
+#: distro/slackware.sh:5
+msgid "Boot Slackware From ISO"
+msgstr "作爲 Slackware ISO 啓動"
+
+#: distro/slax.sh:9
+msgid "Boot Slax From ISO"
+msgstr "作爲 Slax LiveCD 啓動"
+
+#: distro/slitaz.sh:14
+msgid "Boot Slitaz Rolling From ISO"
+msgstr "作爲 Slitaz Rolling ISO 啓動"
+
+#: distro/suse64.sh:6
+msgid "Boot OpenSuSE From ISO"
+msgstr "作爲 OpenSuSE x86_64 LiveCD 啓動"
+
+#: distro/sysrcd.sh:5
+msgid "Boot System Rescue CD From ISO (x86_64)"
+msgstr "作爲 System Rescue CD 啓動 (x86_64)"
+
+#: distro/sysrcd.sh:9
+msgid "Boot System Rescue CD From ISO (i686)"
+msgstr "作爲 System Rescue CD 啓動 (i686)"
+
+#: distro/tinycore.sh:5
+msgid "Boot TinyCore From ISO"
+msgstr "作爲 TinyCore LiveCD 啓動"
+
+#: distro/ubuntu.sh:12
+msgid "Boot Ubuntu From ISO"
+msgstr "作爲 Ubuntu LiveCD 啓動"
+
+#: distro/ubuntu.sh:20
+msgid "Boot Ubuntu From ISO (persistent)"
+msgstr "作爲 Ubuntu LiveCD 啓動 (persistent)"
+
+#: distro/wifislax.sh:10 distro/wifislax.sh:17
+msgid "Boot Wifislax From ISO"
+msgstr "作爲 Wifislax LiveCD 啓動"

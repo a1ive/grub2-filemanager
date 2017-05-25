@@ -13,13 +13,14 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+unset open_sesame;
 set theme=${prefix}/themes/slack/extern.txt; export theme;
 function setgfx{
 	set gfxmode="$1";
 	terminal_output gfxterm;
 	configfile $prefix/settings.sh;
 }
-menuentry "编码设置: $encoding" --class settings {
+menuentry $"Encoding: $encoding" --class settings {
 	if [ "$encoding" = "gbk" ]; then
 		encoding="utf8";
 	else
@@ -28,7 +29,7 @@ menuentry "编码设置: $encoding" --class settings {
 	export encoding;
 	configfile $prefix/settings.sh;
 }
-submenu "分辨率设置(R):  $gfxmode" --class settings --hotkey=r {
+submenu $"Resolution (R):  $gfxmode" --class settings --hotkey=r {
 	terminal_output console
 	menuentry "[0] AUTO DETECT" --hotkey=0{
 		setgfx "auto";
@@ -59,10 +60,10 @@ submenu "分辨率设置(R):  $gfxmode" --class settings --hotkey=r {
 	}
 }
 if regexp 'efi' "$grub_platform"; then
-	menuentry "EFI固件设置" --class settings {
+	menuentry $"EFI Firmware Setup" --class settings {
 		fwsetup;
 	}
 fi
-menuentry "返回" --class go-previous {
+menuentry $"Back" --class go-previous {
 	configfile $prefix/main.sh;
 }

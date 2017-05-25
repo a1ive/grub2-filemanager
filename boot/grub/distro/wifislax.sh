@@ -7,14 +7,14 @@ if test -f (loop)/wifislax/vmlinuz*; then
 fi
 
 if test -d (loop)/wifislax64; then
-	menuentry "作为 Wifislax64 LiveCD 启动" --class $icon{
+	menuentry $"Boot Wifislax From ISO" --class $icon{
 		set loopiso="livemedia=/dev/disk/by-uuid/${devuuid}:${isofile}";
 		set kcmdline="kbd=us tz=Asia/Shanghai locale=en_US.utf8 rw";
 		linux $vmlinuz_img $kcmdline $loopiso;
 		initrd $initrd_img;
 	}
 else
-	menuentry "作为 Wifislax LiveCD 启动" --class $icon{
+	menuentry $"Boot Wifislax From ISO" --class $icon{
 		set loopiso="from=$isofile";
 		set kcmdline="noload=006-Xfce load=English";
 		linux $vmlinuz_img $kcmdline $loopiso;
