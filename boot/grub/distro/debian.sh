@@ -9,7 +9,7 @@ if test -f (loop)/live/initrd.img; then
 else
 	set initrd_img="(loop)/live/initrd.*";
 fi;
-set loopiso="findiso=${isofile}";
+set linux_extra="findiso=${isofile}";
 function CHSLocale {
 	echo "是否使用简体中文？按[Y]选择简体中文，按其他键使用默认语言。";
 	getkey key;
@@ -31,7 +31,7 @@ menuentry $"Boot Debian Live From ISO" --class $icon{
 		CHSLocale;
 	fi;
 	ReadUsername;
-	linux $vmlinuz_img $kcmdline $loopiso;
+	linux $vmlinuz_img $kcmdline $linux_extra;
 	initrd $initrd_img;
 }
 menuentry $"Boot Debian Overlay From ISO (Clonezilla/GParted)" --class $icon{
@@ -40,6 +40,6 @@ menuentry $"Boot Debian Overlay From ISO (Clonezilla/GParted)" --class $icon{
 		CHSLocale;
 	fi;
 	ReadUsername;
-	linux $vmlinuz_img $kcmdline $loopiso;
+	linux $vmlinuz_img $kcmdline $linux_extra;
 	initrd $initrd_img;
 }

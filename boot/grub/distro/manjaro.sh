@@ -1,15 +1,15 @@
 set icon="manjaro";
 set imgdevpath="/dev/disk/by-uuid/$devuuid";
-set loopiso="img_dev=$imgdevpath img_loop=$isofile misolabel=$devlbl";
+set linux_extra="img_dev=$imgdevpath img_loop=$isofile misolabel=$devlbl";
 function manjaro_menu {
 	menuentry $"Boot Manjaro From ISO" --class $icon{
 		set kcmdline="earlymodules=loop misobasedir=manjaro nouveau.modeset=1 i915.modeset=1 radeon.modeset=1 logo.nologo overlay=free splash showopts";
-		linux $vmlinuz_img $kcmdline $loopiso;
+		linux $vmlinuz_img $kcmdline $linux_extra;
 		initrd $initrd_img;
 	}
 	menuentry $"Boot Manjaro From ISO (non-free drivers)" --class $icon{
 		set kcmdline="earlymodules=loop misobasedir=manjaro nouveau.modeset=0 i915.modeset=1 radeon.modeset=0 nonfree=yes logo.nologo overlay=nonfree splash showopts";
-		linux $vmlinuz_img $kcmdline $loopiso;
+		linux $vmlinuz_img $kcmdline $linux_extra;
 		initrd $initrd_img;
 	}
 }

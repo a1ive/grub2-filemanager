@@ -4,9 +4,9 @@ if test -f (loop)/parabola/boot/x86_64/vmlinuz* -a -f (loop)/parabola/boot/x86_6
 	set vmlinuz_img="(loop)/parabola/boot/x86_64/vmlinuz*";
 	set initrd_img="(loop)/parabola/boot/x86_64/parabolaiso.img";
 	set kcmdline="earlymodules=loop";
-	set loopiso="img_dev=$imgdevpath img_loop=$isofile parabolaisolabel=$devlbl";
+	set linux_extra="img_dev=$imgdevpath img_loop=$isofile parabolaisolabel=$devlbl";
 	menuentry $"Boot Parabola GNU/Linux From ISO" --class $icon{
-		linux $vmlinuz_img $kcmdline $loopiso;
+		linux $vmlinuz_img $kcmdline $linux_extra;
 		initrd $initrd_img;
 	}
 fi

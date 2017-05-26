@@ -160,9 +160,13 @@ msgstr "启动${device}"
 msgid "Boot macOS on ${device}"
 msgstr "启动位于${device}的 macOS"
 
-#: isoboot.sh:29
+#: isoboot.sh:78
 msgid "Boot ISO (Loopback)"
-msgstr "作为 Loopback ISO 启动 (推荐)"
+msgstr "作为 Loopback ISO 启动"
+
+#: isoboot.sh:86
+msgid "Boot ISO (ISOLINUX)"
+msgstr "作为 ISOLINUX ISO 启动"
 
 #: distro/4m.sh:4
 msgid "Boot 4MLinux From ISO"

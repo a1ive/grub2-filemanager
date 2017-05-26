@@ -1,5 +1,4 @@
 set icon="acronis";
-set acronis_iso="${file_name}";
 set gfxpayload=1024x768x32,1024x768;
 
 if test -f (loop,msdos1)/dat10.dat -a -f (loop,msdos1)/dat11.dat -a -f (loop,msdos1)/dat12.dat; then

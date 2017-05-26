@@ -13,7 +13,21 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
-
+function SyslinuxBoot {
+	if test -f (loop)/isolinux/isolinux.cfg; then
+		set cfgpath=(loop)/isolinux/isolinux.cfg;
+	elif test -f (loop)/boot/isolinux/isolinux.cfg; then
+		set cfgpath=(loop)/boot/isolinux/isolinux.cfg;
+	else
+		return 1;
+	fi;
+	menuentry $"Boot ISO (ISOLINUX)" --class gnu-linux{
+		root=loop;
+		set theme=${prefix}/themes/slack/extern.txt; export theme;
+		export linux_extra;
+		syslinux_configfile $cfgpath;
+	}
+}
 function CheckLinuxType {
 	set icon="iso";
 	set distro="Linux";
@@ -25,14 +39,6 @@ function CheckLinuxType {
 	probe -u "$devname" --set=devuuid;
 	probe -q --set=devlbl --label (loop);
 	probe -u (loop) --set=loopuuid;
-	if test -f (loop)/boot/grub/loopback.cfg; then
-		menuentry $"Boot ISO (Loopback)" "$isofile" --class gnu-linux{
-			set iso_path="$2"; export iso_path;
-			root=loop;
-			set theme=${prefix}/themes/slack/extern.txt; export theme;
-			configfile /boot/grub/loopback.cfg
-		}
-	fi
 	if test -f (loop)/casper/vmlinuz*; then
 		source $prefix/distro/ubuntu.sh;
 	elif test -d (loop)/arch; then
@@ -81,5 +87,14 @@ function CheckLinuxType {
 		source $prefix/distro/pclinuxos.sh;
 	elif test -f (loop)/boot/bzImage -a -f (loop)/boot/initrd.gz; then
 		source $prefix/distro/4m.sh
-	fi
+	fi;
+	if test -f (loop)/boot/grub/loopback.cfg; then
+		menuentry $"Boot ISO (Loopback)" "$isofile" --class gnu-linux{
+			set iso_path="$2"; export iso_path;
+			root=loop;
+			set theme=${prefix}/themes/slack/extern.txt; export theme;
+			configfile /boot/grub/loopback.cfg
+		}
+	fi;
+	SyslinuxBoot;
 }

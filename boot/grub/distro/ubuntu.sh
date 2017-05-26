@@ -1,7 +1,7 @@
 set icon="ubuntu";
 set vmlinuz_img="(loop)/casper/vmlinuz*";
 set initrd_img="(loop)/casper/initrd*";
-set loopiso="iso-scan/filename=${isofile}";
+set linux_extra="iso-scan/filename=${isofile}";
 function CHSLocale {
 	echo "是否使用简体中文？按[Y]选择简体中文，按其他键使用默认语言。";
 	getkey key;
@@ -14,7 +14,7 @@ menuentry $"Boot Ubuntu From ISO" --class $icon{
 	if [ "${lang}" == "zh_CN" ]; then
 		CHSLocale;
 	fi;
-	linux $vmlinuz_img $kcmdline $loopiso;
+	linux $vmlinuz_img $kcmdline $linux_extra;
 	initrd $initrd_img;
 }
 menuentry $"Boot Ubuntu From ISO (persistent)" --class $icon{
@@ -22,6 +22,6 @@ menuentry $"Boot Ubuntu From ISO (persistent)" --class $icon{
 	if [ "${lang}" == "zh_CN" ]; then
 		CHSLocale;
 	fi;
-	linux $vmlinuz_img $kcmdline $loopiso;
+	linux $vmlinuz_img $kcmdline $linux_extra;
 	initrd $initrd_img;
 }
