@@ -16,9 +16,13 @@ msgstr ""
 msgid "Back"
 msgstr "返回"
 
-#: main.sh:97
+#: main.sh:93
 msgid "Open As Grub2 Menu"
 msgstr "作爲Grub2菜單打開"
+
+#: main.sh:97
+msgid "Open As Syslinux Menu"
+msgstr "作爲Syslinux菜單打開"
 
 #: main.sh:103
 msgid "Open As GRUB4DOS Menu"

@@ -90,11 +90,11 @@ function open{
 		export path; configfile $prefix/main.sh;
 	}
 	if regexp 'cfg' $file_type; then
-		menuentry ""  --class cfg{
+		menuentry $"Open As Grub2 Menu"  --class cfg{
 			regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
 			configfile "$file_name";
 		}
-		menuentry $"Open As Grub2 Menu"  --class cfg{
+		menuentry $"Open As Syslinux Menu"  --class cfg{
 			regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
 			syslinux_configfile $file_name;
 		}
