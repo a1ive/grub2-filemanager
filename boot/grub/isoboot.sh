@@ -86,7 +86,9 @@ function CheckLinuxType {
 	elif test -f (loop)/isolinux/vmlinuz -a -f (loop)/isolinux/initrd.gz -a -f (loop)/livecd.sqfs; then
 		source $prefix/distro/pclinuxos.sh;
 	elif test -f (loop)/boot/bzImage -a -f (loop)/boot/initrd.gz; then
-		source $prefix/distro/4m.sh
+		source $prefix/distro/4m.sh;
+	elif test -f (loop)/boot/isolinux/linux -a -f (loop)/boot/isolinux/minirt.gz; then
+		source $prefix/distro/knoppix.sh;
 	fi;
 	if test -f (loop)/boot/grub/loopback.cfg; then
 		menuentry $"Boot ISO (Loopback)" "$isofile" --class gnu-linux{
