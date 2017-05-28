@@ -148,17 +148,21 @@ msgstr "EFI固件設置"
 msgid "Load External Menu: ($external)/boot/grub/external_menu.cfg"
 msgstr "加載外置菜單: ($external)/boot/grub/external_menu.cfg"
 
-#: boot.sh:31
+#: boot.sh:39
 msgid "Boot Windows on ${device}"
 msgstr "啓動位於${device}的 Windows 操作系統"
 
-#: boot.sh:38 boot.sh:44 boot.sh:58
+#: boot.sh:46 boot.sh:51 boot.sh:80
 msgid "Chainload ${device}"
 msgstr "啓動${device}"
 
-#: boot.sh:18
+#: boot.sh:58
 msgid "Boot macOS on ${device}"
 msgstr "啓動位於${device}的 macOS"
+
+#: boot.sh:65
+msgid "Boot ${sysver} on ${device}"
+msgstr "啓動位於${device}的 ${sysver}"
 
 #: isoboot.sh:78
 msgid "Boot ISO (Loopback)"

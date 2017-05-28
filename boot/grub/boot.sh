@@ -19,7 +19,15 @@ if search --set=external -q -f /boot/grub/external_menu.cfg; then
 		set root=$2;
 		configfile ($root)/boot/grub/external_menu.cfg;
     }
-fi
+fi;
+function AutoSwap {
+	if regexp '^hd[0-9a-zA-Z,]+$' $root; then
+		regexp -s devnum '^hd([0-9]+).*$' $root;
+		if test "devnum" != "0"; then
+			drivemap -s (hd0) ($root);
+		fi;
+	fi;
+}
 for dev in (*); do
 	if test -e $dev; then
 		regexp --set=device '\((.*)\)' $dev;
@@ -52,17 +60,26 @@ for dev in (*); do
         	    chainloader ($root)/System/Library/CoreServices/boot.efi;
 			}
         fi;
+    elif test -f ($device)/windows/system32/version.dll; then
+		lua $prefix/win_ver.lua;
+		menuentry $"Boot ${sysver} on ${device}" $device --class windows{
+			set root=$2;
+			AutoSwap;
+			if test -f /bootmgr; then
+				ntldr /bootmgr;
+			elif test -f /ntldr; then
+				ntldr /ntldr;
+			else
+				chainloader --force +1;
+			fi;
+		}
+		unset sysver;
     else
 		probe --set=bootable -b $device;
 		if regexp 'bootable' "$bootable"; then
 			menuentry $"Chainload ${device}" $device --class img{
 				set root=$2;
-				if regexp '^hd[0-9a-zA-Z,]+$' $root; then
-					regexp -s devnum '^hd([0-9]+).*$' $root;
-					if test "devnum" != "0"; then
-						drivemap -s (hd0) ($root);
-					fi
-				fi
+				AutoSwap;
 				chainloader --force --bpb +1;
 			}
 		fi;
