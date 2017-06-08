@@ -1,4 +1,4 @@
-set icon="gnu-linux";
+set icon="kaos";
 set imgdevpath="/dev/disk/by-uuid/$devuuid";
 if test -f (loop)/kdeos/boot/x86_64/kdeosiso -a -f (loop)/kdeos/boot/x86_64/kdeosiso.img; then
 	set vmlinuz_img="(loop)/kdeos/boot/x86_64/kdeosiso";
