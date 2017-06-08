@@ -212,6 +212,10 @@ msgstr "作爲 BlackArch LiveCD 啓動 (x86_64)"
 msgid "Boot BlackArch From ISO (i386)"
 msgstr "作爲 BlackArch LiveCD 啓動 (i386)"
 
+#: distro/bsd.sh:2
+msgid "Boot BSD From ISO"
+msgstr "作爲 BSD ISO 啓動"
+
 #: distro/debian.sh:21
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
 msgstr "請輸入登錄用戶名。默認:user 超級用戶:root Devuan:devuan"

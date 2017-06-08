@@ -91,6 +91,8 @@ function CheckLinuxType {
 		source $prefix/distro/4m.sh;
 	elif test -f (loop)/boot/isolinux/linux -a -f (loop)/boot/isolinux/minirt.gz; then
 		source $prefix/distro/knoppix.sh;
+	elif test -f (loop)/boot/kernel/kernel; then
+		source $prefix/distro/bsd.sh;
 	fi;
 	if test -f (loop)/boot/grub/loopback.cfg; then
 		menuentry $"Boot ISO (Loopback)" "$isofile" --class gnu-linux{
