@@ -244,6 +244,10 @@ msgstr "作为 Fedora LiveCD 启动 (救援模式)"
 msgid "Boot Gentoo From ISO"
 msgstr "作为 Gentoo LiveDVD 启动"
 
+#: distro/kaos.sh:8
+msgid "Boot KaOS From ISO"
+msgstr "作为 KaOS LiveCD 启动"
+
 #: distro/knoppix.sh:7
 msgid "Boot Knoppix From ISO"
 msgstr "作为 Knoppix LiveCD 启动"
