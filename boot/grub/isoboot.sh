@@ -94,7 +94,9 @@ function CheckLinuxType {
 	elif test -f (loop)/kernel -a -f (loop)/initrd.img -a -f (loop)/system.sfs; then
 		source $prefix/distro/android.sh;
 	elif test -f (loop)/boot/kernel/kernel; then
-		source $prefix/distro/bsd.sh;
+		source $prefix/distro/freebsd.sh;
+	elif test -f (loop)/*/*/bsd.rd; then
+		source $prefix/distro/openbsd.sh;
 	fi;
 	if test -f (loop)/boot/grub/loopback.cfg; then
 		menuentry $"Boot ISO (Loopback)" "$isofile" --class gnu-linux{

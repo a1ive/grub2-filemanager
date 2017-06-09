@@ -272,6 +272,10 @@ msgstr "作爲 Manjaro LiveCD 啓動 (加載閉源驅動)"
 msgid "Boot MiniTool Partition Wizard From ISO"
 msgstr "作爲 MiniTool Partition Wizard ISO 啓動"
 
+#: distro/openbsd.sh:3
+msgid "Boot OpenBSD From ISO"
+msgstr "作爲 OpenBSD ISO 啓動"
+
 #: distro/parabola.sh:8
 msgid "Boot Parabola GNU/Linux From ISO"
 msgstr "作爲 Parabola GNU/Linux LiveCD 啓動"

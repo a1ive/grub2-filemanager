@@ -3,7 +3,7 @@ set bsd_kernel=(loop)/boot/kernel/kernel;
 menuentry $"Boot FreeBSD From ISO" --class $icon{
 	if regexp 'efi' $grub_platform; then
 		echo $"Platform: ${grub_platform}";
-		echo $"WARNING: HEADLESS MODE ENABLED!"
+		echo $"WARNING: HEADLESS MODE ENABLED!";
 	fi;
 	terminal_output console;
 	echo $"Loading kernel";
