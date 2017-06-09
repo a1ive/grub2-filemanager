@@ -213,8 +213,8 @@ msgid "Boot BlackArch From ISO (i386)"
 msgstr "作为 BlackArch LiveCD 启动 (i386)"
 
 #: distro/bsd.sh:2
-msgid "Boot BSD From ISO"
-msgstr "作为 BSD ISO 启动"
+msgid "Boot FreeBSD From ISO"
+msgstr "作为 FreeBSD ISO 启动"
 
 #: distro/debian.sh:21
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
