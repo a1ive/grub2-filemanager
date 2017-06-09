@@ -91,6 +91,8 @@ function CheckLinuxType {
 		source $prefix/distro/4m.sh;
 	elif test -f (loop)/boot/isolinux/linux -a -f (loop)/boot/isolinux/minirt.gz; then
 		source $prefix/distro/knoppix.sh;
+	elif test -f (loop)/kernel -a -f (loop)/initrd.img -a -f (loop)/system.sfs; then
+		source $prefix/distro/android.sh;
 	elif test -f (loop)/boot/kernel/kernel; then
 		source $prefix/distro/bsd.sh;
 	fi;

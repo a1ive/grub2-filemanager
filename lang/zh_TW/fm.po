@@ -188,6 +188,10 @@ msgstr "作爲 Acronis Backup Advanced ISO 啓動"
 msgid "Boot Acronis Disk Director From ISO"
 msgstr "作爲 Acronis Disk Director ISO 啓動"
 
+#: distro/android.sh:6
+msgid "Boot Android-x86 From ISO"
+msgstr "作爲 Android-x86 LiveCD 啓動"
+
 #: distro/antix.sh:5
 msgid "Boot antiX From ISO"
 msgstr "作爲 antiX LiveCD 啓動"
