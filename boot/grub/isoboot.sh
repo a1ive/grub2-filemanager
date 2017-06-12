@@ -18,6 +18,8 @@ function SyslinuxBoot {
 		set cfgpath=(loop)/isolinux/isolinux.cfg;
 	elif test -f (loop)/boot/isolinux/isolinux.cfg; then
 		set cfgpath=(loop)/boot/isolinux/isolinux.cfg;
+	elif test -f (loop)/isolinux.cfg; then
+		set cfgpath=(loop)/isolinux.cfg;
 	else
 		return 1;
 	fi;
