@@ -61,17 +61,19 @@ if (buf == "5.0.") then
 elseif (buf == "5.1.") then
         sysver = "Windows XP"
 elseif (buf == "5.2.") then
-        sysver = "Windows 2003"
+        sysver = "Windows Server 2003"
 elseif (buf == "6.0.") then
-        sysver = "Windows Vista"
+        sysver = "Windows Server 2008"
 elseif (buf == "6.1.") then
-        sysver = "Windows 7/2008"
+        sysver = "Windows 7"
 elseif (buf == "6.2.") then
         sysver = "Windows 8"
 elseif (buf == "6.3.") then
         sysver = "Windows 8.1"
 elseif (buf == "10.0") then
         sysver = "Windows 10"
+else
+        sysver = "Windows NT"
 end
 print ("Version : " .. sysver)
 grub.setenv ("sysver", sysver)
