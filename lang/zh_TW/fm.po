@@ -220,6 +220,10 @@ msgstr "作爲 BlackArch LiveCD 啓動 (i386)"
 msgid "Boot FreeBSD From ISO"
 msgstr "作爲 FreeBSD ISO 啓動"
 
+#: distro/cdlinux.sh:6
+msgid "Boot CDlinux From ISO"
+msgstr "作爲 CDlinux ISO 啓動"
+
 #: distro/debian.sh:21
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
 msgstr "請輸入登錄用戶名。默認:user 超級用戶:root Devuan:devuan"
