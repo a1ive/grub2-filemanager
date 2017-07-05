@@ -31,7 +31,7 @@ https://github.com/a1ive/grub2-filemanager/releases
 	loader /grubfm.efi
 #### Systemd-boot 
 	efi /grubfm.efi
-## Supported distributions 
+## Supported distros 
 *    4MLinux
 *    Acronis True Image
 *    Android-x86(6.0+)
@@ -90,3 +90,14 @@ https://github.com/a1ive/grub2-filemanager/releases
 *    Windows PE(Legacy-BIOS only)
 *    Xubuntu
 *    ZorinOS
+## Source code 
+GRUB2-MOD: https://github.com/a1ive/grub2-mod 
+## Similar projects 
+*	[Multiboot USB](http://mbusb.aguslr.com/) 
+*	[grub-iso-boot](https://github.com/Jimmy-Z/grub-iso-boot) 
+*	[grub-iso-multiboot](https://github.com/mpolitzer/grub-iso-multiboot) 
+*	[GLIM](https://github.com/thias/glim) 
+*	[Easy2Boot](http://www.easy2boot.com/) 
+*	[GRUB2 File Explorer](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=320715) 
+*	[RUN](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=191301) 
+*	[G4D AUTOMENU](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=203607) 

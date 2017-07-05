@@ -97,5 +97,13 @@ https://github.com/a1ive/grub2-filemanager/releases
 *    Xubuntu
 *    ZorinOS
 ## 源码 
-许可协议: GNU GPL v3.0  
-修改版GRUB: https://github.com/a1ive/grub2-mod
+GRUB2-MOD: https://github.com/a1ive/grub2-mod 
+## 类似项目 
+*	[Multiboot USB](http://mbusb.aguslr.com/) 
+*	[grub-iso-boot](https://github.com/Jimmy-Z/grub-iso-boot) 
+*	[grub-iso-multiboot](https://github.com/mpolitzer/grub-iso-multiboot) 
+*	[GLIM](https://github.com/thias/glim) 
+*	[Easy2Boot](http://www.easy2boot.com/) 
+*	[GRUB2 File Explorer](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=320715) 
+*	[RUN](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=191301) 
+*	[G4D AUTOMENU](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=203607) 
