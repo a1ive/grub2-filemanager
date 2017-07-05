@@ -37,6 +37,65 @@ https://github.com/a1ive/grub2-filemanager/releases
 	loader /grubfm.efi
 #### Systemd-boot 
 	efi /grubfm.efi
+## 支持列表 
+*    4MLinux
+*    Acronis True Image
+*    Android-x86(6.0及以上版本)
+*    antiX
+*    Apricity OS
+*    Antergos
+*    Arch Linux(仅FAT32)
+*    ArchBang
+*    Archboot
+*    Backbox
+*    BlackArch
+*    Bodhi
+*    CDlinux
+*    CentOS(仅FAT32)
+*    Clonezilla
+*    DBAN(系统仅支持Legacy-BIOS)
+*    Debian Live
+*    Deepin
+*    Devuan Live(请手动输入用户名devuan)
+*    elementaryOS
+*    Fedora(仅FAT32)
+*    FreeBSD(bootonly ISO, 系统仅支持Legacy-BIOS)
+*    FreeDOS(系统仅支持Legacy-BIOS)
+*    FreeNAS
+*    Gentoo
+*    GParted Live
+*    grml
+*    Knoppix
+*    Kali Linux
+*    KaOS
+*    KDE-neon
+*    KolibriOS(系统仅支持Legacy-BIOS)
+*    Linux Lite
+*    LinuxMint
+*    Lubuntu
+*    Manjaro
+*    Memtest86
+*    MiniTool Partition Wizard
+*    OpenBSD(系统仅支持Legacy-BIOS)
+*    OpenSUSE
+*    Parted Magic
+*    PCLinuxOS
+*    Peppermint
+*    PhoenixOS
+*    PIXEL
+*    Porteus
+*    RemixOS(3.0及以上版本)
+*    Slackware
+*    Slax
+*    Slitaz(系统仅支持Legacy-BIOS)
+*    Super Grub2 Disk
+*    System Rescue CD
+*    Ubuntu
+*    Void Linux
+*    Wifislax/Wifislax64
+*    Windows PE(仅Legacy-BIOS)
+*    Xubuntu
+*    ZorinOS
 ## 源码 
 许可协议: GNU GPL v3.0  
 修改版GRUB: https://github.com/a1ive/grub2-mod
