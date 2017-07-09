@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-git clone https://github.com/a1ive/grub2-mod.git --depth 1
+git clone https://github.com/a1ive/grub2-mod.git --depth 1 -b x2
 cd grub2-mod
 ./autogen.sh
 ./configure --prefix=$(pwd)/build --target=x86_64 --with-platform=efi && make install && make clean
