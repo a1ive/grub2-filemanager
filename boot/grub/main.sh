@@ -170,15 +170,18 @@ function open{
 		source $prefix/isoboot.sh;
 		CheckLinuxType;
 		if regexp 'pc' $grub_platform; then
-			menuentry $"Boot ISO (memdisk)" --class iso{
-				loopback -d loop;
-				linux16 $prefix/tools/memdisk iso raw;
-				initrd16 "$file_name";
-			}
 			menuentry $"Boot ISO (GRUB4DOS)" --class iso{
 				set g4d_param="(hd32)";
 				lua $prefix/g4d_path.lua;
 				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+			}
+			menuentry $"Boot ISO (Easy2Boot)" --class iso{
+				source $prefix/easy2boot.sh;
+			}
+			menuentry $"Boot ISO (memdisk)" --class iso{
+				loopback -d loop;
+				linux16 $prefix/tools/memdisk iso raw;
+				initrd16 "$file_name";
 			}
 		else
 			if regexp 'i386' "$grub_cpu"; then

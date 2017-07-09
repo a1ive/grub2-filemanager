@@ -84,6 +84,10 @@ msgstr "使用memdisk加载ISO"
 msgid "Boot ISO (GRUB4DOS)"
 msgstr "使用GRUB4DOS加载ISO"
 
+#: main.sh:178
+msgid "Boot ISO (Easy2Boot)"
+msgstr "使用Easy2Boot方式加载ISO"
+
 #: main.sh:190
 msgid "Boot EFI Files"
 msgstr "仅加载EFI文件"
@@ -347,3 +351,19 @@ msgstr "作为 Ubuntu LiveCD 启动 (persistent)"
 #: distro/wifislax.sh:10 distro/wifislax.sh:17
 msgid "Boot Wifislax From ISO"
 msgstr "作为 Wifislax LiveCD 启动"
+
+#：easy2boot.sh
+msgid "WARNING: Partition table 4 is already in use on this device."
+msgstr "警告：磁盘分区表第四分区已被占用。"
+
+#：easy2boot.sh
+msgid "WARNING: Will erase ALL data on (hd0,4)."
+msgstr "警告：即将删除(hd0,4)的分区数据。"
+
+#：easy2boot.sh
+msgid "Press [Y] to continue. Press [N] to quit."
+msgstr "按[Y]继续。按[N]退出。"
+
+#：easy2boot.sh
+msgid "Canceled."
+msgstr "已取消。"

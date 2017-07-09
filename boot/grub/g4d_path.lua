@@ -41,6 +41,8 @@ if param == "config" then
 	g4dcmd = g4dcmd .. "configfile " .. file
 elseif param == "command" then
 	g4dcmd = g4dcmd .. "command " .. file
+elseif param == "cdboot" then
+	g4dcmd = g4dcmd .. "partnew (hd0,3) 0x00 " .. file .. ";map " .. file .. " (0xff);map --hook;chainloader (0xff)"
 elseif (string.match (param, "^%(.*%)$") ~= nil) then
 	g4dcmd = g4dcmd .. "map " .. file .. " " .. param .. ";map --hook;chainloader "
 	if (param == "(fd0)" or param == "(hd0)") then
@@ -52,6 +54,6 @@ end
 print (g4dcmd)
 grub.setenv ("g4dcmd", g4dcmd)
 
---print ("按任意键继续启动 ...")
---grub.getkey ()
+-- print ("Press any key to continue ...")
+-- grub.getkey ()
 return 0
