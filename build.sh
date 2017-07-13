@@ -26,6 +26,7 @@ fi
 echo -n "checking for grub ... "
 if [ -e "$(which grub-mkimage)" ]
 then
+	mkimage=grub-mkimage
 	echo "ok"
 else
 	echo "not found"
