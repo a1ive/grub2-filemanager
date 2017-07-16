@@ -69,7 +69,7 @@ function CheckLinuxType {
 		source $prefix/distro/porteus.sh;
 	elif test -d (loop)/slax; then
 		source $prefix/distro/slax.sh;
-	elif test -d (loop)/wifislax*; then
+	elif test -d (loop)/wifislax* -o -d (loop)/wifiway; then
 		source $prefix/distro/wifislax.sh;
 	elif test -f (loop)/dat*.dat; then
 		source $prefix/distro/acronis.sh;

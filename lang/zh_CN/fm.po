@@ -352,6 +352,10 @@ msgstr "作为 Ubuntu LiveCD 启动 (persistent)"
 msgid "Boot Wifislax From ISO"
 msgstr "作为 Wifislax LiveCD 启动"
 
+#: distro/wifislax.sh:24
+msgid "Boot Wifiway From ISO"
+msgstr "作为 Wifiway LiveCD 启动"
+
 #：easy2boot.sh
 msgid "WARNING: Partition table 4 is already in use on this device."
 msgstr "警告：磁盘分区表第四分区已被占用。"
