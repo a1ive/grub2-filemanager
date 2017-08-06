@@ -1,5 +1,9 @@
 set icon="freebsd";
-set bsd_kernel=(loop)/boot/kernel/kernel;
+if test -f (loop)/boot/kernel/kernel; then
+	set bsd_kernel=(loop)/boot/kernel/kernel;
+else
+	set bsd_kernel=(loop)/boot/kernel/kernel.*;
+fi;
 menuentry $"Boot FreeBSD From ISO" --class $icon{
 	if regexp 'efi' $grub_platform; then
 		echo $"Platform: ${grub_platform}";
@@ -11,6 +15,7 @@ menuentry $"Boot FreeBSD From ISO" --class $icon{
 	echo $"Loading ISO";
 	kfreebsd_module "${file_name}" type=mfs_root;
 	set kFreeBSD.vfs.root.mountfrom=cd9660:/dev/md0;
+	set kFreeBSD.vfs.root.mountfrom.options=ro;
 	set kFreeBSD.grub.platform=$grub_platform;
 	echo $"Starting FreeBSD";
 }

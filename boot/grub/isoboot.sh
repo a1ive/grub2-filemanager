@@ -95,7 +95,7 @@ function CheckLinuxType {
 		source $prefix/distro/knoppix.sh;
 	elif test -f (loop)/kernel -a -f (loop)/initrd.img -a -f (loop)/system.sfs; then
 		source $prefix/distro/android.sh;
-	elif test -f (loop)/boot/kernel/kernel; then
+	elif test -f (loop)/boot/kernel/kernel -o -f (loop)/boot/kernel/kernel.*; then
 		source $prefix/distro/freebsd.sh;
 	elif test -f (loop)/*/*/bsd.rd; then
 		source $prefix/distro/openbsd.sh;
