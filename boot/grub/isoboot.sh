@@ -99,6 +99,8 @@ function CheckLinuxType {
 		source $prefix/distro/freebsd.sh;
 	elif test -f (loop)/*/*/bsd.rd; then
 		source $prefix/distro/openbsd.sh;
+	elif test -f (loop)/*/binary/kernel/netbsd-INSTALL.gz; then
+		source $prefix/distro/netbsd.sh;
 	elif test -d (loop)/CDlinux; then
 		source $prefix/distro/cdlinux.sh;
 	fi;
