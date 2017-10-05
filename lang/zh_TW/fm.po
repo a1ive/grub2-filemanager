@@ -328,6 +328,10 @@ msgstr "作爲 Slax LiveCD 啓動"
 msgid "Boot Slitaz Rolling From ISO"
 msgstr "作爲 Slitaz Rolling ISO 啓動"
 
+#: distro/smartos.sh:4
+msgid "Boot SmartOS From ISO"
+msgstr "作爲 SmartOS ISO 啓動"
+
 #: distro/suse64.sh:6
 msgid "Boot OpenSuSE From ISO"
 msgstr "作爲 OpenSuSE x86_64 LiveCD 啓動"

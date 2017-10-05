@@ -103,6 +103,8 @@ function CheckLinuxType {
 		source $prefix/distro/netbsd.sh;
 	elif test -d (loop)/CDlinux; then
 		source $prefix/distro/cdlinux.sh;
+	elif test -f (loop)/platform/i86pc/kernel/amd64/unix -a -f (loop)/platform/i86pc/amd64/boot_archive; then
+		source $prefix/distro/smartos.sh;
 	fi;
 	if test -f (loop)/boot/grub/loopback.cfg; then
 		menuentry $"Boot ISO (Loopback)" "$isofile" --class gnu-linux{

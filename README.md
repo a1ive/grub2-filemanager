@@ -70,6 +70,7 @@ https://github.com/a1ive/grub2-filemanager/releases
 *    Manjaro
 *    Memtest86
 *    MiniTool Partition Wizard
+*    NetBSD(Legacy-BIOS only)
 *    OpenBSD(Legacy-BIOS only)
 *    OpenSUSE
 *    Parted Magic
@@ -82,6 +83,7 @@ https://github.com/a1ive/grub2-filemanager/releases
 *    Slackware
 *    Slax
 *    Slitaz(Legacy-BIOS only)
+*    SmartOS(Legacy-BIOS only)
 *    Super Grub2 Disk
 *    System Rescue CD
 *    Ubuntu
