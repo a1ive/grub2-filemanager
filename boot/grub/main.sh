@@ -162,6 +162,16 @@ function open{
 			loopback tar "$file_name";
 			path="(tar)"; export path; configfile $prefix/main.sh;
 		}
+	elif regexp 'wim' $file_type; then
+		if regexp 'pc' $grub_platform; then
+			if search -f /NTBOOT; then
+				menuentry $"Boot WIM (NTBOOT)" --class wim{
+					set g4d_param="ntboot";
+					lua $prefix/g4d_path.lua;
+					linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+				}
+			fi;
+		fi;
 	elif regexp 'iso' $file_type; then
 		loopback loop "$file_name";
 		menuentry $"Mount ISO"  --class iso{

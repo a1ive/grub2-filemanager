@@ -1,0 +1,204 @@
+!BAT
+debug off
+checkrange 20130319:-1 read 0x8278 || call :error Not supported grub4dos version!
+if not exist NTBOOT && set NTBOOT=%~f0
+setlocal
+set ISO_TYPE=
+set ISO_INST=
+set NTPATH=
+echo
+echo NTBOOT by chenall 2014-08-24,$[0101]http://chenall.net
+goto %1 || goto :NTBOOT_HELP
+
+:menu
+configfile %NTBOOT%.LST/MENU.LST
+exit
+
+::检测下一个文件。在使用call :CHECK_FILE %FILE1% %FILE2% 之类的情况下会用到
+:CHECK_NEXT_FILE
+set tmp=%2
+if not exist tmp && goto :input_file
+shift
+if "%0"=="%1" && goto :CHECK_NEXT_FILE
+::检查/查找文件
+:CHECK_FILE
+echo Checking file $[0107]%1 ...
+set file=%1
+set tmp=%~pnx1
+::如果路径是以"("开头的,则是一个完整的路径,不再进行查找.
+if not "%file:~0,1%"=="(" && goto :_FIND1
+cat --length=0 %1 || goto :CHECK_NEXT_FILE
+root %~d1
+goto :eof
+
+:_FIND1
+find --set-root --devices=h %1 || goto :CHECK_NEXT_FILE
+goto :eof
+
+:input_file
+::获取用户输入的文件,
+echo
+echo File not found or not support: $[0105]%file%
+echo 
+echo Please enter a new path to the file: $[0104]%~x1
+set file=
+set /p:5 file=NTBOOT>
+if not exist file goto :exit
+set tmp=%~x1
+set tmp=%tmp:~0,3%
+call Fn.11 "%file%" "%tmp%" || goto :input_file
+echo
+call :CHECK_FILE %file%
+exit
+
+:NT6
+::检测需要的模块
+insmod %NTBOOT%.MOD/NTBOOT.MOD || call :error Missing module NTBOOT.MOD...
+::映射NTBOOT启动镜像
+set /u file=NTBOOT.%1
+map --mem %NTBOOT%.MOD/%file% (rd) || call :error Missing module %file%...
+
+:NTBOOT_START
+::设置默认WINDOWS路径
+set WinDir=WINDOWS
+set boot_cfg=
+shift
+set file=%1
+set tmp=/%WinDir%
+::如果没有加参数或参数是一个磁盘分区
+if not exist file && goto error
+if "%~d1"=="%1" && goto error
+call :CHECK_FILE %file%
+::指定启动文件
+set NTLDR=
+if /i "%2"=="ntldr" || goto %0%~x1_BOOT
+set NTLDR=%3 ;; shift /2 ;; shift /2
+::转到对应的启动类别，比如NT5.IMG_BOOT，NT6.WIM_BOOT，NT6.VHD_BOOT
+goto %0%~x1_BOOT
+
+:NT6.VHDX_BOOT
+:NT6.VHD_BOOT
+::固定用法,本软盘对应的BCD文件专用.下同
+set boot_cfg=:BCD_CFG_VHD#WIM b VHD
+goto :NT6_BOOT
+
+:NT6.WIM_BOOT
+set boot_cfg=:BCD_CFG_VHD#WIM a WIM
+goto :NT6_BOOT
+
+::GET_ARC_PATH，把一个路径转换为ARC格式表示
+:GET_ARC_PATH
+checkrange 0:1 read 0x82a0 && goto :FD_ARC
+::checkrange 0x9E:0xFF read 0x82a0 && goto :CD_ARC
+:HD_ARC
+DISKID ret=0x60000 || goto :CD_ARC
+set /a R=*0x60000>>24&0xFF
+set /a P=*0x60000>>16&0xFF
+echo multi(0)disk(0)rdisk(%R%)partition(%P%)%tmp% > (md)0x3000+4
+:SET_ARC_PATH
+::替换GRUB4DOS路径的/为WINDOWS路径\
+cat --locate=/ --replace=\\ (md)0x3000+4
+::设置变量ARC_PATH
+cat (md)0x3000+4 | set ARC_PATH=
+goto :eof
+
+:FD_ARC
+set /a R=*0x82A0&0xFF
+echo multi(0)disk(0)fdisk(%R%)%tmp% > (md)0x3000+4
+::如果是(fdx,y)的形式，映射成(fdx)
+checkrange 0xFFFFFF00 read 0x829b || map +1 ()
+goto :SET_ARC_PATH
+
+:CD_ARC
+set /a R=*0x82A0&0xFF
+echo multi(0)disk(0)cdrom(%R%)%tmp% > (md)0x3000+4
+goto :SET_ARC_PATH
+
+:BOOT
+if exist BOOT && %BOOT%
+map --mem (rd)+1 %BOOTDEV%
+map --unmap=0xfb,0xfc,0xfe,0xff,0xcd
+map --rehook
+call :CHECK_FILE %NTLDR%
+chainloader %NTLDR%
+root %BOOTDEV%
+boot
+exit
+
+:BCD_CFG_VHD#WIM
+::本软盘BCD对应的特定语句,修改默认启动项
+write --offset=0x343C (rd)/BOOT/BCD %1
+write --offset=0x35DC (rd)/BOOT/BCD %1
+::未公开功能。把变量的值ASCII字符串使用UNICODE编码放到内存0x40000位置。编码方式\xH1\0\XH2\0.....
+WENV get tmp=0x40000
+::替换路径字符中的/为\
+cat --locate=\\x2F --replace=\\x5C (md)0x200+3
+::本软盘BCD对应的特定语句，修改文件路径
+cat --locate=\\%2_ --number=2 (rd)/BOOT/BCD | call :BCD_CFG_PATH=
+exit
+
+:BCD_CFG_PATH
+WENV call write --offset=0x%1 (rd)/BOOT/BCD *0x40000$
+WENV call write --offset=0x%2 (rd)/BOOT/BCD *0x40000$
+exit
+
+:NT6_NO_CONFIG
+set /a offset=0x%1+0x14
+write --offset=%offset% (rd)/BOOT/BCD \0
+exit
+
+:NT6_BOOT
+if not exist NTLDR && set NTLDR=(fd0)/BOOTMGR
+::附加参数
+if /i "%2"=="NODETECTHAL" && cat --locate=26000010 (rd)/BOOT/BCD | call :NT6_NO_CONFIG=
+::shift 2
+::if not "%2"=="" goto :PE1.OPTIONS
+::获取当前磁盘号
+set /a cur_drv=*0x82A0&0x7F
+set /a cur_pri=*0x829C>>16&0xFFFF
+clear
+echo
+echo   Will Boot NT6.X From (hd%cur_drv%,%cur_pri%)%tmp%
+echo
+echo   boot: %NTLDR%
+echo
+if exist boot_cfg && call %boot_cfg%
+
+root ()
+checkrange 0xee read 0x8334 && goto :NT6_GPT
+::获取MBR签名
+dd if=(hd%cur_drv%)+1 of=(md) bs=1 count=4 skip=0x1b8 seek=0x60000
+::获取当前分区偏移
+cat --length=0 ()-1
+dd if=(md) of=(md) bs=1 count=8 skip=0x8290 seek=0x60004
+::修改MBR签名
+cat --locate=\x53\xB7\x53\xB7 --replace=*0x60000 --hex=4 (rd)/BOOT/BCD
+cat --locate=\0\x7E\0\0 --replace=*0x60004 --hex=8 (rd)/BOOT/BCD
+goto :NT6_REAL_BOOT
+
+:NT6_GPT
+::GPT硬盘GUID
+write 0x60000 0
+dd if=(hd%cur_drv%)1+1 of=(md) bs=1 count=16 skip=56 seek=0x60004
+cat --locate=\1\0\0\0\x53\xB7\x53\xB7 --replace=*0x60000 --hex=20 (rd)/BOOT/BCD
+::GPT分区GUID
+set /a offset=%cur_pri%<<3+1
+dd if=(hd%cur_drv%)2+32 of=(md)0x300+1 bs=16 count=1 skip=%offset%
+cat --locate=\0\x7E\0\0 --replace=*0x60000 --hex=16 (rd)/BOOT/BCD
+:NT6_REAL_BOOT
+set BOOTDEV=(0)
+goto :BOOT
+
+:error
+pause Error: %*
+:exit
+root %NTBOOT%
+root ()
+exit 1
+
+:NTBOOT_HELP
+echo
+echo Usage:
+echo 	NTBOOT NT6=file
+echo
+exit 2

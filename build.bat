@@ -1,5 +1,7 @@
 @echo off
-rd /s /q build
+if exist build (
+	rd /s /q build
+	)
 md build
 
 echo common files
@@ -7,17 +9,17 @@ cd /d %~dp0
 xcopy /s /e /y /i boot build\boot
 
 chcp 65001
-echo "Language / 语言 / 語言"
-echo "1. Simplified Chinese / 简体中文"
-echo "2. Traditional Chinese / 正體中文"
-echo "3. English (United States)"
-echo "Please make a choice: " 
+echo Language / 语言 / 語言
+echo 1. Simplified Chinese / 简体中文
+echo 2. Traditional Chinese / 正體中文
+echo 3. English (United States)
+echo Please make a choice: 
 set /p id=
 if "%id%" == "1" goto cn
 if "%id%" == "2" goto tw
 if "%id%" == "3" goto en
 :cn
-echo "zh_CN"
+echo zh_CN
 bin\msgfmt.exe grub\locale\zh_CN.po -o build\boot\grub\locale\zh_CN.mo
 bin\msgfmt.exe lang\zh_CN\fm.po -o build\boot\grub\locale\fm\zh_CN.mo
 copy lang\zh_CN\lang.sh build\boot\grub\
@@ -25,7 +27,7 @@ copy lang\zh_CN\text.txt build\boot\grub\themes\slack\
 copy lang\zh_CN\theme.txt build\boot\grub\themes\slack\
 goto build
 :tw
-echo "zh_TW"
+echo zh_TW
 bin\msgfmt.exe grub\locale\zh_TW.po -o build\boot\grub\locale\zh_TW.mo
 bin\msgfmt.exe lang\zh_TW\fm.po -o build\boot\grub\locale\fm\zh_TW.mo
 copy lang\zh_TW\lang.sh build\boot\grub\
@@ -33,7 +35,7 @@ copy lang\zh_TW\text.txt build\boot\grub\themes\slack\
 copy lang\zh_TW\theme.txt build\boot\grub\themes\slack\
 goto build
 :en
-echo "en_US"
+echo en_US
 goto build
 
 :build
@@ -70,6 +72,9 @@ rd /s /q build\boot
 bin\grub-mkimage.exe -d grub\i386-pc -p (memdisk)/boot/grub -c legacy\config.cfg -o build\core.img -O i386-pc %builtin%
 copy /B grub\i386-pc\cdboot.img + build\core.img build\fmldr
 del /q build\core.img
+if exist legacy\ntboot\NTBOOT.MOD\NTBOOT.NT6 (
+	xcopy /I /E legacy\ntboot build\
+	echo WARNING: Non-GPL module^(s^) enabled!
+	)
 bin\mkisofs.exe -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
-del build\fmldr
-del build\fm.loop
+rd /s /q build

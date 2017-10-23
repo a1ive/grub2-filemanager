@@ -107,6 +107,10 @@ rm -r build/boot
 $mkimage -d ./grub/i386-pc -p "(memdisk)/boot/grub" -c ./legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
+if [ -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.NT6" ]
+then
+	cp -r legacy/ntboot/* build/
+	echo "WARNING: Non-GPL module(s) enabled!"
+fi
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
-rm build/fm.loop
-rm build/fmldr
+rm  -r build

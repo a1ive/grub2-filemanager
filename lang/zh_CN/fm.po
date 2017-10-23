@@ -73,6 +73,10 @@ msgid "Open As Archiver"
 msgstr "作为压缩文件打开"
 
 #: main.sh:167
+msgid "Boot WIM (NTBOOT)"
+msgstr "使用NTBOOT加载WIM"
+
+#: main.sh:167
 msgid "Mount ISO"
 msgstr "查看ISO内容"
 

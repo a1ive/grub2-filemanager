@@ -46,7 +46,7 @@ else
 		elseif file_extn == "tar" or file_extn == "xz" or file_extn == "gz" or file_extn == "cpio" then
 			file_type, file_icon = "tar", "7z"
 		elseif file_extn == "wim" then
-			file_icon = "wim"
+			file_type, file_icon = "wim", "wim"
 		elseif file_extn == "exe" then
 			file_icon = "exe"
 		elseif file_extn == "cfg" then
