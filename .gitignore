@@ -2,6 +2,9 @@ grubfm*.efi
 grubfm.iso
 build
 sources/grub*
+legacy/bootmgr
+legacy/boot.sdi
+legacy/ntboot.iso
 *.der
 *.pem
 *.rsa
