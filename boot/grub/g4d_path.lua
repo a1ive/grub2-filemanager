@@ -41,6 +41,8 @@ if param == "config" then
 	g4dcmd = g4dcmd .. "configfile " .. file
 elseif param == "command" then
 	g4dcmd = g4dcmd .. "command " .. file
+elseif param == "ntboot" then
+	g4dcmd = g4dcmd .. "find --set-root /NTBOOT;/NTBOOT NT6=" .. file
 elseif param == "cdboot" then
 	g4dcmd = g4dcmd .. "partnew (hd0,3) 0x00 " .. file .. ";map " .. file .. " (0xff);map --hook;chainloader (0xff)"
 elseif (string.match (param, "^%(.*%)$") ~= nil) then

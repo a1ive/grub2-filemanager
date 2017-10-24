@@ -29,8 +29,8 @@ else
 			file_type, file_icon = "iso", "iso"
 		elseif file_extn == "img" or file_extn == "ima" then
 			file_type, file_icon = "disk", "img"
-		elseif file_extn == "vhd" then
-			file_icon = "img"
+		elseif file_extn == "vhd" or file_extn == "vhdx" then
+			file_type, file_icon = "vhd", "img"
 		elseif file_extn == "jpg" or file_extn == "png" or file_extn == "tga" then
 			file_type, file_icon = "image", "png"
 		elseif file_extn == "bmp" or file_extn == "gif" then
@@ -46,7 +46,7 @@ else
 		elseif file_extn == "tar" or file_extn == "xz" or file_extn == "gz" or file_extn == "cpio" then
 			file_type, file_icon = "tar", "7z"
 		elseif file_extn == "wim" then
-			file_icon = "wim"
+			file_type, file_icon = "wim", "wim"
 		elseif file_extn == "exe" then
 			file_icon = "exe"
 		elseif file_extn == "cfg" then
