@@ -1,11 +1,26 @@
 !BAT
+:: NTBOOT
+:: Copyright (C) 2014  chenall http://chenall.net
+::
+:: Grub2-FileManager
+:: Copyright (C) 2017  A1ive.
+::
+:: Grub2-FileManager is free software: you can redistribute it and/or modify
+:: it under the terms of the GNU General Public License as published by
+:: the Free Software Foundation, either version 3 of the License, or
+:: (at your option) any later version.
+::
+:: Grub2-FileManager is distributed in the hope that it will be useful,
+:: but WITHOUT ANY WARRANTY; without even the implied warranty of
+:: MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+:: GNU General Public License for more details.
+::
+:: You should have received a copy of the GNU General Public License
+:: along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 debug off
 checkrange 20130319:-1 read 0x8278 || call :error Not supported grub4dos version!
 if not exist NTBOOT && set NTBOOT=%~f0
 setlocal
-set ISO_TYPE=
-set ISO_INST=
-set NTPATH=
 echo
 echo NTBOOT by chenall 2014-08-24,$[0101]http://chenall.net
 goto %1 || goto :NTBOOT_HELP

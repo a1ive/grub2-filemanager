@@ -172,6 +172,16 @@ function open{
 				}
 			fi;
 		fi;
+	elif regexp 'vhd' $file_type; then
+		if regexp 'pc' $grub_platform; then
+			if search -f /NTBOOT; then
+				menuentry $"Boot Windows VHD/VHDX (NTBOOT)" --class img{
+					set g4d_param="ntboot";
+					lua $prefix/g4d_path.lua;
+					linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+				}
+			fi;
+		fi;
 	elif regexp 'iso' $file_type; then
 		loopback loop "$file_name";
 		menuentry $"Mount ISO"  --class iso{

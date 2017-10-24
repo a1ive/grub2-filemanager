@@ -29,8 +29,8 @@ else
 			file_type, file_icon = "iso", "iso"
 		elseif file_extn == "img" or file_extn == "ima" then
 			file_type, file_icon = "disk", "img"
-		elseif file_extn == "vhd" then
-			file_icon = "img"
+		elseif file_extn == "vhd" or file_extn == "vhdx" then
+			file_type, file_icon = "vhd", "img"
 		elseif file_extn == "jpg" or file_extn == "png" or file_extn == "tga" then
 			file_type, file_icon = "image", "png"
 		elseif file_extn == "bmp" or file_extn == "gif" then
