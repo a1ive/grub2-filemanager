@@ -76,7 +76,11 @@ msgstr "作爲壓縮文件打開"
 msgid "Boot WIM (NTBOOT)"
 msgstr "使用NTBOOT加載WIM"
 
-#: main.sh:167
+#: main.sh:178
+msgid "Boot Windows VHD/VHDX (NTBOOT)"
+msgstr "使用NTBOOT加載VHD/VHDX"
+
+#: main.sh:187
 msgid "Mount ISO"
 msgstr "查看ISO內容"
 
