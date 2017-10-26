@@ -10,20 +10,11 @@ https://github.com/a1ive/grub2-filemanager/releases
 	./build.sh
 ## Boot 
 ### i386-pc 
+Do NOT boot grubfm.iso with memdisk!  
 #### GRUB4DOS 
 	map --mem /grubfm.iso (0xff)
 	map --hook
 	chainloader (0xff)
-#### GRUB Legacy 
-	kernel /memdisk
-	initrd /grubfm.iso
-#### GRUB 2/BURG 
-	linux16 /memdisk iso raw
-	initrd16 /grubfm.iso
-#### Syslinux 
-	LINUX memdisk
-	INITRD grubfm.iso
-	APPEND iso raw
 ### x86_64-efi, i386-efi 
 #### GRUB 2 
 	chainloader /grubfm.efi
