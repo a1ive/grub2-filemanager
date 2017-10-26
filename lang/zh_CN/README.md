@@ -13,6 +13,8 @@ https://github.com/a1ive/grub2-filemanager/releases
 ## 构建
 	git clone https://github.com/a1ive/grub2-filemanager.git
 	cd grub2-filemanager
+	wget -P legacy/ntboot/NTBOOT.MOD/ https://github.com/a1ive/NTBOOT/raw/master/NTBOOT.NT6
+	wget -P legacy/ntboot/NTBOOT.MOD/ https://github.com/a1ive/NTBOOT/raw/master/NTBOOT.PE1
 	./build.sh
 ## 启动 
 ### i386-pc 
