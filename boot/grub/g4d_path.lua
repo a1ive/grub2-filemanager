@@ -19,7 +19,7 @@ local file = grub.getenv ("file_name")
 local param = grub.getenv ("g4d_param")
 local file_device = string.match (file, "^(%([%w,]+%))")
 local file_path = string.match (file, "^%([%w,]+%)(.*)$")
-local g4dcmd = ""
+local g4dcmd = "find --set-root /fm.loop;"
 print ("device: " .. file_device)
 print ("path  : " .. file_path)
 if (string.match (file_device, "^%(hd%d+,%a*%d+%)$") ~= nil) then
@@ -34,24 +34,32 @@ elseif (string.match (file_device, "^%([fhc]d%d+%)$") ~= nil) then
 	print ("grub4dos file path : " .. file)
 else
 	print ("wrong path")
-	file = file_path
-	g4dcmd = "find --set-root " .. file .. ";"
+	grub.getkey ()
+	return 1
 end
 if param == "config" then
 	g4dcmd = g4dcmd .. "configfile " .. file
 elseif param == "command" then
 	g4dcmd = g4dcmd .. "command " .. file
 elseif param == "ntboot" then
-	g4dcmd = g4dcmd .. "find --set-root /NTBOOT;/NTBOOT NT6=" .. file
+	g4dcmd = g4dcmd .. "/NTBOOT NT6=" .. file
+elseif param == "peboot" then
+	g4dcmd = g4dcmd .. "/NTBOOT pe1=" .. file
 elseif param == "cdboot" then
-	g4dcmd = g4dcmd .. "partnew (hd0,3) 0x00 " .. file .. ";map " .. file .. " (0xff);map --hook;chainloader (0xff)"
-elseif (string.match (param, "^%(.*%)$") ~= nil) then
-	g4dcmd = g4dcmd .. "map " .. file .. " " .. param .. ";map --hook;chainloader "
-	if (param == "(fd0)" or param == "(hd0)") then
-		g4dcmd = g4dcmd .. param .. "+1;rootnoverify " .. param .. ";boot"
-	else
-		g4dcmd = g4dcmd .. param .. ";boot"
-	end
+-- FIX ME
+	g4dcmd = g4dcmd .. "partnew (hd0,3) 0x00 " .. file .. "/MAP nomem cd " .. file
+elseif param == "cd" then
+	g4dcmd = g4dcmd .. "/MAP nomem cd " .. file
+elseif param == "cd mem" then
+	g4dcmd = g4dcmd .. "/MAP mem cd " .. file
+elseif param == "hd" then
+	g4dcmd = g4dcmd .. "/MAP nomem hd " .. file
+elseif param == "hd mem" then
+	g4dcmd = g4dcmd .. "/MAP mem hd " .. file
+elseif param == "fd" then
+	g4dcmd = g4dcmd .. "/MAP nomem cd " .. file
+elseif param == "fd mem" then
+	g4dcmd = g4dcmd .. "/MAP mem fd " .. file
 end
 print (g4dcmd)
 grub.setenv ("g4dcmd", g4dcmd)

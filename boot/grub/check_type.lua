@@ -47,6 +47,8 @@ else
 			file_type, file_icon = "tar", "7z"
 		elseif file_extn == "wim" then
 			file_type, file_icon = "wim", "wim"
+		elseif file_extn == "is_" or file_extn == "im_" then
+			file_type, file_icon = "wpe", "windows"
 		elseif file_extn == "exe" then
 			file_icon = "exe"
 		elseif file_extn == "cfg" then

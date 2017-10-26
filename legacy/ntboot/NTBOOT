@@ -18,9 +18,9 @@
 :: You should have received a copy of the GNU General Public License
 :: along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 debug off
-checkrange 20130319:-1 read 0x8278 || call :error Not supported grub4dos version!
 if not exist NTBOOT && set NTBOOT=%~f0
 setlocal
+set NTPATH=
 echo
 echo NTBOOT by chenall 2014-08-24,$[0101]http://chenall.net
 goto %1 || goto :NTBOOT_HELP
@@ -29,13 +29,13 @@ goto %1 || goto :NTBOOT_HELP
 configfile %NTBOOT%.LST/MENU.LST
 exit
 
-::检测下一个文件。在使用call :CHECK_FILE %FILE1% %FILE2% 之类的情况下会用到
+::call :CHECK_FILE %FILE1% %FILE2%
 :CHECK_NEXT_FILE
 set tmp=%2
 if not exist tmp && goto :input_file
 shift
 if "%0"=="%1" && goto :CHECK_NEXT_FILE
-::检查/查找文件
+
 :CHECK_FILE
 echo Checking file $[0107]%1 ...
 set file=%1
@@ -67,6 +67,7 @@ call :CHECK_FILE %file%
 exit
 
 :NT6
+:PE1
 ::检测需要的模块
 insmod %NTBOOT%.MOD/NTBOOT.MOD || call :error Missing module NTBOOT.MOD...
 ::映射NTBOOT启动镜像
@@ -81,8 +82,10 @@ shift
 set file=%1
 set tmp=/%WinDir%
 ::如果没有加参数或参数是一个磁盘分区
-if not exist file && goto error
-if "%~d1"=="%1" && goto error
+if not exist file && goto NTBOOT_HELP
+if "%~d1"=="%1" && goto NTBOOT_HELP
+::以上是NT5或NT6硬盘启动
+if /i "%0"=="pe1" && set PDIR=WXPE && goto :PE1_BOOT
 call :CHECK_FILE %file%
 ::指定启动文件
 set NTLDR=
@@ -128,6 +131,46 @@ goto :SET_ARC_PATH
 set /a R=*0x82A0&0xFF
 echo multi(0)disk(0)cdrom(%R%)%tmp% > (md)0x3000+4
 goto :SET_ARC_PATH
+
+:NATIVE_CFG
+echo cd ?:%~pnx1 > (rd)/NATIVE.CFG
+cat --locate=/ --replace=\\ --length=256 (rd)/NATIVE.CFG
+exit
+
+:PE1_BOOT
+######以下三行是提供给NATIVE核心的PE使用的######################
+echo -e @echo off\r\ncd ?:%~p1\r\ncd ?:%~pnx1 > (rd)/NATIVE.CFG
+################################################################
+cat --locate=/ --replace=\\ --length=256 (rd)/NATIVE.CFG
+if /i "%file%"=="%~x1" && set file=/boot/imgs/boot%1
+:PE1.OPTIONS
+if /i "%2"=="PDIR" && set PDIR=%3
+if /i "%2"=="OPTIONS" && set option=%~3
+if /i "%2"=="NTPATH" && set NTPATH=%3
+if /i "%2"=="NTLDR" && set NTLDR=%3
+shift 2
+shift 2
+if not "%2"=="" goto :PE1.OPTIONS
+call :CHECK_FILE %file% %file:~0,-1%_
+if not exist NTPATH && set NTPATH=%tmp%
+call :NATIVE_CFG %NTPATH%
+::如果是ISO格式就添加一个参数/rdexportascd
+if /i "%tmp:~-3,2%"=="is" && set option=/rdexportascd %option%
+if /i "%tmp:~-3%"=="wim" && set option=%option% /rdimageoffset=8192 /rdimagelength=3161088
+call :GET_ARC_PATH
+echo -e [SetupData]\r\nBootDevice="ramdisk(0)" > (rd)/BOOT.INI
+echo BootPath=\%PDIR%\SYSTEM32\  >> (rd)/BOOT.INI
+echo OsLoadOptions="/minint /fastdetect %option% /rdpath=%ARC_PATH%" >> (rd)/BOOT.INI
+::消除多余的空字符,否则会启动失败
+cat --locate=\0 --replace=; (rd)/BOOT.INI
+::修改默认路径
+if /i not %PDIR%=="I386" && write --offset=0x2A4FB (rd)/SETUPLDR.BIN %PDIR%
+::修改默认WINNT.SIF文件名
+write --offset=0x2a432 (rd)/SETUPLDR.BIN BOOT.INI\0
+if /i "%DEBUG%"=="on" && cat (rd)/BOOT.INI && checkrange 0x11b pause --test-key && goto :exit
+if not exist NTLDR set NTLDR=(0xfd)/SETUPLDR.BIN
+set BOOTDEV=(0xfd)
+goto :BOOT
 
 :BOOT
 if exist BOOT && %BOOT%
@@ -215,5 +258,7 @@ exit 1
 echo
 echo Usage:
 echo 	NTBOOT NT6=file
+echo
+echo 	NTBOOT PE1=file [PDIR=pdir] [OPTIONS=options]
 echo
 exit 2
