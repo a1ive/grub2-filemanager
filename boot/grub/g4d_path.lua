@@ -30,7 +30,7 @@ if (string.match (file_device, "^%(hd%d+,%a*%d+%)$") ~= nil) then
 	file_device = string.match (file_device, "^(%(hd%d+,)%a*%d+%)$") .. devnum .. ")"
 	file = file_device .. file_path
 	print ("grub4dos file path : " .. file)
-elseif (string.match (file_device, "^%([fhc]d%d+%)$") ~= nil) then
+elseif (string.match (file_device, "^%([fhc]d%d+%)$") ~= nil or file_device == "(cd)") then
 	print ("grub4dos file path : " .. file)
 else
 	print ("wrong path")

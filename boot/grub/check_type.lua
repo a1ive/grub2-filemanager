@@ -59,7 +59,7 @@ else
 			file_type, file_icon = "mod", "mod"
 		elseif file_extn == "mbr" then
 			file_type, file_icon = "mbr", "bin"
-		elseif file_extn == "sh" then
+		elseif file_extn == "sh" or file_extn == "bat" then
 			file_icon = "cfg"
 		elseif file_extn == "lst" then
 			file_type, file_icon = "lst", "cfg"
