@@ -103,7 +103,7 @@ function open{
 			menuentry $"Open As GRUB4DOS Menu"  --class cfg{
 				set g4d_param="config";
 				lua $prefix/g4d_path.lua;
-				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+				linux $grub4dos --config-file=$g4dcmd;
 			}
 		else
 			menuentry $"Open As GRUB-Legacy Menu"  --class cfg{
@@ -136,25 +136,25 @@ function open{
 			path=""; export path; configfile $prefix/main.sh;
 		}
 		if regexp 'pc' $grub_platform; then
-			menuentry $"Boot Floppy Image (memdisk)" --class img{
-				linux16 $prefix/tools/memdisk floppy raw;
-				echo "Loading $file_name";
-				initrd16 "$file_name";
+			menuentry $"Boot Floppy Image (GRUB4DOS MEM)" --class img{
+				set g4d_param="fd mem";
+				lua $prefix/g4d_path.lua;
+				linux $grub4dos --config-file=$g4dcmd;
 			}
 			menuentry $"Boot Floppy Image (GRUB4DOS)" --class img{
-				set g4d_param="(fd0)";
+				set g4d_param="fd";
 				lua $prefix/g4d_path.lua;
-				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+				linux $grub4dos --config-file=$g4dcmd;
 			}
-			menuentry $"Boot Hard Drive Image (memdisk)" --class img{
-				linux16 $prefix/tools/memdisk harddisk raw;
-				echo "Loading $file_name";
-				initrd16 "$file_name";
+			menuentry $"Boot Hard Drive Image (GRUB4DOS MEM)" --class img{
+				set g4d_param="hd mem";
+				lua $prefix/g4d_path.lua;
+				linux $grub4dos --config-file=$g4dcmd;
 			}
 			menuentry $"Boot Hard Drive Image (GRUB4DOS)" --class img{
-				set g4d_param="(hd0)";
+				set g4d_param="hd";
 				lua $prefix/g4d_path.lua;
-				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+				linux $grub4dos --config-file=$g4dcmd;
 			}
 		fi;
 	elif regexp 'tar' $file_type; then
@@ -164,21 +164,38 @@ function open{
 		}
 	elif regexp 'wim' $file_type; then
 		if regexp 'pc' $grub_platform; then
-			if search -f /NTBOOT; then
-				menuentry $"Boot WIM (NTBOOT)" --class wim{
+			if search -f /NTBOOT.MOD/NTBOOT.NT6; then
+				menuentry $"Boot NT6.x WIM (NTBOOT)" --class wim{
 					set g4d_param="ntboot";
 					lua $prefix/g4d_path.lua;
-					linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+					linux $grub4dos --config-file=$g4dcmd;
+				}
+			fi;
+			if search -f /NTBOOT.MOD/NTBOOT.PE1; then
+				menuentry $"Boot NT5.x WIM (NTBOOT)" --class wim{
+					set g4d_param="peboot";
+					lua $prefix/g4d_path.lua;
+					linux $grub4dos --config-file=$g4dcmd;
+				}
+			fi;
+		fi;
+	elif regexp 'wpe' $file_type; then
+		if regexp 'pc' $grub_platform; then
+			if search -f /NTBOOT.MOD/NTBOOT.PE1; then
+				menuentry $"Boot NT5.x PE (NTBOOT)" --class windows{
+					set g4d_param="peboot";
+					lua $prefix/g4d_path.lua;
+					linux $grub4dos --config-file=$g4dcmd;
 				}
 			fi;
 		fi;
 	elif regexp 'vhd' $file_type; then
 		if regexp 'pc' $grub_platform; then
-			if search -f /NTBOOT; then
-				menuentry $"Boot Windows VHD/VHDX (NTBOOT)" --class img{
+			if search -f /NTBOOT.MOD/NTBOOT.NT6; then
+				menuentry $"Boot Windows NT6.x VHD/VHDX (NTBOOT)" --class img{
 					set g4d_param="ntboot";
 					lua $prefix/g4d_path.lua;
-					linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+					linux $grub4dos --config-file=$g4dcmd;
 				}
 			fi;
 		fi;
@@ -191,17 +208,17 @@ function open{
 		CheckLinuxType;
 		if regexp 'pc' $grub_platform; then
 			menuentry $"Boot ISO (GRUB4DOS)" --class iso{
-				set g4d_param="(hd32)";
+				set g4d_param="cd";
 				lua $prefix/g4d_path.lua;
-				linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+				linux $grub4dos --config-file=$g4dcmd;
 			}
 			menuentry $"Boot ISO (Easy2Boot)" --class iso{
 				source $prefix/easy2boot.sh;
 			}
-			menuentry $"Boot ISO (memdisk)" --class iso{
-				loopback -d loop;
-				linux16 $prefix/tools/memdisk iso raw;
-				initrd16 "$file_name";
+			menuentry $"Boot ISO (GRUB4DOS MEM)" --class iso{
+				set g4d_param="cd mem";
+				lua $prefix/g4d_path.lua;
+				linux $grub4dos --config-file=$g4dcmd;
 			}
 		else
 			if regexp 'i386' "$grub_cpu"; then
@@ -241,7 +258,7 @@ function open{
 		menuentry $"Open As GRUB4DOS MOD"  --class bin{
 			set g4d_param="command";
 			lua $prefix/g4d_path.lua;
-			linux $prefix/tools/grub.exe --config-file=$g4dcmd;
+			linux $grub4dos --config-file=$g4dcmd;
 		}
 	fi;
 	if file --is-x86-multiboot "$file_name"; then
@@ -276,6 +293,7 @@ function open{
 	hiddenmenu;
 }
 
+set grub4dos=$prefix/grub.exe; export grub4dos;
 set theme=${prefix}/themes/slack/theme.txt; export theme;
 if test -z "$main_ops"; then
 	main;

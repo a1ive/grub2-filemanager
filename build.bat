@@ -62,9 +62,7 @@ for /f "tokens=1,*" %%a in ("%modlist%") do (
 	set modlist=%%b
 	goto CPMOD
 )
-md build\boot\grub\tools
-copy legacy\memdisk build\boot\grub\tools\
-copy legacy\grub.exe build\boot\grub\tools\
+copy legacy\grub.exe build\boot\grub\
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc | %~dp0\bin\gzip.exe -9 > ./fm.loop
 cd ..
@@ -72,9 +70,17 @@ rd /s /q build\boot
 bin\grub-mkimage.exe -d grub\i386-pc -p (memdisk)/boot/grub -c legacy\config.cfg -o build\core.img -O i386-pc %builtin%
 copy /B grub\i386-pc\cdboot.img + build\core.img build\fmldr
 del /q build\core.img
+copy legacy\MAP build\
 if exist legacy\ntboot\NTBOOT.MOD\NTBOOT.NT6 (
-	xcopy /I /E legacy\ntboot build\
-	echo WARNING: Non-GPL module^(s^) enabled!
+	goto NTBOOT
 	)
+if exist legacy\ntboot\NTBOOT.MOD\NTBOOT.PE1 (
+	goto NTBOOT
+	)
+goto NONTBOOT
+:NTBOOT 
+xcopy /I /E legacy\ntboot build\
+echo WARNING: Non-GPL module^(s^) enabled!
+:NONTBOOT
 bin\mkisofs.exe -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rd /s /q build

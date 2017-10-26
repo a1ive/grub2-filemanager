@@ -97,9 +97,7 @@ do
 	echo "copying ${modules}.mod"
 	cp grub/i386-pc/${modules}.mod build/boot/grub/i386-pc/
 done
-mkdir build/boot/grub/tools
-cp legacy/memdisk build/boot/grub/tools/
-cp legacy/grub.exe build/boot/grub/tools/
+cp legacy/grub.exe build/boot/grub/
 cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..
@@ -107,7 +105,8 @@ rm -r build/boot
 $mkimage -d ./grub/i386-pc -p "(memdisk)/boot/grub" -c ./legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
-if [ -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.NT6" ]
+cp legacy/MAP build/
+if [ -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.NT6" -o -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.PE1" ]
 then
 	cp -r legacy/ntboot/* build/
 	echo "WARNING: Non-GPL module(s) enabled!"
