@@ -64,7 +64,6 @@
 *zfskey: zfscrypt
 .: configfile
 [: test
-android: android
 appleloader: appleldr
 authenticate: normal
 background_color: gfxterm_background

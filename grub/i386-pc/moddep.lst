@@ -97,9 +97,8 @@ usbserial_ftdi: serial usb usbserial_common
 legacy_password_test: functional_test legacycfg
 lua: btrfs setjmp normal pci
 cpuid: extcmd
-hwmatch: normal pci
+hdparm: extcmd hexdump
 bfs: fshelp
-hdparm: extcmd
 gcry_blowfish: crypto
 test:
 nilfs2: fshelp
@@ -111,7 +110,7 @@ minicmd:
 signature_test: functional_test procfs
 ata: scsi
 udf: fshelp
-gzio:
+gzio: gcry_crc
 xnu_uuid: gcry_md5
 uhci: usb pci
 pata: ata pci
@@ -151,7 +150,7 @@ strtoull_test: functional_test
 bitmap:
 vbe: video video_fb
 ntfs: fshelp
-multiboot: net vbe video boot relocator mmap lsapm
+multiboot: net linux vbe video boot relocator mmap lsapm
 gcry_crc: crypto
 png: bufio bitmap
 jpeg: bufio bitmap
@@ -164,6 +163,7 @@ usbserial_pl2303: serial usb usbserial_common
 cpio: archelp
 gcry_rmd160: crypto
 fat: fshelp
+fb:
 ufs1_be:
 truecrypt: video boot relocator mmap gzio
 getkey: extcmd
@@ -226,7 +226,6 @@ video_fb:
 verify: crypto extcmd mpi gcry_sha1
 minix3_be:
 trig:
-android: normal vbe video boot relocator mmap
 msdospart: disk parttool
 priority_queue:
 gcry_twofish: crypto
@@ -247,10 +246,10 @@ lzopio: crypto
 video_cirrus: video pci video_fb
 hello: extcmd
 scsi:
+linux16: linux video boot relocator mmap
 cat: extcmd
 ahci: ata boot pci
 normal: terminal crypto bufio extcmd boot gettext
-linux16: video boot relocator mmap
 ufs1:
 mdraid09: diskfilter
 lvm: diskfilter
@@ -263,7 +262,7 @@ gptsync: disk
 freedos: chain video boot relocator
 search_label:
 setjmp:
-multiboot2: net vbe video boot relocator mmap lsapm acpi
+multiboot2: net linux vbe video boot relocator mmap lsapm acpi
 gcry_rfc2268: crypto
 mdraid1x: diskfilter
 mpi: crypto

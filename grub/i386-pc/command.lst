@@ -67,7 +67,6 @@
 .: configfile
 915resolution: 915resolution
 [: test
-android: android
 authenticate: normal
 background_color: gfxterm_background
 backtrace: backtrace
@@ -112,7 +111,6 @@ gptrepair: gptrepair
 gptsync: gptsync
 help: minicmd
 hexdump_random: random
-hwmatch: hwmatch
 initrd16: linux16
 initrd: linux
 keymap: keylayouts
