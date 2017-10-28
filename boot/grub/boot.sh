@@ -14,7 +14,8 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 set theme=${prefix}/themes/slack/extern.txt; export theme;
-if search --set=external -q -f /boot/grub/external_menu.cfg; then
+search --set=external -q -f /boot/grub/external_menu.cfg;
+if test -n "$external"; then
 	menuentry $"Load External Menu: ($external)/boot/grub/external_menu.cfg" "$external" --class cfg{
 		set root=$2;
 		configfile ($root)/boot/grub/external_menu.cfg;
