@@ -8,10 +8,10 @@ echo common files
 cd /d %~dp0
 xcopy /s /e /y /i boot build\boot
 
-chcp 65001
-echo Language / è¯­è¨€ / èªžè¨€
-echo 1. Simplified Chinese / ç®€ä½“ä¸­æ–‡
-echo 2. Traditional Chinese / æ­£é«”ä¸­æ–‡
+::chcp 65001
+echo Language / ÓïÑÔ / ÕZÑÔ
+echo 1. Simplified Chinese / ¼òÌåÖÐÎÄ
+echo 2. Traditional Chinese / ÕýówÖÐÎÄ
 echo 3. English (United States)
 echo Please make a choice: 
 set /p id=
