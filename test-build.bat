@@ -12,3 +12,4 @@ set BIOS_BIN=%~dp0\legacy\grldr_cd.bin
 set output=%~dp0\grubfm.iso
 set CD_label=grubfm
 bin\oscdimg.exe -d -h -m -o -n -l%CD_label% -bootdata:1#p00,e,b%BIOS_BIN% %intdir% %output%
+echo Done !

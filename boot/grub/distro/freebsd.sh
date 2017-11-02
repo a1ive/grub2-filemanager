@@ -6,6 +6,7 @@ else
 fi;
 set bsd_mfsroot=(loop)/boot/mfsroot.gz;
 menuentry $"Boot FreeBSD From ISO" --class $icon{
+	enable_progress_indicator=1;
 	echo $"Loading kernel";
 	kfreebsd ${bsd_kernel};
 	echo $"Loading ISO";

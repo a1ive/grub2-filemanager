@@ -12,6 +12,7 @@ if test -f (loop)/boot/rootfs1.gz; then
 fi;
 
 menuentry $"Boot Slitaz Rolling From ISO" --class $icon{
+	enable_progress_indicator=1;
 	set kcmdline="root=/dev/null video=-32 rw";
 	linux $vmlinuz_img $kcmdline;
 	initrd $initrd_img;
