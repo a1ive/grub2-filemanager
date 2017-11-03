@@ -8,10 +8,7 @@ echo common files
 cd /d %~dp0
 xcopy /s /e /y /i boot build\boot
 
-::chcp 65001
-echo Language / 语言 / 語言
-echo 1. Simplified Chinese / 简体中文
-echo 2. Traditional Chinese / 正體中文
+chcp 65001 > nul && echo Language / 语言 / 語言 && echo 1. Simplified Chinese / 简体中文 && echo 2. Traditional Chinese / 正體中文
 echo 3. English (United States)
 echo Please make a choice: 
 set /p id=
@@ -63,6 +60,7 @@ for /f "tokens=1,*" %%a in ("%modlist%") do (
 	goto CPMOD
 )
 copy legacy\grub.exe build\boot\grub\
+copy legacy\memdisk build\boot\grub\
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc | %~dp0\bin\gzip.exe -9 > ./fm.loop
 cd ..

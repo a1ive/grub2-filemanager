@@ -60,6 +60,10 @@ msgstr "使用GRUB4DOS加载为软盘 (复制到内存)"
 msgid "Boot Floppy Image (GRUB4DOS)"
 msgstr "使用GRUB4DOS加载为软盘"
 
+#: main.sh:144
+msgid "Boot Floppy Image (memdisk)"
+msgstr "使用memdisk加载为软盘"
+
 #: main.sh:149
 msgid "Boot Hard Drive Image (GRUB4DOS MEM)"
 msgstr "使用GRUB4DOS加载为硬盘 (复制到内存)"
@@ -67,6 +71,10 @@ msgstr "使用GRUB4DOS加载为硬盘 (复制到内存)"
 #: main.sh:154
 msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "使用GRUB4DOS加载为硬盘"
+
+#: main.sh:154
+msgid "Boot Hard Drive Image (memdisk)"
+msgstr "使用memdisk加载为硬盘"
 
 #: main.sh:161
 msgid "Open As Archiver"
@@ -99,6 +107,10 @@ msgstr "使用GRUB4DOS加载ISO (复制到内存)"
 #: main.sh:178
 msgid "Boot ISO (GRUB4DOS)"
 msgstr "使用GRUB4DOS加载ISO"
+
+#: main.sh:178
+msgid "Boot ISO (memdisk)"
+msgstr "使用memdisk加载ISO"
 
 #: main.sh:178
 msgid "Boot ISO (Easy2Boot)"

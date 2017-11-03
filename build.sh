@@ -98,6 +98,7 @@ do
 	cp grub/i386-pc/${modules}.mod build/boot/grub/i386-pc/
 done
 cp legacy/grub.exe build/boot/grub/
+cp legacy/memdisk build/boot/grub/
 cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..

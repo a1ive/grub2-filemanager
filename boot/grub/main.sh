@@ -13,6 +13,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+
 function hiddenmenu {
 	hiddenentry "Settings" --hotkey=s {
 		configfile $prefix/settings.sh;
@@ -29,6 +30,15 @@ function hiddenmenu {
 	hiddenentry "Halt" --hotkey=h{
 		halt;
 	}
+}
+# memdisk iso|floppy|harddisk $file
+function memdisk{
+	set memdisk=$prefix/memdisk;
+	linux16 $memdisk $1 raw;
+	echo "Loading $file_name [type=$1]";
+	enable_progress_indicator=1;
+	initrd16 "$2";
+	boot;
 }
 function main{
 	if test -z "$path"; then
@@ -146,6 +156,9 @@ function open{
 				lua $prefix/g4d_path.lua;
 				linux $grub4dos --config-file=$g4dcmd;
 			}
+			menuentry $"Boot Floppy Image (memdisk)" --class img{
+				memdisk floppy "$file_name";
+			}
 			menuentry $"Boot Hard Drive Image (GRUB4DOS MEM)" --class img{
 				set g4d_param="hd mem";
 				lua $prefix/g4d_path.lua;
@@ -155,6 +168,9 @@ function open{
 				set g4d_param="hd";
 				lua $prefix/g4d_path.lua;
 				linux $grub4dos --config-file=$g4dcmd;
+			}
+			menuentry $"Boot Hard Drive Image (memdisk)" --class img{
+				memdisk harddisk "$file_name";
 			}
 		fi;
 	elif regexp 'tar' $file_type; then
@@ -219,6 +235,9 @@ function open{
 				set g4d_param="cd mem";
 				lua $prefix/g4d_path.lua;
 				linux $grub4dos --config-file=$g4dcmd;
+			}
+			menuentry $"Boot ISO (memdisk)" --class iso{
+				memdisk iso "$file_name";
 			}
 		else
 			if regexp 'i386' "$grub_cpu"; then
