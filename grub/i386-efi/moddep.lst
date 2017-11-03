@@ -156,7 +156,6 @@ usbserial_pl2303: serial usb usbserial_common
 cpio: archelp
 gcry_rmd160: crypto
 fat: fshelp
-fb:
 ufs1_be:
 getkey: extcmd
 archelp:
