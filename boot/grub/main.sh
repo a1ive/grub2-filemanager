@@ -173,6 +173,11 @@ function open{
 				memdisk harddisk "$file_name";
 			}
 		fi;
+	elif regexp 'fba' $file_type; then
+		menuentry $"Mount Image" --class img{
+			loopback ud "$file_name";
+			path="(ud)"; export path; configfile $prefix/main.sh;
+		}
 	elif regexp 'tar' $file_type; then
 		menuentry $"Open As Archiver" --class 7z{
 			loopback tar "$file_name";
