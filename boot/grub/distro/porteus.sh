@@ -9,5 +9,7 @@ set linux_extra="from=$isofile";
 menuentry $"Boot Porteus From ISO" --class $icon{
 	set kcmdline="norootcopy nomagic";
 	linux $vmlinuz_img $kcmdline $linux_extra;
-	initrd $initrd_img;
+	if test -f $initrd_img; then
+		initrd $initrd_img;
+	fi;
 }
