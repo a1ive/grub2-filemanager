@@ -80,5 +80,8 @@ goto NONTBOOT
 xcopy /I /E legacy\ntboot build\
 echo WARNING: Non-GPL module^(s^) enabled!
 :NONTBOOT
+if exist legacy\wimboot (
+	copy legacy\wimboot build\
+	)
 bin\mkisofs.exe -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rd /s /q build

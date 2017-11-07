@@ -185,6 +185,16 @@ function open{
 		}
 	elif regexp 'wim' $file_type; then
 		if regexp 'pc' $grub_platform; then
+			if search -f /wimboot; then
+				menuentry $"Boot NT6.x WIM (wimboot)" --class wim{
+					terminal_output console;
+					enable_progress_indicator=1;
+					loopback wimboot /wimboot;
+					linux16 (wimboot)/wimboot gui;
+					echo "loading wim ..."
+					initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:$file_name;
+				}
+			fi;
 			if search -f /NTBOOT.MOD/NTBOOT.NT6; then
 				menuentry $"Boot NT6.x WIM (NTBOOT)" --class wim{
 					set g4d_param="ntboot";

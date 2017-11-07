@@ -112,5 +112,9 @@ then
 	cp -r legacy/ntboot/* build/
 	echo "WARNING: Non-GPL module(s) enabled!"
 fi
+if [ -e "legacy/wimboot" ]
+then
+	cp legacy/wimboot build/
+fi
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rm  -r build
