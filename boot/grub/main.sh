@@ -146,28 +146,26 @@ function open{
 			path=""; export path; configfile $prefix/main.sh;
 		}
 		if regexp 'pc' $grub_platform; then
-			menuentry $"Boot Floppy Image (GRUB4DOS MEM)" --class img{
-				set g4d_param="fd mem";
-				lua $prefix/g4d_path.lua;
-				linux $grub4dos --config-file=$g4dcmd;
-			}
 			menuentry $"Boot Floppy Image (GRUB4DOS)" --class img{
 				set g4d_param="fd";
 				lua $prefix/g4d_path.lua;
 				linux $grub4dos --config-file=$g4dcmd;
+				if [ "$rd" == "1" ]; then
+					enable_progress_indicator=1;
+					initrd "$file_name";
+				fi;
 			}
 			menuentry $"Boot Floppy Image (memdisk)" --class img{
 				memdisk floppy "$file_name";
-			}
-			menuentry $"Boot Hard Drive Image (GRUB4DOS MEM)" --class img{
-				set g4d_param="hd mem";
-				lua $prefix/g4d_path.lua;
-				linux $grub4dos --config-file=$g4dcmd;
 			}
 			menuentry $"Boot Hard Drive Image (GRUB4DOS)" --class img{
 				set g4d_param="hd";
 				lua $prefix/g4d_path.lua;
 				linux $grub4dos --config-file=$g4dcmd;
+				if [ "$rd" == "1" ]; then
+					enable_progress_indicator=1;
+					initrd "$file_name";
+				fi;
 			}
 			menuentry $"Boot Hard Drive Image (memdisk)" --class img{
 				memdisk harddisk "$file_name";
@@ -242,14 +240,13 @@ function open{
 				set g4d_param="cd";
 				lua $prefix/g4d_path.lua;
 				linux $grub4dos --config-file=$g4dcmd;
+				if [ "$rd" == "1" ]; then
+					enable_progress_indicator=1;
+					initrd "$file_name";
+				fi;
 			}
 			menuentry $"Boot ISO (Easy2Boot)" --class iso{
 				source $prefix/easy2boot.sh;
-			}
-			menuentry $"Boot ISO (GRUB4DOS MEM)" --class iso{
-				set g4d_param="cd mem";
-				lua $prefix/g4d_path.lua;
-				linux $grub4dos --config-file=$g4dcmd;
 			}
 			menuentry $"Boot ISO (memdisk)" --class iso{
 				memdisk iso "$file_name";

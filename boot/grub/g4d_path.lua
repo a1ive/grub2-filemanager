@@ -22,6 +22,7 @@ local file_path = string.match (file, "^%([%w,]+%)(.*)$")
 local g4dcmd = "find --set-root /fm.loop;"
 print ("device: " .. file_device)
 print ("path  : " .. file_path)
+grub.setenv ("rd", "0")
 if (string.match (file_device, "^%(hd%d+,%a*%d+%)$") ~= nil) then
 	local devnum = string.match (file_device, "^%(hd%d+,%a*(%d+)%)$")
 	if (devnum > "0") then
@@ -34,8 +35,13 @@ elseif (string.match (file_device, "^%([fhc]d%d+%)$") ~= nil or file_device == "
 	print ("grub4dos file path : " .. file)
 else
 	print ("wrong path")
-	grub.getkey ()
-	return 1
+	if param == "cdboot" or param == "ntboot" or param == "peboot" or param == "config" or param == "command" then
+		print ("Press any key to continue ...")
+		grub.getkey ()
+		return 1
+	end
+	grub.setenv ("rd", "1")
+	file = "(rd)+1"
 end
 if param == "config" then
 	g4dcmd = g4dcmd .. "configfile " .. file
