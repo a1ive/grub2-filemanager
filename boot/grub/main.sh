@@ -51,7 +51,7 @@ function main{
 					icon="iso";
 				elif test "$device" = "(memdisk)" -o "$device" = "(proc)"; then
 					continue;
-				elif test -w "$device"; then
+				elif regexp '^\(hd[0-9]+.*$' "$device"; then
 					icon="hdd";
 				fi;
 				menuentry "$device [$fs] $label" "$device" --class $icon{
@@ -110,17 +110,18 @@ function open{
 		}
 	elif regexp 'lst' $file_type; then
 		if regexp 'pc' $grub_platform; then
-			menuentry $"Open As GRUB4DOS Menu"  --class cfg{
-				set g4d_param="config";
-				lua $prefix/g4d_path.lua;
-				linux $grub4dos --config-file=$g4dcmd;
-			}
-		else
-			menuentry $"Open As GRUB-Legacy Menu"  --class cfg{
-				regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
-				legacy_configfile "$file_name";
-			}
+			if regexp '^\([hcf]d[0-9]*.*$' "$file_name"; then
+				menuentry $"Open As GRUB4DOS Menu"  --class cfg{
+					set g4d_param="config";
+					lua $prefix/g4d_path.lua;
+					linux $grub4dos --config-file=$g4dcmd;
+				}
+			fi;
 		fi;
+		menuentry $"Open As GRUB-Legacy Menu"  --class cfg{
+			regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
+			legacy_configfile "$file_name";
+		}
 	elif regexp 'lua' $file_type; then
 		menuentry $"Open As Lua Script"  --class lua{
 			regexp --set=root '^\(([0-9a-zA-Z,]+)\).*$' "$file_name";
@@ -193,39 +194,45 @@ function open{
 					initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:$file_name;
 				}
 			fi;
-			if search -f /NTBOOT.MOD/NTBOOT.NT6; then
-				menuentry $"Boot NT6.x WIM (NTBOOT)" --class wim{
-					set g4d_param="ntboot";
-					lua $prefix/g4d_path.lua;
-					linux $grub4dos --config-file=$g4dcmd;
-				}
-			fi;
-			if search -f /NTBOOT.MOD/NTBOOT.PE1; then
-				menuentry $"Boot NT5.x WIM (NTBOOT)" --class wim{
-					set g4d_param="peboot";
-					lua $prefix/g4d_path.lua;
-					linux $grub4dos --config-file=$g4dcmd;
-				}
+			if regexp '^\([hcf]d[0-9]*.*$' "$file_name"; then
+				if search -f /NTBOOT.MOD/NTBOOT.NT6; then
+					menuentry $"Boot NT6.x WIM (NTBOOT)" --class wim{
+						set g4d_param="ntboot";
+						lua $prefix/g4d_path.lua;
+						linux $grub4dos --config-file=$g4dcmd;
+					}
+				fi;
+				if search -f /NTBOOT.MOD/NTBOOT.PE1; then
+					menuentry $"Boot NT5.x WIM (NTBOOT)" --class wim{
+						set g4d_param="peboot";
+						lua $prefix/g4d_path.lua;
+						linux $grub4dos --config-file=$g4dcmd;
+					}
+				fi;
 			fi;
 		fi;
 	elif regexp 'wpe' $file_type; then
 		if regexp 'pc' $grub_platform; then
-			if search -f /NTBOOT.MOD/NTBOOT.PE1; then
-				menuentry $"Boot NT5.x PE (NTBOOT)" --class windows{
-					set g4d_param="peboot";
-					lua $prefix/g4d_path.lua;
-					linux $grub4dos --config-file=$g4dcmd;
-				}
+			if regexp '^\([hcf]d[0-9]*.*$' "$file_name"; then
+				if search -f /NTBOOT.MOD/NTBOOT.PE1; then
+					menuentry $"Boot NT5.x PE (NTBOOT)" --class windows{
+						set g4d_param="peboot";
+						lua $prefix/g4d_path.lua;
+						linux $grub4dos --config-file=$g4dcmd;
+					}
+				fi;
 			fi;
 		fi;
 	elif regexp 'vhd' $file_type; then
 		if regexp 'pc' $grub_platform; then
-			if search -f /NTBOOT.MOD/NTBOOT.NT6; then
-				menuentry $"Boot Windows NT6.x VHD/VHDX (NTBOOT)" --class img{
-					set g4d_param="ntboot";
-					lua $prefix/g4d_path.lua;
-					linux $grub4dos --config-file=$g4dcmd;
-				}
+			if regexp '^\([hcf]d[0-9]*.*$' "$file_name"; then
+				if search -f /NTBOOT.MOD/NTBOOT.NT6; then
+					menuentry $"Boot Windows NT6.x VHD/VHDX (NTBOOT)" --class img{
+						set g4d_param="ntboot";
+						lua $prefix/g4d_path.lua;
+						linux $grub4dos --config-file=$g4dcmd;
+					}
+				fi;
 			fi;
 		fi;
 	elif regexp 'iso' $file_type; then
@@ -245,9 +252,11 @@ function open{
 					initrd "$file_name";
 				fi;
 			}
-			menuentry $"Boot ISO (Easy2Boot)" --class iso{
-				source $prefix/easy2boot.sh;
-			}
+			if regexp '^\(hd[0-9]*.*$' "$file_name"; then
+				menuentry $"Boot ISO (Easy2Boot)" --class iso{
+					source $prefix/easy2boot.sh;
+				}
+			fi;
 			menuentry $"Boot ISO (memdisk)" --class iso{
 				memdisk iso "$file_name";
 			}
@@ -286,11 +295,13 @@ function open{
 				ntldr "$file_name";
 			}
 		fi;
-		menuentry $"Open As GRUB4DOS MOD"  --class bin{
-			set g4d_param="command";
-			lua $prefix/g4d_path.lua;
-			linux $grub4dos --config-file=$g4dcmd;
-		}
+		if regexp '^\([hcf]d[0-9]*.*$' "$file_name"; then
+			menuentry $"Open As GRUB4DOS MOD"  --class bin{
+				set g4d_param="command";
+				lua $prefix/g4d_path.lua;
+				linux $grub4dos --config-file=$g4dcmd;
+			}
+		fi;
 	fi;
 	if file --is-x86-multiboot "$file_name"; then
 		menuentry $"Boot Multiboot Kernel"  --class exe{
@@ -315,11 +326,13 @@ function open{
 	}
 	menuentry $"File Info"  --class info{
 		set pager=1;
-		echo "Path"; echo "$file_name";
-		echo "CRC32"; crc32 "$file_name";
+		lua $prefix/file_info.lua;
+		enable_progress_indicator=1;
+		echo "CRC32 : "; crc32 "$file_name";
+		enable_progress_indicator=0;
 		echo "hexdump"; hexdump "$file_name";
 		echo -n $"Press [ESC] to continue...";
-		sleep --interruptible 999;
+		getkey;
 	}
 	hiddenmenu;
 }
