@@ -81,6 +81,10 @@ msgid "Open As Archiver"
 msgstr "作为压缩文件打开"
 
 #: main.sh:168
+msgid "Boot NT6.x WIM (wimboot)"
+msgstr "使用wimboot加载 NT6.x WIM"
+
+#: main.sh:168
 msgid "Boot NT6.x WIM (NTBOOT)"
 msgstr "使用NTBOOT加载 NT6.x WIM"
 
