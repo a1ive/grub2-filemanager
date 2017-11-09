@@ -99,6 +99,7 @@ do
 done
 cp legacy/grub.exe build/boot/grub/
 cp legacy/memdisk build/boot/grub/
+cp legacy/ipxe.lkrn build/boot/grub/
 cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..

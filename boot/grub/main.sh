@@ -194,7 +194,7 @@ function open{
 					initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:$file_name;
 				}
 			fi;
-			if regexp '^\([hcf]d[0-9]*.*$' "$file_name"; then
+			if regexp '^\([hc]d[0-9]*.*$' "$file_name"; then
 				if search -f /NTBOOT.MOD/NTBOOT.NT6; then
 					menuentry $"Boot NT6.x WIM (NTBOOT)" --class wim{
 						set g4d_param="ntboot";
@@ -213,7 +213,7 @@ function open{
 		fi;
 	elif regexp 'wpe' $file_type; then
 		if regexp 'pc' $grub_platform; then
-			if regexp '^\([hcf]d[0-9]*.*$' "$file_name"; then
+			if regexp '^\([hc]d[0-9]*.*$' "$file_name"; then
 				if search -f /NTBOOT.MOD/NTBOOT.PE1; then
 					menuentry $"Boot NT5.x PE (NTBOOT)" --class windows{
 						set g4d_param="peboot";
@@ -225,7 +225,7 @@ function open{
 		fi;
 	elif regexp 'vhd' $file_type; then
 		if regexp 'pc' $grub_platform; then
-			if regexp '^\([hcf]d[0-9]*.*$' "$file_name"; then
+			if regexp '^\(hd[0-9]*.*$' "$file_name"; then
 				if search -f /NTBOOT.MOD/NTBOOT.NT6; then
 					menuentry $"Boot Windows NT6.x VHD/VHDX (NTBOOT)" --class img{
 						set g4d_param="ntboot";
@@ -271,6 +271,13 @@ function open{
 					chainloader (loop)/efi/boot/${efi_file};
 				}
 			fi;
+		fi;
+	elif regexp 'ipxe' $file_type; then
+		if regexp 'pc' $grub_platform; then
+			menuentry $"Open As iPXE Script" --class net{
+				linux16 $prefix/ipxe.lkrn;
+				initrd16 "$file_name";
+			}
 		fi;
 	elif regexp 'pf2' $file_type; then
 		menuentry $"Open As Font" --class pf2{

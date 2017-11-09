@@ -65,6 +65,8 @@ else
 			file_icon = "cfg"
 		elseif file_extn == "lst" then
 			file_type, file_icon = "lst", "cfg"
+		elseif file_extn == "ipxe" then
+			file_type, file_icon = "ipxe", "net"
 		end
 	end
 	grub.setenv ("file_type",file_type)

@@ -61,6 +61,7 @@ for /f "tokens=1,*" %%a in ("%modlist%") do (
 )
 copy legacy\grub.exe build\boot\grub\
 copy legacy\memdisk build\boot\grub\
+copy legacy\ipxe.lkrn build\boot\grub\
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc | %~dp0\bin\gzip.exe -9 > ./fm.loop
 cd ..
