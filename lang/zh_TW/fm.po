@@ -165,10 +165,14 @@ msgid "Encoding: $encoding"
 msgstr "編碼設定: $encoding"
 
 #: settings.sh:32
+msgid "Sort files by name: $enable_sort"
+msgstr "按文件名排序: $enable_sort"
+
+#: settings.sh:41
 msgid "Resolution (R):  $gfxmode"
 msgstr "解析度設定(R):  $gfxmode"
 
-#: settings.sh:63
+#: settings.sh:72
 msgid "EFI Firmware Setup"
 msgstr "EFI韌體設定"
 
@@ -335,6 +339,10 @@ msgstr "作為 Parted Magic LiveCD 啟動 (i686)"
 #: distro/porteus.sh:9
 msgid "Boot Porteus From ISO"
 msgstr "作為 Porteus LiveCD 啟動"
+
+#: distro/redcore.sh:5
+msgid "Boot Redcore Linux From ISO"
+msgstr "作為 Redcore Linux LiveCD 啟動"
 
 #: distro/sabayon.sh:5
 msgid "Boot Sabayon From ISO"
