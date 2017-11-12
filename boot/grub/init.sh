@@ -40,4 +40,5 @@ terminal_output gfxterm;
 set color_normal=white/black;
 set color_highlight=black/white;
 set encoding="utf8"; export encoding;
+set enable_sort=1; export enable_sort;
 configfile $prefix/main.sh;

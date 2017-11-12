@@ -20,12 +20,11 @@ encoding = grub.getenv ("encoding")
 if encoding == nil then
 	encoding = "utf8"
 end
-
 if (root == nil) or (root == "") then
 	return 1;
 else
-	d_list = ""
-	f_list = ""
+	d_table, f_table = {}, {}
+	i, j = 0, 0
 	local function enum_file (name)
 		local path = root .. "/" .. name
 		if (encoding == "gbk") then
@@ -33,12 +32,19 @@ else
 		end
 		name = string.gsub(name, " ", ":")
 		if grub.file_exist (path) then
-			f_list = name .. "\n" .. f_list
+			i = i + 1
+			f_table[i] = name
 		elseif (name ~= "." and name ~= "..") then
-			d_list = name .. "\n" .. d_list
+			j = j + 1
+			d_table[j] = name
 		end
 	end
 	grub.enum_file (enum_file,root .. "/")
+	if (grub.getenv ("enable_sort") == "1") then
+		table.sort (f_table)
+		table.sort (d_table)
+	end
+	f_list, d_list = table.concat (f_table, "\n"), table.concat (d_table, "\n")
 	grub.setenv ("f_list", f_list)
 	grub.setenv ("d_list", d_list)
 end

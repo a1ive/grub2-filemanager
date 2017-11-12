@@ -333,7 +333,9 @@ function open{
 	}
 	menuentry $"File Info"  --class info{
 		set pager=1;
+		echo "File Path : $file_name";
 		lua $prefix/file_info.lua;
+		echo "File Size : $file_size";
 		enable_progress_indicator=1;
 		echo "CRC32 : "; crc32 "$file_name";
 		enable_progress_indicator=0;

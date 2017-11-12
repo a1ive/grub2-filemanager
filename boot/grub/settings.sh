@@ -29,6 +29,15 @@ menuentry $"Encoding: $encoding" --class settings {
 	export encoding;
 	configfile $prefix/settings.sh;
 }
+menuentry $"Sort files by name: $enable_sort" --class settings {
+	if [ "$enable_sort" = "1" ]; then
+		enable_sort="0";
+	else
+		enable_sort="1";
+	fi
+	export enable_sort;
+	configfile $prefix/settings.sh;
+}
 submenu $"Resolution (R):  $gfxmode" --class settings --hotkey=r {
 	terminal_output console
 	menuentry "[0] AUTO DETECT" --hotkey=0{

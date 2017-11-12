@@ -21,7 +21,7 @@ function div1024 (file_size, unit)
 	part_f1 = 10 * ( file_size % 1024 ) / 1024
 	part_f2 =  10 * ( file_size % 1024 ) % 1024
 	part_f2 = 10 * ( part_f2 % 1024 ) / 1024
-	local str = "File Size : " .. part_int .. "." .. part_f1 .. part_f2 .. unit
+	str = part_int .. "." .. part_f1 .. part_f2 .. unit
 	return part_int, str
 end
 
@@ -30,14 +30,13 @@ if (file == nil) then
 else
 	file_data = grub.file_open (file)
 	file_size = grub.file_getsize (file_data)
-	print ("File Path : " .. file)
-	local str = file_size .. "B"
+	str = file_size .. "B"
 	for i,unit in ipairs ({"KiB", "MiB", "GiB", "TiB"}) do
 		if (file_size < 1024) or (unit == "TiB") then
-			print (str)
 			break;
 		else
 			file_size, str = div1024 (file_size, unit)
 		end
 	end
 end
+grub.setenv ("file_size", str)
