@@ -236,12 +236,20 @@ function open{
 			fi;
 		fi;
 	elif regexp 'iso' $file_type; then
-		loopback loop "$file_name";
-		menuentry $"Mount ISO"  --class iso{
-			path="(loop)"; export path; configfile $prefix/main.sh;
-		}
-		source $prefix/isoboot.sh;
-		CheckLinuxType;
+		unset efi_file;
+		if ! regexp '^\(loop.*$' "$file_name"; then
+			loopback loop "$file_name";
+			menuentry $"Mount ISO"  --class iso{
+				path="(loop)"; export path; configfile $prefix/main.sh;
+			}
+			source $prefix/isoboot.sh;
+			CheckLinuxType;
+			if regexp 'i386' "$grub_cpu"; then
+					set efi_file="bootia32.efi";
+			else
+					set efi_file="bootx64.efi";
+			fi;
+		fi;
 		if regexp 'pc' $grub_platform; then
 			menuentry $"Boot ISO (GRUB4DOS)" --class iso{
 				set g4d_param="cd";
@@ -261,11 +269,6 @@ function open{
 				memdisk iso "$file_name";
 			}
 		else
-			if regexp 'i386' "$grub_cpu"; then
-				set efi_file="bootia32.efi";
-			else
-				set efi_file="bootx64.efi";
-			fi;
 			if test -f "(loop)/efi/boot/${efi_file}"; then
 				menuentry $"Boot EFI Files" --class uefi{
 					chainloader (loop)/efi/boot/${efi_file};

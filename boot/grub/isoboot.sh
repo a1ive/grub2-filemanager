@@ -51,6 +51,8 @@ function CheckLinuxType {
 		source $prefix/distro/blackarch.sh;
 	elif test -d (loop)/kdeos; then
 		source $prefix/distro/kaos.sh;
+	elif test -f (loop)/boot/vmlinuz -a -f (loop)/boot/initrd -a -f (loop)/LiveOS/squashfs.img; then
+		source $prefix/distro/redcore.sh;
 	elif test -d (loop)/LiveOS -o -f (loop)/images/pxeboot/vmlinuz*; then
 		source $prefix/distro/fedora.sh;
 	elif test -f (loop)/live/vmlinuz* -a -f (loop)/live/initrd.*; then
