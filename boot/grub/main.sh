@@ -14,23 +14,6 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-function hiddenmenu {
-	hiddenentry "Settings" --hotkey=s {
-		configfile $prefix/settings.sh;
-	}
-	hiddenentry "Lua" --hotkey=l {
-		lua;
-	}
-	hiddenentry "Boot" --hotkey=b {
-		configfile $prefix/boot.sh;
-	}
-	hiddenentry "Reboot" --hotkey=r{
-		reboot;
-	}
-	hiddenentry "Halt" --hotkey=h{
-		halt;
-	}
-}
 # memdisk iso|floppy|harddisk $file
 function memdisk{
 	set memdisk=$prefix/memdisk;
@@ -39,61 +22,6 @@ function memdisk{
 	enable_progress_indicator=1;
 	initrd16 "$2";
 	boot;
-}
-function main{
-	if test -z "$path"; then
-		for device in (*); do
-			if test -d "$device"; then
-				icon="img";
-				probe --set=fs -f "$device";
-				probe --set=label -l -q "$device";
-				if test "$fs" = "udf" -o "$fs" = "iso9660"; then
-					icon="iso";
-				elif test "$device" = "(memdisk)" -o "$device" = "(proc)"; then
-					continue;
-				elif regexp '^\(hd[0-9]+.*$' "$device"; then
-					icon="hdd";
-				fi;
-				menuentry "$device [$fs] $label" "$device" --class $icon{
-					path="$2"; export path; configfile $prefix/main.sh;
-				}
-				unset label;unset fs;
-			fi;
-		done;
-	else
-		default=1;
-		menuentry $"Back" --class go-previous{
-			if ! regexp --set=lpath '(^.*)/.*$' "$path"; then
-				lpath="";
-			fi
-			path="$lpath"; export path; configfile $prefix/main.sh;
-		}
-		fm_path="$path"; lua $prefix/enum_file.lua;
-		for name in $d_list; do
-			file_name="${path}/${name}";
-			menuentry "${name}" "$file_name" --class dir{
-				file_name="$2";
-				lua $prefix/get_name.lua;
-				path="$file_name"; export path; configfile $prefix/main.sh;
-			}
-		done;
-		for name in $f_list; do
-			if ! regexp --set=file_extn '^.*\.(.*$)' "$name"; then
-				file_extn="";
-			fi;
-			file_name="${path}/${name}";
-			lua $prefix/check_type.lua;
-			menuentry "$name" "$path" "$file_type" --class $file_icon {
-				file_name="$1"; 
-				lua $prefix/get_name.lua;
-				file_name="$2/${file_name}"; export file_name;
-				file_type="$3"; export file_type;
-				main_ops="open"; export main_ops;
-				export path; configfile $prefix/main.sh;
-			}
-		done;
-	fi;
-	hiddenmenu;
 }
 function open{
 	menuentry $"Back"  --class go-previous{

@@ -15,21 +15,6 @@
 -- You should have received a copy of the GNU General Public License
 -- along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-function init ()
-	encoding = grub.getenv ("encoding")
-	if (encoding == nil) then
-		encoding = "utf8"
-	end
-	enable_sort = grub.getenv ("enable_sort")
-	if (enable_sort == nil) then
-		enable_sort = 1
-	end
-	path = grub.getenv ("path")
-	if (path == nil) then
-		path = ""
-	end
-end
-
 function enum_device (device, fs, uuid, label)
 -- ignore (memdisk) and (proc)
 	print (device)
@@ -108,7 +93,7 @@ function check_file (name, name_extn)
 end
 
 function enum_file (name)
-	item = path .. "/" .. name
+	local item = path .. "/" .. name
 	print (item)
 	if grub.file_exist (item) then
 		i = i + 1
@@ -119,50 +104,55 @@ function enum_file (name)
 	end
 end
 
-function genlst (path)
-	if (path == "") then
-		grub.enum_device (enum_device)
-	else
-		i, j = 0, 0
-		f_table, d_table = {}, {}
-		grub.enum_file (enum_file,path .. "/")
-		
-		if (enable_sort == 1) then
-			table.sort (f_table)
-			table.sort (d_table)
+encoding = grub.getenv ("encoding")
+if (encoding == nil) then
+	encoding = "utf8"
+end
+enable_sort = grub.getenv ("enable_sort")
+if (enable_sort == nil) then
+	enable_sort = 1
+end
+path = grub.getenv ("path")
+if (path == nil) then
+	path = ""
+end
+print ("path: " .. path)
+if (path == "") then
+	grub.enum_device (enum_device)
+else
+	i, j = 0, 0
+	f_table, d_table = {}, {}
+	grub.enum_file (enum_file,path .. "/")
+	if (enable_sort == 1) then
+		table.sort (f_table)
+		table.sort (d_table)
+	end
+	icon = "go-previous"
+	lpath = string.match (path, "^(.*)/.*$")
+	if lpath == nil then
+		lpath = ""
+	end
+	command = "action=genlst; path=" .. lpath .. "; export action; export path; configfile $prefix/clean.sh"
+	name = "Back"
+	grub.add_icon_menu (icon, command, name)
+	
+	for j, name in ipairs(d_table) do
+		item = path .. "/" .. name
+		if (encoding == "gbk") then
+			name = grub.toutf8(name)
 		end
-		
-		icon = "go-previous"
-		lpath = string.match (path, "^(.*)/.*$")
-		if lpath == nil then
-			lpath = ""
-		end
-		command = "action=genlst; path=" .. lpath .. "; export action; export path; configfile $prefix/clean.sh"
-		name = "Back"
+		icon = "dir"
+		command = "action=genlst; path=" .. item .. "; export action; export path; configfile $prefix/clean.sh"
 		grub.add_icon_menu (icon, command, name)
-		
-		for j, name in ipairs(d_table) do
-			item = path .. "/" .. name
-			if (encoding == "gbk") then
-				name = grub.toutf8(name)
-			end
-			icon = "dir"
-			command = "action=genlst; path=" .. item .. "; export action; export path; configfile $prefix/clean.sh"
-			grub.add_icon_menu (icon, command, name)
+	end
+	for i, name in ipairs(f_table) do
+		item = path .. "/" .. name
+		if (encoding == "gbk") then
+			name = grub.toutf8(name)
 		end
-		for i, name in ipairs(f_table) do
-			item = path .. "/" .. name
-			if (encoding == "gbk") then
-				name = grub.toutf8(name)
-			end
-			name_extn = string.match (name, ".*%.([%w]+)$")
-			file_type, file_icon = check_file (name, name_extn)
-			command = "action=open; file=" .. item .. ";file_type=" .. file_type .. "; export action; export file; export file_type; configfile $prefix/clean.sh"
-			grub.add_icon_menu (file_icon, command, name)
-		end
+		name_extn = string.match (name, ".*%.(.*)$")
+		file_type, file_icon = check_file (name, name_extn)
+		command = "action=open; file=" .. item .. ";file_type=" .. file_type .. "; export action; export file; export file_type; configfile $prefix/clean.sh"
+		grub.add_icon_menu (file_icon, command, name)
 	end
 end
-
-init()
-print ("path: " .. path)
-genlst (path)

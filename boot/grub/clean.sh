@@ -14,29 +14,29 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-function hiddenmenu {
-	hiddenentry "Settings" --hotkey=s {
-		configfile $prefix/settings.sh;
-	}
-	hiddenentry "Lua" --hotkey=l {
-		lua;
-	}
-	hiddenentry "Boot" --hotkey=b {
-		configfile $prefix/boot.sh;
-	}
-	hiddenentry "Reboot" --hotkey=r{
-		reboot;
-	}
-	hiddenentry "Halt" --hotkey=h{
-		halt;
-	}
+if [ "$theme" != "${prefix}/themes/slack/theme.txt" ]; then
+	echo "Loading theme ... ";
+	set theme=${prefix}/themes/slack/theme.txt; export theme;
+fi;
+unset chosen;
+hiddenentry "Settings" --hotkey=s {
+	configfile $prefix/settings.sh;
 }
-
-set theme=${prefix}/themes/slack/theme.txt; export theme;
-hiddenmenu;
-
+hiddenentry "Lua" --hotkey=l {
+	lua;
+}
+hiddenentry "Boot" --hotkey=b {
+	configfile $prefix/boot.sh;
+}
+hiddenentry "Reboot" --hotkey=r{
+	reboot;
+}
+hiddenentry "Halt" --hotkey=h{
+	halt;
+}
 if [ "$action" = "open" ]; then
 	lua $prefix/open.lua;
 else
+	echo "Loading ...";
 	lua $prefix/main.lua;
 fi;

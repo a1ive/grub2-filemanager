@@ -23,6 +23,18 @@ function init ()
 	path = grub.getenv ("path")
 	file = grub.getenv ("file")
 	file_type = grub.getenv ("file_type")
+	arch = grub.getenv ("grub_cpu")
+	platform = grub.getenv ("grub_platform")
+	device = string.match (path, "^%([%w,]+%)/.*$")
+	print ("device " .. device)
+	if string.match (device, "^hd[%d]+,[%w]+") ~= nil then
+		device_type = "1"
+	elseif string.match (device, "^[hcf]d[%d]*") ~= nil then
+		device_type = "2"
+	else
+		device_type = "3"
+	end
+	print ("device " .. device .. " type " .. device_type)
 end
 
 function div1024 (file_size, unit)
@@ -72,6 +84,31 @@ function open (file, file_type)
 	name = "Back"
 	grub.add_icon_menu (icon, command, name)
 -- 
+	if file_type == "iso" then
+		if device_type ~= "3" then
+			grub.run ("loopback loop " .. file)
+			icon = "iso"
+			command = "action=genlst; path=(loop); export action; export path; configfile $prefix/clean.sh"
+			name = "Mount ISO"
+			grub.add_icon_menu (icon, command, name)
+			grub.run ("source $prefix/isoboot.sh")
+			grub.run ("CheckLinuxType")
+		end
+		if platform == "pc" then
+			icon = "iso"
+			command = "linux16 $prefix/memdisk iso raw; enable_progress_indicator=1; initrd16 " .. file
+			name = "Boot ISO (memdisk)"
+			grub.add_icon_menu (icon, command, name)
+		end
+	end
+	if file_type == "wim" then
+		if platform == "pc" then
+			icon = "wim"
+			command = "enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot gui; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
+			name = "Boot NT6.x WIM (wimboot)"
+			grub.add_icon_menu (icon, command, name)
+		end
+	end
 
 
 -- common
@@ -85,5 +122,6 @@ function open (file, file_type)
 end
 
 init ()
+print (arch .. "-" .. platform)
 print ("file: " .. file .. "type: " .. file_type)
 open (file, file_type)
