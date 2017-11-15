@@ -20,6 +20,7 @@ function enum_device (device, fs, uuid, label)
 	if (device == "memdisk" or device == "proc") then
 		return 0
 	end
+	print (device)
 	icon = "img"
 	if (fs == "iso9660" or fs == "udf") then
 		icon = "iso"
@@ -93,6 +94,7 @@ end
 
 function enum_file (name)
 	local item = path .. "/" .. name
+	print (item)
 	if grub.file_exist (item) then
 		i = i + 1
 		f_table[i] = name

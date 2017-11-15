@@ -50,7 +50,7 @@ function tog4dpath (file, device, device_type)
 	elseif (device_type == "2") then
 		g4d_file = file
 	else
-		print ("not on real device")
+		print ("not on a real device")
 		g4d_file = "(rd)+1"
 	end
 	print ("grub4dos file path : " .. g4d_file)
@@ -102,10 +102,47 @@ function open (file, file_type, device, device_type, arch, platform)
 			grub.add_icon_menu (icon, command, name)
 		end
 	elseif file_type == "fba" then
-		icon = "img"
-		command = "loopback ud " .. file .. "; action=genlst; path=(ud); export action; export path; configfile $prefix/clean.sh"
-		name = "Mount Image"
-		grub.add_icon_menu (icon, command, name)
+		if device_type ~= "3" then
+			icon = "img"
+			command = "loopback ud " .. file .. "; action=genlst; path=(ud); export action; export path; configfile $prefix/clean.sh"
+			name = "Mount Image"
+			grub.add_icon_menu (icon, command, name)
+		end
+	elseif file_type == "img" then
+		if device_type ~= "3" then
+			icon = "img"
+			command = "loopback ud " .. file .. "; action=genlst; path=; export action; export path; configfile $prefix/clean.sh"
+			name = "Mount Image"
+			grub.add_icon_menu (icon, command, name)
+		end
+		if platform == "pc" then
+			-- memdisk floppy
+			icon = "img"
+			command = "linux16 $prefix/memdisk floppy raw; enable_progress_indicator=1; initrd16 " .. file
+			name = "Boot Floppy Image (memdisk)"
+			grub.add_icon_menu (icon, command, name)
+			-- memdisk harddisk
+			icon = "img"
+			command = "linux16 $prefix/memdisk harddisk raw; enable_progress_indicator=1; initrd16 " .. file
+			name = "Boot Hard Drive Image (memdisk)"
+			grub.add_icon_menu (icon, command, name)
+		end
+	elseif file_type == "ipxe" then
+		if platform == "pc" then
+			-- ipxe
+			icon = "net"
+			command = "linux16 $prefix/ipxe.lkrn; initrd16 " .. file
+			name = "Open As iPXE Script"
+			grub.add_icon_menu (icon, command, name)
+		end
+	elseif file_type == "efi" then
+		if platform == "efi" then
+			-- efi
+			icon = "uefi"
+			command = "chainloader " .. file
+			name = "Open As EFI"
+			grub.add_icon_menu (icon, command, name)
+		end
 	end
 
 
@@ -125,10 +162,12 @@ if (encoding == nil) then
 end
 path = grub.getenv ("path")
 file = grub.getenv ("file")
+print (file)
 file_type = grub.getenv ("file_type")
 arch = grub.getenv ("grub_cpu")
 platform = grub.getenv ("grub_platform")
-device = string.match (path, "^%(([%w,]+)%)/.*$")
+device = string.match (file, "^%(([%w,]+)%)/.*$")
+print(device)
 if string.match (device, "^hd[%d]+,[%w]+") ~= nil then
 -- (hdx,y)
 	device_type = "1"
@@ -139,5 +178,5 @@ else
 -- (loop) (memdisk) (tar) (proc) etc.
 	device_type = "3"
 end
-
+print (device_type)
 open (file, file_type, device, device_type, arch, platform)
