@@ -37,6 +37,6 @@ hiddenentry "Halt" --hotkey=h{
 if [ "$action" = "open" ]; then
 	lua $prefix/open.lua;
 else
-	echo "Loading ...";
+	echo "Generating menu ...";
 	lua $prefix/main.lua;
 fi;

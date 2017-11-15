@@ -74,5 +74,5 @@ if regexp 'efi' "$grub_platform"; then
 	}
 fi
 menuentry $"Back" --class go-previous {
-	configfile $prefix/main.sh;
+	configfile $prefix/clean.sh;
 }

@@ -15,28 +15,6 @@
 -- You should have received a copy of the GNU General Public License
 -- along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-function init ()
-	encoding = grub.getenv ("encoding")
-	if (encoding == nil) then
-		encoding = "utf8"
-	end
-	path = grub.getenv ("path")
-	file = grub.getenv ("file")
-	file_type = grub.getenv ("file_type")
-	arch = grub.getenv ("grub_cpu")
-	platform = grub.getenv ("grub_platform")
-	device = string.match (path, "^%([%w,]+%)/.*$")
-	print ("device " .. device)
-	if string.match (device, "^hd[%d]+,[%w]+") ~= nil then
-		device_type = "1"
-	elseif string.match (device, "^[hcf]d[%d]*") ~= nil then
-		device_type = "2"
-	else
-		device_type = "3"
-	end
-	print ("device " .. device .. " type " .. device_type)
-end
-
 function div1024 (file_size, unit)
 	part_int = file_size / 1024
 	part_f1 = 10 * ( file_size % 1024 ) / 1024
@@ -64,20 +42,21 @@ function get_size (file)
 	return (str)
 end
 
-function open_txt (file)
-	data = grub.file_open(file)
-	while (grub.file_eof(data) == false)
-	do
-		line = grub.file_getline (data)
-		if (encoding == "gbk") then
-			line = grub.toutf8(line)
-		end
-		grub.add_menu ("echo;", line)
+function tog4dpath (file, device, device_type)
+	if (device_type == "1") then
+		devnum = string.match (device, "^hd%d+,%a*(%d+)$")
+		devnum = devnum - 1
+		g4d_file = "(" .. string.match (device, "^(hd%d+,)%a*%d+$") .. devnum .. ")" .. string.match (file, "^%([%w,]+%)(.*)$")
+	elseif (device_type == "2") then
+		g4d_file = file
+	else
+		print ("not on real device")
+		g4d_file = "(rd)+1"
 	end
-	return 0
+	print ("grub4dos file path : " .. g4d_file)
 end
 
-function open (file, file_type)
+function open (file, file_type, device, device_type, arch, platform)
 -- common
 	icon = "go-previous"
 	command = "action=genlst; path=" .. path .. "; hidden_menu=1; export action; export path; export hidden_menu; configfile $prefix/clean.sh"
@@ -91,23 +70,42 @@ function open (file, file_type)
 			command = "action=genlst; path=(loop); export action; export path; configfile $prefix/clean.sh"
 			name = "Mount ISO"
 			grub.add_icon_menu (icon, command, name)
-			grub.run ("source $prefix/isoboot.sh")
-			grub.run ("CheckLinuxType")
+			if grub.file_exist ("(loop)/boot/grub/loopback.cfg") then
+				icon = "iso"
+				command = "set iso_path=" .. file .."; export iso_path; root=loop; set theme=${prefix}/themes/slack/extern.txt; configfile /boot/grub/loopback.cfg"
+				name = "Boot ISO (Loopback)"
+				grub.add_icon_menu (icon, command, name)
+			end
 		end
 		if platform == "pc" then
+			-- memdisk iso
 			icon = "iso"
 			command = "linux16 $prefix/memdisk iso raw; enable_progress_indicator=1; initrd16 " .. file
 			name = "Boot ISO (memdisk)"
 			grub.add_icon_menu (icon, command, name)
+			-- grub4dos map iso
+		--	icon = "iso"
+		--	tog4dpath (file, device, device_type)
+		--	command = "linux $prefix/grub.exe --config-file=(cd)/MAP nomem cd " .. g4d_file
+		--	if g4d_file == "(rd)+1" then
+		--		command = command .. "; enable_progress_indicator=1; initrd " .. file
+		--	end
+		--	name = "Boot ISO (GRUB4DOS)"
+		--	grub.add_icon_menu (icon, command, name)
 		end
-	end
-	if file_type == "wim" then
+	elseif file_type == "wim" then
 		if platform == "pc" then
+			-- wimboot
 			icon = "wim"
 			command = "enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot gui; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
 			name = "Boot NT6.x WIM (wimboot)"
 			grub.add_icon_menu (icon, command, name)
 		end
+	elseif file_type == "fba" then
+		icon = "img"
+		command = "loopback ud " .. file .. "; action=genlst; path=(ud); export action; export path; configfile $prefix/clean.sh"
+		name = "Mount Image"
+		grub.add_icon_menu (icon, command, name)
 	end
 
 
@@ -121,7 +119,25 @@ function open (file, file_type)
 	grub.add_icon_menu (icon, command, name)
 end
 
-init ()
-print (arch .. "-" .. platform)
-print ("file: " .. file .. "type: " .. file_type)
-open (file, file_type)
+encoding = grub.getenv ("encoding")
+if (encoding == nil) then
+	encoding = "utf8"
+end
+path = grub.getenv ("path")
+file = grub.getenv ("file")
+file_type = grub.getenv ("file_type")
+arch = grub.getenv ("grub_cpu")
+platform = grub.getenv ("grub_platform")
+device = string.match (path, "^%(([%w,]+)%)/.*$")
+if string.match (device, "^hd[%d]+,[%w]+") ~= nil then
+-- (hdx,y)
+	device_type = "1"
+elseif string.match (device, "^[hcf]d[%d]*") ~= nil then
+-- (hdx) (cdx) (fdx) (cd)
+	device_type = "2"
+else
+-- (loop) (memdisk) (tar) (proc) etc.
+	device_type = "3"
+end
+
+open (file, file_type, device, device_type, arch, platform)

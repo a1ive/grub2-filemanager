@@ -87,5 +87,5 @@ for dev in (*); do
     fi;
 done;
 menuentry $"Back" --class go-previous{
-	configfile $prefix/main.sh;
+	configfile $prefix/clean.sh;
 }

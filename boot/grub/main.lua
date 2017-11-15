@@ -17,7 +17,6 @@
 
 function enum_device (device, fs, uuid, label)
 -- ignore (memdisk) and (proc)
-	print (device)
 	if (device == "memdisk" or device == "proc") then
 		return 0
 	end
@@ -94,7 +93,6 @@ end
 
 function enum_file (name)
 	local item = path .. "/" .. name
-	print (item)
 	if grub.file_exist (item) then
 		i = i + 1
 		f_table[i] = name
@@ -116,7 +114,7 @@ path = grub.getenv ("path")
 if (path == nil) then
 	path = ""
 end
-print ("path: " .. path)
+
 if (path == "") then
 	grub.enum_device (enum_device)
 else

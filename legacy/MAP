@@ -47,5 +47,5 @@ boot || echo Not a bootable img && goto :exit
 :exit
 echo
 echo
-pause press any key to REBOOT ...
+pause press any key to exit ...
 reboot
