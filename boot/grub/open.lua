@@ -60,71 +60,135 @@ function open (file, file_type, device, device_type, arch, platform)
 -- common
 	icon = "go-previous"
 	command = "action=genlst; path=" .. path .. "; hidden_menu=1; export action; export path; export hidden_menu; configfile $prefix/clean.sh"
-	name = "Back"
+	name = grub.gettext("Back")
 	grub.add_icon_menu (icon, command, name)
 -- 
 	if file_type == "iso" then
 		if device_type ~= "3" then
-			grub.run ("loopback loop " .. file)
+			-- mount
 			icon = "iso"
-			command = "action=genlst; path=(loop); export action; export path; configfile $prefix/clean.sh"
-			name = "Mount ISO"
+			command = "loopback -d loop; loopback loop " .. file .. "; action=genlst; path=; export action; export path; configfile $prefix/clean.sh"
+			name = grub.gettext("Mount ISO")
 			grub.add_icon_menu (icon, command, name)
-			if grub.file_exist ("(loop)/boot/grub/loopback.cfg") then
-				icon = "iso"
-				command = "set iso_path=" .. file .."; export iso_path; root=loop; set theme=${prefix}/themes/slack/extern.txt; configfile /boot/grub/loopback.cfg"
-				name = "Boot ISO (Loopback)"
-				grub.add_icon_menu (icon, command, name)
-			end
 		end
 		if platform == "pc" then
 			-- memdisk iso
 			icon = "iso"
 			command = "linux16 $prefix/memdisk iso raw; enable_progress_indicator=1; initrd16 " .. file
-			name = "Boot ISO (memdisk)"
+			name = grub.gettext("Boot ISO (memdisk)")
 			grub.add_icon_menu (icon, command, name)
 			-- grub4dos map iso
-		--	icon = "iso"
-		--	tog4dpath (file, device, device_type)
-		--	command = "linux $prefix/grub.exe --config-file=(cd)/MAP nomem cd " .. g4d_file
-		--	if g4d_file == "(rd)+1" then
-		--		command = command .. "; enable_progress_indicator=1; initrd " .. file
-		--	end
-		--	name = "Boot ISO (GRUB4DOS)"
-		--	grub.add_icon_menu (icon, command, name)
+			icon = "iso"
+			tog4dpath (file, device, device_type)
+			command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem cd " .. g4d_file .."\";"
+			command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+			if g4d_file == "(rd)+1" then
+				command = command .. "enable_progress_indicator=1; initrd " .. file
+			end
+			name = grub.gettext("Boot ISO (GRUB4DOS)")
+			grub.add_icon_menu (icon, command, name)
 		end
 	elseif file_type == "wim" then
 		if platform == "pc" then
 			-- wimboot
 			icon = "wim"
 			command = "enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot gui; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
-			name = "Boot NT6.x WIM (wimboot)"
+			name = grub.gettext("Boot NT6.x WIM (wimboot)")
 			grub.add_icon_menu (icon, command, name)
+			-- BOOTMGR/NTLDR only supports (hdx,y)
+			if device_type == "1" then
+				if grub.file_exist ("/NTBOOT.MOD/NTBOOT.NT6") then
+					-- NTBOOT NT6 WIM
+					icon = "nt6"
+					tog4dpath (file, device, device_type)
+					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";"
+					command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					name = grub.gettext("Boot NT6.x WIM (NTBOOT)")
+					grub.add_icon_menu (icon, command, name)
+				end
+				if grub.file_exist ("/NTBOOT.MOD/NTBOOT.PE1") then
+					-- NTBOOT NT5 WIM (PE1)
+					icon = "nt5"
+					tog4dpath (file, device, device_type)
+					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";"
+					command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					name = grub.gettext("Boot NT5.x WIM (NTBOOT)")
+					grub.add_icon_menu (icon, command, name)
+				end
+			end
+		end
+	elseif file_type == "wpe" then
+		if platform == "pc" then
+			-- NTLDR only supports (hdx,y)
+			if device_type == "1" then
+				if grub.file_exist ("/NTBOOT.MOD/NTBOOT.PE1") then
+					icon = "nt5"
+					tog4dpath (file, device, device_type)
+					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";"
+					command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					name = grub.gettext("Boot NT5.x PE (NTBOOT)")
+					grub.add_icon_menu (icon, command, name)
+				end
+			end
+		end
+	elseif file_type == "vhd" then
+		if platform == "pc" then
+			-- BOOTMGR only supports (hdx,y)
+			if device_type == "1" then
+				if grub.file_exist ("/NTBOOT.MOD/NTBOOT.NT6") then
+					icon = "nt6"
+					tog4dpath (file, device, device_type)
+					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";"
+					command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					name = grub.gettext("Boot Windows NT6.x VHD (NTBOOT)")
+					grub.add_icon_menu (icon, command, name)
+				end
+			end
 		end
 	elseif file_type == "fba" then
 		if device_type ~= "3" then
 			icon = "img"
-			command = "loopback ud " .. file .. "; action=genlst; path=(ud); export action; export path; configfile $prefix/clean.sh"
-			name = "Mount Image"
+			command = "loopback -d ud; loopback ud " .. file .. "; action=genlst; path=(ud); export action; export path; configfile $prefix/clean.sh"
+			name = grub.gettext("Mount Image")
 			grub.add_icon_menu (icon, command, name)
 		end
-	elseif file_type == "img" then
+	elseif file_type == "disk" then
 		if device_type ~= "3" then
 			icon = "img"
-			command = "loopback ud " .. file .. "; action=genlst; path=; export action; export path; configfile $prefix/clean.sh"
-			name = "Mount Image"
+			command = "loopback -d img; loopback img " .. file .. "; action=genlst; path=; export action; export path; configfile $prefix/clean.sh"
+			name = grub.gettext("Mount Image")
 			grub.add_icon_menu (icon, command, name)
 		end
 		if platform == "pc" then
 			-- memdisk floppy
 			icon = "img"
 			command = "linux16 $prefix/memdisk floppy raw; enable_progress_indicator=1; initrd16 " .. file
-			name = "Boot Floppy Image (memdisk)"
+			name = grub.gettext("Boot Floppy Image (memdisk)")
+			grub.add_icon_menu (icon, command, name)
+			-- grub4dos map fd
+			icon = "img"
+			tog4dpath (file, device, device_type)
+			command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem fd " .. g4d_file .. "\";"
+			command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+			if g4d_file == "(rd)+1" then
+				command = command .. "enable_progress_indicator=1; initrd " .. file
+			end
+			name = grub.gettext("Boot Floppy Image (GRUB4DOS)")
 			grub.add_icon_menu (icon, command, name)
 			-- memdisk harddisk
 			icon = "img"
 			command = "linux16 $prefix/memdisk harddisk raw; enable_progress_indicator=1; initrd16 " .. file
-			name = "Boot Hard Drive Image (memdisk)"
+			name = grub.gettext("Boot Hard Drive Image (memdisk)")
+			grub.add_icon_menu (icon, command, name)
+			-- grub4dos map hd
+			icon = "img"
+			tog4dpath (file, device, device_type)
+			command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem hd " .. g4d_file .. "\";"
+			command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+			if g4d_file == "(rd)+1" then
+				command = command .. "enable_progress_indicator=1; initrd " .. file
+			end
+			name = grub.gettext("Boot Hard Drive Image (GRUB4DOS)")
 			grub.add_icon_menu (icon, command, name)
 		end
 	elseif file_type == "ipxe" then
@@ -132,7 +196,7 @@ function open (file, file_type, device, device_type, arch, platform)
 			-- ipxe
 			icon = "net"
 			command = "linux16 $prefix/ipxe.lkrn; initrd16 " .. file
-			name = "Open As iPXE Script"
+			name = grub.gettext("Open As iPXE Script")
 			grub.add_icon_menu (icon, command, name)
 		end
 	elseif file_type == "efi" then
@@ -140,7 +204,7 @@ function open (file, file_type, device, device_type, arch, platform)
 			-- efi
 			icon = "uefi"
 			command = "chainloader " .. file
-			name = "Open As EFI"
+			name = grub.gettext("Open As EFI")
 			grub.add_icon_menu (icon, command, name)
 		end
 	end

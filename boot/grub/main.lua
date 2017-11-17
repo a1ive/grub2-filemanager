@@ -70,7 +70,7 @@ function check_file (name, name_extn)
 	elseif name_extn == "wim" then
 		file_type, file_icon = "wim", "wim"
 	elseif name_extn == "is_" or name_extn == "im_" then
-		file_type, file_icon = "wpe", "windows"
+		file_type, file_icon = "wpe", "nt5"
 	elseif name_extn == "exe" then
 		file_icon = "exe"
 	elseif name_extn == "cfg" then

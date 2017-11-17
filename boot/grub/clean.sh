@@ -18,7 +18,6 @@ if [ "$theme" != "${prefix}/themes/slack/theme.txt" ]; then
 	echo "Loading theme ... ";
 	set theme=${prefix}/themes/slack/theme.txt; export theme;
 fi;
-unset chosen;
 hiddenentry "Settings" --hotkey=s {
 	configfile $prefix/settings.sh;
 }
@@ -37,6 +36,5 @@ hiddenentry "Halt" --hotkey=h{
 if [ "$action" = "open" ]; then
 	lua $prefix/open.lua;
 else
-	echo "Generating menu ...";
 	lua $prefix/main.lua;
 fi;
