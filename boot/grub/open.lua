@@ -162,12 +162,10 @@ if (encoding == nil) then
 end
 path = grub.getenv ("path")
 file = grub.getenv ("file")
-print (file)
 file_type = grub.getenv ("file_type")
 arch = grub.getenv ("grub_cpu")
 platform = grub.getenv ("grub_platform")
 device = string.match (file, "^%(([%w,]+)%)/.*$")
-print(device)
 if string.match (device, "^hd[%d]+,[%w]+") ~= nil then
 -- (hdx,y)
 	device_type = "1"
@@ -178,5 +176,4 @@ else
 -- (loop) (memdisk) (tar) (proc) etc.
 	device_type = "3"
 end
-print (device_type)
 open (file, file_type, device, device_type, arch, platform)
