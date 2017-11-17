@@ -17,7 +17,7 @@
 set pager=0; export pager;
 set debug= ; export debug;
 if regexp 'pc' "$grub_platform"; then
-	modlist="all_video bitmap bitmap_scale blocklist bsd cat cmp cpuid crc datetime dd disk drivemap elf file getkey gfxmenu gfxterm gfxterm_background gfxterm_menu gptsync hashsum hexdump jpeg loadenv lsapm macho memdisk multiboot multiboot2 net offsetio parttool png procfs progress random search_fs_uuid search_label sendkey squash4 syslinuxcfg terminfo tga time trig true vbe vga video video_bochs video_cirrus video_colors video_fb videoinfo xnu";
+	modlist="all_video bitmap bitmap_scale blocklist bsd cat cmp cpuid crc datetime dd disk drivemap elf file getkey gfxmenu gfxterm gfxterm_background gfxterm_menu gptsync hashsum hexdump jpeg legacycfg loadenv lsapm macho memdisk multiboot multiboot2 net offsetio parttool password png procfs progress random search_fs_uuid search_label sendkey squash4 syslinuxcfg terminfo tga time trig true vbe vga video video_bochs video_cirrus video_colors video_fb videoinfo xnu";
 else
 	modlist="all_video video_bochs video_cirrus efi_gop efi_uga gfxterm gfxterm_background gfxmenu jpeg png tga font";
 	search -s -f -q /efi/microsoft/boot/bootmgfw.efi;

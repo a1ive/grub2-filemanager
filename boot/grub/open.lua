@@ -122,6 +122,7 @@ function open (file, file_type, device, device_type, arch, platform)
 			-- NTLDR only supports (hdx,y)
 			if device_type == "1" then
 				if grub.file_exist ("/NTBOOT.MOD/NTBOOT.PE1") then
+					-- NTBOOT NT5 PE
 					icon = "nt5"
 					tog4dpath (file, device, device_type)
 					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";"
@@ -136,6 +137,7 @@ function open (file, file_type, device, device_type, arch, platform)
 			-- BOOTMGR only supports (hdx,y)
 			if device_type == "1" then
 				if grub.file_exist ("/NTBOOT.MOD/NTBOOT.NT6") then
+					-- NTBOOT NT6 VHD
 					icon = "nt6"
 					tog4dpath (file, device, device_type)
 					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";"
@@ -147,6 +149,7 @@ function open (file, file_type, device, device_type, arch, platform)
 		end
 	elseif file_type == "fba" then
 		if device_type ~= "3" then
+			-- mount
 			icon = "img"
 			command = "loopback -d ud; loopback ud " .. file .. "; action=genlst; path=(ud); export action; export path; configfile $prefix/clean.sh"
 			name = grub.gettext("Mount Image")
@@ -154,6 +157,7 @@ function open (file, file_type, device, device_type, arch, platform)
 		end
 	elseif file_type == "disk" then
 		if device_type ~= "3" then
+			-- mount
 			icon = "img"
 			command = "loopback -d img; loopback img " .. file .. "; action=genlst; path=; export action; export path; configfile $prefix/clean.sh"
 			name = grub.gettext("Mount Image")
@@ -207,6 +211,67 @@ function open (file, file_type, device, device_type, arch, platform)
 			name = grub.gettext("Open As EFI")
 			grub.add_icon_menu (icon, command, name)
 		end
+	elseif file_type == "tar" then
+		if device_type ~= "3" then
+			-- mount
+			icon = "7z"
+			command = "loopback -d tar; loopback tar " .. file .. "; action=genlst; path=(tar); export action; export path; configfile $prefix/clean.sh"
+			name = grub.gettext("Open As Archiver")
+			grub.add_icon_menu (icon, command, name)
+		end
+	elseif file_type == "cfg" then
+		-- GRUB 2 menu
+		icon = "cfg"
+		command = "root=" .. device .. "; configfile " .. file
+		name = grub.gettext("Open As Grub2 Menu")
+		grub.add_icon_menu (icon, command, name)
+		-- Syslinux menu
+		icon = "cfg"
+		command = "root=" .. device .. "; syslinux_configfile " .. file
+		name = grub.gettext("Open As Syslinux Menu")
+		grub.add_icon_menu (icon, command, name)
+	elseif file_type == "lst" then
+		if platform == "pc" then
+			if device_type ~= "3" then
+				-- GRUB4DOS menu
+				icon = "cfg"
+				tog4dpath (file, device, device_type)
+				command = "g4d_cmd=\"find --set-root /fm.loop;configfile " .. g4d_file .. "\";"
+				command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+				name = grub.gettext("Open As GRUB4DOS Menu")
+				grub.add_icon_menu (icon, command, name)
+			end
+		end
+		-- GRUB-Legacy menu
+		icon = "cfg"
+		command = "root=" .. device .. "; legacy_configfile " .. file
+		name = grub.gettext("Open As GRUB-Legacy Menu")
+		grub.add_icon_menu (icon, command, name)
+	elseif file_type == "pf2" then
+		-- PF2 font
+		icon = "pf2"
+		command = "loadfont " .. file
+		name = grub.gettext("Open As Font")
+		grub.add_icon_menu (icon, command, name)
+	elseif file_type == "mod" then
+		-- insmod
+		icon = "mod"
+		command = "insmod " .. file
+		name = grub.gettext("Insert Grub2 Module")
+		grub.add_icon_menu (icon, command, name)
+	elseif file_type == "image" then
+		-- png/jpg/tga
+		icon = "png"
+		command = "background_image " .. file .. "; echo -n " .. grub.gettext ("Press [ESC] to continue...") .. "; "
+		command = command .. "getkey; background_image ${prefix}/themes/slack/black.png"
+		name = grub.gettext("Open As Image")
+		grub.add_icon_menu (icon, command, name)
+	elseif file_type == "lua" then
+		-- lua
+		icon = "lua"
+		command = "root=" .. device .. "; lua " .. file
+		name = grub.gettext("Open As Lua Script")
+		grub.add_icon_menu (icon, command, name)
 	end
 
 
