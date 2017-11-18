@@ -18,23 +18,33 @@ if [ "$theme" != "${prefix}/themes/slack/theme.txt" ]; then
 	echo "Loading theme ... ";
 	set theme=${prefix}/themes/slack/theme.txt; export theme;
 fi;
-hiddenentry "Settings" --hotkey=s {
-	configfile $prefix/settings.sh;
-}
-hiddenentry "Lua" --hotkey=l {
-	lua;
-}
-hiddenentry "Boot" --hotkey=b {
-	configfile $prefix/boot.sh;
-}
-hiddenentry "Reboot" --hotkey=r{
-	reboot;
-}
-hiddenentry "Halt" --hotkey=h{
-	halt;
+function hidden_menu {
+	hiddenentry "Settings" --hotkey=s {
+		configfile $prefix/settings.sh;
+	}
+	hiddenentry "Lua" --hotkey=l {
+		lua;
+	}
+	hiddenentry "Boot" --hotkey=b {
+		if [ "$boot_func" = "osdetect" ]; then
+			action="osdetect"; export action; configfile $prefix/clean.sh;
+		else
+			configfile $prefix/boot.sh;
+		fi;
+	}
+	hiddenentry "Reboot" --hotkey=r {
+		reboot;
+	}
+	hiddenentry "Halt" --hotkey=h {
+		halt;
+	}
 }
 if [ "$action" = "open" ]; then
+	hidden_menu;
 	lua $prefix/open.lua;
+elif [ "$action" = "osdetect" ]; then
+	lua $prefix/osdetect.lua;
 else
+	hidden_menu;
 	lua $prefix/main.lua;
 fi;

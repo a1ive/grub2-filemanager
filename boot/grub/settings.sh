@@ -39,7 +39,7 @@ menuentry $"Sort files by name: $enable_sort" --class settings {
 	configfile $prefix/settings.sh;
 }
 submenu $"Resolution (R):  $gfxmode" --class settings --hotkey=r {
-	terminal_output console
+	terminal_output console;
 	menuentry "[0] AUTO DETECT" --hotkey=0{
 		setgfx "auto";
 	}

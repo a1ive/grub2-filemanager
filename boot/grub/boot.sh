@@ -13,6 +13,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+
 set theme=${prefix}/themes/slack/extern.txt; export theme;
 search --set=external -q -f /boot/grub/external_menu.cfg;
 if test -n "$external"; then
@@ -62,7 +63,8 @@ for dev in (*); do
 			}
         fi;
     elif test -f ($device)/windows/system32/version.dll; then
-		lua $prefix/win_ver.lua;
+		boot_func="";
+		lua $prefix/osdetect.lua;
 		menuentry $"Boot ${sysver} on ${device}" $device --class windows{
 			set root=$2;
 			AutoSwap;
