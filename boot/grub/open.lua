@@ -56,6 +56,53 @@ function tog4dpath (file, device, device_type)
 	print ("grub4dos file path : " .. g4d_file)
 end
 
+function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
+	print ("ISO " .. iso_path)
+	if iso_label == nil then
+		iso_label = ""
+	end
+	print ("ISO LABEL " .. iso_label)
+	if iso_uuid == nil then
+		iso_uuid = ""
+	end
+	print ("ISO UUID " .. iso_uuid)
+	if dev_uuid == nil then
+		dev_uuid = ""
+	end
+	print ("DEVICE UUID " .. dev_uuid)
+	loop_path = "(loop)"
+	d_table = {loop_path}
+	f_table = {}
+	i = 0
+	function enum_loop_file_iter (d_table)
+		j = 0
+		d_table_iter = {}
+		for k, loop_path in ipairs(d_table) do
+			--print ("Checking " .. loop_path)
+			function enum_loop_file (name)
+				item = loop_path .. "/" .. name
+				if grub.file_exist (item) then
+					i = i + 1
+					f_table[i] = item
+					print (item)
+				elseif (name ~= "." and name ~= "..") then
+					j = j + 1
+					d_table_iter[j] = item
+				end
+			end
+			grub.enum_file (enum_loop_file, loop_path .. "/")
+		end
+		d_table = d_table_iter
+		if (#d_table == 0) then
+			return 0
+		else
+			enum_loop_file_iter (d_table)
+		end
+	end
+	enum_loop_file_iter (d_table)
+	print ("Done.")
+end
+
 function open (file, file_type, device, device_type, arch, platform)
 -- common
 	icon = "go-previous"
@@ -66,10 +113,22 @@ function open (file, file_type, device, device_type, arch, platform)
 	if file_type == "iso" then
 		if device_type ~= "3" then
 			-- mount
+			grub.run ("loopback -d loop")
+			grub.run ("loopback loop " .. file)
 			icon = "iso"
-			command = "loopback -d loop; loopback loop " .. file .. "; action=genlst; path=; export action; export path; configfile $prefix/clean.sh"
+			command = "action=genlst; path=; export action; export path; configfile $prefix/clean.sh"
 			name = grub.gettext("Mount ISO")
 			grub.add_icon_menu (icon, command, name)
+			-- isoboot
+			iso_path = string.match (file, "^%([%w,]+%)(.*)$")
+			grub.setenv ("iso_path", iso_path)
+			grub.run ("probe --set=dev_uuid -u " .. device)
+			dev_uuid = grub.getenv ("dev_uuid")
+			grub.run ("probe -q --set=iso_label --label (loop)")
+			iso_label = grub.getenv ("iso_label")
+			grub.run ("probe --set=iso_uuid -u (loop)")
+			iso_uuid = grub.getenv ("iso_uuid")
+			isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		end
 		if platform == "pc" then
 			-- memdisk iso
