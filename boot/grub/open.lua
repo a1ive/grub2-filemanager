@@ -105,83 +105,121 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	end
 	enum_loop_file_iter (d_table)
 	function check_distro (f_table)
+		-- return icon, script, name, linux_extra
 		for i, loop_file in ipairs(f_table) do
 			loop_file = string.lower (loop_file)
 			print ("Checking " .. loop_file)
 			if string.match (loop_file, "^/arch/") then
-				return "arch"
+				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " archisolabel=" .. iso_label
+				if grub.file_exist ("(loop)/boot/vmlinuz_x86_64") then
+					linux_extra = "iso_loop_dev=/dev/disk/by-uuid/" .. dev_uuid .. " iso_loop_path=" .. iso_path
+				end
+				return "archlinux", "archlinux", "Arch Linux", linux_extra
 			elseif string.match (loop_file, "^/casper/") then
-				return "ubuntu"
+				linux_extra = "iso-scan/filename=" .. iso_path
+				return "ubuntu", "ubuntu", "Ubuntu", linux_extra
 			elseif string.match (loop_file, "^/liveos/") then
-				return "fedora"
+				linux_extra = "root=live:CDLABEL=" .. iso_label .. " iso-scan/filename=" .. iso_path
+				return "fedora", "fedora", "Fedora", linux_extra
 			elseif string.match (loop_file, "^/parabola/") then
-				return "parabola"
+				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " parabolaisolabel=" .. iso_label
+				return "archlinux", "parabola", "Parabola", linux_extra
 			elseif string.match (loop_file, "^/blackarch/") then
-				return "blackarch"
+				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " archisolabel=" .. iso_label
+				return "archlinux", "blackarch", "BlackArch"
 			elseif string.match (loop_file, "^/kdeos/") then
-				return "kaos"
+				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " kdeisolabel=" .. iso_label
+				return "kaos", "kaos", "KaOS", linux_extra
 			elseif string.match (loop_file, "^/sysrcd%.dat") then
-				return "sysrcd"
+				linux_extra = "isoloop=" .. iso_path
+				return "gentoo", "sysrcd", "System Rescue CD", linux_extra
 			elseif string.match (loop_file, "^/dat[%d]+%.dat") then
-				return "acronis"
+				return "acronis", "acronis", "Acronis", ""
 			elseif string.match (loop_file, "^/livecd%.sqfs") then
-				return "pclinuxos"
+				linux_extra = "root=UUID=" .. dev_uuid .. " bootfromiso=" .. iso_path
+				return "pclinuxos", "pclinuxos", "PCLinuxOS", linux_extra
 			elseif string.match (loop_file, "^/system%.sfs") then
-				return "android"
+				linux_extra = "iso-scan/filename=" .. iso_path
+				return "android", "android", "Android-x86", linux_extra
 			elseif string.match (loop_file, "^/netbsd") then
-				return "netbsd"
+				return "netbsd", "netbsd", "NetBSD", ""
 			elseif string.match (loop_file, "^/porteus/") then
-				return "porteus"
+				linux_extra = "from=" .. iso_path
+				return "porteus", "porteus", "Porteus", linux_extra
 			elseif string.match (loop_file, "^/slax/") then
-				return "slax"
+				linux_extra = "from=" .. iso_path
+				return "slax", "slax", "Slax", linux_extra
 			elseif string.match (loop_file, "^/wifislax/") then
-				return "wifislax"
+				linux_extra = "from=" .. iso_path
+				return "wifislax", "wifislax", "Wifislax", linux_extra
 			elseif string.match (loop_file, "^/wifislax64/") then
-				return "wifislax64"
+				linux_extra = "livemedia=/dev/disk/by-uuid/" .. dev_uuid .. ":" .. iso_path
+				return "wifislax", "wifislax", "Wifislax64", linux_extra
 			elseif string.match (loop_file, "^/wifiway/") then
-				return "wifiway"
+				linux_extra = "from=" .. iso_path
+				return "wifislax", "wifislax", "Wifiway", linux_extra
 			elseif string.match (loop_file, "^/manjaro/") then
-				return "manjaro"
+				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " misolabel=" .. iso_label
+				return "manjaro", "manjaro", "Manjaro", linux_extra
 			elseif string.match (loop_file, "^/pmagic/") then
-				return "pmagic"
+				linux_extra = "iso_filename=" .. iso_path
+				return "pmagic", "pmagic", "Parted Magic", linux_extra
 			elseif string.match (loop_file, "^/antix/") then
-				return "antix"
+				linux_extra = "fromiso=" .. iso_path .. " from=hd,usb"
+				return "debian", "antix", "antiX", linux_extra
 			elseif string.match (loop_file, "^/cdlinux/") then
-				return "cdlinux"
+				cdl_dir = string.match (iso_path, "^(.*)/.*$")
+				cdl_img = string.match (iso_path, "^.*/(.*)$")
+				linux_extra = "CDL_IMG=" .. cdl_img .. " CDL_DIR=" .. cdl_dir
+				return "slackware", "cdlinux", "CDlinux", linux_extra
 			elseif string.match (loop_file, "^/isolinux/gentoo") then
-				return "gentoo"
+				linux_extra = "isoboot=" .. iso_path
+				return "gentoo", "gentoo", "Gentoo", linux_extra
 			elseif string.match (loop_file, "^/isolinux/pentoo") then
-				return "pentoo"
+				linux_extra = "isoboot=" .. iso_path
+				return "gentoo", "pentoo", "Pentoo", linux_extra
 			elseif string.match (loop_file, "^/live/vmlinuz") then
-				return "debian"
+				linux_extra = "findiso=" .. iso_path
+				return "debian", "debian", "Debian", linux_extra
 			elseif string.match (loop_file, "^/boot/sabayon") then
-				return "sabayon"
+				linux_extra = "isoboot=" .. iso_path
+				return "sabayon", "sabayon", "Sabayon", linux_extra
 			elseif string.match (loop_file, "^/boot/core.gz") then
-				return "tinycore"
+				linux_extra = "iso=UUID=" .. dev_uuid .. "/" .. iso_path
+				return "tinycore", "gnu-linux", "TinyCore", linux_extra
 			elseif string.match (loop_file, "^/kernels/huge%.s/bzimage") then
-				return "slackware"
+				return "slackware", "slackware", "Slackware", ""
 			elseif string.match (loop_file, "^/boot/isolinux/minirt%.gz") then
-				return "knoppix"
+				linux_extra = "bootfrom=/dev/disk/by-uuid/" .. dev_uuid .. iso_path
+				return "knoppix", "knoppix", "Knoppix", linux_extra
 			elseif string.match (loop_file, "^/boot/kernel/kfreebsd%.gz") then
-				return "debianbsd"
+				linux_extra = "(loop)" .. iso_path
+				return "freebsd", "freebsd", "Debian/kFreeBSD", linux_extra
 			elseif string.match (loop_file, "^/boot/kernel/kernel") then
-				return "freebsd"
+				linux_extra = "(loop)" .. iso_path
+				return "freebsd", "freebsd", "FreeBSD", linux_extra
 			elseif string.match (loop_file, "^/[%w%.]+/[%w]+/bsd.rd") then
-				return "openbsd"
-			elseif string.match (loop_file, "^/boot/x86_64/loader/linux") then
-				return "suse64"
+				return "openbsd", "openbsd", "OpenBSD", ""
+			elseif string.match (loop_file, "^/boot/[%w_]+/loader/linux") then
+				linux_extra = "isofrom_system=" .. iso_path .. " isofrom_device=/dev/disk/by-uuid/" ..dev_uuid
+				return "opensuse", "suse64", "OpenSUSE", linux_extra
 			elseif string.match (loop_file, "^/platform/i86pc/kernel/amd64/unix") then
-				return "smartos"
+				return "solaris", "smartos", "SmartOS", ""
 			end
 		end
-		return "unknown"
+		return "iso", "unknown", "Linux", ""
 	end
-	distro = check_distro (f_table)
+	icon, distro, name, linux_extra = check_distro (f_table)
 	if distro ~= "unknown" then
 		print ("Distro: " .. distro)
-		
+		print (linux_extra)
+		grub.setenv ("linux_extra", linux_extra)
+		command = "export iso_path; export iso_uuid; export dev_uuid; export linux_extra; " ..
+		 "configfile $prefix/distro/" .. distro .. ".sh"
+		name = grub.gettext ("Boot " .. name .. " From ISO")
+		grub.add_icon_menu (icon, command, name)
 	end
-	grub.getkey()
+	return 0
 end
 
 function open (file, file_type, device, device_type, arch, platform)
