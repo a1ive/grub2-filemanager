@@ -70,7 +70,13 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		dev_uuid = ""
 	end
 	print ("DEVICE UUID " .. dev_uuid)
-	loop_path = "(loop)"
+	if grub.file_exist ("(loop)/boot/grub/loopback.cfg") then
+		icon = "gnu-linux"
+		command = "root=loop; iso_path=" .. iso_path .. "; export iso_path; set theme=${prefix}/themes/slack/extern.txt; export theme; configfile /boot/grub/loopback.cfg"
+		name = grub.gettext ("Boot ISO (Loopback)")
+		grub.add_icon_menu (icon, command, name)
+	end
+	loop_path = "/"
 	d_table = {loop_path}
 	f_table = {}
 	i = 0
@@ -78,19 +84,17 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		j = 0
 		d_table_iter = {}
 		for k, loop_path in ipairs(d_table) do
-			--print ("Checking " .. loop_path)
 			function enum_loop_file (name)
-				item = loop_path .. "/" .. name
-				if grub.file_exist (item) then
+				item = loop_path .. name
+				if grub.file_exist ("(loop)" .. item) then
 					i = i + 1
 					f_table[i] = item
-					print (item)
 				elseif (name ~= "." and name ~= "..") then
 					j = j + 1
-					d_table_iter[j] = item
+					d_table_iter[j] = item .. "/"
 				end
 			end
-			grub.enum_file (enum_loop_file, loop_path .. "/")
+			grub.enum_file (enum_loop_file, "(loop)" .. loop_path)
 		end
 		d_table = d_table_iter
 		if (#d_table == 0) then
@@ -100,7 +104,84 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		end
 	end
 	enum_loop_file_iter (d_table)
-	print ("Done.")
+	function check_distro (f_table)
+		for i, loop_file in ipairs(f_table) do
+			loop_file = string.lower (loop_file)
+			print ("Checking " .. loop_file)
+			if string.match (loop_file, "^/arch/") then
+				return "arch"
+			elseif string.match (loop_file, "^/casper/") then
+				return "ubuntu"
+			elseif string.match (loop_file, "^/liveos/") then
+				return "fedora"
+			elseif string.match (loop_file, "^/parabola/") then
+				return "parabola"
+			elseif string.match (loop_file, "^/blackarch/") then
+				return "blackarch"
+			elseif string.match (loop_file, "^/kdeos/") then
+				return "kaos"
+			elseif string.match (loop_file, "^/sysrcd%.dat") then
+				return "sysrcd"
+			elseif string.match (loop_file, "^/dat[%d]+%.dat") then
+				return "acronis"
+			elseif string.match (loop_file, "^/livecd%.sqfs") then
+				return "pclinuxos"
+			elseif string.match (loop_file, "^/system%.sfs") then
+				return "android"
+			elseif string.match (loop_file, "^/netbsd") then
+				return "netbsd"
+			elseif string.match (loop_file, "^/porteus/") then
+				return "porteus"
+			elseif string.match (loop_file, "^/slax/") then
+				return "slax"
+			elseif string.match (loop_file, "^/wifislax/") then
+				return "wifislax"
+			elseif string.match (loop_file, "^/wifislax64/") then
+				return "wifislax64"
+			elseif string.match (loop_file, "^/wifiway/") then
+				return "wifiway"
+			elseif string.match (loop_file, "^/manjaro/") then
+				return "manjaro"
+			elseif string.match (loop_file, "^/pmagic/") then
+				return "pmagic"
+			elseif string.match (loop_file, "^/antix/") then
+				return "antix"
+			elseif string.match (loop_file, "^/cdlinux/") then
+				return "cdlinux"
+			elseif string.match (loop_file, "^/isolinux/gentoo") then
+				return "gentoo"
+			elseif string.match (loop_file, "^/isolinux/pentoo") then
+				return "pentoo"
+			elseif string.match (loop_file, "^/live/vmlinuz") then
+				return "debian"
+			elseif string.match (loop_file, "^/boot/sabayon") then
+				return "sabayon"
+			elseif string.match (loop_file, "^/boot/core.gz") then
+				return "tinycore"
+			elseif string.match (loop_file, "^/kernels/huge%.s/bzimage") then
+				return "slackware"
+			elseif string.match (loop_file, "^/boot/isolinux/minirt%.gz") then
+				return "knoppix"
+			elseif string.match (loop_file, "^/boot/kernel/kfreebsd%.gz") then
+				return "debianbsd"
+			elseif string.match (loop_file, "^/boot/kernel/kernel") then
+				return "freebsd"
+			elseif string.match (loop_file, "^/[%w%.]+/[%w]+/bsd.rd") then
+				return "openbsd"
+			elseif string.match (loop_file, "^/boot/x86_64/loader/linux") then
+				return "suse64"
+			elseif string.match (loop_file, "^/platform/i86pc/kernel/amd64/unix") then
+				return "smartos"
+			end
+		end
+		return "unknown"
+	end
+	distro = check_distro (f_table)
+	if distro ~= "unknown" then
+		print ("Distro: " .. distro)
+		
+	end
+	grub.getkey()
 end
 
 function open (file, file_type, device, device_type, arch, platform)
