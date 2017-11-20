@@ -108,7 +108,7 @@ if (encoding == nil) then
 end
 enable_sort = grub.getenv ("enable_sort")
 if (enable_sort == nil) then
-	enable_sort = 1
+	enable_sort = "1"
 end
 path = grub.getenv ("path")
 if (path == nil) then
@@ -121,7 +121,7 @@ else
 	i, j = 0, 0
 	f_table, d_table = {}, {}
 	grub.enum_file (enum_file,path .. "/")
-	if (enable_sort == 1) then
+	if (enable_sort == "1") then
 		table.sort (f_table)
 		table.sort (d_table)
 	end

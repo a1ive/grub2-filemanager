@@ -26,11 +26,8 @@ function hidden_menu {
 		lua;
 	}
 	hiddenentry "Boot" --hotkey=b {
-		if [ "$boot_func" = "osdetect" ]; then
-			action="osdetect"; export action; configfile $prefix/clean.sh;
-		else
-			configfile $prefix/boot.sh;
-		fi;
+		action="osdetect"; export action;
+		configfile $prefix/clean.sh;
 	}
 	hiddenentry "Reboot" --hotkey=r {
 		reboot;

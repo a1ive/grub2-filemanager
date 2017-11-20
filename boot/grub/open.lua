@@ -184,7 +184,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			elseif string.match (loop_file, "^/boot/sabayon") then
 				linux_extra = "isoboot=" .. iso_path
 				return "sabayon", "sabayon", "Sabayon", linux_extra
-			elseif string.match (loop_file, "^/boot/core.gz") then
+			elseif string.match (loop_file, "^/boot/core%.gz") then
 				linux_extra = "iso=UUID=" .. dev_uuid .. "/" .. iso_path
 				return "tinycore", "gnu-linux", "TinyCore", linux_extra
 			elseif string.match (loop_file, "^/kernels/huge%.s/bzimage") then
@@ -218,6 +218,22 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		 "configfile $prefix/distro/" .. distro .. ".sh"
 		name = grub.gettext ("Boot " .. name .. " From ISO")
 		grub.add_icon_menu (icon, command, name)
+	end
+	cfglist = {
+		"(loop)/isolinux.cfg",
+		"(loop)/isolinux/isolinux.cfg",
+		"(loop)/boot/isolinux.cfg",
+		"(loop)/boot/isolinux/isolinux.cfg"
+	}
+	for i,cfgpath in ipairs(cfglist) do
+		if grub.file_exist (cfgpath) then
+			icon = "gnu-linux"
+			command = "root=loop; theme=${prefix}/themes/slack/extern.txt; " ..
+			 "export linux_extra; syslinux_configfile " .. cfgpath
+			name = grub.gettext ("Boot ISO (ISOLINUX)")
+			grub.add_icon_menu (icon, command, name)
+			break
+		end
 	end
 	return 0
 end
@@ -258,8 +274,8 @@ function open (file, file_type, device, device_type, arch, platform)
 			-- grub4dos map iso
 			icon = "iso"
 			tog4dpath (file, device, device_type)
-			command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem cd " .. g4d_file .."\";"
-			command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+			command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem cd " .. g4d_file .."\";" .. 
+			 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
 			if g4d_file == "(rd)+1" then
 				command = command .. "enable_progress_indicator=1; initrd " .. file
 			end
@@ -279,8 +295,8 @@ function open (file, file_type, device, device_type, arch, platform)
 					-- NTBOOT NT6 WIM
 					icon = "nt6"
 					tog4dpath (file, device, device_type)
-					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";"
-					command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
+					 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
 					name = grub.gettext("Boot NT6.x WIM (NTBOOT)")
 					grub.add_icon_menu (icon, command, name)
 				end
@@ -288,8 +304,8 @@ function open (file, file_type, device, device_type, arch, platform)
 					-- NTBOOT NT5 WIM (PE1)
 					icon = "nt5"
 					tog4dpath (file, device, device_type)
-					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";"
-					command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
+					 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
 					name = grub.gettext("Boot NT5.x WIM (NTBOOT)")
 					grub.add_icon_menu (icon, command, name)
 				end
@@ -303,8 +319,8 @@ function open (file, file_type, device, device_type, arch, platform)
 					-- NTBOOT NT5 PE
 					icon = "nt5"
 					tog4dpath (file, device, device_type)
-					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";"
-					command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
+					 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
 					name = grub.gettext("Boot NT5.x PE (NTBOOT)")
 					grub.add_icon_menu (icon, command, name)
 				end
@@ -318,8 +334,8 @@ function open (file, file_type, device, device_type, arch, platform)
 					-- NTBOOT NT6 VHD
 					icon = "nt6"
 					tog4dpath (file, device, device_type)
-					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";"
-					command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
+					 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
 					name = grub.gettext("Boot Windows NT6.x VHD (NTBOOT)")
 					grub.add_icon_menu (icon, command, name)
 				end
@@ -350,8 +366,8 @@ function open (file, file_type, device, device_type, arch, platform)
 			-- grub4dos map fd
 			icon = "img"
 			tog4dpath (file, device, device_type)
-			command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem fd " .. g4d_file .. "\";"
-			command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+			command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem fd " .. g4d_file .. "\";" .. 
+			 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
 			if g4d_file == "(rd)+1" then
 				command = command .. "enable_progress_indicator=1; initrd " .. file
 			end
@@ -365,8 +381,8 @@ function open (file, file_type, device, device_type, arch, platform)
 			-- grub4dos map hd
 			icon = "img"
 			tog4dpath (file, device, device_type)
-			command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem hd " .. g4d_file .. "\";"
-			command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+			command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem hd " .. g4d_file .. "\";" .. 
+			 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
 			if g4d_file == "(rd)+1" then
 				command = command .. "enable_progress_indicator=1; initrd " .. file
 			end
@@ -414,8 +430,8 @@ function open (file, file_type, device, device_type, arch, platform)
 				-- GRUB4DOS menu
 				icon = "cfg"
 				tog4dpath (file, device, device_type)
-				command = "g4d_cmd=\"find --set-root /fm.loop;configfile " .. g4d_file .. "\";"
-				command = command .. "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+				command = "g4d_cmd=\"find --set-root /fm.loop;configfile " .. g4d_file .. "\";" .. 
+				 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
 				name = grub.gettext("Open As GRUB4DOS Menu")
 				grub.add_icon_menu (icon, command, name)
 			end
@@ -440,8 +456,8 @@ function open (file, file_type, device, device_type, arch, platform)
 	elseif file_type == "image" then
 		-- png/jpg/tga
 		icon = "png"
-		command = "background_image " .. file .. "; echo -n " .. grub.gettext ("Press [ESC] to continue...") .. "; "
-		command = command .. "getkey; background_image ${prefix}/themes/slack/black.png"
+		command = "background_image " .. file .. "; echo -n " .. grub.gettext ("Press [ESC] to continue...") .. "; " .. 
+		 "getkey; background_image ${prefix}/themes/slack/black.png"
 		name = grub.gettext("Open As Image")
 		grub.add_icon_menu (icon, command, name)
 	elseif file_type == "lua" then
@@ -452,13 +468,15 @@ function open (file, file_type, device, device_type, arch, platform)
 		grub.add_icon_menu (icon, command, name)
 	end
 
-
 -- common
+	-- text viewer
+	-- hex viewer
+	-- file info
 	file_size = get_size (file)
 	icon = "info"
-	command = "echo File Path : " .. file .. "; echo File Size : " .. file_size .. "; "
-	command = command .. "enable_progress_indicator=1; echo CRC32 : ; crc32 " .. file .. "; enable_progress_indicator=0; "
-	command = command .. "echo hexdump; hexdump " .. file .. "; echo -n Press [ESC] to continue...; getkey"
+	command = "echo File Path : " .. file .. "; echo File Size : " .. file_size .. "; " .. 
+	 "enable_progress_indicator=1; echo CRC32 : ; crc32 " .. file .. "; enable_progress_indicator=0; " .. 
+	 "echo hexdump; hexdump " .. file .. "; echo -n Press [ESC] to continue...; getkey"
 	name = grub.gettext ("File Info")
 	grub.add_icon_menu (icon, command, name)
 end
