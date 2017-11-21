@@ -49,11 +49,14 @@ function get_ntver (windev)
 	offset = 0x1000
 	length = 0x001c
 	buf = ""
+	size = grub.file_getsize (file)
 	while (buf ~= "P.r.o.d.u.c.t.V.e.r.s.i.o.n.")
 	do
 		offset = offset + 1
 		buf = grub.hexdump (file, offset, length)
-
+		if offset > size then
+			return "Windows NT"
+		end
 	end
 	offset = offset + length + 2
 	print ("OFFSET : " .. offset)
@@ -90,13 +93,19 @@ function enum_device (device, fs)
 		return 0
 	end
 	curdrv = "(" .. device .. ")"
+	extcfg = "/boot/grub/external_menu.cfg"
+	if grub.file_exist (curdrv .. extcfg) then
+		icon = "cfg"
+		command = "root=" .. device .. "; configfile " .. extcfg
+		name = grub.gettext ("Load External Menu: " .. curdrv .. extcfg )
+		grub.add_icon_menu (icon, command ,name)
+	end
 	if arch == "efi" then
 		efifile = "/efi/microsoft/boot/bootmgfw.efi"
 		if grub.file_exist (curdrv .. efifile) then
 			icon = "wim"
 			command = "root=" .. device .. "; chainloader " .. efifile
-			grub.setenv ("device", device)
-			name = grub.gettext ("Boot Windows on ${device}")
+			name = grub.gettext ("Boot Windows on " .. device)
 			grub.add_icon_menu (icon, command ,name)
 		end
 		if platform == "x86_64" then
@@ -114,8 +123,7 @@ function enum_device (device, fs)
 		if grub.file_exist (curdrv .. efifile) then
 			icon = "macOS"
 			command = "root=" .. device .. "; chainloader " .. efifile
-			grub.setenv ("device", device)
-			name = grub.gettext ("Boot macOS on ${device}")
+			name = grub.gettext ("Boot macOS on " .. device)
 			grub.add_icon_menu (icon, command ,name)
 		end
 	elseif grub.file_exist (curdrv .. "/bootmgr") then
