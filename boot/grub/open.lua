@@ -470,7 +470,15 @@ function open (file, file_type, device, device_type, arch, platform)
 
 -- common
 	-- text viewer
+	icon = "txt"
+	command = "action=text; file=" .. file .. "; export action; export file; configfile $prefix/clean.sh"
+	name = grub.gettext ("Text Viewer")
+	grub.add_icon_menu (icon, command, name)
 	-- hex viewer
+	icon = "bin"
+	command = "unset offset; action=hex; file=" .. file .. "; export action; export file; configfile $prefix/clean.sh"
+	name = grub.gettext ("Hex Viewer")
+	grub.add_icon_menu (icon, command, name)
 	-- file info
 	file_size = get_size (file)
 	icon = "info"

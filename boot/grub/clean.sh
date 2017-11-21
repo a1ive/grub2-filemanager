@@ -41,6 +41,29 @@ if [ "$action" = "open" ]; then
 	lua $prefix/open.lua;
 elif [ "$action" = "osdetect" ]; then
 	lua $prefix/osdetect.lua;
+elif [ "$action" = "text" ]; then
+	theme=${prefix}/themes/slack/text.txt;
+	hiddenentry " " --hotkey=n{
+		if [ "$encoding" = "gbk" ]; then
+			encoding="utf8";
+		else
+			encoding="gbk";
+		fi
+		export encoding;
+		configfile $prefix/clean.sh;
+	}
+	hiddenentry " " --hotkey=q{
+		action="open"; export action;
+		configfile $prefix/clean.sh;
+	}
+	lua $prefix/text.lua;
+elif [ "$action" = "hex" ]; then
+	set theme=${prefix}/themes/slack/hex.txt;
+	hiddenentry " " --hotkey=q{
+		action="open"; export action;
+		configfile $prefix/clean.sh;
+	}
+	lua $prefix/hex.lua;
 else
 	hidden_menu;
 	lua $prefix/main.lua;

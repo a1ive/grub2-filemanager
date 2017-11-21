@@ -1,18 +1,11 @@
 # Global Property
-title-text: "按[Q]退出 按[N]修改編碼"
+title-text: " "
 title-color: "#ffffff"
 message-color: "#333333"
 message-bg-color: "#f2f2f2"
 desktop-color: "#000000"
 desktop-image: "black.png"
 terminal-box: "term_bkg_*.png"
-
-+ hbox {
-	top = 92%
-	left = 25%
-	+ label {text = "檔案: " color = "#f5f5f5" align = "center"}
-	+ label {var = "file" color = "#f5f5f5" align = "center"}
-}
 
 + boot_menu {
 	left = 0%

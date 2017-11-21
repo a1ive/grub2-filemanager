@@ -11,7 +11,7 @@ terminal-box: "term_bkg_*.png"
 	top = 92%
 	left = 25%
 	+ label {text = "File: " color = "#f5f5f5" align = "center"}
-	+ label {var = "file_name" color = "#f5f5f5" align = "center"}
+	+ label {var = "file" color = "#f5f5f5" align = "center"}
 }
 
 + boot_menu {
