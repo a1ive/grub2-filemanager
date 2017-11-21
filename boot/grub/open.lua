@@ -467,8 +467,48 @@ function open (file, file_type, device, device_type, arch, platform)
 		name = grub.gettext("Open As Lua Script")
 		grub.add_icon_menu (icon, command, name)
 	end
-
 -- common
+	if platform == "pc" then
+		if grub.run ("file --is-x86-bios-bootsector " .. file) == 0 then
+			-- chainloader
+			icon = "bin"
+			command = "chainloader --force " .. file
+			name = grub.gettext("Chainload BIOS Boot Sector")
+			grub.add_icon_menu (icon, command, name)
+		end
+		if string.match (string.lower (file), "/[%w]+ldr$") ~= nil then
+			-- ntldr
+			icon = "wim"
+			command = "ntldr " .. file
+			name = grub.gettext("Chainload NTLDR")
+			grub.add_icon_menu (icon, command, name)
+		elseif string.match (string.lower (file), "/bootmgr$") ~= nil then
+			-- bootmgr
+			icon = "wim"
+			command = "ntldr " .. file
+			name = grub.gettext("Chainload BOOTMGR")
+			grub.add_icon_menu (icon, command, name)
+		end
+	end
+	if grub.run ("file --is-x86-multiboot " .. file) == 0 then
+		-- multiboot
+		icon = "exe"
+		command = "multiboot " .. file
+		name = grub.gettext("Boot Multiboot Kernel")
+		grub.add_icon_menu (icon, command, name)
+	elseif grub.run ("file --is-x86-multiboot2 " .. file) == 0 then
+		-- multiboot2
+		icon = "exe"
+		command = "multiboot2 " .. file
+		name = grub.gettext("Boot Multiboot2 Kernel")
+		grub.add_icon_menu (icon, command, name)
+	elseif grub.run ("file --is-x86-linux " .. file) == 0 then
+		-- linux kernel
+		icon = "exe"
+		command = "linux " .. file
+		name = grub.gettext("Boot Linux Kernel")
+		grub.add_icon_menu (icon, command, name)
+	end
 	-- text viewer
 	icon = "txt"
 	command = "action=text; file=" .. file .. "; export action; export file; configfile $prefix/clean.sh"

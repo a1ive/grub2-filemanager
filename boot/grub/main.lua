@@ -131,7 +131,7 @@ else
 		lpath = ""
 	end
 	command = "action=genlst; path=" .. lpath .. "; export action; export path; configfile $prefix/clean.sh"
-	name = "Back"
+	name = grub.gettext("Back")
 	grub.add_icon_menu (icon, command, name)
 	
 	for j, name in ipairs(d_table) do
