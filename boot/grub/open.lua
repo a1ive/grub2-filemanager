@@ -103,12 +103,12 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			enum_loop_file_iter (d_table)
 		end
 	end
+	print ("Loading ISO ...")
 	enum_loop_file_iter (d_table)
 	function check_distro (f_table)
 		-- return icon, script, name, linux_extra
 		for i, loop_file in ipairs(f_table) do
 			loop_file = string.lower (loop_file)
-			print ("Checking " .. loop_file)
 			if string.match (loop_file, "^/arch/") then
 				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " archisolabel=" .. iso_label
 				if grub.file_exist ("(loop)/boot/vmlinuz_x86_64") then
@@ -187,6 +187,9 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			elseif string.match (loop_file, "^/boot/core%.gz") then
 				linux_extra = "iso=UUID=" .. dev_uuid .. "/" .. iso_path
 				return "tinycore", "gnu-linux", "TinyCore", linux_extra
+			elseif string.match (loop_file, "^/images/pxeboot/vmlinuz") then
+				linux_extra = "inst.stage2=hd:UUID=" .. iso_uuid .. " iso-scan/filename=" .. iso_path
+				return "fedora", "fedora", "Fedora", linux_extra
 			elseif string.match (loop_file, "^/kernels/huge%.s/bzimage") then
 				return "slackware", "slackware", "Slackware", ""
 			elseif string.match (loop_file, "^/boot/isolinux/minirt%.gz") then
