@@ -68,6 +68,15 @@ submenu $"Resolution (R):  $gfxmode" --class settings --hotkey=r {
 		setgfx "2160x1440";
 	}
 }
+menuentry $"Enable debug messages: $debug" --class settings {
+	if [ "$debug" = "all" ]; then
+		debug="";
+	else
+		debug="all";
+	fi
+	export debug;
+	configfile $prefix/settings.sh;
+}
 if regexp 'efi' "$grub_platform"; then
 	menuentry $"EFI Firmware Setup" --class settings {
 		fwsetup;
