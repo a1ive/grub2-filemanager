@@ -72,39 +72,38 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		name = grub.gettext ("Boot ISO (Loopback)")
 		grub.add_icon_menu (icon, command, name)
 	end
-	loop_path = "/"
-	d_table = {loop_path}
-	f_table = {}
-	i = 0
-	function enum_loop_file_iter (d_table)
-		j = 0
-		d_table_iter = {}
-		for k, loop_path in ipairs(d_table) do
-			function enum_loop_file (name)
-				item = loop_path .. name
-				if grub.file_exist ("(loop)" .. item) then
-					i = i + 1
-					f_table[i] = item
-				elseif (name ~= "." and name ~= "..") then
-					j = j + 1
-					d_table_iter[j] = item .. "/"
-				end
+	
+	function enum_loop (loop_path)
+		-- enum_loop path_without_(loop)
+		-- return table
+		i = 0
+		f_table = {}
+		function enum_loop_func (name)
+			item = loop_path .. name
+			if grub.file_exist ("(loop)" .. item) then
+				i = i + 1
+				f_table[i] = item
+			elseif (name ~= "." and name ~= "..") then
+				i = i + 1
+				f_table[i] = item .. "/"
 			end
-			grub.enum_file (enum_loop_file, "(loop)" .. loop_path)
 		end
-		d_table = d_table_iter
-		if (#d_table == 0) then
-			return 0
-		else
-			enum_loop_file_iter (d_table)
-		end
+		grub.enum_file (enum_loop_func, "(loop)" .. loop_path)
+		return f_table
 	end
-	enum_loop_file_iter (d_table)
-	function check_distro (f_table)
+	
+	function check_distro ()
 		-- return icon, script, name, linux_extra
 		-- default
 		linux_extra = "iso-scan/filename=" .. iso_path
-		for i, loop_file in ipairs(f_table) do
+		-- check /
+		list = enum_loop ("/")
+		for i, loop_file in ipairs(list) do
+			if string.match (loop_file, "^/[%d]+%.[%d]+/") then
+				if grub.file_exist ("(loop)" .. loop_file .. "amd64/bsd.rd") or grub.file_exist ("(loop)" .. loop_file .. "i386/bsd.rd") then
+					return "openbsd", "openbsd", "OpenBSD", ""
+				end
+			end
 			loop_file = string.lower (loop_file)
 			if string.match (loop_file, "^/arch/") then
 				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " archisolabel=" .. iso_label
@@ -169,50 +168,68 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 				cdl_img = string.match (iso_path, "^.*/(.*)$")
 				linux_extra = "CDL_IMG=" .. cdl_img .. " CDL_DIR=" .. cdl_dir
 				return "slackware", "cdlinux", "CDlinux", linux_extra
-			elseif string.match (loop_file, "^/isolinux/gentoo") then
+			elseif string.match (loop_file, "^/live/") then
+				linux_extra = "findiso=" .. iso_path
+				return "debian", "debian", "Debian", linux_extra
+			end
+		end
+		-- check /isolinux/
+		list = enum_loop ("/isolinux/")
+		for i, loop_file in ipairs(list) do
+			loop_file = string.lower (loop_file)
+			if string.match (loop_file, "^/isolinux/gentoo") then
 				linux_extra = "isoboot=" .. iso_path
 				return "gentoo", "gentoo", "Gentoo", linux_extra
 			elseif string.match (loop_file, "^/isolinux/pentoo") then
 				linux_extra = "isoboot=" .. iso_path
 				return "gentoo", "pentoo", "Pentoo", linux_extra
-			elseif string.match (loop_file, "^/live/vmlinuz") then
-				linux_extra = "findiso=" .. iso_path
-				return "debian", "debian", "Debian", linux_extra
-			elseif string.match (loop_file, "^/boot/sabayon") then
+			end
+		end
+		-- check /boot/
+		list = enum_loop ("/boot/")
+		for i, loop_file in ipairs(list) do
+			loop_file = string.lower (loop_file)
+			if string.match (loop_file, "^/boot/sabayon") then
 				linux_extra = "isoboot=" .. iso_path
 				return "sabayon", "sabayon", "Sabayon", linux_extra
 			elseif string.match (loop_file, "^/boot/core%.gz") then
 				linux_extra = "iso=UUID=" .. dev_uuid .. "/" .. iso_path
 				return "tinycore", "gnu-linux", "TinyCore", linux_extra
-			elseif string.match (loop_file, "^/images/pxeboot/vmlinuz") then
-				linux_extra = "inst.stage2=hd:UUID=" .. iso_uuid .. " iso-scan/filename=" .. iso_path
-				return "fedora", "fedora", "Fedora", linux_extra
-			elseif string.match (loop_file, "^/kernels/huge%.s/bzimage") then
-				return "slackware", "slackware", "Slackware", ""
-			elseif string.match (loop_file, "^/boot/isolinux/minirt%.gz") then
-				linux_extra = "bootfrom=/dev/disk/by-uuid/" .. dev_uuid .. iso_path
-				return "knoppix", "knoppix", "Knoppix", linux_extra
-			elseif string.match (loop_file, "^/boot/kernel/kfreebsd%.gz") then
-				linux_extra = "(loop)" .. iso_path
-				return "freebsd", "freebsd", "Debian/kFreeBSD", linux_extra
-			elseif string.match (loop_file, "^/boot/kernel/kernel") then
-				linux_extra = "(loop)" .. iso_path
-				return "freebsd", "freebsd", "FreeBSD", linux_extra
-			elseif string.match (loop_file, "^/[%w%.]+/[%w]+/bsd.rd") then
-				return "openbsd", "openbsd", "OpenBSD", ""
-			elseif string.match (loop_file, "^/boot/[%w_]+/loader/linux") then
-				linux_extra = "isofrom_system=" .. iso_path .. " isofrom_device=/dev/disk/by-uuid/" ..dev_uuid
-				return "opensuse", "suse64", "OpenSUSE", linux_extra
-			elseif string.match (loop_file, "^/platform/i86pc/kernel/amd64/unix") then
-				return "solaris", "smartos", "SmartOS", ""
 			end
 		end
+		-- check /images/pxeboot/vmlinuz
+		if grub.file_exist ("(loop)/images/pxeboot/vmlinuz") then
+			linux_extra = "inst.stage2=hd:UUID=" .. iso_uuid .. " iso-scan/filename=" .. iso_path
+			return "fedora", "fedora", "Fedora", linux_extra
+		end
+		-- check /kernels/huge.s/bzImage
+		if grub.file_exist ("(loop)/kernels/huge.s/bzImage") then
+			return "slackware", "slackware", "Slackware", ""
+		end
+		-- check /boot/isolinux/minirt.gz
+		if grub.file_exist ("(loop)/boot/isolinux/minirt.gz") then
+			linux_extra = "bootfrom=/dev/disk/by-uuid/" .. dev_uuid .. iso_path
+			return "knoppix", "knoppix", "Knoppix", linux_extra
+		end
+		-- check /boot/kernel/
+		if grub.file_exist ("(loop)/boot/kernel/kfreebsd.gz") or grub.file_exist ("(loop)/boot/kernel/kernel") then
+			linux_extra = "(loop)" .. iso_path
+			return "freebsd", "freebsd", "FreeBSD", linux_extra
+		end
+		-- check /boot/x86_64/loader/linux /boot/i386/loader/linux
+		if grub.file_exist ("(loop)/boot/x86_64/loader/linux") or grub.file_exist ("(loop)/boot/i386/loader/linux") then
+			linux_extra = "isofrom_system=" .. iso_path .. " isofrom_device=/dev/disk/by-uuid/" ..dev_uuid
+			return "opensuse", "suse64", "OpenSUSE", linux_extra
+		end
+		-- check /platform/i86pc/kernel/amd64/unix
+		if grub.file_exist ("(loop)/platform/i86pc/kernel/amd64/unix") then
+			return "solaris", "smartos", "SmartOS", ""
+		end
+
 		return "iso", "unknown", "Linux", ""
 	end
-	icon, distro, name, linux_extra = check_distro (f_table)
+	icon, distro, name, linux_extra = check_distro ()
 	if distro ~= "unknown" then
-		print ("Distro: " .. distro)
-		print (linux_extra)
 		grub.setenv ("linux_extra", linux_extra)
 		command = "export iso_path; export iso_uuid; export dev_uuid; export linux_extra; " ..
 		 "configfile $prefix/distro/" .. distro .. ".sh"
