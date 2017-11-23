@@ -57,19 +57,15 @@ function tog4dpath (file, device, device_type)
 end
 
 function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
-	print ("ISO " .. iso_path)
 	if iso_label == nil then
 		iso_label = ""
 	end
-	print ("ISO LABEL " .. iso_label)
 	if iso_uuid == nil then
 		iso_uuid = ""
 	end
-	print ("ISO UUID " .. iso_uuid)
 	if dev_uuid == nil then
 		dev_uuid = ""
 	end
-	print ("DEVICE UUID " .. dev_uuid)
 	if grub.file_exist ("(loop)/boot/grub/loopback.cfg") then
 		icon = "gnu-linux"
 		command = "root=loop; iso_path=" .. iso_path .. "; export iso_path; set theme=${prefix}/themes/slack/extern.txt; export theme; configfile /boot/grub/loopback.cfg"
@@ -103,10 +99,11 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			enum_loop_file_iter (d_table)
 		end
 	end
-	print ("Loading ISO ...")
 	enum_loop_file_iter (d_table)
 	function check_distro (f_table)
 		-- return icon, script, name, linux_extra
+		-- default
+		linux_extra = "iso-scan/filename=" .. iso_path
 		for i, loop_file in ipairs(f_table) do
 			loop_file = string.lower (loop_file)
 			if string.match (loop_file, "^/arch/") then
@@ -232,7 +229,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		if grub.file_exist (cfgpath) then
 			icon = "gnu-linux"
 			command = "root=loop; theme=${prefix}/themes/slack/extern.txt; " ..
-			 "export linux_extra; syslinux_configfile " .. cfgpath
+			 "export linux_extra; syslinux_configfile -i " .. cfgpath
 			name = grub.gettext ("Boot ISO (ISOLINUX)")
 			grub.add_icon_menu (icon, command, name)
 			break
@@ -424,8 +421,13 @@ function open (file, file_type, device, device_type, arch, platform)
 		grub.add_icon_menu (icon, command, name)
 		-- Syslinux menu
 		icon = "cfg"
-		command = "root=" .. device .. "; syslinux_configfile " .. file
+		command = "root=" .. device .. "; syslinux_configfile -s " .. file
 		name = grub.gettext("Open As Syslinux Menu")
+		grub.add_icon_menu (icon, command, name)
+		-- pxelinux menu
+		icon = "cfg"
+		command = "root=" .. device .. "; syslinux_configfile -p " .. file
+		name = grub.gettext("Open As pxelinux Menu")
 		grub.add_icon_menu (icon, command, name)
 	elseif file_type == "lst" then
 		if platform == "pc" then
@@ -490,6 +492,14 @@ function open (file, file_type, device, device_type, arch, platform)
 			icon = "wim"
 			command = "ntldr " .. file
 			name = grub.gettext("Chainload BOOTMGR")
+			grub.add_icon_menu (icon, command, name)
+		end
+		if device_type ~= 3 then
+			icon = "mod"
+			tog4dpath (file, device, device_type)
+			command = "g4d_cmd=\"find --set-root /fm.loop;command " .. g4d_file .. "\";" .. 
+			 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+			name = grub.gettext("Open As GRUB4DOS MOD")
 			grub.add_icon_menu (icon, command, name)
 		end
 	end

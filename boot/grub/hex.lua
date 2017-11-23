@@ -35,10 +35,11 @@ else
 	end
 	size = grub.file_getsize (data)
 	length = 0x10
+	items = 16
 	if offset ~= 0x00 then
-		grub.add_menu ("offset=" .. offset - 16*length .."; export offset; configfile $prefix/clean.sh", "<- ")
+		grub.add_menu ("offset=" .. offset - items * length .."; export offset; configfile $prefix/clean.sh", "<- ")
 	end
-	for i=1,16 do
+	for i=1,items do
 		if (offset > size) then
 			break
 		end

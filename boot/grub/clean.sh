@@ -14,11 +14,8 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-if [ "$theme" != "${prefix}/themes/slack/theme.txt" ]; then
-	echo "Loading theme ... ";
-	set theme=${prefix}/themes/slack/theme.txt; export theme;
-fi;
 function hidden_menu {
+	set theme=${prefix}/themes/slack/theme.txt; export theme;
 	hiddenentry "Settings" --hotkey=s {
 		configfile $prefix/settings.sh;
 	}
@@ -42,7 +39,7 @@ if [ "$action" = "open" ]; then
 elif [ "$action" = "osdetect" ]; then
 	lua $prefix/osdetect.lua;
 elif [ "$action" = "text" ]; then
-	theme=${prefix}/themes/slack/text.txt;
+	set theme=${prefix}/themes/slack/text.txt;
 	hiddenentry " " --hotkey=n{
 		if [ "$encoding" = "gbk" ]; then
 			encoding="utf8";
