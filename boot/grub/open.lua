@@ -281,6 +281,22 @@ function open (file, file_type, device, device_type, arch, platform)
 			end
 			name = grub.gettext("Boot ISO (GRUB4DOS)")
 			grub.add_icon_menu (icon, command, name)
+			-- easy2boot
+			if string.match (device, "^hd[%d]+,msdos[1-3]") ~= nil then
+				g4d_file = "(hd0,0)/" .. string.match (file, "^%([%w,]+%)(.*)$")
+				icon = "gnu-linux"
+				command = "echo " .. grub.gettext ("WARNING: Will erase ALL data on (hd0,4).") .. "; " .. 
+				 "echo " .. grub.gettext ("Press [Y] to continue. Press [N] to quit.") .. "; " .. 
+				 "getkey key; " .. 
+				 "\nif [ x$key == x121 ]; then" .. 
+				 "\n  set root=" .. device .. "; drivemap -s (hd0) (" .. device .. "); " .. 
+				 "\n  g4d_cmd=\"find --set-root /fm.loop;partnew (hd0,3) 0x00 " .. g4d_file .. ";/MAP nomem cd " ..  g4d_file .. "\";" .. 
+				 "\n  linux $prefix/grub.exe --config-file=$g4d_cmd; boot" .. 
+				 "\nfi" .. 
+				 "\necho " .. grub.gettext ("Canceled.") .. "; sleep 3"
+				name = grub.gettext("Boot ISO (Easy2Boot)")
+				grub.add_icon_menu (icon, command, name)
+			end
 		end
 	elseif file_type == "wim" then
 		if platform == "pc" then
