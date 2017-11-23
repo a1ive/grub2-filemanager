@@ -100,7 +100,7 @@ function enum_device (device, fs)
 		name = grub.gettext ("Load External Menu: " .. curdrv .. extcfg )
 		grub.add_icon_menu (icon, command ,name)
 	end
-	if arch == "efi" then
+	if platform == "efi" then
 		efifile = "/efi/microsoft/boot/bootmgfw.efi"
 		if grub.file_exist (curdrv .. efifile) then
 			icon = "wim"
@@ -157,6 +157,6 @@ platform = grub.getenv ("grub_platform")
 grub.enum_device (enum_device)
 
 icon = "go-previous"
-command = "configfile $prefix/clean.sh"
+command = "unset action; configfile $prefix/clean.sh"
 name = grub.gettext ("Back")
 grub.add_icon_menu (icon, command, name)
