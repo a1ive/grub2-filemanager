@@ -95,7 +95,7 @@ video_bochs: video pci video_fb
 bufio:
 usbserial_ftdi: serial usb usbserial_common
 legacy_password_test: functional_test legacycfg
-lua: btrfs setjmp normal pci
+lua: btrfs font setjmp normal video pci gfxmenu
 cpuid: extcmd
 hdparm: extcmd hexdump
 bfs: fshelp
