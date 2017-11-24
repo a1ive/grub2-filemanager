@@ -24,7 +24,7 @@ function ReadUsername {
 	fi;
 	kcmdline="${kcmdline} username=${username}";
 }
-menuentry $"Boot Debian Live From ISO" --class $icon{
+menuentry $"Debian Live" --class $icon{
 	set kcmdline="boot=live config";
 	if [ "${lang}" == "zh_CN" ]; then
 		CHSLocale;
@@ -33,7 +33,7 @@ menuentry $"Boot Debian Live From ISO" --class $icon{
 	linux $vmlinuz_img $kcmdline $linux_extra;
 	initrd $initrd_img;
 }
-menuentry $"Boot Debian Overlay From ISO (Clonezilla/GParted)" --class $icon{
+menuentry $"Debian Live union=overlay (Clonezilla/GParted)" --class $icon{
 	set kcmdline="boot=live config union=overlay";
 	if [ "${lang}" == "zh_CN" ]; then
 		CHSLocale;

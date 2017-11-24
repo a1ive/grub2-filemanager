@@ -97,7 +97,7 @@ function enum_device (device, fs)
 	if grub.file_exist (curdrv .. extcfg) then
 		icon = "cfg"
 		command = "root=" .. device .. "; configfile " .. extcfg
-		name = grub.gettext ("Load External Menu: " .. curdrv .. extcfg )
+		name = grub.gettext ("Load External Menu: ") .. curdrv .. extcfg 
 		grub.add_icon_menu (icon, command ,name)
 	end
 	if platform == "efi" then
@@ -105,7 +105,7 @@ function enum_device (device, fs)
 		if grub.file_exist (curdrv .. efifile) then
 			icon = "wim"
 			command = "root=" .. device .. "; chainloader " .. efifile
-			name = grub.gettext ("Boot Windows on " .. device)
+			name = grub.gettext ("Boot Windows on ") .. device
 			grub.add_icon_menu (icon, command ,name)
 		end
 		if platform == "x86_64" then
@@ -116,14 +116,14 @@ function enum_device (device, fs)
 		if grub.file_exist (curdrv .. efifile) then
 			icon = "uefi"
 			command = "root=" .. device .. "; chainloader " .. efifile
-			name = grub.gettext ("Chainload " .. device)
+			name = grub.gettext ("Boot ") .. device
 			grub.add_icon_menu (icon, command ,name)
 		end
 		efifile = "/System/Library/CoreServices/boot.efi"
 		if grub.file_exist (curdrv .. efifile) then
 			icon = "macOS"
 			command = "root=" .. device .. "; chainloader " .. efifile
-			name = grub.gettext ("Boot macOS on " .. device)
+			name = grub.gettext ("Boot macOS on ") .. device
 			grub.add_icon_menu (icon, command ,name)
 		end
 	elseif grub.file_exist (curdrv .. "/bootmgr") then
@@ -131,14 +131,14 @@ function enum_device (device, fs)
 		icon = "nt6"
 		command = "root=" .. device .. "; drivemap -s (hd0) " .. curdrv .. "; " .. 
 		 "ntldr /bootmgr"
-		name = grub.gettext ("Boot " .. sysver .. " on " .. device)
+		name = grub.gettext ("Boot ") .. sysver .. grub.gettext (" on ") .. device
 		grub.add_icon_menu (icon, command, name)
 	elseif grub.file_exist (curdrv .. "/ntldr") then
 		sysver = get_ntver (curdrv)
 		icon = "nt5"
 		command = "root=" .. device .. "; drivemap -s (hd0) " .. curdrv .. "; " .. 
 		 "ntldr /ntldr"
-		name = grub.gettext ("Boot " .. sysver .. " on " .. device)
+		name = grub.gettext ("Boot ") .. sysver .. grub.gettext (" on ") .. device
 		grub.add_icon_menu (icon, command, name)
 	else
 		grub.run ("probe --set=bootable -b " .. device)
@@ -146,7 +146,7 @@ function enum_device (device, fs)
 			icon = "img"
 			command = "root=" .. device .. "; drivemap -s (hd0) " .. curdrv .. "; " .. 
 			 "chainloader --force --bpb +1"
-			name = grub.gettext ("Chainload " .. device)
+			name = grub.gettext ("Boot ") .. device
 			grub.add_icon_menu (icon, command, name)
 		end
 	end

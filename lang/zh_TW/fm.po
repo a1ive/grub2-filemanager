@@ -12,402 +12,226 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: \n"
 
-#: main.sh:55 main.sh:89 settings.sh:67 boot.sh:71
+
 msgid "Back"
 msgstr "返回"
 
-#: main.sh:93
+
 msgid "Open As Grub2 Menu"
 msgstr "作為Grub2選單開啟"
 
-#: main.sh:97
+
 msgid "Open As Syslinux Menu"
 msgstr "作為Syslinux選單開啟"
 
-#: main.sh:103
+
+msgid "Open As pxelinux Menu"
+msgstr "作為pxelinux選單開啟"
+
+
 msgid "Open As GRUB4DOS Menu"
 msgstr "作為GRUB4DOS選單開啟"
 
-#: main.sh:109
+
 msgid "Open As GRUB-Legacy Menu"
 msgstr "作為GRUB-Legacy選單開啟"
 
-#: main.sh:115
+
 msgid "Open As Lua Script"
 msgstr "作為Lua指令碼載入"
 
-#: main.sh:121
-msgid "Open As EFI"
-msgstr "作為EFI可執行檔案執行"
 
-#: main.sh:127
+msgid "Open As EFI"
+msgstr "作為EFI可執行檔案運行"
+
+
 msgid "Open As Image"
 msgstr "作為影象開啟"
 
-#: main.sh:129 main.sh:250 main.sh:265
+
 msgid "Press [ESC] to continue..."
 msgstr "按 [ESC] 繼續 ..."
 
-#: main.sh:134
+
 msgid "Mount Image"
 msgstr "掛載映象"
 
-#: main.sh:144
+
 msgid "Boot Floppy Image (GRUB4DOS)"
 msgstr "使用GRUB4DOS載入為軟盤"
 
-#: main.sh:144
+
 msgid "Boot Floppy Image (memdisk)"
 msgstr "使用memdisk載入為軟盤"
 
-#: main.sh:154
+
 msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "使用GRUB4DOS載入為硬碟"
 
-#: main.sh:154
+
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr "使用memdisk載入為硬碟"
 
-#: main.sh:161
+
 msgid "Open As Archiver"
 msgstr "作為壓縮檔案開啟"
 
-#: main.sh:168
+
 msgid "Boot NT6.x WIM (wimboot)"
 msgstr "使用wimboot載入 NT6.x WIM"
 
-#: main.sh:168
+
 msgid "Boot NT6.x WIM (NTBOOT)"
 msgstr "使用NTBOOT載入 NT6.x WIM"
 
-#: main.sh:175
+
 msgid "Boot NT5.x WIM (NTBOOT)"
 msgstr "使用NTBOOT載入 NT5.x WIM"
 
-#: main.sh:185
+
 msgid "Boot NT5.x PE (NTBOOT)"
 msgstr "使用NTBOOT載入 NT5.x PE"
 
-#: main.sh:195
+
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "使用NTBOOT載入 Windows NT6.x VHD/VHDX"
 
-#: main.sh:204
+
 msgid "Mount ISO"
 msgstr "檢視ISO內容"
 
-#: main.sh:178
+
 msgid "Boot ISO (GRUB4DOS)"
 msgstr "使用GRUB4DOS載入ISO"
 
-#: main.sh:178
+
 msgid "Boot ISO (memdisk)"
 msgstr "使用memdisk載入ISO"
 
-#: main.sh:178
+
 msgid "Boot ISO (Easy2Boot)"
 msgstr "使用Easy2Boot方式載入ISO"
 
-#: main.sh:190
+
 msgid "Boot EFI Files"
 msgstr "僅載入EFI檔案"
 
-#: main.sh:277
-msgid "Open As iPXE Script"
-msgstr "作為iPXE指令碼載入"
 
-#: main.sh:196
+msgid "Open As iPXE Script"
+msgstr "作為iPXE指令碼開啟"
+
+
 msgid "Open As Font"
 msgstr "載入pf2字型檔檔案"
 
-#: main.sh:200
+
 msgid "Insert Grub2 Module"
 msgstr "載入GRUB 2模組"
 
-#: main.sh:206
+
 msgid "Chainload BIOS Boot Sector"
 msgstr "作為BIOS引導扇區載入"
 
-#: main.sh:210
+
 msgid "Chainload NTLDR"
 msgstr "作為NTLDR載入"
 
-#: main.sh:214
+
 msgid "Chainload BOOTMGR"
 msgstr "作為BOOTMGR載入"
 
-#: main.sh:218
+
 msgid "Open As GRUB4DOS MOD"
 msgstr "作為GRUB4DOS外部命令載入"
 
-#: main.sh:225
+
 msgid "Boot Multiboot Kernel"
 msgstr "作為multiboot核心載入"
 
-#: main.sh:229
+
 msgid "Boot Multiboot2 Kernel"
 msgstr "作為multiboot2核心載入"
 
-#: main.sh:233
+
 msgid "Boot Linux Kernel"
 msgstr "作為linux核心載入"
 
-#: main.sh:241
-msgid "Open As Text"
-msgstr "檢視文字內容"
 
-#: main.sh:245
+msgid "Text Viewer"
+msgstr "文字檢視"
+
+
+msgid "Hex Viewer"
+msgstr "十六進位制檢視"
+
+
 msgid "File Info"
 msgstr "檢視檔案資訊"
 
-#: settings.sh:23
+
 msgid "Encoding: $encoding"
 msgstr "編碼設定: $encoding"
 
-#: settings.sh:32
-msgid "Sort files by name: $enable_sort"
-msgstr "按文件名排序: $enable_sort"
 
-#: settings.sh:41
+msgid "Sort files by name: $enable_sort"
+msgstr "按檔名排序: $enable_sort"
+
+
 msgid "Resolution (R):  $gfxmode"
 msgstr "解析度設定(R):  $gfxmode"
 
-#: settings.sh:72
+
+msgid "Enable debug messages: $debug"
+msgstr "顯示偵錯資訊: $debug"
+
+
 msgid "EFI Firmware Setup"
-msgstr "EFI韌體設定"
+msgstr "EFI固件設定"
 
-#: boot.sh:18
-msgid "Load External Menu: ($external)/boot/grub/external_menu.cfg"
-msgstr "載入外接選單: ($external)/boot/grub/external_menu.cfg"
 
-#: boot.sh:39
-msgid "Boot Windows on ${device}"
-msgstr "啟動位於${device}的 Windows 作業系統"
+msgid "Load External Menu: "
+msgstr "載入外接選單: "
 
-#: boot.sh:46 boot.sh:51 boot.sh:80
-msgid "Chainload ${device}"
-msgstr "啟動${device}"
 
-#: boot.sh:58
+msgid "Boot Windows on "
+msgstr "啟動 Windows : "
+
+
 msgid "Boot macOS on ${device}"
-msgstr "啟動位於${device}的 macOS"
+msgstr "啟動 macOS : "
 
-#: boot.sh:65
-msgid "Boot ${sysver} on ${device}"
-msgstr "啟動位於${device}的 ${sysver}"
 
-#: isoboot.sh:78
+msgid " on "
+msgstr " : "
+
+
 msgid "Boot ISO (Loopback)"
 msgstr "作為 Loopback ISO 啟動"
 
-#: isoboot.sh:86
+
 msgid "Boot ISO (ISOLINUX)"
 msgstr "作為 ISOLINUX ISO 啟動"
 
-#: distro/4m.sh:4
-msgid "Boot 4MLinux From ISO"
-msgstr "作為 4MLinux ISO 啟動"
 
-#: distro/acronis.sh:6
-msgid "Boot Acronis True Image From ISO"
-msgstr "作為 Acronis True Image ISO 啟動"
+msgid "Boot "
+msgstr "啟動 "
 
-#: distro/acronis.sh:12
-msgid "Boot Acronis Backup From ISO"
-msgstr "作為 Acronis Backup Advanced ISO 啟動"
 
-#: distro/acronis.sh:20
-msgid "Boot Acronis Disk Director From ISO"
-msgstr "作為 Acronis Disk Director ISO 啟動"
+msgid " From ISO"
+msgstr " ISO"
 
-#: distro/android.sh:6
-msgid "Boot Android-x86 From ISO"
-msgstr "作為 Android-x86 LiveCD 啟動"
 
-#: distro/antix.sh:5
-msgid "Boot antiX From ISO"
-msgstr "作為 antiX LiveCD 啟動"
-
-#: distro/antix.sh:10
-msgid "Boot antiX From ISO (Safe Mode)"
-msgstr "作為 antiX LiveCD 啟動 (安全模式)"
-
-#: distro/arch.sh:8 distro/arch:27
-msgid "Boot Arch Linux From ISO"
-msgstr "作為 Arch Linux LiveCD 啟動"
-
-#: distro/arch.sh:17
-msgid "Boot Archboot From ISO"
-msgstr "作為 Archboot ISO 啟動"
-
-#: distro/blackarch.sh:8
-msgid "Boot BlackArch From ISO (x86_64)"
-msgstr "作為 BlackArch LiveCD 啟動 (x86_64)"
-
-#: distro/blackarch.sh:18
-msgid "Boot BlackArch From ISO (i386)"
-msgstr "作為 BlackArch LiveCD 啟動 (i386)"
-
-#: distro/bsd.sh:2
-msgid "Boot FreeBSD From ISO"
-msgstr "作為 FreeBSD ISO 啟動"
-
-#: distro/cdlinux.sh:6
-msgid "Boot CDlinux From ISO"
-msgstr "作為 CDlinux ISO 啟動"
-
-#: distro/debian.sh:21
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr "請輸入登入使用者名稱。預設:user 超級使用者:root Devuan:devuan"
+msgstr "請輸入登入使用者名。預設:user 超級使用者:root Devuan:devuan"
 
-#: distro/debian.sh:28
-msgid "Boot Debian Live From ISO"
-msgstr "作為 Debian LiveCD 啟動"
 
-#: distro/debian.sh:37
-msgid "Boot Debian Overlay From ISO (Clonezilla/GParted)"
-msgstr "作為 Debian Overlay CD 啟動 (適用於 Clonezilla/GParted)"
-
-#: distro/fedora.sh:6
-msgid "Boot Fedora/CentOS From ISO (Installation CD)"
-msgstr "作為 Fedora 安裝光碟 啟動"
-
-#: distro/fedora.sh:11
-msgid "Boot Fedora From ISO (Live CD)"
-msgstr "作為 Fedora LiveCD 啟動"
-
-#: distro/fedora.sh:16
-msgid "Boot Fedora From ISO (Live CD, Fail Safe)"
-msgstr "作為 Fedora LiveCD 啟動 (安全模式)"
-
-#: distro/fedora.sh:21
-msgid "Boot Fedora From ISO (Live CD, Rescue)"
-msgstr "作為 Fedora LiveCD 啟動 (救援模式)"
-
-#: distro/gentoo.sh:9
-msgid "Boot Gentoo From ISO"
-msgstr "作為 Gentoo LiveDVD 啟動"
-
-#: distro/kaos.sh:8
-msgid "Boot KaOS From ISO"
-msgstr "作為 KaOS LiveCD 啟動"
-
-#: distro/knoppix.sh:7
-msgid "Boot Knoppix From ISO"
-msgstr "作為 Knoppix LiveCD 啟動"
-
-#: distro/manjaro.sh:5
-msgid "Boot Manjaro From ISO"
-msgstr "作為 Manjaro LiveCD 啟動"
-
-#: distro/manjaro.sh:10
-msgid "Boot Manjaro From ISO (non-free drivers)"
-msgstr "作為 Manjaro LiveCD 啟動 (載入閉源驅動)"
-
-#: distro/minitool.sh:5
-msgid "Boot MiniTool Partition Wizard From ISO"
-msgstr "作為 MiniTool Partition Wizard ISO 啟動"
-
-#: distro/netbsd.sh:3
-msgid "Boot NetBSD From ISO"
-msgstr "作為 NetBSD ISO 啟動"
-
-#: distro/openbsd.sh:3
-msgid "Boot OpenBSD From ISO"
-msgstr "作為 OpenBSD ISO 啟動"
-
-#: distro/parabola.sh:8
-msgid "Boot Parabola GNU/Linux From ISO"
-msgstr "作為 Parabola GNU/Linux LiveCD 啟動"
-
-#: distro/pclinuxos.sh:5
-msgid "Boot PCLinuxOS From ISO"
-msgstr "作為 PCLinuxOS LiveCD 啟動"
-
-#: distro/pentoo.sh:5
-msgid "Boot Pentoo From ISO"
-msgstr "作為 Pentoo LiveDVD 啟動"
-
-#: distro/pmagic.sh:7
-msgid "Boot Parted Magic From ISO (x86_64)"
-msgstr "作為 Parted Magic LiveCD 啟動 (x86_64)"
-
-#: distro/pmagic.sh:12
-msgid "Boot Parted Magic From ISO (i686)"
-msgstr "作為 Parted Magic LiveCD 啟動 (i686)"
-
-#: distro/porteus.sh:9
-msgid "Boot Porteus From ISO"
-msgstr "作為 Porteus LiveCD 啟動"
-
-#: distro/redcore.sh:5
-msgid "Boot Redcore Linux From ISO"
-msgstr "作為 Redcore Linux LiveCD 啟動"
-
-#: distro/sabayon.sh:5
-msgid "Boot Sabayon From ISO"
-msgstr "作為 Sabayon LiveDVD 啟動"
-
-#: distro/slackware.sh:5
-msgid "Boot Slackware From ISO"
-msgstr "作為 Slackware ISO 啟動"
-
-#: distro/slax.sh:9
-msgid "Boot Slax From ISO"
-msgstr "作為 Slax LiveCD 啟動"
-
-#: distro/slitaz.sh:14
-msgid "Boot Slitaz Rolling From ISO"
-msgstr "作為 Slitaz Rolling ISO 啟動"
-
-#: distro/smartos.sh:4
-msgid "Boot SmartOS From ISO"
-msgstr "作為 SmartOS ISO 啟動"
-
-#: distro/suse64.sh:6
-msgid "Boot OpenSuSE From ISO"
-msgstr "作為 OpenSuSE x86_64 LiveCD 啟動"
-
-#: distro/sysrcd.sh:5
-msgid "Boot System Rescue CD From ISO (x86_64)"
-msgstr "作為 System Rescue CD 啟動 (x86_64)"
-
-#: distro/sysrcd.sh:9
-msgid "Boot System Rescue CD From ISO (i686)"
-msgstr "作為 System Rescue CD 啟動 (i686)"
-
-#: distro/tinycore.sh:5
-msgid "Boot TinyCore From ISO"
-msgstr "作為 TinyCore LiveCD 啟動"
-
-#: distro/ubuntu.sh:12
-msgid "Boot Ubuntu From ISO"
-msgstr "作為 Ubuntu LiveCD 啟動"
-
-#: distro/ubuntu.sh:20
-msgid "Boot Ubuntu From ISO (persistent)"
-msgstr "作為 Ubuntu LiveCD 啟動 (persistent)"
-
-#: distro/wifislax.sh:10 distro/wifislax.sh:17
-msgid "Boot Wifislax From ISO"
-msgstr "作為 Wifislax LiveCD 啟動"
-
-#: distro/wifislax.sh:24
-msgid "Boot Wifiway From ISO"
-msgstr "作為 Wifiway LiveCD 啟動"
-
-#：easy2boot.sh
-msgid "WARNING: Partition table 4 is already in use on this device."
-msgstr "警告：磁碟分割槽表第四分割槽已被佔用。"
-
-#：easy2boot.sh
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr "警告：即將刪除(hd0,4)的分割槽資料。"
+msgstr "警告：即將刪除(hd0,4)的分區資料。"
 
-#：easy2boot.sh
+
 msgid "Press [Y] to continue. Press [N] to quit."
 msgstr "按[Y]繼續。按[N]退出。"
 
-#：easy2boot.sh
+
 msgid "Canceled."
 msgstr "已取消。"

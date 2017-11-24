@@ -233,7 +233,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		grub.setenv ("linux_extra", linux_extra)
 		command = "export iso_path; export iso_uuid; export dev_uuid; export linux_extra; " ..
 		 "configfile $prefix/distro/" .. distro .. ".sh"
-		name = grub.gettext ("Boot " .. name .. " From ISO")
+		name = grub.gettext ("Boot ") .. name .. grub.gettext (" From ISO")
 		grub.add_icon_menu (icon, command, name)
 	end
 	cfglist = {
