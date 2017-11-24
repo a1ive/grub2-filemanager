@@ -20,6 +20,7 @@ echo zh_CN
 bin\msgfmt.exe grub\locale\zh_CN.po -o build\boot\grub\locale\zh_CN.mo
 bin\msgfmt.exe lang\zh_CN\fm.po -o build\boot\grub\locale\fm\zh_CN.mo
 copy lang\zh_CN\lang.sh build\boot\grub\
+copy lang\zh_CN\hex.txt build\boot\grub\themes\slack\
 copy lang\zh_CN\text.txt build\boot\grub\themes\slack\
 copy lang\zh_CN\theme.txt build\boot\grub\themes\slack\
 goto build
@@ -28,6 +29,7 @@ echo zh_TW
 bin\msgfmt.exe grub\locale\zh_TW.po -o build\boot\grub\locale\zh_TW.mo
 bin\msgfmt.exe lang\zh_TW\fm.po -o build\boot\grub\locale\fm\zh_TW.mo
 copy lang\zh_TW\lang.sh build\boot\grub\
+copy lang\zh_TW\hex.txt build\boot\grub\themes\slack\
 copy lang\zh_TW\text.txt build\boot\grub\themes\slack\
 copy lang\zh_TW\theme.txt build\boot\grub\themes\slack\
 goto build

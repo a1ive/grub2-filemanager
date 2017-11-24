@@ -58,6 +58,7 @@ case "$choice" in
 		msgfmt grub/locale/zh_TW.po -o build/boot/grub/locale/zh_TW.mo
 		msgfmt lang/zh_TW/fm.po -o build/boot/grub/locale/fm/zh_TW.mo
 		cp lang/zh_TW/lang.sh build/boot/grub/
+		cp lang/zh_TW/hex.txt build/boot/grub/themes/slack/
 		cp lang/zh_TW/text.txt build/boot/grub/themes/slack/
 		cp lang/zh_TW/theme.txt build/boot/grub/themes/slack/
 		;;
@@ -69,6 +70,7 @@ case "$choice" in
 		msgfmt grub/locale/zh_CN.po -o build/boot/grub/locale/zh_CN.mo
 		msgfmt lang/zh_CN/fm.po -o build/boot/grub/locale/fm/zh_CN.mo
 		cp lang/zh_CN/lang.sh build/boot/grub/
+		cp lang/zh_CN/hex.txt build/boot/grub/themes/slack/
 		cp lang/zh_CN/text.txt build/boot/grub/themes/slack/
 		cp lang/zh_CN/theme.txt build/boot/grub/themes/slack/
 		;;

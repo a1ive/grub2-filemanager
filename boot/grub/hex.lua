@@ -55,7 +55,6 @@ else
 	else
 		grub.add_menu ("echo;", "---END---")
 	end
-	grub.add_menu ("action=open; export action; configfile $prefix/clean.sh", "[Q] " .. grub.gettext ("Back"))
 	data = nil
 	return 0
 end
