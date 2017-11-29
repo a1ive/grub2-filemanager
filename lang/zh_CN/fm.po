@@ -235,3 +235,6 @@ msgstr "按[Y]继续。按[N]退出。"
 
 msgid "Canceled."
 msgstr "已取消。"
+
+msgid "File path contains spaces.This may cause problems!Press any key to continue."
+msgstr "文件路径包含空格。这可能会造成问题。按任意键继续。"

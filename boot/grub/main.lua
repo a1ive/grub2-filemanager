@@ -135,7 +135,7 @@ else
 	grub.add_icon_menu (icon, command, name)
 	
 	for j, name in ipairs(d_table) do
-		item = path .. "/" .. name
+		item = string.gsub(path .. "/" .. name, " ", "\\ ")
 		if (encoding == "gbk") then
 			name = grub.toutf8(name)
 		end
@@ -144,7 +144,7 @@ else
 		grub.add_icon_menu (icon, command, name)
 	end
 	for i, name in ipairs(f_table) do
-		item = path .. "/" .. name
+		item = string.gsub(path .. "/" .. name, " ", "\\ ")
 		if (encoding == "gbk") then
 			name = grub.toutf8(name)
 		end

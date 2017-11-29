@@ -66,9 +66,13 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	if dev_uuid == nil then
 		dev_uuid = ""
 	end
+	command = ""
+	if string.match (iso_path, " ") ~= nil then
+		command = "echo " .. grub.gettext ("File path contains spaces.This may cause problems!Press any key to continue.") .. "; getkey; "
+	end
 	if grub.file_exist ("(loop)/boot/grub/loopback.cfg") then
 		icon = "gnu-linux"
-		command = "root=loop; iso_path=" .. iso_path .. "; export iso_path; set theme=${prefix}/themes/slack/extern.txt; export theme; configfile /boot/grub/loopback.cfg"
+		command = command .. "root=loop; iso_path=" .. iso_path .. "; export iso_path; set theme=${prefix}/themes/slack/extern.txt; export theme; configfile /boot/grub/loopback.cfg"
 		name = grub.gettext ("Boot ISO (Loopback)")
 		grub.add_icon_menu (icon, command, name)
 	end
@@ -231,7 +235,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	icon, distro, name, linux_extra = check_distro ()
 	if distro ~= "unknown" then
 		grub.setenv ("linux_extra", linux_extra)
-		command = "export iso_path; export iso_uuid; export dev_uuid; export linux_extra; " ..
+		command = command .. "export iso_path; export iso_uuid; export dev_uuid; export linux_extra; " ..
 		 "configfile $prefix/distro/" .. distro .. ".sh"
 		name = grub.gettext ("Boot ") .. name .. grub.gettext (" From ISO")
 		grub.add_icon_menu (icon, command, name)
@@ -245,7 +249,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	for i,cfgpath in ipairs(cfglist) do
 		if grub.file_exist (cfgpath) then
 			icon = "gnu-linux"
-			command = "root=loop; theme=${prefix}/themes/slack/extern.txt; " ..
+			command = command .. "root=loop; theme=${prefix}/themes/slack/extern.txt; " ..
 			 "export linux_extra; syslinux_configfile -i " .. cfgpath
 			name = grub.gettext ("Boot ISO (ISOLINUX)")
 			grub.add_icon_menu (icon, command, name)
@@ -272,7 +276,7 @@ function open (file, file_type, device, device_type, arch, platform)
 			name = grub.gettext("Mount ISO")
 			grub.add_icon_menu (icon, command, name)
 			-- isoboot
-			iso_path = string.match (file, "^%([%w,]+%)(.*)$")
+			iso_path = string.match (grub.getenv ("file"), "^%([%w,]+%)(.*)$")
 			grub.setenv ("iso_path", iso_path)
 			grub.run ("probe --set=dev_uuid -u " .. device)
 			dev_uuid = grub.getenv ("dev_uuid")
@@ -579,8 +583,8 @@ encoding = grub.getenv ("encoding")
 if (encoding == nil) then
 	encoding = "utf8"
 end
-path = grub.getenv ("path")
-file = grub.getenv ("file")
+path = string.gsub(grub.getenv ("path"), " ", "\\ ")
+file = string.gsub(grub.getenv ("file"), " ", "\\ ")
 file_type = grub.getenv ("file_type")
 arch = grub.getenv ("grub_cpu")
 platform = grub.getenv ("grub_platform")
