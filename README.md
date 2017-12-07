@@ -69,6 +69,7 @@ Do NOT boot grubfm.iso with memdisk!
 *    Peppermint
 *    PhoenixOS
 *    PIXEL
+*    Plop Linux Live
 *    Porteus
 *    RemixOS(3.0+)
 *    Slackware

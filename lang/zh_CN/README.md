@@ -76,6 +76,7 @@ https://github.com/a1ive/grub2-filemanager/releases
 *    Peppermint
 *    PhoenixOS
 *    PIXEL
+*    Plop Linux Live
 *    Porteus
 *    RemixOS(3.0及以上版本)
 *    Slackware
