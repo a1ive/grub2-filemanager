@@ -175,6 +175,9 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			elseif string.match (loop_file, "^/live/") then
 				linux_extra = "findiso=" .. iso_path
 				return "debian", "debian", "Debian", linux_extra
+			elseif string.match (loop_file, "^/ploplinux/") then
+				linux_extra = "iso_filename=" .. iso_path
+				return "gnu-linux", "plop", "Plop Linux", linux_extra
 			end
 		end
 		-- check /isolinux/
