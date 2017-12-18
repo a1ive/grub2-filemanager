@@ -161,6 +161,9 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			elseif string.match (loop_file, "^/manjaro/") then
 				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " misolabel=" .. iso_label
 				return "manjaro", "manjaro", "Manjaro", linux_extra
+			elseif string.match (loop_file, "^/chakra/") then
+				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " chakraisolabel=" .. iso_label
+				return "chakra", "chakra", "Chakra", linux_extra
 			elseif string.match (loop_file, "^/pmagic/") then
 				linux_extra = "iso_filename=" .. iso_path
 				return "pmagic", "pmagic", "Parted Magic", linux_extra
@@ -248,6 +251,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		"(loop)/isolinux/isolinux.cfg",
 		"(loop)/boot/isolinux.cfg",
 		"(loop)/boot/isolinux/isolinux.cfg"
+		"(loop)/syslinux/syslinux.cfg"
 	}
 	for i,cfgpath in ipairs(cfglist) do
 		if grub.file_exist (cfgpath) then
