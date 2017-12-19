@@ -77,7 +77,7 @@ menuentry $"Enable debug messages: $debug" --class settings {
 	export debug;
 	configfile $prefix/settings.sh;
 }
-if regexp 'efi' "$grub_platform"; then
+if [ "$grub_platform" = "efi" ]; then
 	menuentry $"EFI Firmware Setup" --class settings {
 		fwsetup;
 	}

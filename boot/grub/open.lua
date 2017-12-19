@@ -250,7 +250,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		"(loop)/isolinux.cfg",
 		"(loop)/isolinux/isolinux.cfg",
 		"(loop)/boot/isolinux.cfg",
-		"(loop)/boot/isolinux/isolinux.cfg"
+		"(loop)/boot/isolinux/isolinux.cfg",
 		"(loop)/syslinux/syslinux.cfg"
 	}
 	for i,cfgpath in ipairs(cfglist) do
