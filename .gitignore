@@ -5,6 +5,7 @@ sources/grub*
 NTBOOT.NT5
 NTBOOT.NT6
 NTBOOT.PE1
+wimboot
 oscdimg.exe
 *.der
 *.pem
