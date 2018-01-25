@@ -14,6 +14,7 @@ hfs
 hfsplus
 iso9660
 jfs
+lynxfs
 minix
 minix2
 minix2_be

@@ -56,6 +56,7 @@ gfxterm: font video
 disk:
 xfs: fshelp
 testspeed: extcmd normal
+lynxfs: fshelp
 cpio_be: archelp
 functional_test: btrfs extcmd video video_fb
 pxechain: pxe video boot relocator
