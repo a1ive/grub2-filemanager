@@ -33,7 +33,7 @@ function get_size (file)
 		str = file_size .. "B"
 		for i,unit in ipairs ({"KiB", "MiB", "GiB", "TiB"}) do
 			if (file_size < 1024) or (unit == "TiB") then
-				break;
+				break
 			else
 				file_size, str = div1024 (file_size, unit)
 			end
@@ -50,10 +50,9 @@ function tog4dpath (file, device, device_type)
 	elseif (device_type == "2") then
 		g4d_file = file
 	else
-		print ("not on a real device")
 		g4d_file = "(rd)+1"
 	end
-	print ("grub4dos file path : " .. g4d_file)
+	--print ("grub4dos file path : " .. g4d_file)
 end
 
 function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
