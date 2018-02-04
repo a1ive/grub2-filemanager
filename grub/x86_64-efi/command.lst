@@ -3,6 +3,7 @@
 *apple_gmux: apple_gmux
 *background_image: gfxterm_background
 *cat: cat
+*clear_menu: normal
 *cpuid: cpuid
 *crc: hashsum
 *cryptomount: cryptodisk
@@ -37,6 +38,7 @@
 *md5sum: hashsum
 *menuentry: normal
 *pcidump: pcidump
+*pop_env: normal
 *probe: probe
 *read_byte: memrw
 *read_dword: memrw
@@ -52,6 +54,7 @@
 *sleep: sleep
 *smbios: smbios
 *submenu: normal
+*submenu_exit: normal
 *syslinux_configfile: syslinuxcfg
 *syslinux_source: syslinuxcfg
 *terminfo: terminfo

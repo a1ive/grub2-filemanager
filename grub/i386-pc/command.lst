@@ -2,6 +2,7 @@
 *all_functional_test: functional_test
 *background_image: gfxterm_background
 *cat: cat
+*clear_menu: normal
 *cpuid: cpuid
 *crc: hashsum
 *cryptomount: cryptodisk
@@ -38,6 +39,7 @@
 *menuentry: normal
 *pcidump: pcidump
 *plan9: plan9
+*pop_env: normal
 *probe: probe
 *read_byte: memrw
 *read_dword: memrw
@@ -54,6 +56,7 @@
 *sleep: sleep
 *smbios: smbios
 *submenu: normal
+*submenu_exit: normal
 *syslinux_configfile: syslinuxcfg
 *syslinux_source: syslinuxcfg
 *terminfo: terminfo
