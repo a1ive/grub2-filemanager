@@ -239,8 +239,8 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	end
 	icon, distro, name, linux_extra = check_distro ()
 	if distro ~= "unknown" then
-		grub.setenv ("linux_extra", linux_extra)
-		command = command .. "export iso_path; export iso_uuid; export dev_uuid; export linux_extra; " ..
+		grub.exportenv ("linux_extra", linux_extra)
+		command = command .. "export iso_path; export iso_uuid; export dev_uuid; " ..
 		 "configfile $prefix/distro/" .. distro .. ".sh"
 		name = grub.gettext ("Boot ") .. name .. grub.gettext (" From ISO")
 		grub.add_icon_menu (icon, command, name)
