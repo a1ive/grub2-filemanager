@@ -76,6 +76,7 @@ backtrace: backtrace
 badram: mmap
 blocklist: blocklist
 boot: boot
+bqcat: bqcat
 break: normal
 cat: minicmd
 cbmemc: cbmemc
