@@ -1329,7 +1329,7 @@ msgstr "回滚至 %s"
 
 #: grub-core/normal/menu.c:579
 msgid "Failed to boot both default and fallback entries.\n"
-msgstr "引导默认启动项和会滚启动想均失败。\n"
+msgstr "引导默认启动项和回滚启动项均失败。\n"
 
 #: grub-core/normal/menu_entry.c:1198
 msgid "Booting a command list"
