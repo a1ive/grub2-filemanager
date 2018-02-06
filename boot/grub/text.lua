@@ -34,15 +34,15 @@ else
 		end
 		grub.add_menu ("echo;", line)
 	end
+	hotkey = "n"
+	if (encoding == "utf8") then
+		command = "export encoding=gbk; lua $prefix/text.lua"
+	else
+		command = "export encoding=utf8; lua $prefix/text.lua"
+	end
+	grub.add_hidden_menu (hotkey, command, "Encoding")
+	hotkey = "q"
+	command = "lua $prefix/open.lua"
+	grub.add_hidden_menu (hotkey, command, "Quit")
 	return 0
 end
-hotkey = "n"
-if (encoding == utf8) then
-	command = "export encoding=gbk; lua $prefix/text.lua"
-else
-	command = "export encoding=utf8; lua $prefix/text.lua"
-end
-grub.add_hidden_menu (hotkey, command, "Encoding")
-hotkey = "q"
-command = "lua $prefix/open.lua"
-grub.add_hidden_menu (hotkey, command, "Quit")

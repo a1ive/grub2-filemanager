@@ -59,8 +59,8 @@ else
 		grub.add_menu ("echo;", "---END---")
 	end
 	data = nil
+	hotkey = "q"
+	command = "lua $prefix/open.lua"
+	grub.add_hidden_menu (hotkey, command, "Quit")
 	return 0
 end
-hotkey = "q"
-command = "lua $prefix/open.lua"
-grub.add_hidden_menu (hotkey, command, "Quit")

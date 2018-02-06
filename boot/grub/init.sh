@@ -16,12 +16,10 @@
 
 set pager=0;
 set debug=off;
-if [ "$grub_platform" = "pc" ]; then
-	bqcat ${prefix}/insmod.lst modlist
-else
-	modlist="all_video video_bochs video_cirrus efi_gop efi_uga gfxterm gfxterm_background gfxmenu jpeg png tga font";
+bqcat ${prefix}/insmod.lst modlist;
+if [ "$grub_platform" = "efi" ]; then
 	search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
-	if regexp 'i386' "$grub_cpu"; then
+	if [ "$grub_cpu" = "i386" ]; then
 		search -s -f -q /efi/boot/bootia32.efi;
 	else
 		search -s -f -q /efi/boot/bootx64.efi;
