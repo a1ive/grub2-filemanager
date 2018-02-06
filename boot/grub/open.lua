@@ -1,6 +1,6 @@
 #!lua
 -- Grub2-FileManager
--- Copyright (C) 2017  A1ive.
+-- Copyright (C) 2017,2018  A1ive.
 --
 -- Grub2-FileManager is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -71,7 +71,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	end
 	if grub.file_exist ("(loop)/boot/grub/loopback.cfg") then
 		icon = "gnu-linux"
-		command = command .. "root=loop; iso_path=" .. iso_path .. "; export iso_path; set theme=${prefix}/themes/slack/extern.txt; export theme; configfile /boot/grub/loopback.cfg"
+		command = command .. "root=loop; export iso_path=" .. iso_path .. "; export theme=${prefix}/themes/slack/extern.txt; configfile /boot/grub/loopback.cfg"
 		name = grub.gettext ("Boot ISO (Loopback)")
 		grub.add_icon_menu (icon, command, name)
 	end
@@ -268,7 +268,7 @@ end
 function open (file, file_type, device, device_type, arch, platform)
 -- common
 	icon = "go-previous"
-	command = "action=genlst; path=" .. path .. "; hidden_menu=1; export action; export path; export hidden_menu; configfile $prefix/clean.sh"
+	command = "export path=" .. path .. "; lua $prefix/main.lua"
 	name = grub.gettext("Back")
 	grub.add_icon_menu (icon, command, name)
 -- 
@@ -278,7 +278,7 @@ function open (file, file_type, device, device_type, arch, platform)
 			grub.run ("loopback -d loop")
 			grub.run ("loopback loop " .. file)
 			icon = "iso"
-			command = "action=genlst; path=; export action; export path; configfile $prefix/clean.sh"
+			command = "export path= ; lua $prefix/main.lua"
 			name = grub.gettext("Mount ISO")
 			grub.add_icon_menu (icon, command, name)
 			-- isoboot
@@ -390,7 +390,7 @@ function open (file, file_type, device, device_type, arch, platform)
 		if device_type ~= "3" then
 			-- mount
 			icon = "img"
-			command = "loopback -d ud; loopback ud " .. file .. "; action=genlst; path=(ud); export action; export path; configfile $prefix/clean.sh"
+			command = "loopback -d ud; loopback ud " .. file .. "; export path=(ud); lua $prefix/main.lua"
 			name = grub.gettext("Mount Image")
 			grub.add_icon_menu (icon, command, name)
 		end
@@ -398,7 +398,7 @@ function open (file, file_type, device, device_type, arch, platform)
 		if device_type ~= "3" then
 			-- mount
 			icon = "img"
-			command = "loopback -d img; loopback img " .. file .. "; action=genlst; path=; export action; export path; configfile $prefix/clean.sh"
+			command = "loopback -d img; loopback img " .. file .. "; export path= ; lua $prefix/main.lua"
 			name = grub.gettext("Mount Image")
 			grub.add_icon_menu (icon, command, name)
 		end
@@ -454,7 +454,7 @@ function open (file, file_type, device, device_type, arch, platform)
 		if device_type ~= "3" then
 			-- mount
 			icon = "7z"
-			command = "loopback -d tar; loopback tar " .. file .. "; action=genlst; path=(tar); export action; export path; configfile $prefix/clean.sh"
+			command = "loopback -d tar; loopback tar " .. file .. "; export path=(tar); lua $prefix/main.lua"
 			name = grub.gettext("Open As Archiver")
 			grub.add_icon_menu (icon, command, name)
 		end
@@ -569,12 +569,12 @@ function open (file, file_type, device, device_type, arch, platform)
 	
 	-- text viewer
 	icon = "txt"
-	command = "action=text; file=" .. file .. "; export action; export file; configfile $prefix/clean.sh"
+	command = "export file=" .. file .. "; lua $prefix/text.lua"
 	name = grub.gettext ("Text Viewer")
 	grub.add_icon_menu (icon, command, name)
 	-- hex viewer
 	icon = "bin"
-	command = "unset offset; action=hex; file=" .. file .. "; export action; export file; configfile $prefix/clean.sh"
+	command = "unset offset; export file=" .. file .. "; lua $prefix/hex.lua"
 	name = grub.gettext ("Hex Viewer")
 	grub.add_icon_menu (icon, command, name)
 	-- file info
@@ -607,4 +607,6 @@ else
 -- (loop) (memdisk) (tar) (proc) etc.
 	device_type = "3"
 end
+grub.exportenv ("theme", "slack/extern.txt")
+grub.clear_menu ()
 open (file, file_type, device, device_type, arch, platform)

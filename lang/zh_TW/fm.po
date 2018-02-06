@@ -169,20 +169,20 @@ msgid "File Info"
 msgstr "檢視檔案資訊"
 
 
-msgid "Encoding: $encoding"
-msgstr "編碼設定: $encoding"
+msgid "Encoding: "
+msgstr "編碼設定: "
 
 
-msgid "Sort files by name: $enable_sort"
-msgstr "按檔名排序: $enable_sort"
+msgid "Sort files by name"
+msgstr "按檔名排序"
 
 
-msgid "Resolution (R):  $gfxmode"
-msgstr "解析度設定(R):  $gfxmode"
+msgid "Resolution (R): "
+msgstr "解析度設定(R): "
 
 
-msgid "Enable debug messages: $debug"
-msgstr "顯示偵錯資訊: $debug"
+msgid "Enable debug messages"
+msgstr "顯示偵錯資訊"
 
 
 msgid "EFI Firmware Setup"

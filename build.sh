@@ -99,6 +99,7 @@ do
 	echo "copying ${modules}.mod"
 	cp grub/i386-pc/${modules}.mod build/boot/grub/i386-pc/
 done
+cp legacy/insmod.lst build/boot/grub/
 cp legacy/grub.exe build/boot/grub/
 cp legacy/memdisk build/boot/grub/
 cp legacy/ipxe.lkrn build/boot/grub/

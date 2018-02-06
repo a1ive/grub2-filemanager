@@ -61,6 +61,7 @@ for /f "tokens=1,*" %%a in ("%modlist%") do (
 	set modlist=%%b
 	goto CPMOD
 )
+copy legacy\insmod.lst build\boot\grub\
 copy legacy\grub.exe build\boot\grub\
 copy legacy\memdisk build\boot\grub\
 copy legacy\ipxe.lkrn build\boot\grub\

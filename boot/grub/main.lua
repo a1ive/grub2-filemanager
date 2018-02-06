@@ -1,6 +1,6 @@
 #!lua
 -- Grub2-FileManager
--- Copyright (C) 2017  A1ive.
+-- Copyright (C) 2017,2018  A1ive.
 --
 -- Grub2-FileManager is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -31,7 +31,7 @@ function enum_device (device, fs, uuid, label)
 	if (label ~= nil) then
 		title = title .. label
 	end
-	command = "action=genlst; path=(" .. device .. "); export action; export path; configfile $prefix/clean.sh"
+	command = "export path=(" .. device .. "); lua $prefix/main.lua"
 	grub.add_icon_menu (icon, command, title)
 end
 
@@ -87,6 +87,14 @@ function check_file (name, name_extn)
 		file_type, file_icon = "lst", "cfg"
 	elseif name_extn == "ipxe" then
 		file_type, file_icon = "ipxe", "net"
+	elseif name_extn == "c" or name_extn == "cpp" or name_extn == "h" then
+		file_icon = "c"
+	elseif name_extn == "mp3" or name_extn == "wav" or name_extn == "cda" or name_extn == "ogg" then
+		file_icon = "mp3"
+	elseif name_extn == "mp4" or name_extn == "mpeg" or name_extn == "avi" or name_extn == "rmvb" or name_extn == "3gp" or name_extn == "flv" then
+		file_icon = "mp4"
+	elseif name_extn == "doc" or name_extn == "docx" or name_extn == "wps" then
+		file_icon = "doc"
 	end
 	return file_type, file_icon
 end
@@ -114,7 +122,8 @@ path = grub.getenv ("path")
 if (path == nil) then
 	path = ""
 end
-
+grub.exportenv ("theme", "slack/theme.txt")
+grub.clear_menu ()
 if (path == "") then
 	grub.enum_device (enum_device)
 else
@@ -130,7 +139,7 @@ else
 	if lpath == nil then
 		lpath = ""
 	end
-	command = "action=genlst; path=" .. lpath .. "; export action; export path; configfile $prefix/clean.sh"
+	command = "export path=" .. lpath .. "; lua $prefix/main.lua"
 	name = grub.gettext("Back")
 	grub.add_icon_menu (icon, command, name)
 	
@@ -140,7 +149,7 @@ else
 			name = grub.toutf8(name)
 		end
 		icon = "dir"
-		command = "action=genlst; path=" .. item .. "; export action; export path; configfile $prefix/clean.sh"
+		command = "export path=" .. item .. "; lua $prefix/main.lua"
 		grub.add_icon_menu (icon, command, name)
 	end
 	for i, name in ipairs(f_table) do
@@ -150,7 +159,23 @@ else
 		end
 		name_extn = string.match (name, ".*%.(.*)$")
 		file_type, file_icon = check_file (name, name_extn)
-		command = "action=open; file=" .. item .. ";file_type=" .. file_type .. "; export action; export file; export file_type; configfile $prefix/clean.sh"
+		command = "export file=" .. item .. "; export file_type=" .. file_type .. "; lua $prefix/open.lua"
 		grub.add_icon_menu (file_icon, command, name)
 	end
 end
+-- hidden menu
+hotkey = "s"
+command = "lua $prefix/settings.lua"
+grub.add_hidden_menu (hotkey, command, "Settings")
+hotkey = "l"
+command = "lua"
+grub.add_hidden_menu (hotkey, command, "Lua")
+hotkey = "b"
+command = "lua $prefix/osdetect.lua"
+grub.add_hidden_menu (hotkey, command, "Boot")
+hotkey = "r"
+command = "reboot"
+grub.add_hidden_menu (hotkey, command, "Reboot")
+hotkey = "h"
+command = "halt"
+grub.add_hidden_menu (hotkey, command, "Halt")

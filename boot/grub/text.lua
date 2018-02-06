@@ -1,6 +1,6 @@
 #!lua
 -- Grub2-FileManager
--- Copyright (C) 2017  A1ive.
+-- Copyright (C) 2017,2018  A1ive.
 --
 -- Grub2-FileManager is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -14,6 +14,9 @@
 --
 -- You should have received a copy of the GNU General Public License
 -- along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+
+grub.exportenv ("theme", "slack/text.txt")
+grub.clear_menu ()
 local file = grub.getenv ("file")
 encoding = grub.getenv ("encoding")
 if (encoding == nil) then
@@ -33,3 +36,13 @@ else
 	end
 	return 0
 end
+hotkey = "n"
+if (encoding == utf8) then
+	command = "export encoding=gbk; lua $prefix/text.lua"
+else
+	command = "export encoding=utf8; lua $prefix/text.lua"
+end
+grub.add_hidden_menu (hotkey, command, "Encoding")
+hotkey = "q"
+command = "lua $prefix/open.lua"
+grub.add_hidden_menu (hotkey, command, "Quit")
