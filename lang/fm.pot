@@ -118,16 +118,16 @@ msgstr ""
 msgid "File Info"
 msgstr ""
 
-msgid "Encoding: $encoding"
+msgid "Encoding: "
 msgstr ""
 
-msgid "Sort files by name: $enable_sort"
+msgid "Sort files by name"
 msgstr ""
 
-msgid "Resolution (R):  $gfxmode"
+msgid "Resolution (R): "
 msgstr ""
 
-msgid "Enable debug messages: $debug"
+msgid "Enable debug messages"
 msgstr ""
 
 msgid "EFI Firmware Setup"
