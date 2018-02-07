@@ -1,1 +1,1 @@
-set lang=en_US
+export lang=en_US;

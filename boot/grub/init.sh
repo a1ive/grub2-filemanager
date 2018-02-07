@@ -33,7 +33,18 @@ export grub_disable_esc="1";
 loadfont ${prefix}/fonts/unicode.xz;
 export locale_dir=${prefix}/locale;
 export secondary_locale_dir=${prefix}/locale/fm;
-source ${prefix}/lang.sh; export lang;
+source ${prefix}/lang.sh;
+
+export theme_boot=$" Boot[B] ";
+export theme_settings=$" Settings[S] ";
+export theme_lua=$" Lua[L] ";
+export theme_shell=$" Shell[C] ";
+export theme_reboot=$" Reboot[R] ";
+export theme_halt=$" Halt[H] ";
+export theme_file=$"File: ";
+export theme_quit=$"Press [Q] to exit";
+export theme_encoding=$"Press [N] to change the encoding";
+
 export gfxmode=1024x768;
 export gfxpayload=keep;
 terminal_output gfxterm;

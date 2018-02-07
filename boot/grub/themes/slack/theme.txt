@@ -34,15 +34,15 @@ terminal-box: "term_bkg_*.png"
 		left = 25%
 		width = 50%
 		+ image {file = "small/boot.png"}
-		+ label {text = " Boot[B] " color = "#f5f5f5" align = "center"}
+		+ label {var = "theme_boot" color = "#f5f5f5" align = "center"}
 		+ image {file = "small/settings.png"}
-		+ label {text = " Settings[S] " color = "#f5f5f5" align = "center"}
+		+ label {var = "theme_settings" color = "#f5f5f5" align = "center"}
 		+ image {file = "small/lua.png"}
-		+ label {text = " Lua[L] " color = "#f5f5f5" align = "center"}
+		+ label {var = "theme_lua" color = "#f5f5f5" align = "center"}
 		+ image {file = "small/shell.png"}
-		+ label {text = " Shell[C] " color = "#f5f5f5" align = "center"}
+		+ label {var = "theme_shell" color = "#f5f5f5" align = "center"}
 		+ image {file = "small/reboot.png"}
-		+ label {text = " Reboot[R] " color = "#f5f5f5" align = "center"}
+		+ label {var = "theme_reboot" color = "#f5f5f5" align = "center"}
 		+ image {file = "small/halt.png"}
-		+ label {text = " Halt[H] " color = "#f5f5f5" align = "center"}
+		+ label {var = "theme_halt" color = "#f5f5f5" align = "center"}
 }

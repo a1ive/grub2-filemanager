@@ -1,1 +1,1 @@
-set lang=zh_TW
+export lang=zh_TW;

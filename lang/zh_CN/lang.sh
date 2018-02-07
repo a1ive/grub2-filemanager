@@ -1,1 +1,1 @@
-set lang=zh_CN
+export lang=zh_CN;

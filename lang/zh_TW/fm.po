@@ -238,3 +238,30 @@ msgstr "已取消。"
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
 msgstr "檔案路徑包含空格。這可能會造成問題。按任意鍵繼續。"
+
+msgid " Boot[B] "
+msgstr " 啓動[B] "
+
+msgid " Settings[S] "
+msgstr " 設定[S] "
+
+msgid " Lua[L] "
+msgstr " Lua[L] "
+
+msgid " Shell[C] "
+msgstr " 命令列[C] "
+
+msgid " Reboot[R] "
+msgstr " 重啓[R] "
+
+msgid " Halt[H] "
+msgstr " 關機[H] "
+
+msgid "File: "
+msgstr "檔案: "
+
+msgid "Press [Q] to exit"
+msgstr "按[Q]退出"
+
+msgid "Press [N] to change the encoding"
+msgstr "按[N]修改編碼"
