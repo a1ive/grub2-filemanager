@@ -1,6 +1,6 @@
 #!lua
 -- Grub2-FileManager
--- Copyright (C) 2017  A1ive.
+-- Copyright (C) 2017,2018  A1ive.
 --
 -- Copyright (C) 2009  Free Software Foundation, Inc.
 --
@@ -154,9 +154,12 @@ end
 
 arch = grub.getenv ("grub_cpu")
 platform = grub.getenv ("grub_platform")
+grub.exportenv ("theme", "slack/extern.txt")
+grub.clear_menu ()
+
 grub.enum_device (enum_device)
 
 icon = "go-previous"
-command = "unset action; configfile $prefix/clean.sh"
+command = "lua $prefix/main.lua"
 name = grub.gettext ("Back")
 grub.add_icon_menu (icon, command, name)

@@ -1,6 +1,6 @@
 #!lua
 -- Grub2-FileManager
--- Copyright (C) 2017  A1ive.
+-- Copyright (C) 2017,2018  A1ive.
 --
 -- Grub2-FileManager is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -14,6 +14,9 @@
 --
 -- You should have received a copy of the GNU General Public License
 -- along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+
+grub.exportenv ("theme", "slack/hex.txt")
+grub.clear_menu ()
 local file = grub.getenv ("file")
 if (file == nil) then
 	return 1
@@ -37,7 +40,7 @@ else
 	length = 0x10
 	items = 16
 	if offset ~= 0x00 then
-		grub.add_menu ("offset=" .. offset - items * length .."; export offset; configfile $prefix/clean.sh", "<- ")
+		grub.add_menu ("export offset=" .. offset - items * length .."; lua $prefix/hex.lua", "<- ")
 	end
 	for i=1,items do
 		if (offset > size) then
@@ -51,10 +54,13 @@ else
 		offset = offset + length
 	end
 	if offset < size then
-		grub.add_menu ("offset=" .. offset .."; export offset; configfile $prefix/clean.sh", "-> ")
+		grub.add_menu ("export offset=" .. offset .."; lua $prefix/hex.lua", "-> ")
 	else
 		grub.add_menu ("echo;", "---END---")
 	end
 	data = nil
+	hotkey = "q"
+	command = "lua $prefix/open.lua"
+	grub.add_hidden_menu (hotkey, command, "Quit")
 	return 0
 end
