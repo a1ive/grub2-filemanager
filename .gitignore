@@ -10,3 +10,7 @@ oscdimg.exe
 *.der
 *.pem
 *.rsa
+grub/*/*.image
+grub/*/*.module
+grub/*/*.exec
+grub/*/config.h

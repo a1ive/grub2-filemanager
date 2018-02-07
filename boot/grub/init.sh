@@ -16,7 +16,7 @@
 
 set pager=0;
 set debug=off;
-bqcat ${prefix}/insmod.lst modlist;
+cat --set=modlist ${prefix}/insmod.lst;
 if [ "$grub_platform" = "efi" ]; then
 	search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
 	if [ "$grub_cpu" = "i386" ]; then

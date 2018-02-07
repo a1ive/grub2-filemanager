@@ -270,7 +270,6 @@ lsefi:
 gcry_serpent: crypto
 gcry_md4: crypto
 gcry_md5: crypto
-bqcat:
 part_msdos:
 gcry_camellia: crypto
 at_keyboard: keylayouts boot
