@@ -25,14 +25,47 @@ end
 if (file == nil) then
 	return 1
 else
-	data = grub.file_open(file)
-	while (grub.file_eof(data) == false)
-	do
+	line_num = grub.getenv ("line_num")
+	if line_num == nil then
+		line_num = 1
+	else
+		line_num = tonumber (line_num)
+		if line_num < 1 then
+			line_num = 1
+		end
+	end
+	data = grub.file_open (file)
+	if data == nil then
+		print ("Can't open " .. file)
+		grub.getkey ()
+		return 1
+	end
+	items = 20
+	-- skip
+	if (line_num > 1) then
+		for i=1,line_num do
+			if (grub.file_eof(data) == true) then
+				grub.add_menu ("echo;", "---END---")
+				break
+			end
+			grub.file_getline (data)
+		end
+		grub.add_menu ("export line_num=" .. line_num - items .."; lua $prefix/text.lua", "<- ")
+	end
+	-- getline
+	for i=1, items do
 		line = grub.file_getline (data)
+		if (grub.file_eof(data) == true) then
+			grub.add_menu ("echo;", "---END---")
+			break
+		end
 		if (encoding == "gbk") then
 			line = grub.toutf8(line)
 		end
-		grub.add_menu ("echo;", line)
+		grub.add_menu ("echo;", i + line_num - 1 .. "  " .. line)
+	end
+	if (grub.file_eof(data) == false) then
+		grub.add_menu ("export line_num=" .. line_num + items .."; lua $prefix/text.lua", "-> ")
 	end
 	hotkey = "n"
 	if (encoding == "utf8") then
@@ -44,5 +77,7 @@ else
 	hotkey = "q"
 	command = "lua $prefix/open.lua"
 	grub.add_hidden_menu (hotkey, command, "Quit")
+	data = nil
+	grub.file_close (file)
 	return 0
 end

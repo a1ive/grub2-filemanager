@@ -569,7 +569,7 @@ function open (file, file_type, device, device_type, arch, platform)
 	
 	-- text viewer
 	icon = "txt"
-	command = "export file=" .. file .. "; lua $prefix/text.lua"
+	command = "unset line_num; export file=" .. file .. "; lua $prefix/text.lua"
 	name = grub.gettext ("Text Viewer")
 	grub.add_icon_menu (icon, command, name)
 	-- hex viewer
