@@ -124,7 +124,7 @@ if (path == nil) then
 end
 grub.exportenv ("theme", "slack/theme.txt")
 grub.clear_menu ()
-if (path == "") then
+if (path == "") then	
 	grub.enum_device (enum_device)
 else
 	i, j = 0, 0
