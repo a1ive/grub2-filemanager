@@ -37,7 +37,7 @@ else
 	data = grub.file_open (file)
 	if data == nil then
 		print ("Can't open " .. file)
-		grub.getkey ()
+		input.getkey ()
 		return 1
 	end
 	items = 20

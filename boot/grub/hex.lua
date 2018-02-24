@@ -33,7 +33,7 @@ else
 	data = grub.file_open (file)
 	if data == nil then
 		print ("Can't open " .. file)
-		grub.getkey ()
+		input.getkey ()
 		return 1
 	end
 	size = grub.file_getsize (data)
