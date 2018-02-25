@@ -60,7 +60,7 @@ else
 			break
 		end
 		if (encoding == "gbk") then
-			line = grub.toutf8(line)
+			line = gbk.toutf8(line)
 		end
 		grub.add_menu ("echo;", i + line_num - 1 .. "  " .. line)
 	end

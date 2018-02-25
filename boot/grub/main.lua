@@ -146,7 +146,7 @@ else
 	for j, name in ipairs(d_table) do
 		item = string.gsub(path .. "/" .. name, " ", "\\ ")
 		if (encoding == "gbk") then
-			name = grub.toutf8(name)
+			name = gbk.toutf8(name)
 		end
 		icon = "dir"
 		command = "export path=" .. item .. "; lua $prefix/main.lua"
@@ -155,7 +155,7 @@ else
 	for i, name in ipairs(f_table) do
 		item = string.gsub(path .. "/" .. name, " ", "\\ ")
 		if (encoding == "gbk") then
-			name = grub.toutf8(name)
+			name = gbk.toutf8(name)
 		end
 		name_extn = string.match (name, ".*%.(.*)$")
 		file_type, file_icon = check_file (name, name_extn)
