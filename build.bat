@@ -7,8 +7,10 @@ md build
 echo common files
 cd /d %~dp0
 xcopy /s /e /y /i boot build\boot
-
-chcp 65001 > nul && echo Language / 语言 / 語言 && echo 1. Simplified Chinese / 简体中文 && echo 2. Traditional Chinese / 正體中文
+cls
+echo Language
+echo 1. Simplified Chinese
+echo 2. Traditional Chinese
 echo 3. English (United States)
 echo Please make a choice: 
 set /p id=
