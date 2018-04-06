@@ -34,19 +34,23 @@ echo en_US
 goto build
 
 :build
-echo efi common files
-copy efi\CrScreenshotDxe.efi build\boot\grub
+echo i386-efi
+copy efi32\CrScreenshotDxe.efi build\boot\grub
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc > ./memdisk.cpio
 cd ..
 del build\boot\grub\CrScreenshotDxe.efi
-set /p modules= < efi\builtin.lst
-
-echo i386-efi
-bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\i386-efi -p (memdisk)/boot/grub -c efi\config.cfg -o grubfmia32.efi -O i386-efi %modules%
+set /p modules= < efi32\builtin.lst
+bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\i386-efi -p (memdisk)/boot/grub -c efi32\config.cfg -o grubfmia32.efi -O i386-efi %modules%
 
 echo x86_64-efi
-bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\x86_64-efi -p (memdisk)/boot/grub -c efi\config.cfg -o grubfmx64.efi -O x86_64-efi %modules%
+copy efi64\CrScreenshotDxe.efi build\boot\grub
+cd build
+%~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc > ./memdisk.cpio
+cd ..
+del build\boot\grub\CrScreenshotDxe.efi
+set /p modules= < efi64\builtin.lst
+bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\x86_64-efi -p (memdisk)/boot/grub -c efi64\config.cfg -o grubfmx64.efi -O x86_64-efi %modules%
 del build\memdisk.cpio
 
 echo i386-pc
