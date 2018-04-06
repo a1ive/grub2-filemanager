@@ -70,19 +70,23 @@ case "$choice" in
 		;;
 esac
 
-msgfmt grub/locale/zh_CN.po -o build/boot/grub/locale/zh_CN.mo
-
-echo "efi common files"
+echo "x86_64-efi"
+cp efi64/CrScreenshotDxe.efi build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
-modules=$(cat efi/builtin.lst) 
-
-echo "x86_64-efi"
-$mkimage -m ./build/memdisk.cpio -d ./grub/x86_64-efi -p "(memdisk)/boot/grub" -c efi/config.cfg -o grubfmx64.efi -O x86_64-efi $modules
+rm build/boot/grub/CrScreenshotDxe.efi
+modules=$(cat efi64/builtin.lst)
+$mkimage -m ./build/memdisk.cpio -d ./grub/x86_64-efi -p "(memdisk)/boot/grub" -c efi64/config.cfg -o grubfmx64.efi -O x86_64-efi $modules
 
 echo "i386-efi"
-$mkimage -m ./build/memdisk.cpio -d ./grub/i386-efi -p "(memdisk)/boot/grub" -c efi/config.cfg -o grubfmia32.efi -O i386-efi $modules
+cp efi32/CrScreenshotDxe.efi build/boot/grub
+cd build
+find ./boot | cpio -o -H newc > ./memdisk.cpio
+cd ..
+rm build/boot/grub/CrScreenshotDxe.efi
+modules=$(cat efi32/builtin.lst)
+$mkimage -m ./build/memdisk.cpio -d ./grub/i386-efi -p "(memdisk)/boot/grub" -c efi32/config.cfg -o grubfmia32.efi -O i386-efi $modules
 rm build/memdisk.cpio
 
 echo "i386-pc"
