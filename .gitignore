@@ -1,5 +1,5 @@
 grubfm*.efi
-grubfm.iso
+grubfm*.iso
 build
 sources/grub*
 NTBOOT.NT5

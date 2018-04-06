@@ -35,9 +35,11 @@ goto build
 
 :build
 echo efi common files
+copy efi\CrScreenshotDxe.efi build\boot\grub
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc > ./memdisk.cpio
 cd ..
+del build\boot\grub\CrScreenshotDxe.efi
 set /p modules= < efi\builtin.lst
 
 echo i386-efi
