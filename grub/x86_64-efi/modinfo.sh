@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # User-controllable options
 grub_modinfo_target_cpu=x86_64
@@ -14,9 +14,9 @@ grub_end_symbol=""
 
 # Build environment
 grub_target_cc='gcc'
-grub_target_cc_version='gcc (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609'
+grub_target_cc_version='gcc (GCC) 5.3.0'
 grub_target_cflags=' -Os -Wall -W -Wshadow -Wpointer-arith -Wundef -Wchar-subscripts -Wcomment -Wdeprecated-declarations -Wdisabled-optimization -Wdiv-by-zero -Wfloat-equal -Wformat-extra-args -Wformat-security -Wformat-y2k -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Wmain -Wmissing-braces -Wmissing-format-attribute -Wmultichar -Wparentheses -Wreturn-type -Wsequence-point -Wshadow -Wsign-compare -Wswitch -Wtrigraphs -Wunknown-pragmas -Wunused -Wunused-function -Wunused-label -Wunused-parameter -Wunused-value  -Wunused-variable -Wwrite-strings -Wnested-externs -Wstrict-prototypes -g -Wredundant-decls -Wmissing-prototypes -Wmissing-declarations  -Wextra -Wattributes -Wendif-labels -Winit-self -Wint-to-pointer-cast -Winvalid-pch -Wmissing-field-initializers -Wnonnull -Woverflow -Wvla -Wpointer-to-int-cast -Wstrict-aliasing -Wvariadic-macros -Wvolatile-register-var -Wpointer-sign -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-declarations -Wformat=2 -m64 -freg-struct-return -mno-mmx -mno-sse -mno-sse2 -mno-sse3 -mno-3dnow -msoft-float -fno-dwarf2-cfi-asm -mno-stack-arg-probe -fno-asynchronous-unwind-tables -fno-unwind-tables -mcmodel=large -mno-red-zone -Qn -fno-stack-protector -Wtrampolines -Werror'
-grub_target_cppflags=' -Wall -W  -DGRUB_MACHINE_EFI=1 -DGRUB_MACHINE=X86_64_EFI -m64 -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include -I$(top_srcdir)/include -I$(top_builddir)/include'
+grub_target_cppflags=' -Wall -W  -DGRUB_MACHINE_EFI=1 -DGRUB_MACHINE=X86_64_EFI -m64 -nostdinc -isystem /usr/lib64/gcc/x86_64-slackware-linux/5.3.0/include -I$(top_srcdir)/include -I$(top_builddir)/include'
 grub_target_ccasflags=' -g  -m64 -msoft-float'
 grub_target_ldflags=' -m64 -Wl,-melf_x86_64 -Wl,--build-id=none'
 grub_cflags=''

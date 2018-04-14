@@ -8,7 +8,7 @@ terminfo: extcmd
 f2fs: fshelp
 part_gpt:
 romfs: fshelp
-read:
+read: normal
 lsefimmap:
 aout:
 gcry_arcfour: crypto
