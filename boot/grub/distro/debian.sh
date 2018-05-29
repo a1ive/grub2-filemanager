@@ -12,7 +12,7 @@ fi;
 function CHSLocale {
 	echo "是否使用简体中文？按[Y]选择简体中文，按其他键使用默认语言。";
 	getkey key;
-	if [ "$key" == "121" ]; then
+	if [ "$key" = "121" ]; then
 		kcmdline="${kcmdline} locales=zh_CN.UTF-8";
 	fi;
 }
@@ -26,7 +26,7 @@ function ReadUsername {
 }
 menuentry $"Debian Live" --class $icon{
 	set kcmdline="boot=live config";
-	if [ "${lang}" == "zh_CN" ]; then
+	if [ "${lang}" = "zh_CN" ]; then
 		CHSLocale;
 	fi;
 	ReadUsername;
@@ -35,7 +35,7 @@ menuentry $"Debian Live" --class $icon{
 }
 menuentry $"Debian Live union=overlay (Clonezilla/GParted)" --class $icon{
 	set kcmdline="boot=live config union=overlay";
-	if [ "${lang}" == "zh_CN" ]; then
+	if [ "${lang}" = "zh_CN" ]; then
 		CHSLocale;
 	fi;
 	ReadUsername;

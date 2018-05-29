@@ -315,7 +315,7 @@ function open (file, file_type, device, device_type, arch, platform)
 				command = "echo " .. grub.gettext ("WARNING: Will erase ALL data on (hd0,4).") .. "; " .. 
 				 "echo " .. grub.gettext ("Press [Y] to continue. Press [N] to quit.") .. "; " .. 
 				 "getkey key; " .. 
-				 "\nif [ x$key == x121 ]; then" .. 
+				 "\nif [ x$key = x121 ]; then" .. 
 				 "\n  set root=" .. device .. "; drivemap -s (hd0) (" .. device .. "); " .. 
 				 "\n  g4d_cmd=\"find --set-root /fm.loop;partnew (hd0,3) 0x00 " .. g4d_file .. ";/MAP nomem cd " ..  g4d_file .. "\";" .. 
 				 "\n  linux $prefix/grub.exe --config-file=$g4d_cmd; boot" .. 
