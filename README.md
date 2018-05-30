@@ -1,7 +1,7 @@
 [简体中文](https://github.com/a1ive/grub2-filemanager/blob/master/lang/zh_CN/README.md) 
 # grub2-filemanager 
 ## Preview 
-[![preview.png](https://github.com/a1ive/grub2-filemanager/raw/gh-pages/preview.png)
+![preview.png](https://github.com/a1ive/grub2-filemanager/raw/gh-pages/preview.png)
 ## Download 
 https://github.com/a1ive/grub2-filemanager/releases 
 ## Build
