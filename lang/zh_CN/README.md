@@ -23,6 +23,9 @@ https://github.com/a1ive/grub2-filemanager/releases
 	map --mem /grubfm.iso (0xff)
 	map --hook
 	chainloader (0xff)
+#### GRUB 2
+	set cfgfile="find --set-root /grubfm.iso;map --mem /grubfm.iso (0xff);map --hook;chainloader (0xff);boot"
+	linux /grub.exe --config-file=$cfgfile
 ### x86_64-efi, i386-efi 
 #### GRUB 2 
 	chainloader /grubfm.efi

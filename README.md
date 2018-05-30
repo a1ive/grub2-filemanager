@@ -1,7 +1,7 @@
 [简体中文](https://github.com/a1ive/grub2-filemanager/blob/master/lang/zh_CN/README.md) 
 # grub2-filemanager 
 ## Preview 
-[![preview.png](https://s29.postimg.org/udhuu37nr/preview.png)](https://postimg.org/image/tnz2hq743/)
+[![preview.png](https://github.com/a1ive/grub2-filemanager/raw/gh-pages/preview.png)
 ## Download 
 https://github.com/a1ive/grub2-filemanager/releases 
 ## Build
@@ -15,6 +15,9 @@ Do NOT boot grubfm.iso with memdisk!
 	map --mem /grubfm.iso (0xff)
 	map --hook
 	chainloader (0xff)
+#### GRUB 2
+	set cfgfile="find --set-root /grubfm.iso;map --mem /grubfm.iso (0xff);map --hook;chainloader (0xff);boot"
+	linux /grub.exe --config-file=$cfgfile
 ### x86_64-efi, i386-efi 
 #### GRUB 2 
 	chainloader /grubfm.efi
