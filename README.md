@@ -1,4 +1,4 @@
-[简体中文](https://github.com/a1ive/grub2-filemanager/blob/master/lang/zh_CN/README.md) 
+[简体中文](https://a1ive.github.io/grub2-filemanager/) 
 # grub2-filemanager 
 ## Preview 
 ![preview.png](https://github.com/a1ive/grub2-filemanager/raw/gh-pages/preview.png)
