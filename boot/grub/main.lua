@@ -164,6 +164,9 @@ else
 	end
 end
 -- hidden menu
+hotkey = "tab"
+command = "unset path; lua $prefix/main.lua"
+grub.add_hidden_menu (hotkey, command, "Device")
 hotkey = "s"
 command = "lua $prefix/settings.lua"
 grub.add_hidden_menu (hotkey, command, "Settings")

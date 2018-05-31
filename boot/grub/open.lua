@@ -610,3 +610,7 @@ end
 grub.exportenv ("theme", "slack/extern.txt")
 grub.clear_menu ()
 open (file, file_type, device, device_type, arch, platform)
+-- hidden menu
+hotkey = "tab"
+command = "unset path; lua $prefix/main.lua"
+grub.add_hidden_menu (hotkey, command, "Device")
