@@ -71,7 +71,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	end
 	if grub.file_exist ("(loop)/boot/grub/loopback.cfg") then
 		icon = "gnu-linux"
-		command = command .. "root=loop; export iso_path=" .. iso_path .. "; export theme=${prefix}/themes/slack/extern.txt; configfile /boot/grub/loopback.cfg"
+		command = command .. "root=loop; export iso_path=" .. iso_path .. "; export theme=${prefix}/themes/slack/theme.txt; configfile /boot/grub/loopback.cfg"
 		name = grub.gettext ("Boot ISO (Loopback)")
 		grub.add_icon_menu (icon, command, name)
 	end
@@ -255,7 +255,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	for i,cfgpath in ipairs(cfglist) do
 		if grub.file_exist (cfgpath) then
 			icon = "gnu-linux"
-			command = command .. "root=loop; theme=${prefix}/themes/slack/extern.txt; " ..
+			command = command .. "root=loop; theme=${prefix}/themes/slack/theme.txt; " ..
 			 "export linux_extra; syslinux_configfile -i " .. cfgpath
 			name = grub.gettext ("Boot ISO (ISOLINUX)")
 			grub.add_icon_menu (icon, command, name)
@@ -607,10 +607,19 @@ else
 -- (loop) (memdisk) (tar) (proc) etc.
 	device_type = "3"
 end
-grub.exportenv ("theme", "slack/extern.txt")
+grub.exportenv ("theme", "slack/f2.txt")
 grub.clear_menu ()
 open (file, file_type, device, device_type, arch, platform)
 -- hidden menu
-hotkey = "tab"
-command = "unset path; lua $prefix/main.lua"
-grub.add_hidden_menu (hotkey, command, "Device")
+hotkey = "f1"
+command = "lua $prefix/help.lua"
+grub.add_hidden_menu (hotkey, command, "Help")
+hotkey = "f3"
+command = "lua $prefix/osdetect.lua"
+grub.add_hidden_menu (hotkey, command, "Boot")
+hotkey = "f4"
+command = "lua $prefix/settings.lua"
+grub.add_hidden_menu (hotkey, command, "Settings")
+hotkey = "f5"
+command = "lua $prefix/power.lua"
+grub.add_hidden_menu (hotkey, command, "Reboot")

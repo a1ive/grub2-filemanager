@@ -50,7 +50,8 @@ else
 			end
 			grub.file_getline (data)
 		end
-		grub.add_menu ("export line_num=" .. line_num - items .."; lua $prefix/text.lua", "<- ")
+		command = "export line_num=" .. line_num - items .."; lua $prefix/text.lua"
+        grub.add_hidden_menu ("f4", command, "<- ")
 	end
 	-- getline
 	for i=1, items do
@@ -65,16 +66,17 @@ else
 		grub.add_menu ("echo;", i + line_num - 1 .. "  " .. line)
 	end
 	if (grub.file_eof(data) == false) then
-		grub.add_menu ("export line_num=" .. line_num + items .."; lua $prefix/text.lua", "-> ")
+		command = "export line_num=" .. line_num + items .. "; lua $prefix/text.lua"
+        grub.add_hidden_menu ("f5", command, "-> ")
 	end
-	hotkey = "n"
+	hotkey = "f3"
 	if (encoding == "utf8") then
 		command = "export encoding=gbk; lua $prefix/text.lua"
 	else
 		command = "export encoding=utf8; lua $prefix/text.lua"
 	end
 	grub.add_hidden_menu (hotkey, command, "Encoding")
-	hotkey = "q"
+	hotkey = "f2"
 	command = "lua $prefix/open.lua"
 	grub.add_hidden_menu (hotkey, command, "Quit")
 	data = nil

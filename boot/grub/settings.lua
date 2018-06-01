@@ -30,7 +30,7 @@ debug_flag = grub.getenv ("debug")
 if (debug_flag == nil) then
 	debug_flag = "off"
 end
-grub.exportenv ("theme", "slack/extern.txt")
+grub.exportenv ("theme", "slack/f4.txt")
 grub.clear_menu ()
 
 -- encoding
@@ -46,7 +46,7 @@ name = grub.gettext ("Encoding: ") .. string.upper (encoding)
 grub.add_icon_menu (icon, command, name)
 -- sort
 if (enable_sort == "1") then
-	icon = "check"
+	icon = "sort"
 	command = "export enable_sort=0;"
 else
 	icon = "cancel"
@@ -72,15 +72,16 @@ end
 command = command .. " lua $prefix/settings.lua"
 name = grub.gettext ("Enable debug messages")
 grub.add_icon_menu (icon, command, name)
--- fwsetup
-if platform == "efi" then
-	icon = "mem"
-	command = "fwsetup"
-	name = grub.gettext ("EFI Firmware Setup")
-	grub.add_icon_menu (icon, command, name)
-end
-
-icon = "go-previous"
+-- hidden menu
+hotkey = "f1"
+command = "lua $prefix/help.lua"
+grub.add_hidden_menu (hotkey, command, "Help")
+hotkey = "f2"
 command = "lua $prefix/main.lua"
-name = grub.gettext ("Back")
-grub.add_icon_menu (icon, command, name)
+grub.add_hidden_menu (hotkey, command, "FM")
+hotkey = "f3"
+command = "lua $prefix/osdetect.lua"
+grub.add_hidden_menu (hotkey, command, "Boot")
+hotkey = "f5"
+command = "lua $prefix/power.lua"
+grub.add_hidden_menu (hotkey, command, "Reboot")

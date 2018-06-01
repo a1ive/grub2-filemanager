@@ -154,12 +154,20 @@ end
 
 arch = grub.getenv ("grub_cpu")
 platform = grub.getenv ("grub_platform")
-grub.exportenv ("theme", "slack/extern.txt")
+grub.exportenv ("theme", "slack/f3.txt")
 grub.clear_menu ()
 
 grub.enum_device (enum_device)
-
-icon = "go-previous"
+-- hidden menu
+hotkey = "f1"
+command = "lua $prefix/help.lua"
+grub.add_hidden_menu (hotkey, command, "Help")
+hotkey = "f2"
 command = "lua $prefix/main.lua"
-name = grub.gettext ("Back")
-grub.add_icon_menu (icon, command, name)
+grub.add_hidden_menu (hotkey, command, "FM")
+hotkey = "f4"
+command = "lua $prefix/settings.lua"
+grub.add_hidden_menu (hotkey, command, "Settings")
+hotkey = "f5"
+command = "lua $prefix/power.lua"
+grub.add_hidden_menu (hotkey, command, "Reboot")

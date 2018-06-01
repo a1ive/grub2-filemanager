@@ -40,7 +40,7 @@ else
 	length = 0x10
 	items = 16
 	if offset ~= 0x00 then
-		grub.add_menu ("export offset=" .. offset - items * length .."; lua $prefix/hex.lua", "<- ")
+		grub.add_hidden_menu ("f3", "export offset=" .. offset - items * length .."; lua $prefix/hex.lua", "<- ")
 	end
 	for i=1,items do
 		if (offset > size) then
@@ -54,12 +54,12 @@ else
 		offset = offset + length
 	end
 	if offset < size then
-		grub.add_menu ("export offset=" .. offset .."; lua $prefix/hex.lua", "-> ")
+		grub.add_hidden_menu ("f4", "export offset=" .. offset .."; lua $prefix/hex.lua", "-> ")
 	else
 		grub.add_menu ("echo;", "---END---")
 	end
 	data = nil
-	hotkey = "q"
+	hotkey = "f2"
 	command = "lua $prefix/open.lua"
 	grub.add_hidden_menu (hotkey, command, "Quit")
 	return 0

@@ -122,10 +122,10 @@ path = grub.getenv ("path")
 if (path == nil) then
 	path = ""
 end
-grub.exportenv ("theme", "slack/theme.txt")
 grub.clear_menu ()
+grub.exportenv ("theme", "slack/f2.txt")
 if (path == "") then	
-	grub.enum_device (enum_device)
+    grub.enum_device (enum_device)
 else
 	i, j = 0, 0
 	f_table, d_table = {}, {}
@@ -164,21 +164,15 @@ else
 	end
 end
 -- hidden menu
-hotkey = "tab"
-command = "unset path; lua $prefix/main.lua"
-grub.add_hidden_menu (hotkey, command, "Device")
-hotkey = "s"
-command = "lua $prefix/settings.lua"
-grub.add_hidden_menu (hotkey, command, "Settings")
-hotkey = "l"
-command = "lua"
-grub.add_hidden_menu (hotkey, command, "Lua")
-hotkey = "b"
+hotkey = "f1"
+command = "lua $prefix/help.lua"
+grub.add_hidden_menu (hotkey, command, "Help")
+hotkey = "f3"
 command = "lua $prefix/osdetect.lua"
 grub.add_hidden_menu (hotkey, command, "Boot")
-hotkey = "r"
-command = "reboot"
+hotkey = "f4"
+command = "lua $prefix/settings.lua"
+grub.add_hidden_menu (hotkey, command, "Settings")
+hotkey = "f5"
+command = "lua $prefix/power.lua"
 grub.add_hidden_menu (hotkey, command, "Reboot")
-hotkey = "h"
-command = "halt"
-grub.add_hidden_menu (hotkey, command, "Halt")
