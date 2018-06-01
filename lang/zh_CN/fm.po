@@ -247,3 +247,24 @@ msgstr "关机"
 
 msgid "File: "
 msgstr "文件: "
+
+msgid "Hotkeys"
+msgstr "快捷键"
+
+msgid "F1 - Help"
+msgstr "F1 - 帮助"
+
+msgid "F2 - File Manager"
+msgstr "F2 - 文件管理器"
+
+msgid "F3 - Boot"
+msgstr "F3 - 启动菜单"
+
+msgid "F4 - Settings"
+msgstr "F4 - 设置"
+
+msgid "F5 - Power Off"
+msgstr "F5 - 关机"
+
+msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
+msgstr "LCtrl + LAlt + F12 - 屏幕截图 (EFI)"

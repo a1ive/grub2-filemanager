@@ -17,13 +17,14 @@
 
 grub.exportenv ("theme", "slack/f1.txt")
 grub.clear_menu ()
-grub.add_menu ( "echo", "Hotkeys")
-grub.add_menu ( "echo", "F1 - Help")
-grub.add_menu ( "echo", "F2 - File Manager")
-grub.add_menu ( "echo", "F3 - Net Boot")
-grub.add_menu ( "echo", "F4 - Boot")
-grub.add_menu ( "echo", "F5 - Settings")
-grub.add_menu ( "echo", "F6 - Power Off")
+
+grub.add_menu ( "echo", grub.gettext("Hotkeys"))
+grub.add_menu ( "echo", grub.gettext("F1 - Help"))
+grub.add_menu ( "echo", grub.gettext("F2 - File Manager"))
+grub.add_menu ( "echo", grub.gettext("F3 - Boot"))
+grub.add_menu ( "echo", grub.gettext("F4 - Settings"))
+grub.add_menu ( "echo", grub.gettext("F5 - Power Off"))
+grub.add_menu ( "echo", grub.gettext("LCtrl + LAlt + F12 - Take Screenshots (EFI)"))
 
 -- hidden menu
 hotkey = "f2"

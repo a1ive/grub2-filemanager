@@ -18,7 +18,6 @@ terminal-box: "term_bkg_*.png"
 	item_height = 20
 	item_padding = 5
 	item_spacing = 5
-	selected_item_pixmap_style= "select_bkg_*.png"
 	menu_pixmap_style = "menu_bkg_*.png"
 	scrollbar = true
 	scrollbar_width = 6
