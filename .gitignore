@@ -1,4 +1,5 @@
 grubfm*.efi
+grubfm*.efi.signed
 grubfm*.iso
 build
 sources/grub*
@@ -7,9 +8,9 @@ NTBOOT.NT6
 NTBOOT.PE1
 wimboot
 oscdimg.exe
-*.der
-*.pem
-*.rsa
+*.crt
+*.cer
+*.key
 grub/*/*.image
 grub/*/*.module
 grub/*/*.exec

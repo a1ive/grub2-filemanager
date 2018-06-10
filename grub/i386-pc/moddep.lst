@@ -155,7 +155,7 @@ multiboot: net linux vbe video boot relocator mmap lsapm
 gcry_crc: crypto
 png: bufio bitmap
 jpeg: bufio bitmap
-dd: disk
+dd: extcmd
 macbless: disk
 div_test: functional_test div
 regexp: extcmd normal

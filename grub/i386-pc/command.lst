@@ -6,6 +6,7 @@
 *cpuid: cpuid
 *crc: hashsum
 *cryptomount: cryptodisk
+*dd: dd
 *drivemap: drivemap
 *echo: echo
 *extract_syslinux_entries_configfile: syslinuxcfg
@@ -92,7 +93,6 @@ coreboot_boottime: cbtime
 crc32: crc
 cutmem: mmap
 date: date
-dd: dd
 distrust: verify
 dump: minicmd
 efiemu_loadcore: efiemu
