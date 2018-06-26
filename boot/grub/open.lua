@@ -204,9 +204,9 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			if string.match (loop_file, "^/boot/sabayon") then
 				linux_extra = "isoboot=" .. iso_path
 				return "sabayon", "sabayon", "Sabayon", linux_extra
-			elseif string.match (loop_file, "^/boot/core%.gz") then
-				linux_extra = "iso=UUID=" .. dev_uuid .. "/" .. iso_path
-				return "tinycore", "gnu-linux", "TinyCore", linux_extra
+			elseif string.match (loop_file, "^/boot/core%.gz") or string.match (loop_file, "^/boot/corepure64%.gz") then
+				linux_extra = "iso=UUID=" .. dev_uuid .. iso_path
+				return "gnu-linux", "tinycore", "TinyCore", linux_extra
 			end
 		end
 		-- check /images/pxeboot/vmlinuz
