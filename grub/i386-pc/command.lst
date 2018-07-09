@@ -29,6 +29,7 @@
 *kfreebsd: bsd
 *knetbsd: bsd
 *kopenbsd: bsd
+*korbis: bsd
 *list_env: loadenv
 *load_env: loadenv
 *loopback: loopback
@@ -123,6 +124,7 @@ kfreebsd_module_elf: bsd
 knetbsd_module: bsd
 knetbsd_module_elf: bsd
 kopenbsd_ramdisk: bsd
+korbis_loadenv: bsd
 legacy_check_password: legacycfg
 legacy_configfile: legacycfg
 legacy_initrd: legacycfg
@@ -200,6 +202,7 @@ vbetest: videotest
 videoinfo: videoinfo
 videotest: videotest
 write_byte: memrw
+write_bytes: memrw
 write_dword: memrw
 write_word: memrw
 xnu_devprop_load: xnu
