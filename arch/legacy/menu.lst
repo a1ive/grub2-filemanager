@@ -1,0 +1,5 @@
+find --set-root --devices=c /fmkern.gz
+map --mem /fmkern.gz (0xff)
+map --hook
+chainloader (0xff)
+boot
