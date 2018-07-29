@@ -35,59 +35,59 @@ goto build
 
 :build
 echo i386-efi
-copy efi32\CrScreenshotDxe.efi build\boot\grub
+copy arch\ia32\CrScreenshotDxe.efi build\boot\grub
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc > ./memdisk.cpio
 cd ..
 del build\boot\grub\CrScreenshotDxe.efi
-set /p modules= < efi32\builtin.lst
-bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\i386-efi -p (memdisk)/boot/grub -c efi32\config.cfg -o grubfmia32.efi -O i386-efi %modules%
+set /p modules= < arch\ia32\builtin.lst
+bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\i386-efi -p (memdisk)/boot/grub -c arch\ia32\config.cfg -o grubfmia32.efi -O i386-efi %modules%
 
 echo x86_64-efi
-copy efi64\CrScreenshotDxe.efi build\boot\grub
+copy arch\x64\CrScreenshotDxe.efi build\boot\grub
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc > ./memdisk.cpio
 cd ..
 del build\boot\grub\CrScreenshotDxe.efi
-set /p modules= < efi64\builtin.lst
-bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\x86_64-efi -p (memdisk)/boot/grub -c efi64\config.cfg -o grubfmx64.efi -O x86_64-efi %modules%
+set /p modules= < arch\x64\builtin.lst
+bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\x86_64-efi -p (memdisk)/boot/grub -c arch\x64\config.cfg -o grubfmx64.efi -O x86_64-efi %modules%
 del build\memdisk.cpio
 
 echo i386-pc
-set /p builtin= < legacy\builtin.lst
+set /p builtin= < arch\legacy\builtin.lst
 md build\boot\grub\i386-pc
-set /p modlist= < legacy\insmod.lst
+set /p modlist= < arch\legacy\insmod.lst
 :CPMOD
 for /f "tokens=1,*" %%a in ("%modlist%") do (
 	copy grub\i386-pc\%%a.mod build\boot\grub\i386-pc\
 	set modlist=%%b
 	goto CPMOD
 )
-copy legacy\insmod.lst build\boot\grub\
-copy legacy\grub.exe build\boot\grub\
-copy legacy\memdisk build\boot\grub\
-copy legacy\ipxe.lkrn build\boot\grub\
+copy arch\legacy\insmod.lst build\boot\grub\
+copy arch\legacy\grub.exe build\boot\grub\
+copy arch\legacy\memdisk build\boot\grub\
+copy arch\legacy\ipxe.lkrn build\boot\grub\
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc | %~dp0\bin\gzip.exe -9 > ./fm.loop
 cd ..
 rd /s /q build\boot
-bin\grub-mkimage.exe -d grub\i386-pc -p (memdisk)/boot/grub -c legacy\config.cfg -o build\core.img -O i386-pc %builtin%
+bin\grub-mkimage.exe -d grub\i386-pc -p (memdisk)/boot/grub -c arch\legacy\config.cfg -o build\core.img -O i386-pc %builtin%
 copy /B grub\i386-pc\cdboot.img + build\core.img build\fmldr
 del /q build\core.img
-copy legacy\MAP build\
-if exist legacy\ntboot\NTBOOT.MOD\NTBOOT.NT6 (
+copy arch\legacy\MAP build\
+if exist arch\legacy\ntboot\NTBOOT.MOD\NTBOOT.NT6 (
 	goto NTBOOT
 	)
-if exist legacy\ntboot\NTBOOT.MOD\NTBOOT.PE1 (
+if exist arch\legacy\ntboot\NTBOOT.MOD\NTBOOT.PE1 (
 	goto NTBOOT
 	)
 goto NONTBOOT
 :NTBOOT 
-xcopy /I /E legacy\ntboot build\
+xcopy /I /E arch\legacy\ntboot build\
 echo WARNING: Non-GPL module^(s^) enabled!
 :NONTBOOT
-if exist legacy\wimboot (
-	copy legacy\wimboot build\
+if exist arch\legacy\wimboot (
+	copy arch\legacy\wimboot build\
 	)
 bin\mkisofs.exe -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rd /s /q build

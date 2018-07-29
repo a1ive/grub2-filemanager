@@ -71,52 +71,52 @@ case "$choice" in
 esac
 
 echo "x86_64-efi"
-cp efi64/CrScreenshotDxe.efi build/boot/grub
+cp arch/x64/CrScreenshotDxe.efi build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
 rm build/boot/grub/CrScreenshotDxe.efi
-modules=$(cat efi64/builtin.lst)
-$mkimage -m ./build/memdisk.cpio -d ./grub/x86_64-efi -p "(memdisk)/boot/grub" -c efi64/config.cfg -o grubfmx64.efi -O x86_64-efi $modules
+modules=$(cat arch/x64/builtin.lst)
+$mkimage -m ./build/memdisk.cpio -d ./grub/x86_64-efi -p "(memdisk)/boot/grub" -c arch/x64/config.cfg -o grubfmx64.efi -O x86_64-efi $modules
 
 echo "i386-efi"
-cp efi32/CrScreenshotDxe.efi build/boot/grub
+cp arch/ia32/CrScreenshotDxe.efi build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
 rm build/boot/grub/CrScreenshotDxe.efi
-modules=$(cat efi32/builtin.lst)
-$mkimage -m ./build/memdisk.cpio -d ./grub/i386-efi -p "(memdisk)/boot/grub" -c efi32/config.cfg -o grubfmia32.efi -O i386-efi $modules
+modules=$(cat arch/ia32/builtin.lst)
+$mkimage -m ./build/memdisk.cpio -d ./grub/i386-efi -p "(memdisk)/boot/grub" -c arch/ia32/config.cfg -o grubfmia32.efi -O i386-efi $modules
 rm build/memdisk.cpio
 
 echo "i386-pc"
-builtin=$(cat legacy/builtin.lst) 
+builtin=$(cat arch/legacy/builtin.lst) 
 mkdir build/boot/grub/i386-pc
-for modules in $(cat legacy/insmod.lst)
+for modules in $(cat arch/legacy/insmod.lst)
 do
 	echo "copying ${modules}.mod"
 	cp grub/i386-pc/${modules}.mod build/boot/grub/i386-pc/
 done
-cp legacy/insmod.lst build/boot/grub/
-cp legacy/grub.exe build/boot/grub/
-cp legacy/memdisk build/boot/grub/
-cp legacy/ipxe.lkrn build/boot/grub/
+cp arch/legacy/insmod.lst build/boot/grub/
+cp arch/legacy/grub.exe build/boot/grub/
+cp arch/legacy/memdisk build/boot/grub/
+cp arch/legacy/ipxe.lkrn build/boot/grub/
 cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..
 rm -r build/boot
-$mkimage -d ./grub/i386-pc -p "(memdisk)/boot/grub" -c ./legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
+$mkimage -d ./grub/i386-pc -p "(memdisk)/boot/grub" -c arch/legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
-cp legacy/MAP build/
+cp arch/legacy/MAP build/
 if [ -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.NT6" -o -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.PE1" ]
 then
-	cp -r legacy/ntboot/* build/
+	cp -r arch/legacy/ntboot/* build/
 	echo "WARNING: Non-GPL module(s) enabled!"
 fi
 if [ -e "legacy/wimboot" ]
 then
-	cp legacy/wimboot build/
+	cp arch/legacy/wimboot build/
 fi
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rm  -r build
