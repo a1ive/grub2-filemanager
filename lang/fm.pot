@@ -22,7 +22,10 @@ msgstr ""
 msgid "Open As Lua Script"
 msgstr ""
 
-msgid "Open As EFI"
+msgid "Open As EFI Application"
+msgstr ""
+
+msgid "Open As EFI Shell Script"
 msgstr ""
 
 msgid "Open As Image"

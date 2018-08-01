@@ -42,6 +42,11 @@ function get_size (file)
 	return (str)
 end
 
+function towinpath (file)
+    win_path = string.match (file, "^%([%w,]+%)(.*)$")
+    win_path = string.gsub (win_path, "/", "\\")
+end
+
 function tog4dpath (file, device, device_type)
 	if (device_type == "1") then
 		devnum = string.match (device, "^hd%d+,%a*(%d+)$")
@@ -449,8 +454,17 @@ function open (file, file_type, device, device_type, arch, platform)
 		if platform == "efi" then
 			-- efi
 			icon = "uefi"
-			command = "chainloader " .. file
-			name = grub.gettext("Open As EFI")
+			command = "set lang=en_US; terminal_output console; chainloader " .. file
+			name = grub.gettext("Open As EFI Application")
+			grub.add_icon_menu (icon, command, name)
+		end
+    elseif file_type == "nsh" then
+		if platform == "efi" then
+			-- nsh
+			icon = "cfg"
+            towinpath (file)
+			command = "set lang=en_US; terminal_output console; chainloader $prefix/Shell.efi -nointerrupt \"" .. win_path .. "\""
+			name = grub.gettext("Open As EFI Shell Script")
 			grub.add_icon_menu (icon, command, name)
 		end
 	elseif file_type == "tar" then

@@ -81,6 +81,8 @@ function check_file (name, name_extn)
 		file_type, file_icon = "mod", "mod"
 	elseif name_extn == "mbr" then
 		file_type, file_icon = "mbr", "bin"
+    elseif name_extn == "nsh" then
+		file_type, file_icon = "nsh", "cfg"
 	elseif name_extn == "sh" or name_extn == "bat" then
 		file_icon = "cfg"
 	elseif name_extn == "lst" then

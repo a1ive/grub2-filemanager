@@ -41,9 +41,11 @@ msgid "Open As Lua Script"
 msgstr "作為Lua指令碼載入"
 
 
-msgid "Open As EFI"
+msgid "Open As EFI Application"
 msgstr "作為EFI可執行檔案運行"
 
+msgid "Open As EFI Shell Script"
+msgstr "作為EFI Shell指令碼開啟"
 
 msgid "Open As Image"
 msgstr "作為影象開啟"

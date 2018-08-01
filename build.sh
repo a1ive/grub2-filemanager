@@ -72,19 +72,21 @@ esac
 
 echo "x86_64-efi"
 cp arch/x64/CrScreenshotDxe.efi build/boot/grub
+cp arch/x64/Shell.efi build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
-rm build/boot/grub/CrScreenshotDxe.efi
+rm build/boot/grub/*.efi
 modules=$(cat arch/x64/builtin.lst)
 $mkimage -m ./build/memdisk.cpio -d ./grub/x86_64-efi -p "(memdisk)/boot/grub" -c arch/x64/config.cfg -o grubfmx64.efi -O x86_64-efi $modules
 
 echo "i386-efi"
 cp arch/ia32/CrScreenshotDxe.efi build/boot/grub
+cp arch/x64/Shell.efi build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
-rm build/boot/grub/CrScreenshotDxe.efi
+rm build/boot/grub/*.efi
 modules=$(cat arch/ia32/builtin.lst)
 $mkimage -m ./build/memdisk.cpio -d ./grub/i386-efi -p "(memdisk)/boot/grub" -c arch/ia32/config.cfg -o grubfmia32.efi -O i386-efi $modules
 rm build/memdisk.cpio
