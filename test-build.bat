@@ -9,10 +9,10 @@ bin\gzip.exe -9 grubfm.iso
 move grubfm.iso.gz build\fmkern.gz
 cd /d %~dp0
 set intdir=%~dp0\build
-set BIOS_BIN=%~dp0\legacy\grldr_cd.bin
-set EFI_BIN=%~dp0\efiboot.img
+set BIOS_BIN=%~dp0\arch\legacy\grldr_cd.bin
+rem set EFI_BIN=%~dp0\efiboot.img
 set output=%~dp0\grubfm.iso
-set output_efi=%~dp0\grubfm_all.iso
+rem set output_efi=%~dp0\grubfm_all.iso
 set CD_label=grubfm
 bin\oscdimg.exe -d -h -m -o -n -l%CD_label% -bootdata:1#p00,e,b%BIOS_BIN% %intdir% %output%
 rem bin\mformat.exe -C -h 4 -t 90 -s 36 -i efiboot.img
