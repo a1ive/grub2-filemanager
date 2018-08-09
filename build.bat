@@ -91,5 +91,8 @@ echo WARNING: Non-GPL module^(s^) enabled!
 if exist arch\legacy\wimboot (
 	copy arch\legacy\wimboot build\
 	)
+if exist samples\test.iso (
+	copy samples\test.iso build\
+	)
 bin\mkisofs.exe -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rd /s /q build
