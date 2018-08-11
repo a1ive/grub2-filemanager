@@ -19,11 +19,17 @@ grub.exportenv ("theme", "slack/f5.txt")
 grub.clear_menu ()
 grub.add_icon_menu ( "reboot", "reboot", grub.gettext ("Reboot"))
 grub.add_icon_menu ( "halt", "halt", grub.gettext ("Halt"))
--- fwsetup
+
 if platform == "efi" then
+    -- fwsetup
 	icon = "mem"
 	command = "fwsetup"
 	name = grub.gettext ("EFI Firmware Setup")
+	grub.add_icon_menu (icon, command, name)
+    -- efi shell
+    icon = "ms-dos"
+	command = "set lang=en_US; terminal_output=console; chainloader $prefix/Shell.efi"
+	name = grub.gettext ("EFI Shell")
 	grub.add_icon_menu (icon, command, name)
 end
 -- hidden menu
