@@ -1,0 +1,71 @@
+# Global Property
+title-text: ""
+title-color: "#000000"
+message-color: "#333333"
+message-bg-color: "#f2f2f2"
+desktop-color: "#000000"
+desktop-image: "background.png"
+terminal-box: "term_bkg_*.png"
+
+# Show the boot menu
++ boot_menu {
+    left = 30%
+    width = 40%
+    top = 30%
+    height = 40%
+    item_color = "#f5f5f5"
+    selected_item_color = "#f5f5f5"
+    item_height = 38
+    item_padding = 15
+    item_spacing = 5
+    icon_width = 32
+    icon_height = 32
+    item_icon_space = 20
+    selected_item_pixmap_style= "select_bkg_*.png"
+    menu_pixmap_style = "menu_bkg_*.png"
+    scrollbar = true
+    scrollbar_width = 6
+    scrollbar_thumb = "sb_thumb_*.png"
+    scrollbar_frame = "sb_frame_*.png"
+}
+
++ hbox {
+    top = 100%-55
+    left = 37%
+    width = 27%
+    + vbox {
+        + label {text = "[F1]" color = "#ffffff"}
+        + image {file = "dock/help.png"}
+    }
+    + image {file = "dock/space.png"}
+    + vbox {
+        + label {text = "[F2]" color = "#ffffff"}
+        + image {file = "dock/fm.png"}
+    }
+    + image {file = "dock/space.png"}
+    + vbox {
+        + label {text = "[F3]" color = "#ffffff"}
+        + image {file = "dock/boot.png"}
+    }
+    + image {file = "dock/space.png"}
+    + vbox {
+        + label {text = "[F4]" color = "#ffffff"}
+        + image {file = "dock/settings.png"}
+    }
+    + image {file = "dock/space.png"}
+    + vbox {
+        + label {text = "[F5]" color = "#ffffff"}
+        + image {file = "dock/console.png"}
+    }
+    + image {file = "dock/space.png"}
+    + vbox {
+        + label {text = "[F6]" color = "#ffffff"}
+        + image {file = "dock/logout.png"}
+    }
+}
+
++ image {
+    top = 100%-7
+    left = 37%+240
+    file = "dock/select.png"
+}

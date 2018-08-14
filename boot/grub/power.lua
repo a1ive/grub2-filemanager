@@ -32,6 +32,11 @@ if platform == "efi" then
 	name = grub.gettext ("EFI Shell")
 	grub.add_icon_menu (icon, command, name)
 end
+-- grub cmdline
+icon = "ms-dos"
+command = "console"
+name = grub.gettext ("GRUB Console")
+grub.add_icon_menu (icon, command, name)
 -- hidden menu
 hotkey = "f1"
 command = "lua $prefix/help.lua"
