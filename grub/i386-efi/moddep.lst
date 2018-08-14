@@ -95,6 +95,7 @@ bufio:
 usbserial_ftdi: serial usb usbserial_common
 legacy_password_test: functional_test legacycfg
 lua: btrfs font setjmp normal video gfxmenu
+console: normal
 cpuid: extcmd
 hdparm: extcmd hexdump
 bfs: fshelp

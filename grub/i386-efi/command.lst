@@ -82,6 +82,7 @@ chainloader: chain
 clear: normal
 cmp: cmp
 configfile: configfile
+console: console
 continue: normal
 coreboot_boottime: cbtime
 crc32: crc

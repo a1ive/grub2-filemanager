@@ -88,6 +88,7 @@ cmosset: cmostest
 cmostest: cmostest
 cmp: cmp
 configfile: configfile
+console: console
 continue: normal
 coreboot_boottime: cbtime
 crc32: crc
