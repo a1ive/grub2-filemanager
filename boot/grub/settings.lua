@@ -30,6 +30,10 @@ debug_flag = grub.getenv ("debug")
 if (debug_flag == nil) then
 	debug_flag = "off"
 end
+esc_flag = grub.getenv ("grub_disable_esc")
+if (esc_flag == nil) then
+	esc_flag = "0"
+end
 grub.exportenv ("theme", "slack/f4.txt")
 grub.clear_menu ()
 
@@ -61,6 +65,17 @@ command = "lua $prefix/screen.lua"
 name = grub.gettext ("Resolution (R): ") .. gfxmode
 grub.add_icon_menu (icon, command, name)
 grub.add_hidden_menu ("r", command, "gfxmode")
+-- enable_esc
+if (esc_flag == "1") then
+	icon = "cancel"
+	command = "export grub_disable_esc=0;"
+else
+	icon = "check"
+	command = "export grub_disable_esc=1;"
+end
+command = command .. " lua $prefix/settings.lua"
+name = grub.gettext ("Enable ESC (not recommended)")
+grub.add_icon_menu (icon, command, name)
 -- debug
 if (debug_flag == "off") then
 	icon = "cancel"

@@ -183,12 +183,20 @@ msgid "Resolution (R): "
 msgstr "分辨率设置(R): "
 
 
+msgid "Enable ESC (not recommended)"
+msgstr "启用ESC (不推荐)"
+
+
 msgid "Enable debug messages"
 msgstr "显示调试信息"
 
 
 msgid "EFI Firmware Setup"
 msgstr "EFI固件设置"
+
+
+msgid "GRUB Console"
+msgstr "GRUB 命令行"
 
 
 msgid "Load External Menu: "
