@@ -233,6 +233,11 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			linux_extra = "(loop)" .. iso_path
 			return "freebsd", "freebsd", "FreeBSD", linux_extra
 		end
+        -- check helenos
+		if grub.file_exist ("(loop)/boot/kernel.bin") and grub.file_exist ("(loop)/boot/ns") then
+			linux_extra = "(loop)" .. iso_path
+			return "helenos", "helenos", "HelenOS", linux_extra
+		end
 		-- check /boot/x86_64/loader/linux /boot/i386/loader/linux
 		if grub.file_exist ("(loop)/boot/x86_64/loader/linux") or grub.file_exist ("(loop)/boot/i386/loader/linux") or grub.file_exist ("(loop)/boot/ix86/loader/linux") then
 			linux_extra = "isofrom_system=" .. iso_path .. " isofrom_device=/dev/disk/by-uuid/" ..dev_uuid
