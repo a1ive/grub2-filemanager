@@ -269,6 +269,7 @@ echo: extcmd
 lsefi:
 gcry_serpent: crypto
 gcry_md4: crypto
+setup_var:
 gcry_md5: crypto
 part_msdos:
 gcry_camellia: crypto
