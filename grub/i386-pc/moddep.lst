@@ -237,7 +237,7 @@ diskfilter:
 testload:
 part_apple:
 hexdump: extcmd
-date: datetime normal
+date: extcmd datetime normal
 pbkdf2: crypto
 gcry_sha256: crypto
 raiddump: disk
