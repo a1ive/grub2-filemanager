@@ -1,4 +1,3 @@
-export icon="debian";
 if test -f (loop)/live/vmlinuz; then
 	export vmlinuz_img="(loop)/live/vmlinuz";
 else
@@ -11,6 +10,8 @@ else
 fi;
 if [ "${lang}" = "zh_CN" ]; then
     export debian_locale="locales=zh_CN.UTF-8";
+elif [ "${lang}" = "zh_TW" ]; then
+    export debian_locale="locales=zh_TW.UTF-8";
 else
     export debian_locale="";
 fi;
