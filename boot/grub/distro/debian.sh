@@ -6,7 +6,7 @@ fi;
 if test -f (loop)/live/initrd.img; then
 	export initrd_img="(loop)/live/initrd.img";
 else
-	export initrd_img="(loop)/live/initrd.*";
+	export initrd_img="(loop)/live/initrd*";
 fi;
 if [ "${lang}" = "zh_CN" ]; then
     export debian_locale="locales=zh_CN.UTF-8";

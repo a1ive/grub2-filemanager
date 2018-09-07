@@ -13,5 +13,8 @@ if test -f (loop)/arch/boot/vmlinuz* -a -f (loop)/arch/boot/archiso.img; then
 	set initrd_img="(loop)/arch/boot/archiso.img";
 	set kcmdline="archisobasedir=arch earlymodules=loop modules-load=loop";
 fi;
+if test -f (loop)/arch/boot/intel_ucode.img; then
+    set initrd_img="(loop)/arch/boot/intel_ucode.img ${initrd_img}"
+fi;
 linux $vmlinuz_img $kcmdline $linux_extra;
 initrd $initrd_img;
