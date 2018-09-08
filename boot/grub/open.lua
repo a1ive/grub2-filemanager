@@ -76,7 +76,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	end
 	if grub.file_exist ("(loop)/boot/grub/loopback.cfg") then
 		icon = "gnu-linux"
-		command = command .. "root=loop; export iso_path=" .. iso_path .. "; export theme=${prefix}/themes/slack/theme.txt; configfile /boot/grub/loopback.cfg"
+		command = command .. "root=loop; export iso_path=" .. iso_path .. "; export rootuuid=" .. dev_uuid .. "; configfile /boot/grub/loopback.cfg"
 		name = grub.gettext ("Boot ISO (Loopback)")
 		grub.add_icon_menu (icon, command, name)
 	end
