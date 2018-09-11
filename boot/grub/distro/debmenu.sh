@@ -8,6 +8,11 @@ menuentry $"Devuan Live" --class devuan{
 	linux $vmlinuz_img $kcmdline $debian_union $debian_locale $linux_extra;
 	initrd $initrd_img;
 }
+menuentry $"Elive Live" --class elive{
+	set kcmdline="boot=live config username=eliveuser components union=aufs loglevel=0 quiet splash modprobe.blacklist=nouveau,radeonhd,radeon,vmwgfx";
+	linux $vmlinuz_img $kcmdline $debian_locale $linux_extra;
+	initrd $initrd_img;
+}
 menuentry $"Tails Live" --class tails{
 	set kcmdline="boot=live config live-media=removable nopersistence noprompt timezone=Etc/UTC block.events_dfl_poll_msecs=1000 splash noautologin module=Tails slab_nomerge slub_debug=FZP mce=0 vsyscall=none page_poison=1 union=aufs";
 	linux $vmlinuz_img $kcmdline $debian_locale $linux_extra;
