@@ -20,11 +20,9 @@ function enum_device (device, fs, uuid, label)
 	if (device == "memdisk" or device == "proc") then
 		return 0
 	end
-	icon = "img"
 	if (fs == "iso9660" or fs == "udf") then
 		icon = "iso"
-	end
-	if (string.match (device, "^hd") ~= nil) then
+	else
 		icon = "hdd"
 	end
 	title = "(" .. device .. ") [" .. fs .. "] "

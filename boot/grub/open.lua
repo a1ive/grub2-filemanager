@@ -145,6 +145,9 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			elseif string.match (loop_file, "^/livecd%.sqfs") then
 				linux_extra = "root=UUID=" .. dev_uuid .. " bootfromiso=" .. iso_path
 				return "pclinuxos", "pclinuxos", "PCLinuxOS", linux_extra
+            elseif string.match (loop_file, "^/livecd%.squashfs") then
+				linux_extra = "isoboot=" .. iso_path .. " root=live:LABEL=" .. iso_label .. " iso-scan/filename=" .. iso_path
+				return "gnu-linux", "calculate", "Calculate Linux", linux_extra
 			elseif string.match (loop_file, "^/system%.sfs") then
 				linux_extra = "iso-scan/filename=" .. iso_path
 				return "android", "android", "Android-x86", linux_extra
