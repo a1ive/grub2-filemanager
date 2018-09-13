@@ -4,6 +4,10 @@ set initrd_img="(loop)/isolinux/initrd*";
 if test -f (loop)/boot/vmlinuz -a -f (loop)/boot/initrd; then
 	set vmlinuz_img=(loop)/boot/vmlinuz;
 	set initrd_img=(loop)/boot/initrd;
+elif test -f (loop)/boot/kernel -a -f (loop)/boot/initrd.*; then
+	#Solus
+    set vmlinuz_img=(loop)/boot/kernel;
+	set initrd_img=(loop)/boot/initrd.*;
 elif test -f (loop)/boot/*/loader/linux -a -f (loop)/boot/*/loader/initrd; then
 	# OpenSUSE Tumbleweed Live
 	set vmlinuz_img=(loop)/boot/*/loader/linux;
