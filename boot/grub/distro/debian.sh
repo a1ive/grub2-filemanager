@@ -17,4 +17,5 @@ else
 fi;
 export debian_user="username=user";
 export debian_union="";
+export debian_toram="";
 configfile ${prefix}/distro/debmenu.sh;
