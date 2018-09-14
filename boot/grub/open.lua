@@ -134,6 +134,9 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			elseif string.match (loop_file, "^/kdeos/") then
 				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " kdeisolabel=" .. iso_label
 				return "kaos", "kaos", "KaOS", linux_extra
+            elseif string.match (loop_file, "^/siduction/") then
+				linux_extra = "fromiso=" .. iso_path
+				return "siduction", "siduction", "siduction", linux_extra
 			elseif string.match (loop_file, "^/sysrcd%.dat") then
 				linux_extra = "isoloop=" .. iso_path
 				return "gentoo", "sysrcd", "System Rescue CD", linux_extra
