@@ -23,7 +23,7 @@ menuentry $"Tails Live" --class tails{
 	linux $vmlinuz_img $kcmdline $debian_locale $linux_extra;
 	initrd $initrd_img;
 }
-if [ "${debian_user}" == "username=root" ]; then
+if [ "${debian_user}" = "username=root" ]; then
 	menuentry "[+] Root Login"{
 		export debian_user="username=user";
 		configfile ${prefix}/distro/debmenu.sh;
@@ -34,7 +34,7 @@ else
 		configfile ${prefix}/distro/debmenu.sh
 	}
 fi;
-if [ "${debian_union}" == "union=overlay" ]; then
+if [ "${debian_union}" = "union=overlay" ]; then
 	menuentry "[+] Overlay (Clonezilla/GParted/Deepin)"{
 		export debian_union="";
 		configfile ${prefix}/distro/debmenu.sh;
@@ -45,12 +45,12 @@ else
 		configfile ${prefix}/distro/debmenu.sh
 	}
 fi;
-if [ "${debian_locale}" == "locales=zh_CN.UTF-8" ]; then
+if [ "${debian_locale}" = "locales=zh_CN.UTF-8" ]; then
 	menuentry "[+] Chinese locale"{
 		export debian_locale="";
 		configfile ${prefix}/distro/debmenu.sh;
 	}
-elif [ "${debian_locale}" == "locales=zh_TW.UTF-8" ]; then
+elif [ "${debian_locale}" = "locales=zh_TW.UTF-8" ]; then
 	menuentry "[+] Chinese locale"{
 		export debian_locale="";
 		configfile ${prefix}/distro/debmenu.sh;
@@ -65,7 +65,7 @@ else
 		configfile ${prefix}/distro/debmenu.sh
 	}
 fi;
-if [ "${debian_toram}" == "toram" ]; then
+if [ "${debian_toram}" = "toram" ]; then
 	menuentry "[+] Copy to RAM"{
 		export debian_toram="";
 		configfile ${prefix}/distro/debmenu.sh;
