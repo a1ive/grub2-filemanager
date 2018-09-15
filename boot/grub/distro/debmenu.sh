@@ -13,8 +13,13 @@ menuentry $"Elive Live" --class elive{
 	linux $vmlinuz_img $kcmdline $debian_locale $linux_extra;
 	initrd $initrd_img;
 }
-menuentry $"ExTiX Live" --class gnu-linux{
+menuentry $"ExTiX Live" --class extix{
 	set kcmdline="boot=live username=live";
+	linux $vmlinuz_img $kcmdline $debian_union $debian_locale $linux_extra;
+	initrd $initrd_img;
+}
+menuentry $"Q4OS Live" --class q4os{
+	set kcmdline="boot=live components username=adminq user-fullname=Admin_Q4OS loglevel=3 systemd.log_color=0 systemd.show_status=1";
 	linux $vmlinuz_img $kcmdline $debian_union $debian_locale $linux_extra;
 	initrd $initrd_img;
 }
