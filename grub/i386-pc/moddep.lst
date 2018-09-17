@@ -170,6 +170,7 @@ ufs1_be:
 truecrypt: video boot relocator mmap gzio
 getkey: extcmd
 archelp:
+fdlibm:
 raid6rec: diskfilter
 ntldr: chain video boot relocator
 http: net
