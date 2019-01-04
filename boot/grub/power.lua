@@ -34,7 +34,7 @@ if platform == "efi" then
 end
 -- grub cmdline
 icon = "ms-dos"
-command = "console"
+command = "commandline"
 name = grub.gettext ("GRUB Console")
 grub.add_icon_menu (icon, command, name)
 -- hidden menu

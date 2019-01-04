@@ -20,10 +20,11 @@ videotest_checksum: font functional_test video_fb
 password_pbkdf2: crypto gcry_sha512 pbkdf2 normal
 gcry_seed: crypto
 pcidump: extcmd
-bsd: elf serial crypto gcry_md5 extcmd video boot aout cpuid relocator mmap
+bsd: elf serial crypto gcry_md5 verifiers extcmd video boot aout cpuid relocator mmap
 sfs: fshelp
 reiserfs: fshelp
 part_sunpc:
+zstd:
 gfxmenu: video_colors trig bitmap_scale gfxterm font normal video bitmap
 backtrace:
 jfs:
@@ -37,19 +38,16 @@ shift_test: functional_test
 ohci: cs5536 usb boot
 afs: fshelp
 spkmodem: terminfo
-search_part_label: gpt
 usb_keyboard: usb keylayouts
 xzio: crypto
 syslinuxcfg: extcmd normal
 search_fs_file:
 usbms: scsi usb
 test_blockarg: extcmd normal
-getenv: extcmd
 true:
 affs: fshelp
 iso9660: fshelp
 exfat: fshelp
-smbios: extcmd
 setjmp_test: functional_test setjmp
 gfxterm: font video
 efinet: net
@@ -57,10 +55,8 @@ disk:
 appleldr: boot
 xfs: fshelp
 testspeed: extcmd normal
-lynxfs: fshelp
 cpio_be: archelp
 functional_test: btrfs extcmd video video_fb
-gptrepair: gpt
 bswap_test: functional_test
 sleep: extcmd normal
 memdisk:
@@ -82,28 +78,27 @@ halt: acpi
 gdb: serial backtrace
 gfxterm_background: video_colors bitmap_scale gfxterm extcmd video bitmap
 search_fs_uuid:
-gcry_dsa: verify mpi
+gcry_dsa: pgp mpi
 keystatus: extcmd
-linux: video boot relocator mmap
+linux: verifiers video boot relocator mmap
 geli: cryptodisk crypto gcry_sha512 pbkdf2 gcry_sha256
 cmdline_cat_test: font functional_test procfs normal video_fb
 part_sun:
 cbtable:
 pbkdf2_test: functional_test pbkdf2 gcry_sha1
 video_bochs: video video_fb
+verifiers:
 bufio:
 usbserial_ftdi: serial usb usbserial_common
 legacy_password_test: functional_test legacycfg
 lua: btrfs font setjmp normal video gfxmenu
-console: normal
 cpuid: extcmd
 hdparm: extcmd hexdump
 bfs: fshelp
 gcry_blowfish: crypto
 test:
 nilfs2: fshelp
-search_disk_uuid: gpt
-gcry_rsa: verify mpi
+gcry_rsa: pgp mpi
 cryptodisk: crypto extcmd procfs
 nativedisk:
 minicmd:
@@ -127,7 +122,7 @@ password: crypto normal
 fshelp:
 sleep_test: functional_test datetime
 iorw: extcmd
-xnu: macho bitmap_scale random extcmd video bitmap boot relocator mmap
+xnu: macho bitmap_scale random verifiers extcmd video bitmap boot relocator mmap
 mmap:
 exfctest: functional_test
 zfsinfo: zfs
@@ -140,7 +135,7 @@ blocklist:
 net: priority_queue bufio datetime boot
 part_acorn:
 videoinfo: video
-btrfs: lzopio gzio
+btrfs: zstd lzopio raid6rec gzio
 lsmmap: mmap
 strtoull_test: functional_test
 bitmap:
@@ -162,11 +157,9 @@ fb:
 ufs1_be:
 getkey: extcmd
 archelp:
-fdlibm:
-raid6rec: diskfilter
 http: net
 zfs: gzio
-search_part_uuid: gpt
+raid6rec: diskfilter
 lsefisystab:
 minix2:
 lsacpi: extcmd acpi
@@ -184,9 +177,7 @@ keylayouts:
 progress: normal
 kernel:
 usbtest: usb
-apple_gmux: extcmd
 relocator: mmap
-linuxefi: linux boot
 acpi: extcmd mmap
 tga: bufio bitmap
 reboot:
@@ -196,7 +187,6 @@ efi_uga: video video_fb
 dm_nv: diskfilter
 cmp_test: functional_test
 luks: cryptodisk crypto pbkdf2
-gpt: gcry_crc crypto disk
 font: bufio video
 raid5rec: diskfilter
 crc64: crypto
@@ -208,7 +198,7 @@ crc: btrfs
 cbmemc: normal cbtable terminfo
 hfsplus: fshelp
 gcry_cast5: crypto
-fwconfig: extcmd
+commandline: normal
 extcmd:
 squash4: fshelp lzopio xzio gzio
 part_plan:
@@ -216,11 +206,10 @@ minix_be:
 gcry_whirlpool: crypto
 gcry_tiger: crypto
 fixvideo:
-search: search_fs_uuid search_fs_file search_part_uuid extcmd search_disk_uuid search_part_label search_label
+search: search_fs_uuid search_fs_file extcmd search_label
 lspci: extcmd
 cbtime: cbtable
 video_fb:
-verify: crypto extcmd mpi gcry_sha1
 minix3_be:
 trig:
 msdospart: disk parttool
@@ -235,7 +224,6 @@ hexdump: extcmd
 date: extcmd datetime normal
 pbkdf2: crypto
 gcry_sha256: crypto
-raiddump: disk
 ls: extcmd normal
 usbserial_common: serial usb
 ntfscomp: ntfs
@@ -246,7 +234,8 @@ scsi:
 linux16: linux video boot relocator mmap
 cat: extcmd
 ahci: ata boot
-normal: terminal crypto bufio extcmd boot gettext
+pgp: crypto verifiers extcmd mpi gcry_sha1
+normal: terminal crypto verifiers bufio extcmd boot gettext
 ufs1:
 mdraid09: diskfilter
 lvm: diskfilter
@@ -271,7 +260,6 @@ echo: extcmd
 lsefi:
 gcry_serpent: crypto
 gcry_md4: crypto
-setup_var:
 gcry_md5: crypto
 part_msdos:
 gcry_camellia: crypto

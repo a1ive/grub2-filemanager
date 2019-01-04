@@ -13,7 +13,6 @@
 *extract_syslinux_entries_source: syslinuxcfg
 *file: file
 *functional_test: functional_test
-*fwconfig: fwconfig
 *getkey: getkey
 *gettext: gettext
 *halt: halt
@@ -30,7 +29,6 @@
 *kfreebsd: bsd
 *knetbsd: bsd
 *kopenbsd: bsd
-*korbis: bsd
 *list_env: loadenv
 *load_env: loadenv
 *loopback: loopback
@@ -56,7 +54,6 @@
 *sha256sum: hashsum
 *sha512sum: hashsum
 *sleep: sleep
-*smbios: smbios
 *submenu: normal
 *submenu_exit: normal
 *syslinux_configfile: syslinuxcfg
@@ -65,12 +62,11 @@
 *test_blockarg: test_blockarg
 *testspeed: testspeed
 *tr: tr
-*trust: verify
-*verify_detached: verify
+*trust: pgp
+*verify_detached: pgp
 *xnu_splash: xnu
 *zfskey: zfscrypt
 .: configfile
-915resolution: 915resolution
 [: test
 authenticate: normal
 background_color: gfxterm_background
@@ -88,14 +84,14 @@ cmosdump: cmosdump
 cmosset: cmostest
 cmostest: cmostest
 cmp: cmp
+commandline: commandline
 configfile: configfile
-console: console
 continue: normal
 coreboot_boottime: cbtime
 crc32: crc
 cutmem: mmap
 dd: dd
-distrust: verify
+distrust: pgp
 dump: minicmd
 efiemu_loadcore: efiemu
 efiemu_prepare: efiemu
@@ -112,7 +108,6 @@ freedos: freedos
 gdbstub: gdb
 gdbstub_break: gdb
 gdbstub_stop: gdb
-gptrepair: gptrepair
 gptsync: gptsync
 help: minicmd
 hexdump_random: random
@@ -125,7 +120,6 @@ kfreebsd_module_elf: bsd
 knetbsd_module: bsd
 knetbsd_module_elf: bsd
 kopenbsd_ramdisk: bsd
-korbis_loadenv: bsd
 legacy_check_password: legacycfg
 legacy_configfile: legacycfg
 legacy_initrd: legacycfg
@@ -135,7 +129,7 @@ legacy_password: legacycfg
 legacy_source: legacycfg
 linux16: linux16
 linux: linux
-list_trusted: verify
+list_trusted: pgp
 loadfont: font
 lsapm: lsapm
 lscoreboot: cbls
@@ -153,7 +147,6 @@ nativedisk: nativedisk
 net_add_addr: net
 net_add_dns: net
 net_add_route: net
-net_bootp6: net
 net_bootp: net
 net_del_addr: net
 net_del_dns: net
@@ -176,17 +169,13 @@ password: password
 password_pbkdf2: password_pbkdf2
 play: play
 pxechainloader: pxechain
-raiddump: raiddump
 read: read
 reboot: reboot
 return: normal
 rmmod: minicmd
-search.disk_uuid: search_disk_uuid
 search.file: search_fs_file
 search.fs_label: search_label
 search.fs_uuid: search_fs_uuid
-search.part_label: search_part_label
-search.part_uuid: search_part_uuid
 setparams: normal
 shift: normal
 source: configfile
