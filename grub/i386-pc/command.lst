@@ -170,6 +170,7 @@ password_pbkdf2: password_pbkdf2
 play: play
 pxechainloader: pxechain
 read: read
+read_file: read
 reboot: reboot
 return: normal
 rmmod: minicmd

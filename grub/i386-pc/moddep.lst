@@ -54,6 +54,7 @@ gfxterm: font video
 disk:
 xfs: fshelp
 testspeed: extcmd normal
+lynxfs: fshelp
 cpio_be: archelp
 functional_test: btrfs extcmd video video_fb
 pxechain: pxe video boot relocator
@@ -232,10 +233,12 @@ hexdump: extcmd
 date: extcmd datetime normal
 pbkdf2: crypto
 gcry_sha256: crypto
+qnx4: fshelp
 ls: extcmd normal
 usbserial_common: serial usb
 ntfscomp: ntfs
 lzopio: crypto
+qnx6: fshelp
 video_cirrus: video pci video_fb
 hello: extcmd
 scsi:

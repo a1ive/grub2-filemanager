@@ -14,6 +14,7 @@ hfs
 hfsplus
 iso9660
 jfs
+lynxfs
 minix
 minix2
 minix2_be
@@ -25,6 +26,8 @@ nilfs2
 ntfs
 odc
 procfs
+qnx4
+qnx6
 reiserfs
 romfs
 sfs

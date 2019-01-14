@@ -55,6 +55,7 @@ disk:
 appleldr: boot
 xfs: fshelp
 testspeed: extcmd normal
+lynxfs: fshelp
 cpio_be: archelp
 functional_test: btrfs extcmd video video_fb
 bswap_test: functional_test
@@ -178,6 +179,7 @@ progress: normal
 kernel:
 usbtest: usb
 relocator: mmap
+linuxefi: linux boot
 acpi: extcmd mmap
 tga: bufio bitmap
 reboot:
@@ -224,10 +226,12 @@ hexdump: extcmd
 date: extcmd datetime normal
 pbkdf2: crypto
 gcry_sha256: crypto
+qnx4: fshelp
 ls: extcmd normal
 usbserial_common: serial usb
 ntfscomp: ntfs
 lzopio: crypto
+qnx6: fshelp
 video_cirrus: video video_fb
 hello: extcmd
 scsi:
@@ -239,7 +243,7 @@ normal: terminal crypto verifiers bufio extcmd boot gettext
 ufs1:
 mdraid09: diskfilter
 lvm: diskfilter
-chain: net efinet boot
+chain: net linuxefi efinet boot
 cbfs: archelp
 ufs2:
 time:
@@ -260,6 +264,7 @@ echo: extcmd
 lsefi:
 gcry_serpent: crypto
 gcry_md4: crypto
+setup_var:
 gcry_md5: crypto
 part_msdos:
 gcry_camellia: crypto

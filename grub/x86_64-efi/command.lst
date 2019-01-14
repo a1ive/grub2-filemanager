@@ -103,6 +103,7 @@ help: minicmd
 hexdump_random: random
 initrd16: linux16
 initrd: linux
+initrdefi: linuxefi
 keymap: keylayouts
 kfreebsd_loadenv: bsd
 kfreebsd_module: bsd
@@ -119,6 +120,7 @@ legacy_password: legacycfg
 legacy_source: legacycfg
 linux16: linux16
 linux: linux
+linuxefi: linuxefi
 list_trusted: pgp
 loadbios: loadbios
 loadfont: font
@@ -126,6 +128,7 @@ lscoreboot: cbls
 lsefi: lsefi
 lsefimmap: lsefimmap
 lsefisystab: lsefisystab
+lsefivar: setup_var
 lsfonts: font
 lsmmap: lsmmap
 lsmod: minicmd
@@ -162,6 +165,7 @@ password: password
 password_pbkdf2: password_pbkdf2
 play: play
 read: read
+read_file: read
 reboot: reboot
 return: normal
 rmmod: minicmd
@@ -169,6 +173,9 @@ search.file: search_fs_file
 search.fs_label: search_label
 search.fs_uuid: search_fs_uuid
 setparams: normal
+setup_var2: setup_var
+setup_var: setup_var
+setup_var_3: setup_var
 shift: normal
 source: configfile
 terminal_input: terminal
