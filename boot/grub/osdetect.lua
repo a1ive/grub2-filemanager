@@ -108,7 +108,7 @@ function enum_device (device, fs)
 			name = grub.gettext ("Boot Windows on ") .. device
 			grub.add_icon_menu (icon, command ,name)
 		end
-		if platform == "x86_64" then
+		if arch == "x86_64" then
 			efifile = "/efi/boot/bootx64.efi"
 		else
 			efifile = "/efi/boot/bootia32.efi"
