@@ -194,6 +194,9 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			elseif string.match (loop_file, "^/ploplinux/") then
 				linux_extra = "iso_filename=" .. iso_path
 				return "gnu-linux", "plop", "Plop Linux", linux_extra
+            elseif string.match (loop_file, "^/liveslak/") then
+				linux_extra = "livemedia=scandev:" .. iso_path
+				return "slackware", "liveslack", "Slackware Live", linux_extra
 			end
 		end
 		-- check /isolinux/
