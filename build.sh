@@ -101,6 +101,7 @@ do
 done
 cp arch/legacy/insmod.lst build/boot/grub/
 cp arch/legacy/grub.exe build/boot/grub/
+cp arch/legacy/duet64.iso build/boot/grub/
 cp arch/legacy/memdisk build/boot/grub/
 cp arch/legacy/ipxe.lkrn build/boot/grub/
 cd build

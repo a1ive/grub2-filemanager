@@ -56,7 +56,7 @@ function check_file (name, name_extn)
 	elseif name_extn == "bmp" or name_extn == "gif" then
 		file_icon = "png"
 	elseif name_extn == "efi" then
-		file_type, file_icon = "efi", "uefi"
+		file_type, file_icon = "efi", "exe"
 	elseif name_extn == "lua" then
 		file_type, file_icon = "lua", "lua"
 	elseif name_extn == "7z" or name_extn == "rar" then

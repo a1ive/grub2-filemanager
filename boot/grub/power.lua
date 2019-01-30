@@ -31,6 +31,13 @@ if platform == "efi" then
 	command = "set lang=en_US; terminal_output=console; chainloader $prefix/Shell.efi"
 	name = grub.gettext ("EFI Shell")
 	grub.add_icon_menu (icon, command, name)
+else
+    -- duet (Developer's UEFI Environment)
+    icon = "uefi"
+    command = "g4d_cmd=\"find --set-root /fm.loop;/MAP nomem cd (rd)+1\";" .. 
+	 "linux $prefix/grub.exe --config-file=$g4d_cmd; initrd $prefix/duet64.iso"
+    name = grub.gettext ("UEFI DUET")
+	grub.add_icon_menu (icon, command, name)
 end
 -- grub cmdline
 icon = "ms-dos"

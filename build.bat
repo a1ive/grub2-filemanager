@@ -67,6 +67,7 @@ for /f "tokens=1,*" %%a in ("%modlist%") do (
 )
 copy arch\legacy\insmod.lst build\boot\grub\
 copy arch\legacy\grub.exe build\boot\grub\
+copy arch\legacy\duet64.iso build\boot\grub\
 copy arch\legacy\memdisk build\boot\grub\
 copy arch\legacy\ipxe.lkrn build\boot\grub\
 cd build
