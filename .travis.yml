@@ -1,0 +1,4 @@
+language: lua
+sudo: required
+install: sudo apt install gettext grub genisoimage
+script: echo "1" | ./build.sh
