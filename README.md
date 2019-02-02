@@ -1,6 +1,6 @@
 [简体中文](https://a1ive.github.io/grub2-filemanager/) 
 # grub2-filemanager 
-[![Build Status](https://travis-ci.com/a1ive/grub2-filemanager.svg?branch=master)](https://travis-ci.com/a1ive/grub2-filemanager) 
+[![Build Status](https://travis-ci.com/a1ive/grub2-filemanager.svg?branch=master)](https://travis-ci.com/a1ive/grub2-filemanager) ![](https://img.shields.io/github/license/a1ive/grub2-filemanager.svg?style=flat) ![](https://img.shields.io/github/downloads/a1ive/grub2-filemanager/total.svg?style=flat) ![](https://img.shields.io/github/release/a1ive/grub2-filemanager.svg?style=flat) 
 ## Preview 
 ![preview.png](https://github.com/a1ive/grub2-filemanager/raw/gh-pages/preview.png)
 ## Download 
@@ -18,7 +18,7 @@ Do NOT boot grubfm.iso with memdisk!
 	chainloader (0xff)
 #### GRUB 2
 	linux /loadfm  
-    initrd /grubfm.iso  
+	initrd /grubfm.iso  
 ### x86_64-efi, i386-efi 
 #### GRUB 2 
 	chainloader /grubfm.efi
