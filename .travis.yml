@@ -1,4 +1,4 @@
 language: lua
 sudo: required
-install: sudo apt install gettext grub genisoimage
+install: sudo apt install gettext grub2-common genisoimage
 script: echo "1" | ./build.sh
