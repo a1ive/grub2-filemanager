@@ -24,7 +24,7 @@ terminal-box: "term_bkg_*.png"
     selected_item_pixmap_style= "select_bkg_*.png"
     menu_pixmap_style = "menu_bkg_*.png"
     scrollbar = true
-    scrollbar_width = 6
+    scrollbar_width = 16
     scrollbar_thumb = "sb_thumb_*.png"
     scrollbar_frame = "sb_frame_*.png"
 }
