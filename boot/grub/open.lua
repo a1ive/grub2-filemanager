@@ -128,6 +128,9 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 			elseif string.match (loop_file, "^/parabola/") then
 				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " parabolaisolabel=" .. iso_label
 				return "archlinux", "parabola", "Parabola", linux_extra
+            elseif string.match (loop_file, "^/hyperbola/") then
+				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " hyperisolabel=" .. iso_label
+				return "archlinux", "hyper", "Hyperbola", linux_extra
 			elseif string.match (loop_file, "^/blackarch/") then
 				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " archisolabel=" .. iso_label
 				return "archlinux", "blackarch", "BlackArch"
