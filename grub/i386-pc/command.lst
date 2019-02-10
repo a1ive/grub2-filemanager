@@ -41,6 +41,7 @@
 *plan9: plan9
 *pop_env: normal
 *probe: probe
+*qrcode: qrcode
 *read_byte: memrw
 *read_dword: memrw
 *read_word: memrw
@@ -64,6 +65,7 @@
 *tr: tr
 *trust: pgp
 *verify_detached: pgp
+*vhd: vhd
 *xnu_splash: xnu
 *zfskey: zfscrypt
 .: configfile

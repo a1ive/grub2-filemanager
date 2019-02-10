@@ -123,6 +123,7 @@ cs5536: pci
 biosdisk:
 lsapm:
 gcry_sha512: crypto
+qrcode: extcmd
 password: crypto normal
 efiemu: gcry_crc crypto cpuid acpi
 fshelp:
@@ -166,6 +167,7 @@ ufs1_be:
 truecrypt: video boot relocator mmap gzio
 getkey: extcmd
 archelp:
+fdlibm:
 ntldr: chain video boot relocator
 http: net
 zfs: gzio
@@ -185,6 +187,7 @@ boot:
 keylayouts:
 progress: normal
 kernel:
+vhd: extcmd
 usbtest: usb
 relocator: mmap
 acpi: extcmd mmap

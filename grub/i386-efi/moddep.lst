@@ -119,6 +119,7 @@ crypto:
 part_bsd: part_msdos
 cs5536:
 gcry_sha512: crypto
+qrcode: extcmd
 password: crypto normal
 fshelp:
 sleep_test: functional_test datetime
@@ -158,6 +159,7 @@ fb:
 ufs1_be:
 getkey: extcmd
 archelp:
+fdlibm:
 http: net
 zfs: gzio
 raid6rec: diskfilter
@@ -177,6 +179,7 @@ boot:
 keylayouts:
 progress: normal
 kernel:
+vhd: extcmd
 usbtest: usb
 relocator: mmap
 linuxefi: linux boot
