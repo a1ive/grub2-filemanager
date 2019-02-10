@@ -397,7 +397,14 @@ function open (file, file_type, device, device_type, arch, platform)
 			end
 		end
 	elseif file_type == "vhd" then
-		if platform == "pc" then
+		if device_type ~= "3" then
+			-- mount
+			icon = "img"
+			command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; export path= ; lua $prefix/main.lua"
+			name = grub.gettext("Mount Image")
+			grub.add_icon_menu (icon, command, name)
+		end
+        if platform == "pc" then
 			-- BOOTMGR only supports (hdx,y)
 			if device_type == "1" then
 				if grub.file_exist ("/NTBOOT.MOD/NTBOOT.NT6") then
