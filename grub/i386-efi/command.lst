@@ -7,6 +7,7 @@
 *crc: hashsum
 *cryptomount: cryptodisk
 *date: date
+*dd: dd
 *echo: echo
 *extract_syslinux_entries_configfile: syslinuxcfg
 *extract_syslinux_entries_source: syslinuxcfg
@@ -85,7 +86,6 @@ continue: normal
 coreboot_boottime: cbtime
 crc32: crc
 cutmem: mmap
-dd: dd
 distrust: pgp
 dump: minicmd
 eval: eval
@@ -106,6 +106,7 @@ gptsync: gptsync
 halt: halt
 help: minicmd
 hexdump_random: random
+imgwrite: imgwrite
 initrd16: linux16
 initrd: linux
 initrdefi: linuxefi

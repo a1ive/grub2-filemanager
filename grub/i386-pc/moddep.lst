@@ -77,6 +77,7 @@ hashsum: crypto extcmd normal
 usb: pci
 halt: extcmd acpi
 gdb: serial backtrace
+imgwrite: disk
 gfxterm_background: video_colors bitmap_scale gfxterm extcmd video bitmap
 search_fs_uuid:
 gcry_dsa: pgp mpi
@@ -153,8 +154,8 @@ multiboot: net linux vbe video boot relocator mmap lsapm
 gcry_crc: crypto
 png: bufio bitmap
 jpeg: bufio bitmap
-dd: disk
 macbless: disk
+dd: disk extcmd
 div_test: functional_test div
 regexp: extcmd normal
 parttool: normal
