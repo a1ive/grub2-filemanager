@@ -44,7 +44,7 @@ end
 
 function towinpath (file)
     win_path = string.match (file, "^%([%w,]+%)(.*)$")
-    win_path = string.gsub (win_path, "/", "\\")
+    win_path = string.gsub (win_path, "/", "\\\\")
 end
 
 function tog4dpath (file, device, device_type)
@@ -321,7 +321,24 @@ function open (file, file_type, device, device_type, arch, platform)
 			isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 		end
 		if platform == "pc" then
-			-- memdisk iso
+            if device_type == "1" and grub.file_exist ("(loop)/sources/install.wim") and grub.file_exist ("/wimboot") and grub.file_exist ("/install.gz") then
+                -- windows install iso
+                icon = "nt6"
+                towinpath (file)
+                command = "set lang=en_US; terminal_output console; "
+                    .. "enable_progress_indicator=1; loopback wimboot /wimboot; loopback install /install.gz; "
+                    .. "set installiso=" .. win_path .. "; save_env -f (memdisk)/null.cfg installiso; "
+                    .. "linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(loop)/bootmgr "
+                    .. "newc:bcd:(loop)/boot/bcd newc:boot.sdi:(loop)/boot/boot.sdi "
+                    .. "newc:null.cfg:(memdisk)/null.cfg "
+                    .. "newc:mount_x64.exe:(install)/mount_x64.exe newc:mount_x86.exe:(install)/mount_x86.exe "
+                    .. "newc:start.bat:(install)/start.bat newc:winpeshl.ini:(install)/winpeshl.ini "
+                    .. "newc:boot.wim:(loop)/sources/boot.wim; "
+                    .. "cat (memdisk)/null.cfg "
+                name = grub.gettext("Install Windows ISO")
+                grub.add_icon_menu (icon, command, name)
+			end
+            -- memdisk iso
 			icon = "iso"
 			command = "linux16 $prefix/memdisk iso raw; enable_progress_indicator=1; initrd16 " .. file
 			name = grub.gettext("Boot ISO (memdisk)")
@@ -358,7 +375,7 @@ function open (file, file_type, device, device_type, arch, platform)
 			-- wimboot
 			if grub.file_exist ("/wimboot") then
 				icon = "wim"
-				command = "enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot gui; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
+				command = "set lang=en_US; terminal_output console; enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
 				name = grub.gettext("Boot NT6.x WIM (wimboot)")
 				grub.add_icon_menu (icon, command, name)
 			end

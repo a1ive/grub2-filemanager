@@ -94,5 +94,8 @@ if exist arch\legacy\wimboot (
 if exist arch\legacy\vbootldr (
 	copy arch\legacy\vbootldr build\
 	)
+if exist arch\legacy\install.gz (
+	copy arch\legacy\install.gz build\
+	)
 bin\mkisofs.exe -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rd /s /q build
