@@ -133,7 +133,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 				return "archlinux", "hyper", "Hyperbola", linux_extra
 			elseif string.match (loop_file, "^/blackarch/") then
 				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " archisolabel=" .. iso_label
-				return "archlinux", "blackarch", "BlackArch"
+				return "archlinux", "blackarch", "BlackArch", linux_extra
 			elseif string.match (loop_file, "^/kdeos/") then
 				linux_extra = "img_dev=/dev/disk/by-uuid/" .. dev_uuid .. " img_loop=" .. iso_path .. " kdeisolabel=" .. iso_label
 				return "kaos", "kaos", "KaOS", linux_extra
