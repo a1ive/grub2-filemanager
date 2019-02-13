@@ -108,7 +108,7 @@ cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..
 rm -r build/boot
-$mkimage -d ./grub/i386-pc -p "(memdisk)/boot/grub" -c arch/legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
+$mkimage -d ./grub/i386-pc -m arch/legacy/null.cpio -p "(fm)/boot/grub" -c arch/legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 cp arch/legacy/MAP build/

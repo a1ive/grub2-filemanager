@@ -74,7 +74,7 @@ cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc | %~dp0\bin\gzip.exe -9 > ./fm.loop
 cd ..
 rd /s /q build\boot
-bin\grub-mkimage.exe -d grub\i386-pc -p (memdisk)/boot/grub -c arch\legacy\config.cfg -o build\core.img -O i386-pc %builtin%
+bin\grub-mkimage.exe -d grub\i386-pc -m arch\legacy\null.cpio -p (fm)/boot/grub -c arch\legacy\config.cfg -o build\core.img -O i386-pc %builtin%
 copy /B grub\i386-pc\cdboot.img + build\core.img build\fmldr
 del /q build\core.img
 copy arch\legacy\MAP build\
