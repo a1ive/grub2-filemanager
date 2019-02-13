@@ -99,6 +99,7 @@ lua: btrfs font setjmp normal video pci gfxmenu
 cpuid: extcmd
 hdparm: extcmd hexdump
 bfs: fshelp
+vboot: extcmd video boot relocator
 gcry_blowfish: crypto
 test:
 nilfs2: fshelp

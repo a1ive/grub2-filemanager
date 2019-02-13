@@ -65,6 +65,9 @@
 *testspeed: testspeed
 *tr: tr
 *trust: pgp
+*vboot16: vboot
+*vboot: vboot
+*vbootinsmod: vboot
 *verify_detached: pgp
 *vhd: vhd
 *xnu_splash: xnu
