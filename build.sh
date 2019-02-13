@@ -115,11 +115,14 @@ cp arch/legacy/MAP build/
 if [ -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.NT6" -o -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.PE1" ]
 then
 	cp -r arch/legacy/ntboot/* build/
-	echo "WARNING: Non-GPL module(s) enabled!"
 fi
 if [ -e "legacy/wimboot" ]
 then
 	cp arch/legacy/wimboot build/
+fi
+if [ -e "legacy/vbootldr" ]
+then
+	cp arch/legacy/vbootldr build/
 fi
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rm  -r build

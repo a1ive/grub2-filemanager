@@ -419,6 +419,15 @@ function open (file, file_type, device, device_type, arch, platform)
 					name = grub.gettext("Boot Windows NT6.x VHD (NTBOOT)")
 					grub.add_icon_menu (icon, command, name)
 				end
+                if grub.file_exist ("/vbootldr") then
+                    icon = "img"
+                    vhd_path = string.match (grub.getenv ("file"), "^%([%w,]+%)(.*)$")
+                    grub.run ("probe --set=dev_uuid -u " .. device)
+                    dev_uuid = grub.getenv ("dev_uuid")
+                    command = "loopback vboot /vbootldr; set vbootloader=(vboot)/vboot;vbootinsmod (vboot)/vbootcore.mod; vboot harddisk=(UUID=" .. dev_uuid .. ")" .. vhd_path
+                    name = grub.gettext("Boot VHD (vboot)")
+                    grub.add_icon_menu (icon, command, name)
+                end
 			end
 		end
 	elseif file_type == "fba" then

@@ -7,6 +7,7 @@ NTBOOT.NT5
 NTBOOT.NT6
 NTBOOT.PE1
 wimboot
+vbootldr
 oscdimg.exe
 *.crt
 *.cer
