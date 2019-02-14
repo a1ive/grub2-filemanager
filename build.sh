@@ -124,5 +124,9 @@ if [ -e "legacy/vbootldr" ]
 then
 	cp arch/legacy/vbootldr build/
 fi
+if [ -e "legacy/install.gz" ]
+then
+	cp arch/legacy/install.gz build/
+fi
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rm  -r build
