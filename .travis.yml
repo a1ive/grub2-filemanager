@@ -5,7 +5,6 @@ install: sudo apt-get install -y gettext grub2-common genisoimage p7zip-full
 script: ./release.sh
 deploy:
     provider: releases
-    api_key:
-        secure: $githubtoken
+    github-token: $githubtoken
     file: grubfm-zh_CN.7z
     skip_cleanup: true
