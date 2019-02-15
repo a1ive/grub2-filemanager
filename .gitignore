@@ -1,6 +1,7 @@
 grubfm*.efi
 grubfm*.efi.signed
 grubfm*.iso
+grubfm*.7z
 build
 sources/grub*
 NTBOOT.NT5
