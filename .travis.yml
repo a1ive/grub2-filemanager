@@ -1,10 +1,12 @@
 dist: xenial
 language: generic
+notifications:
+    email: false
 sudo: required
 install: sudo apt-get install -y gettext grub2-common genisoimage p7zip-full
 script: ./release.sh
 deploy:
     provider: releases
-    github_token: $GITHUB_TOKEN
+    api_key: $GITHUB_TOKEN
     file: grubfm-zh_CN.7z
     skip_cleanup: true
