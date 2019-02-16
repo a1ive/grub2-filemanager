@@ -162,6 +162,7 @@ ufs1_be:
 getkey: extcmd
 archelp:
 fdlibm:
+msr: extcmd
 http: net
 zfs: gzio
 raid6rec: diskfilter

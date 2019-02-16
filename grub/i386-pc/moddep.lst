@@ -170,6 +170,7 @@ truecrypt: video boot relocator mmap gzio
 getkey: extcmd
 archelp:
 fdlibm:
+msr: extcmd
 ntldr: chain video boot relocator
 http: net
 zfs: gzio

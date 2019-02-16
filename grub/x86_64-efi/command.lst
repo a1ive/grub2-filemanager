@@ -40,6 +40,7 @@
 *pop_env: normal
 *probe: probe
 *qrcode: qrcode
+*rdmsr: msr
 *read_byte: memrw
 *read_dword: memrw
 *read_word: memrw
@@ -194,6 +195,7 @@ write_byte: memrw
 write_bytes: memrw
 write_dword: memrw
 write_word: memrw
+wrmsr: msr
 xnu_devprop_load: xnu
 xnu_kernel64: xnu
 xnu_kernel: xnu
