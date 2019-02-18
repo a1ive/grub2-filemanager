@@ -224,6 +224,7 @@ msdospart: disk parttool
 priority_queue:
 gcry_twofish: crypto
 part_dfly:
+expr: extcmd
 xnu_uuid_test: functional_test
 diskfilter:
 testload:

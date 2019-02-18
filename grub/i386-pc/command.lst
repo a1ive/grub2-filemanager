@@ -10,6 +10,7 @@
 *dd: dd
 *drivemap: drivemap
 *echo: echo
+*expr: expr
 *extract_syslinux_entries_configfile: syslinuxcfg
 *extract_syslinux_entries_source: syslinuxcfg
 *file: file
