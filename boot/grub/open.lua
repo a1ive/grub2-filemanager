@@ -335,7 +335,7 @@ function open (file, file_type, device, device_type, arch, platform)
                     .. "newc:start.bat:(install)/start.bat newc:winpeshl.ini:(install)/winpeshl.ini "
                     .. "newc:boot.wim:(loop)/sources/boot.wim; "
                     .. "cat (memdisk)/null.cfg "
-                name = grub.gettext("Install Windows ISO")
+                name = grub.gettext("Install Windows from ISO")
                 grub.add_icon_menu (icon, command, name)
 			end
             -- memdisk iso

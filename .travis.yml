@@ -13,3 +13,5 @@ deploy:
     api_key: $GITHUB_TOKEN
     file: grubfm-zh_CN.7z
     skip_cleanup: true
+    on:
+      tags: true
