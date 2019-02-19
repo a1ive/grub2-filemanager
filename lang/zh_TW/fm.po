@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2019-01-10 12:18\n"
+"PO-Revision-Date: 2019-02-19 06:17\n"
 
 msgid "Back"
 msgstr "返回"
@@ -78,6 +78,9 @@ msgstr "使用NTBOOT載入 NT5.x PE"
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "使用NTBOOT載入 Windows NT6.x VHD/VHDX"
 
+msgid "Boot VHD (vboot)"
+msgstr ""
+
 msgid "Mount ISO"
 msgstr "檢視ISO內容"
 
@@ -89,6 +92,9 @@ msgstr "使用memdisk載入ISO"
 
 msgid "Boot ISO (Easy2Boot)"
 msgstr "使用Easy2Boot方式載入ISO"
+
+msgid "Install Windows from ISO"
+msgstr ""
 
 msgid "Boot EFI Files"
 msgstr "僅載入EFI檔案"
@@ -152,6 +158,12 @@ msgstr "EFI固件設定"
 
 msgid "GRUB Console"
 msgstr "GRUB 命令列"
+
+msgid "EFI Shell"
+msgstr ""
+
+msgid "UEFI DUET"
+msgstr ""
 
 msgid "Load External Menu: "
 msgstr "載入外接選單: "
