@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2019-01-10 12:18\n"
+"PO-Revision-Date: 2019-02-19 06:17\n"
 
 msgid "Back"
 msgstr ""
@@ -78,6 +78,9 @@ msgstr ""
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr ""
 
+msgid "Boot VHD (vboot)"
+msgstr ""
+
 msgid "Mount ISO"
 msgstr ""
 
@@ -88,6 +91,9 @@ msgid "Boot ISO (memdisk)"
 msgstr ""
 
 msgid "Boot ISO (Easy2Boot)"
+msgstr ""
+
+msgid "Install Windows from ISO"
 msgstr ""
 
 msgid "Boot EFI Files"
@@ -151,6 +157,12 @@ msgid "EFI Firmware Setup"
 msgstr ""
 
 msgid "GRUB Console"
+msgstr ""
+
+msgid "EFI Shell"
+msgstr ""
+
+msgid "UEFI DUET"
 msgstr ""
 
 msgid "Load External Menu: "
