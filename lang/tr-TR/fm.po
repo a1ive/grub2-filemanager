@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2019-02-20 16:36\n"
+"PO-Revision-Date: 2019-02-20 16:58\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -163,7 +163,7 @@ msgid "EFI Shell"
 msgstr "EFI Shell"
 
 msgid "UEFI DUET"
-msgstr "UEFI DUET"
+msgstr "UEFI Ayarları"
 
 msgid "Load External Menu: "
 msgstr "Harici Menü Yükle: "
