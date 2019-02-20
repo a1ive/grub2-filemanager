@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2019-02-20 13:14\n"
+"PO-Revision-Date: 2019-02-20 13:27\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -40,7 +40,7 @@ msgid "Open As EFI Shell Script"
 msgstr "EFI Shell Betiğini Aç"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "İmaj Aç"
 
 msgid "Press [ESC] to continue..."
 msgstr "Devam etmek için [ESC] tuşuna basın..."
@@ -64,124 +64,124 @@ msgid "Open As Archiver"
 msgstr "Arşivi Olarak Aç"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "NT6.x WIM (wimboot) Önyükle"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "NT6.x WIM (NTBOOT) Önyükle"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "NT5.x WIM (NTBOOT) Önyükle"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "NT5.x PE (NTBOOT) Önyükle"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Windows NT6.x VHD/VHDX (NTBOOT) Önyükle"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "VHD Önyükle (vboot)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "ISO Bağla"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "ISO Önyükle (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "ISO Önyükle (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "ISO Önyükle (Easy2Boot)"
 
 msgid "Install Windows from ISO"
-msgstr ""
+msgstr "ISO'dan Windows Kur"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "EFI Dosyasını Önyükle"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "iPXE Betiği Olarak Aç"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Font Aç"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Grub2 Modülü Ekle"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Chainload BIOS Önyükleme Sektörü"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Chainload NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Chainload BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "GRUB4DOS MOD Olarak Aç"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Multiboot Kerneli Önyükle"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Multiboot2 Kerneli Önyükle"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Linux Kerneli Önyükle"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Metin Görüntüleyici"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Hex Görüntüleyici"
 
 msgid "File Info"
-msgstr ""
+msgstr "Dosya Bilgisi"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Kodlama: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Dosyaları isme göre sırala"
 
 msgid "Resolution (R): "
-msgstr ""
+msgstr "Çözünürlük (R): "
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "ESC'yi etkinleştir (önerilmez)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Hata ayıklama mesajlarını etkinleştir"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "EFI Bellenim Kurulumu"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "GRUB Konsolu"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI Shell"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu: "
-msgstr ""
+msgstr "Harici Menü Yükle: "
 
 msgid "Boot Windows on "
-msgstr ""
+msgstr "Windows Önyükle "
 
 msgid "Boot macOS on ${device}"
-msgstr ""
+msgstr "MacOS Önyükle ${device}"
 
 msgid " on "
-msgstr ""
+msgstr " üzerinde "
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "ISO Önyükle (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "ISO Önyükle (ISOLİNUX)"
 
 msgid "Boot "
 msgstr ""
