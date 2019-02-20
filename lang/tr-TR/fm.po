@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2019-02-20 16:58\n"
+"PO-Revision-Date: 2019-02-20 17:13\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -61,7 +61,7 @@ msgid "Boot Hard Drive Image (memdisk)"
 msgstr "Hardisk İmajını Önyükle (memdisk)"
 
 msgid "Open As Archiver"
-msgstr "Arşivi Olarak Aç"
+msgstr "Arşiv Olarak Aç"
 
 msgid "Boot NT6.x WIM (wimboot)"
 msgstr "NT6.x WIM (wimboot) Önyükle"
@@ -190,7 +190,7 @@ msgid " From ISO"
 msgstr " ISO'dan"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr "Lütfen Kullanıcı adı girin. Varsayılan: Kullanıcı Süper Kullanıcı: root Devuan:devuan"
+msgstr "Lütfen Kullanıcı adı girin. Varsayılan: user Süper User: root Devuan: devuan"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "UYARI: (Hd0, 4) üzerindeki tüm veriler silinecek."
