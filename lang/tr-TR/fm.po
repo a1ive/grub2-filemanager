@@ -1,0 +1,236 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: grub2-filemanager\n"
+"X-Crowdin-Language: tr\n"
+"X-Crowdin-File: /master/lang/fm.pot\n"
+"Project-Id-Version: grub2-filemanager\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Last-Translator: a1ive <ligenlive@gmail.com>\n"
+"Language-Team: Turkish\n"
+"Language: tr_TR\n"
+"PO-Revision-Date: 2019-02-21 01:02\n"
+
+msgid "Back"
+msgstr "Geri"
+
+msgid "Open As Grub2 Menu"
+msgstr "Grub2 Menüsünü Aç"
+
+msgid "Open As Syslinux Menu"
+msgstr "Syslinux Menüsünü Aç"
+
+msgid "Open As pxelinux Menu"
+msgstr "Pxlinux Menüsünü Aç"
+
+msgid "Open As GRUB4DOS Menu"
+msgstr "GRUB4DOS Menüsünü Aç"
+
+msgid "Open As GRUB-Legacy Menu"
+msgstr "Grub-Legacy Menüsünü Aç"
+
+msgid "Open As Lua Script"
+msgstr "Lua Betiğini Aç"
+
+msgid "Open As EFI Application"
+msgstr "EFI Uygulamasını Aç"
+
+msgid "Open As EFI Shell Script"
+msgstr "EFI Shell Betiğini Aç"
+
+msgid "Open As Image"
+msgstr "İmaj Aç"
+
+msgid "Press [ESC] to continue..."
+msgstr "Devam etmek için [ESC] tuşuna basın..."
+
+msgid "Mount Image"
+msgstr "İmaj Bağla"
+
+msgid "Boot Floppy Image (GRUB4DOS)"
+msgstr "Floppy İmajı Önyükle (GRUB4DOS)"
+
+msgid "Boot Floppy Image (memdisk)"
+msgstr "Floppy İmajı Önyükle (memdisk)"
+
+msgid "Boot Hard Drive Image (GRUB4DOS)"
+msgstr "Harddisk İmajını Önyükle (GRUB4DOS)"
+
+msgid "Boot Hard Drive Image (memdisk)"
+msgstr "Hardisk İmajını Önyükle (memdisk)"
+
+msgid "Open As Archiver"
+msgstr "Arşiv Olarak Aç"
+
+msgid "Boot NT6.x WIM (wimboot)"
+msgstr "NT6.x WIM (wimboot) Önyükle"
+
+msgid "Boot NT6.x WIM (NTBOOT)"
+msgstr "NT6.x WIM (NTBOOT) Önyükle"
+
+msgid "Boot NT5.x WIM (NTBOOT)"
+msgstr "NT5.x WIM (NTBOOT) Önyükle"
+
+msgid "Boot NT5.x PE (NTBOOT)"
+msgstr "NT5.x PE (NTBOOT) Önyükle"
+
+msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "Windows NT6.x VHD/VHDX (NTBOOT) Önyükle"
+
+msgid "Boot VHD (vboot)"
+msgstr "VHD Önyükle (vboot)"
+
+msgid "Mount ISO"
+msgstr "ISO Bağla"
+
+msgid "Boot ISO (GRUB4DOS)"
+msgstr "ISO Önyükle (GRUB4DOS)"
+
+msgid "Boot ISO (memdisk)"
+msgstr "ISO Önyükle (memdisk)"
+
+msgid "Boot ISO (Easy2Boot)"
+msgstr "ISO Önyükle (Easy2Boot)"
+
+msgid "Install Windows from ISO"
+msgstr "ISO'dan Windows Kur"
+
+msgid "Boot EFI Files"
+msgstr "EFI Dosyasını Önyükle"
+
+msgid "Open As iPXE Script"
+msgstr "iPXE Betiği Olarak Aç"
+
+msgid "Open As Font"
+msgstr "Font Aç"
+
+msgid "Insert Grub2 Module"
+msgstr "Grub2 Modülü Ekle"
+
+msgid "Chainload BIOS Boot Sector"
+msgstr "Chainload BIOS Önyükleme Sektörü"
+
+msgid "Chainload NTLDR"
+msgstr "Chainload NTLDR"
+
+msgid "Chainload BOOTMGR"
+msgstr "Chainload BOOTMGR"
+
+msgid "Open As GRUB4DOS MOD"
+msgstr "GRUB4DOS MOD Olarak Aç"
+
+msgid "Boot Multiboot Kernel"
+msgstr "Multiboot Kerneli Önyükle"
+
+msgid "Boot Multiboot2 Kernel"
+msgstr "Multiboot2 Kerneli Önyükle"
+
+msgid "Boot Linux Kernel"
+msgstr "Linux Kerneli Önyükle"
+
+msgid "Text Viewer"
+msgstr "Metin Görüntüleyici"
+
+msgid "Hex Viewer"
+msgstr "Hex Görüntüleyici"
+
+msgid "File Info"
+msgstr "Dosya Bilgisi"
+
+msgid "Encoding: "
+msgstr "Kodlama: "
+
+msgid "Sort files by name"
+msgstr "Dosyaları isme göre sırala"
+
+msgid "Resolution (R): "
+msgstr "Çözünürlük (R): "
+
+msgid "Enable ESC (not recommended)"
+msgstr "ESC'yi etkinleştir (önerilmez)"
+
+msgid "Enable debug messages"
+msgstr "Hata ayıklama mesajlarını etkinleştir"
+
+msgid "EFI Firmware Setup"
+msgstr "EFI Bellenim Kurulumu"
+
+msgid "GRUB Console"
+msgstr "GRUB Konsolu"
+
+msgid "EFI Shell"
+msgstr "EFI Shell"
+
+msgid "UEFI DUET"
+msgstr "UEFI Ayarları"
+
+msgid "Load External Menu: "
+msgstr "Harici Menü Yükle: "
+
+msgid "Boot Windows on "
+msgstr "Windows Önyükle "
+
+msgid "Boot macOS on ${device}"
+msgstr "MacOS Önyükle ${device}"
+
+msgid " on "
+msgstr " üzerinde "
+
+msgid "Boot ISO (Loopback)"
+msgstr "ISO Önyükle (Loopback)"
+
+msgid "Boot ISO (ISOLINUX)"
+msgstr "ISO Önyükle (ISOLİNUX)"
+
+msgid "Boot "
+msgstr "Önyükle "
+
+msgid " From ISO"
+msgstr " ISO'dan"
+
+msgid "Please input the username. Default:user Super User:root Devuan:devuan"
+msgstr "Lütfen Kullanıcı adı girin. Varsayılan: user Süper User: root Devuan: devuan"
+
+msgid "WARNING: Will erase ALL data on (hd0,4)."
+msgstr "UYARI: (Hd0, 4) üzerindeki tüm veriler silinecek."
+
+msgid "Press [Y] to continue. Press [N] to quit."
+msgstr "Devam etmek için [Y], çıkmak için [N] tuşuna basın."
+
+msgid "Canceled."
+msgstr "İptal edildi."
+
+msgid "File path contains spaces.This may cause problems!Press any key to continue."
+msgstr "Dosya yolu boşluk içeriyor. Bu sorunlara neden olabilir. Devam etmek için herhangi bir tuşa basın."
+
+msgid "Reboot"
+msgstr "Yeniden Başlat"
+
+msgid "Halt"
+msgstr "Kapat"
+
+msgid "File: "
+msgstr "Dosya: "
+
+msgid "Hotkeys"
+msgstr "Kısayol tuşları"
+
+msgid "F1 - Help"
+msgstr "F1 - Yardım"
+
+msgid "F2 - File Manager"
+msgstr "F2 - Dosya Yöneticisi"
+
+msgid "F3 - Boot"
+msgstr "F3 - Önyükleme"
+
+msgid "F4 - Settings"
+msgstr "F4 - Ayarlar"
+
+msgid "F5 - Power Off"
+msgstr "F5 - Kapat"
+
+msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
+msgstr "LCtrl + LAlt + F12 - Ekran Görüntüsü Al (EFI)"
+
