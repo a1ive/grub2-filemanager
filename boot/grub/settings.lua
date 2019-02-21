@@ -34,6 +34,10 @@ esc_flag = grub.getenv ("grub_disable_esc")
 if (esc_flag == nil) then
 	esc_flag = "0"
 end
+disk_flag = grub.getenv ("show_vdisk")
+if (disk_flag == nil) then
+	disk_flag = "0"
+end
 grub.exportenv ("theme", "slack/f4.txt")
 grub.clear_menu ()
 
@@ -86,6 +90,17 @@ else
 end
 command = command .. " lua $prefix/settings.lua"
 name = grub.gettext ("Enable debug messages")
+grub.add_icon_menu (icon, command, name)
+-- show memdisk
+if (disk_flag == "0") then
+	icon = "cancel"
+	command = "export show_vdisk=1;"
+else
+	icon = "check"
+	command = "export show_vdisk=0;"
+end
+command = command .. " lua $prefix/settings.lua"
+name = grub.gettext ("Show hidden drives")
 grub.add_icon_menu (icon, command, name)
 -- hidden menu
 hotkey = "f1"

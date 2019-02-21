@@ -17,9 +17,11 @@
 
 function enum_device (device, fs, uuid, label)
 -- ignore (memdisk), (fm), (python) and (proc)
-	if (device == "memdisk" or device == "proc" or device == "fm" or device == "python") then
-		return 0
-	end
+	if (disk_flag == "0") then
+        if (device == "memdisk" or device == "proc" or device == "fm" or device == "python") then
+            return 0
+        end
+    end
 	if (fs == "iso9660" or fs == "udf") then
 		icon = "iso"
 	else
@@ -127,6 +129,10 @@ end
 path = grub.getenv ("path")
 if (path == nil) then
 	path = ""
+end
+disk_flag = grub.getenv ("show_vdisk")
+if (disk_flag == nil) then
+	disk_flag = "0"
 end
 grub.clear_menu ()
 grub.exportenv ("theme", "slack/f2.txt")

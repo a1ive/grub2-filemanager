@@ -45,4 +45,5 @@ set color_normal=white/black;
 set color_highlight=black/white;
 export encoding="utf8";
 export enable_sort="1";
+export show_vdisk="0";
 lua $prefix/main.lua;
