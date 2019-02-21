@@ -37,12 +37,15 @@
 *ls: ls
 *lsacpi: lsacpi
 *lspci: lspci
+*mcu_load: mcu
+*mcu_status: mcu
 *md5sum: hashsum
 *menuentry: normal
 *pcidump: pcidump
 *plan9: plan9
 *pop_env: normal
 *probe: probe
+*py_options: python
 *qrcode: qrcode
 *rdmsr: msr
 *read_byte: memrw
@@ -177,6 +180,7 @@ password: password
 password_pbkdf2: password_pbkdf2
 play: play
 pxechainloader: pxechain
+py: python
 read: read
 read_file: read
 reboot: reboot

@@ -10,8 +10,8 @@ part_gpt:
 romfs: fshelp
 read: normal
 lsefimmap:
-aout:
 gcry_arcfour: crypto
+aout:
 tftp: net priority_queue
 newc: archelp
 minix2_be:
@@ -138,6 +138,7 @@ blocklist:
 net: priority_queue bufio datetime boot
 part_acorn:
 videoinfo: video
+acpica:
 btrfs: zstd lzopio raid6rec gzio
 lsmmap: mmap
 strtoull_test: functional_test
@@ -160,6 +161,7 @@ fat: fshelp
 fb:
 ufs1_be:
 getkey: extcmd
+libffi:
 archelp:
 fdlibm:
 msr: extcmd
@@ -185,6 +187,7 @@ kernel:
 vhd: extcmd
 usbtest: usb
 relocator: mmap
+python: libffi fdlibm disk acpica extcmd datetime normal
 linuxefi: linux boot
 acpi: extcmd mmap
 tga: bufio bitmap

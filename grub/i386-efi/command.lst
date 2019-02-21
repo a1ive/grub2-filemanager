@@ -40,6 +40,7 @@
 *pcidump: pcidump
 *pop_env: normal
 *probe: probe
+*py_options: python
 *qrcode: qrcode
 *rdmsr: msr
 *read_byte: memrw
@@ -172,6 +173,7 @@ parttool: parttool
 password: password
 password_pbkdf2: password_pbkdf2
 play: play
+py: python
 read: read
 read_file: read
 reboot: reboot

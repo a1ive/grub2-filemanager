@@ -59,6 +59,7 @@ cpio_be: archelp
 functional_test: btrfs extcmd video video_fb
 pxechain: pxe video boot relocator
 bswap_test: functional_test
+mcu: smp extcmd
 sleep: extcmd normal
 memdisk:
 gcry_rijndael: crypto
@@ -145,6 +146,7 @@ net: priority_queue bufio datetime boot
 drivemap: extcmd boot mmap
 part_acorn:
 videoinfo: video
+acpica:
 btrfs: zstd lzopio raid6rec gzio
 lsmmap:
 strtoull_test: functional_test
@@ -168,6 +170,7 @@ fb:
 ufs1_be:
 truecrypt: video boot relocator mmap gzio
 getkey: extcmd
+libffi:
 archelp:
 fdlibm:
 msr: extcmd
@@ -193,6 +196,7 @@ kernel:
 vhd: extcmd
 usbtest: usb
 relocator: mmap
+python: libffi smp fdlibm disk acpica extcmd datetime normal
 acpi: extcmd mmap
 tga: bufio bitmap
 reboot: relocator
@@ -207,6 +211,7 @@ crc64: crypto
 datetime:
 ctz_test: functional_test
 video:
+smp: acpica mmap
 crc: btrfs
 pci:
 cbmemc: normal cbtable terminfo
