@@ -16,8 +16,8 @@
 -- along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
 function enum_device (device, fs, uuid, label)
--- ignore (memdisk), (fm) and (proc)
-	if (device == "memdisk" or device == "proc" or device == "fm") then
+-- ignore (memdisk), (fm), (python) and (proc)
+	if (device == "memdisk" or device == "proc" or device == "fm" or device == "python") then
 		return 0
 	end
 	if (fs == "iso9660" or fs == "udf") then
