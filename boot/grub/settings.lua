@@ -1,6 +1,6 @@
 #!lua
 -- Grub2-FileManager
--- Copyright (C) 2018  A1ive.
+-- Copyright (C) 2018,2019  A1ive.
 --
 -- Grub2-FileManager is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -101,6 +101,11 @@ else
 end
 command = command .. " lua $prefix/settings.lua"
 name = grub.gettext ("Show hidden drives")
+grub.add_icon_menu (icon, command, name)
+-- extra module
+icon = "mem"
+command = "lua $prefix/extra.lua"
+name = grub.gettext ("Load extra modules")
 grub.add_icon_menu (icon, command, name)
 -- hidden menu
 hotkey = "f1"
