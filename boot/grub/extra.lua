@@ -24,11 +24,11 @@ icon = "pmagic"
 command = "insmod ahci"
 name = grub.gettext ("Load AHCI Driver")
 grub.add_icon_menu (icon, command, name)
--- ehci
-icon = "pmagic"
-command = "insmod ehci"
-name = grub.gettext ("Load EHCI Driver")
-grub.add_icon_menu (icon, command, name)
+-- ehci (useless)
+-- icon = "pmagic"
+-- command = "insmod ehci"
+-- name = grub.gettext ("Load EHCI Driver")
+-- grub.add_icon_menu (icon, command, name)
 -- crypto
 icon = "konboot"
 command = "insmod luks; insmod geli; cryptomount -a"
