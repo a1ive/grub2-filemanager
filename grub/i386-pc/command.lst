@@ -181,6 +181,7 @@ password_pbkdf2: password_pbkdf2
 play: play
 pxechainloader: pxechain
 py: python
+pyrun: python
 read: read
 read_file: read
 reboot: reboot
