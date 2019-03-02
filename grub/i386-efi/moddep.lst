@@ -44,6 +44,7 @@ syslinuxcfg: extcmd normal
 search_fs_file:
 usbms: scsi usb
 test_blockarg: extcmd normal
+wrmsr:
 true:
 affs: fshelp
 iso9660: fshelp
@@ -86,6 +87,7 @@ linux: verifiers video boot relocator mmap
 geli: cryptodisk crypto gcry_sha512 pbkdf2 gcry_sha256
 cmdline_cat_test: font functional_test procfs normal video_fb
 part_sun:
+rdmsr: extcmd
 cbtable:
 pbkdf2_test: functional_test pbkdf2 gcry_sha1
 video_bochs: video video_fb
@@ -163,7 +165,6 @@ getkey: extcmd
 libffi:
 archelp:
 fdlibm:
-msr: extcmd
 http: net
 zfs: gzio
 raid6rec: diskfilter

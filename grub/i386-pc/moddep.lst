@@ -45,6 +45,7 @@ search_fs_file:
 vga: video video_fb
 usbms: scsi usb
 test_blockarg: extcmd normal
+wrmsr:
 true:
 affs: fshelp
 iso9660: fshelp
@@ -87,6 +88,7 @@ linux: verifiers normal vbe video boot relocator mmap
 geli: cryptodisk crypto gcry_sha512 pbkdf2 gcry_sha256
 cmdline_cat_test: font functional_test procfs normal video_fb
 part_sun:
+rdmsr: extcmd
 cbtable:
 plan9: verifiers extcmd video boot relocator
 sendkey: extcmd boot
@@ -173,7 +175,6 @@ getkey: extcmd
 libffi:
 archelp:
 fdlibm:
-msr: extcmd
 ntldr: chain video boot relocator
 http: net
 zfs: gzio
