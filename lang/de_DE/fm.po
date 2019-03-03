@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2019-02-19 06:17\n"
+"PO-Revision-Date: 2019-03-03 04:46\n"
 
 msgid "Back"
 msgstr ""
@@ -31,6 +31,9 @@ msgid "Open As GRUB-Legacy Menu"
 msgstr ""
 
 msgid "Open As Lua Script"
+msgstr ""
+
+msgid "Open As Python Script"
 msgstr ""
 
 msgid "Open As EFI Application"
@@ -151,6 +154,21 @@ msgid "Enable ESC (not recommended)"
 msgstr ""
 
 msgid "Enable debug messages"
+msgstr ""
+
+msgid "Show hidden drives"
+msgstr ""
+
+msgid "Load extra module"
+msgstr ""
+
+msgid "Load AHCI Driver"
+msgstr ""
+
+msgid "Mount encrypted volumes (LUKS and geli)"
+msgstr ""
+
+msgid "Enable serial terminal"
 msgstr ""
 
 msgid "EFI Firmware Setup"
