@@ -148,7 +148,7 @@ msgstr ""
 msgid "Show hidden drives"
 msgstr ""
 
-msgid "Load extra module"
+msgid "Load extra modules"
 msgstr ""
 
 msgid "Load AHCI Driver"
