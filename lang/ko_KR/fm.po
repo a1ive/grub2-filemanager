@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2019-03-03 04:46\n"
+"PO-Revision-Date: 2019-03-03 04:57\n"
 
 msgid "Back"
 msgstr ""
@@ -159,7 +159,7 @@ msgstr ""
 msgid "Show hidden drives"
 msgstr ""
 
-msgid "Load extra module"
+msgid "Load extra modules"
 msgstr ""
 
 msgid "Load AHCI Driver"
