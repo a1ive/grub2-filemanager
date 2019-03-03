@@ -10,227 +10,245 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2019-02-19 06:17\n"
+"PO-Revision-Date: 2019-03-03 04:46\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Открыть как меню Grub2"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Открыть как Syslinux меню"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Открыть как pxelinux меню"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Открыть в меню GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Открыть как меню GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Открыть как скрипт Lua"
+
+msgid "Open As Python Script"
+msgstr "Открыть как скрипт Python"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Открыть как приложение EFI"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "Открыть как скрипт Shell EFI"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "Открыть как изображение"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "Нажмите [ESC], чтобы продолжить..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Монтировать изображение"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Загрузить дискету (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Загрузить изображение дискеты (memdisk)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Загрузить изображение жесткого диска (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Загрузить изображение жесткого диска (memdisk)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Открыть как архив"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Загрузить NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Загрузить NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Загрузить NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Boot NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Загрузка Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Загрузить VHD (vboot)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Транспорт ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Загрузить ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Загрузить ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Загрузить ISO (Easy2Boot)"
 
 msgid "Install Windows from ISO"
-msgstr ""
+msgstr "Установить Windows из ISO"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Загрузить EFI файлы"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Открыть как скрипт iPXE"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Открыть как шрифт"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Вставить модуль Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Сектор загрузок BIOS"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Кольчужный NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Кольчужная BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Открыть как MOD GRUB4DOS"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Мульти загрузочного ядра"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Запустить ядро Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Загрузка ядра Linux"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Просмотр текста"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Hex Viewer"
 
 msgid "File Info"
-msgstr ""
+msgstr "Информация о файле"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Кодировка: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Сортировать файлы по имени"
 
 msgid "Resolution (R): "
-msgstr ""
+msgstr "Резолюция (R): "
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Включить ESC (не рекомендуется)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Включить отладочные сообщения"
+
+msgid "Show hidden drives"
+msgstr "Показать скрытые диски"
+
+msgid "Load extra module"
+msgstr "Загрузить дополнительный модуль"
+
+msgid "Load AHCI Driver"
+msgstr "Загрузить драйвер AHCI"
+
+msgid "Mount encrypted volumes (LUKS and geli)"
+msgstr "Монтировать зашифрованные тома (LUKS и geli)"
+
+msgid "Enable serial terminal"
+msgstr "Включить серийный терминал"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Настройка прошивки EFI"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "GRUB консоли"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "Оболочка EFI"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu: "
-msgstr ""
+msgstr "Загрузить внешнее меню: "
 
 msgid "Boot Windows on "
-msgstr ""
+msgstr "Загрузить Windows вкл "
 
 msgid "Boot macOS on ${device}"
-msgstr ""
+msgstr "Загрузить macOS на ${device}"
 
 msgid " on "
-msgstr ""
+msgstr " на "
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Загрузочный ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Загрузочный ISO (ISOLINUX)"
 
 msgid "Boot "
-msgstr ""
+msgstr "Загрузки "
 
 msgid " From ISO"
-msgstr ""
+msgstr " Из ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Пожалуйста, введите имя пользователя. По умолчанию:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "ВНИМАНИЕ: удаляет ВСЕ данные на (hd0,4)."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Нажмите [Y], чтобы продолжить. Нажмите [N], чтобы выйти."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Отменено."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "Путь к файлу содержит пробелы. Это может вызвать проблемы."
 
 msgid "Reboot"
-msgstr ""
+msgstr "Перезагрузка"
 
 msgid "Halt"
-msgstr ""
+msgstr "Стоп"
 
 msgid "File: "
-msgstr ""
+msgstr "Файл: "
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "Горячие клавиши"
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - Помощь"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - Менеджер файлов"
 
 msgid "F3 - Boot"
-msgstr ""
+msgstr "F3 - Ботинка"
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - Настройки"
 
 msgid "F5 - Power Off"
-msgstr ""
+msgstr "F5 - Выключение"
 
 msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl + LAlt + F12 - Сделать скриншоты (EFI)"
 

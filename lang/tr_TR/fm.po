@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2019-02-20 17:13\n"
+"PO-Revision-Date: 2019-03-03 04:46\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -32,6 +32,9 @@ msgstr "Grub-Legacy Menüsünü Aç"
 
 msgid "Open As Lua Script"
 msgstr "Lua Betiğini Aç"
+
+msgid "Open As Python Script"
+msgstr ""
 
 msgid "Open As EFI Application"
 msgstr "EFI Uygulamasını Aç"
@@ -152,6 +155,21 @@ msgstr "ESC'yi etkinleştir (önerilmez)"
 
 msgid "Enable debug messages"
 msgstr "Hata ayıklama mesajlarını etkinleştir"
+
+msgid "Show hidden drives"
+msgstr ""
+
+msgid "Load extra module"
+msgstr ""
+
+msgid "Load AHCI Driver"
+msgstr ""
+
+msgid "Mount encrypted volumes (LUKS and geli)"
+msgstr ""
+
+msgid "Enable serial terminal"
+msgstr ""
 
 msgid "EFI Firmware Setup"
 msgstr "EFI Bellenim Kurulumu"
