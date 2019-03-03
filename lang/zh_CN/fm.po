@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2019-03-03 04:22\n"
+"PO-Revision-Date: 2019-03-03 04:32\n"
 
 msgid "Back"
 msgstr "返回"
@@ -52,49 +52,49 @@ msgid "Mount Image"
 msgstr "挂载镜像"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "使用GRUB4DOS加载为软盘"
+msgstr "使用 GRUB4DOS 加载为软盘"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "使用memdisk加载为软盘"
+msgstr "使用 memdisk 加载为软盘"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "使用GRUB4DOS加载为硬盘"
+msgstr "使用 GRUB4DOS 加载为硬盘"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "使用memdisk加载为硬盘"
+msgstr "使用 memdisk 加载为硬盘"
 
 msgid "Open As Archiver"
 msgstr "作为压缩文件打开"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "使用wimboot加载 NT6.x WIM"
+msgstr "使用 wimboot 加载 NT6.x WIM"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "使用NTBOOT加载 NT6.x WIM"
+msgstr "使用 NTBOOT 加载 NT6.x WIM"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "使用NTBOOT加载 NT5.x WIM"
+msgstr "使用 NTBOOT 加载 NT5.x WIM"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "使用NTBOOT加载 NT5.x PE"
+msgstr "使用 NTBOOT 加载 NT5.x PE"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "使用NTBOOT加载 Windows NT6.x VHD/VHDX"
+msgstr "使用 NTBOOT 加载 Windows NT6.x VHD/VHDX"
 
 msgid "Boot VHD (vboot)"
-msgstr "使用vboot启动VHD"
+msgstr "使用 vboot 启动 VHD"
 
 msgid "Mount ISO"
-msgstr "查看ISO内容"
+msgstr "查看 ISO 内容"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "使用GRUB4DOS加载ISO"
+msgstr "使用 GRUB4DOS 加载 ISO"
 
 msgid "Boot ISO (memdisk)"
-msgstr "使用memdisk加载ISO"
+msgstr "使用 memdisk 加载 ISO"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "使用Easy2Boot方式加载ISO"
+msgstr "使用 Easy2Boot 方式加载 ISO"
 
 msgid "Install Windows from ISO"
 msgstr "从 ISO 安装 Windows"
