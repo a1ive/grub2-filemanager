@@ -283,7 +283,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
 	for i,cfgpath in ipairs(cfglist) do
 		if grub.file_exist (cfgpath) then
 			icon = "gnu-linux"
-			command = command .. "root=loop; theme=${prefix}/themes/slack/theme.txt; " ..
+			command = "export root=loop; theme=${prefix}/themes/slack/theme.txt; " ..
 			 "export linux_extra; syslinux_configfile -i " .. cfgpath
 			name = grub.gettext ("Boot ISO (ISOLINUX)")
 			grub.add_icon_menu (icon, command, name)
