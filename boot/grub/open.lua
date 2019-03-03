@@ -583,8 +583,14 @@ function open (file, file_type, device, device_type, arch, platform)
 	elseif file_type == "lua" then
 		-- lua
 		icon = "lua"
-		command = "root=" .. device .. "; lua " .. file
+		command = "root=" .. device .. "; lua " .. file .. "; getkey"
 		name = grub.gettext("Open As Lua Script")
+		grub.add_icon_menu (icon, command, name)
+    elseif file_type == "py" then
+		-- python
+		icon = "py"
+		command = "root=" .. device .. "; pyrun " .. file .. "; getkey"
+		name = grub.gettext("Open As Python Script")
 		grub.add_icon_menu (icon, command, name)
 	elseif grub.run ("file --is-x86-multiboot " .. file) == 0 then
 		-- multiboot

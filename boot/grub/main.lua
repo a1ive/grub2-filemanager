@@ -101,8 +101,8 @@ function check_file (name, name_extn)
 		file_icon = "txt"
     elseif name_extn == "crt" or name_extn == "cer" or name_extn == "der" then
 		file_icon = "crt"
-    elseif name_extn == "py" then
-		file_icon = "py"
+    elseif name_extn == "py" or name_extn == "pyc" then
+		file_type, file_icon = "py", "py"
 	end
 	return file_type, file_icon
 end
