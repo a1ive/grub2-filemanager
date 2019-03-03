@@ -1,4 +1,5 @@
 [简体中文](https://a1ive.github.io/grub2-filemanager/) 
+
 # grub2-filemanager 
 [![Build Status](https://travis-ci.com/a1ive/grub2-filemanager.svg?branch=master)](https://travis-ci.com/a1ive/grub2-filemanager) ![](https://img.shields.io/github/license/a1ive/grub2-filemanager.svg?style=flat) ![](https://img.shields.io/github/downloads/a1ive/grub2-filemanager/total.svg?style=flat) ![](https://img.shields.io/github/release/a1ive/grub2-filemanager.svg?style=flat) 
 ## Preview 
@@ -11,7 +12,7 @@ https://github.com/a1ive/grub2-filemanager/releases
 	./build.sh
 ## Boot 
 ### i386-pc 
-Do NOT boot grubfm.iso with memdisk!  
+DO NOT boot grubfm.iso with memdisk!  
 #### GRUB4DOS 
 	map --mem /grubfm.iso (0xff)
 	map --hook
@@ -19,21 +20,25 @@ Do NOT boot grubfm.iso with memdisk!
 #### GRUB 2
 	linux /loadfm  
 	initrd /grubfm.iso  
-### x86_64-efi, i386-efi 
+### x86_64-efi 
+#### [Secure Boot](https://github.com/a1ive/grub2-filemanager/blob/master/secureboot/sb.md) 
+
 #### GRUB 2 
-	chainloader /grubfm.efi
+
+	chainloader /grubfmx64.efi
 #### rEFInd 
-	loader /grubfm.efi
+	loader /grubfmx64.efi
 #### Systemd-boot 
-	efi /grubfm.efi
+	efi /grubfmx64.efi
 ## Supported distros 
+
 *    4MLinux
 *    Acronis True Image
-*    Android-x86(6.0+)
+*    Android-x86 (6.0+)
 *    antiX
 *    Apricity OS
 *    Antergos
-*    Arch Linux(FAT32 only)
+*    Arch Linux (FAT32 only)
 *    ArchBang
 *    Archboot
 *    Backbox
@@ -41,31 +46,32 @@ Do NOT boot grubfm.iso with memdisk!
 *    Bodhi
 *    Calculate Linux
 *    CDlinux
-*    CentOS(FAT32 only)
+*    CentOS (FAT32 only)
 *    Clonezilla
+*    Condres OS
 *    CyanogenMod (LineageOS)
-*    DBAN(Legacy-BIOS only)
+*    DBAN (Legacy-BIOS only)
 *    Debian Live
 *    Debian/kFreeBSD
-*    Deepin
+*    Deepin (< 15.6)
 *    Devuan Live
 *    elementaryOS
 *    Elive
 *    ExTiX
-*    Fedora(FAT32 only)
-*    FreeBSD(bootonly ISO, Legacy-BIOS only)
-*    FreeDOS(Legacy-BIOS only)
+*    Fedora (FAT32 only)
+*    FreeBSD (Legacy-BIOS only)
+*    FreeDOS (Legacy-BIOS only)
 *    FreeNAS
 *    Gentoo
 *    GParted Live
 *    grml
-*    HelenOS(Legacy-BIOS only)
+*    HelenOS (Legacy-BIOS only)
 *    IPFire
 *    Knoppix
 *    Kali Linux
 *    KaOS
 *    KDE-neon
-*    KolibriOS(Legacy-BIOS only)
+*    KolibriOS (Legacy-BIOS only)
 *    Linux Lite
 *    LinuxMint
 *    Lubuntu
@@ -73,8 +79,8 @@ Do NOT boot grubfm.iso with memdisk!
 *    Memtest86
 *    MiniTool Partition Wizard
 *    MX Linux
-*    NetBSD(Legacy-BIOS only)
-*    OpenBSD(Legacy-BIOS only)
+*    NetBSD (Legacy-BIOS only)
+*    OpenBSD (Legacy-BIOS only)
 *    OpenSUSE
 *    OpenSUSE Tumbleweed
 *    OpenMandriva
@@ -88,12 +94,12 @@ Do NOT boot grubfm.iso with memdisk!
 *    Porteus
 *    Q4OS
 *    Redcore Linux
-*    RemixOS(3.0+)
+*    RemixOS (3.0+)
 *    siduction
 *    Slackware
 *    Slax
-*    Slitaz(Legacy-BIOS only)
-*    SmartOS(Legacy-BIOS only)
+*    Slitaz (Legacy-BIOS only)
+*    SmartOS (Legacy-BIOS only)
 *    Solus
 *    Super Grub2 Disk
 *    System Rescue CD
@@ -102,11 +108,14 @@ Do NOT boot grubfm.iso with memdisk!
 *    Void Linux
 *    Wifislax/Wifislax64
 *    Wifiway
-*    Windows PE(Legacy-BIOS only)
+*    Windows PE (Legacy-BIOS only)
 *    Xubuntu
 *    ZorinOS
 ## Source code 
-GRUB2-MOD: https://github.com/a1ive/grub2-mod 
+GRUB2: https://github.com/a1ive/grub 
+
+PreLoader: https://github.com/a1ive/PreLoader 
+
 ## Similar projects 
 *	[Multiboot USB](http://mbusb.aguslr.com/) 
 *	[grub-iso-boot](https://github.com/Jimmy-Z/grub-iso-boot) 
