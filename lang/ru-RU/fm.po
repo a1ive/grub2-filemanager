@@ -1,0 +1,254 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: grub2-filemanager\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /master/lang/fm.pot\n"
+"Project-Id-Version: grub2-filemanager\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Last-Translator: a1ive <ligenlive@gmail.com>\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"PO-Revision-Date: 2019-03-03 04:42\n"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Open As Grub2 Menu"
+msgstr "Открыть как меню Grub2"
+
+msgid "Open As Syslinux Menu"
+msgstr "Открыть как Syslinux меню"
+
+msgid "Open As pxelinux Menu"
+msgstr "Открыть как pxelinux меню"
+
+msgid "Open As GRUB4DOS Menu"
+msgstr "Открыть в меню GRUB4DOS"
+
+msgid "Open As GRUB-Legacy Menu"
+msgstr "Открыть как меню GRUB-Legacy"
+
+msgid "Open As Lua Script"
+msgstr "Открыть как скрипт Lua"
+
+msgid "Open As Python Script"
+msgstr "Открыть как скрипт Python"
+
+msgid "Open As EFI Application"
+msgstr "Открыть как приложение EFI"
+
+msgid "Open As EFI Shell Script"
+msgstr "Открыть как скрипт Shell EFI"
+
+msgid "Open As Image"
+msgstr "Открыть как изображение"
+
+msgid "Press [ESC] to continue..."
+msgstr "Нажмите [ESC], чтобы продолжить..."
+
+msgid "Mount Image"
+msgstr "Монтировать изображение"
+
+msgid "Boot Floppy Image (GRUB4DOS)"
+msgstr "Загрузить дискету (GRUB4DOS)"
+
+msgid "Boot Floppy Image (memdisk)"
+msgstr "Загрузить изображение дискеты (memdisk)"
+
+msgid "Boot Hard Drive Image (GRUB4DOS)"
+msgstr "Загрузить изображение жесткого диска (GRUB4DOS)"
+
+msgid "Boot Hard Drive Image (memdisk)"
+msgstr "Загрузить изображение жесткого диска (memdisk)"
+
+msgid "Open As Archiver"
+msgstr "Открыть как архив"
+
+msgid "Boot NT6.x WIM (wimboot)"
+msgstr "Загрузить NT6.x WIM (wimboot)"
+
+msgid "Boot NT6.x WIM (NTBOOT)"
+msgstr "Загрузить NT6.x WIM (NTBOOT)"
+
+msgid "Boot NT5.x WIM (NTBOOT)"
+msgstr "Загрузить NT5.x WIM (NTBOOT)"
+
+msgid "Boot NT5.x PE (NTBOOT)"
+msgstr "Boot NT5.x PE (NTBOOT)"
+
+msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "Загрузка Windows NT6.x VHD/VHDX (NTBOOT)"
+
+msgid "Boot VHD (vboot)"
+msgstr "Загрузить VHD (vboot)"
+
+msgid "Mount ISO"
+msgstr "Транспорт ISO"
+
+msgid "Boot ISO (GRUB4DOS)"
+msgstr "Загрузить ISO (GRUB4DOS)"
+
+msgid "Boot ISO (memdisk)"
+msgstr "Загрузить ISO (memdisk)"
+
+msgid "Boot ISO (Easy2Boot)"
+msgstr "Загрузить ISO (Easy2Boot)"
+
+msgid "Install Windows from ISO"
+msgstr "Установить Windows из ISO"
+
+msgid "Boot EFI Files"
+msgstr "Загрузить EFI файлы"
+
+msgid "Open As iPXE Script"
+msgstr "Открыть как скрипт iPXE"
+
+msgid "Open As Font"
+msgstr "Открыть как шрифт"
+
+msgid "Insert Grub2 Module"
+msgstr "Вставить модуль Grub2"
+
+msgid "Chainload BIOS Boot Sector"
+msgstr "Сектор загрузок BIOS"
+
+msgid "Chainload NTLDR"
+msgstr "Кольчужный NTLDR"
+
+msgid "Chainload BOOTMGR"
+msgstr "Кольчужная BOOTMGR"
+
+msgid "Open As GRUB4DOS MOD"
+msgstr "Открыть как MOD GRUB4DOS"
+
+msgid "Boot Multiboot Kernel"
+msgstr "Мульти загрузочного ядра"
+
+msgid "Boot Multiboot2 Kernel"
+msgstr "Запустить ядро Multiboot2"
+
+msgid "Boot Linux Kernel"
+msgstr "Загрузка ядра Linux"
+
+msgid "Text Viewer"
+msgstr "Просмотр текста"
+
+msgid "Hex Viewer"
+msgstr "Hex Viewer"
+
+msgid "File Info"
+msgstr "Информация о файле"
+
+msgid "Encoding: "
+msgstr "Кодировка: "
+
+msgid "Sort files by name"
+msgstr "Сортировать файлы по имени"
+
+msgid "Resolution (R): "
+msgstr "Резолюция (R): "
+
+msgid "Enable ESC (not recommended)"
+msgstr "Включить ESC (не рекомендуется)"
+
+msgid "Enable debug messages"
+msgstr "Включить отладочные сообщения"
+
+msgid "Show hidden drives"
+msgstr "Показать скрытые диски"
+
+msgid "Load extra module"
+msgstr "Загрузить дополнительный модуль"
+
+msgid "Load AHCI Driver"
+msgstr "Загрузить драйвер AHCI"
+
+msgid "Mount encrypted volumes (LUKS and geli)"
+msgstr "Монтировать зашифрованные тома (LUKS и geli)"
+
+msgid "Enable serial terminal"
+msgstr "Включить серийный терминал"
+
+msgid "EFI Firmware Setup"
+msgstr "Настройка прошивки EFI"
+
+msgid "GRUB Console"
+msgstr "GRUB консоли"
+
+msgid "EFI Shell"
+msgstr "Оболочка EFI"
+
+msgid "UEFI DUET"
+msgstr "UEFI DUET"
+
+msgid "Load External Menu: "
+msgstr "Загрузить внешнее меню: "
+
+msgid "Boot Windows on "
+msgstr "Загрузить Windows вкл "
+
+msgid "Boot macOS on ${device}"
+msgstr "Загрузить macOS на ${device}"
+
+msgid " on "
+msgstr " на "
+
+msgid "Boot ISO (Loopback)"
+msgstr "Загрузочный ISO (Loopback)"
+
+msgid "Boot ISO (ISOLINUX)"
+msgstr "Загрузочный ISO (ISOLINUX)"
+
+msgid "Boot "
+msgstr "Загрузки "
+
+msgid " From ISO"
+msgstr " Из ISO"
+
+msgid "Please input the username. Default:user Super User:root Devuan:devuan"
+msgstr "Пожалуйста, введите имя пользователя. По умолчанию:user Super User:root Devuan:devuan"
+
+msgid "WARNING: Will erase ALL data on (hd0,4)."
+msgstr "ВНИМАНИЕ: удаляет ВСЕ данные на (hd0,4)."
+
+msgid "Press [Y] to continue. Press [N] to quit."
+msgstr "Нажмите [Y], чтобы продолжить. Нажмите [N], чтобы выйти."
+
+msgid "Canceled."
+msgstr "Отменено."
+
+msgid "File path contains spaces.This may cause problems!Press any key to continue."
+msgstr "Путь к файлу содержит пробелы. Это может вызвать проблемы."
+
+msgid "Reboot"
+msgstr "Перезагрузка"
+
+msgid "Halt"
+msgstr "Стоп"
+
+msgid "File: "
+msgstr "Файл: "
+
+msgid "Hotkeys"
+msgstr "Горячие клавиши"
+
+msgid "F1 - Help"
+msgstr "F1 - Помощь"
+
+msgid "F2 - File Manager"
+msgstr "F2 - Менеджер файлов"
+
+msgid "F3 - Boot"
+msgstr "F3 - Ботинка"
+
+msgid "F4 - Settings"
+msgstr "F4 - Настройки"
+
+msgid "F5 - Power Off"
+msgstr "F5 - Выключение"
+
+msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
+msgstr "LCtrl + LAlt + F12 - Сделать скриншоты (EFI)"
+
