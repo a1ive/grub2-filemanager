@@ -25,6 +25,8 @@ if [ "$grub_platform" = "efi" ]; then
 		search -s -f -q /efi/boot/bootx64.efi;
 	fi;
 	chainloader ${prefix}/CrScreenshotDxe.efi;
+else
+    search -s -f -q /fmldr;
 fi;
 for module in $modlist; do
 	insmod $module;
