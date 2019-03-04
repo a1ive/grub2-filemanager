@@ -1,5 +1,5 @@
 # Grub2-FileManager
-# Copyright (C) 2016,2017,2018  A1ive.
+# Copyright (C) 2016,2017,2018,2019  A1ive.
 #
 # Grub2-FileManager is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,6 +17,17 @@
 set pager=0;
 set debug=off;
 cat --set=modlist ${prefix}/insmod.lst;
+for module in $modlist; do
+	insmod $module;
+done;
+export enable_progress_indicator=0;
+#python init
+search -s -f /boot/python/lib.zip;
+export root;
+py 'import sys; sys.path = ["/boot/python", "/boot/python/lib.zip"]; del sys';
+py 'import init; init.early_init()';
+py 'init.init(); del init';
+#python init done
 if [ "$grub_platform" = "efi" ]; then
 	search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
 	if [ "$grub_cpu" = "i386" ]; then
@@ -28,10 +39,6 @@ if [ "$grub_platform" = "efi" ]; then
 else
     search -s -f -q /fmldr;
 fi;
-for module in $modlist; do
-	insmod $module;
-done;
-export enable_progress_indicator=0;
 export grub_disable_esc="1";
 loadfont ${prefix}/fonts/unicode.xz;
 export locale_dir=${prefix}/locale;
