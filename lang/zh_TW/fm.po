@@ -10,19 +10,19 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2019-03-03 04:57\n"
+"PO-Revision-Date: 2019-03-05 07:53\n"
 
 msgid "Back"
 msgstr "返回"
 
 msgid "Open As Grub2 Menu"
-msgstr "作為Grub2選單開啟"
+msgstr "作為 Grub2 選單開啟"
 
 msgid "Open As Syslinux Menu"
-msgstr "作為Syslinux選單開啟"
+msgstr "作為 Syslinux 選單開啟"
 
 msgid "Open As pxelinux Menu"
-msgstr "作為pxelinux選單開啟"
+msgstr "作為 pxelinux 選單開啟"
 
 msgid "Open As GRUB4DOS Menu"
 msgstr "作為GRUB4DOS選單開啟"
@@ -157,13 +157,13 @@ msgid "Enable debug messages"
 msgstr "顯示偵錯資訊"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "顯示隱藏的磁碟機"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "載入額外的模組"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "載入 AHCI 驅動程式"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
 msgstr "裝載加密卷 (luks 和 geli)"
