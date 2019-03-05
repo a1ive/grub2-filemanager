@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2019-03-03 04:57\n"
+"PO-Revision-Date: 2019-03-05 03:02\n"
 
 msgid "Back"
 msgstr "返回"
@@ -109,7 +109,7 @@ msgid "Open As Font"
 msgstr "加载 pf2 字库文件"
 
 msgid "Insert Grub2 Module"
-msgstr "加载GRUB 2模块"
+msgstr "加载 Grub2 模块"
 
 msgid "Chainload BIOS Boot Sector"
 msgstr "作为 BIOS 引导扇区加载"
