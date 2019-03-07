@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: a1ive <ligenlive@gmail.com>\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2019-03-05 07:53\n"
+"PO-Revision-Date: 2019-03-07 02:29\n"
 
 msgid "Back"
 msgstr "返回"
@@ -25,22 +25,22 @@ msgid "Open As pxelinux Menu"
 msgstr "作為 pxelinux 選單開啟"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr "作為GRUB4DOS選單開啟"
+msgstr "作為 GRUB4DOS 選單開啟"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr "作為GRUB-Legacy選單開啟"
+msgstr "作為 GRUB-Legacy 選單開啟"
 
 msgid "Open As Lua Script"
-msgstr "作為Lua指令碼載入"
+msgstr "作為 Lua 指令碼載入"
 
 msgid "Open As Python Script"
 msgstr "作為 Python 指令碼載入"
 
 msgid "Open As EFI Application"
-msgstr "作為EFI可執行檔案運行"
+msgstr "作為 EFI 可執行檔案運行"
 
 msgid "Open As EFI Shell Script"
-msgstr "作為EFI Shell指令碼開啟"
+msgstr "作為 EFI Shell 指令碼開啟"
 
 msgid "Open As Image"
 msgstr "作為影象開啟"
@@ -52,85 +52,85 @@ msgid "Mount Image"
 msgstr "掛載映象"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "使用GRUB4DOS載入為軟盤"
+msgstr "使用 GRUB4DOS 載入為軟盤"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "使用memdisk載入為軟盤"
+msgstr "使用 memdisk 載入為軟盤"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "使用GRUB4DOS載入為硬碟"
+msgstr "使用 GRUB4DOS 載入為硬碟"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "使用memdisk載入為硬碟"
+msgstr "使用 memdisk 載入為硬碟"
 
 msgid "Open As Archiver"
 msgstr "作為壓縮檔案開啟"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "使用wimboot載入 NT6.x WIM"
+msgstr "使用 wimboot 載入 NT6.x WIM"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "使用NTBOOT載入 NT6.x WIM"
+msgstr "使用 NTBOOT 載入 NT6.x WIM"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "使用NTBOOT載入 NT5.x WIM"
+msgstr "使用 NTBOOT 載入 NT5.x WIM"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "使用NTBOOT載入 NT5.x PE"
+msgstr "使用 NTBOOT 載入 NT5.x PE"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "使用NTBOOT載入 Windows NT6.x VHD/VHDX"
+msgstr "使用 NTBOOT 載入 Windows NT6.x VHD/VHDX"
 
 msgid "Boot VHD (vboot)"
-msgstr "使用vboot載入 VHD"
+msgstr "使用 vboot 載入 VHD"
 
 msgid "Mount ISO"
-msgstr "檢視ISO內容"
+msgstr "檢視 ISO 內容"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "使用GRUB4DOS載入ISO"
+msgstr "使用 GRUB4DOS 載入 ISO"
 
 msgid "Boot ISO (memdisk)"
-msgstr "使用memdisk載入ISO"
+msgstr "使用 memdisk 載入 ISO"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "使用Easy2Boot方式載入ISO"
+msgstr "使用 Easy2Boot 方式載入 ISO"
 
 msgid "Install Windows from ISO"
 msgstr "從 ISO 安裝 Windows"
 
 msgid "Boot EFI Files"
-msgstr "僅載入EFI檔案"
+msgstr "僅載入 EFI 檔案"
 
 msgid "Open As iPXE Script"
-msgstr "作為iPXE指令碼開啟"
+msgstr "作為 iPXE 指令碼開啟"
 
 msgid "Open As Font"
 msgstr "載入pf2字型檔檔案"
 
 msgid "Insert Grub2 Module"
-msgstr "載入GRUB 2模組"
+msgstr "載入Grub2 模組"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr "作為BIOS引導扇區載入"
+msgstr "作為 BIOS 引導扇區載入"
 
 msgid "Chainload NTLDR"
-msgstr "作為NTLDR載入"
+msgstr "作為 NTLDR 載入"
 
 msgid "Chainload BOOTMGR"
-msgstr "作為BOOTMGR載入"
+msgstr "作為 BOOTMGR 載入"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr "作為GRUB4DOS外部命令載入"
+msgstr "作為 GRUB4DOS 外部命令載入"
 
 msgid "Boot Multiboot Kernel"
-msgstr "作為multiboot核心載入"
+msgstr "作為 multiboot 核心載入"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr "作為multiboot2核心載入"
+msgstr "作為 multiboot2 核心載入"
 
 msgid "Boot Linux Kernel"
-msgstr "作為linux核心載入"
+msgstr "作為 Linux 核心載入"
 
 msgid "Text Viewer"
 msgstr "文字檢視"
