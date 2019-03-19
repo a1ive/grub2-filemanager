@@ -1,0 +1,1 @@
+ahci ata crypto cryptodisk gcry_sha256 gcry_sha512 geli luks pbkdf2 scsi

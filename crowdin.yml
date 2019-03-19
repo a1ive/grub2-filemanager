@@ -1,0 +1,7 @@
+files:
+  - source: /lang/fm.pot
+    translation: /lang/%locale_with_underscore%/fm.po
+    languages_mapping:
+      locale:
+        zh-CN: zh_CN
+        zh-TW: zh_TW

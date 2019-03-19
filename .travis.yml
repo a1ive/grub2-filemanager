@@ -1,0 +1,17 @@
+dist: xenial
+language: generic
+notifications:
+    email: false
+sudo: required
+install: sudo apt-get install -y gettext grub2-common genisoimage p7zip-full
+script: ./release.sh
+before_deploy:
+    - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d')-$(git log --format=%h -1)}
+    - git tag $TRAVIS_TAG
+deploy:
+    provider: releases
+    api_key: $GITHUB_TOKEN
+    file: grubfm-zh_CN.7z
+    skip_cleanup: true
+    on:
+      tags: true

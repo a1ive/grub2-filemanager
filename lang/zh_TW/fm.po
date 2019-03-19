@@ -1,0 +1,254 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: grub2-filemanager\n"
+"X-Crowdin-Language: zh-TW\n"
+"X-Crowdin-File: /master/lang/fm.pot\n"
+"Project-Id-Version: grub2-filemanager\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Last-Translator: a1ive <ligenlive@gmail.com>\n"
+"Language-Team: Chinese Traditional\n"
+"Language: zh_TW\n"
+"PO-Revision-Date: 2019-03-07 02:29\n"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Open As Grub2 Menu"
+msgstr "作為 Grub2 選單開啟"
+
+msgid "Open As Syslinux Menu"
+msgstr "作為 Syslinux 選單開啟"
+
+msgid "Open As pxelinux Menu"
+msgstr "作為 pxelinux 選單開啟"
+
+msgid "Open As GRUB4DOS Menu"
+msgstr "作為 GRUB4DOS 選單開啟"
+
+msgid "Open As GRUB-Legacy Menu"
+msgstr "作為 GRUB-Legacy 選單開啟"
+
+msgid "Open As Lua Script"
+msgstr "作為 Lua 指令碼載入"
+
+msgid "Open As Python Script"
+msgstr "作為 Python 指令碼載入"
+
+msgid "Open As EFI Application"
+msgstr "作為 EFI 可執行檔案運行"
+
+msgid "Open As EFI Shell Script"
+msgstr "作為 EFI Shell 指令碼開啟"
+
+msgid "Open As Image"
+msgstr "作為影象開啟"
+
+msgid "Press [ESC] to continue..."
+msgstr "按 [ESC] 繼續 ..."
+
+msgid "Mount Image"
+msgstr "掛載映象"
+
+msgid "Boot Floppy Image (GRUB4DOS)"
+msgstr "使用 GRUB4DOS 載入為軟盤"
+
+msgid "Boot Floppy Image (memdisk)"
+msgstr "使用 memdisk 載入為軟盤"
+
+msgid "Boot Hard Drive Image (GRUB4DOS)"
+msgstr "使用 GRUB4DOS 載入為硬碟"
+
+msgid "Boot Hard Drive Image (memdisk)"
+msgstr "使用 memdisk 載入為硬碟"
+
+msgid "Open As Archiver"
+msgstr "作為壓縮檔案開啟"
+
+msgid "Boot NT6.x WIM (wimboot)"
+msgstr "使用 wimboot 載入 NT6.x WIM"
+
+msgid "Boot NT6.x WIM (NTBOOT)"
+msgstr "使用 NTBOOT 載入 NT6.x WIM"
+
+msgid "Boot NT5.x WIM (NTBOOT)"
+msgstr "使用 NTBOOT 載入 NT5.x WIM"
+
+msgid "Boot NT5.x PE (NTBOOT)"
+msgstr "使用 NTBOOT 載入 NT5.x PE"
+
+msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "使用 NTBOOT 載入 Windows NT6.x VHD/VHDX"
+
+msgid "Boot VHD (vboot)"
+msgstr "使用 vboot 載入 VHD"
+
+msgid "Mount ISO"
+msgstr "檢視 ISO 內容"
+
+msgid "Boot ISO (GRUB4DOS)"
+msgstr "使用 GRUB4DOS 載入 ISO"
+
+msgid "Boot ISO (memdisk)"
+msgstr "使用 memdisk 載入 ISO"
+
+msgid "Boot ISO (Easy2Boot)"
+msgstr "使用 Easy2Boot 方式載入 ISO"
+
+msgid "Install Windows from ISO"
+msgstr "從 ISO 安裝 Windows"
+
+msgid "Boot EFI Files"
+msgstr "僅載入 EFI 檔案"
+
+msgid "Open As iPXE Script"
+msgstr "作為 iPXE 指令碼開啟"
+
+msgid "Open As Font"
+msgstr "載入pf2字型檔檔案"
+
+msgid "Insert Grub2 Module"
+msgstr "載入Grub2 模組"
+
+msgid "Chainload BIOS Boot Sector"
+msgstr "作為 BIOS 引導扇區載入"
+
+msgid "Chainload NTLDR"
+msgstr "作為 NTLDR 載入"
+
+msgid "Chainload BOOTMGR"
+msgstr "作為 BOOTMGR 載入"
+
+msgid "Open As GRUB4DOS MOD"
+msgstr "作為 GRUB4DOS 外部命令載入"
+
+msgid "Boot Multiboot Kernel"
+msgstr "作為 multiboot 核心載入"
+
+msgid "Boot Multiboot2 Kernel"
+msgstr "作為 multiboot2 核心載入"
+
+msgid "Boot Linux Kernel"
+msgstr "作為 Linux 核心載入"
+
+msgid "Text Viewer"
+msgstr "文字檢視"
+
+msgid "Hex Viewer"
+msgstr "十六進位制檢視"
+
+msgid "File Info"
+msgstr "檢視檔案資訊"
+
+msgid "Encoding: "
+msgstr "編碼設定: "
+
+msgid "Sort files by name"
+msgstr "按檔名排序"
+
+msgid "Resolution (R): "
+msgstr "解析度設定(R): "
+
+msgid "Enable ESC (not recommended)"
+msgstr "啟用ESC (不推薦)"
+
+msgid "Enable debug messages"
+msgstr "顯示偵錯資訊"
+
+msgid "Show hidden drives"
+msgstr "顯示隱藏的磁碟機"
+
+msgid "Load extra modules"
+msgstr "載入額外的模組"
+
+msgid "Load AHCI Driver"
+msgstr "載入 AHCI 驅動程式"
+
+msgid "Mount encrypted volumes (LUKS and geli)"
+msgstr "裝載加密卷 (luks 和 geli)"
+
+msgid "Enable serial terminal"
+msgstr "啟用串列終端"
+
+msgid "EFI Firmware Setup"
+msgstr "EFI固件設定"
+
+msgid "GRUB Console"
+msgstr "GRUB 命令列"
+
+msgid "EFI Shell"
+msgstr "EFI Shell"
+
+msgid "UEFI DUET"
+msgstr "UEFI DUET"
+
+msgid "Load External Menu: "
+msgstr "載入外接選單: "
+
+msgid "Boot Windows on "
+msgstr "啟動 Windows : "
+
+msgid "Boot macOS on ${device}"
+msgstr "啟動 macOS : "
+
+msgid " on "
+msgstr " : "
+
+msgid "Boot ISO (Loopback)"
+msgstr "作為 Loopback ISO 啟動"
+
+msgid "Boot ISO (ISOLINUX)"
+msgstr "作為 ISOLINUX ISO 啟動"
+
+msgid "Boot "
+msgstr "啟動 "
+
+msgid " From ISO"
+msgstr " ISO"
+
+msgid "Please input the username. Default:user Super User:root Devuan:devuan"
+msgstr "請輸入登入使用者名。預設:user 超級使用者:root Devuan:devuan"
+
+msgid "WARNING: Will erase ALL data on (hd0,4)."
+msgstr "警告：即將刪除(hd0,4)的分區資料。"
+
+msgid "Press [Y] to continue. Press [N] to quit."
+msgstr "按[Y]繼續。按[N]退出。"
+
+msgid "Canceled."
+msgstr "已取消。"
+
+msgid "File path contains spaces.This may cause problems!Press any key to continue."
+msgstr "檔案路徑包含空格。這可能會造成問題。按任意鍵繼續。"
+
+msgid "Reboot"
+msgstr "重啓"
+
+msgid "Halt"
+msgstr "關機"
+
+msgid "File: "
+msgstr "檔案: "
+
+msgid "Hotkeys"
+msgstr "快捷鍵"
+
+msgid "F1 - Help"
+msgstr "F1 - 幫助"
+
+msgid "F2 - File Manager"
+msgstr "F2 - 檔案管理器"
+
+msgid "F3 - Boot"
+msgstr "F3 - 啟動選單"
+
+msgid "F4 - Settings"
+msgstr "F4 - 設定"
+
+msgid "F5 - Power Off"
+msgstr "F5 - 關機"
+
+msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
+msgstr "LCtrl + LAlt + F12 - 螢幕截圖 (EFI)"
+

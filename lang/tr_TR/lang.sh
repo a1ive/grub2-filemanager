@@ -1,0 +1,1 @@
+export lang=tr_TR;

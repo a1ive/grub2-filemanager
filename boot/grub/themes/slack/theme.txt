@@ -1,0 +1,30 @@
+# Global Property
+title-text: ""
+title-color: "#000000"
+message-color: "#333333"
+message-bg-color: "#f2f2f2"
+desktop-color: "#000000"
+desktop-image: "background.png"
+terminal-box: "term_bkg_*.png"
+
+# Show the boot menu
++ boot_menu {
+		left = 15%
+		width = 70%
+		top = 15%
+		height = 70%
+		item_color = "#f5f5f5"
+		selected_item_color = "#f5f5f5"
+		item_height = 38
+		item_padding = 15
+		item_spacing = 5
+		icon_width = 32
+		icon_height = 32
+		item_icon_space = 20
+		selected_item_pixmap_style= "select_bkg_*.png"
+		menu_pixmap_style = "menu_bkg_*.png"
+		scrollbar = true
+		scrollbar_width = 16
+        scrollbar_thumb = "sb_thumb_*.png"
+        scrollbar_frame = "sb_frame_*.png"
+}

@@ -1,0 +1,22 @@
+# Global Property
+title-text: ""
+title-color: "#000000"
+message-color: "#333333"
+message-bg-color: "#f2f2f2"
+desktop-color: "#000000"
+desktop-image: "splash10/black.png"
+terminal-box: "term_bkg_*.png"
+terminal-font: "More Perfect DOS VGA 16"
+
++ animation {
+  dir_name = "splash10"
+  image_format = "png"
+  frame_number = 42
+  size_ratio = 1
+  play_once = pause
+  
+  left = 0%
+  width = 100%
+  top = 0%
+  height = 100%
+}

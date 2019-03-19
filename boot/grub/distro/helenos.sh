@@ -1,0 +1,23 @@
+set multiboot_kernel=/boot/kernel.bin;
+enable_progress_indicator=1;
+echo "Loading multiboot kernel";
+multiboot (loop)${multiboot_kernel};
+echo "Loading ns";
+module (loop)/boot/ns /boot/ns;
+echo "Loading loader";
+module (loop)/boot/loader /boot/loader;
+echo "Loading init";
+module (loop)/boot/init /boot/init;
+echo "Loading locsrv";
+module (loop)/boot/locsrv /boot/locsrv;
+echo "Loading rd";
+module (loop)/boot/rd /boot/rd;
+echo "Loading vfs";
+module (loop)/boot/vfs /boot/vfs;
+echo "Loading logger";
+module (loop)/boot/logger /boot/logger;
+echo "Loading ext4fs";
+module (loop)/boot/ext4fs /boot/ext4fs;
+echo "Loading initrd.img";
+module (loop)/boot/initrd.img /boot/initrd.img
+echo "Starting HelenOS";
