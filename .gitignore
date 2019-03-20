@@ -3,17 +3,11 @@ grubfm*.efi.signed
 grubfm*.iso
 grubfm*.7z
 build
-sources/grub*
 NTBOOT.NT5
 NTBOOT.NT6
 NTBOOT.PE1
 wimboot
 vbootldr
-oscdimg.exe
 *.crt
 *.cer
 *.key
-grub/*/*.image
-grub/*/*.module
-grub/*/*.exec
-grub/*/config.h
