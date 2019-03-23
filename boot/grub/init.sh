@@ -21,6 +21,7 @@ for module in $modlist; do
     insmod $module;
 done;
 export enable_progress_indicator=0;
+sbpolicy --install;
 #python init
 search -s -f /boot/python/lib.zip;
 export root;
