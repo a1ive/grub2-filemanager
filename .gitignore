@@ -3,11 +3,6 @@ grubfm*.efi.signed
 grubfm*.iso
 grubfm*.7z
 build
-NTBOOT.NT5
-NTBOOT.NT6
-NTBOOT.PE1
-wimboot
-vbootldr
 *.crt
 *.cer
 *.key
