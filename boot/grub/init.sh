@@ -21,7 +21,6 @@ for module in $modlist; do
     insmod $module;
 done;
 export enable_progress_indicator=0;
-sbpolicy --install;
 #python init
 search -s -f /boot/python/lib.zip;
 export root;
@@ -42,6 +41,7 @@ if [ "$grub_platform" = "efi" ]; then
         export grub_secureboot=$"Disabled";
     else
         export grub_secureboot=$"Enabled";
+        sbpolicy --install;
     fi;
 else
     search -s -f -q /fmldr;
