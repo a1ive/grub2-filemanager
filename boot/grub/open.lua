@@ -369,6 +369,27 @@ function open (file, file_type, device, device_type, arch, platform)
                 name = grub.gettext("Boot ISO (Easy2Boot)")
                 grub.add_icon_menu (icon, command, name)
             end
+        elseif platform == "efi" then
+            if device_type == "1" and grub.file_exist ("(loop)/sources/install.wim") then
+                -- windows install iso
+                icon = "nt6"
+                towinpath (file)
+                command = "set lang=en_US; loopback wimboot ${prefix}/wimboot.gz; "
+                    .. "loopback install ${prefix}/install.gz; "
+                    .. "set installiso=" .. win_path .. "; save_env -f ${prefix}/null.cfg installiso; "
+                    .. "cat ${prefix}/null.cfg; "
+                    .. "wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi "
+                    .. "@:bcd:(wimboot)/bcd "
+                    .. "@:boot.sdi:(wimboot)/boot.sdi "
+                    .. "@:null.cfg:${prefix}/null.cfg "
+                    .. "@:mount_x64.exe:(install)/mount_x64.exe "
+                    .. "@:mount_x86.exe:(install)/mount_x86.exe "
+                    .. "@:start.bat:(install)/start.bat "
+                    .. "@:winpeshl.ini:(install)/winpeshl.ini "
+                    .. "@:boot.wim:(loop)/sources/boot.wim; "
+                name = grub.gettext("Install Windows from ISO")
+                grub.add_icon_menu (icon, command, name)
+            end
         end
     elseif file_type == "wim" then
         if platform == "efi" then
