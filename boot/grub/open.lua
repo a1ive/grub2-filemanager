@@ -371,7 +371,12 @@ function open (file, file_type, device, device_type, arch, platform)
             end
         end
     elseif file_type == "wim" then
-        if platform == "pc" then
+        if platform == "efi" then
+            icon = "wim"
+            command = "set lang=en_US; loopback wimboot ${prefix}/wimboot.gz; wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi @:bcd:(wimboot)/bcd @:boot.sdi:(wimboot)/boot.sdi @:boot.wim:" .. file
+            name = grub.gettext("Boot NT6.x WIM (wimboot)")
+            grub.add_icon_menu (icon, command, name)
+        elseif platform == "pc" then
             -- wimboot
             if grub.file_exist ("/wimboot") then
                 icon = "wim"
