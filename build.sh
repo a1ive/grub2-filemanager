@@ -94,6 +94,7 @@ done
 cp arch/x64/CrScreenshotDxe.efi build/boot/grub
 cp arch/x64/Shell.efi build/boot/grub
 cp arch/x64/wimboot.gz build/boot/grub
+cp arch/x64/install.gz build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
@@ -113,6 +114,7 @@ done
 cp arch/ia32/CrScreenshotDxe.efi build/boot/grub
 cp arch/ia32/Shell.efi build/boot/grub
 cp arch/ia32/wimboot.gz build/boot/grub
+cp arch/ia32/install.gz build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
