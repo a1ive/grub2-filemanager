@@ -93,11 +93,13 @@ do
 done
 cp arch/x64/CrScreenshotDxe.efi build/boot/grub
 cp arch/x64/Shell.efi build/boot/grub
+cp arch/x64/wimboot.gz build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
 rm -r build/boot/grub/x86_64-efi
 rm build/boot/grub/*.efi
+rm build/boot/grub/*.gz
 modules=$(cat arch/x64/builtin.lst)
 $mkimage -m ./build/memdisk.cpio -d ./grub/x86_64-efi -p "(memdisk)/boot/grub" -c arch/x64/config.cfg -o grubfmx64.efi -O x86_64-efi $modules
 
@@ -110,11 +112,13 @@ do
 done
 cp arch/ia32/CrScreenshotDxe.efi build/boot/grub
 cp arch/ia32/Shell.efi build/boot/grub
+cp arch/ia32/wimboot.gz build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
 rm -r build/boot/grub/i386-efi
 rm build/boot/grub/*.efi
+rm build/boot/grub/*.gz
 modules=$(cat arch/ia32/builtin.lst)
 $mkimage -m ./build/memdisk.cpio -d ./grub/i386-efi -p "(memdisk)/boot/grub" -c arch/ia32/config.cfg -o grubfmia32.efi -O i386-efi $modules
 rm build/memdisk.cpio
