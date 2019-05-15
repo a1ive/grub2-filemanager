@@ -41,7 +41,6 @@ if [ "$grub_platform" = "efi" ]; then
         export grub_secureboot=$"Disabled";
     else
         export grub_secureboot=$"Enabled";
-        sbpolicy --install;
     fi;
 else
     search -s -f -q /fmldr;
