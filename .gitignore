@@ -4,5 +4,5 @@ grubfm*.iso
 grubfm*.7z
 build
 *.crt
-*.cer
+test*.cer
 *.key
