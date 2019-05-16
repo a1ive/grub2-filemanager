@@ -7,7 +7,7 @@
 ## Download 
 https://github.com/a1ive/grub2-filemanager/releases 
 ## Build
-	git clone https://github.com/a1ive/grub2-filemanager.git
+	git clone --recursive https://github.com/a1ive/grub2-filemanager.git
 	cd grub2-filemanager
 	./build.sh
 ## Boot 
