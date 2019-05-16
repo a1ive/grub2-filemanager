@@ -62,6 +62,7 @@ set color_highlight=black/white;
 export encoding="utf8";
 export enable_sort="1";
 export show_vdisk="0";
+export efiguard="0";
 #Uncomment the next line to enable animation
 #export grub_frame_speed=110;
 #Uncomment the next line to enable sound

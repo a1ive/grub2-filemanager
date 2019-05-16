@@ -59,10 +59,8 @@ for /f "tokens=1,*" %%a in ("%optional%") do (
 	set optional=%%b
 	goto CPMODEFI32
 )
-copy arch\ia32\CrScreenshotDxe.efi build\boot\grub
-copy arch\ia32\Shell.efi build\boot\grub
-copy arch\ia32\wimboot.gz build\boot\grub
-copy arch\ia32\install.gz build\boot\grub
+copy arch\ia32\*.efi build\boot\grub
+copy arch\ia32\*.gz build\boot\grub
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc > ./memdisk.cpio
 cd ..
@@ -81,10 +79,8 @@ for /f "tokens=1,*" %%a in ("%optional%") do (
 	set optional=%%b
 	goto CPMODEFI64
 )
-copy arch\x64\CrScreenshotDxe.efi build\boot\grub
-copy arch\x64\Shell.efi build\boot\grub
-copy arch\x64\wimboot.gz build\boot\grub
-copy arch\x64\install.gz build\boot\grub
+copy arch\x64\*.efi build\boot\grub
+copy arch\x64\*.gz build\boot\grub
 cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc > ./memdisk.cpio
 cd ..

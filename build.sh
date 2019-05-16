@@ -91,10 +91,8 @@ do
 	echo "copying ${modules}.mod"
 	cp grub/x86_64-efi/${modules}.mod build/boot/grub/x86_64-efi/
 done
-cp arch/x64/CrScreenshotDxe.efi build/boot/grub
-cp arch/x64/Shell.efi build/boot/grub
-cp arch/x64/wimboot.gz build/boot/grub
-cp arch/x64/install.gz build/boot/grub
+cp arch/x64/*.efi build/boot/grub
+cp arch/x64/*.gz build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
@@ -111,10 +109,8 @@ do
 	echo "copying ${modules}.mod"
 	cp grub/i386-efi/${modules}.mod build/boot/grub/i386-efi/
 done
-cp arch/ia32/CrScreenshotDxe.efi build/boot/grub
-cp arch/ia32/Shell.efi build/boot/grub
-cp arch/ia32/wimboot.gz build/boot/grub
-cp arch/ia32/install.gz build/boot/grub
+cp arch/ia32/*.efi build/boot/grub
+cp arch/ia32/*.gz build/boot/grub
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..

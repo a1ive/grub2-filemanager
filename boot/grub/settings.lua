@@ -38,9 +38,19 @@ disk_flag = grub.getenv ("show_vdisk")
 if (disk_flag == nil) then
     disk_flag = "0"
 end
+efiguard = grub.getenv ("efiguard")
+if (efiguard == nil) then
+    efiguard = "0"
+end
 grub.exportenv ("theme", "slack/f4.txt")
 grub.clear_menu ()
-
+-- efiguard
+if (arch == "x86_64" and platform == "efi" and efiguard == "0") then
+    icon = "konboot"
+    command = "efiload ${prefix}/EfiGuardDxe.efi; export efiguard=1; lua $prefix/settings.lua"
+    name = grub.gettext ("Disable PatchGuard and DSE at boot time")
+    grub.add_icon_menu (icon, command, name)
+end
 -- encoding
 if (encoding == "utf8") then
     icon = "gnu-linux"
