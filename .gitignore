@@ -6,3 +6,4 @@ build
 *.crt
 test*.cer
 *.key
+desktop.ini
