@@ -533,7 +533,7 @@ function open (file, file_type, device, device_type, arch, platform)
         if platform == "efi" then
             -- efi
             icon = "uefi"
-            command = "set lang=en_US; terminal_output console; chainloader " .. file
+            command = "set lang=en_US; chainloader -b -t" .. file
             name = grub.gettext("Open As EFI Application")
             grub.add_icon_menu (icon, command, name)
         end
@@ -542,7 +542,7 @@ function open (file, file_type, device, device_type, arch, platform)
             -- nsh
             icon = "cfg"
             towinpath (file)
-            command = "set lang=en_US; terminal_output console; chainloader $prefix/Shell.efi -nointerrupt \"" .. win_path .. "\""
+            command = "set lang=en_US; chainloader -b -t $prefix/Shell.efi -nointerrupt \"" .. win_path .. "\""
             name = grub.gettext("Open As EFI Shell Script")
             grub.add_icon_menu (icon, command, name)
         end
