@@ -28,7 +28,7 @@ if platform == "efi" then
     grub.add_icon_menu (icon, command, name)
     -- efi shell
     icon = "ms-dos"
-    command = "set lang=en_US; chainloader -b -t $prefix/Shell.efi"
+    command = "set lang=en_US; shell"
     name = grub.gettext ("EFI Shell")
     grub.add_icon_menu (icon, command, name)
 else
