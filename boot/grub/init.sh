@@ -46,14 +46,15 @@ else
     search -s -f -q /fmldr;
     export grub_secureboot=$"Not available";
 fi;
-export grub_disable_esc="1";
+
 loadfont ${prefix}/fonts/unicode.xz;
 export locale_dir=${prefix}/locale;
 export secondary_locale_dir=${prefix}/locale/fm;
+#UEFI LoadOptions
+
 source ${prefix}/lang.sh;
 
-export theme_file=$"File: ";
-
+export grub_disable_esc="1";
 export gfxmode=1024x768;
 export gfxpayload=keep;
 terminal_output gfxterm;
@@ -63,6 +64,8 @@ export encoding="utf8";
 export enable_sort="1";
 export show_vdisk="0";
 export efiguard="0";
+
+export theme_file=$"File: ";
 #Uncomment the next line to enable animation
 #export grub_frame_speed=110;
 #Uncomment the next line to enable sound
