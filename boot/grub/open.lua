@@ -461,6 +461,20 @@ function open (file, file_type, device, device_type, arch, platform)
                      "linux $prefix/grub.exe --config-file=$g4d_cmd; "
                     name = grub.gettext("Boot Windows NT6.x VHD (NTBOOT)")
                     grub.add_icon_menu (icon, command, name)
+                    -- VHD ramos -top
+					icon = "nt6"
+					command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem --top " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
+					 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem --top)")
+					grub.add_icon_menu (icon, command, name)
+					
+					-- VHD ramos
+					icon = "nt6"
+					command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
+					 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+					name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem)")
+					grub.add_icon_menu (icon, command, name)
+					
                 end
                 if grub.file_exist ("/vbootldr") then
                     icon = "img"
