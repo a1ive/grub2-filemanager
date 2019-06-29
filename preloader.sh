@@ -48,4 +48,4 @@ chain exfat fat iso9660 minicmd ntfs part_gpt part_msdos sbpolicy udf
 sbsign --key test-cert.key --cert test-cert.crt grubia32.efi
 mv grubia32.efi.signed grubia32.efi
 
-rm  -r build
+rm -r build
