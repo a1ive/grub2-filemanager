@@ -545,7 +545,7 @@ function open (file, file_type, device, device_type, arch, platform)
         if platform == "efi" then
             -- efi
             icon = "uefi"
-            command = "set lang=en_US; chainloader -b -t" .. file
+            command = "set lang=en_US; chainloader -b -t " .. file
             name = grub.gettext("Open As EFI Application")
             grub.add_icon_menu (icon, command, name)
         end
