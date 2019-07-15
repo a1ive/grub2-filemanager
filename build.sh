@@ -52,7 +52,7 @@ echo "1. Simplified Chinese / 简体中文"
 echo "2. Traditional Chinese / 正體中文"
 echo "3. English (United States)"
 echo "4. Turkish"
-echo "5. Russian"
+echo "5. German"
 read -p "Please make a choice: " choice
 case "$choice" in
     2)
@@ -71,11 +71,10 @@ case "$choice" in
         cp lang/tr_TR/lang.sh build/boot/grub/
         ;;
     5)
-        echo "ru_RU"
-        msgfmt grub/locale/ru_RU.po -o build/boot/grub/locale/ru_RU.mo
-        msgfmt lang/ru_RU/fm.po -o build/boot/grub/locale/fm/ru_RU.mo
-        cp lang/ru_RU/lang.sh build/boot/grub/
-        ;;
+        echo "de_DE"
+        msgfmt grub/locale/de_DE.po -o build/boot/grub/locale/de_DE.mo
+        msgfmt lang/de_DE/fm.po -o build/boot/grub/locale/fm/de_DE.mo
+        cp lang/de_DE/lang.sh build/boot/grub/
     *)
         echo "zh_CN"
         msgfmt grub/locale/zh_CN.po -o build/boot/grub/locale/zh_CN.mo

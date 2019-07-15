@@ -13,14 +13,14 @@ echo 1. Simplified Chinese
 echo 2. Traditional Chinese
 echo 3. English (United States)
 echo 4. Turkish
-echo 5. Russian
+echo 5. German
 echo Please make a choice: 
 set /p id=
 if "%id%" == "1" goto cn
 if "%id%" == "2" goto tw
 if "%id%" == "3" goto en
 if "%id%" == "4" goto tr
-if "%id%" == "5" goto ru
+if "%id%" == "5" goto de
 :cn
 echo zh_CN
 bin\msgfmt.exe grub\locale\zh_CN.po -o build\boot\grub\locale\zh_CN.mo
@@ -42,11 +42,11 @@ bin\msgfmt.exe grub\locale\tr_TR.po -o build\boot\grub\locale\tr_TR.mo
 bin\msgfmt.exe lang\tr_TR\fm.po -o build\boot\grub\locale\fm\tr_TR.mo
 copy lang\tr_TR\lang.sh build\boot\grub\
 goto build
-:ru
-echo ru_RU
-bin\msgfmt.exe grub\locale\ru_RU.po -o build\boot\grub\locale\ru_RU.mo
-bin\msgfmt.exe lang\ru_RU\fm.po -o build\boot\grub\locale\fm\ru_RU.mo
-copy lang\ru_RU\lang.sh build\boot\grub\
+:de
+echo de_DE
+bin\msgfmt.exe grub\locale\de_DE.po -o build\boot\grub\locale\de_DE.mo
+bin\msgfmt.exe lang\de_DE\fm.po -o build\boot\grub\locale\fm\de_DE.mo
+copy lang\de_DE\lang.sh build\boot\grub\
 goto build
 
 :build
