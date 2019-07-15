@@ -7,10 +7,10 @@ msgstr ""
 "X-Crowdin-File: /master/lang/fm.pot\n"
 "Project-Id-Version: grub2-filemanager\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Last-Translator: Sporesirius\n"
+"Last-Translator: a1ive\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2019-07-15 00:22\n"
+"PO-Revision-Date: 2019-07-15 01:03\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -52,49 +52,49 @@ msgid "Mount Image"
 msgstr "Abbild mounten"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "Boot Floppy Image (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "Boot Floppy Image (memdisk)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "Boot Hard Drive Image (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "Boot Hard Drive Image (memdisk)"
+msgstr ""
 
 msgid "Open As Archiver"
 msgstr "Als Archiv öffnen"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "Boot NT6.x WIM (wimboot)"
+msgstr ""
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "Boot NT6.x WIM (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "Boot NT5.x WIM (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Boot NT5.x PE (NTBOOT)"
+msgstr ""
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr ""
 
 msgid "Boot VHD (vboot)"
-msgstr "Boot VHD (vboot)"
+msgstr ""
 
 msgid "Mount ISO"
 msgstr "ISO einbinden"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "Boot ISO (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot ISO (memdisk)"
-msgstr "Boot ISO (memdisk)"
+msgstr ""
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "Boot ISO (Easy2Boot)"
+msgstr ""
 
 msgid "Install Windows from ISO"
 msgstr "Windows von ISO installieren"
@@ -112,31 +112,31 @@ msgid "Insert Grub2 Module"
 msgstr "Grub2 Modul einfügen"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr "Chainload BIOS Boot Sector"
+msgstr ""
 
 msgid "Chainload NTLDR"
-msgstr "Chainload NTLDR"
+msgstr ""
 
 msgid "Chainload BOOTMGR"
-msgstr "Chainload BOOTMGR"
+msgstr ""
 
 msgid "Open As GRUB4DOS MOD"
 msgstr "Als GRUB4DOS MOD öffnen"
 
 msgid "Boot Multiboot Kernel"
-msgstr "Boot Multiboot Kernel"
+msgstr ""
 
 msgid "Boot Multiboot2 Kernel"
-msgstr "Boot Multiboot2 Kernel"
+msgstr ""
 
 msgid "Boot Linux Kernel"
-msgstr "Boot Linux Kernel"
+msgstr ""
 
 msgid "Text Viewer"
-msgstr "Text Viewer"
+msgstr ""
 
 msgid "Hex Viewer"
-msgstr "Hex Viewer"
+msgstr ""
 
 msgid "File Info"
 msgstr "Dateiinfo"
@@ -172,7 +172,7 @@ msgid "Enable serial terminal"
 msgstr "Serielles Terminal aktivieren"
 
 msgid "EFI Firmware Setup"
-msgstr "EFI Firmware Setup"
+msgstr ""
 
 msgid "GRUB Console"
 msgstr "GRUB Konsole"
@@ -181,7 +181,7 @@ msgid "EFI Shell"
 msgstr "EFI-Shell"
 
 msgid "UEFI DUET"
-msgstr "UEFI DUET"
+msgstr ""
 
 msgid "Load External Menu: "
 msgstr "Externes Menü laden: "
@@ -196,13 +196,13 @@ msgid " on "
 msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr "Boot ISO (Loopback)"
+msgstr ""
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr "Boot ISO (ISOLINUX)"
+msgstr ""
 
 msgid "Boot "
-msgstr "Boot "
+msgstr ""
 
 msgid " From ISO"
 msgstr " Von ISO"
@@ -241,7 +241,7 @@ msgid "F2 - File Manager"
 msgstr "F2 - Dateimanager"
 
 msgid "F3 - Boot"
-msgstr "F3 - Boot"
+msgstr ""
 
 msgid "F4 - Settings"
 msgstr "F4 - Einstellungen"
