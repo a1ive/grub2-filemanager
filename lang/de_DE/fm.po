@@ -7,248 +7,248 @@ msgstr ""
 "X-Crowdin-File: /master/lang/fm.pot\n"
 "Project-Id-Version: grub2-filemanager\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Last-Translator: a1ive <ligenlive@gmail.com>\n"
+"Last-Translator: Sporesirius\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2019-03-03 04:57\n"
+"PO-Revision-Date: 2019-07-15 00:22\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Zurück"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Als Grub2-Menü öffnen"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Als Syslinux-Menü öffnen"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Als pxelinux-Menü öffnen"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Als GRUB4DOS-Menü öffnen"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Als GRUB-Legacy-Menü öffnen"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Als Lua-Skript öffnen"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Als Python-Skript öffnen"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Als EFI-Anwendung öffnen"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "Als EFI-Shell-Skript öffnen"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "Als Abbild öffnen"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "Drücken Sie [ESC], um fortzufahren..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Abbild mounten"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Boot Floppy Image (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Boot Floppy Image (memdisk)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Boot Hard Drive Image (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Boot Hard Drive Image (memdisk)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Als Archiv öffnen"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Boot NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Boot NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Boot NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Boot NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Boot VHD (vboot)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "ISO einbinden"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Boot ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Boot ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Boot ISO (Easy2Boot)"
 
 msgid "Install Windows from ISO"
-msgstr ""
+msgstr "Windows von ISO installieren"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Boot EFI Dateien"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Als iPXE-Skript öffnen"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Als Schrift öffnen"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Grub2 Modul einfügen"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Chainload BIOS Boot Sector"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Chainload NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Chainload BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Als GRUB4DOS MOD öffnen"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Boot Multiboot Kernel"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Boot Multiboot2 Kernel"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Boot Linux Kernel"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Text Viewer"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Hex Viewer"
 
 msgid "File Info"
-msgstr ""
+msgstr "Dateiinfo"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Kodierung: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Dateien nach Namen sortieren"
 
 msgid "Resolution (R): "
-msgstr ""
+msgstr "Auflösung (R): "
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "ESC aktivieren (nicht empfohlen)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Debug-Nachrichten aktivieren"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Versteckte Laufwerke anzeigen"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Extramodule laden"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "AHCI Treiber laden"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Verschlüsselte Volumes (LUKS und geli) einbinden"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Serielles Terminal aktivieren"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "EFI Firmware Setup"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "GRUB Konsole"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI-Shell"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu: "
-msgstr ""
+msgstr "Externes Menü laden: "
 
 msgid "Boot Windows on "
-msgstr ""
+msgstr "Windows starten auf "
 
 msgid "Boot macOS on ${device}"
-msgstr ""
+msgstr "Boot macOS auf ${device}"
 
 msgid " on "
 msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Boot ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Boot ISO (ISOLINUX)"
 
 msgid "Boot "
-msgstr ""
+msgstr "Boot "
 
 msgid " From ISO"
-msgstr ""
+msgstr " Von ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Bitte geben Sie den Benutzernamen ein. Standard:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "WARNUNG: Löscht ALLE Daten auf (hd0,4)."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Drücke [Y], um fortzufahren. Drücke [N], um zu beenden."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Abgebrochen."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "Der Dateipfad enthält Leerzeichen. Dies kann Probleme verursachen! Drücken Sie eine beliebige Taste, um fortzufahren."
 
 msgid "Reboot"
-msgstr ""
+msgstr "Neustart"
 
 msgid "Halt"
-msgstr ""
+msgstr "Herunterfahren"
 
 msgid "File: "
-msgstr ""
+msgstr "Datei: "
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "Tastenkürzel"
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - Hilfe"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - Dateimanager"
 
 msgid "F3 - Boot"
-msgstr ""
+msgstr "F3 - Boot"
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - Einstellungen"
 
 msgid "F5 - Power Off"
-msgstr ""
+msgstr "F5 - Herunterfahren"
 
 msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl + LAlt + F12 - Screenshots nehmen (EFI)"
 
