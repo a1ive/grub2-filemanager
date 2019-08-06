@@ -75,6 +75,7 @@ case "$choice" in
         msgfmt grub/locale/de_DE.po -o build/boot/grub/locale/de_DE.mo
         msgfmt lang/de_DE/fm.po -o build/boot/grub/locale/fm/de_DE.mo
         cp lang/de_DE/lang.sh build/boot/grub/
+        ;;
     *)
         echo "zh_CN"
         msgfmt grub/locale/zh_CN.po -o build/boot/grub/locale/zh_CN.mo
