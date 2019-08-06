@@ -401,7 +401,7 @@ function open (file, file_type, device, device_type, arch, platform)
             -- wimboot
             if grub.file_exist ("/wimboot") then
                 icon = "wim"
-                command = "set lang=en_US; terminal_output console; enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
+                command = "set lang=en_US; terminal_output console; enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bootmgr.exe:(wimboot)/bootmgr.exe newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
                 name = grub.gettext("Boot NT6.x WIM (wimboot)")
                 grub.add_icon_menu (icon, command, name)
             end
