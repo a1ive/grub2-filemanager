@@ -80,7 +80,7 @@ case "$choice" in
     6)
         echo "vi_VN"
         msgfmt grub/locale/vi_VN.po -o build/boot/grub/locale/vi_VN.mo
-        msgfmt lang/de_DE/fm.po -o build/boot/grub/locale/fm/vi_VN.mo
+        msgfmt lang/vi_VN/fm.po -o build/boot/grub/locale/fm/vi_VN.mo
         cp lang/vi_VN/lang.sh build/boot/grub/
         ;;
     *)
