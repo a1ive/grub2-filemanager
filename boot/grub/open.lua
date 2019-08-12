@@ -624,13 +624,13 @@ function open (file, file_type, device, device_type, arch, platform)
         command = "root=" .. device .. "; lua " .. file .. "; getkey"
         name = grub.gettext("Open As Lua Script")
         grub.add_icon_menu (icon, command, name)
-    elseif file_type == "py" then
+--  elseif file_type == "py" then
         -- python
-        icon = "py"
-        old_root = grub.getenv ("root")
-        command = "search -s -f /boot/python/lib.zip; pyrun " .. file .. "; getkey; export root=" .. old_root
-        name = grub.gettext("Open As Python Script")
-        grub.add_icon_menu (icon, command, name)
+--      icon = "py"
+--      old_root = grub.getenv ("root")
+--      command = "search -s -f /boot/python/lib.zip; pyrun " .. file .. "; getkey; export root=" .. old_root
+--      name = grub.gettext("Open As Python Script")
+--      grub.add_icon_menu (icon, command, name)
     elseif grub.run ("file --is-x86-multiboot " .. file) == 0 then
         -- multiboot
         icon = "exe"

@@ -22,11 +22,11 @@ for module in $modlist; do
 done;
 export enable_progress_indicator=0;
 #python init
-search -s -f /boot/python/lib.zip;
-export root;
-py 'import sys; sys.path = ["/boot/python", "/boot/python/lib.zip"]; del sys';
-py 'import init; init.early_init()';
-py 'init.init(); del init';
+#search -s -f /boot/python/lib.zip;
+#export root;
+#py 'import sys; sys.path = ["/boot/python", "/boot/python/lib.zip"]; del sys';
+#py 'import init; init.early_init()';
+#py 'init.init(); del init';
 #python init done
 if [ "$grub_platform" = "efi" ]; then
     search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
