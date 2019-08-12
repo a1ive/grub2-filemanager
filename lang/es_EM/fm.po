@@ -7,10 +7,10 @@ msgstr ""
 "X-Crowdin-File: /master/lang/fm.pot\n"
 "Project-Id-Version: grub2-filemanager\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Last-Translator: a1ive <ligenlive@gmail.com>\n"
+"Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Spanish (Modern)\n"
 "Language: es_EM\n"
-"PO-Revision-Date: 2019-03-03 04:56\n"
+"PO-Revision-Date: 2019-08-12 03:50\n"
 
 msgid "Back"
 msgstr ""
@@ -139,6 +139,9 @@ msgid "Hex Viewer"
 msgstr ""
 
 msgid "File Info"
+msgstr ""
+
+msgid "Disable PatchGuard and DSE at boot time"
 msgstr ""
 
 msgid "Encoding: "
