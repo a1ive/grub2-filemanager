@@ -48,6 +48,12 @@ bin\msgfmt.exe grub\locale\de_DE.po -o build\boot\grub\locale\de_DE.mo
 bin\msgfmt.exe lang\de_DE\fm.po -o build\boot\grub\locale\fm\de_DE.mo
 copy lang\de_DE\lang.sh build\boot\grub\
 goto build
+:vn
+echo vi_VN
+bin\msgfmt.exe grub\locale\vi_VN.po -o build\boot\grub\locale\vi_VN.mo
+bin\msgfmt.exe lang\vi_VN\fm.po -o build\boot\grub\locale\fm\vi_VN.mo
+copy lang\vi_VN\lang.sh build\boot\grub\
+goto build
 
 :build
 echo i386-efi

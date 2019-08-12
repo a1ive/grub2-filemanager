@@ -53,6 +53,7 @@ echo "2. Traditional Chinese / 正體中文"
 echo "3. English (United States)"
 echo "4. Turkish"
 echo "5. German"
+echo "6. Vietnamese"
 read -p "Please make a choice: " choice
 case "$choice" in
     2)
@@ -75,6 +76,12 @@ case "$choice" in
         msgfmt grub/locale/de_DE.po -o build/boot/grub/locale/de_DE.mo
         msgfmt lang/de_DE/fm.po -o build/boot/grub/locale/fm/de_DE.mo
         cp lang/de_DE/lang.sh build/boot/grub/
+        ;;
+    6)
+        echo "vi_VN"
+        msgfmt grub/locale/vi_VN.po -o build/boot/grub/locale/vi_VN.mo
+        msgfmt lang/de_DE/fm.po -o build/boot/grub/locale/fm/vi_VN.mo
+        cp lang/vi_VN/lang.sh build/boot/grub/
         ;;
     *)
         echo "zh_CN"
