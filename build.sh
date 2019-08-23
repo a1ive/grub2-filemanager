@@ -26,16 +26,10 @@ fi
 echo -n "checking for grub ... "
 if [ -e "$(which grub-mkimage)" ]
 then
-    mkimage=grub-mkimage
     echo "ok"
 else
-    echo "not found"
-    case "$( uname -m )" in
-        i?86) mkimage="./bin/grub-mkimage32"
-        ;;
-        x86_64) mkimage="./bin/grub-mkimage64"
-        ;;
-    esac
+    echo "not found\nPlease install mkisofs or genisoimage."
+    exit
 fi
 
 if [ -d "build" ]
@@ -107,7 +101,7 @@ rm -r build/boot/grub/x86_64-efi
 rm build/boot/grub/*.efi
 rm build/boot/grub/*.gz
 modules=$(cat arch/x64/builtin.lst)
-$mkimage -m ./build/memdisk.cpio -d ./grub/x86_64-efi -p "(memdisk)/boot/grub" -c arch/x64/config.cfg -o grubfmx64.efi -O x86_64-efi $modules
+grub-mkimage -m ./build/memdisk.cpio -d ./grub/x86_64-efi -p "(memdisk)/boot/grub" -c arch/x64/config.cfg -o grubfmx64.efi -O x86_64-efi $modules
 
 echo "i386-efi"
 mkdir build/boot/grub/i386-efi
@@ -125,7 +119,7 @@ rm -r build/boot/grub/i386-efi
 rm build/boot/grub/*.efi
 rm build/boot/grub/*.gz
 modules=$(cat arch/ia32/builtin.lst)
-$mkimage -m ./build/memdisk.cpio -d ./grub/i386-efi -p "(memdisk)/boot/grub" -c arch/ia32/config.cfg -o grubfmia32.efi -O i386-efi $modules
+grub-mkimage -m ./build/memdisk.cpio -d ./grub/i386-efi -p "(memdisk)/boot/grub" -c arch/ia32/config.cfg -o grubfmia32.efi -O i386-efi $modules
 rm build/memdisk.cpio
 
 echo "i386-pc"
@@ -146,7 +140,7 @@ cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..
 rm -r build/boot
-$mkimage -d ./grub/i386-pc -m arch/legacy/null.cpio -p "(fm)/boot/grub" -c arch/legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
+grub-mkimage -d ./grub/i386-pc -m arch/legacy/null.cpio -p "(fm)/boot/grub" -c arch/legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 cp arch/legacy/MAP build/
