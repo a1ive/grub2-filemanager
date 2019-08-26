@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2019-08-12 03:50\n"
+"PO-Revision-Date: 2019-08-26 09:06\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -142,7 +142,7 @@ msgid "File Info"
 msgstr "Dosya Bilgisi"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "Yama Korumasını ve DSE'yi önyükleme esnasında devre dışı bırakın"
 
 msgid "Encoding: "
 msgstr "Kodlama: "
