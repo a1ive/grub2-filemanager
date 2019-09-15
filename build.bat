@@ -74,7 +74,7 @@ rd /s /q build\boot\grub\i386-efi
 del build\boot\grub\*.efi
 del build\boot\grub\*.gz
 set /p modules= < arch\ia32\builtin.lst
-bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\i386-efi -p (memdisk)/boot/grub -c arch\ia32\config.cfg -o grubfmia32.efi -O i386-efi %modules%
+grub\grub-mkimage.exe -m build\memdisk.cpio -d grub\i386-efi -p (memdisk)/boot/grub -c arch\ia32\config.cfg -o grubfmia32.efi -O i386-efi %modules%
 
 echo x86_64-efi
 md build\boot\grub\x86_64-efi
@@ -94,7 +94,7 @@ rd /s /q build\boot\grub\x86_64-efi
 del build\boot\grub\*.efi
 del build\boot\grub\*.gz
 set /p modules= < arch\x64\builtin.lst
-bin\grub-mkimage.exe -m build\memdisk.cpio -d grub\x86_64-efi -p (memdisk)/boot/grub -c arch\x64\config.cfg -o grubfmx64.efi -O x86_64-efi %modules%
+grub\grub-mkimage.exe -m build\memdisk.cpio -d grub\x86_64-efi -p (memdisk)/boot/grub -c arch\x64\config.cfg -o grubfmx64.efi -O x86_64-efi %modules%
 del build\memdisk.cpio
 
 echo i386-pc
@@ -118,7 +118,7 @@ cd build
 %~dp0\bin\find.exe ./boot | %~dp0\bin\cpio.exe -o -H newc | %~dp0\bin\gzip.exe -9 > ./fm.loop
 cd ..
 rd /s /q build\boot
-bin\grub-mkimage.exe -d grub\i386-pc -m arch\legacy\null.cpio -p (fm)/boot/grub -c arch\legacy\config.cfg -o build\core.img -O i386-pc %builtin%
+grub\grub-mkimage.exe -d grub\i386-pc -m arch\legacy\null.cpio -p (fm)/boot/grub -c arch\legacy\config.cfg -o build\core.img -O i386-pc %builtin%
 copy /B grub\i386-pc\cdboot.img + build\core.img build\fmldr
 del /q build\core.img
 copy arch\legacy\MAP build\
