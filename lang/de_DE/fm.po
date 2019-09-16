@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2019-08-12 03:50\n"
+"PO-Revision-Date: 2019-09-16 06:20\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -52,49 +52,49 @@ msgid "Mount Image"
 msgstr "Abbild mounten"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Boot Floppy Image (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Boot Floppy Image (memdisk)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Boot Hard Drive Image (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Boot Hard Drive Image (memdisk)"
 
 msgid "Open As Archiver"
 msgstr "Als Archiv öffnen"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Boot NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Boot NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Boot NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Boot NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Boot VHD (vboot)"
 
 msgid "Mount ISO"
 msgstr "ISO einbinden"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Boot ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Boot ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Boot ISO (Easy2Boot)"
 
 msgid "Install Windows from ISO"
 msgstr "Windows von ISO installieren"
@@ -184,7 +184,7 @@ msgid "EFI Shell"
 msgstr "EFI-Shell"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu: "
 msgstr "Externes Menü laden: "
@@ -199,13 +199,13 @@ msgid " on "
 msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Boot ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Boot ISO (ISOLINUX)"
 
 msgid "Boot "
-msgstr ""
+msgstr "Boot "
 
 msgid " From ISO"
 msgstr " Von ISO"
@@ -244,7 +244,7 @@ msgid "F2 - File Manager"
 msgstr "F2 - Dateimanager"
 
 msgid "F3 - Boot"
-msgstr ""
+msgstr "F3 - Boot"
 
 msgid "F4 - Settings"
 msgstr "F4 - Einstellungen"
