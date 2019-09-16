@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2019-08-12 03:50\n"
+"PO-Revision-Date: 2019-09-16 06:13\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -112,7 +112,7 @@ msgid "Insert Grub2 Module"
 msgstr "Вставить модуль Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr "Сектор загрузок BIOS"
+msgstr ""
 
 msgid "Chainload NTLDR"
 msgstr "Кольчужный NTLDR"
