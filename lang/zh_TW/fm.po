@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2019-08-12 03:50\n"
+"PO-Revision-Date: 2019-10-07 11:36\n"
 
 msgid "Back"
 msgstr "返回"
@@ -142,7 +142,13 @@ msgid "File Info"
 msgstr "檢視檔案資訊"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "在啟動時禁用 PatchGuard 和 DSE"
+
+msgid "Install override security policy"
+msgstr "安裝覆蓋安全策略"
+
+msgid "Disable shim validation and reboot"
+msgstr "禁用 shim 安全啟動驗證並重啟"
 
 msgid "Encoding: "
 msgstr "編碼設定: "
