@@ -31,6 +31,11 @@ if platform == "efi" then
     command = "set lang=en_US; shell"
     name = grub.gettext ("EFI Shell")
     grub.add_icon_menu (icon, command, name)
+    -- moksbset
+    icon = "konboot"
+    command = "moksbset"
+    name = grub.gettext ("Disable shim validation and reboot")
+    grub.add_icon_menu (icon, command, name)
 else
     -- duet (Developer's UEFI Environment)
     icon = "uefi"

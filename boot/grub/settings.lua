@@ -51,6 +51,13 @@ if (arch == "x86_64" and platform == "efi" and efiguard == "0") then
     name = grub.gettext ("Disable PatchGuard and DSE at boot time")
     grub.add_icon_menu (icon, command, name)
 end
+-- sbpolicy
+if (platform == "efi") then
+    icon = "uefi"
+    command = "sbpolicy --install"
+    name = grub.gettext ("Install override security policy")
+    grub.add_icon_menu (icon, command, name)
+end
 -- encoding
 if (encoding == "utf8") then
     icon = "gnu-linux"
