@@ -42,6 +42,13 @@ efiguard = grub.getenv ("efiguard")
 if (efiguard == nil) then
     efiguard = "0"
 end
+if (platform == "efi") then
+    grub.script ("getenv -t uint8 SecureBoot secureboot")
+    secureboot = grub.getenv ("secureboot")
+    if (secureboot == nil) then
+        secureboot = "0"
+    end
+end
 grub.exportenv ("theme", "slack/f4.txt")
 grub.clear_menu ()
 -- efiguard
@@ -51,11 +58,16 @@ if (arch == "x86_64" and platform == "efi" and efiguard == "0") then
     name = grub.gettext ("Disable PatchGuard and DSE at boot time")
     grub.add_icon_menu (icon, command, name)
 end
--- sbpolicy
-if (platform == "efi") then
+if (platform == "efi" and secureboot ~= "0") then
+    -- sbpolicy
     icon = "uefi"
-    command = "sbpolicy --install"
+    command = "sbpolicy --install; echo \'Press any key to continue ...\'; getkey"
     name = grub.gettext ("Install override security policy")
+    grub.add_icon_menu (icon, command, name)
+    -- moksbset
+    icon = "konboot"
+    command = "moksbset"
+    name = grub.gettext ("Disable shim validation and reboot")
     grub.add_icon_menu (icon, command, name)
 end
 -- encoding
