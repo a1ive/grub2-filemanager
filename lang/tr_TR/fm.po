@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2019-10-07 11:26\n"
+"PO-Revision-Date: 2019-10-08 11:16\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -142,13 +142,13 @@ msgid "File Info"
 msgstr "Dosya Bilgisi"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr "Yama Korumasını ve DSE'yi (Sürücü İmza Uygulaması) önyükleme esnasında devre dışı bırak"
+msgstr "Yama Korumasını ve DSE'yi (Sürücü İmza Uygulaması) önyüklemede devre dışı bırak"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Güvenlik politikasını geçersiz kılmayı etkinleştir"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Shim doğrulama işlemini devre dışı bırak ve yeniden başlat"
 
 msgid "Encoding: "
 msgstr "Kodlama: "
