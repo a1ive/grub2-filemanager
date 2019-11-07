@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2019-11-07 15:00\n"
+"PO-Revision-Date: 2019-11-07 15:01\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -259,10 +259,10 @@ msgid "File path contains spaces.This may cause problems!Press any key to contin
 msgstr "Путь доступа содержит пробелы. Это может привести к проблемам! Нажмите любую клавишу для продолжения."
 
 msgid "Reboot"
-msgstr ""
+msgstr "Перезагрузка"
 
 msgid "Halt"
-msgstr ""
+msgstr "Выключить"
 
 msgid "File: "
 msgstr ""
