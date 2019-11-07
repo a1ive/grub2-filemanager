@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2019-11-07 15:01\n"
+"PO-Revision-Date: 2019-11-07 15:06\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -217,7 +217,7 @@ msgid "EFI Shell"
 msgstr "Консоль EFI"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI (для разработчиков)"
 
 msgid "Load External Menu: "
 msgstr "Загрузить внешнее меню: "
@@ -265,26 +265,26 @@ msgid "Halt"
 msgstr "Выключить"
 
 msgid "File: "
-msgstr ""
+msgstr "Файл: "
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "Комбинация клавиш"
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - Помощь"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - Просмотр файлов"
 
 msgid "F3 - Boot"
-msgstr ""
+msgstr "F3 - Загрузить"
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - Настройки"
 
 msgid "F5 - Power Off"
-msgstr ""
+msgstr "F5 - Завершение работы"
 
 msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl + LAlt + F12 - Сделать скриншоты (EFI)"
 
