@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2019-10-07 11:36\n"
+"PO-Revision-Date: 2019-11-07 03:15\n"
 
 msgid "Back"
 msgstr "返回"
@@ -39,6 +39,9 @@ msgstr "作為 Python 指令碼載入"
 msgid "Open As EFI Application"
 msgstr "作為 EFI 可執行檔案運行"
 
+msgid "Load UEFI driver"
+msgstr ""
+
 msgid "Open As EFI Shell Script"
 msgstr "作為 EFI Shell 指令碼開啟"
 
@@ -63,6 +66,12 @@ msgstr "使用 GRUB4DOS 載入為硬碟"
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr "使用 memdisk 載入為硬碟"
 
+msgid "Boot IMG (map)"
+msgstr ""
+
+msgid "Boot IMG (map --mem)"
+msgstr ""
+
 msgid "Open As Archiver"
 msgstr "作為壓縮檔案開啟"
 
@@ -81,8 +90,20 @@ msgstr "使用 NTBOOT 載入 NT5.x PE"
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "使用 NTBOOT 載入 Windows NT6.x VHD/VHDX"
 
+msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr ""
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
+msgstr ""
+
 msgid "Boot VHD (vboot)"
 msgstr "使用 vboot 載入 VHD"
+
+msgid "Boot VHD (map)"
+msgstr ""
+
+msgid "Boot VHD (map --mem)"
+msgstr ""
 
 msgid "Mount ISO"
 msgstr "檢視 ISO 內容"
@@ -98,6 +119,12 @@ msgstr "使用 Easy2Boot 方式載入 ISO"
 
 msgid "Install Windows from ISO"
 msgstr "從 ISO 安裝 Windows"
+
+msgid "Boot ISO (map)"
+msgstr ""
+
+msgid "Boot ISO (map --mem)"
+msgstr ""
 
 msgid "Boot EFI Files"
 msgstr "僅載入 EFI 檔案"
