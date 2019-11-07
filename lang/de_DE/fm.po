@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2019-10-07 11:26\n"
+"PO-Revision-Date: 2019-11-07 03:15\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -39,6 +39,9 @@ msgstr "Als Python-Skript öffnen"
 msgid "Open As EFI Application"
 msgstr "Als EFI-Anwendung öffnen"
 
+msgid "Load UEFI driver"
+msgstr ""
+
 msgid "Open As EFI Shell Script"
 msgstr "Als EFI-Shell-Skript öffnen"
 
@@ -63,6 +66,12 @@ msgstr "Boot Hard Drive Image (GRUB4DOS)"
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr "Boot Hard Drive Image (memdisk)"
 
+msgid "Boot IMG (map)"
+msgstr ""
+
+msgid "Boot IMG (map --mem)"
+msgstr ""
+
 msgid "Open As Archiver"
 msgstr "Als Archiv öffnen"
 
@@ -81,8 +90,20 @@ msgstr "Boot NT5.x PE (NTBOOT)"
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 
+msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr ""
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
+msgstr ""
+
 msgid "Boot VHD (vboot)"
 msgstr "Boot VHD (vboot)"
+
+msgid "Boot VHD (map)"
+msgstr ""
+
+msgid "Boot VHD (map --mem)"
+msgstr ""
 
 msgid "Mount ISO"
 msgstr "ISO einbinden"
@@ -98,6 +119,12 @@ msgstr "Boot ISO (Easy2Boot)"
 
 msgid "Install Windows from ISO"
 msgstr "Windows von ISO installieren"
+
+msgid "Boot ISO (map)"
+msgstr ""
+
+msgid "Boot ISO (map --mem)"
+msgstr ""
 
 msgid "Boot EFI Files"
 msgstr "Boot EFI Dateien"
