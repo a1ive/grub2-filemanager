@@ -10,58 +10,58 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2019-11-07 03:15\n"
+"PO-Revision-Date: 2019-11-07 15:00\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Открыть Grub2 как меню"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Открыть как меню Syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Открыть как меню pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Открыть как меню GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Открыть меню как GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Открыть как Lua Script"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Открыть как скрипт на Python"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Открыть как приложение EFI"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "Загрузить драйвер UEFI"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "Открыть как командный EFI-скрипт"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "Просмотреть как изображение"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "Нажмите [ESC] для продолжения..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Смонтировать образ"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Загрузить образ для дискеты (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Загрузить образ дискеты (memdisk)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Загрузить образ HDD (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr ""
@@ -214,49 +214,49 @@ msgid "GRUB Console"
 msgstr ""
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "Консоль EFI"
 
 msgid "UEFI DUET"
 msgstr ""
 
 msgid "Load External Menu: "
-msgstr ""
+msgstr "Загрузить внешнее меню: "
 
 msgid "Boot Windows on "
-msgstr ""
+msgstr "Загрузить Windows на "
 
 msgid "Boot macOS on ${device}"
-msgstr ""
+msgstr "Загрузить macOS на ${device}"
 
 msgid " on "
-msgstr ""
+msgstr " на "
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Загрузить ISO (как CDROM)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Загрузить ISO (ISOLINUX)"
 
 msgid "Boot "
-msgstr ""
+msgstr "Загрузка "
 
 msgid " From ISO"
-msgstr ""
+msgstr " Из образа формата ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Пожалуйста, введите имя пользователя. По умолчанию:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "ВНИМАНИЕ: Будут удалены ВСЕ данные на (hd0,4)."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Нажмите [Y] для продолжения или [N] для выхода."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Отменено."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "Путь доступа содержит пробелы. Это может привести к проблемам! Нажмите любую клавишу для продолжения."
 
 msgid "Reboot"
 msgstr ""
