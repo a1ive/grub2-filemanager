@@ -355,14 +355,14 @@ function open (file, file_type, device, device_type, arch, platform)
             grub.add_icon_menu (icon, command, name)
             -- easy2boot
             if string.match (device, "^hd[%d]+,msdos[1-3]") ~= nil then
-                g4d_file = "(hd0,0)/" .. string.match (file, "^%([%w,]+%)(.*)$")
                 icon = "gnu-linux"
+                devnum = string.match (device, "^(hd%d+),msdos[1-3]$")
                 command = "echo " .. grub.gettext ("WARNING: Will erase ALL data on (hd0,4).") .. "; " .. 
                  "echo " .. grub.gettext ("Press [Y] to continue. Press [N] to quit.") .. "; " .. 
                  "getkey key; " .. 
                  "\nif [ x$key = x121 ]; then" .. 
-                 "\n  set root=" .. device .. "; drivemap -s (hd0) (" .. device .. "); " .. 
-                 "\n  g4d_cmd=\"find --set-root /fm.loop;partnew (hd0,3) 0x00 " .. g4d_file .. ";/MAP nomem cd " ..  g4d_file .. "\";" .. 
+                 "\n  partnew --type=0x00 --file=" .. file .. " " .. devnum .. " 4" ..
+                 "\n  g4d_cmd=\"find --set-root /fm.loop;/MAP nomem cd " ..  g4d_file .. "\";" .. 
                  "\n  linux $prefix/grub.exe --config-file=$g4d_cmd; boot" .. 
                  "\nfi" .. 
                  "\necho " .. grub.gettext ("Canceled.") .. "; sleep 3"
@@ -389,6 +389,18 @@ function open (file, file_type, device, device_type, arch, platform)
                     .. "@:boot.wim:(loop)/sources/boot.wim; "
                 name = grub.gettext("Install Windows from ISO")
                 grub.add_icon_menu (icon, command, name)
+            end
+            if arch == "x86_64" then
+              -- map iso
+              icon = "iso"
+              command = "map " .. file
+              name = grub.gettext("Boot ISO (map)")
+              grub.add_icon_menu (icon, command, name)
+              --map --mem
+              icon = "iso"
+              command = "map --mem " .. file
+              name = grub.gettext("Boot ISO (map --mem)")
+              grub.add_icon_menu (icon, command, name)
             end
         end
     elseif file_type == "wim" then
@@ -484,6 +496,19 @@ function open (file, file_type, device, device_type, arch, platform)
                     grub.add_icon_menu (icon, command, name)
                 end
             end
+        elseif platform == "efi" then
+          if arch == "x86_64" then
+              -- map vhd
+              icon = "img"
+              command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --type=HD --disk vhd0"
+              name = grub.gettext("Boot VHD (map)")
+              grub.add_icon_menu (icon, command, name)
+              --map --mem
+              icon = "img"
+              command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --mem --type=HD --disk vhd0"
+              name = grub.gettext("Boot VHD (map --mem)")
+              grub.add_icon_menu (icon, command, name)
+            end
         end
     elseif file_type == "fba" then
         if device_type ~= "3" then
@@ -532,6 +557,19 @@ function open (file, file_type, device, device_type, arch, platform)
             end
             name = grub.gettext("Boot Hard Drive Image (GRUB4DOS)")
             grub.add_icon_menu (icon, command, name)
+        elseif platform == "efi" then
+          if arch == "x86_64" then
+              -- map img
+              icon = "img"
+              command = "map " .. file
+              name = grub.gettext("Boot IMG (map)")
+              grub.add_icon_menu (icon, command, name)
+              --map --mem img
+              icon = "img"
+              command = "map --mem " .. file
+              name = grub.gettext("Boot IMG (map --mem)")
+              grub.add_icon_menu (icon, command, name)
+            end
         end
     elseif file_type == "ipxe" then
         if platform == "pc" then
@@ -547,6 +585,11 @@ function open (file, file_type, device, device_type, arch, platform)
             icon = "uefi"
             command = "set lang=en_US; chainloader -b -t " .. file
             name = grub.gettext("Open As EFI Application")
+            grub.add_icon_menu (icon, command, name)
+            -- efi driver
+            icon = "uefi"
+            command = "efiload " ..file
+            name = grub.gettext("Load UEFI driver")
             grub.add_icon_menu (icon, command, name)
         end
     elseif file_type == "nsh" then

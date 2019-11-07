@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2019-08-12 03:54\n"
+"PO-Revision-Date: 2019-11-07 03:32\n"
 
 msgid "Back"
 msgstr "返回"
@@ -39,6 +39,9 @@ msgstr "执行 Python 脚本"
 msgid "Open As EFI Application"
 msgstr "作为 EFI 可执行文件运行"
 
+msgid "Load UEFI driver"
+msgstr "加载 UEFI 驱动"
+
 msgid "Open As EFI Shell Script"
 msgstr "作为 EFI Shell 脚本打开"
 
@@ -63,6 +66,12 @@ msgstr "使用 GRUB4DOS 加载为硬盘"
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr "使用 memdisk 加载为硬盘"
 
+msgid "Boot IMG (map)"
+msgstr "启动 IMG (map)"
+
+msgid "Boot IMG (map --mem)"
+msgstr "启动 IMG (map --mem)"
+
 msgid "Open As Archiver"
 msgstr "作为压缩文件打开"
 
@@ -81,8 +90,20 @@ msgstr "使用 NTBOOT 加载 NT5.x PE"
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "使用 NTBOOT 加载 Windows NT6.x VHD/VHDX"
 
+msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr "启动 RamOS VHD (GRUB4DOS map --mem --top)"
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
+msgstr "启动 RamOS VHD (GRUB4DOS map --mem)"
+
 msgid "Boot VHD (vboot)"
 msgstr "使用 vboot 启动 VHD"
+
+msgid "Boot VHD (map)"
+msgstr "启动 VHD (map)"
+
+msgid "Boot VHD (map --mem)"
+msgstr "启动 VHD (map --mem)"
 
 msgid "Mount ISO"
 msgstr "查看 ISO 内容"
@@ -98,6 +119,12 @@ msgstr "使用 Easy2Boot 方式加载 ISO"
 
 msgid "Install Windows from ISO"
 msgstr "从 ISO 安装 Windows"
+
+msgid "Boot ISO (map)"
+msgstr "启动 ISO (map)"
+
+msgid "Boot ISO (map --mem)"
+msgstr "启动 ISO (map --mem)"
 
 msgid "Boot EFI Files"
 msgstr "仅加载 EFI 文件"
@@ -143,6 +170,12 @@ msgstr "查看文件信息"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "在启动时禁用 PatchGuard 和 DSE"
+
+msgid "Install override security policy"
+msgstr "安装覆盖安全策略"
+
+msgid "Disable shim validation and reboot"
+msgstr "禁用 shim 安全启动验证并重启"
 
 msgid "Encoding: "
 msgstr "编码设置: "

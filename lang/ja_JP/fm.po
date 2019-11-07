@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2019-08-12 03:50\n"
+"PO-Revision-Date: 2019-11-07 03:15\n"
 
 msgid "Back"
 msgstr ""
@@ -39,6 +39,9 @@ msgstr ""
 msgid "Open As EFI Application"
 msgstr ""
 
+msgid "Load UEFI driver"
+msgstr ""
+
 msgid "Open As EFI Shell Script"
 msgstr ""
 
@@ -63,6 +66,12 @@ msgstr ""
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr ""
 
+msgid "Boot IMG (map)"
+msgstr ""
+
+msgid "Boot IMG (map --mem)"
+msgstr ""
+
 msgid "Open As Archiver"
 msgstr ""
 
@@ -81,7 +90,19 @@ msgstr ""
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr ""
 
+msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr ""
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
+msgstr ""
+
 msgid "Boot VHD (vboot)"
+msgstr ""
+
+msgid "Boot VHD (map)"
+msgstr ""
+
+msgid "Boot VHD (map --mem)"
 msgstr ""
 
 msgid "Mount ISO"
@@ -97,6 +118,12 @@ msgid "Boot ISO (Easy2Boot)"
 msgstr ""
 
 msgid "Install Windows from ISO"
+msgstr ""
+
+msgid "Boot ISO (map)"
+msgstr ""
+
+msgid "Boot ISO (map --mem)"
 msgstr ""
 
 msgid "Boot EFI Files"
@@ -142,6 +169,12 @@ msgid "File Info"
 msgstr ""
 
 msgid "Disable PatchGuard and DSE at boot time"
+msgstr ""
+
+msgid "Install override security policy"
+msgstr ""
+
+msgid "Disable shim validation and reboot"
 msgstr ""
 
 msgid "Encoding: "
