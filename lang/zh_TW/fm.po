@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2019-11-07 03:15\n"
+"PO-Revision-Date: 2019-11-07 03:32\n"
 
 msgid "Back"
 msgstr "返回"
@@ -40,7 +40,7 @@ msgid "Open As EFI Application"
 msgstr "作為 EFI 可執行檔案運行"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "載入 UEFI 驅動"
 
 msgid "Open As EFI Shell Script"
 msgstr "作為 EFI Shell 指令碼開啟"
@@ -67,10 +67,10 @@ msgid "Boot Hard Drive Image (memdisk)"
 msgstr "使用 memdisk 載入為硬碟"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "啓動 IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "啓動 IMG (map --mem)"
 
 msgid "Open As Archiver"
 msgstr "作為壓縮檔案開啟"
@@ -91,19 +91,19 @@ msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "使用 NTBOOT 載入 Windows NT6.x VHD/VHDX"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "啓動 RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "啓動 RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
 msgstr "使用 vboot 載入 VHD"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "啓動 VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "啓動 VHD (map --mem)"
 
 msgid "Mount ISO"
 msgstr "檢視 ISO 內容"
@@ -121,10 +121,10 @@ msgid "Install Windows from ISO"
 msgstr "從 ISO 安裝 Windows"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "啓動 ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "啓動 ISO (map --mem)"
 
 msgid "Boot EFI Files"
 msgstr "僅載入 EFI 檔案"
