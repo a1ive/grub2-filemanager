@@ -321,7 +321,7 @@ function open (file, file_type, device, device_type, arch, platform)
             isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
         end
         if platform == "pc" then
-            if device_type == "1" and grub.file_exist ("(loop)/sources/install.wim") and grub.file_exist ("/wimboot") and grub.file_exist ("/install.gz") then
+            if device_type == "1" and grub.file_exist ("(loop)/sources/install.wim") and grub.file_exist ("/install.gz") then
                 -- windows install iso
                 icon = "nt6"
                 towinpath (file)
@@ -411,47 +411,39 @@ function open (file, file_type, device, device_type, arch, platform)
             grub.add_icon_menu (icon, command, name)
         elseif platform == "pc" then
             -- wimboot
-            if grub.file_exist ("/wimboot") then
-                icon = "wim"
-                command = "set lang=en_US; terminal_output console; enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bootmgr.exe:(wimboot)/bootmgr.exe newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
-                name = grub.gettext("Boot NT6.x WIM (wimboot)")
-                grub.add_icon_menu (icon, command, name)
-            end
+            icon = "wim"
+            command = "set lang=en_US; terminal_output console; enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bootmgr.exe:(wimboot)/bootmgr.exe newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
+            name = grub.gettext("Boot NT6.x WIM (wimboot)")
+            grub.add_icon_menu (icon, command, name)
             -- BOOTMGR/NTLDR only supports (hdx,y)
             if device_type == "1" then
-                if grub.file_exist ("/NTBOOT.MOD/NTBOOT.NT6") then
-                    -- NTBOOT NT6 WIM
-                    icon = "nt6"
-                    tog4dpath (file, device, device_type)
-                    command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot NT6.x WIM (NTBOOT)")
-                    grub.add_icon_menu (icon, command, name)
-                end
-                if grub.file_exist ("/NTBOOT.MOD/NTBOOT.PE1") then
-                    -- NTBOOT NT5 WIM (PE1)
-                    icon = "nt5"
-                    tog4dpath (file, device, device_type)
-                    command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot NT5.x WIM (NTBOOT)")
-                    grub.add_icon_menu (icon, command, name)
-                end
+                -- NTBOOT NT6 WIM
+                icon = "nt6"
+                tog4dpath (file, device, device_type)
+                command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot NT6.x WIM (NTBOOT)")
+                grub.add_icon_menu (icon, command, name)
+                -- NTBOOT NT5 WIM (PE1)
+                icon = "nt5"
+                tog4dpath (file, device, device_type)
+                command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot NT5.x WIM (NTBOOT)")
+                grub.add_icon_menu (icon, command, name)
             end
         end
     elseif file_type == "wpe" then
         if platform == "pc" then
             -- NTLDR only supports (hdx,y)
             if device_type == "1" then
-                if grub.file_exist ("/NTBOOT.MOD/NTBOOT.PE1") then
-                    -- NTBOOT NT5 PE
-                    icon = "nt5"
-                    tog4dpath (file, device, device_type)
-                    command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot NT5.x PE (NTBOOT)")
-                    grub.add_icon_menu (icon, command, name)
-                end
+                -- NTBOOT NT5 PE
+                icon = "nt5"
+                tog4dpath (file, device, device_type)
+                command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot NT5.x PE (NTBOOT)")
+                grub.add_icon_menu (icon, command, name)
             end
         end
     elseif file_type == "vhd" then
@@ -465,36 +457,33 @@ function open (file, file_type, device, device_type, arch, platform)
         if platform == "pc" then
             -- BOOTMGR only supports (hdx,y)
             if device_type == "1" then
-                if grub.file_exist ("/NTBOOT.MOD/NTBOOT.NT6") then
-                    -- NTBOOT NT6 VHD
-                    icon = "nt6"
-                    tog4dpath (file, device, device_type)
-                    command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot Windows NT6.x VHD (NTBOOT)")
-                    grub.add_icon_menu (icon, command, name)
-                    -- VHD ramos -top
-                    icon = "nt6"
-                    command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem --top " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem --top)")
-                    grub.add_icon_menu (icon, command, name)
-                    -- VHD ramos
-                    icon = "nt6"
-                    command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem)")
-                    grub.add_icon_menu (icon, command, name)
-                end
-                if grub.file_exist ("/vbootldr") then
-                    icon = "img"
-                    vhd_path = string.match (grub.getenv ("file"), "^%([%w,]+%)(.*)$")
-                    grub.run ("probe --set=dev_uuid -u " .. device)
-                    dev_uuid = grub.getenv ("dev_uuid")
-                    command = "loopback vboot /vbootldr; set vbootloader=(vboot)/vboot;vbootinsmod (vboot)/vbootcore.mod; vboot harddisk=(UUID=" .. dev_uuid .. ")" .. vhd_path
-                    name = grub.gettext("Boot VHD (vboot)")
-                    grub.add_icon_menu (icon, command, name)
-                end
+                -- NTBOOT NT6 VHD
+                icon = "nt6"
+                tog4dpath (file, device, device_type)
+                command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot Windows NT6.x VHD (NTBOOT)")
+                grub.add_icon_menu (icon, command, name)
+                -- VHD ramos -top
+                icon = "nt6"
+                command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem --top " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem --top)")
+                grub.add_icon_menu (icon, command, name)
+                -- VHD ramos
+                icon = "nt6"
+                command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem)")
+                grub.add_icon_menu (icon, command, name)
+                -- VHD vboot
+                icon = "img"
+                vhd_path = string.match (grub.getenv ("file"), "^%([%w,]+%)(.*)$")
+                grub.run ("probe --set=dev_uuid -u " .. device)
+                dev_uuid = grub.getenv ("dev_uuid")
+                command = "loopback vboot /vbootldr; set vbootloader=(vboot)/vboot;vbootinsmod (vboot)/vbootcore.mod; vboot harddisk=(UUID=" .. dev_uuid .. ")" .. vhd_path
+                name = grub.gettext("Boot VHD (vboot)")
+                grub.add_icon_menu (icon, command, name)
             end
         elseif platform == "efi" then
           if arch == "x86_64" then
