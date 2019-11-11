@@ -80,7 +80,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
         name = grub.gettext ("Boot ISO (Loopback)")
         grub.add_icon_menu (icon, command, name)
     end
-    
+
     function enum_loop (loop_path)
         -- enum_loop path_without_(loop)
         -- return table
@@ -99,7 +99,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
         grub.enum_file (enum_loop_func, "(loop)" .. loop_path)
         return f_table
     end
-    
+
     function check_distro ()
         -- return icon, script, name, linux_extra
         -- default
@@ -262,7 +262,11 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
         if grub.file_exist ("(loop)/platform/i86pc/kernel/amd64/unix") then
             return "solaris", "smartos", "SmartOS", ""
         end
-
+        --check /sources/install.wim /x64/sources/install.esd
+        if grub.file_exist ("(loop)/sources/install.wim") or grub.file_exist ("(loop)/x86/sources/install.esd") or grub.file_exist ("(loop)/x64/sources/install.esd") then
+            linux_extra = string.gsub (iso_path, "/", "\\\\")
+            return "nt6", "windows", "Windows", linux_extra
+        end
         return "iso", "unknown", "Linux", ""
     end
     icon, distro, name, linux_extra = check_distro ()
@@ -321,23 +325,6 @@ function open (file, file_type, device, device_type, arch, platform)
             isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
         end
         if platform == "pc" then
-            if device_type == "1" and grub.file_exist ("(loop)/sources/install.wim") and grub.file_exist ("/install.gz") then
-                -- windows install iso
-                icon = "nt6"
-                towinpath (file)
-                command = "set lang=en_US; terminal_output console; "
-                    .. "enable_progress_indicator=1; loopback wimboot /wimboot; loopback install /install.gz; "
-                    .. "set installiso=" .. win_path .. "; save_env -f (memdisk)/null.cfg installiso; "
-                    .. "linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(loop)/bootmgr "
-                    .. "newc:bcd:(loop)/boot/bcd newc:boot.sdi:(loop)/boot/boot.sdi "
-                    .. "newc:null.cfg:(memdisk)/null.cfg "
-                    .. "newc:mount_x64.exe:(install)/mount_x64.exe newc:mount_x86.exe:(install)/mount_x86.exe "
-                    .. "newc:start.bat:(install)/start.bat newc:winpeshl.ini:(install)/winpeshl.ini "
-                    .. "newc:boot.wim:(loop)/sources/boot.wim; "
-                    .. "cat (memdisk)/null.cfg "
-                name = grub.gettext("Install Windows from ISO")
-                grub.add_icon_menu (icon, command, name)
-            end
             -- memdisk iso
             icon = "iso"
             command = "linux16 $prefix/memdisk iso raw; enable_progress_indicator=1; initrd16 " .. file
@@ -370,26 +357,6 @@ function open (file, file_type, device, device_type, arch, platform)
                 grub.add_icon_menu (icon, command, name)
             end
         elseif platform == "efi" then
-            if device_type == "1" and grub.file_exist ("(loop)/sources/install.wim") then
-                -- windows install iso
-                icon = "nt6"
-                towinpath (file)
-                command = "set lang=en_US; loopback wimboot ${prefix}/wimboot.gz; "
-                    .. "loopback install ${prefix}/install.gz; "
-                    .. "set installiso=" .. win_path .. "; save_env -f ${prefix}/null.cfg installiso; "
-                    .. "cat ${prefix}/null.cfg; "
-                    .. "wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi "
-                    .. "@:bcd:(wimboot)/bcd "
-                    .. "@:boot.sdi:(wimboot)/boot.sdi "
-                    .. "@:null.cfg:${prefix}/null.cfg "
-                    .. "@:mount_x64.exe:(install)/mount_x64.exe "
-                    .. "@:mount_x86.exe:(install)/mount_x86.exe "
-                    .. "@:start.bat:(install)/start.bat "
-                    .. "@:winpeshl.ini:(install)/winpeshl.ini "
-                    .. "@:boot.wim:(loop)/sources/boot.wim; "
-                name = grub.gettext("Install Windows from ISO")
-                grub.add_icon_menu (icon, command, name)
-            end
             if arch == "x86_64" then
               -- map iso
               icon = "iso"

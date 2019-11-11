@@ -151,21 +151,10 @@ grub-mkimage -d ./grub/i386-pc -m arch/legacy/null.cpio -p "(fm)/boot/grub" -c a
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 cp arch/legacy/MAP build/
-if [ -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.NT6" -o -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.PE1" ]
-then
-    cp -r arch/legacy/ntboot/* build/
-fi
-if [ -e "legacy/wimboot" ]
-then
-    cp arch/legacy/wimboot build/
-fi
-if [ -e "legacy/vbootldr" ]
-then
-    cp arch/legacy/vbootldr build/
-fi
-if [ -e "legacy/install.gz" ]
-then
-    cp arch/legacy/install.gz build/
-fi
+cp -r arch/legacy/ntboot/* build/
+cp arch/legacy/wimboot build/
+cp arch/legacy/vbootldr build/
+cp arch/legacy/install.gz build/
+
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rm -r build
