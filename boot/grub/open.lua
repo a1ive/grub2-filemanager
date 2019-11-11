@@ -263,7 +263,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
             return "solaris", "smartos", "SmartOS", ""
         end
         --check /sources/install.wim /x64/sources/install.esd
-        if grub.file_exist ("(loop)/sources/install.wim") or grub.file_exist ("(loop)/x86/sources/install.esd") or grub.file_exist ("(loop)/x64/sources/install.esd") then
+        if grub.file_exist ("(loop)/sources/install.wim") or grub.file_exist ("(loop)/sources/install.esd") or grub.file_exist ("(loop)/sources/install.swm") or grub.file_exist ("(loop)/x86/sources/install.esd") or grub.file_exist ("(loop)/x64/sources/install.esd") or grub.file_exist ("(loop)/x64/sources/install.wim") or grub.file_exist ("(loop)/x86/sources/install.wim") or grub.file_exist ("(loop)/x86/sources/install.swm") or grub.file_exist ("(loop)/x64/sources/install.swm") then
             linux_extra = string.gsub (iso_path, "/", "\\\\")
             return "nt6", "windows", "Windows", linux_extra
         end

@@ -37,7 +37,7 @@ function win_isoboot {
   fi;
 }
 
-if test -f (loop)/sources/install.wim; then
+if test -f (loop)/sources/boot.wim; then
   win_isoboot "(loop)/sources/boot.wim";
 else
   if test -f (loop)/x64/sources/boot.wim; then
