@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2019-11-12 09:09\n"
+"PO-Revision-Date: 2019-11-12 09:20\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -118,10 +118,10 @@ msgid "Boot ISO (Easy2Boot)"
 msgstr "ISO Önyükle (Easy2Boot)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Windows Kur (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Windows Kur (x86)"
 
 msgid "Boot ISO (map)"
 msgstr "ISO Önyükle (map)"
