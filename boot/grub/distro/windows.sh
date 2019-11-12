@@ -41,12 +41,12 @@ if test -f (loop)/sources/boot.wim; then
   win_isoboot "(loop)/sources/boot.wim";
 else
   if test -f (loop)/x64/sources/boot.wim; then
-    menuentry "Install Windows (x64)" --class ${icon} {
+    menuentry $"Install Windows (x64)" --class ${icon} {
       win_isoboot "(loop)/x64/sources/boot.wim";
     }
   fi;
   if test -f (loop)/x86/sources/boot.wim; then
-    menuentry "Install Windows (x86)" --class ${icon} {
+    menuentry $"Install Windows (x86)" --class ${icon} {
       win_isoboot "(loop)/x86/sources/boot.wim";
     }
   fi;
