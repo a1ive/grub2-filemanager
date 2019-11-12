@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2019-11-12 09:08\n"
+"PO-Revision-Date: 2019-11-12 09:23\n"
 
 msgid "Back"
 msgstr "返回"
@@ -118,10 +118,10 @@ msgid "Boot ISO (Easy2Boot)"
 msgstr "使用 Easy2Boot 方式載入 ISO"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "安裝 Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "安裝 Windows (x86)"
 
 msgid "Boot ISO (map)"
 msgstr "啓動 ISO (map)"
