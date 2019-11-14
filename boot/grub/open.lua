@@ -357,18 +357,16 @@ function open (file, file_type, device, device_type, arch, platform)
                 grub.add_icon_menu (icon, command, name)
             end
         elseif platform == "efi" then
-            if arch == "x86_64" then
-              -- map iso
-              icon = "iso"
-              command = "map " .. file
-              name = grub.gettext("Boot ISO (map)")
-              grub.add_icon_menu (icon, command, name)
-              --map --mem
-              icon = "iso"
-              command = "map --mem " .. file
-              name = grub.gettext("Boot ISO (map --mem)")
-              grub.add_icon_menu (icon, command, name)
-            end
+            -- map iso
+            icon = "iso"
+            command = "map " .. file
+            name = grub.gettext("Boot ISO (map)")
+            grub.add_icon_menu (icon, command, name)
+            --map --mem
+            icon = "iso"
+            command = "map --mem " .. file
+            name = grub.gettext("Boot ISO (map --mem)")
+            grub.add_icon_menu (icon, command, name)
         end
     elseif file_type == "wim" then
         if platform == "efi" then
@@ -453,18 +451,16 @@ function open (file, file_type, device, device_type, arch, platform)
                 grub.add_icon_menu (icon, command, name)
             end
         elseif platform == "efi" then
-          if arch == "x86_64" then
-              -- map vhd
-              icon = "img"
-              command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --type=HD --disk vhd0"
-              name = grub.gettext("Boot VHD (map)")
-              grub.add_icon_menu (icon, command, name)
-              --map --mem
-              icon = "img"
-              command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --mem --type=HD --disk vhd0"
-              name = grub.gettext("Boot VHD (map --mem)")
-              grub.add_icon_menu (icon, command, name)
-            end
+            -- map vhd
+            icon = "img"
+            command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --type=HD --disk vhd0"
+            name = grub.gettext("Boot VHD (map)")
+            grub.add_icon_menu (icon, command, name)
+            --map --mem
+            icon = "img"
+            command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --mem --type=HD --disk vhd0"
+            name = grub.gettext("Boot VHD (map --mem)")
+            grub.add_icon_menu (icon, command, name)
         end
     elseif file_type == "fba" then
         if device_type ~= "3" then
@@ -514,18 +510,16 @@ function open (file, file_type, device, device_type, arch, platform)
             name = grub.gettext("Boot Hard Drive Image (GRUB4DOS)")
             grub.add_icon_menu (icon, command, name)
         elseif platform == "efi" then
-          if arch == "x86_64" then
-              -- map img
-              icon = "img"
-              command = "map " .. file
-              name = grub.gettext("Boot IMG (map)")
-              grub.add_icon_menu (icon, command, name)
-              --map --mem img
-              icon = "img"
-              command = "map --mem " .. file
-              name = grub.gettext("Boot IMG (map --mem)")
-              grub.add_icon_menu (icon, command, name)
-            end
+            -- map img
+            icon = "img"
+            command = "map " .. file
+            name = grub.gettext("Boot IMG (map)")
+            grub.add_icon_menu (icon, command, name)
+            --map --mem img
+            icon = "img"
+            command = "map --mem " .. file
+            name = grub.gettext("Boot IMG (map --mem)")
+            grub.add_icon_menu (icon, command, name)
         end
     elseif file_type == "ipxe" then
         if platform == "pc" then
