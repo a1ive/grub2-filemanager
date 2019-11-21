@@ -374,6 +374,13 @@ function open (file, file_type, device, device_type, arch, platform)
             command = "set lang=en_US; loopback wimboot ${prefix}/wimboot.gz; wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi @:bcd:(wimboot)/bcd @:boot.sdi:(wimboot)/boot.sdi @:boot.wim:" .. file
             name = grub.gettext("Boot NT6.x WIM (wimboot)")
             grub.add_icon_menu (icon, command, name)
+            if device_type == "1" then
+              -- NTBOOT
+              icon = "wim"
+              command = "set lang=en_US; loopback wimboot ${prefix}/wimboot.gz; ntboot --efi=(wimboot)/bootmgfw.efi --sdi=(wimboot)/boot.sdi " .. file
+              name = grub.gettext("Boot NT6.x WIM (NTBOOT)")
+              grub.add_icon_menu (icon, command, name)
+            end
         elseif platform == "pc" then
             -- wimboot
             icon = "wim"
@@ -427,7 +434,7 @@ function open (file, file_type, device, device_type, arch, platform)
                 tog4dpath (file, device, device_type)
                 command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
                  "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                name = grub.gettext("Boot Windows NT6.x VHD (NTBOOT)")
+                name = grub.gettext("Boot Windows NT6.x VHD/VHDX (NTBOOT)")
                 grub.add_icon_menu (icon, command, name)
                 -- VHD ramos -top
                 icon = "nt6"
@@ -451,6 +458,13 @@ function open (file, file_type, device, device_type, arch, platform)
                 grub.add_icon_menu (icon, command, name)
             end
         elseif platform == "efi" then
+            if device_type == "1" then
+              -- NTBOOT
+              icon = "img"
+              command = "set lang=en_US; terminal_output console; loopback wimboot ${prefix}/wimboot.gz; ntboot --gui --efi=(wimboot)/alt.efi " .. file
+              name = grub.gettext("Boot Windows NT6.x VHD/VHDX (NTBOOT)")
+              grub.add_icon_menu (icon, command, name)
+            end
             -- map vhd
             icon = "img"
             command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --type=HD --disk vhd0"
