@@ -48,6 +48,7 @@ echo "3. English (United States)"
 echo "4. Turkish"
 echo "5. German"
 echo "6. Vietnamese"
+echo "7. Russian"
 read -p "Please make a choice: " choice
 case "$choice" in
     2)
@@ -76,6 +77,12 @@ case "$choice" in
         msgfmt grub/locale/vi_VN.po -o build/boot/grub/locale/vi_VN.mo
         msgfmt lang/vi_VN/fm.po -o build/boot/grub/locale/fm/vi_VN.mo
         cp lang/vi_VN/lang.sh build/boot/grub/
+        ;;
+    7)
+        echo "ru_RU"
+        msgfmt grub/locale/ru_RU.po -o build/boot/grub/locale/ru_RU.mo
+        msgfmt lang/ru_RU/fm.po -o build/boot/grub/locale/fm/ru_RU.mo
+        cp lang/ru_RU/lang.sh build/boot/grub/
         ;;
     *)
         echo "zh_CN"
@@ -144,21 +151,10 @@ grub-mkimage -d ./grub/i386-pc -m arch/legacy/null.cpio -p "(fm)/boot/grub" -c a
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 cp arch/legacy/MAP build/
-if [ -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.NT6" -o -e "legacy/ntboot/NTBOOT.MOD/NTBOOT.PE1" ]
-then
-    cp -r arch/legacy/ntboot/* build/
-fi
-if [ -e "legacy/wimboot" ]
-then
-    cp arch/legacy/wimboot build/
-fi
-if [ -e "legacy/vbootldr" ]
-then
-    cp arch/legacy/vbootldr build/
-fi
-if [ -e "legacy/install.gz" ]
-then
-    cp arch/legacy/install.gz build/
-fi
+cp -r arch/legacy/ntboot/* build/
+cp arch/legacy/wimboot build/
+cp arch/legacy/vbootldr build/
+cp arch/legacy/install.gz build/
+
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rm -r build

@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2019-11-07 03:15\n"
+"PO-Revision-Date: 2019-11-12 09:20\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -40,7 +40,7 @@ msgid "Open As EFI Application"
 msgstr "EFI Uygulamasını Aç"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "UEFI Sürücüsünü Yükle"
 
 msgid "Open As EFI Shell Script"
 msgstr "EFI Shell Betiğini Aç"
@@ -67,10 +67,10 @@ msgid "Boot Hard Drive Image (memdisk)"
 msgstr "Hardisk İmajını Önyükle (memdisk)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "IMG Önyükle (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "IMG Önyükle (map --mem)"
 
 msgid "Open As Archiver"
 msgstr "Arşiv Olarak Aç"
@@ -91,19 +91,19 @@ msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "Windows NT6.x VHD/VHDX (NTBOOT) Önyükle"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "VHD Önyükle RAMOS (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "VHD Önyükle RAMOS (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
 msgstr "VHD Önyükle (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "VHD Önyükle (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "VHD Önyükle (map --mem)"
 
 msgid "Mount ISO"
 msgstr "ISO Bağla"
@@ -117,14 +117,17 @@ msgstr "ISO Önyükle (memdisk)"
 msgid "Boot ISO (Easy2Boot)"
 msgstr "ISO Önyükle (Easy2Boot)"
 
-msgid "Install Windows from ISO"
-msgstr "ISO'dan Windows Kur"
+msgid "Install Windows (x64)"
+msgstr "Windows Kur (x64)"
+
+msgid "Install Windows (x86)"
+msgstr "Windows Kur (x86)"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "ISO Önyükle (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "ISO Önyükle (map --mem)"
 
 msgid "Boot EFI Files"
 msgstr "EFI Dosyasını Önyükle"

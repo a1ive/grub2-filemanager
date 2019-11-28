@@ -106,7 +106,10 @@ msgstr ""
 msgid "Boot ISO (Easy2Boot)"
 msgstr ""
 
-msgid "Install Windows from ISO"
+msgid "Install Windows (x64)"
+msgstr ""
+
+msgid "Install Windows (x86)"
 msgstr ""
 
 msgid "Boot ISO (map)"

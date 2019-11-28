@@ -80,7 +80,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
         name = grub.gettext ("Boot ISO (Loopback)")
         grub.add_icon_menu (icon, command, name)
     end
-    
+
     function enum_loop (loop_path)
         -- enum_loop path_without_(loop)
         -- return table
@@ -99,7 +99,7 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
         grub.enum_file (enum_loop_func, "(loop)" .. loop_path)
         return f_table
     end
-    
+
     function check_distro ()
         -- return icon, script, name, linux_extra
         -- default
@@ -262,7 +262,11 @@ function isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
         if grub.file_exist ("(loop)/platform/i86pc/kernel/amd64/unix") then
             return "solaris", "smartos", "SmartOS", ""
         end
-
+        --check /sources/install.wim /x64/sources/install.esd
+        if grub.file_exist ("(loop)/sources/install.wim") or grub.file_exist ("(loop)/sources/install.esd") or grub.file_exist ("(loop)/sources/install.swm") or grub.file_exist ("(loop)/x86/sources/install.esd") or grub.file_exist ("(loop)/x64/sources/install.esd") or grub.file_exist ("(loop)/x64/sources/install.wim") or grub.file_exist ("(loop)/x86/sources/install.wim") or grub.file_exist ("(loop)/x86/sources/install.swm") or grub.file_exist ("(loop)/x64/sources/install.swm") then
+            linux_extra = string.gsub (iso_path, "/", "\\\\")
+            return "nt6", "windows", "Windows", linux_extra
+        end
         return "iso", "unknown", "Linux", ""
     end
     icon, distro, name, linux_extra = check_distro ()
@@ -321,23 +325,6 @@ function open (file, file_type, device, device_type, arch, platform)
             isoboot (iso_path, iso_label, iso_uuid, dev_uuid)
         end
         if platform == "pc" then
-            if device_type == "1" and grub.file_exist ("(loop)/sources/install.wim") and grub.file_exist ("/wimboot") and grub.file_exist ("/install.gz") then
-                -- windows install iso
-                icon = "nt6"
-                towinpath (file)
-                command = "set lang=en_US; terminal_output console; "
-                    .. "enable_progress_indicator=1; loopback wimboot /wimboot; loopback install /install.gz; "
-                    .. "set installiso=" .. win_path .. "; save_env -f (memdisk)/null.cfg installiso; "
-                    .. "linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(loop)/bootmgr "
-                    .. "newc:bcd:(loop)/boot/bcd newc:boot.sdi:(loop)/boot/boot.sdi "
-                    .. "newc:null.cfg:(memdisk)/null.cfg "
-                    .. "newc:mount_x64.exe:(install)/mount_x64.exe newc:mount_x86.exe:(install)/mount_x86.exe "
-                    .. "newc:start.bat:(install)/start.bat newc:winpeshl.ini:(install)/winpeshl.ini "
-                    .. "newc:boot.wim:(loop)/sources/boot.wim; "
-                    .. "cat (memdisk)/null.cfg "
-                name = grub.gettext("Install Windows from ISO")
-                grub.add_icon_menu (icon, command, name)
-            end
             -- memdisk iso
             icon = "iso"
             command = "linux16 $prefix/memdisk iso raw; enable_progress_indicator=1; initrd16 " .. file
@@ -370,38 +357,16 @@ function open (file, file_type, device, device_type, arch, platform)
                 grub.add_icon_menu (icon, command, name)
             end
         elseif platform == "efi" then
-            if device_type == "1" and grub.file_exist ("(loop)/sources/install.wim") then
-                -- windows install iso
-                icon = "nt6"
-                towinpath (file)
-                command = "set lang=en_US; loopback wimboot ${prefix}/wimboot.gz; "
-                    .. "loopback install ${prefix}/install.gz; "
-                    .. "set installiso=" .. win_path .. "; save_env -f ${prefix}/null.cfg installiso; "
-                    .. "cat ${prefix}/null.cfg; "
-                    .. "wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi "
-                    .. "@:bcd:(wimboot)/bcd "
-                    .. "@:boot.sdi:(wimboot)/boot.sdi "
-                    .. "@:null.cfg:${prefix}/null.cfg "
-                    .. "@:mount_x64.exe:(install)/mount_x64.exe "
-                    .. "@:mount_x86.exe:(install)/mount_x86.exe "
-                    .. "@:start.bat:(install)/start.bat "
-                    .. "@:winpeshl.ini:(install)/winpeshl.ini "
-                    .. "@:boot.wim:(loop)/sources/boot.wim; "
-                name = grub.gettext("Install Windows from ISO")
-                grub.add_icon_menu (icon, command, name)
-            end
-            if arch == "x86_64" then
-              -- map iso
-              icon = "iso"
-              command = "map " .. file
-              name = grub.gettext("Boot ISO (map)")
-              grub.add_icon_menu (icon, command, name)
-              --map --mem
-              icon = "iso"
-              command = "map --mem " .. file
-              name = grub.gettext("Boot ISO (map --mem)")
-              grub.add_icon_menu (icon, command, name)
-            end
+            -- map iso
+            icon = "iso"
+            command = "map " .. file
+            name = grub.gettext("Boot ISO (map)")
+            grub.add_icon_menu (icon, command, name)
+            --map --mem
+            icon = "iso"
+            command = "map --mem " .. file
+            name = grub.gettext("Boot ISO (map --mem)")
+            grub.add_icon_menu (icon, command, name)
         end
     elseif file_type == "wim" then
         if platform == "efi" then
@@ -409,49 +374,48 @@ function open (file, file_type, device, device_type, arch, platform)
             command = "set lang=en_US; loopback wimboot ${prefix}/wimboot.gz; wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi @:bcd:(wimboot)/bcd @:boot.sdi:(wimboot)/boot.sdi @:boot.wim:" .. file
             name = grub.gettext("Boot NT6.x WIM (wimboot)")
             grub.add_icon_menu (icon, command, name)
+            if device_type == "1" then
+              -- NTBOOT
+              icon = "wim"
+              command = "set lang=en_US; loopback wimboot ${prefix}/wimboot.gz; ntboot --efi=(wimboot)/bootmgfw.efi --sdi=(wimboot)/boot.sdi " .. file
+              name = grub.gettext("Boot NT6.x WIM (NTBOOT)")
+              grub.add_icon_menu (icon, command, name)
+            end
         elseif platform == "pc" then
             -- wimboot
-            if grub.file_exist ("/wimboot") then
-                icon = "wim"
-                command = "set lang=en_US; terminal_output console; enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bootmgr.exe:(wimboot)/bootmgr.exe newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
-                name = grub.gettext("Boot NT6.x WIM (wimboot)")
-                grub.add_icon_menu (icon, command, name)
-            end
+            icon = "wim"
+            command = "set lang=en_US; terminal_output console; enable_progress_indicator=1; loopback wimboot /wimboot; linux16 (wimboot)/wimboot; initrd16 newc:bootmgr:(wimboot)/bootmgr newc:bootmgr.exe:(wimboot)/bootmgr.exe newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi newc:boot.wim:" .. file
+            name = grub.gettext("Boot NT6.x WIM (wimboot)")
+            grub.add_icon_menu (icon, command, name)
             -- BOOTMGR/NTLDR only supports (hdx,y)
             if device_type == "1" then
-                if grub.file_exist ("/NTBOOT.MOD/NTBOOT.NT6") then
-                    -- NTBOOT NT6 WIM
-                    icon = "nt6"
-                    tog4dpath (file, device, device_type)
-                    command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot NT6.x WIM (NTBOOT)")
-                    grub.add_icon_menu (icon, command, name)
-                end
-                if grub.file_exist ("/NTBOOT.MOD/NTBOOT.PE1") then
-                    -- NTBOOT NT5 WIM (PE1)
-                    icon = "nt5"
-                    tog4dpath (file, device, device_type)
-                    command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot NT5.x WIM (NTBOOT)")
-                    grub.add_icon_menu (icon, command, name)
-                end
+                -- NTBOOT NT6 WIM
+                icon = "nt6"
+                tog4dpath (file, device, device_type)
+                command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot NT6.x WIM (NTBOOT)")
+                grub.add_icon_menu (icon, command, name)
+                -- NTBOOT NT5 WIM (PE1)
+                icon = "nt5"
+                tog4dpath (file, device, device_type)
+                command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot NT5.x WIM (NTBOOT)")
+                grub.add_icon_menu (icon, command, name)
             end
         end
     elseif file_type == "wpe" then
         if platform == "pc" then
             -- NTLDR only supports (hdx,y)
             if device_type == "1" then
-                if grub.file_exist ("/NTBOOT.MOD/NTBOOT.PE1") then
-                    -- NTBOOT NT5 PE
-                    icon = "nt5"
-                    tog4dpath (file, device, device_type)
-                    command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot NT5.x PE (NTBOOT)")
-                    grub.add_icon_menu (icon, command, name)
-                end
+                -- NTBOOT NT5 PE
+                icon = "nt5"
+                tog4dpath (file, device, device_type)
+                command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT pe1=" .. g4d_file .. "\";" .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot NT5.x PE (NTBOOT)")
+                grub.add_icon_menu (icon, command, name)
             end
         end
     elseif file_type == "vhd" then
@@ -465,50 +429,52 @@ function open (file, file_type, device, device_type, arch, platform)
         if platform == "pc" then
             -- BOOTMGR only supports (hdx,y)
             if device_type == "1" then
-                if grub.file_exist ("/NTBOOT.MOD/NTBOOT.NT6") then
-                    -- NTBOOT NT6 VHD
-                    icon = "nt6"
-                    tog4dpath (file, device, device_type)
-                    command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot Windows NT6.x VHD (NTBOOT)")
-                    grub.add_icon_menu (icon, command, name)
-                    -- VHD ramos -top
-                    icon = "nt6"
-                    command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem --top " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem --top)")
-                    grub.add_icon_menu (icon, command, name)
-                    -- VHD ramos
-                    icon = "nt6"
-                    command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
-                     "linux $prefix/grub.exe --config-file=$g4d_cmd; "
-                    name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem)")
-                    grub.add_icon_menu (icon, command, name)
-                end
-                if grub.file_exist ("/vbootldr") then
-                    icon = "img"
-                    vhd_path = string.match (grub.getenv ("file"), "^%([%w,]+%)(.*)$")
-                    grub.run ("probe --set=dev_uuid -u " .. device)
-                    dev_uuid = grub.getenv ("dev_uuid")
-                    command = "loopback vboot /vbootldr; set vbootloader=(vboot)/vboot;vbootinsmod (vboot)/vbootcore.mod; vboot harddisk=(UUID=" .. dev_uuid .. ")" .. vhd_path
-                    name = grub.gettext("Boot VHD (vboot)")
-                    grub.add_icon_menu (icon, command, name)
-                end
+                -- NTBOOT NT6 VHD
+                icon = "nt6"
+                tog4dpath (file, device, device_type)
+                command = "g4d_cmd=\"find --set-root /fm.loop;/NTBOOT NT6=" .. g4d_file .. "\";" .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot Windows NT6.x VHD/VHDX (NTBOOT)")
+                grub.add_icon_menu (icon, command, name)
+                -- VHD ramos -top
+                icon = "nt6"
+                command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem --top " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem --top)")
+                grub.add_icon_menu (icon, command, name)
+                -- VHD ramos
+                icon = "nt6"
+                command = "g4d_cmd=\"find --set-root --ignore-floppies --ignore-cd " .. g4d_file .. "; map --mem " .. g4d_file .. " (hd0); map (hd0) (hd1); map --hook; root (hd0,0); chainloader /bootmgr; boot\"; " .. 
+                 "linux $prefix/grub.exe --config-file=$g4d_cmd; "
+                name = grub.gettext("Boot RamOS VHD (GRUB4DOS map --mem)")
+                grub.add_icon_menu (icon, command, name)
+                -- VHD vboot
+                icon = "img"
+                vhd_path = string.match (grub.getenv ("file"), "^%([%w,]+%)(.*)$")
+                grub.run ("probe --set=dev_uuid -u " .. device)
+                dev_uuid = grub.getenv ("dev_uuid")
+                command = "loopback vboot /vbootldr; set vbootloader=(vboot)/vboot;vbootinsmod (vboot)/vbootcore.mod; vboot harddisk=(UUID=" .. dev_uuid .. ")" .. vhd_path
+                name = grub.gettext("Boot VHD (vboot)")
+                grub.add_icon_menu (icon, command, name)
             end
         elseif platform == "efi" then
-          if arch == "x86_64" then
-              -- map vhd
+            if device_type == "1" then
+              -- NTBOOT
               icon = "img"
-              command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --type=HD --disk vhd0"
-              name = grub.gettext("Boot VHD (map)")
-              grub.add_icon_menu (icon, command, name)
-              --map --mem
-              icon = "img"
-              command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --mem --type=HD --disk vhd0"
-              name = grub.gettext("Boot VHD (map --mem)")
+              command = "set lang=en_US; terminal_output console; loopback wimboot ${prefix}/wimboot.gz; ntboot --gui --efi=(wimboot)/alt.efi " .. file
+              name = grub.gettext("Boot Windows NT6.x VHD/VHDX (NTBOOT)")
               grub.add_icon_menu (icon, command, name)
             end
+            -- map vhd
+            icon = "img"
+            command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --type=HD --disk vhd0"
+            name = grub.gettext("Boot VHD (map)")
+            grub.add_icon_menu (icon, command, name)
+            --map --mem
+            icon = "img"
+            command = "vhd -d vhd0; vhd -p vhd0 " .. file .. "; map --mem --type=HD --disk vhd0"
+            name = grub.gettext("Boot VHD (map --mem)")
+            grub.add_icon_menu (icon, command, name)
         end
     elseif file_type == "fba" then
         if device_type ~= "3" then
@@ -558,18 +524,16 @@ function open (file, file_type, device, device_type, arch, platform)
             name = grub.gettext("Boot Hard Drive Image (GRUB4DOS)")
             grub.add_icon_menu (icon, command, name)
         elseif platform == "efi" then
-          if arch == "x86_64" then
-              -- map img
-              icon = "img"
-              command = "map " .. file
-              name = grub.gettext("Boot IMG (map)")
-              grub.add_icon_menu (icon, command, name)
-              --map --mem img
-              icon = "img"
-              command = "map --mem " .. file
-              name = grub.gettext("Boot IMG (map --mem)")
-              grub.add_icon_menu (icon, command, name)
-            end
+            -- map img
+            icon = "img"
+            command = "map " .. file
+            name = grub.gettext("Boot IMG (map)")
+            grub.add_icon_menu (icon, command, name)
+            --map --mem img
+            icon = "img"
+            command = "map --mem " .. file
+            name = grub.gettext("Boot IMG (map --mem)")
+            grub.add_icon_menu (icon, command, name)
         end
     elseif file_type == "ipxe" then
         if platform == "pc" then
