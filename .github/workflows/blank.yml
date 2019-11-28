@@ -13,8 +13,6 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-git clone --recursive https://github.com/a1ive/grub2-filemanager.git
+  git clone --recursive https://github.com/a1ive/grub2-filemanager.git
 cd grub2-filemanager
 ./build.sh
