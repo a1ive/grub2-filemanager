@@ -7,3 +7,5 @@ build
 test*.cer
 *.key
 desktop.ini
+grub2-latest.tar.gz
+grub/*

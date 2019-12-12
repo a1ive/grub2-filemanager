@@ -53,7 +53,7 @@ read -p "Please make a choice: " choice
 case "$choice" in
     2)
         echo "zh_TW"
-        msgfmt grub/locale/zh_TW.po -o build/boot/grub/locale/zh_TW.mo
+        cp grub/locale/zh_TW.mo build/boot/grub/locale/zh_TW.mo
         msgfmt lang/zh_TW/fm.po -o build/boot/grub/locale/fm/zh_TW.mo
         cp lang/zh_TW/lang.sh build/boot/grub/
         ;;
@@ -62,31 +62,31 @@ case "$choice" in
         ;;
     4)
         echo "tr_TR"
-        msgfmt grub/locale/tr_TR.po -o build/boot/grub/locale/tr_TR.mo
+        cp grub/locale/tr_TR.mo build/boot/grub/locale/tr_TR.mo
         msgfmt lang/tr_TR/fm.po -o build/boot/grub/locale/fm/tr_TR.mo
         cp lang/tr_TR/lang.sh build/boot/grub/
         ;;
     5)
         echo "de_DE"
-        msgfmt grub/locale/de_DE.po -o build/boot/grub/locale/de_DE.mo
+        cp grub/locale/de_DE.mo build/boot/grub/locale/de_DE.mo
         msgfmt lang/de_DE/fm.po -o build/boot/grub/locale/fm/de_DE.mo
         cp lang/de_DE/lang.sh build/boot/grub/
         ;;
     6)
         echo "vi_VN"
-        msgfmt grub/locale/vi_VN.po -o build/boot/grub/locale/vi_VN.mo
+        cp grub/locale/vi_VN.mo build/boot/grub/locale/vi_VN.mo
         msgfmt lang/vi_VN/fm.po -o build/boot/grub/locale/fm/vi_VN.mo
         cp lang/vi_VN/lang.sh build/boot/grub/
         ;;
     7)
         echo "ru_RU"
-        msgfmt grub/locale/ru_RU.po -o build/boot/grub/locale/ru_RU.mo
+        cp grub/locale/ru_RU.mo build/boot/grub/locale/ru_RU.mo
         msgfmt lang/ru_RU/fm.po -o build/boot/grub/locale/fm/ru_RU.mo
         cp lang/ru_RU/lang.sh build/boot/grub/
         ;;
     *)
         echo "zh_CN"
-        msgfmt grub/locale/zh_CN.po -o build/boot/grub/locale/zh_CN.mo
+        cp grub/locale/zh_CN.mo build/boot/grub/locale/zh_CN.mo
         msgfmt lang/zh_CN/fm.po -o build/boot/grub/locale/fm/zh_CN.mo
         cp lang/zh_CN/lang.sh build/boot/grub/
         ;;
