@@ -49,6 +49,7 @@ echo "4. Turkish"
 echo "5. German"
 echo "6. Vietnamese"
 echo "7. Russian"
+echo "8. Hebrew"
 read -p "Please make a choice: " choice
 case "$choice" in
     2)
@@ -83,6 +84,12 @@ case "$choice" in
         cp grub/locale/ru_RU.mo build/boot/grub/locale/ru_RU.mo
         msgfmt lang/ru_RU/fm.po -o build/boot/grub/locale/fm/ru_RU.mo
         cp lang/ru_RU/lang.sh build/boot/grub/
+        ;;
+    8)
+        echo "he_IL"
+        #cp grub/locale/he_IL.mo build/boot/grub/locale/he_IL.mo
+        msgfmt lang/he_IL/fm.po -o build/boot/grub/locale/fm/he_IL.mo
+        cp lang/he_IL/lang.sh build/boot/grub/
         ;;
     *)
         echo "zh_CN"

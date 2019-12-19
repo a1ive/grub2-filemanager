@@ -16,7 +16,8 @@ echo 4. Turkish
 echo 5. German
 echo 6. Vietnamese
 echo 7. Russian
-echo Please make a choice: 
+echo 8. Hebrew
+echo Please make a choice:
 set /p id=
 if "%id%" == "1" goto cn
 if "%id%" == "2" goto tw
@@ -25,15 +26,16 @@ if "%id%" == "4" goto tr
 if "%id%" == "5" goto de
 if "%id%" == "6" goto vn
 if "%id%" == "7" goto ru
+if "%id%" == "8" goto he
 :cn
 echo zh_CN
-bin\msgfmt.exe grub\locale\zh_CN.po -o build\boot\grub\locale\zh_CN.mo
+copy grub\locale\zh_CN.mo -o build\boot\grub\locale\zh_CN.mo
 bin\msgfmt.exe lang\zh_CN\fm.po -o build\boot\grub\locale\fm\zh_CN.mo
 copy lang\zh_CN\lang.sh build\boot\grub\
 goto build
 :tw
 echo zh_TW
-bin\msgfmt.exe grub\locale\zh_TW.po -o build\boot\grub\locale\zh_TW.mo
+copy grub\locale\zh_TW.mo -o build\boot\grub\locale\zh_TW.mo
 bin\msgfmt.exe lang\zh_TW\fm.po -o build\boot\grub\locale\fm\zh_TW.mo
 copy lang\zh_TW\lang.sh build\boot\grub\
 goto build
@@ -42,27 +44,33 @@ echo en_US
 goto build
 :tr
 echo tr_TR
-bin\msgfmt.exe grub\locale\tr_TR.po -o build\boot\grub\locale\tr_TR.mo
+copy grub\locale\tr_TR.mo -o build\boot\grub\locale\tr_TR.mo
 bin\msgfmt.exe lang\tr_TR\fm.po -o build\boot\grub\locale\fm\tr_TR.mo
 copy lang\tr_TR\lang.sh build\boot\grub\
 goto build
 :de
 echo de_DE
-bin\msgfmt.exe grub\locale\de_DE.po -o build\boot\grub\locale\de_DE.mo
+copy grub\locale\de_DE.mo -o build\boot\grub\locale\de_DE.mo
 bin\msgfmt.exe lang\de_DE\fm.po -o build\boot\grub\locale\fm\de_DE.mo
 copy lang\de_DE\lang.sh build\boot\grub\
 goto build
 :vn
 echo vi_VN
-bin\msgfmt.exe grub\locale\vi_VN.po -o build\boot\grub\locale\vi_VN.mo
+copy grub\locale\vi_VN.mo -o build\boot\grub\locale\vi_VN.mo
 bin\msgfmt.exe lang\vi_VN\fm.po -o build\boot\grub\locale\fm\vi_VN.mo
 copy lang\vi_VN\lang.sh build\boot\grub\
 goto build
 :ru
 echo ru_RU
-bin\msgfmt.exe grub\locale\ru_RU.po -o build\boot\grub\locale\ru_RU.mo
+copy grub\locale\ru_RU.mo -o build\boot\grub\locale\ru_RU.mo
 bin\msgfmt.exe lang\ru_RU\fm.po -o build\boot\grub\locale\fm\ru_RU.mo
 copy lang\ru_RU\lang.sh build\boot\grub\
+goto build
+:he
+echo he_IL
+:: copy grub\locale\he_IL.mo -o build\boot\grub\locale\he_IL.mo
+bin\msgfmt.exe lang\he_IL\fm.po -o build\boot\grub\locale\fm\he_IL.mo
+copy lang\he_IL\lang.sh build\boot\grub\
 goto build
 
 :build
