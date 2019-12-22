@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2019-12-22 09:10\n"
+"PO-Revision-Date: 2019-12-22 09:20\n"
 
 msgid "Back"
 msgstr "חזרה"
@@ -53,67 +53,67 @@ msgid "Mount Image"
 msgstr "עיגון דמות"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "אתחול דמות כונן תקליטונים (GRUB4DOS)"
+msgstr "אתחול מדמות כונן תקליטונים (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "אתחול דמות כונן תקליטונים (memdisk)"
+msgstr "אתחול מדמות כונן תקליטונים (memdisk)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "אתחול דמות כונן קשיח (GRUB4DOS)"
+msgstr "אתחול מדמות כונן קשיח (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "אתחול דמות כונן קשיח (memdisk)"
+msgstr "אתחול מדמות כונן קשיח (memdisk)"
 
 msgid "Boot IMG (map)"
-msgstr "אתחול IMG‏ (map)"
+msgstr "אתחול מ־IMG‏ (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr "אתחול IMG‏ (map --mem)"
+msgstr "אתחול מ־IMG‏ (map --mem)"
 
 msgid "Open As Archiver"
 msgstr "פתיחה כקובץ ארכיון"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "אתחול WIM בתצורת NT6.x‏ (wimboot)"
+msgstr "אתחול מ־WIM בתצורת NT6.x‏ (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "אתחול WIM בתצורת NT6.x‏ (NTBOOT)"
+msgstr "אתחול מ־WIM בתצורת NT6.x‏ (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "אתחול WIM בתצורת NT5.x‏ (NTBOOT)"
+msgstr "אתחול מ־WIM בתצורת NT5.x‏ (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "אתחול PE בתצורת NT5.x‏ (NTBOOT)"
+msgstr "אתחול מ־PE בתצורת NT5.x‏ (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "אתחול מ־VHD/VHDX בתצורת Windows NT6.x ‏(NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "אתחול מ־VHD בתצורת RamOS‏ (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "אתחול מ־VHD בתצורת RamOS‏ (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "אתחול מ־VHD‏ (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "אתחול מ־VHD‏ (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "אתחול מ־VHD‏ (map --mem)"
 
 msgid "Mount ISO"
 msgstr "עיגון ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "אתחול ISO‏ (GRUB4DOS)"
+msgstr "אתחול מ־ISO‏ (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr "אתחול ISO‏ (memdisk)"
+msgstr "אתחול מ־ISO‏ (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "אתחול ISO‏ (Easy2Boot)"
+msgstr "אתחול מ־ISO‏ (Easy2Boot)"
 
 msgid "Install Windows (x64)"
 msgstr "התקנת Windows‏ (x64)"
@@ -122,10 +122,10 @@ msgid "Install Windows (x86)"
 msgstr "התקנת Windows‏ (x86)"
 
 msgid "Boot ISO (map)"
-msgstr "אתחול ISO‏ (map)"
+msgstr "אתחול מ־ISO‏ (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr "אתחול ISO‏ (map --mem)"
+msgstr "אתחול מ־ISO‏ (map --mem)"
 
 msgid "Boot EFI Files"
 msgstr "אתחול מקובצי EFI"
@@ -140,7 +140,7 @@ msgid "Insert Grub2 Module"
 msgstr "הוספת מודול Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "טעינת שרשרת של סקטור האתחול ל־BIOS"
 
 msgid "Chainload NTLDR"
 msgstr "טעינת שרשרת של NTLDR"
@@ -152,70 +152,70 @@ msgid "Open As GRUB4DOS MOD"
 msgstr "פתיחה כ־MOD של GRUB4DOS"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "אתחול ליבה בתצורת Multiboot"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "אתחול ליבה בתצורת Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "אתחול ליבה של לינוקס"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "מציג טקסט"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "מציג הקסדצימלי"
 
 msgid "File Info"
 msgstr "מידע קובץ"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "השבתת PatchGuard ו־DSE בזמן האתחול"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "הפעלת דריסת מדיניות אבטחה"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "השבתת אימות shim והפעלה מחדש"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "קידוד: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "סידור הקבצים לפי השם"
 
 msgid "Resolution (R): "
-msgstr ""
+msgstr "רזולוציה (R): "
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "הפעלת ESC (לא מומלץ)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "הפעלת הודעות ניפוי שגיאות"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "הצגת כוננים נסתרים"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "טעינת מודולים נוספים"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "טעינת מנהל התקן AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "עיגון כרכים מוצפנים (LUKS ו־geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "הפעלת מסוף טורי"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "הגדרת קושחת EFI"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "מסוף GRUB"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "מעטפת EFI"
 
 msgid "UEFI DUET"
 msgstr ""
