@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2019-12-22 09:00\n"
+"PO-Revision-Date: 2019-12-22 09:10\n"
 
 msgid "Back"
 msgstr "חזרה"
@@ -47,43 +47,43 @@ msgid "Open As Image"
 msgstr "פתיחה כתמונה"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "יש ללחוץ על [ESC] כדי להמשיך…"
 
 msgid "Mount Image"
-msgstr ""
+msgstr "עיגון דמות"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "אתחול דמות כונן תקליטונים (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "אתחול דמות כונן תקליטונים (memdisk)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "אתחול דמות כונן קשיח (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "אתחול דמות כונן קשיח (memdisk)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "אתחול IMG‏ (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "אתחול IMG‏ (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "פתיחה כקובץ ארכיון"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "אתחול WIM בתצורת NT6.x‏ (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "אתחול WIM בתצורת NT6.x‏ (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "אתחול WIM בתצורת NT5.x‏ (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "אתחול PE בתצורת NT5.x‏ (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr ""
@@ -104,52 +104,52 @@ msgid "Boot VHD (map --mem)"
 msgstr ""
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "עיגון ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "אתחול ISO‏ (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "אתחול ISO‏ (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "אתחול ISO‏ (Easy2Boot)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "התקנת Windows‏ (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "התקנת Windows‏ (x86)"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "אתחול ISO‏ (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "אתחול ISO‏ (map --mem)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "אתחול מקובצי EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "פתיחה כסקריפט iPXE"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "פתיחה כגופן"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "הוספת מודול Grub2"
 
 msgid "Chainload BIOS Boot Sector"
 msgstr ""
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "טעינת שרשרת של NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "טעינת שרשרת של BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "פתיחה כ־MOD של GRUB4DOS"
 
 msgid "Boot Multiboot Kernel"
 msgstr ""
