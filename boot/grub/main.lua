@@ -109,12 +109,16 @@ end
 
 function enum_file (name)
     local item = path .. "/" .. name
-    if grub.file_exist (item) then
-        i = i + 1
-        f_table[i] = name
-    elseif (name ~= "." and name ~= "..") then
-        j = j + 1
-        d_table[j] = name
+    local name_temp = string.lower(name)
+    local name_temp = string.match (name_temp, "^%$")
+    if name_temp ~= "$" then
+      if grub.file_exist (item) then
+          i = i + 1
+          f_table[i] = name
+      elseif (name ~= "." and name ~= ".." and name ~= "System Volume Information") then
+          j = j + 1
+          d_table[j] = name
+      end
     end
 end
 
@@ -136,7 +140,7 @@ if (disk_flag == nil) then
 end
 grub.clear_menu ()
 grub.exportenv ("theme", "slack/f2.txt")
-if (path == "") then    
+if (path == "") then
     grub.enum_device (enum_device)
 else
     i, j = 0, 0
@@ -154,7 +158,7 @@ else
     command = "export path=" .. lpath .. "; lua $prefix/main.lua"
     name = grub.gettext("Back")
     grub.add_icon_menu (icon, command, name)
-    
+
     for j, name in ipairs(d_table) do
         item = string.gsub(path .. "/" .. name, " ", "\\ ")
         if (encoding == "gbk") then
