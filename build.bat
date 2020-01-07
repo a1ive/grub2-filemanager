@@ -29,13 +29,13 @@ if "%id%" == "7" goto ru
 if "%id%" == "8" goto he
 :cn
 echo zh_CN
-copy grub\locale\zh_CN.mo -o build\boot\grub\locale\zh_CN.mo
+copy grub\locale\zh_CN.mo build\boot\grub\locale\zh_CN.mo
 bin\msgfmt.exe lang\zh_CN\fm.po -o build\boot\grub\locale\fm\zh_CN.mo
 copy lang\zh_CN\lang.sh build\boot\grub\
 goto build
 :tw
 echo zh_TW
-copy grub\locale\zh_TW.mo -o build\boot\grub\locale\zh_TW.mo
+copy grub\locale\zh_TW.mo build\boot\grub\locale\zh_TW.mo
 bin\msgfmt.exe lang\zh_TW\fm.po -o build\boot\grub\locale\fm\zh_TW.mo
 copy lang\zh_TW\lang.sh build\boot\grub\
 goto build
@@ -44,31 +44,31 @@ echo en_US
 goto build
 :tr
 echo tr_TR
-copy grub\locale\tr_TR.mo -o build\boot\grub\locale\tr_TR.mo
+copy grub\locale\tr_TR.mo build\boot\grub\locale\tr_TR.mo
 bin\msgfmt.exe lang\tr_TR\fm.po -o build\boot\grub\locale\fm\tr_TR.mo
 copy lang\tr_TR\lang.sh build\boot\grub\
 goto build
 :de
 echo de_DE
-copy grub\locale\de_DE.mo -o build\boot\grub\locale\de_DE.mo
+copy grub\locale\de_DE.mo build\boot\grub\locale\de_DE.mo
 bin\msgfmt.exe lang\de_DE\fm.po -o build\boot\grub\locale\fm\de_DE.mo
 copy lang\de_DE\lang.sh build\boot\grub\
 goto build
 :vn
 echo vi_VN
-copy grub\locale\vi_VN.mo -o build\boot\grub\locale\vi_VN.mo
+copy grub\locale\vi_VN.mo build\boot\grub\locale\vi_VN.mo
 bin\msgfmt.exe lang\vi_VN\fm.po -o build\boot\grub\locale\fm\vi_VN.mo
 copy lang\vi_VN\lang.sh build\boot\grub\
 goto build
 :ru
 echo ru_RU
-copy grub\locale\ru_RU.mo -o build\boot\grub\locale\ru_RU.mo
+copy grub\locale\ru_RU.mo build\boot\grub\locale\ru_RU.mo
 bin\msgfmt.exe lang\ru_RU\fm.po -o build\boot\grub\locale\fm\ru_RU.mo
 copy lang\ru_RU\lang.sh build\boot\grub\
 goto build
 :he
 echo he_IL
-:: copy grub\locale\he_IL.mo -o build\boot\grub\locale\he_IL.mo
+:: copy grub\locale\he_IL.mo build\boot\grub\locale\he_IL.mo
 bin\msgfmt.exe lang\he_IL\fm.po -o build\boot\grub\locale\fm\he_IL.mo
 copy lang\he_IL\lang.sh build\boot\grub\
 goto build
