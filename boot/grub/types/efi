@@ -1,0 +1,15 @@
+[type]
+icon = exe
+default = 0
+
+[0]
+menu = efi/chain.sh
+title = "Open As EFI Application"
+icon = uefi
+enable = efi
+
+[1]
+menu = efi/load.sh
+title = "Load UEFI driver"
+icon = uefi
+enable = efi

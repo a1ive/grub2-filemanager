@@ -1,1 +1,1 @@
-all_video video_bochs video_cirrus efi_gop efi_uga gfxterm gfxterm_background gfxmenu jpeg png tga font
+all_video

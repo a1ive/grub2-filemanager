@@ -28,7 +28,7 @@ if [ -e "$(which grub-mkimage)" ]
 then
     echo "ok"
 else
-    echo "not found\nPlease install mkisofs or genisoimage."
+    echo "not found\nPlease install grub."
     exit
 fi
 
@@ -41,9 +41,9 @@ mkdir build
 echo "common files"
 cp -r boot build/
 
-echo "Language / 语言 / 語言"
-echo "1. Simplified Chinese / 简体中文"
-echo "2. Traditional Chinese / 正體中文"
+echo "Language"
+echo "1. Simplified Chinese"
+echo "2. Traditional Chinese"
 echo "3. English (United States)"
 echo "4. Turkish"
 echo "5. German"
@@ -154,7 +154,7 @@ cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..
 rm -r build/boot
-grub-mkimage -d ./grub/i386-pc -m arch/legacy/null.cpio -p "(fm)/boot/grub" -c arch/legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
+grub-mkimage -d ./grub/i386-pc -p "(memdisk)/boot/grub" -c arch/legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 cp arch/legacy/MAP build/

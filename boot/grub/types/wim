@@ -1,0 +1,15 @@
+[type]
+icon = wim
+default = 0
+
+[0]
+menu = wim/wimboot.sh
+title = "Boot NT6.x WIM (wimboot)"
+icon = wim
+enable = all
+
+[1]
+menu = wim/ntboot.sh
+title = "Boot NT6.x WIM (NTBOOT)"
+icon = nt6
+enable = all

@@ -21,13 +21,7 @@ for module in $modlist; do
     insmod $module;
 done;
 export enable_progress_indicator=0;
-#python init
-#search -s -f /boot/python/lib.zip;
-#export root;
-#py 'import sys; sys.path = ["/boot/python", "/boot/python/lib.zip"]; del sys';
-#py 'import init; init.early_init()';
-#py 'init.init(); del init';
-#python init done
+
 if [ "$grub_platform" = "efi" ]; then
     search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
     if [ "$grub_cpu" = "i386" ]; then
@@ -48,9 +42,10 @@ else
 fi;
 
 loadfont ${prefix}/fonts/unicode.xz;
+loadfont ${prefix}/fonts/dosvga.pf2;
+
 export locale_dir=${prefix}/locale;
 export secondary_locale_dir=${prefix}/locale/fm;
-#UEFI LoadOptions
 
 source ${prefix}/lang.sh;
 
@@ -60,12 +55,7 @@ export gfxpayload=keep;
 terminal_output gfxterm;
 set color_normal=white/black;
 set color_highlight=black/white;
-export encoding="utf8";
-export enable_sort="1";
-export show_vdisk="0";
-export efiguard="0";
 
-export theme_file=$"File: ";
 #Uncomment the next line to enable animation
 #export grub_frame_speed=110;
 #Uncomment the next line to enable sound
@@ -74,7 +64,8 @@ export theme_file=$"File: ";
 #export grub_sound_select="880 0 880 0 880 698 1046";
 #Uncomment below code and copy samples/splash/* to boot/grub/themes/slack/ to load Windows 10 splash screen
 #set theme=$prefix/themes/slack/splash10.txt
+export theme=${prefix}/themes/slack/theme.txt;
 #set timeout=7
 #menuentry "" {
-lua $prefix/main.lua;
+grubfm;
 #}

@@ -1,0 +1,21 @@
+[type]
+icon = iso
+default = 1
+
+[0]
+menu = iso/loop.sh
+title = "Boot ISO (Loopback)"
+icon = gnu-linux
+enable = all
+
+[1]
+menu = iso/map.sh
+title = "Boot ISO (map)"
+icon = iso
+enable = all
+
+[2]
+menu = iso/e2b.sh
+title = "Boot ISO (Easy2Boot)"
+icon = gnu-linux
+enable = all
