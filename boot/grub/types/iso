@@ -9,20 +9,27 @@ icon = gnu-linux
 enable = all
 
 [1]
+menu = iso/win.sh
+condition = iso/win_test.sh
+title = "Install Windows"
+icon = nt6
+enable = all
+
+[2]
 menu = iso/e2b.sh
 condition = iso/e2b_test.sh
 title = "Boot ISO (Easy2Boot)"
 icon = gnu-linux
 enable = all
 
-[2]
+[3]
 menu = iso/custom.sh
 condition = iso/custom_test.sh
 title = "ISO user menu"
 icon = iso
 enable = all
 
-[3]
+[4]
 menu = iso/map.sh
 title = "Boot ISO (map)"
 icon = iso
