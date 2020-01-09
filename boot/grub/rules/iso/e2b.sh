@@ -1,12 +1,11 @@
 source ${prefix}/func.sh;
 
-regexp --set=1:dev '(hd[0-9]+),msdos[1-3]' "${grubfm_device}";
-echo "WARNING: Will erase ALL data on (${dev},4)";
+echo "WARNING: Will erase ALL data on (${grubfm_disk},4)";
 echo "Press [Y] to continue. Press [N] to quit.";
 getkey key;
 if [ x$key = x121 ];
 then
-  partnew --type=0x00 --file="${grubfm_file}" "${dev}" 4;
+  partnew --type=0x00 --file="${grubfm_file}" "${grubfm_disk}" 4;
   if [ "$grub_platform" = "efi" ];
   then
     map "${grubfm_file}";
