@@ -41,6 +41,13 @@ else
     export grub_secureboot=$"Not available";
 fi;
 
+if cpuid -l;
+then
+  export CPU=64;
+else
+  export CPU=32;
+fi
+
 loadfont ${prefix}/fonts/unicode.xz;
 loadfont ${prefix}/fonts/dosvga.pf2;
 
