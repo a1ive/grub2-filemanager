@@ -1,5 +1,5 @@
 # Grub2-FileManager
-# Copyright (C) 2016,2017,2018,2019  A1ive.
+# Copyright (C) 2016,2017,2018,2019,2020  A1ive.
 #
 # Grub2-FileManager is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

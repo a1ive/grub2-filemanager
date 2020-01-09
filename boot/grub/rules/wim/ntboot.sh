@@ -1,18 +1,4 @@
-function to_g4d_path {
-  if regexp --set=1:num '^\(hd[0-9]+,[a-zA-Z]*([0-9]+)\).*' "${1}";
-  then
-    # (hdx,msdosy) (hdx,gpty) (hdx,y)
-    expr --set=num "${num} - 1";
-    regexp --set=1:path_1 --set=2:path_2 '^(\(hd[0-9]+,)[a-zA-Z]*[0-9]+(\).*)' "${1}";
-    set g4d_path="${path_1}${num}${path_2}";
-  elif regexp '^\([chf]d[0-9]*\).*' "${1}";
-  then
-    # (hd) (cd) (fd) (hdx) (cdx) (fdx)
-    set g4d_path="${1}";
-  else
-    unset g4d_path;
-  fi;
-}
+source ${prefix}/func.sh;
 
 if [ "$grub_platform" = "efi" ];
 then

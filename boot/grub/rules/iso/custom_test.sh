@@ -1,6 +1,6 @@
 source ${prefix}/func.sh;
 
-if regexp 'hd[0-9]+,msdos[1-3]' "${grubfm_device}";
+if [ -f "(${grubfm_device})${grubfm_dir}${grubfm_filename}.grubfm" ];
 then
   set grubfm_test=1;
 else
