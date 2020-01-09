@@ -1,0 +1,8 @@
+[type]
+icon = lua
+
+[0]
+menu = lua/lua.sh
+title = "Open As Lua Script"
+icon = lua
+enable = all

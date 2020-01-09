@@ -1,6 +1,5 @@
 [type]
 icon = wim
-default = 0
 
 [0]
 menu = wim/nt5.sh

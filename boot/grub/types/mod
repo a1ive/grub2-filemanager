@@ -1,0 +1,8 @@
+[type]
+icon = mod
+
+[0]
+menu = mod/mod.sh
+title = "Insert Grub2 Module"
+icon = mod
+enable = all

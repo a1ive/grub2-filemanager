@@ -1,6 +1,5 @@
 [type]
 icon = exe
-default = 0
 
 [0]
 menu = efi/chain.sh

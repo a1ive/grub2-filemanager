@@ -1,6 +1,5 @@
 [type]
 icon = iso
-default = 2
 
 [0]
 menu = iso/loop.sh
