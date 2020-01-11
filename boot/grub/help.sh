@@ -14,14 +14,63 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-export theme=${prefix}/themes/slack/fm.txt;
+export theme=${prefix}/themes/slack/help.txt;
+
+videomode -c mode_current;
+
+if [ "${mode_current}" != "0x0" ];
+then
+  menuentry $"Hotkeys" {
+    echo;
+  }
+
+  menuentry $"F1 - Help" {
+    echo;
+  }
+
+  menuentry $"F2 - File Manager" {
+    echo;
+  }
+
+  menuentry $"F3 - OS Detect" {
+    echo;
+  }
+
+  menuentry $"F4 - Settings" {
+    echo;
+  }
+
+  menuentry $"F5 - Power Off" {
+    echo;
+  }
+
+  if [ "$grub_platform" = "efi" ];
+  then
+    menuentry $"LCtrl + LAlt + F12 - Take Screenshots (EFI)" {
+      echo;
+    }
+  fi;
+fi;
+
+menuentry $"[A] About GRUB2-FileManager" --hotkey a {
+  terminal_output console;
+  set gfxmode=640x480;
+  terminal_output gfxterm;
+  grubfm_about;
+  terminal_output console;
+  if [ "${mode_current}" != "0x0" ];
+  then
+    set gfxmode=${mode_current};
+    terminal_output gfxterm;
+  fi;
+}
 
 hiddenentry "---- HOTKEY MENU ----" {
   echo;
 }
 
 hiddenentry "[F1] HELP" --hotkey f1 {
-  configfile ${prefix}/help.sh;
+  echo;
 }
 
 hiddenentry "[F2] FILE MANAGER" --hotkey f2 {
@@ -39,4 +88,8 @@ hiddenentry "[F4] SETTINGS" --hotkey f4 {
 
 hiddenentry "[F5] POWER OFF" --hotkey f5 {
   configfile ${prefix}/power.sh;
+}
+
+hiddenentry "LCtrl + LAlt + F12 - Take Screenshots (EFI)" { 
+  echo;
 }
