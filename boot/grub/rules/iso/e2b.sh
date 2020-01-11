@@ -1,8 +1,13 @@
 source ${prefix}/func.sh;
 
-echo "WARNING: Will erase ALL data on (${grubfm_disk},4)";
-echo "Press [Y] to continue. Press [N] to quit.";
-getkey key;
+if [ -d (${grubfm_disk},4) ];
+then
+  echo "WARNING: Will erase ALL data on (${grubfm_disk},4)";
+  echo "Press [Y] to continue. Press [N] to quit.";
+  getkey key;
+else
+  key=121;
+fi;
 if [ x$key = x121 ];
 then
   partnew --type=0x00 --file="${grubfm_file}" "${grubfm_disk}" 4;
