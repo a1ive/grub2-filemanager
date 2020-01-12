@@ -25,7 +25,38 @@ function auto_swap {
   fi;
 }
 
-for dev in (*); do
+function to_win_ver {
+  if [ "${1}" = "5.0" ];
+  then
+    set winver="Windows 2000";
+  elif [ "${1}" = "5.1" ];
+  then
+    set winver="Windows XP";
+  elif [ "${1}" = "5.2" ];
+  then
+    set winver="Windows Server 2003";
+  elif [ "${1}" = "6.0" ];
+  then
+    set winver="Windows Server 2008";
+  elif [ "${1}" = "6.1" ];
+  then
+    set winver="Windows 7";
+  elif [ "${1}" = "6.2" ];
+  then
+    set winver="Windows 8";
+  elif [ "${1}" = "6.3" ];
+  then
+    set winver="Windows 8.1";
+  elif [ "${1}" = "10.0" ];
+  then
+    set winver="Windows 10";
+  else
+    set winver="Windows NT ${1}";
+  fi;
+}
+
+for dev in (hd*,*);
+do
   if [ -e ${dev} ];
   then
     regexp --set=device '\((.*)\)' "${dev}";
@@ -73,7 +104,8 @@ for dev in (*); do
     fi;
     if ntversion "(${device})" sysver;
     then
-      menuentry $"Boot Windows ${sysver} on ${device}" "${device}" --class nt6 {
+      to_win_ver "${sysver}";
+      menuentry $"Boot ${winver} on ${device}" "${device}" --class nt6 {
         set root="${2}";
         set lang=en_US;
         terminal_output console;
@@ -81,10 +113,39 @@ for dev in (*); do
         ntboot --gui --win --efi=(wimboot)/bootmgfw.efi "(${root})";
       }
       unset sysver;
+      unset winver;
     fi;
   elif [ "$grub_platform" = "pc" ];
   then
-    echo "";
+    probe --set=bootable -b ${device};
+    if regexp 'bootable' "${bootable}";
+    then
+      menuentry $"Boot ${device}" "${device}" --class hdd {
+        set root="${2}";
+        auto_swap;
+        regexp --set=1:tmp '(hd[0-9]+),[a-zA-Z]*[0-9]+' "${2}";
+        chainloader --force --bpb "(${tmp})+1";
+      }
+    fi;
+    if ntversion "(${device})" sysver;
+    then
+      to_win_ver "${sysver}";
+      menuentry $"Boot ${winver} on ${device}" "${device}" "${sysver}" --class nt6 {
+        regexp --set=1:tmp --set=2:num '(hd[0-9]+,)[a-zA-Z]*([0-9]+)' "${2}";
+        expr --set=num "${num} - 1";
+        set g4d_dev="(${tmp}${num})";
+        if regexp '^5\.' "${3}";
+        then
+          set nt="NT5";
+        else
+          set nt="NT6";
+        fi;
+        set g4d_cmd="find --set-root --ignore-floppies /fm.loop;/NTBOOT ${nt}=${g4d_dev};";
+        linux ${prefix}/grub.exe --config-file=${g4d_cmd};
+      }
+      unset sysver;
+      unset winver;
+    fi;
   fi;
 done;
 
