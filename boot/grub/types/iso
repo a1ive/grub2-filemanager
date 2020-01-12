@@ -23,13 +23,6 @@ icon = gnu-linux
 enable = all
 
 [3]
-menu = iso/custom.sh
-condition = iso/custom_test.sh
-title = "ISO user menu"
-icon = iso
-enable = all
-
-[4]
 menu = iso/map.sh
 title = "Boot ISO (map)"
 icon = iso

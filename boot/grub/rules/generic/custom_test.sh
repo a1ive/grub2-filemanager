@@ -6,3 +6,9 @@ then
 else
   set grubfm_test=0;
 fi;
+
+# hide user menu for *grubfm
+if regexp '[gG][rR][uU][bB][fF][mM]' "${grubfm_fileext}";
+then
+  set grubfm_test=0;
+fi;
