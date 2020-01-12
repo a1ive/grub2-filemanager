@@ -1,0 +1,14 @@
+[type]
+icon = img
+
+[0]
+menu = vhd/ntboot.sh
+title = "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+icon = img
+enable = all
+
+[2]
+menu = vhd/vboot.sh
+title = "Boot VHD (vboot)"
+icon = img
+enable = bios

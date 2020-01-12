@@ -1,0 +1,20 @@
+[type]
+icon = cfg
+
+[0]
+menu = cfg/grub2.sh
+title = "Open As Grub2 Menu"
+icon = cfg
+enable = all
+
+[1]
+menu = cfg/syslinux.sh
+title = "Open As Syslinux Menu"
+icon = cfg
+enable = all
+
+[2]
+menu = cfg/pxelinux.sh
+title = "Open As pxelinux Menu"
+icon = cfg
+enable = all

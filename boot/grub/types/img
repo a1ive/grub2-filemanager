@@ -1,0 +1,14 @@
+[type]
+icon = img
+
+[0]
+menu = img/fdd.sh
+title = "Boot Floppy Image (map)"
+icon = img
+enable = all
+
+[1]
+menu = img/hdd.sh
+title = "Boot Hard Drive Image (map)"
+icon = img
+enable = all

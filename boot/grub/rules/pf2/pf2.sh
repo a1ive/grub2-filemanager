@@ -1,0 +1,1 @@
+loadfont "${grubfm_file}";

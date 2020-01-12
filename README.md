@@ -24,8 +24,9 @@
 
 https://github.com/a1ive/grub2-filemanager/releases 
 ## Build
-	git clone --recursive https://github.com/a1ive/grub2-filemanager.git
+	git clone https://github.com/a1ive/grub2-filemanager.git
 	cd grub2-filemanager
+	./update_grub2.sh
 	./build.sh
 ## Boot 
 ### i386-pc 
@@ -37,8 +38,7 @@ DO NOT boot grubfm.iso with memdisk!
 #### GRUB 2
 	linux /loadfm  
 	initrd /grubfm.iso  
-### x86_64-efi 
-#### [Secure Boot](https://github.com/a1ive/grub2-filemanager/blob/master/secureboot/sb.md) 
+### x86_64-efi
 
 #### GRUB 2 
 
@@ -49,8 +49,6 @@ DO NOT boot grubfm.iso with memdisk!
 	efi /grubfmx64.efi
 ## Source code 
 GRUB2: https://github.com/a1ive/grub 
-
-PreLoader: https://github.com/a1ive/PreLoader 
 
 ## Help to translate 
 

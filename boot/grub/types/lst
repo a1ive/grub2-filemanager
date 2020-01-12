@@ -1,0 +1,14 @@
+[type]
+icon = cfg
+
+[0]
+menu = lst/grub.sh
+title = "Open As GRUB-Legacy Menu"
+icon = cfg
+enable = all
+
+[1]
+menu = lst/g4d.sh
+title = "Open As GRUB4DOS Menu"
+icon = cfg
+enable = bios

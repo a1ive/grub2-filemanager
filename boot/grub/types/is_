@@ -1,0 +1,8 @@
+[type]
+icon = wim
+
+[0]
+menu = wim/nt5.sh
+title = "Boot NT5.x PE (NTBOOT)"
+icon = nt5
+enable = bios

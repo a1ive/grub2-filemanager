@@ -1,0 +1,8 @@
+[type]
+icon = png
+
+[0]
+menu = png/view.sh
+title = "Open As Image"
+icon = png
+enable = all

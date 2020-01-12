@@ -1,0 +1,8 @@
+[type]
+icon = net
+
+[0]
+menu = ipxe/ipxe.sh
+title = "Open As iPXE Script"
+icon = net
+enable = bios

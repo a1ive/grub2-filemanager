@@ -3,7 +3,7 @@
 :: Copyright (C) 2014  chenall http://chenall.net
 ::
 :: Grub2-FileManager
-:: Copyright (C) 2017  A1ive.
+:: Copyright (C) 2017,2020  A1ive.
 ::
 :: Grub2-FileManager is free software: you can redistribute it and/or modify
 :: it under the terms of the GNU General Public License as published by
@@ -76,14 +76,15 @@ map --mem %NTBOOT%.MOD/%file% (rd) || call :error Missing module %file%...
 
 :NTBOOT_START
 ::设置默认WINDOWS路径
+if not exist WinDir set WinDir=WINDOWS
 set WinDir=WINDOWS
 set boot_cfg=
 shift
 set file=%1
 set tmp=/%WinDir%
 ::如果没有加参数或参数是一个磁盘分区
-if not exist file && goto NTBOOT_HELP
-if "%~d1"=="%1" && goto NTBOOT_HELP
+if not exist file && goto %0.HDD
+if "%~d1"=="%1" && goto %0.HDD
 ::以上是NT5或NT6硬盘启动
 if /i "%0"=="pe1" && set PDIR=WXPE && goto :PE1_BOOT
 call :CHECK_FILE %file%
@@ -94,6 +95,15 @@ set NTLDR=%3 ;; shift /2 ;; shift /2
 ::转到对应的启动类别，比如NT5.IMG_BOOT，NT6.WIM_BOOT，NT6.VHD_BOOT
 goto %0%~x1_BOOT
 
+:NT5.HDD
+echo Searching NT5.X on Hard Disk(/%WinDir%)
+if exist file && root %1 ! find --set-root --devices=h /%WinDir%/system32/ntoskrnl.exe cat --locate=\0\x35\0\x2E /%WinDir%/system32/version.dll
+goto :NT5_BOOT
+:NT6.HDD
+echo Searching NT6.X on Hard Disk(/%WinDir%)
+if exist file && root %1 ! find --set-root --devices=h /%WinDir%/system32/winload.exe
+goto :NT6_BOOT
+
 :NT6.VHDX_BOOT
 :NT6.VHD_BOOT
 ::固定用法,本软盘对应的BCD文件专用.下同
@@ -103,6 +113,10 @@ goto :NT6_BOOT
 :NT6.WIM_BOOT
 set boot_cfg=:BCD_CFG_VHD#WIM a WIM
 goto :NT6_BOOT
+
+:NT5.IMG_BOOT
+set boot_cfg=:NT5_RAM_CFG
+goto :NT5_BOOT
 
 ::GET_ARC_PATH，把一个路径转换为ARC格式表示
 :GET_ARC_PATH
@@ -167,7 +181,6 @@ cat --locate=\0 --replace=; (rd)/BOOT.INI
 if /i not %PDIR%=="I386" && write --offset=0x2A4FB (rd)/SETUPLDR.BIN %PDIR%
 ::修改默认WINNT.SIF文件名
 write --offset=0x2a432 (rd)/SETUPLDR.BIN BOOT.INI\0
-if /i "%DEBUG%"=="on" && cat (rd)/BOOT.INI && checkrange 0x11b pause --test-key && goto :exit
 if not exist NTLDR set NTLDR=(0xfd)/SETUPLDR.BIN
 set BOOTDEV=(0xfd)
 goto :BOOT
@@ -199,6 +212,43 @@ exit
 WENV call write --offset=0x%1 (rd)/BOOT/BCD *0x40000$
 WENV call write --offset=0x%2 (rd)/BOOT/BCD *0x40000$
 exit
+
+:NT5_RAM_CFG
+set default=ramdisk(0)/%WinDir%
+echo %default%="ramdisk" #fastdetect #noguiboot %opt% #rdpath=%ARC_PATH% >> (rd)/BOOT.INI
+exit
+
+:NT5_HDD_CFG
+set default=%ARC_PATH%
+echo %default%="NT5" #fastdetect %opt% #NoExecute=AlwaysOff #PAE  >> (rd)/BOOT.INI
+exit
+
+:NT5_BOOT
+if not exist NTLDR set NTLDR=(0xfd)/NTLDR
+set /a cur_drv=*0x82A0&0x7F
+set /a cur_pri=*0x829C>>16&0xFFFF
+clear
+echo
+echo   Will Boot NT5.X From $[0102](hd%cur_drv%,%cur_pri%)%tmp%
+echo
+echo   boot: %NTLDR%
+echo
+call :GET_ARC_PATH
+shift 1
+set opt=%*
+echo [operating systems] > (rd)/BOOT.INI
+if exist boot_cfg && call %boot_cfg% ! call :NT5_HDD_CFG
+echo [boot loader] >> (rd)/BOOT.INI
+echo timeout=0 >> (rd)/BOOT.INI
+echo default=%default% >> (rd)/BOOT.INI
+::替换GRUB4DOS格式路径的\为/
+cat --locate=/ --replace=\\ (rd)/BOOT.INI
+::替换参数，前面写入的参数中的/都是使用#代替的。
+cat --locate=# --replace=/ (rd)/BOOT.INI
+::消除空字符（替换为;）
+cat --locate=\0 --replace=; (rd)/BOOT.INI
+set BOOTDEV=(0xfd)
+goto :BOOT
 
 :NT6_NO_CONFIG
 set /a offset=0x%1+0x14
@@ -244,8 +294,18 @@ set /a offset=%cur_pri%<<3+1
 dd if=(hd%cur_drv%)2+32 of=(md)0x300+1 bs=16 count=1 skip=%offset%
 cat --locate=\0\x7E\0\0 --replace=*0x60000 --hex=16 (rd)/BOOT/BCD
 :NT6_REAL_BOOT
+if /i not "%WinDir%"=="windows" && call :CHG_NT6_WINDIR
 set BOOTDEV=(0)
 goto :BOOT
+
+:CHG_NT6_WINDIR
+::以下都是测试，替换BCD里面WINDOWS目录，我自己也没有用过不知能否正常使用。
+WENV get WinDir=0x60000
+WENV call write --offset=0x3F76 (rd)/BOOT/BCD *0x60000$
+set tmp=%WinDir%\system32\winload.exe
+WENV get tmp=0x60000
+WENV call write --offset=0x39A6 (rd)/BOOT/BCD *0x60000$
+exit
 
 :error
 pause Error: %*
@@ -257,7 +317,7 @@ exit 1
 :NTBOOT_HELP
 echo
 echo Usage:
-echo 	NTBOOT NT6=file
+echo 	NTBOOT NT5|NT6[=root|file]
 echo
 echo 	NTBOOT PE1=file [PDIR=pdir] [OPTIONS=options]
 echo

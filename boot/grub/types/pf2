@@ -1,0 +1,8 @@
+[type]
+icon = pf2
+
+[0]
+menu = pf2/pf2.sh
+title = "Open As Font"
+icon = pf2
+enable = all
