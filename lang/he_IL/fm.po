@@ -1,0 +1,291 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
+"X-Crowdin-Project: grub2-filemanager\n"
+"X-Crowdin-Language: he\n"
+"X-Crowdin-File: /master/lang/fm.pot\n"
+"Project-Id-Version: grub2-filemanager\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Hebrew\n"
+"Language: he_IL\n"
+"PO-Revision-Date: 2019-12-22 09:29\n"
+
+msgid "Back"
+msgstr "חזרה"
+
+msgid "Open As Grub2 Menu"
+msgstr "פתיחה כתפריט Grub2"
+
+msgid "Open As Syslinux Menu"
+msgstr "פתיחה כתפריט Syslinux"
+
+msgid "Open As pxelinux Menu"
+msgstr "פתיחה כתפריט pxelinux"
+
+msgid "Open As GRUB4DOS Menu"
+msgstr "פתיחה כתפריט GRUB4DOS"
+
+msgid "Open As GRUB-Legacy Menu"
+msgstr "פתיחה כתפריט GRUB-Legacy (מיושן)"
+
+msgid "Open As Lua Script"
+msgstr "פתיחה כסקריפט Lua"
+
+msgid "Open As Python Script"
+msgstr "פתיחה כסקריפט Python"
+
+msgid "Open As EFI Application"
+msgstr "פתיחה כיישום EFI"
+
+msgid "Load UEFI driver"
+msgstr "טעינת מנהל התקן UEFI"
+
+msgid "Open As EFI Shell Script"
+msgstr "פתיחה כסקריפט מעטפת של EFI"
+
+msgid "Open As Image"
+msgstr "פתיחה כתמונה"
+
+msgid "Press [ESC] to continue..."
+msgstr "יש ללחוץ על [ESC] כדי להמשיך…"
+
+msgid "Mount Image"
+msgstr "עיגון דמות"
+
+msgid "Boot Floppy Image (GRUB4DOS)"
+msgstr "אתחול מדמות כונן תקליטונים (GRUB4DOS)"
+
+msgid "Boot Floppy Image (memdisk)"
+msgstr "אתחול מדמות כונן תקליטונים (memdisk)"
+
+msgid "Boot Hard Drive Image (GRUB4DOS)"
+msgstr "אתחול מדמות כונן קשיח (GRUB4DOS)"
+
+msgid "Boot Hard Drive Image (memdisk)"
+msgstr "אתחול מדמות כונן קשיח (memdisk)"
+
+msgid "Boot IMG (map)"
+msgstr "אתחול מ־IMG‏ (map)"
+
+msgid "Boot IMG (map --mem)"
+msgstr "אתחול מ־IMG‏ (map --mem)"
+
+msgid "Open As Archiver"
+msgstr "פתיחה כקובץ ארכיון"
+
+msgid "Boot NT6.x WIM (wimboot)"
+msgstr "אתחול מ־WIM בתצורת NT6.x‏ (wimboot)"
+
+msgid "Boot NT6.x WIM (NTBOOT)"
+msgstr "אתחול מ־WIM בתצורת NT6.x‏ (NTBOOT)"
+
+msgid "Boot NT5.x WIM (NTBOOT)"
+msgstr "אתחול מ־WIM בתצורת NT5.x‏ (NTBOOT)"
+
+msgid "Boot NT5.x PE (NTBOOT)"
+msgstr "אתחול מ־PE בתצורת NT5.x‏ (NTBOOT)"
+
+msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "אתחול מ־VHD/VHDX בתצורת Windows NT6.x ‏(NTBOOT)"
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr "אתחול מ־VHD בתצורת RamOS‏ (GRUB4DOS map --mem --top)"
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
+msgstr "אתחול מ־VHD בתצורת RamOS‏ (GRUB4DOS map --mem)"
+
+msgid "Boot VHD (vboot)"
+msgstr "אתחול מ־VHD‏ (vboot)"
+
+msgid "Boot VHD (map)"
+msgstr "אתחול מ־VHD‏ (map)"
+
+msgid "Boot VHD (map --mem)"
+msgstr "אתחול מ־VHD‏ (map --mem)"
+
+msgid "Mount ISO"
+msgstr "עיגון ISO"
+
+msgid "Boot ISO (GRUB4DOS)"
+msgstr "אתחול מ־ISO‏ (GRUB4DOS)"
+
+msgid "Boot ISO (memdisk)"
+msgstr "אתחול מ־ISO‏ (memdisk)"
+
+msgid "Boot ISO (Easy2Boot)"
+msgstr "אתחול מ־ISO‏ (Easy2Boot)"
+
+msgid "Install Windows (x64)"
+msgstr "התקנת Windows‏ (x64)"
+
+msgid "Install Windows (x86)"
+msgstr "התקנת Windows‏ (x86)"
+
+msgid "Boot ISO (map)"
+msgstr "אתחול מ־ISO‏ (map)"
+
+msgid "Boot ISO (map --mem)"
+msgstr "אתחול מ־ISO‏ (map --mem)"
+
+msgid "Boot EFI Files"
+msgstr "אתחול מקובצי EFI"
+
+msgid "Open As iPXE Script"
+msgstr "פתיחה כסקריפט iPXE"
+
+msgid "Open As Font"
+msgstr "פתיחה כגופן"
+
+msgid "Insert Grub2 Module"
+msgstr "הוספת מודול Grub2"
+
+msgid "Chainload BIOS Boot Sector"
+msgstr "טעינת שרשרת של סקטור האתחול ל־BIOS"
+
+msgid "Chainload NTLDR"
+msgstr "טעינת שרשרת של NTLDR"
+
+msgid "Chainload BOOTMGR"
+msgstr "טעינת שרשרת של BOOTMGR"
+
+msgid "Open As GRUB4DOS MOD"
+msgstr "פתיחה כ־MOD של GRUB4DOS"
+
+msgid "Boot Multiboot Kernel"
+msgstr "אתחול ליבה בתצורת Multiboot"
+
+msgid "Boot Multiboot2 Kernel"
+msgstr "אתחול ליבה בתצורת Multiboot2"
+
+msgid "Boot Linux Kernel"
+msgstr "אתחול ליבה של לינוקס"
+
+msgid "Text Viewer"
+msgstr "מציג טקסט"
+
+msgid "Hex Viewer"
+msgstr "מציג הקסדצימלי"
+
+msgid "File Info"
+msgstr "מידע קובץ"
+
+msgid "Disable PatchGuard and DSE at boot time"
+msgstr "השבתת PatchGuard ו־DSE בזמן האתחול"
+
+msgid "Install override security policy"
+msgstr "הפעלת דריסת מדיניות אבטחה"
+
+msgid "Disable shim validation and reboot"
+msgstr "השבתת אימות shim והפעלה מחדש"
+
+msgid "Encoding: "
+msgstr "קידוד: "
+
+msgid "Sort files by name"
+msgstr "סידור הקבצים לפי השם"
+
+msgid "Resolution (R): "
+msgstr "רזולוציה (R): "
+
+msgid "Enable ESC (not recommended)"
+msgstr "הפעלת ESC (לא מומלץ)"
+
+msgid "Enable debug messages"
+msgstr "הפעלת הודעות ניפוי שגיאות"
+
+msgid "Show hidden drives"
+msgstr "הצגת כוננים נסתרים"
+
+msgid "Load extra modules"
+msgstr "טעינת מודולים נוספים"
+
+msgid "Load AHCI Driver"
+msgstr "טעינת מנהל התקן AHCI"
+
+msgid "Mount encrypted volumes (LUKS and geli)"
+msgstr "עיגון כרכים מוצפנים (LUKS ו־geli)"
+
+msgid "Enable serial terminal"
+msgstr "הפעלת מסוף טורי"
+
+msgid "EFI Firmware Setup"
+msgstr "הגדרת קושחת EFI"
+
+msgid "GRUB Console"
+msgstr "מסוף GRUB"
+
+msgid "EFI Shell"
+msgstr "מעטפת EFI"
+
+msgid "UEFI DUET"
+msgstr "DUET ל־UEFI"
+
+msgid "Load External Menu: "
+msgstr "טעינת תפריט חיצוני: "
+
+msgid "Boot Windows on "
+msgstr "אתחול Windows על גבי "
+
+msgid "Boot macOS on ${device}"
+msgstr "אתחול macOS על גבי ${device}"
+
+msgid " on "
+msgstr " על גבי "
+
+msgid "Boot ISO (Loopback)"
+msgstr "אתחול מ־ISO‏ (לולאה פנימית - Loopback)"
+
+msgid "Boot ISO (ISOLINUX)"
+msgstr "אתחול מ־ISO‏ (ISOLINUX)"
+
+msgid "Boot "
+msgstr "אתחול "
+
+msgid " From ISO"
+msgstr " מ־ISO"
+
+msgid "Please input the username. Default:user Super User:root Devuan:devuan"
+msgstr "נא להקליד את שם המשתמש. בררת מחדל: user, משתמש על: root,‏ Devuan: devuan"
+
+msgid "WARNING: Will erase ALL data on (hd0,4)."
+msgstr "אזהרה: כל הנתונים שב־(hd0,4) יימחקו לצמיתות."
+
+msgid "Press [Y] to continue. Press [N] to quit."
+msgstr "יש ללחוץ על [Y] כדי להמשיך. על [N] כדי לצאת."
+
+msgid "Canceled."
+msgstr "בוטל."
+
+msgid "File path contains spaces.This may cause problems!Press any key to continue."
+msgstr "נתיב הקובץ מכיל רווחים. מה שעשוי לגרום לתקלות! יש ללחוץ על מקש כלשהו כדי להמשיך."
+
+msgid "Reboot"
+msgstr "הפעלה מחדש"
+
+msgid "Halt"
+msgstr "עצירה"
+
+msgid "File: "
+msgstr "קובץ: "
+
+msgid "Hotkeys"
+msgstr "מקשי קיצור"
+
+msgid "F1 - Help"
+msgstr "F1 - עזרה"
+
+msgid "F2 - File Manager"
+msgstr "F2 - מנהל קבצים"
+
+msgid "F3 - Boot"
+msgstr "F3 - אתחול"
+
+msgid "F4 - Settings"
+msgstr "F4 - הגדרות"
+
+msgid "F5 - Power Off"
+msgstr "F5 - כיבוי"
+
+msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
+msgstr "Ctrl שמאלי + Alt שמאלי + F12 - צילום המסך (EFI)"
+

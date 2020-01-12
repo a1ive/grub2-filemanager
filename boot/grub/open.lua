@@ -344,7 +344,7 @@ function open (file, file_type, device, device_type, arch, platform)
             if string.match (device, "^hd[%d]+,msdos[1-3]") ~= nil then
                 icon = "gnu-linux"
                 devnum = string.match (device, "^(hd%d+),msdos[1-3]$")
-                command = "echo " .. grub.gettext ("WARNING: Will erase ALL data on (hd0,4).") .. "; " .. 
+                command = "echo " .. grub.gettext ("WARNING: Will erase ALL data on (" .. devnum .. ",4).") .. "; " .. 
                  "echo " .. grub.gettext ("Press [Y] to continue. Press [N] to quit.") .. "; " .. 
                  "getkey key; " .. 
                  "\nif [ x$key = x121 ]; then" .. 
@@ -367,6 +367,21 @@ function open (file, file_type, device, device_type, arch, platform)
             command = "map --mem " .. file
             name = grub.gettext("Boot ISO (map --mem)")
             grub.add_icon_menu (icon, command, name)
+            -- easy2boot
+            if string.match (device, "^hd[%d]+,msdos[1-3]") ~= nil then
+              icon = "gnu-linux"
+              devnum = string.match (device, "^(hd%d+),msdos[1-3]$")
+              command = "echo " .. grub.gettext ("WARNING: Will erase ALL data on (" .. devnum .. ",4).") .. "; " ..
+                "echo " .. grub.gettext ("Press [Y] to continue. Press [N] to quit.") .. "; " ..
+                "getkey key; " .. 
+                "\nif [ x$key = x121 ]; then" ..
+                "\n  partnew --type=0x00 --file=" .. file .. " " .. devnum .. " 4" ..
+                "\n  map " .. file ..
+                "\nfi" .. 
+                "\necho " .. grub.gettext ("Canceled.") .. "; sleep 3"
+              name = grub.gettext("Boot ISO (Easy2Boot)")
+              grub.add_icon_menu (icon, command, name)
+            end
         end
     elseif file_type == "wim" then
         if platform == "efi" then
