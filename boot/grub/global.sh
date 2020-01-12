@@ -29,8 +29,7 @@ hiddenentry "[F2] FILE MANAGER" --hotkey f2 {
 }
 
 hiddenentry "[F3] OS DETECT" --hotkey f3 {
-  echo "os detect";
-  getkey;
+  configfile ${prefix}/osdetect.sh;
 }
 
 hiddenentry "[F4] SETTINGS" --hotkey f4 {
