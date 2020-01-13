@@ -74,7 +74,12 @@ hiddenentry "[F1] HELP" --hotkey f1 {
 }
 
 hiddenentry "[F2] FILE MANAGER" --hotkey f2 {
-  grubfm;
+  if [ -n "${grubfm_current_path}" ];
+  then
+    grubfm "${grubfm_current_path}";
+  else
+    grubfm;
+  fi;
 }
 
 hiddenentry "[F3] OS DETECT" --hotkey f3 {
