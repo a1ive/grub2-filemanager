@@ -2,17 +2,17 @@ source ${prefix}/func.sh;
 
 function win_isoboot {
   set lang=en_US;
+  terminal_output console;
   set installiso="${grubfm_path}";
   tr --set=installiso "/" "\\";
   loopback -m envblk ${prefix}/null.cpio;
   save_env -s -f (envblk)/null.cfg installiso;
   cat (envblk)/null.cfg;
+  loopback wimboot ${prefix}/wimboot.gz;
+  loopback install ${prefix}/install.gz;
   if [ "$grub_platform" = "pc" ];
   then
-    terminal_output console;
     set enable_progress_indicator=1;
-    loopback wimboot /wimboot;
-    loopback install /install.gz;
     linux16 (wimboot)/wimboot;
     if [ -z "${2}" ];
     then
@@ -39,8 +39,6 @@ function win_isoboot {
     fi;
     boot;
   else
-    loopback wimboot ${prefix}/wimboot.gz;
-    loopback install ${prefix}/install.gz;
     if [ -z "${2}" ];
     then
       wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
