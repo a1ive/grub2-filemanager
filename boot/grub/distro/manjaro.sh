@@ -20,5 +20,3 @@ elif test -f (loop)/boot/vmlinuz* -a -f (loop)/boot/initramfs*; then
     set initrd_img="(loop)/boot/initramfs*";
     manjaro_menu;
 fi;
-    
-
