@@ -24,7 +24,7 @@ menuentry $"Q4OS Live" --class q4os{
     initrd $initrd_img;
 }
 menuentry $"Tails Live" --class tails{
-    set kcmdline="boot=live config live-media=removable nopersistence noprompt timezone=Etc/UTC block.events_dfl_poll_msecs=1000 splash noautologin module=Tails slab_nomerge slub_debug=FZP mce=0 vsyscall=none page_poison=1 union=aufs";
+    set kcmdline="boot=live config apparmor=1 security=apparmor nopersistence noprompt timezone=Etc/UTC block.events_dfl_poll_msecs=1000 splash noautologin module=Tails kaslr slab_nomerge slub_debug=FZP mce=0 vsyscall=none page_poison=1 union=aufs";
     linux $vmlinuz_img $kcmdline $debian_locale $linux_extra;
     initrd $initrd_img;
 }
@@ -40,12 +40,12 @@ else
     }
 fi;
 if [ "${debian_union}" = "union=overlay" ]; then
-    menuentry "[+] Overlay (Clonezilla/GParted/Deepin)"{
+    menuentry "[+] Overlay (Clonezilla/GParted)"{
         export debian_union="";
         configfile ${prefix}/distro/debmenu.sh;
     }
 else
-    menuentry "[ ] Overlay (Clonezilla/GParted/Deepin)"{
+    menuentry "[ ] Overlay (Clonezilla/GParted)"{
         export debian_union="union=overlay";
         configfile ${prefix}/distro/debmenu.sh
     }
