@@ -1,3 +1,1 @@
-echo "Path: ${grubfm_file}";
-cat "${grubfm_file}";
-getkey;
+grubfm_cat "${grubfm_file}";

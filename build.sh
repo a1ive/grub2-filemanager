@@ -150,6 +150,7 @@ cp arch/legacy/grub.exe build/boot/grub/
 cp arch/legacy/duet64.iso build/boot/grub/
 cp arch/legacy/memdisk build/boot/grub/
 cp arch/legacy/ipxe.lkrn build/boot/grub/
+cp arch/legacy/*.gz build/boot/grub/
 cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..
@@ -159,9 +160,6 @@ cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 cp arch/legacy/MAP build/
 cp -r arch/legacy/ntboot/* build/
-cp arch/legacy/wimboot build/
-cp arch/legacy/vbootldr build/
-cp arch/legacy/install.gz build/
 
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rm -r build
