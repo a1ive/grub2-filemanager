@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2020-01-15 10:34\n"
+"PO-Revision-Date: 2020-01-15 10:45\n"
 
 msgid "Back"
 msgstr "Quay về"
@@ -29,25 +29,25 @@ msgid "Open As GRUB-Legacy Menu"
 msgstr "Mở Menu GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Mở Script Lua"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Mở Script Python"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Mở Ứng Dụng EFI"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "Tải driver UEFI"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "Mở Script EFI Shell"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "Mở Hình Ảnh"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "Nhấn [ESC] để tiếp tục..."
 
 msgid "Mount Image"
 msgstr ""
@@ -65,7 +65,7 @@ msgid "Boot Hard Drive Image (memdisk)"
 msgstr ""
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Khởi Động IMG(map)"
 
 msgid "Boot IMG (map --mem)"
 msgstr ""
