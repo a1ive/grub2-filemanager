@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2020-01-15 10:45\n"
+"PO-Revision-Date: 2020-01-15 10:55\n"
 
 msgid "Back"
 msgstr "Quay về"
@@ -65,79 +65,79 @@ msgid "Boot Hard Drive Image (memdisk)"
 msgstr ""
 
 msgid "Boot IMG (map)"
-msgstr "Khởi Động IMG(map)"
+msgstr "Khởi Động IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Khởi Động IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Mở Trình Giải Nén"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Khởi Động NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Khởi Động NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Khởi Động NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Khởi Động NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Khởi Động Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Khởi Động RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Khởi Động RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Khởi Động VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Khởi Động VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Khởi Động VHD (map --mem)"
 
 msgid "Mount ISO"
 msgstr ""
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Khởi Động ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Khởi Động ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Khởi Động ISO (Easy2Boot)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Cài Đặt Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Cài Đặt Windows (x86)"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Khởi Động ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Khởi Động ISO (map --mem)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Khởi Động Tập Tin EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Mở Script iPXE"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Mở Font"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Chèn Module Grub2"
 
 msgid "Chainload BIOS Boot Sector"
 msgstr ""
@@ -149,19 +149,19 @@ msgid "Chainload BOOTMGR"
 msgstr ""
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Mở MOD GRUB4DOS"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Khởi Động Kernel Multiboot"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Khởi Động Kernel Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Khởi Động Kernel Linux"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Trình Soạn Thảo Văn Bản"
 
 msgid "Hex Viewer"
 msgstr ""
