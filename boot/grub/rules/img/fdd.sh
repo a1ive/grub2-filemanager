@@ -11,10 +11,9 @@ then
     set g4d_cmd="find --set-root --ignore-floppies /fm.loop;/MAP nomem fd ${g4d_path};";
     linux ${prefix}/grub.exe --config-file=${g4d_cmd};
   else
-    set g4d_cmd="find --set-root --ignore-floppies /fm.loop;/MAP nomem fd (rd)+1;";
     set enable_progress_indicator=1;
-    linux ${prefix}/grub.exe --config-file=${g4d_cmd};
-    initrd "${grubfm_file}";
+    linux16 ${prefix}/memdisk floppy raw;
+    initrd16 "${grubfm_file}";
   fi;
   boot;
 fi;

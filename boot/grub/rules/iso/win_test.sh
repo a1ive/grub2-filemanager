@@ -1,3 +1,9 @@
+if ! regexp '^hd.*' "${grubfm_device}";
+then
+  set grubfm_test=0;
+  return;
+fi;
+
 loopback -d loop;
 loopback loop "${grubfm_file}";
 set win_prefix=(loop)/sources/install;
