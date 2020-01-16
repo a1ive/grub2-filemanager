@@ -1,5 +1,6 @@
 [type]
 icon = wim
+boot = wim/wimboot.sh
 
 [0]
 menu = wim/wimboot.sh
