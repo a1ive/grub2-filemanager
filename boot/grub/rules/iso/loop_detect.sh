@@ -305,7 +305,5 @@ function iso_detect {
 iso_detect;
 if [ -n "${src}" ];
 then
-  menuentry $"Boot ${distro} from ISO" --class ${icon} {
-    configfile ${prefix}/distro/${src}.sh;
-  }
+  configfile ${prefix}/distro/${src}.sh;
 fi;
