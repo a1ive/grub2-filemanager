@@ -74,5 +74,16 @@ set color_highlight=black/white;
 export theme=${prefix}/themes/slack/theme.txt;
 #set timeout=7
 #menuentry "" {
+function netboot {
+if getargs --value "proxydhcp" proxydhcp;
+then
+export net_default_server="${proxydhcp}"; 
+fi;
+}
+
+if [ "$net_default_server" != "" ]; then
+grubfm_set --boot 1; netboot; configfile $prefix/netboot.sh;
+else
 grubfm;
+fi;
 #}
