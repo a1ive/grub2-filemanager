@@ -14,37 +14,8 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-export theme=${prefix}/themes/slack/fm.txt;
-
-hiddenentry "---- HOTKEY MENU ----" {
+menuentry $"PLACEHOLDER" --class net {
   echo;
 }
 
-hiddenentry "[F1] HELP" --hotkey f1 {
-  configfile ${prefix}/help.sh;
-}
-
-hiddenentry "[F2] FILE MANAGER" --hotkey f2 {
-  if [ -n "${grubfm_current_path}" ];
-  then
-    grubfm "${grubfm_current_path}";
-  else
-    grubfm;
-  fi;
-}
-
-hiddenentry "[F3] OS DETECT" --hotkey f3 {
-  configfile ${prefix}/osdetect.sh;
-}
-
-hiddenentry "[F4] SETTINGS" --hotkey f4 {
-  configfile ${prefix}/settings.sh;
-}
-
-hiddenentry "[F5] PXE BOOT MENU" --hotkey f5 {
-  configfile ${prefix}/netboot.sh;
-}
-
-hiddenentry "[F6] POWER OFF" --hotkey f6 {
-  configfile ${prefix}/power.sh;
-}
+source ${prefix}/global.sh;

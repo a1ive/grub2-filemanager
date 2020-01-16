@@ -40,7 +40,11 @@ then
     echo;
   }
 
-  menuentry $"F5 - Power Off" {
+  menuentry $"F5 - PXE Boot Menu" {
+    echo;
+  }
+
+  menuentry $"F6 - Power Off" {
     echo;
   }
 
@@ -90,7 +94,11 @@ hiddenentry "[F4] SETTINGS" --hotkey f4 {
   configfile ${prefix}/settings.sh;
 }
 
-hiddenentry "[F5] POWER OFF" --hotkey f5 {
+hiddenentry "[F5] PXE BOOT MENU" --hotkey f5 {
+  configfile ${prefix}/netboot.sh;
+}
+
+hiddenentry "[F6] POWER OFF" --hotkey f6 {
   configfile ${prefix}/power.sh;
 }
 
