@@ -17,21 +17,25 @@
 set pager=0;
 set debug=off;
 cat --set=modlist ${prefix}/insmod.lst;
-for module in $modlist; do
-    insmod $module;
+for module in ${modlist};
+do
+    insmod ${module};
 done;
 export enable_progress_indicator=0;
 
-if [ "$grub_platform" = "efi" ]; then
+if [ "${grub_platform}" = "efi" ];
+then
     search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
-    if [ "$grub_cpu" = "i386" ]; then
+    if [ "${grub_cpu}" = "i386" ];
+    then
         search -s -f -q /efi/boot/bootia32.efi;
     else
         search -s -f -q /efi/boot/bootx64.efi;
     fi;
     efiload ${prefix}/CrScreenshotDxe.efi;
     getenv -t uint8 SecureBoot grub_secureboot;
-    if [ "$grub_secureboot" = "0" ]; then
+    if [ "${grub_secureboot}" = "0" ];
+    then
         export grub_secureboot=$"Disabled";
     else
         export grub_secureboot=$"Enabled";
@@ -74,16 +78,12 @@ set color_highlight=black/white;
 export theme=${prefix}/themes/slack/theme.txt;
 #set timeout=7
 #menuentry "" {
-function netboot {
-if getargs --value "proxydhcp" proxydhcp;
+source ${prefix}/pxeinit.sh;
+net_detect;
+if [ "${grub_netboot}" = "1" ];
 then
-export net_default_server="${proxydhcp}"; 
-fi;
-}
-
-if [ "$net_default_server" != "" ]; then
-grubfm_set --boot 1; netboot; configfile $prefix/netboot.sh;
+  configfile ${prefix}/netboot.sh;
 else
-grubfm;
+  grubfm;
 fi;
 #}
