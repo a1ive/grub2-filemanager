@@ -3,12 +3,12 @@ source ${prefix}/func.sh;
 if [ -d (${grubfm_disk},4) ];
 then
   echo "WARNING: Will erase ALL data on (${grubfm_disk},4)";
-  echo "Press [Y] to continue. Press [N] to quit.";
+  echo "Press [1] to continue. Press any other key to return.";
   getkey key;
 else
-  key=121;
+  key=49;
 fi;
-if [ x$key = x121 ];
+if [ x$key = x49 ];
 then
   partnew --type=0x00 --file="${grubfm_file}" "${grubfm_disk}" 4;
   if [ "$grub_platform" = "efi" ];
