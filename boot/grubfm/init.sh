@@ -73,7 +73,8 @@ set color_highlight=black/white;
 #export grub_sound_speed=110;
 #export grub_sound_start="220 277 330 440 185 220 277 370 294 370 440 587 330 415 494 659";
 #export grub_sound_select="880 0 880 0 880 698 1046";
-#Uncomment below code and copy samples/splash/* to boot/grub/themes/slack/ to load Windows 10 splash screen
+#Uncomment below code and copy samples/splash/* to boot/grubfm/themes/slack/
+# to load Windows 10 splash screen
 #set theme=$prefix/themes/slack/splash10.txt
 export theme=${prefix}/themes/slack/theme.txt;
 #set timeout=7
