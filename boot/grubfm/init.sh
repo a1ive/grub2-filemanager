@@ -45,6 +45,12 @@ else
     export grub_secureboot=$"Not available";
 fi;
 
+search --set=user -f -q /boot/grubfm/config;
+if [ -n "${user}" ];
+then
+  grubfm_set -u "${user}";
+fi;
+
 if cpuid -l;
 then
   export CPU=64;
