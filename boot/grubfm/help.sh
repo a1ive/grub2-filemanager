@@ -48,9 +48,15 @@ then
     echo;
   }
 
+  if [ "${mode_current}" != "0x0" ];
+  then
+    menuentry $"Ctrl+l/Ctrl+r - Scroll menu entry's text" {
+      echo;
+    }
+  fi;
   if [ "$grub_platform" = "efi" ];
   then
-    menuentry $"LCtrl + LAlt + F12 - Take Screenshots (EFI)" {
+    menuentry $"LCtrl+LAlt+F12 - Take Screenshots (EFI)" {
       echo;
     }
   fi;
