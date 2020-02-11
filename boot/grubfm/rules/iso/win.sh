@@ -80,6 +80,7 @@ function xml_list {
         win_isoboot "${2}" "${3}";
       }
     done;
+    source ${prefix}/global.sh;
   else
     win_isoboot "${1}";
   fi;
@@ -101,4 +102,5 @@ else
       xml_list "(loop)/x86/sources/boot.wim";
     }
   fi;
+  source ${prefix}/global.sh;
 fi;
