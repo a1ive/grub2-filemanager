@@ -49,6 +49,7 @@ search --set=user -f -q /boot/grubfm/config;
 if [ -n "${user}" ];
 then
   grubfm_set -u "${user}";
+  source (${user})/boot/grubfm/config;
 fi;
 
 if cpuid -l;
