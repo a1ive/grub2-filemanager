@@ -55,6 +55,20 @@ function to_win_ver {
   fi;
 }
 
+function dev_info {
+  unset size;
+  unset fs;
+  unset label;
+  stat -m -q --set=size "(${1})";
+  probe -f -q --set=fs "(${1})";
+  probe -l -q --set=label "(${1})";
+  if [ -n "${label}" ];
+  then
+    set label="${label}, ";
+  fi;
+  set info="[${label}${size}, ${fs}]";
+}
+
 for dev in (hd*,*);
 do
   if [ -e ${dev} ];
@@ -63,9 +77,10 @@ do
   else
     continue;
   fi;
+  dev_info "${device}";
   if [ -f "(${device})/boot/grub/external_menu.cfg" ];
   then
-    menuentry $"Load External Menu on (${device})" "${device}" --class cfg {
+    menuentry $"Load External Menu on (${device}) ${info}" "${device}" --class cfg {
       export theme=${prefix}/themes/slack/theme.txt;
       set root="${2}";
       configfile (${root})/boot/grub/external_menu.cfg;
@@ -75,7 +90,7 @@ do
   then
     if [ -f "(${device})/efi/microsoft/boot/bootmgfw.efi" ];
     then
-      menuentry $"Load Windows Boot Manager on ${device}" "${device}" --class nt6 {
+      menuentry $"Load Windows Boot Manager on ${device} ${info}" "${device}" --class nt6 {
         set root="${2}";
         chainloader -t (${root})/efi/microsoft/boot/bootmgfw.efi;
       }
@@ -89,7 +104,7 @@ do
     fi;
     if [ -f "(${device})${boot_file}" ];
     then
-      menuentry $"Boot ${device}" "${device}" "${boot_file}" --class uefi {
+      menuentry $"Boot ${device} ${info}" "${device}" "${boot_file}" --class uefi {
         set root="${2}";
         set boot_file="${3}";
         chainloader -t (${root})${boot_file};
@@ -97,7 +112,7 @@ do
     fi;
     if [ -f "(${device})/System/Library/CoreServices/boot.efi" ];
     then
-      menuentry $"Boot macOS on ${device}" "${device}" --class macOS {
+      menuentry $"Boot macOS on ${device} ${info}" "${device}" --class macOS {
         set root="${2}";
         chainloader -t "(${root})/System/Library/CoreServices/boot.efi";
       }
@@ -105,7 +120,7 @@ do
     if ntversion "(${device})" sysver;
     then
       to_win_ver "${sysver}";
-      menuentry $"Boot ${winver} on ${device}" "${device}" --class nt6 {
+      menuentry $"Boot ${winver} on ${device} ${info}" "${device}" --class nt6 {
         set root="${2}";
         set lang=en_US;
         terminal_output console;
@@ -120,7 +135,7 @@ do
     probe --set=bootable -b ${device};
     if regexp 'bootable' "${bootable}";
     then
-      menuentry $"Boot ${device}" "${device}" --class hdd {
+      menuentry $"Boot ${device} ${info}" "${device}" --class hdd {
         set root="${2}";
         auto_swap;
         regexp --set=1:tmp '(hd[0-9]+),[a-zA-Z]*[0-9]+' "${2}";
@@ -130,7 +145,7 @@ do
     if ntversion "(${device})" sysver;
     then
       to_win_ver "${sysver}";
-      menuentry $"Boot ${winver} on ${device}" "${device}" "${sysver}" --class nt6 {
+      menuentry $"Boot ${winver} on ${device} ${info}" "${device}" "${sysver}" --class nt6 {
         regexp --set=1:tmp --set=2:num '(hd[0-9]+,)[a-zA-Z]*([0-9]+)' "${2}";
         expr --set=num "${num} - 1";
         set g4d_dev="(${tmp}${num})";
