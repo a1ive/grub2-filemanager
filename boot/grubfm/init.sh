@@ -45,13 +45,6 @@ else
     export grub_secureboot=$"Not available";
 fi;
 
-search --set=user -f -q /boot/grubfm/config;
-if [ -n "${user}" ];
-then
-  grubfm_set -u "${user}";
-  source (${user})/boot/grubfm/config;
-fi;
-
 if cpuid -l;
 then
   export CPU=64;
@@ -85,6 +78,14 @@ set color_highlight=black/white;
 #set theme=$prefix/themes/slack/splash10.txt
 export theme=${prefix}/themes/slack/theme.txt;
 #set timeout=7
+
+search --set=user -f -q /boot/grubfm/config;
+if [ -n "${user}" ];
+then
+  grubfm_set -u "${user}";
+  source (${user})/boot/grubfm/config;
+fi;
+
 #menuentry "" {
 source ${prefix}/pxeinit.sh;
 net_detect;
