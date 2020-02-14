@@ -1,2 +1,8 @@
 [type]
 icon = png
+
+[0]
+menu = bmp/bgrt.sh
+title = "Set BGRT (Windows boot logo)"
+icon = png
+enable = efi
