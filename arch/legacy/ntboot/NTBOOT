@@ -188,7 +188,7 @@ goto :BOOT
 :BOOT
 if exist BOOT && %BOOT%
 map --mem (rd)+1 %BOOTDEV%
-map --unmap=1:0xff
+map --unmap=1:0xfc,0xfe,0xff
 map --rehook
 call :CHECK_FILE %NTLDR%
 chainloader %NTLDR%
