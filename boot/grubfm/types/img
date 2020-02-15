@@ -1,5 +1,6 @@
 [type]
 icon = img
+display = 1
 
 [0]
 menu = img/fdd.sh

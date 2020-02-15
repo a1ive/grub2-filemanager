@@ -1,5 +1,7 @@
 [type]
 icon = cfg
+boot = cfg/grub2.sh
+display = 1
 
 [0]
 menu = cfg/grub2.sh
