@@ -71,6 +71,32 @@ submenu $"Resolution (R): ${mode_current}" --class screen --hotkey "r" {
   done;
 }
 
+if grubfm_get --boot;
+then
+  menuentry $"Disable auto-run boot scripts" --class sh {
+    grubfm_set --boot 0;
+    configfile ${prefix}/settings.sh;
+  }
+else
+  menuentry $"Enable auto-run boot scripts" --class sh {
+    grubfm_set --boot 1;
+    configfile ${prefix}/settings.sh;
+  }
+fi;
+
+if grubfm_get --hide;
+then
+  menuentry $"Display non-bootable files" --class search {
+    grubfm_set --hide 0;
+    configfile ${prefix}/settings.sh;
+  }
+else
+  menuentry $"Hide non-bootable files" --class search {
+    grubfm_set --hide 1;
+    configfile ${prefix}/settings.sh;
+  }
+fi;
+
 menuentry $"Load AHCI Driver" --class pmagic {
   insmod ahci;
 }
