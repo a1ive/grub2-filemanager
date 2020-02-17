@@ -213,7 +213,7 @@ function iso_detect {
     export src=liveslack;
     return;
   fi;
-  if [ -d (loop)/antix ];
+  if [ -d (loop)/antiX ];
   then
     export linux_extra="fromiso=${grubfm_path} from=hd,usb";
     export icon=debian;
