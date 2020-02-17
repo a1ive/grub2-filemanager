@@ -16,6 +16,12 @@
 
 source ${prefix}/func.sh;
 
+if ! regexp '^hd.*' "${grubfm_device}";
+then
+  set grubfm_test=0;
+  return;
+fi;
+
 function iso_detect {
   unset icon;
   unset distro;
@@ -24,6 +30,19 @@ function iso_detect {
   probe --set=rootuuid -u "(${grubfm_device})";
   probe --set=looplabel -q --label (loop);
   probe --set=loopuuid -u (loop);
+  set win_prefix=(loop)/sources/install;
+  set w64_prefix=(loop)/x64/sources/install;
+  set w32_prefix=(loop)/x86/sources/install;
+  if [ -f ${win_prefix}.wim -o -f ${win_prefix}.esd -o -f ${win_prefix}.swm \
+    -o -f ${w64_prefix}.wim -o -f ${w64_prefix}.esd -o -f ${w64_prefix}.swm \
+    -o -f ${w32_prefix}.wim -o -f ${w32_prefix}.esd -o -f ${w32_prefix}.swm ];
+  then
+    export linux_extra=" ";
+    export icon=nt6;
+    export distro="Windows";
+    export src=win;
+    return;
+  fi;
   if [ -d (loop)/casper ];
   then
     export linux_extra="iso-scan/filename=${grubfm_path}";
@@ -302,8 +321,13 @@ function iso_detect {
   fi;
 }
 
+echo $"Detecting ISO type ...";
+set enable_progress_indicator=1;
 iso_detect;
+set enable_progress_indicator=0;
 if [ -n "${src}" ];
 then
-  configfile ${prefix}/distro/${src}.sh;
+  menuentry $"Boot ${distro} From ISO" --class ${icon} {
+    configfile ${prefix}/distro/${src}.sh;
+  }
 fi;
