@@ -16,26 +16,28 @@ function win_isoboot {
     linux16 (wimboot)/wimboot;
     if [ -z "${2}" ];
     then
-      initrd16 newc:bootmgr:(loop)/bootmgr \
-              newc:bcd:(wimboot)/bcd \
-              newc:boot.sdi:(loop)/boot/boot.sdi \
-              newc:null.cfg:(envblk)/null.cfg \
-              newc:mount_x64.exe:(install)/mount_x64.exe \
-              newc:mount_x86.exe:(install)/mount_x86.exe \
-              newc:start.bat:(install)/start.bat \
-              newc:winpeshl.ini:(install)/winpeshl.ini \
-              newc:boot.wim:"${1}";
+      initrd16 newc:bootmgr:(wimboot)/bootmgr \
+               newc:bootmgr.exe:(wimboot)/bootmgr.exe \
+               newc:bcd:(wimboot)/bcd \
+               newc:boot.sdi:(wimboot)/boot.sdi \
+               newc:null.cfg:(envblk)/null.cfg \
+               newc:mount_x64.exe:(install)/mount_x64.exe \
+               newc:mount_x86.exe:(install)/mount_x86.exe \
+               newc:start.bat:(install)/start.bat \
+               newc:winpeshl.ini:(install)/winpeshl.ini \
+               newc:boot.wim:"${1}";
     else
-      initrd16 newc:bootmgr:(loop)/bootmgr \
-              newc:bcd:(wimboot)/bcd \
-              newc:boot.sdi:(loop)/boot/boot.sdi \
-              newc:null.cfg:(envblk)/null.cfg \
-              newc:mount_x64.exe:(install)/mount_x64.exe \
-              newc:mount_x86.exe:(install)/mount_x86.exe \
-              newc:start.bat:(install)/start.bat \
-              newc:winpeshl.ini:(install)/winpeshl.ini \
-              newc:autounattend.xml:"${2}" \
-              newc:boot.wim:"${1}";
+      initrd16 newc:bootmgr:(wimboot)/bootmgr \
+               newc:bootmgr.exe:(wimboot)/bootmgr.exe \
+               newc:bcd:(wimboot)/bcd \
+               newc:boot.sdi:(wimboot)/boot.sdi \
+               newc:null.cfg:(envblk)/null.cfg \
+               newc:mount_x64.exe:(install)/mount_x64.exe \
+               newc:mount_x86.exe:(install)/mount_x86.exe \
+               newc:start.bat:(install)/start.bat \
+               newc:winpeshl.ini:(install)/winpeshl.ini \
+               newc:autounattend.xml:"${2}" \
+               newc:boot.wim:"${1}";
     fi;
     boot;
   else
