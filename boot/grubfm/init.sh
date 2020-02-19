@@ -67,17 +67,13 @@ terminal_output gfxterm;
 set color_normal=white/black;
 set color_highlight=black/white;
 
-#Uncomment the next line to enable animation
-#export grub_frame_speed=110;
-#Uncomment the next line to enable sound
-#export grub_sound_speed=110;
-#export grub_sound_start="220 277 330 440 185 220 277 370 294 370 440 587 330 415 494 659";
-#export grub_sound_select="880 0 880 0 880 698 1046";
-#Uncomment below code and copy samples/splash/* to boot/grubfm/themes/slack/
-# to load Windows 10 splash screen
-#set theme=$prefix/themes/slack/splash10.txt
-export theme=${prefix}/themes/slack/theme.txt;
-#set timeout=7
+export theme_std=${prefix}/themes/slack/theme.txt;
+export theme_fm=${prefix}/themes/slack/fm.txt;
+export theme_open=${prefix}/themes/slack/open.txt;
+export theme_help=${prefix}/themes/slack/help.txt;
+export theme_info=${prefix}/themes/slack/info.txt;
+
+export theme=${theme_std};
 
 search --set=user -f -q /boot/grubfm/config;
 if [ -n "${user}" ];
@@ -86,7 +82,6 @@ then
   source (${user})/boot/grubfm/config;
 fi;
 
-#menuentry "" {
 source ${prefix}/pxeinit.sh;
 net_detect;
 if [ "${grub_netboot}" = "1" ];
@@ -95,4 +90,3 @@ then
 else
   grubfm;
 fi;
-#}

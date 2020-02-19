@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-export theme=${prefix}/themes/slack/help.txt;
+export theme=${theme_help};
 
 videomode -c mode_current;
 

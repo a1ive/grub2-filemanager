@@ -1,5 +1,5 @@
 source ${prefix}/func.sh;
-export theme=${prefix}/themes/slack/open.txt;
+export theme=${theme_open};
 set grubfm_test=1;
 
 hiddenentry "[F1] HELP" --hotkey f1 {
@@ -7,7 +7,7 @@ hiddenentry "[F1] HELP" --hotkey f1 {
 }
 
 hiddenentry "[F2] ${grubfm_name}" --hotkey f2 {
-  echo;
+  grubfm_open "${grubfm_file}";
 }
 
 hiddenentry "[F3] OS DETECT" --hotkey f3 {

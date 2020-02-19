@@ -81,7 +81,7 @@ do
   if [ -f "(${device})/boot/grub/external_menu.cfg" ];
   then
     menuentry $"Load External Menu on (${device}) ${info}" "${device}" --class cfg {
-      export theme=${prefix}/themes/slack/theme.txt;
+      export theme=${theme_std};
       set root="${2}";
       configfile (${root})/boot/grub/external_menu.cfg;
     }

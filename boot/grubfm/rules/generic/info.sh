@@ -1,6 +1,6 @@
 source ${prefix}/func.sh;
 
-set theme=${prefix}/themes/slack/info.txt;
+set theme=${theme_info};
 
 stat -s size -z "${grubfm_file}";
 stat -s info "${grubfm_file}";
