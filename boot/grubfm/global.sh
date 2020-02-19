@@ -14,7 +14,10 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-export theme=${theme_fm};
+if [ -f "${theme_fm}" ];
+then
+  export theme=${theme_fm};
+fi;
 
 hiddenentry "---- HOTKEY MENU ----" {
   echo;

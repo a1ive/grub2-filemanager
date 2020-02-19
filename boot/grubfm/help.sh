@@ -14,7 +14,10 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-export theme=${theme_help};
+if [ -f "${theme_help}" ];
+then
+  export theme=${theme_help};
+fi;
 
 videomode -c mode_current;
 

@@ -1,6 +1,9 @@
 source ${prefix}/func.sh;
 
-set theme=${theme_info};
+if [ -f "${theme_info}" ];
+then
+  export theme=${theme_info};
+fi;
 
 stat -s size -z "${grubfm_file}";
 stat -s info "${grubfm_file}";

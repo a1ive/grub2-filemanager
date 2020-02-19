@@ -1,5 +1,8 @@
 source ${prefix}/func.sh;
 
 set root=${grubfm_device};
-export theme=${theme_std};
+if [ -f "${theme_std}" ];
+then
+  export theme=${theme_std};
+fi;
 syslinux_configfile -s "${grubfm_file}";
