@@ -15,7 +15,6 @@
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
 set pager=0;
-set debug=off;
 cat --set=modlist ${prefix}/insmod.lst;
 for module in ${modlist};
 do
@@ -53,7 +52,6 @@ else
 fi
 
 loadfont ${prefix}/fonts/unicode.xz;
-loadfont ${prefix}/fonts/dosvga.pf2;
 
 export locale_dir=${prefix}/locale;
 export secondary_locale_dir=${prefix}/locale/fm;
