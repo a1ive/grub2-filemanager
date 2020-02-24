@@ -8,22 +8,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-02-24 08:38\n"
+"PO-Revision-Date: 2020-02-24 09:24\n"
 
 msgid "Back"
 msgstr "Geri"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Devre dışı bırakıldı"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Etkinleştirildi"
 
 msgid "Not available"
-msgstr ""
+msgstr "Kullanılabilir değil"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "BGRT Ayarla (Windows Önyükleme Logosu)"
 
 msgid "Open As Grub2 Menu"
 msgstr "Grub2 Menüsünü Aç"
@@ -71,7 +71,7 @@ msgid "Boot Floppy Image (memdisk)"
 msgstr "Floppy İmajı Önyükle (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Floppy İmajı Önyükle (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "Harddisk İmajını Önyükle (GRUB4DOS)"
@@ -80,7 +80,7 @@ msgid "Boot Hard Drive Image (memdisk)"
 msgstr "Hardisk İmajını Önyükle (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Hardisk İmajını Önyükle (map)"
 
 msgid "Boot IMG (map)"
 msgstr "IMG Önyükle (map)"
@@ -134,10 +134,10 @@ msgid "Boot ISO (Easy2Boot)"
 msgstr "ISO Önyükle (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "ISO Önyükle (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "ISO Önyükle (partnew)"
 
 msgid "Install Windows (x64)"
 msgstr "Windows Kur (x64)"
@@ -146,10 +146,10 @@ msgid "Install Windows (x86)"
 msgstr "Windows Kur (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Autounattended.xml olmadan Windows Kur"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "${xml_name} Xml yükle"
 
 msgid "Boot ISO (map)"
 msgstr "ISO Önyükle (map)"
@@ -191,7 +191,7 @@ msgid "Boot Linux Kernel"
 msgstr "Linux Kerneli Önyükle"
 
 msgid "User menu"
-msgstr ""
+msgstr "Kullanıcı Menüsü"
 
 msgid "Text Viewer"
 msgstr "Metin Görüntüleyici"
@@ -200,37 +200,37 @@ msgid "Hex Viewer"
 msgstr "Hex Görüntüleyici"
 
 msgid "Rename"
-msgstr ""
+msgstr "Yeniden adlandır"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Şuraya kopyala..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Sil"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Buraya yapıştır"
 
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 msgid "File Info"
 msgstr "Dosya Bilgisi"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Dosya Bilgisi (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to back"
-msgstr ""
+msgstr "Dosya Bilgisi - Geri dönüş için [ENTER] tuşuna basın"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Tip: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Yol:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Boyut: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
 msgstr ""
@@ -245,7 +245,7 @@ msgid "Disable shim validation and reboot"
 msgstr "Shim doğrulama işlemini devre dışı bırak ve yeniden başlat"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Grafik modu devre dışı bırak (T)"
 
 msgid "Encoding: "
 msgstr "Kodlama: "
@@ -254,19 +254,19 @@ msgid "Sort files by name"
 msgstr "Dosyaları isme göre sırala"
 
 msgid "Disable auto-run boot scripts"
-msgstr ""
+msgstr "Otomatik çalıştırma önyükleme komut dosyalarını devre dışı bırak"
 
 msgid "Enable auto-run boot scripts"
-msgstr ""
+msgstr "Otomatik çalıştırma önyükleme komut dosyalarını etkinleştir"
 
 msgid "Display non-bootable files"
-msgstr ""
+msgstr "Önyüklenemeyen dosyaları görüntüle"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Önyüklenemeyen dosyaları gizle"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Çözünürlük (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
 msgstr "ESC'yi etkinleştir (önerilmez)"
@@ -302,16 +302,16 @@ msgid "UEFI DUET"
 msgstr "UEFI DUET Önyükle"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "($ {device}) $ {info} üzerinden Harici Menü yükle"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "(${device}) $ {info} üzerinden Windows Önyükleme Yöneticisini yükle"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "(${device}) $ {info} üzerinden MacOS yükle"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "$ {Device} $ {info} üzerinde $ {winver} dosyasını önyükleyin"
 
 msgid "Boot ISO (Loopback)"
 msgstr "ISO Önyükle (Loopback)"
@@ -320,10 +320,10 @@ msgid "Boot ISO (ISOLINUX)"
 msgstr "ISO Önyükle (ISOLİNUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "ISO türü algılanıyor ..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "ISO'dan $ {distro} önyükleme yapın"
 
 msgid "Boot "
 msgstr "Önyükle "
@@ -335,13 +335,13 @@ msgid "Please input the username. Default:user Super User:root Devuan:devuan"
 msgstr "Lütfen Kullanıcı adı girin. Varsayılan: user Süper User: root Devuan: devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "UYARI: ($ {grubfm_disk}, 4) üzerindeki TÜM verileri silecek"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "UYARI: (Hd0, 4) üzerindeki tüm veriler silinecek."
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "Devam etmek için [1] tuşuna basın. Geri dönmek için herhangi bir tuşa basın."
 
 msgid "Press [Y] to continue. Press [N] to quit."
 msgstr "Devam etmek için [Y], çıkmak için [N] tuşuna basın."
@@ -353,13 +353,13 @@ msgid "File path contains spaces.This may cause problems!Press any key to contin
 msgstr "Dosya yolu boşluk içeriyor. Bu sorunlara neden olabilir. Devam etmek için herhangi bir tuşa basın."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "Adını girin"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "Geçersiz dosya adı."
 
 msgid "Press any key to back."
-msgstr ""
+msgstr "Geri dönmek için herhangi bir tuşa basın."
 
 msgid "Reboot"
 msgstr "Yeniden Başlat"
@@ -380,23 +380,23 @@ msgid "F2 - File Manager"
 msgstr "F2 - Dosya Yöneticisi"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - İşletim Sistemini Algıla"
 
 msgid "F4 - Settings"
 msgstr "F4 - Ayarlar"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - PXE Önyükleme Menüsü"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - Kapat"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] GRUB2 - Dosya Yöneticisi Hakkında"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr ""
+msgstr "Ctrl + l / Ctrl + r - Menü girişinin metnini kaydır"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl + LAlt + F12 - Ekran Görüntüsü Al (EFI)"
 
