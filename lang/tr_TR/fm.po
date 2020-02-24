@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-02-24 07:28\n"
+"PO-Revision-Date: 2020-02-24 08:38\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -139,9 +139,6 @@ msgstr ""
 msgid "Boot ISO (partnew)"
 msgstr ""
 
-msgid "Boot ISO (map)"
-msgstr "ISO Önyükle (map)"
-
 msgid "Install Windows (x64)"
 msgstr "Windows Kur (x64)"
 
@@ -155,7 +152,7 @@ msgid "Load ${xml_name}"
 msgstr ""
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "ISO Önyükle (map)"
 
 msgid "Boot ISO (map --mem)"
 msgstr "ISO Önyükle (map --mem)"
