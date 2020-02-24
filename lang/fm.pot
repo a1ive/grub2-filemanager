@@ -130,9 +130,6 @@ msgstr ""
 msgid "Boot ISO (partnew)"
 msgstr ""
 
-msgid "Boot ISO (map)"
-msgstr ""
-
 msgid "Install Windows (x64)"
 msgstr ""
 
