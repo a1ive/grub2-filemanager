@@ -1,19 +1,29 @@
 msgid ""
 msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: grub2-filemanager\n"
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /master/lang/fm.pot\n"
 "Project-Id-Version: grub2-filemanager\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2019-11-12 09:23\n"
+"PO-Revision-Date: 2020-02-24 06:32\n"
 
 msgid "Back"
 msgstr "返回"
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Not available"
+msgstr ""
+
+msgid "Set BGRT (Windows boot logo)"
+msgstr ""
 
 msgid "Open As Grub2 Menu"
 msgstr "作为 Grub2 菜单打开"
@@ -60,11 +70,17 @@ msgstr "使用 GRUB4DOS 加载为软盘"
 msgid "Boot Floppy Image (memdisk)"
 msgstr "使用 memdisk 加载为软盘"
 
+msgid "Boot Floppy Image (map)"
+msgstr ""
+
 msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "使用 GRUB4DOS 加载为硬盘"
 
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr "使用 memdisk 加载为硬盘"
+
+msgid "Boot Hard Drive Image (map)"
+msgstr ""
 
 msgid "Boot IMG (map)"
 msgstr "启动 IMG (map)"
@@ -117,14 +133,29 @@ msgstr "使用 memdisk 加载 ISO"
 msgid "Boot ISO (Easy2Boot)"
 msgstr "使用 Easy2Boot 方式加载 ISO"
 
+msgid "Boot ISO (loopback.cfg)"
+msgstr ""
+
+msgid "Boot ISO (partnew)"
+msgstr ""
+
+msgid "Boot ISO (map)"
+msgstr "启动 ISO (map)"
+
 msgid "Install Windows (x64)"
 msgstr "安装 Windows (x64)"
 
 msgid "Install Windows (x86)"
 msgstr "安装 Windows (x86)"
 
+msgid "Install Windows without autounattend.xml"
+msgstr ""
+
+msgid "Load ${xml_name}"
+msgstr ""
+
 msgid "Boot ISO (map)"
-msgstr "启动 ISO (map)"
+msgstr ""
 
 msgid "Boot ISO (map --mem)"
 msgstr "启动 ISO (map --mem)"
@@ -162,14 +193,50 @@ msgstr "作为 multiboot2 内核加载"
 msgid "Boot Linux Kernel"
 msgstr "作为 Linux 内核加载"
 
+msgid "User menu"
+msgstr ""
+
 msgid "Text Viewer"
 msgstr "文本查看"
 
 msgid "Hex Viewer"
 msgstr "十六进制查看"
 
+msgid "Rename"
+msgstr ""
+
+msgid "Copy to ..."
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Paste here"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
 msgid "File Info"
 msgstr "查看文件信息"
+
+msgid "File Info (${grubfm_name})"
+msgstr ""
+
+msgid "File Info -- Press [ENTER] to back"
+msgstr ""
+
+msgid "Type: ${grubfm_fileext}"
+msgstr ""
+
+msgid "Path:k"
+msgstr ""
+
+msgid "Size: ${hsize} (${size})"
+msgstr ""
+
+msgid "Offset on disk: ${offset}"
+msgstr ""
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "在启动时禁用 PatchGuard 和 DSE"
@@ -180,14 +247,29 @@ msgstr "安装覆盖安全策略"
 msgid "Disable shim validation and reboot"
 msgstr "禁用 shim 安全启动验证并重启"
 
+msgid "Disable graphics mode (T)"
+msgstr ""
+
 msgid "Encoding: "
 msgstr "编码设置: "
 
 msgid "Sort files by name"
 msgstr "按文件名排序"
 
-msgid "Resolution (R): "
-msgstr "分辨率设置 (R): "
+msgid "Disable auto-run boot scripts"
+msgstr ""
+
+msgid "Enable auto-run boot scripts"
+msgstr ""
+
+msgid "Display non-bootable files"
+msgstr ""
+
+msgid "Hide non-bootable files"
+msgstr ""
+
+msgid "Resolution (R): ${mode_current}"
+msgstr ""
 
 msgid "Enable ESC (not recommended)"
 msgstr "启用 ESC (不推荐)"
@@ -222,23 +304,29 @@ msgstr "EFI Shell"
 msgid "UEFI DUET"
 msgstr "UEFI模拟"
 
-msgid "Load External Menu: "
-msgstr "加载外置菜单: "
+msgid "Load External Menu on (${device}) ${info}"
+msgstr ""
 
-msgid "Boot Windows on "
-msgstr "启动 Windows : "
+msgid "Load Windows Boot Manager on ${device} ${info}"
+msgstr ""
 
-msgid "Boot macOS on ${device}"
-msgstr "启动 macOS : "
+msgid "Boot macOS on ${device} ${info}"
+msgstr ""
 
-msgid " on "
-msgstr " : "
+msgid "Boot ${winver} on ${device} ${info}"
+msgstr ""
 
 msgid "Boot ISO (Loopback)"
 msgstr "作为 Loopback ISO 启动"
 
 msgid "Boot ISO (ISOLINUX)"
 msgstr "作为 ISOLINUX ISO 启动"
+
+msgid "Detecting ISO type ..."
+msgstr ""
+
+msgid "Boot ${distro} From ISO"
+msgstr ""
 
 msgid "Boot "
 msgstr "启动 "
@@ -249,8 +337,14 @@ msgstr " ISO"
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
 msgstr "请输入登录用户名。默认:user 超级用户:root Devuan:devuan"
 
+msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
+msgstr ""
+
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "警告：即将删除(hd0,4)的分区数据。"
+
+msgid "Press [1] to continue. Press any other key to return."
+msgstr ""
 
 msgid "Press [Y] to continue. Press [N] to quit."
 msgstr "按[Y]继续。按[N]退出。"
@@ -260,6 +354,15 @@ msgstr "已取消。"
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
 msgstr "文件路径包含空格。这可能会造成问题。按任意键继续。"
+
+msgid "Enter the name"
+msgstr ""
+
+msgid "Bad file name."
+msgstr ""
+
+msgid "Press any key to back."
+msgstr ""
 
 msgid "Reboot"
 msgstr "重启"
@@ -279,15 +382,24 @@ msgstr "F1 - 帮助"
 msgid "F2 - File Manager"
 msgstr "F2 - 文件管理器"
 
-msgid "F3 - Boot"
-msgstr "F3 - 启动菜单"
+msgid "F3 - OS Detect"
+msgstr ""
 
 msgid "F4 - Settings"
 msgstr "F4 - 设置"
 
-msgid "F5 - Power Off"
-msgstr "F5 - 关机"
+msgid "F5 - PXE Boot Menu"
+msgstr ""
 
-msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
-msgstr "LCtrl + LAlt + F12 - 屏幕截图 (EFI)"
+msgid "F6 - Power Off"
+msgstr ""
+
+msgid "[A] About GRUB2-FileManager"
+msgstr ""
+
+msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
+msgstr ""
+
+msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
+msgstr ""
 
