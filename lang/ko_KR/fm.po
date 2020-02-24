@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-02-24 07:28\n"
+"PO-Revision-Date: 2020-02-24 08:38\n"
 
 msgid "Back"
 msgstr ""
@@ -137,9 +137,6 @@ msgid "Boot ISO (loopback.cfg)"
 msgstr ""
 
 msgid "Boot ISO (partnew)"
-msgstr ""
-
-msgid "Boot ISO (map)"
 msgstr ""
 
 msgid "Install Windows (x64)"
