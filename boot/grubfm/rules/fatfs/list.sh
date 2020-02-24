@@ -22,7 +22,7 @@ function enum_device
     then
       probe --set=fs -f -q "${device}";
       probe --set=label -l -q "${device}";
-      if [ "${fs}" != "fat" ];
+      if [ "${fs}" != "fat" -a "${fs}" != "exfat" ];
       then
         continue;
       fi;
