@@ -8,22 +8,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-02-24 08:38\n"
+"PO-Revision-Date: 2020-02-24 09:03\n"
 
 msgid "Back"
 msgstr "Geri"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Devre dışı bırakıldı"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Etkinleştirildi"
 
 msgid "Not available"
-msgstr ""
+msgstr "Kullanılabilir değil"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "BGRT Ayarla (Windows Önyükleme Logosu)"
 
 msgid "Open As Grub2 Menu"
 msgstr "Grub2 Menüsünü Aç"
@@ -71,7 +71,7 @@ msgid "Boot Floppy Image (memdisk)"
 msgstr "Floppy İmajı Önyükle (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Floppy İmajı Önyükle (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "Harddisk İmajını Önyükle (GRUB4DOS)"
@@ -80,7 +80,7 @@ msgid "Boot Hard Drive Image (memdisk)"
 msgstr "Hardisk İmajını Önyükle (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Hardisk İmajını Önyükle (map)"
 
 msgid "Boot IMG (map)"
 msgstr "IMG Önyükle (map)"
@@ -134,10 +134,10 @@ msgid "Boot ISO (Easy2Boot)"
 msgstr "ISO Önyükle (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "ISO Önyükle (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "ISO Önyükle (partnew)"
 
 msgid "Install Windows (x64)"
 msgstr "Windows Kur (x64)"
@@ -146,7 +146,7 @@ msgid "Install Windows (x86)"
 msgstr "Windows Kur (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Autounattended.xml olmadan Windows Kur"
 
 msgid "Load ${xml_name}"
 msgstr ""
