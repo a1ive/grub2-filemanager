@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-02-24 09:03\n"
+"PO-Revision-Date: 2020-02-24 09:17\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -149,7 +149,7 @@ msgid "Install Windows without autounattend.xml"
 msgstr "Autounattended.xml olmadan Windows Kur"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "${xml_name} Xml yükle"
 
 msgid "Boot ISO (map)"
 msgstr "ISO Önyükle (map)"
@@ -191,7 +191,7 @@ msgid "Boot Linux Kernel"
 msgstr "Linux Kerneli Önyükle"
 
 msgid "User menu"
-msgstr ""
+msgstr "Kullanıcı Menüsü"
 
 msgid "Text Viewer"
 msgstr "Metin Görüntüleyici"
@@ -200,37 +200,37 @@ msgid "Hex Viewer"
 msgstr "Hex Görüntüleyici"
 
 msgid "Rename"
-msgstr ""
+msgstr "Yeniden adlandır"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Şuraya kopyala..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Sil"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Buraya yapıştır"
 
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 msgid "File Info"
 msgstr "Dosya Bilgisi"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Dosya Bilgisi (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to back"
-msgstr ""
+msgstr "Dosya Bilgisi - Geri dönüş için [ENTER] tuşuna basın"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Tip: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Yol:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Boyut: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
 msgstr ""
@@ -245,7 +245,7 @@ msgid "Disable shim validation and reboot"
 msgstr "Shim doğrulama işlemini devre dışı bırak ve yeniden başlat"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Grafik modu devre dışı bırak (T)"
 
 msgid "Encoding: "
 msgstr "Kodlama: "
@@ -254,19 +254,19 @@ msgid "Sort files by name"
 msgstr "Dosyaları isme göre sırala"
 
 msgid "Disable auto-run boot scripts"
-msgstr ""
+msgstr "Otomatik çalıştırma önyükleme komut dosyalarını devre dışı bırak"
 
 msgid "Enable auto-run boot scripts"
-msgstr ""
+msgstr "Otomatik çalıştırma önyükleme komut dosyalarını etkinleştir"
 
 msgid "Display non-bootable files"
-msgstr ""
+msgstr "Önyüklenemeyen dosyaları görüntüle"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Önyüklenemeyen dosyaları gizle"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Çözünürlük (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
 msgstr "ESC'yi etkinleştir (önerilmez)"
@@ -302,13 +302,13 @@ msgid "UEFI DUET"
 msgstr "UEFI DUET Önyükle"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "($ {device}) $ {info} üzerinden Harici Menü yükle"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "(${device}) $ {info} üzerinden Windows Önyükleme Yöneticisini yükle"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "(${device}) $ {info} üzerinden MacOS yükle"
 
 msgid "Boot ${winver} on ${device} ${info}"
 msgstr ""
