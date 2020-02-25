@@ -88,9 +88,6 @@ function xml_list {
   fi;
 }
 
-loopback -d loop;
-loopback loop "${grubfm_file}";
-
 if test -f (loop)/sources/boot.wim; then
   xml_list "(loop)/sources/boot.wim";
 else

@@ -328,6 +328,8 @@ set enable_progress_indicator=0;
 if [ -n "${src}" ];
 then
   menuentry $"Boot ${distro} From ISO" --class ${icon} {
+    loopback -d loop;
+    loopback loop "${grubfm_file}";
     configfile ${prefix}/distro/${src}.sh;
   }
 fi;
