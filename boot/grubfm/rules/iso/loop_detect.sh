@@ -318,13 +318,12 @@ function iso_detect {
     export icon=freebsd;
     export distro="FreeBSD";
     export src=freebsd;
+    return;
   fi;
 }
 
 echo $"Detecting ISO type ...";
-set enable_progress_indicator=1;
 iso_detect;
-set enable_progress_indicator=0;
 if [ -n "${src}" ];
 then
   menuentry $"Boot ${distro} From ISO" --class ${icon} {
