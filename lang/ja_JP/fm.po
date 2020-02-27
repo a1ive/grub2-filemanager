@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2020-02-27 11:09\n"
+"PO-Revision-Date: 2020-02-27 11:14\n"
 
 msgid "Back"
 msgstr ""
@@ -236,7 +236,7 @@ msgid "Offset on disk: ${offset}"
 msgstr ""
 
 msgid "Language"
-msgstr ""
+msgstr "言語"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr ""
