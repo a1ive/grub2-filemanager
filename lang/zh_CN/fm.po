@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-02-27 10:44\n"
+"PO-Revision-Date: 2020-02-27 10:50\n"
 
 msgid "Back"
 msgstr "返回"
@@ -236,7 +236,7 @@ msgid "Offset on disk: ${offset}"
 msgstr "磁盘偏移: ${offset}"
 
 msgid "Language"
-msgstr ""
+msgstr "语言"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "在启动时禁用 PatchGuard 和 DSE"
@@ -365,7 +365,7 @@ msgid "Press any key to back."
 msgstr "按下任意键返回。"
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "请稍候......"
 
 msgid "Reboot"
 msgstr "重启"
@@ -407,8 +407,8 @@ msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
 msgstr "LCtrl+LAlt+F12 - 屏幕截图 (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ 上一页  ↓ 下一页  [ESC] 退出"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ 上一页  ↓ 下一页  [e] 编码设置  [ESC] 退出"
 
