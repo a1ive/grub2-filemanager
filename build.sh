@@ -41,6 +41,13 @@ mkdir build
 echo "common files"
 cp -r boot build/
 
+cp grub/locale/*.mo build/boot/grubfm/locale/
+cd lang
+for po in */fm.po; do
+  msgfmt ${po} -o ../build/boot/grubfm/locale/fm/${po%/*}.mo
+done
+cd ..
+
 echo "Language"
 echo "1. Simplified Chinese"
 echo "2. Traditional Chinese"
@@ -54,8 +61,6 @@ read -p "Please make a choice: " choice
 case "$choice" in
     2)
         echo "zh_TW"
-        cp grub/locale/zh_TW.mo build/boot/grubfm/locale/zh_TW.mo
-        msgfmt lang/zh_TW/fm.po -o build/boot/grubfm/locale/fm/zh_TW.mo
         cp lang/zh_TW/lang.sh build/boot/grubfm/
         ;;
     3)
@@ -63,38 +68,26 @@ case "$choice" in
         ;;
     4)
         echo "tr_TR"
-        cp grub/locale/tr_TR.mo build/boot/grubfm/locale/tr_TR.mo
-        msgfmt lang/tr_TR/fm.po -o build/boot/grubfm/locale/fm/tr_TR.mo
         cp lang/tr_TR/lang.sh build/boot/grubfm/
         ;;
     5)
         echo "de_DE"
-        cp grub/locale/de_DE.mo build/boot/grubfm/locale/de_DE.mo
-        msgfmt lang/de_DE/fm.po -o build/boot/grubfm/locale/fm/de_DE.mo
         cp lang/de_DE/lang.sh build/boot/grubfm/
         ;;
     6)
         echo "vi_VN"
-        cp grub/locale/vi_VN.mo build/boot/grubfm/locale/vi_VN.mo
-        msgfmt lang/vi_VN/fm.po -o build/boot/grubfm/locale/fm/vi_VN.mo
         cp lang/vi_VN/lang.sh build/boot/grubfm/
         ;;
     7)
         echo "ru_RU"
-        cp grub/locale/ru_RU.mo build/boot/grubfm/locale/ru_RU.mo
-        msgfmt lang/ru_RU/fm.po -o build/boot/grubfm/locale/fm/ru_RU.mo
         cp lang/ru_RU/lang.sh build/boot/grubfm/
         ;;
     8)
         echo "he_IL"
-        #cp grub/locale/he_IL.mo build/boot/grubfm/locale/he_IL.mo
-        msgfmt lang/he_IL/fm.po -o build/boot/grubfm/locale/fm/he_IL.mo
         cp lang/he_IL/lang.sh build/boot/grubfm/
         ;;
     *)
         echo "zh_CN"
-        cp grub/locale/zh_CN.mo build/boot/grubfm/locale/zh_CN.mo
-        msgfmt lang/zh_CN/fm.po -o build/boot/grubfm/locale/fm/zh_CN.mo
         cp lang/zh_CN/lang.sh build/boot/grubfm/
         ;;
 esac

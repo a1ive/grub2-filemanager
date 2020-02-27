@@ -17,6 +17,10 @@
 videomode -l mode_list;
 videomode -c mode_current;
 
+menuentry $"Language" --class lang {
+  configfile ${prefix}/language.sh;
+}
+
 if [ -z "${grubfm_efiguard}" ];
 then
   menuentry $"Disable PatchGuard and DSE at boot time" --class konboot {
