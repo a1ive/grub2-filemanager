@@ -114,6 +114,19 @@ else
   }
 fi;
 
+if [ "${grubfm_disable_qsort}" != "1" ];
+then
+  menuentry $"Sort files by name" --class sort {
+    export grubfm_disable_qsort=1;
+    configfile ${prefix}/settings.sh;
+  }
+else
+  menuentry $"Sort files by name" --class cancel {
+    unset grubfm_disable_qsort;
+    configfile ${prefix}/settings.sh;
+  }
+fi;
+
 menuentry $"Load AHCI Driver" --class pmagic {
   insmod ahci;
 }
