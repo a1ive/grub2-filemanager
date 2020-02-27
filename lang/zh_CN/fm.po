@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-02-27 11:09\n"
+"PO-Revision-Date: 2020-02-27 11:14\n"
 
 msgid "Back"
 msgstr "返回"
@@ -284,10 +284,10 @@ msgid "Load extra modules"
 msgstr "加载额外模块"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "启用大小写敏感文件名"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "禁用大小写敏感文件名"
 
 msgid "Load AHCI Driver"
 msgstr "加载 AHCI 驱动"
@@ -323,7 +323,7 @@ msgid "Boot ${winver} on ${device} ${info}"
 msgstr "启动 ${device} ${info} 上的 ${winver}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "启动 ${device} ${info}"
 
 msgid "Boot ISO (Loopback)"
 msgstr "作为 Loopback ISO 启动"
@@ -347,13 +347,13 @@ msgid "Please input the username. Default:user Super User:root Devuan:devuan"
 msgstr "请输入登录用户名。默认:user 超级用户:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr "警告：将删除所有在 (${grubfm_disk}，4) 上的数据"
+msgstr "警告：即将删除 (${grubfm_disk}，4) 上的所有数据"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "警告：即将删除(hd0,4)的分区数据。"
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "警告：即将删除 ${grubfm_file}。"
 
 msgid "Press [1] to continue. Press any other key to return."
 msgstr "按 [1] 继续。按下任何其他键返回。"
