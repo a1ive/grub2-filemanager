@@ -97,6 +97,19 @@ else
   }
 fi;
 
+if [ "${grub_fs_case_sensitive}" != "1" ];
+then
+  menuentry $"Enable case-sensitive filenames" --class strcase {
+    export grub_fs_case_sensitive=1;
+    configfile ${prefix}/settings.sh;
+  }
+else
+  menuentry $"Disable case-sensitive filenames" --class strcase {
+    unset grub_fs_case_sensitive;
+    configfile ${prefix}/settings.sh;
+  }
+fi;
+
 menuentry $"Load AHCI Driver" --class pmagic {
   insmod ahci;
 }
