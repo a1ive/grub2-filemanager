@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2020-02-27 10:44\n"
+"PO-Revision-Date: 2020-02-27 11:09\n"
 
 msgid "Back"
 msgstr "חזרה"
@@ -283,6 +283,12 @@ msgstr "הצגת כוננים נסתרים"
 msgid "Load extra modules"
 msgstr "טעינת מודולים נוספים"
 
+msgid "Enable case-sensitive filenames"
+msgstr ""
+
+msgid "Disable case-sensitive filenames"
+msgstr ""
+
 msgid "Load AHCI Driver"
 msgstr "טעינת מנהל התקן AHCI"
 
@@ -316,6 +322,9 @@ msgstr ""
 msgid "Boot ${winver} on ${device} ${info}"
 msgstr ""
 
+msgid "Boot ${device} ${info}"
+msgstr ""
+
 msgid "Boot ISO (Loopback)"
 msgstr "אתחול מ־ISO‏ (לולאה פנימית - Loopback)"
 
@@ -342,6 +351,9 @@ msgstr ""
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "אזהרה: כל הנתונים שב־(hd0,4) יימחקו לצמיתות."
+
+msgid "WARNING: Will delete ${grubfm_file}"
+msgstr ""
 
 msgid "Press [1] to continue. Press any other key to return."
 msgstr ""
