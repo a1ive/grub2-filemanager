@@ -1,7 +1,7 @@
 source ${prefix}/func.sh;
 
-echo "WARNING: Will delete ${grubfm_file}";
-echo "Press [1] to continue. Press any other key to return.";
+echo $"WARNING: Will delete ${grubfm_file}";
+echo $"Press [1] to continue. Press any other key to return.";
 getkey key;
 if [ x$key = x49 ];
 then

@@ -2,8 +2,8 @@ source ${prefix}/func.sh;
 
 if [ -d (${grubfm_disk},4) ];
 then
-  echo "WARNING: Will erase ALL data on (${grubfm_disk},4)";
-  echo "Press [1] to continue. Press any other key to return.";
+  echo $"WARNING: Will erase ALL data on (${grubfm_disk},4)";
+  echo $"Press [1] to continue. Press any other key to return.";
   getkey key;
 else
   key=49;
@@ -25,6 +25,6 @@ then
     fi;
   fi;
 else
-  echo "Canceled.";
+  echo $"Canceled.";
   sleep 3;
 fi;
