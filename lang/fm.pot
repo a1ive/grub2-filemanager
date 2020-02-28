@@ -226,6 +226,12 @@ msgstr ""
 msgid "Offset on disk: ${offset}"
 msgstr ""
 
+msgid "File is contiguous."
+msgstr ""
+
+msgid "File is non-contiguous. (${frag} fragments)"
+msgstr ""
+
 msgid "Language"
 msgstr ""
 
