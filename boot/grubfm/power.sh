@@ -14,11 +14,11 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-menuentry $"Reboot" --class reboot {
+menuentry $"Reboot (R)" --class reboot --hotkey "r" {
   reboot;
 }
 
-menuentry $"Halt" --class halt {
+menuentry $"Halt (H)" --class halt --hotkey "h" {
   halt;
 }
 
