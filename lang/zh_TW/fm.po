@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2020-02-28 08:52\n"
+"PO-Revision-Date: 2020-02-28 08:56\n"
 
 msgid "Back"
 msgstr "返回"
@@ -236,10 +236,10 @@ msgid "Offset on disk: ${offset}"
 msgstr "磁碟偏移: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "文件是連續的。"
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "文件不連續。 (${frag} 個片段)"
 
 msgid "Language"
 msgstr "語言"
