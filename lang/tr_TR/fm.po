@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-02-29 03:27\n"
+"PO-Revision-Date: 2020-02-29 03:41\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -449,7 +449,7 @@ msgid "Platform: %s-%s"
 msgstr ""
 
 msgid "Language: %s"
-msgstr ""
+msgstr "Dil: %s"
 
 msgid "GRUB version: %s"
 msgstr ""
