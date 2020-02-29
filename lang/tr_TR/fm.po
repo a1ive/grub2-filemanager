@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-02-29 08:53\n"
+"PO-Revision-Date: 2020-02-29 09:13\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -326,7 +326,7 @@ msgid "Load Windows Boot Manager on ${device} ${info}"
 msgstr "${device} ${info} üzerinden Windows Önyükleme Yöneticisini yükle"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr "(${device}) $ {info} üzerinden MacOS yükle"
+msgstr "${device} ${info} üzerinden MacOS yükle"
 
 msgid "Boot ${winver} on ${device} ${info}"
 msgstr "${device} ${info} üzerinde ${winver} dosyasını önyükleyin"
