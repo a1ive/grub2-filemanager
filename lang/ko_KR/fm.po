@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-02-29 03:27\n"
+"PO-Revision-Date: 2020-02-29 03:41\n"
 
 msgid "Back"
 msgstr ""
@@ -242,7 +242,7 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr ""
 
 msgid "Language"
-msgstr ""
+msgstr "언어"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr ""
