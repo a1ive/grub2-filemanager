@@ -14,8 +14,21 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-menuentry $"PLACEHOLDER" --class net {
-  echo;
+if [ "$grub_platform" = "efi" ];
+then
+  set netbootxyz=netboot.xyz.efi
+  set chain=chainloader
+elif [ "$grub_platform" = "pc" ];
+then
+  set netbootxyz=netboot.xyz.lkrn
+  set chain=linux16
+fi;
+
+menuentry $"netboot.xyz" --class net {
+  set lang=en_US;
+  terminal_output console;
+  echo $"Please wait ...";
+  $chain (http,boot.netboot.xyz)/ipxe/$netbootxyz
 }
 
 source ${prefix}/global.sh;
