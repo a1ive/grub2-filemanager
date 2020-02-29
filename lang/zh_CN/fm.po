@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-02-29 03:27\n"
+"PO-Revision-Date: 2020-02-29 03:32\n"
 
 msgid "Back"
 msgstr "返回"
@@ -221,7 +221,7 @@ msgid "File Info (${grubfm_name})"
 msgstr "文件信息 (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "文件信息 -- 按 [ENTER] 返回"
 
 msgid "Type: ${grubfm_fileext}"
 msgstr "类型： ${grubfm_fileext}"
@@ -263,10 +263,10 @@ msgid "Sort files by name"
 msgstr "按文件名排序"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "取消按名称排序文件"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "禁用次要引导选项菜单"
 
 msgid "Enable secondary boot options menu"
 msgstr ""
