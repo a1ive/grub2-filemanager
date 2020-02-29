@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-02-29 03:41\n"
+"PO-Revision-Date: 2020-02-29 09:23\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -221,7 +221,7 @@ msgid "File Info (${grubfm_name})"
 msgstr "Dosya Bilgisi (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Dosya Bilgisi - Çıkış için [ENTER] tuşuna basın"
 
 msgid "Type: ${grubfm_fileext}"
 msgstr "Tip: ${grubfm_fileext}"
@@ -263,16 +263,16 @@ msgid "Sort files by name"
 msgstr "Dosyaları isme göre sırala"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Dosyaları ismine göre göre sıralamayın"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "İkincil önyükleme seçenekleri menüsünü devre dışı bırak"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "İkincil önyükleme seçenekleri menüsünü etkinleştir"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Tüm dosyaları görüntüle"
 
 msgid "Hide non-bootable files"
 msgstr "Önyüklenemeyen dosyaları gizle"
@@ -326,7 +326,7 @@ msgid "Load Windows Boot Manager on ${device} ${info}"
 msgstr "${device} ${info} üzerinden Windows Önyükleme Yöneticisini yükle"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr "(${device}) $ {info} üzerinden MacOS yükle"
+msgstr "${device} ${info} üzerinden MacOS yükle"
 
 msgid "Boot ${winver} on ${device} ${info}"
 msgstr "${device} ${info} üzerinde ${winver} dosyasını önyükleyin"
@@ -356,7 +356,7 @@ msgid "Please input the username. Default:user Super User:root Devuan:devuan"
 msgstr "Lütfen Kullanıcı adı girin. Varsayılan: user Süper User: root Devuan: devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr "UYARI: ($ {grubfm_disk}, 4) üzerindeki TÜM verileri silecek"
+msgstr "DİKKAT: (${grubfm_disk},4) üzerindeki TÜM veriler silinecek"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "UYARI: (Hd0, 4) üzerindeki tüm veriler silinecek."
@@ -383,7 +383,7 @@ msgid "Bad file name."
 msgstr "Geçersiz dosya adı."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "Çıkış için herhangi bir tuşa basın."
 
 msgid "Please wait ..."
 msgstr "Lütfen bekleyin..."
@@ -392,13 +392,13 @@ msgid "Reboot"
 msgstr "Yeniden Başlat"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "Yeniden Başlat (R)"
 
 msgid "Halt"
 msgstr "Kapat"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "Kapat (H)"
 
 msgid "File: "
 msgstr "Dosya: "
@@ -440,23 +440,23 @@ msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
 msgstr "↑ Sayfa Yukarı ↓ Sayfa Aşağı [e] Kodlama [ESC] Çıkış"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "Dosya: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "Dosya: %s (%s) Kodlama: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "Platform: %s-%s"
 
 msgid "Language: %s"
 msgstr "Dil: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "GRUB versiyon: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "GRUB derleme tarihi: %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "Lisans: GNU GPLv3"
 
