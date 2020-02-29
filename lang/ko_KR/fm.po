@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-02-28 08:52\n"
+"PO-Revision-Date: 2020-02-29 03:41\n"
 
 msgid "Back"
 msgstr ""
@@ -220,7 +220,7 @@ msgstr ""
 msgid "File Info (${grubfm_name})"
 msgstr ""
 
-msgid "File Info -- Press [ENTER] to back"
+msgid "File Info -- Press [ENTER] to exit"
 msgstr ""
 
 msgid "Type: ${grubfm_fileext}"
@@ -242,7 +242,7 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr ""
 
 msgid "Language"
-msgstr ""
+msgstr "언어"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr ""
@@ -262,13 +262,16 @@ msgstr ""
 msgid "Sort files by name"
 msgstr ""
 
-msgid "Disable auto-run boot scripts"
+msgid "Do not sort files by name"
 msgstr ""
 
-msgid "Enable auto-run boot scripts"
+msgid "Disable secondary boot options menu"
 msgstr ""
 
-msgid "Display non-bootable files"
+msgid "Enable secondary boot options menu"
+msgstr ""
+
+msgid "Display all files"
 msgstr ""
 
 msgid "Hide non-bootable files"
@@ -379,7 +382,7 @@ msgstr ""
 msgid "Bad file name."
 msgstr ""
 
-msgid "Press any key to back."
+msgid "Press any key to exit."
 msgstr ""
 
 msgid "Please wait ..."
@@ -388,7 +391,13 @@ msgstr ""
 msgid "Reboot"
 msgstr ""
 
+msgid "Reboot (R)"
+msgstr ""
+
 msgid "Halt"
+msgstr ""
+
+msgid "Halt (H)"
 msgstr ""
 
 msgid "File: "
@@ -428,5 +437,26 @@ msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
 msgstr ""
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
+msgstr ""
+
+msgid "FILE: %s (%s)"
+msgstr ""
+
+msgid "FILE: %s (%s) ENCODING: %s"
+msgstr ""
+
+msgid "Platform: %s-%s"
+msgstr ""
+
+msgid "Language: %s"
+msgstr ""
+
+msgid "GRUB version: %s"
+msgstr ""
+
+msgid "GRUB build date: %s"
+msgstr ""
+
+msgid "License: GNU GPLv3"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2020-02-28 08:56\n"
+"PO-Revision-Date: 2020-02-29 03:40\n"
 
 msgid "Back"
 msgstr "返回"
@@ -220,7 +220,7 @@ msgstr "檢視檔案資訊"
 msgid "File Info (${grubfm_name})"
 msgstr "檔案資訊 (${grubfm_name})"
 
-msgid "File Info -- Press [ENTER] to back"
+msgid "File Info -- Press [ENTER] to exit"
 msgstr "檔案資訊 -- 按 [ENTER] 返回"
 
 msgid "Type: ${grubfm_fileext}"
@@ -262,14 +262,17 @@ msgstr "編碼設定: "
 msgid "Sort files by name"
 msgstr "按檔名排序"
 
-msgid "Disable auto-run boot scripts"
-msgstr "禁用自動執行啟動指令碼"
+msgid "Do not sort files by name"
+msgstr "取消按名稱排序檔案"
 
-msgid "Enable auto-run boot scripts"
-msgstr "啟用自動執行啟動指令碼"
+msgid "Disable secondary boot options menu"
+msgstr "禁用次要引導選項選單"
 
-msgid "Display non-bootable files"
-msgstr "顯示不可啟動的檔案"
+msgid "Enable secondary boot options menu"
+msgstr "啟用次要引導選項選單"
+
+msgid "Display all files"
+msgstr "顯示所有檔案"
 
 msgid "Hide non-bootable files"
 msgstr "隱藏不可啟動的檔案"
@@ -379,7 +382,7 @@ msgstr "請在此輸入名稱"
 msgid "Bad file name."
 msgstr "錯誤的檔名。"
 
-msgid "Press any key to back."
+msgid "Press any key to exit."
 msgstr "按下任意鍵返回。"
 
 msgid "Please wait ..."
@@ -388,8 +391,14 @@ msgstr "請稍候......"
 msgid "Reboot"
 msgstr "重啟"
 
+msgid "Reboot (R)"
+msgstr "重新啟動 (R)"
+
 msgid "Halt"
 msgstr "關機"
+
+msgid "Halt (H)"
+msgstr "關機 (H)"
 
 msgid "File: "
 msgstr "檔案: "
@@ -429,4 +438,25 @@ msgstr "↑ 上一頁  ↓ 下一頁  [ESC] 退出"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
 msgstr "↑ 上一頁  ↓ 下一頁  [e] 編碼設定  [ESC] 退出"
+
+msgid "FILE: %s (%s)"
+msgstr "檔案: %s (%s)"
+
+msgid "FILE: %s (%s) ENCODING: %s"
+msgstr "檔案: %s (%s) 編碼: %s"
+
+msgid "Platform: %s-%s"
+msgstr ""
+
+msgid "Language: %s"
+msgstr "語言: %s"
+
+msgid "GRUB version: %s"
+msgstr ""
+
+msgid "GRUB build date: %s"
+msgstr ""
+
+msgid "License: GNU GPLv3"
+msgstr ""
 
