@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2020-02-29 03:27\n"
+"PO-Revision-Date: 2020-02-29 03:40\n"
 
 msgid "Back"
 msgstr "返回"
@@ -221,7 +221,7 @@ msgid "File Info (${grubfm_name})"
 msgstr "檔案資訊 (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "檔案資訊 -- 按 [ENTER] 返回"
 
 msgid "Type: ${grubfm_fileext}"
 msgstr "型別： ${grubfm_fileext}"
@@ -263,16 +263,16 @@ msgid "Sort files by name"
 msgstr "按檔名排序"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "取消按名稱排序檔案"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "禁用次要引導選項選單"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "啟用次要引導選項選單"
 
 msgid "Display all files"
-msgstr ""
+msgstr "顯示所有檔案"
 
 msgid "Hide non-bootable files"
 msgstr "隱藏不可啟動的檔案"
@@ -383,7 +383,7 @@ msgid "Bad file name."
 msgstr "錯誤的檔名。"
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "按下任意鍵返回。"
 
 msgid "Please wait ..."
 msgstr "請稍候......"
@@ -392,13 +392,13 @@ msgid "Reboot"
 msgstr "重啟"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "重新啟動 (R)"
 
 msgid "Halt"
 msgstr "關機"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "關機 (H)"
 
 msgid "File: "
 msgstr "檔案: "
@@ -440,16 +440,16 @@ msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
 msgstr "↑ 上一頁  ↓ 下一頁  [e] 編碼設定  [ESC] 退出"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "檔案: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "檔案: %s (%s) 編碼: %s"
 
 msgid "Platform: %s-%s"
 msgstr ""
 
 msgid "Language: %s"
-msgstr ""
+msgstr "語言: %s"
 
 msgid "GRUB version: %s"
 msgstr ""
