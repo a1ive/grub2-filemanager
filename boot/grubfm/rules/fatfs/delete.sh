@@ -9,7 +9,5 @@ then
   mount (${grubfm_device}) 9;
   rm "9:/${grubfm_path}";
   umount 9;
-  echo $"Press any key to back.";
-  getkey;
   grubfm "(${grubfm_device})${grubfm_dir}";
 fi;

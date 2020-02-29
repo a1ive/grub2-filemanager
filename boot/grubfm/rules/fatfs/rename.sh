@@ -6,7 +6,7 @@ echo "";
 if regexp '[/\\:\*\?\$]' "${name}";
 then
   echo $"Bad file name.";
-  echo $"Press any key to back.";
+  echo $"Press any key to exit.";
   getkey;
 else
   set path="${grubfm_dir}${name}";
@@ -14,7 +14,5 @@ else
   mount (${grubfm_device}) 9;
   rename "9:/${grubfm_path}" "9:/${path}";
   umount 9;
-  echo $"Press any key to back.";
-  getkey;
   grubfm "(${grubfm_device})${grubfm_dir}";
 fi;

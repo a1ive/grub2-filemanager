@@ -9,7 +9,7 @@ stat -s size -z "${grubfm_file}";
 stat -s info "${grubfm_file}";
 regexp -s 1:hsize -s 2:offset '^([0-9a-zA-Z\.]+) [0-9] ([0-9]+)$' "${info}";
 
-menuentry $"File Info -- Press [ENTER] to back" --class info {
+menuentry $"File Info -- Press [ENTER] to exit" --class info {
   grubfm_open "${grubfm_file}";
 }
 

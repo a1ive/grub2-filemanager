@@ -21,31 +21,6 @@ menuentry $"Language" --class lang {
   configfile ${prefix}/language.sh;
 }
 
-if [ -z "${grubfm_efiguard}" ];
-then
-  menuentry $"Disable PatchGuard and DSE at boot time" --class konboot {
-    efiload ${prefix}/EfiGuardDxe.efi;
-    export grubfm_efiguard=1;
-    configfile ${prefix}/settings.sh;
-  }
-fi;
-
-if [ "${grub_platform}" = "efi" ];
-then
-  getenv -t uint8 SecureBoot secureboot;
-  if [ "${secureboot}" != "0" ];
-  then
-    menuentry $"Install override security policy" --class uefi {
-      sbpolicy --install;
-      echo "Press any key to continue ...";
-      getkey;
-    }
-    menuentry $"Disable shim validation and reboot" --class konboot {
-      moksbset;
-    }
-  fi;
-fi;
-
 if [ "${mode_current}" != "0x0" ];
 then
   menuentry $"Disable graphics mode (T)" --class ms-dos --hotkey "t" {
@@ -75,32 +50,6 @@ submenu $"Resolution (R): ${mode_current}" --class screen --hotkey "r" {
   done;
 }
 
-if grubfm_get --boot;
-then
-  menuentry $"Disable auto-run boot scripts" --class sh {
-    grubfm_set --boot 0;
-    configfile ${prefix}/settings.sh;
-  }
-else
-  menuentry $"Enable auto-run boot scripts" --class sh {
-    grubfm_set --boot 1;
-    configfile ${prefix}/settings.sh;
-  }
-fi;
-
-if grubfm_get --hide;
-then
-  menuentry $"Display non-bootable files" --class search {
-    grubfm_set --hide 0;
-    configfile ${prefix}/settings.sh;
-  }
-else
-  menuentry $"Hide non-bootable files" --class search {
-    grubfm_set --hide 1;
-    configfile ${prefix}/settings.sh;
-  }
-fi;
-
 if [ "${grub_fs_case_sensitive}" != "1" ];
 then
   menuentry $"Enable case-sensitive filenames" --class strcase {
@@ -121,8 +70,58 @@ then
     configfile ${prefix}/settings.sh;
   }
 else
-  menuentry $"Sort files by name" --class cancel {
+  menuentry $"Do not sort files by name" --class sort {
     unset grubfm_disable_qsort;
+    configfile ${prefix}/settings.sh;
+  }
+fi;
+
+if [ -z "${grubfm_efiguard}" ];
+then
+  menuentry $"Disable PatchGuard and DSE at boot time" --class konboot {
+    efiload ${prefix}/EfiGuardDxe.efi;
+    export grubfm_efiguard=1;
+    configfile ${prefix}/settings.sh;
+  }
+fi;
+
+if [ "${grub_platform}" = "efi" ];
+then
+  getenv -t uint8 SecureBoot secureboot;
+  if [ "${secureboot}" != "0" ];
+  then
+    menuentry $"Install override security policy" --class uefi {
+      sbpolicy --install;
+      sleep 2;
+    }
+    menuentry $"Disable shim validation and reboot" --class konboot {
+      moksbset;
+    }
+  fi;
+fi;
+
+if grubfm_get --boot;
+then
+  menuentry $"Enable secondary boot options menu" --class sh {
+    grubfm_set --boot 0;
+    configfile ${prefix}/settings.sh;
+  }
+else
+  menuentry $"Disable secondary boot options menu" --class sh {
+    grubfm_set --boot 1;
+    configfile ${prefix}/settings.sh;
+  }
+fi;
+
+if grubfm_get --hide;
+then
+  menuentry $"Display all files" --class search {
+    grubfm_set --hide 0;
+    configfile ${prefix}/settings.sh;
+  }
+else
+  menuentry $"Hide non-bootable files" --class search {
+    grubfm_set --hide 1;
     configfile ${prefix}/settings.sh;
   }
 fi;

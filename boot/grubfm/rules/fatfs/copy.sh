@@ -16,7 +16,7 @@ function fatfs_opt {
   if regexp '[/\\:\*\?\$]' "${name}";
   then
     echo $"Bad file name.";
-    echo $"Press any key to back.";
+    echo $"Press any key to exit.";
   else
     set path="${dest_path}${name}";
     umount 9;
@@ -24,9 +24,7 @@ function fatfs_opt {
     echo $"Please wait ...";
     cp "${grubfm_file}" "9:/${path}";
     umount 9;
-    echo $"Press any key to back.";
   fi;
-  getkey;
   grubfm_open "${grubfm_file}";
 }
 
