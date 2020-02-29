@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-02-28 17:03\n"
+"PO-Revision-Date: 2020-02-29 03:27\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -220,8 +220,8 @@ msgstr "Dosya Bilgisi"
 msgid "File Info (${grubfm_name})"
 msgstr "Dosya Bilgisi (${grubfm_name})"
 
-msgid "File Info -- Press [ENTER] to back"
-msgstr "Dosya Bilgisi - Geri dönüş için [ENTER] tuşuna basın"
+msgid "File Info -- Press [ENTER] to exit"
+msgstr ""
 
 msgid "Type: ${grubfm_fileext}"
 msgstr "Tip: ${grubfm_fileext}"
@@ -262,14 +262,17 @@ msgstr "Kodlama: "
 msgid "Sort files by name"
 msgstr "Dosyaları isme göre sırala"
 
-msgid "Disable auto-run boot scripts"
-msgstr "Otomatik çalıştırma önyükleme komut dosyalarını devre dışı bırak"
+msgid "Do not sort files by name"
+msgstr ""
 
-msgid "Enable auto-run boot scripts"
-msgstr "Otomatik çalıştırma önyükleme komut dosyalarını etkinleştir"
+msgid "Disable secondary boot options menu"
+msgstr ""
 
-msgid "Display non-bootable files"
-msgstr "Önyüklenemeyen dosyaları görüntüle"
+msgid "Enable secondary boot options menu"
+msgstr ""
+
+msgid "Display all files"
+msgstr ""
 
 msgid "Hide non-bootable files"
 msgstr "Önyüklenemeyen dosyaları gizle"
@@ -379,8 +382,8 @@ msgstr "Adını girin"
 msgid "Bad file name."
 msgstr "Geçersiz dosya adı."
 
-msgid "Press any key to back."
-msgstr "Geri dönmek için herhangi bir tuşa basın."
+msgid "Press any key to exit."
+msgstr ""
 
 msgid "Please wait ..."
 msgstr "Lütfen bekleyin..."
@@ -388,8 +391,14 @@ msgstr "Lütfen bekleyin..."
 msgid "Reboot"
 msgstr "Yeniden Başlat"
 
+msgid "Reboot (R)"
+msgstr ""
+
 msgid "Halt"
 msgstr "Kapat"
+
+msgid "Halt (H)"
+msgstr ""
 
 msgid "File: "
 msgstr "Dosya: "
@@ -429,4 +438,25 @@ msgstr "↑ Sayfa Yukarı ↓ Sayfa Aşağı [ESC] Çıkış"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
 msgstr "↑ Sayfa Yukarı ↓ Sayfa Aşağı [e] Kodlama [ESC] Çıkış"
+
+msgid "FILE: %s (%s)"
+msgstr ""
+
+msgid "FILE: %s (%s) ENCODING: %s"
+msgstr ""
+
+msgid "Platform: %s-%s"
+msgstr ""
+
+msgid "Language: %s"
+msgstr ""
+
+msgid "GRUB version: %s"
+msgstr ""
+
+msgid "GRUB build date: %s"
+msgstr ""
+
+msgid "License: GNU GPLv3"
+msgstr ""
 
