@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-02-29 03:32\n"
+"PO-Revision-Date: 2020-02-29 03:40\n"
 
 msgid "Back"
 msgstr "返回"
@@ -269,10 +269,10 @@ msgid "Disable secondary boot options menu"
 msgstr "禁用次要引导选项菜单"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "启用次要引导选项菜单"
 
 msgid "Display all files"
-msgstr ""
+msgstr "显示所有文件"
 
 msgid "Hide non-bootable files"
 msgstr "隐藏不可启动的文件"
@@ -383,7 +383,7 @@ msgid "Bad file name."
 msgstr "错误的文件名。"
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "按任意键退出。"
 
 msgid "Please wait ..."
 msgstr "请稍候......"
@@ -392,13 +392,13 @@ msgid "Reboot"
 msgstr "重启"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "重启 (R)"
 
 msgid "Halt"
 msgstr "关机"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "关机 (H)"
 
 msgid "File: "
 msgstr "文件: "
@@ -440,23 +440,23 @@ msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
 msgstr "↑ 上一页  ↓ 下一页  [e] 编码设置  [ESC] 退出"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "文件: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "文件: %s (%s) 编码: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "平台: %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "语言: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "GRUB 版本: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "GRUB 构建日期: %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "许可证: GNU GPLv3"
 
