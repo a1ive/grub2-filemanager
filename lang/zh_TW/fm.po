@@ -1,19 +1,29 @@
 msgid ""
 msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: grub2-filemanager\n"
 "X-Crowdin-Language: zh-TW\n"
 "X-Crowdin-File: /master/lang/fm.pot\n"
 "Project-Id-Version: grub2-filemanager\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Last-Translator: Reagan (a1ive)\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2019-11-12 09:23\n"
+"PO-Revision-Date: 2020-02-29 03:40\n"
 
 msgid "Back"
 msgstr "返回"
+
+msgid "Disabled"
+msgstr "已禁用"
+
+msgid "Enabled"
+msgstr "已啟用"
+
+msgid "Not available"
+msgstr "不可用"
+
+msgid "Set BGRT (Windows boot logo)"
+msgstr "設定 BGRT (Windows 啟動圖片)"
 
 msgid "Open As Grub2 Menu"
 msgstr "作為 Grub2 選單開啟"
@@ -34,10 +44,10 @@ msgid "Open As Lua Script"
 msgstr "作為 Lua 指令碼載入"
 
 msgid "Open As Python Script"
-msgstr "作為 Python 指令碼載入"
+msgstr "執行 Python 指令碼"
 
 msgid "Open As EFI Application"
-msgstr "作為 EFI 可執行檔案運行"
+msgstr "作為 EFI 可執行檔案執行"
 
 msgid "Load UEFI driver"
 msgstr "載入 UEFI 驅動"
@@ -60,17 +70,23 @@ msgstr "使用 GRUB4DOS 載入為軟盤"
 msgid "Boot Floppy Image (memdisk)"
 msgstr "使用 memdisk 載入為軟盤"
 
+msgid "Boot Floppy Image (map)"
+msgstr "啟動軟盤映象 (map)"
+
 msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "使用 GRUB4DOS 載入為硬碟"
 
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr "使用 memdisk 載入為硬碟"
 
+msgid "Boot Hard Drive Image (map)"
+msgstr "啟動硬碟映象 (map)"
+
 msgid "Boot IMG (map)"
-msgstr "啓動 IMG (map)"
+msgstr "啟動 IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr "啓動 IMG (map --mem)"
+msgstr "啟動 IMG (map --mem)"
 
 msgid "Open As Archiver"
 msgstr "作為壓縮檔案開啟"
@@ -91,19 +107,19 @@ msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "使用 NTBOOT 載入 Windows NT6.x VHD/VHDX"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "啓動 RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr "啟動 RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "啓動 RamOS VHD (GRUB4DOS map --mem)"
+msgstr "啟動 RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr "使用 vboot 載入 VHD"
+msgstr "使用 vboot 啟動 VHD"
 
 msgid "Boot VHD (map)"
-msgstr "啓動 VHD (map)"
+msgstr "啟動 VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr "啓動 VHD (map --mem)"
+msgstr "啟動 VHD (map --mem)"
 
 msgid "Mount ISO"
 msgstr "檢視 ISO 內容"
@@ -117,17 +133,29 @@ msgstr "使用 memdisk 載入 ISO"
 msgid "Boot ISO (Easy2Boot)"
 msgstr "使用 Easy2Boot 方式載入 ISO"
 
+msgid "Boot ISO (loopback.cfg)"
+msgstr "啟動 ISO (loopback.cfg)"
+
+msgid "Boot ISO (partnew)"
+msgstr "啟動 ISO (partnew)"
+
 msgid "Install Windows (x64)"
 msgstr "安裝 Windows (x64)"
 
 msgid "Install Windows (x86)"
 msgstr "安裝 Windows (x86)"
 
+msgid "Install Windows without autounattend.xml"
+msgstr "不載入 autounattend.xml 安裝 Windows"
+
+msgid "Load ${xml_name}"
+msgstr "載入 ${xml_name}"
+
 msgid "Boot ISO (map)"
-msgstr "啓動 ISO (map)"
+msgstr "啟動 ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr "啓動 ISO (map --mem)"
+msgstr "啟動 ISO (map --mem)"
 
 msgid "Boot EFI Files"
 msgstr "僅載入 EFI 檔案"
@@ -136,10 +164,10 @@ msgid "Open As iPXE Script"
 msgstr "作為 iPXE 指令碼開啟"
 
 msgid "Open As Font"
-msgstr "載入pf2字型檔檔案"
+msgstr "載入 pf2 字型檔檔案"
 
 msgid "Insert Grub2 Module"
-msgstr "載入Grub2 模組"
+msgstr "載入 Grub2 模組"
 
 msgid "Chainload BIOS Boot Sector"
 msgstr "作為 BIOS 引導扇區載入"
@@ -162,14 +190,59 @@ msgstr "作為 multiboot2 核心載入"
 msgid "Boot Linux Kernel"
 msgstr "作為 Linux 核心載入"
 
+msgid "User menu"
+msgstr "使用者選單"
+
 msgid "Text Viewer"
 msgstr "文字檢視"
 
 msgid "Hex Viewer"
 msgstr "十六進位制檢視"
 
+msgid "Rename"
+msgstr "重新命名"
+
+msgid "Copy to ..."
+msgstr "複製到 ..."
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "Paste here"
+msgstr "貼上到這裡"
+
+msgid "Cancel"
+msgstr "取消"
+
 msgid "File Info"
 msgstr "檢視檔案資訊"
+
+msgid "File Info (${grubfm_name})"
+msgstr "檔案資訊 (${grubfm_name})"
+
+msgid "File Info -- Press [ENTER] to exit"
+msgstr "檔案資訊 -- 按 [ENTER] 返回"
+
+msgid "Type: ${grubfm_fileext}"
+msgstr "型別： ${grubfm_fileext}"
+
+msgid "Path:"
+msgstr "路徑:"
+
+msgid "Size: ${hsize} (${size})"
+msgstr "大小: ${hsize} (${size})"
+
+msgid "Offset on disk: ${offset}"
+msgstr "磁碟偏移: ${offset}"
+
+msgid "File is contiguous."
+msgstr "文件是連續的。"
+
+msgid "File is non-contiguous. (${frag} fragments)"
+msgstr "文件不連續。 (${frag} 個片段)"
+
+msgid "Language"
+msgstr "語言"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "在啟動時禁用 PatchGuard 和 DSE"
@@ -180,38 +253,62 @@ msgstr "安裝覆蓋安全策略"
 msgid "Disable shim validation and reboot"
 msgstr "禁用 shim 安全啟動驗證並重啟"
 
+msgid "Disable graphics mode (T)"
+msgstr "禁用圖形模式 (T)"
+
 msgid "Encoding: "
 msgstr "編碼設定: "
 
 msgid "Sort files by name"
 msgstr "按檔名排序"
 
-msgid "Resolution (R): "
-msgstr "解析度設定(R): "
+msgid "Do not sort files by name"
+msgstr "取消按名稱排序檔案"
+
+msgid "Disable secondary boot options menu"
+msgstr "禁用次要引導選項選單"
+
+msgid "Enable secondary boot options menu"
+msgstr "啟用次要引導選項選單"
+
+msgid "Display all files"
+msgstr "顯示所有檔案"
+
+msgid "Hide non-bootable files"
+msgstr "隱藏不可啟動的檔案"
+
+msgid "Resolution (R): ${mode_current}"
+msgstr "解析度(R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr "啟用ESC (不推薦)"
+msgstr "啟用 ESC (不推薦)"
 
 msgid "Enable debug messages"
-msgstr "顯示偵錯資訊"
+msgstr "顯示除錯資訊"
 
 msgid "Show hidden drives"
-msgstr "顯示隱藏的磁碟機"
+msgstr "顯示隱藏磁碟"
 
 msgid "Load extra modules"
-msgstr "載入額外的模組"
+msgstr "載入額外模組"
+
+msgid "Enable case-sensitive filenames"
+msgstr "啟用大小寫敏感檔名"
+
+msgid "Disable case-sensitive filenames"
+msgstr "禁用大小寫敏感檔名"
 
 msgid "Load AHCI Driver"
-msgstr "載入 AHCI 驅動程式"
+msgstr "載入 AHCI 驅動"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr "裝載加密卷 (luks 和 geli)"
+msgstr "掛載加密卷 (LUKS 和 geli)"
 
 msgid "Enable serial terminal"
-msgstr "啟用串列終端"
+msgstr "啟用序列終端"
 
 msgid "EFI Firmware Setup"
-msgstr "EFI固件設定"
+msgstr "EFI韌體設定"
 
 msgid "GRUB Console"
 msgstr "GRUB 命令列"
@@ -220,25 +317,34 @@ msgid "EFI Shell"
 msgstr "EFI Shell"
 
 msgid "UEFI DUET"
-msgstr "UEFI DUET"
+msgstr "UEFI模擬"
 
-msgid "Load External Menu: "
-msgstr "載入外接選單: "
+msgid "Load External Menu on (${device}) ${info}"
+msgstr "載入外部選單 (${device}) ${info}"
 
-msgid "Boot Windows on "
-msgstr "啟動 Windows : "
+msgid "Load Windows Boot Manager on ${device} ${info}"
+msgstr "載入 ${device} ${info} 上的 Windows 啟動管理器"
 
-msgid "Boot macOS on ${device}"
-msgstr "啟動 macOS : "
+msgid "Boot macOS on ${device} ${info}"
+msgstr "啟動 ${device} ${info} 上的 macOS"
 
-msgid " on "
-msgstr " : "
+msgid "Boot ${winver} on ${device} ${info}"
+msgstr "啟動 ${device} ${info} 上的 ${winver}"
+
+msgid "Boot ${device} ${info}"
+msgstr "啟動 ${device} ${info}"
 
 msgid "Boot ISO (Loopback)"
 msgstr "作為 Loopback ISO 啟動"
 
 msgid "Boot ISO (ISOLINUX)"
 msgstr "作為 ISOLINUX ISO 啟動"
+
+msgid "Detecting ISO type ..."
+msgstr "正在檢測 ISO 型別..."
+
+msgid "Boot ${distro} From ISO"
+msgstr "從 ISO 啟動 ${distro}"
 
 msgid "Boot "
 msgstr "啟動 "
@@ -247,10 +353,19 @@ msgid " From ISO"
 msgstr " ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr "請輸入登入使用者名。預設:user 超級使用者:root Devuan:devuan"
+msgstr "請輸入登入使用者名稱。預設:user 超級使用者:root Devuan:devuan"
+
+msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
+msgstr "警告：即將刪除 (${grubfm_disk}，4) 上的所有資料"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr "警告：即將刪除(hd0,4)的分區資料。"
+msgstr "警告：即將刪除(hd0,4)的分割槽資料。"
+
+msgid "WARNING: Will delete ${grubfm_file}"
+msgstr "警告：即將刪除 ${grubfm_file}。"
+
+msgid "Press [1] to continue. Press any other key to return."
+msgstr "按 [1] 繼續。按下任何其他鍵返回。"
 
 msgid "Press [Y] to continue. Press [N] to quit."
 msgstr "按[Y]繼續。按[N]退出。"
@@ -261,11 +376,29 @@ msgstr "已取消。"
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
 msgstr "檔案路徑包含空格。這可能會造成問題。按任意鍵繼續。"
 
+msgid "Enter the name"
+msgstr "請在此輸入名稱"
+
+msgid "Bad file name."
+msgstr "錯誤的檔名。"
+
+msgid "Press any key to exit."
+msgstr "按下任意鍵返回。"
+
+msgid "Please wait ..."
+msgstr "請稍候......"
+
 msgid "Reboot"
-msgstr "重啓"
+msgstr "重啟"
+
+msgid "Reboot (R)"
+msgstr "重新啟動 (R)"
 
 msgid "Halt"
 msgstr "關機"
+
+msgid "Halt (H)"
+msgstr "關機 (H)"
 
 msgid "File: "
 msgstr "檔案: "
@@ -279,15 +412,51 @@ msgstr "F1 - 幫助"
 msgid "F2 - File Manager"
 msgstr "F2 - 檔案管理器"
 
-msgid "F3 - Boot"
-msgstr "F3 - 啟動選單"
+msgid "F3 - OS Detect"
+msgstr "F3 - 檢測並啟動作業系統"
 
 msgid "F4 - Settings"
 msgstr "F4 - 設定"
 
-msgid "F5 - Power Off"
-msgstr "F5 - 關機"
+msgid "F5 - PXE Boot Menu"
+msgstr "F5 - PXE 啟動選單"
 
-msgid "LCtrl + LAlt + F12 - Take Screenshots (EFI)"
-msgstr "LCtrl + LAlt + F12 - 螢幕截圖 (EFI)"
+msgid "F6 - Power Off"
+msgstr "F6 - 關機"
+
+msgid "[A] About GRUB2-FileManager"
+msgstr "[A] 關於 GRUB2-FileManager"
+
+msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
+msgstr "Ctrl+l/Ctrl+r - 滾動選單項的文字"
+
+msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
+msgstr "LCtrl+LAlt+F12 - 螢幕截圖 (EFI)"
+
+msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
+msgstr "↑ 上一頁  ↓ 下一頁  [ESC] 退出"
+
+msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
+msgstr "↑ 上一頁  ↓ 下一頁  [e] 編碼設定  [ESC] 退出"
+
+msgid "FILE: %s (%s)"
+msgstr "檔案: %s (%s)"
+
+msgid "FILE: %s (%s) ENCODING: %s"
+msgstr "檔案: %s (%s) 編碼: %s"
+
+msgid "Platform: %s-%s"
+msgstr ""
+
+msgid "Language: %s"
+msgstr "語言: %s"
+
+msgid "GRUB version: %s"
+msgstr ""
+
+msgid "GRUB build date: %s"
+msgstr ""
+
+msgid "License: GNU GPLv3"
+msgstr ""
 

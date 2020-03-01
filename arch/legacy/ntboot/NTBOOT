@@ -31,18 +31,18 @@ exit
 
 ::call :CHECK_FILE %FILE1% %FILE2%
 :CHECK_NEXT_FILE
-set tmp=%2
+set tmp=%~2
 if not exist tmp && goto :input_file
 shift
-if "%0"=="%1" && goto :CHECK_NEXT_FILE
-
+if "%~0"=="%~1" && goto :CHECK_NEXT_FILE
+:: Check / Find Files
 :CHECK_FILE
-echo Checking file $[0107]%1 ...
-set file=%1
+echo -e Checking file $[0107]%~1 ...
+set file=%~1
 set tmp=%~pnx1
 ::如果路径是以"("开头的,则是一个完整的路径,不再进行查找.
 if not "%file:~0,1%"=="(" && goto :_FIND1
-cat --length=0 %1 || goto :CHECK_NEXT_FILE
+cat --length=0 %~1 > nul && root %~d1 > nul ! cat --length=0 %~pnx1 > nul || find --set-root cat --length=0 %~pnx1 > nul || goto :CHECK_NEXT_FILE
 root %~d1
 goto :eof
 
@@ -55,10 +55,14 @@ goto :eof
 echo
 echo File not found or not support: $[0105]%file%
 echo 
-echo Please enter a new path to the file: $[0104]%~x1
+echo -e Please enter a new path to the file: $[0104]%~x1
 set file=
 set /p:5 file=NTBOOT>
 if not exist file goto :exit
+echo -n > (md)0x28150+28
+echo %file% > (md)0x28150+28
+cat (md)0x28150+28 | set tmp=
+if not exist tmp && goto :input_file
 set tmp=%~x1
 set tmp=%tmp:~0,3%
 call Fn.11 "%file%" "%tmp%" || goto :input_file
@@ -70,8 +74,8 @@ exit
 :PE1
 ::检测需要的模块
 insmod %NTBOOT%.MOD/NTBOOT.MOD || call :error Missing module NTBOOT.MOD...
-::映射NTBOOT启动镜像
-set /u file=NTBOOT.%1
+:: Map NTBOOT boot image
+set /u file=NTBOOT.%~1
 map --mem %NTBOOT%.MOD/%file% (rd) || call :error Missing module %file%...
 
 :NTBOOT_START
@@ -80,13 +84,13 @@ if not exist WinDir set WinDir=WINDOWS
 set WinDir=WINDOWS
 set boot_cfg=
 shift
-set file=%1
+set file=%~1
 set tmp=/%WinDir%
 ::如果没有加参数或参数是一个磁盘分区
 if not exist file && goto %0.HDD
 if "%~d1"=="%1" && goto %0.HDD
 ::以上是NT5或NT6硬盘启动
-if /i "%0"=="pe1" && set PDIR=WXPE && goto :PE1_BOOT
+if /i "%~0"=="pe1" && set PDIR=WXPE && goto :PE1_BOOT
 call :CHECK_FILE %file%
 ::指定启动文件
 set NTLDR=
@@ -96,12 +100,12 @@ set NTLDR=%3 ;; shift /2 ;; shift /2
 goto %0%~x1_BOOT
 
 :NT5.HDD
-echo Searching NT5.X on Hard Disk(/%WinDir%)
-if exist file && root %1 ! find --set-root --devices=h /%WinDir%/system32/ntoskrnl.exe cat --locate=\0\x35\0\x2E /%WinDir%/system32/version.dll
+echo -e Searching NT5.X on Hard Disk(/%WinDir%)
+if exist file && root %~1 ! find --set-root --devices=h /%WinDir%/system32/ntoskrnl.exe cat --locate=\0\x35\0\x2E /%WinDir%/system32/version.dll
 goto :NT5_BOOT
 :NT6.HDD
-echo Searching NT6.X on Hard Disk(/%WinDir%)
-if exist file && root %1 ! find --set-root --devices=h /%WinDir%/system32/winload.exe
+echo -e Searching NT6.X on Hard Disk(/%WinDir%)
+if exist file && root %~1 ! find --set-root --devices=h /%WinDir%/system32/winload.exe
 goto :NT6_BOOT
 
 :NT6.VHDX_BOOT
@@ -156,15 +160,17 @@ exit
 echo -e @echo off\r\ncd ?:%~p1\r\ncd ?:%~pnx1 > (rd)/NATIVE.CFG
 ################################################################
 cat --locate=/ --replace=\\ --length=256 (rd)/NATIVE.CFG
-if /i "%file%"=="%~x1" && set file=/boot/imgs/boot%1
+if /i "%file%"=="%~x1" && set file=/boot/imgs/boot%~1
 :PE1.OPTIONS
-if /i "%2"=="PDIR" && set PDIR=%3
-if /i "%2"=="OPTIONS" && set option=%~3
-if /i "%2"=="NTPATH" && set NTPATH=%3
-if /i "%2"=="NTLDR" && set NTLDR=%3
+if /i "%~2"=="PDIR" && set PDIR=%~3
+if /i "%~2"=="OPTIONS" && set option=%~3
+if /i "%~2"=="NTPATH" && set NTPATH=%~3
+if /i "%~2"=="NTLDR" && set NTLDR=%~3
+
 shift 2
 shift 2
-if not "%2"=="" goto :PE1.OPTIONS
+if not "%~2"=="" goto :PE1.OPTIONS
+
 call :CHECK_FILE %file% %file:~0,-1%_
 if not exist NTPATH && set NTPATH=%tmp%
 call :NATIVE_CFG %NTPATH%
@@ -188,7 +194,7 @@ goto :BOOT
 :BOOT
 if exist BOOT && %BOOT%
 map --mem (rd)+1 %BOOTDEV%
-map --unmap=0xfb,0xfc,0xfe,0xff,0xcd
+map --unmap=1:0xfc,0xfe,0xff
 map --rehook
 call :CHECK_FILE %NTLDR%
 chainloader %NTLDR%
@@ -198,19 +204,21 @@ exit
 
 :BCD_CFG_VHD#WIM
 ::本软盘BCD对应的特定语句,修改默认启动项
-write --offset=0x343C (rd)/BOOT/BCD %1
-write --offset=0x35DC (rd)/BOOT/BCD %1
+write --offset=0x343C (rd)/BOOT/BCD %~1
+write --offset=0x35DC (rd)/BOOT/BCD %~1
 ::未公开功能。把变量的值ASCII字符串使用UNICODE编码放到内存0x40000位置。编码方式\xH1\0\XH2\0.....
+#bugfix so can have spaces in name - remove \ escape characters
+echo -e %tmp% | set tmp=
 WENV get tmp=0x40000
-::替换路径字符中的/为\
+::Replace characters in the path / is \
 cat --locate=\\x2F --replace=\\x5C (md)0x200+3
-::本软盘BCD对应的特定语句，修改文件路径
-cat --locate=\\%2_ --number=2 (rd)/BOOT/BCD | call :BCD_CFG_PATH=
+:: Specific statement of the BCD corresponding floppy disk, modify the file path
+cat --locate=\\%~2_ --number=2 (rd)/BOOT/BCD | call :BCD_CFG_PATH=
 exit
 
 :BCD_CFG_PATH
-WENV call write --offset=0x%1 (rd)/BOOT/BCD *0x40000$
-WENV call write --offset=0x%2 (rd)/BOOT/BCD *0x40000$
+WENV call write --offset=0x%~1 (rd)/BOOT/BCD *0x40000$
+WENV call write --offset=0x%~2 (rd)/BOOT/BCD *0x40000$
 exit
 
 :NT5_RAM_CFG
@@ -229,9 +237,9 @@ set /a cur_drv=*0x82A0&0x7F
 set /a cur_pri=*0x829C>>16&0xFFFF
 clear
 echo
-echo   Will Boot NT5.X From $[0102](hd%cur_drv%,%cur_pri%)%tmp%
+echo -e $[0105]  Will Boot NT5.X From $[0102](hd%cur_drv%,%cur_pri%)$[0106]%tmp%
 echo
-echo   boot: %NTLDR%
+echo -e $[0105]  boot: $[0102]%NTLDR%
 echo
 call :GET_ARC_PATH
 shift 1
@@ -251,14 +259,14 @@ set BOOTDEV=(0xfd)
 goto :BOOT
 
 :NT6_NO_CONFIG
-set /a offset=0x%1+0x14
+set /a offset=0x%~1+0x14
 write --offset=%offset% (rd)/BOOT/BCD \0
 exit
 
 :NT6_BOOT
 if not exist NTLDR && set NTLDR=(fd0)/BOOTMGR
 ::附加参数
-if /i "%2"=="NODETECTHAL" && cat --locate=26000010 (rd)/BOOT/BCD | call :NT6_NO_CONFIG=
+if /i "%~2"=="NODETECTHAL" && cat --locate=26000010 (rd)/BOOT/BCD | call :NT6_NO_CONFIG=
 ::shift 2
 ::if not "%2"=="" goto :PE1.OPTIONS
 ::获取当前磁盘号
@@ -266,9 +274,9 @@ set /a cur_drv=*0x82A0&0x7F
 set /a cur_pri=*0x829C>>16&0xFFFF
 clear
 echo
-echo   Will Boot NT6.X From (hd%cur_drv%,%cur_pri%)%tmp%
+echo -e $[0105]  Will Boot NT6.X From $[0102](hd%cur_drv%,%cur_pri%)$[0106]%tmp%
 echo
-echo   boot: %NTLDR%
+echo -e $[0105]  boot: $[0102]%NTLDR%
 echo
 if exist boot_cfg && call %boot_cfg%
 
