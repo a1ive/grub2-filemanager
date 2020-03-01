@@ -1,6 +1,7 @@
 [type]
 icon = iso
 display = 1
+boot = net/iso.sh
 
 [0]
 menu = iso/loop.sh
