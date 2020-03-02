@@ -1,5 +1,14 @@
 source ${prefix}/func.sh;
 
+stat --set=frag -c -q "${grubfm_file}";
+if [ "${frag}" != "1" ];
+then
+  echo $"ERROR:"
+  echo $"File is non-contiguous. (${frag} fragments)";
+  sleep 3;
+  return;
+fi;
+
 if [ -d (${grubfm_disk},4) ];
 then
   echo $"WARNING: Will erase ALL data on (${grubfm_disk},4)";

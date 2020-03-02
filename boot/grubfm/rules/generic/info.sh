@@ -37,20 +37,21 @@ menuentry $"Offset on disk: ${offset}" --class hdd {
   grubfm_open "${grubfm_file}";
 }
 
+set frag=0;
 probe --set=fs -f "${grubfm_device}";
 if [ "${fs}" = "fat" -o "${fs}" = "exfat" -o "${fs}" = "ntfs" ];
 then
-  stat --set=frag -c "${grubfm_file}";
-  if [ "${frag}" = "1" ];
-  then
-    menuentry $"File is contiguous." --class frag {
-      grubfm_open "${grubfm_file}";
-    }
-  fi;
-  if [ "${frag}" -gt 1 ];
-  then
-    menuentry $"File is non-contiguous. (${frag} fragments)" --class frag {
-      grubfm_open "${grubfm_file}";
-    }
-  fi;
+  stat --set=frag -c -q "${grubfm_file}";
+fi;
+if [ "${frag}" = "1" ];
+then
+  menuentry $"File is contiguous." --class frag {
+    grubfm_open "${grubfm_file}";
+  }
+fi;
+if [ "${frag}" -gt 1 ];
+then
+  menuentry $"File is non-contiguous. (${frag} fragments)" --class frag {
+    grubfm_open "${grubfm_file}";
+  }
 fi;
