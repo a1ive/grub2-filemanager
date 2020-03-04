@@ -35,13 +35,13 @@ then
     getenv -t uint8 SecureBoot grub_secureboot;
     if [ "${grub_secureboot}" = "0" ];
     then
-        export grub_secureboot=$"Disabled";
+        export grub_secureboot="Disabled";
     else
-        export grub_secureboot=$"Enabled";
+        export grub_secureboot="Enabled";
     fi;
 else
     search -s -f -q /fmldr;
-    export grub_secureboot=$"Not available";
+    export grub_secureboot="Not available";
 fi;
 
 if cpuid -l;

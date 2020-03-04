@@ -102,15 +102,6 @@ else
   }
 fi;
 
-if [ -z "${grubfm_efiguard}" ];
-then
-  menuentry $"Disable PatchGuard and DSE at boot time" --class konboot {
-    efiload ${prefix}/EfiGuardDxe.efi;
-    export grubfm_efiguard=1;
-    configfile ${prefix}/settings.sh;
-  }
-fi;
-
 if [ "${grub_platform}" = "efi" ];
 then
   getenv -t uint8 SecureBoot secureboot;
@@ -118,10 +109,10 @@ then
   then
     menuentry $"Install override security policy" --class uefi {
       sbpolicy --install;
+      fucksb --install;
+      fucksb --off;
       sleep 2;
-    }
-    menuentry $"Disable shim validation and reboot" --class konboot {
-      moksbset;
+      configfile ${prefix}/settings.sh;
     }
   fi;
 fi;
