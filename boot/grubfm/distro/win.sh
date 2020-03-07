@@ -39,6 +39,7 @@ function win_isoboot {
                newc:autounattend.xml:"${2}" \
                newc:boot.wim:"${1}";
     fi;
+    drivemap -s hd0 hd1;
     boot;
   else
     if [ -z "${2}" ];
