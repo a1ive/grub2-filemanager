@@ -109,7 +109,7 @@ then
   then
     menuentry $"Install override security policy" --class uefi {
       sbpolicy --install;
-      fucksb --install;
+      fucksb -i -b;
       fucksb --off;
       sleep 2;
       configfile ${prefix}/settings.sh;
