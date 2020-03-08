@@ -1,4 +1,2 @@
-background_image "${grubfm_file}";
-echo -n "Press [ESC] to continue...";
-getkey;
-background_image ${prefix}/images/black.png
+set bmp_path="${grubfm_file}";
+lua ${prefix}/rules/png/view.lua;
