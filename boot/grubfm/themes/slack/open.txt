@@ -46,7 +46,7 @@ terminal-box: "term_bkg_*.png"
     + image {file = "dock/space.png"}
     + vbox {
         + label {text = "[F2]" color = "#ffffff"}
-        + image {file = "dock/iso.png"}
+        + image {file = "dock/boot.png"}
     }
     + image {file = "dock/space.png"}
     + vbox {
@@ -56,7 +56,7 @@ terminal-box: "term_bkg_*.png"
     + image {file = "dock/space.png"}
     + vbox {
         + label {text = "[F4]" color = "#ffffff"}
-        + image {file = "dock/boot.png"}
+        + image {file = "icons/search_hdd.png"}
     }
     + image {file = "dock/space.png"}
     + vbox {
