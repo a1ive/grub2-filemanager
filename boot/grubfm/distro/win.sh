@@ -39,6 +39,9 @@ function win_isoboot {
                newc:autounattend.xml:"${2}" \
                newc:boot.wim:"${1}";
     fi;
+    drivemap -s hd0 hd1;
+    set gfxmode=1920x1080,1366x768,1024x768,800x600,auto;
+    terminal_output gfxterm;
     boot;
   else
     if [ -z "${2}" ];

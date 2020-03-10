@@ -320,6 +320,14 @@ function iso_detect {
     export src=freebsd;
     return;
   fi;
+  if [ -f (loop)/boot/grub/k-x86 -o -f (loop)/boot/grub/k-x86_64 ];
+  then
+    export linux_extra="isoloop=${grubfm_path}";
+    export icon=gentoo;
+    export distro="Kaspersky Rescue Disk";
+    export src=krd;
+    return;
+  fi;
 }
 
 echo $"Detecting ISO type ...";

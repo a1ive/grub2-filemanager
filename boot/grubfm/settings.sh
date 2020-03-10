@@ -65,12 +65,12 @@ fi;
 
 if [ "${grubfm_disable_qsort}" != "1" ];
 then
-  menuentry $"Sort files by name" --class sort {
+  menuentry $"Do not sort files by name" --class sort {
     export grubfm_disable_qsort=1;
     configfile ${prefix}/settings.sh;
   }
 else
-  menuentry $"Do not sort files by name" --class sort {
+  menuentry $"Sort files by name" --class sort {
     unset grubfm_disable_qsort;
     configfile ${prefix}/settings.sh;
   }
@@ -102,15 +102,6 @@ else
   }
 fi;
 
-if [ -z "${grubfm_efiguard}" ];
-then
-  menuentry $"Disable PatchGuard and DSE at boot time" --class konboot {
-    efiload ${prefix}/EfiGuardDxe.efi;
-    export grubfm_efiguard=1;
-    configfile ${prefix}/settings.sh;
-  }
-fi;
-
 if [ "${grub_platform}" = "efi" ];
 then
   getenv -t uint8 SecureBoot secureboot;
@@ -118,10 +109,10 @@ then
   then
     menuentry $"Install override security policy" --class uefi {
       sbpolicy --install;
+      fucksb -i -b;
+      fucksb --off;
       sleep 2;
-    }
-    menuentry $"Disable shim validation and reboot" --class konboot {
-      moksbset;
+      configfile ${prefix}/settings.sh;
     }
   fi;
 fi;

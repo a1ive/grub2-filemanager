@@ -5,7 +5,7 @@ then
 fi
 
 i=0
-for lang in zh_CN zh_TW en_US tr_TR de_DE vi_VN ru_RU he_IL
+for lang in zh_CN zh_TW en_US tr_TR de_DE vi_VN ru_RU he_IL es_ES
 do
     if [ -d "releases" ]
     then

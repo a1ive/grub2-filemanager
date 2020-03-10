@@ -24,5 +24,7 @@ regexp --set=1:grubfm_dir '^(.*/).*$' "${grubfm_path}";
 regexp --set=1:grubfm_device '^\(([0-9a-zA-Z,]+)\)/.*' "${grubfm_file}";
 regexp --set=1:grubfm_disk '(hd[0-9]+),msdos[1-3]' "${grubfm_device}";
 regexp --set=1:grubfm_name '^.*/(.*)$' "${grubfm_file}";
+unset grubfm_filename;
+unset grubfm_fileext;
 regexp --set=1:grubfm_filename '^(.*)\.(.*)$' "${grubfm_name}";
 regexp --set=1:grubfm_fileext '^.*\.(.*)$' "${grubfm_name}";

@@ -3,13 +3,6 @@ source ${prefix}/func.sh;
 probe --set=fs -f "${grubfm_device}";
 if [ "${fs}" != "fat" -a "${fs}" != "exfat" -a "${fs}" != "ntfs" ];
 then
-  set grubfm_test=0;
-  return;
-fi;
-stat --set=frag -c "${grubfm_file}";
-if [ "${frag}" != "1" ];
-then
-  set grubfm_test=0;
   return;
 fi;
 

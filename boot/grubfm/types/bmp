@@ -2,6 +2,12 @@
 icon = png
 
 [0]
+menu = png/view.sh
+title = "Open As Image"
+icon = png
+enable = all
+
+[1]
 menu = bmp/bgrt.sh
 title = "Set BGRT (Windows boot logo)"
 icon = png
