@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 01:53\n"
+"PO-Revision-Date: 2020-03-10 01:54\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -323,16 +323,16 @@ msgid "Load External Menu on (${device}) ${info}"
 msgstr "Cargar menú externo en (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Cargar el boot manager de Windows en ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "Arrancar macOS en ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "Arrancar ${winver} en ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "Arrancar ${device} ${info}"
 
 msgid "Boot ISO (Loopback)"
 msgstr ""
