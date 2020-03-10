@@ -8,157 +8,157 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-08 06:43\n"
+"PO-Revision-Date: 2020-03-10 01:54\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Atrás"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Deshabilitado"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Habilitado"
 
 msgid "Not available"
-msgstr ""
+msgstr "No disponible"
 
 msgid "Set BGRT (Windows boot logo)"
 msgstr ""
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Abrir como menú grub2"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Abrir como Abrir como menú syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Abrir como menu pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Abrir como menú GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Abrir como menú GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Abrir como Script Lua"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Abrir como Script Python"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Abrir como aplicación EFI"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "Cargar driver UEFI"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "Abrir como script de shell EFI"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "Abrir como imagen"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "Presione [ESC] para continuar..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Montar imagen"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Arrancar imagen de disquete (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Imagen de disquete de arranque (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Arrancar imagen de disquete (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Arrancar imagen de disco duro (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Arrancar imagen de disco duro (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Arrancar imagen de disco duro (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Arrancar IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Arrancar IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Abrir como archivador"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Arrancar NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Arrancar NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Arrancar NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Arranxar NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Arrancar Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Arrancar RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Arrancar RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Arrancar VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Arrancar VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Arrancar VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Montar ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Arrancar ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Arrancar ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Arrancar ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Arrancar ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Arrancar ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Inatalar Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Inatalar Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Instalar Windows sin autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Cargar ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Arrancar ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Arrancar ISO (map --mem)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Arrancar archivos EFI"
 
 msgid "Open As iPXE Script"
 msgstr ""
@@ -308,31 +308,31 @@ msgid "Enable serial terminal"
 msgstr ""
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Configuración de firmware EFI"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "Consola de GRUB"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI Shell"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "Cargar menú externo en (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Cargar el boot manager de Windows en ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "Arrancar macOS en ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "Arrancar ${winver} en ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "Arrancar ${device} ${info}"
 
 msgid "Boot ISO (Loopback)"
 msgstr ""
