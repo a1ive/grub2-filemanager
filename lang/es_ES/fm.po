@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 01:34\n"
+"PO-Revision-Date: 2020-03-10 01:41\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -74,40 +74,40 @@ msgid "Boot Floppy Image (map)"
 msgstr "Arrancar imagen de disquete (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "Imagen de disco duro de arranque (GRUB4DOS)"
+msgstr "Arrancar imagen de disco duro (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "Imagen de disco duro de arranque (memdisk)"
+msgstr "Arrancar imagen de disco duro (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr "Imagen de disco duro de arranque (map)"
+msgstr "Arrancar imagen de disco duro (map)"
 
 msgid "Boot IMG (map)"
 msgstr "Arrancar IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Arrancar IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Abrir como archivador"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Arrancar NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Arrancar NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Arrancar NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Arranxar NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Arrancar Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Arrancar RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
 msgstr ""
