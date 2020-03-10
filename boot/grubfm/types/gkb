@@ -1,0 +1,8 @@
+[type]
+icon = gkb
+
+[0]
+menu = gkb/keymap.sh
+title = "Load Keymap"
+icon = gkb
+enable = all
