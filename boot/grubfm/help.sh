@@ -91,12 +91,7 @@ hiddenentry "[F1] HELP" --hotkey f1 {
 }
 
 hiddenentry "[F2] BOOT MENU" --hotkey f2 {
-  if [ -n "${grubfm_current_path}" ];
-  then
-    grubfm "${grubfm_current_path}";
-  else
-    grubfm;
-  fi;
+  configfile ${prefix}/menu.sh;
 }
 
 hiddenentry "[F3] FILE MANAGER" --hotkey f3 {
