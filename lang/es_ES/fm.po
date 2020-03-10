@@ -8,31 +8,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-08 06:43\n"
+"PO-Revision-Date: 2020-03-10 01:15\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Atrás"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Deshabilitado"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Habilitado"
 
 msgid "Not available"
-msgstr ""
+msgstr "No disponible"
 
 msgid "Set BGRT (Windows boot logo)"
 msgstr ""
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Abrir como menu grub2"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Abrir como menu syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Abrir como menu pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
 msgstr ""
