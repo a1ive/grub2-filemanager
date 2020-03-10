@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 01:15\n"
+"PO-Revision-Date: 2020-03-10 01:19\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -26,28 +26,28 @@ msgid "Set BGRT (Windows boot logo)"
 msgstr ""
 
 msgid "Open As Grub2 Menu"
-msgstr "Abrir como menu grub2"
+msgstr "Abrir como menú grub2"
 
 msgid "Open As Syslinux Menu"
-msgstr "Abrir como menu syslinux"
+msgstr "Abrir como Abrir como menú syslinux"
 
 msgid "Open As pxelinux Menu"
 msgstr "Abrir como menu pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Abrir como menú GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Abrir como menú GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Abrir como menú Lua Script"
 
 msgid "Open As Python Script"
 msgstr ""
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Abrir como aplicación EFI"
 
 msgid "Load UEFI driver"
 msgstr ""
