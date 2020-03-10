@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 02:52\n"
+"PO-Revision-Date: 2020-03-10 03:03\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -293,19 +293,19 @@ msgid "Load extra modules"
 msgstr "Cargar módulos extra"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Habilitar nombres de archivo sensibles a mayúsculas"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Desactivar nombres de archivo sensibles a mayúsculas"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Cargar driver AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Montar volúmenes cifrados (LUKS y geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Activar terminal serie"
 
 msgid "EFI Firmware Setup"
 msgstr "Configuración de firmware EFI"
@@ -458,5 +458,5 @@ msgid "GRUB build date: %s"
 msgstr "Fecha de compilación GRUB: %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "Licencia: GNU GPLv3"
 
