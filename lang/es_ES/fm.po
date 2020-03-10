@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 01:41\n"
+"PO-Revision-Date: 2020-03-10 01:53\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -110,55 +110,55 @@ msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
 msgstr "Arrancar RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Arrancar RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Arrancar VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Arrancar VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Arrancar VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Montar ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Arrancar ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Arrancar ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Arrancar ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Arrancar ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Arrancar ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Inatalar Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Inatalar Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Instalar Windows sin autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Cargar ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Arrancar ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Arrancar ISO (map --mem)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Arrancar archivos EFI"
 
 msgid "Open As iPXE Script"
 msgstr ""
@@ -308,19 +308,19 @@ msgid "Enable serial terminal"
 msgstr ""
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Configuración de firmware EFI"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "Consola de GRUB"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI Shell"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "Cargar menú externo en (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
 msgstr ""
