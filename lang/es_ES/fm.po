@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 01:54\n"
+"PO-Revision-Date: 2020-03-10 02:36\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -23,7 +23,7 @@ msgid "Not available"
 msgstr "No disponible"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "Establecer BGRT (logo de arranque de Windows)"
 
 msgid "Open As Grub2 Menu"
 msgstr "Abrir como menú grub2"
@@ -161,25 +161,25 @@ msgid "Boot EFI Files"
 msgstr "Arrancar archivos EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Abrir como script iPXE"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Abrir como fuente"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Insertar módulo Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Chainload sector de arranque de BIOS"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Chainload NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Chainload BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Abrir como GRUB4DOS MOD"
 
 msgid "Boot Multiboot Kernel"
 msgstr ""
@@ -335,127 +335,127 @@ msgid "Boot ${device} ${info}"
 msgstr "Arrancar ${device} ${info}"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Arrancar ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Arrancar ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "Detectando el tipo de ISO ..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "Arrancar ${distro} desde ISO"
 
 msgid "Boot "
-msgstr ""
+msgstr "Arrancar "
 
 msgid " From ISO"
-msgstr ""
+msgstr " Desde ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Por favor ingrese el nombre de usuario. Predeterminado:user Superusuario:root Debian:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "ADVERTENCIA: borrará TODOS los datos en (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "ADVERTENCIA: borrará TODOS los datos en (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "ADVERTENCIA: eliminará ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "Presione [1] para continuar. Presione cualquier otra tecla para regresar."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Presione [Y] para continuar. Presione [N] para salir."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Cancelado."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "La ruta del archivo contiene espacios.¡Esto puede causar problemas!Presione cualquier tecla para continuar."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "Introducir el nombre"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "Nombre de archivo incorrecto."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "Presiona cualquier tecla para salir."
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "Por favor espere ..."
 
 msgid "Reboot"
-msgstr ""
+msgstr "Reiniciar"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "Reiniciar (R)"
 
 msgid "Halt"
-msgstr ""
+msgstr "Apagar"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "Apagar (H)"
 
 msgid "File: "
-msgstr ""
+msgstr "Archivo: "
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "Teclas de acceso rápido"
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - Ayuda"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - Administrador de archivos"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - Detectar OS"
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - Configuración"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - Menú de arranque PXE"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - Apagado"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] Acerca de GRUB2-FileManager"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr ""
+msgstr "Ctrl+l/Ctrl+r - Desplazar el texto de la entrada del menú"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl+LAlt+F12 - Tomar capturas de pantalla (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ Página arriba  ↓ Página abajo  [ESC] Salir"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ Página arriba  ↓ Página abajo [e] Codificación  [ESC] Salir"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "ARCHIVO: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "ARCHIVO: %s (%s) CODIFICANDO: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "Plataforma: %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "Idioma: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "Versión GRUB: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "Fecha de compilación GRUB: %s"
 
 msgid "License: GNU GPLv3"
 msgstr ""
