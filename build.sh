@@ -170,7 +170,6 @@ grub-mkimage -d ./grub/i386-pc -c ./arch/legacy-pxe/pxefm.cfg -o pxefm -O i386-p
 grub-mkimage -d ./grub/i386-pc -c ./arch/legacy-pxe/httpfm.cfg -o httpfm -O i386-pc-pxe -prefix="(http)" pxe tftp newc http net efiemu biosdisk boot cat chain configfile cpio echo extcmd fat font gzio halt help iso9660 linux linux16 loopback ls lua lzopio memdisk minicmd newc normal ntfs ntldr part_gpt part_msdos search sleep tar test udf xzio
 mv pxefm ./tftpboot/pxefm.0  
 mv httpfm ./tftpboot/httpfm.0 
-cp ./arch/legacy-pxe/list.bat ./tftpboot
 cp ./arch/legacy/grub.exe ./tftpboot/app/legacy
 cp ./arch/x64-pxe/loadefi ./tftpboot/app/config
 cp ./arch/x64-pxe/loadfmx64.efi ./tftpboot/loadfmx64.efi.0

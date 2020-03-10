@@ -29,14 +29,6 @@ menuentry $"($net_default_server) AUTO MENU " --class net {
  netboot; grubfm_set --boot 1; clear_menu; html_list (http)/;
 }
 
-menuentry $"($net_default_server) dir.txt " --class net {
- netboot; grubfm_set --boot 1; clear_menu; lua $prefix/netlist.lua;
-}
-menuentry $"Connect to another server" --class net {
-echo Support IP or domain name
-echo please enter :; read net_default_server; export net_default_server; grubfm_set --boot 1; clear_menu; html_list (http)/;
-}
-
 menuentry $"netboot.xyz" --class net {
   set lang=en_US;
   terminal_output console;
