@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 02:36\n"
+"PO-Revision-Date: 2020-03-10 02:52\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -182,115 +182,115 @@ msgid "Open As GRUB4DOS MOD"
 msgstr "Abrir como GRUB4DOS MOD"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Arrancar Kernel Multiboot"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Arrancar Kernel Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Arrancar Kernel de Linux"
 
 msgid "User menu"
-msgstr ""
+msgstr "Menú del usuario"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Visor de texto"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Visor hexadecimal"
 
 msgid "Rename"
-msgstr ""
+msgstr "Renombrar"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Copiar a..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Borrar"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Pegar aquí"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 msgid "File Info"
-msgstr ""
+msgstr "Información del archivo"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Información del archivo (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Información del archivo -- Pulsa [ENTER] para salir"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Tipear: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Ruta:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Tamaño: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "Desplazamiento en el disco: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "El archivo es contiguo."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "El archivo no es contiguo. (${frag} fragmentos)"
 
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "Desactivar PatchGuard y DSE al arrancar"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Instalar anulación de la política de seguridad"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Deshabilitar la validación de shim y reiniciar"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Deshabilitar modo gráfico (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Codificando: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Ordenar archivos por nombre"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "No ordenar archivos por nombre"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Desactivar menú de opciones de arranque secundario"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Activar menú de opciones de arranque secundario"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Mostrar todos los archivos"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Ocultar archivos no arrancables"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Resolución (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Habilitar ESC (no recomendado)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Habilitar mensajes de depuración"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Mostrar unidades ocultas"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Cargar módulos extra"
 
 msgid "Enable case-sensitive filenames"
 msgstr ""
