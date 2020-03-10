@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 01:54\n"
+"PO-Revision-Date: 2020-03-10 01:59\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -335,22 +335,22 @@ msgid "Boot ${device} ${info}"
 msgstr "Arrancar ${device} ${info}"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Arrancar ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Arrancar ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "Detectando el tipo de ISO ..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "Arrancar ${distro} desde ISO"
 
 msgid "Boot "
-msgstr ""
+msgstr "Arrancar "
 
 msgid " From ISO"
-msgstr ""
+msgstr " Desde ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
 msgstr ""
