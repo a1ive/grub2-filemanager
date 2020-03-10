@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 01:25\n"
+"PO-Revision-Date: 2020-03-10 01:34\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -65,25 +65,25 @@ msgid "Mount Image"
 msgstr "Montar imagen"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Arrancar imagen de disquete (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Imagen de disquete de arranque (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Arrancar imagen de disquete (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Imagen de disco duro de arranque (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Imagen de disco duro de arranque (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Imagen de disco duro de arranque (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Arrancar IMG (map)"
 
 msgid "Boot IMG (map --mem)"
 msgstr ""
