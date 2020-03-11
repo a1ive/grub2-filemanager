@@ -18,7 +18,7 @@ videomode -l mode_list;
 videomode -c mode_current;
 
 menuentry $"Language" --class lang {
-  configfile ${prefix}/language.sh;
+  lua ${prefix}/language.lua;
 }
 
 if [ "${mode_current}" != "0x0" ];
