@@ -5,5 +5,9 @@ fi;
 
 videomode -c mode_current;
 
-source (${user})/boot.cfg;
+if [ -n "${user_menu}" ];
+then
+  source (${user_menu})/boot/grubfm/menu.cfg;
+fi;
+
 source ${prefix}/global.sh;

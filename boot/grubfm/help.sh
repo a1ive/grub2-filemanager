@@ -26,35 +26,55 @@ then
   menuentry $"Hotkeys" {
     echo;
   }
-
   menuentry $"F1 - Help" {
-    echo;
+	echo;
   }
+  if [ -n "${user_menu}" ];
+  then
+	  menuentry $"F2 - Boot Menu" {
+		echo;
+	  }
 
-  menuentry $"F2 - Boot Menu" {
-    echo;
-  }
+	  menuentry $"F3 - File Manager" {
+		echo;
+	  }
 
-  menuentry $"F3 - File Manager" {
-    echo;
-  }
+	  menuentry $"F4 - OS Detect" {
+		echo;
+	  }
 
-  menuentry $"F4 - OS Detect" {
-    echo;
-  }
+	  menuentry $"F5 - Settings" {
+		echo;
+	  }
 
-  menuentry $"F5 - Settings" {
-    echo;
-  }
+	  menuentry $"F6 - PXE Boot Menu" {
+		echo;
+	  }
 
-  menuentry $"F6 - PXE Boot Menu" {
-    echo;
-  }
+	  menuentry $"F7 - Power Off" {
+		echo;
+	  }
+  else
+	  menuentry $"F2 - File Manager" {
+		echo;
+	  }
 
-  menuentry $"F7 - Power Off" {
-    echo;
-  }
+	  menuentry $"F3 - OS Detect" {
+		echo;
+	  }
 
+	  menuentry $"F4 - Settings" {
+		echo;
+	  }
+
+	  menuentry $"F5 - PXE Boot Menu" {
+		echo;
+	  }
+
+	  menuentry $"F6 - Power Off" {
+		echo;
+	  }
+  fi;
   if [ "${mode_current}" != "0x0" ];
   then
     menuentry $"Ctrl+l/Ctrl+r - Scroll menu entry's text" {

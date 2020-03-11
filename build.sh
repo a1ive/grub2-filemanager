@@ -149,7 +149,8 @@ cp arch/legacy/duet64.iso build/boot/grubfm/
 cp arch/legacy/memdisk build/boot/grubfm/
 cp arch/legacy/ipxe.lkrn build/boot/grubfm/
 cp arch/legacy/*.gz build/boot/grubfm/
-cp boot.cfg build/boot.cfg
+
+
 cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..
@@ -160,5 +161,10 @@ rm build/core.img
 cp arch/legacy/MAP build/
 cp -r arch/legacy/ntboot/* build/
 
+# Demo BootMenu
+# mkdir -p build/boot/grubfm
+# cp menu.cfg build/boot/grubfm/menu.cfg
+
+ls -R build
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 rm -r build

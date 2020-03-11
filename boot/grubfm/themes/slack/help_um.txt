@@ -59,26 +59,31 @@ terminal-box: "term_bkg_*.png"
     + image {file = "dock/space.png"}
     + vbox {
         + label {text = "[F2]" color = "#ffffff"}
-        + image {file = "dock/fm.png"}
+        + image {file = "dock/boot.png"}
     }
     + image {file = "dock/space.png"}
     + vbox {
         + label {text = "[F3]" color = "#ffffff"}
-        + image {file = "dock/search_hdd.png"}
+        + image {file = "dock/fm.png"}
     }
     + image {file = "dock/space.png"}
     + vbox {
         + label {text = "[F4]" color = "#ffffff"}
-        + image {file = "dock/settings.png"}
+        + image {file = "dock/search_hdd.png"}
     }
     + image {file = "dock/space.png"}
     + vbox {
         + label {text = "[F5]" color = "#ffffff"}
-        + image {file = "dock/net.png"}
+        + image {file = "dock/settings.png"}
     }
     + image {file = "dock/space.png"}
     + vbox {
         + label {text = "[F6]" color = "#ffffff"}
+        + image {file = "dock/net.png"}
+    }
+    + image {file = "dock/space.png"}
+    + vbox {
+        + label {text = "[F7]" color = "#ffffff"}
         + image {file = "dock/logout.png"}
     }
 }
