@@ -13,8 +13,11 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+if [ -f "${theme_settings}" ];
+then
+  export theme=${theme_settings};
+fi;
 
-videomode -l mode_list;
 videomode -c mode_current;
 
 menuentry $"Language" --class lang {

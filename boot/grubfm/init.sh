@@ -70,8 +70,20 @@ export theme_fm=${prefix}/themes/slack/fm.txt;
 export theme_open=${prefix}/themes/slack/open.txt;
 export theme_help=${prefix}/themes/slack/help.txt;
 export theme_info=${prefix}/themes/slack/info.txt;
+export theme_settings=${prefix}/themes/slack/settings.txt;
+export theme_menu=${prefix}/themes/slack/menu.txt;
+export theme_osdetect=${prefix}/themes/slack/osdetect.txt;
+export theme_netboot=${prefix}/themes/slack/netboot.txt;
+export theme_power=${prefix}/themes/slack/power.txt;
 
 export theme=${theme_std};
+
+search --set=user -f -q /boot.cfg;
+if [ -n "${user}" ];
+then
+  grubfm_set -u "${user}";
+  configfile ${prefix}/menu.sh
+fi;
 
 search --set=user -f -q /boot/grubfm/config;
 if [ -n "${user}" ];
@@ -86,5 +98,7 @@ if [ "${grub_netboot}" = "1" ];
 then
   configfile ${prefix}/netboot.sh;
 else
+  export theme=${theme_fm};
   grubfm;
 fi;
+

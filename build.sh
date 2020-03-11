@@ -149,6 +149,7 @@ cp arch/legacy/duet64.iso build/boot/grubfm/
 cp arch/legacy/memdisk build/boot/grubfm/
 cp arch/legacy/ipxe.lkrn build/boot/grubfm/
 cp arch/legacy/*.gz build/boot/grubfm/
+cp boot.cfg build/boot.cfg
 cd build
 find ./boot | cpio -o -H newc | gzip -9 > ./fm.loop
 cd ..

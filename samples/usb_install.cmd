@@ -1,4 +1,4 @@
-﻿:: install script for grub2-filemanager
+:: install script for grub2-filemanager
 :: Copyright (C) 2020  mephistooo2.
 ::
 :: This program is free software: you can redistribute it and/or modify

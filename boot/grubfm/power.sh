@@ -13,6 +13,12 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+if [ -f "${theme_power}" ];
+then
+  export theme=${theme_power};
+fi;
+
+videomode -c mode_current;
 
 menuentry $"Reboot (R)" --class reboot --hotkey "r" {
   reboot;

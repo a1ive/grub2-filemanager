@@ -13,6 +13,12 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+if [ -f "${theme_netboot}" ];
+then
+  export theme=${theme_netboot};
+fi;
+
+videomode -c mode_current;
 
 if [ "$grub_platform" = "efi" ];
 then

@@ -82,42 +82,7 @@ menuentry $"[A] About GRUB2-FileManager" --hotkey a {
   fi;
 }
 
-hiddenentry "---- HOTKEY MENU ----" {
-  echo;
-}
-
-hiddenentry "[F1] HELP" --hotkey f1 {
-  echo;
-}
-
-hiddenentry "[F2] BOOT MENU" --hotkey f2 {
-  configfile ${prefix}/menu.sh;
-}
-
-hiddenentry "[F3] FILE MANAGER" --hotkey f3 {
-  if [ -n "${grubfm_current_path}" ];
-  then
-    grubfm "${grubfm_current_path}";
-  else
-    grubfm;
-  fi;
-}
-
-hiddenentry "[F4] OS DETECT" --hotkey f3 {
-  configfile ${prefix}/osdetect.sh;
-}
-
-hiddenentry "[F5] SETTINGS" --hotkey f5 {
-  configfile ${prefix}/settings.sh;
-}
-
-hiddenentry "[F6] PXE BOOT MENU" --hotkey f6 {
-  configfile ${prefix}/netboot.sh;
-}
-
-hiddenentry "[F7] POWER OFF" --hotkey f6 {
-  configfile ${prefix}/power.sh;
-}
+source ${prefix}/global.sh;
 
 hiddenentry "LCtrl + LAlt + F12 - Take Screenshots (EFI)" { 
   echo;

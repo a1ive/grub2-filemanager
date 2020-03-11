@@ -54,7 +54,7 @@ terminal-box: "term_bkg_*.png"
     width = 27%
     + vbox {
         + label {text = "[F1]" color = "#ffffff"}
-        + image {file = "dock/help.png"}
+        + image {file = "dock/active/help.png"}
     }
     + image {file = "dock/space.png"}
     + vbox {
@@ -69,7 +69,7 @@ terminal-box: "term_bkg_*.png"
     + image {file = "dock/space.png"}
     + vbox {
         + label {text = "[F4]" color = "#ffffff"}
-        + image {file = "icons/search_hdd.png"}
+        + image {file = "dock/search_hdd.png"}
     }
     + image {file = "dock/space.png"}
     + vbox {

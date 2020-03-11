@@ -14,10 +14,10 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-if [ -f "${theme_fm}" ];
-then
-  export theme=${theme_fm};
-fi;
+# if [ -f "${theme_fm}" ];
+# then
+#   export theme=${theme_fm};
+# fi;
 
 hiddenentry "---- HOTKEY MENU ----" {
   echo;
@@ -32,6 +32,7 @@ hiddenentry "[F2] BOOT MENU" --hotkey f2 {
 }
 
 hiddenentry "[F3] FILE MANAGER" --hotkey f3 {
+  export theme=${theme_fm};
   if [ -n "${grubfm_current_path}" ];
   then
     grubfm "${grubfm_current_path}";

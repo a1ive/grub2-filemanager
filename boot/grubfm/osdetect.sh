@@ -13,6 +13,9 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
+export theme=${theme_osdetect};
+
+videomode -c mode_current;
 
 function auto_swap {
   if regexp '^hd[0-9a-zA-Z,]+$' $root;
