@@ -1,0 +1,8 @@
+[type]
+icon = exe
+
+[0]
+menu = nes/nes.sh
+title = "Load NES game"
+icon = exe
+
