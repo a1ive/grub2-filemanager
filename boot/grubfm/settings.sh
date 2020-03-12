@@ -18,6 +18,7 @@ then
   export theme=${theme_settings};
 fi;
 
+videomode -l mode_list;
 videomode -c mode_current;
 
 menuentry $"Language" --class lang {
