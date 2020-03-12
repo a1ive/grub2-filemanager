@@ -77,11 +77,11 @@ export theme_power=${prefix}/themes/slack/power.txt;
 
 export theme=${theme_std};
 
-search --set=user_config -f -q /boot/grubfm/config;
-if [ -n "${user_config}" ];
+search --set=user -f -q /boot/grubfm/config;
+if [ -n "${user}" ];
 then
-  grubfm_set -u "${user_config}";
-  source (${user_config})/boot/grubfm/config;
+  grubfm_set -u "${user}";
+  source (${user})/boot/grubfm/config;
 fi;
 
 search --set=user_menu -f -q /boot/grubfm/menu.cfg;
@@ -93,12 +93,12 @@ then
   export theme_help=${prefix}/themes/slack/help_um.txt;
   export theme_info=${prefix}/themes/slack/info_um.txt;
   export theme_settings=${prefix}/themes/slack/settings_um.txt;
-  export theme_menu=${prefix}/themes/slack/menu.txt;
+  export theme_user_menu=${prefix}/themes/slack/user_menu.txt;
   export theme_osdetect=${prefix}/themes/slack/osdetect_um.txt;
   export theme_netboot=${prefix}/themes/slack/netboot_um.txt;
   export theme_power=${prefix}/themes/slack/power_um.txt;
   grubfm_set -u "${user_menu}";
-  configfile ${prefix}/menu.sh
+  configfile ${prefix}/user_menu.sh
 fi;
 
 source ${prefix}/pxeinit.sh;

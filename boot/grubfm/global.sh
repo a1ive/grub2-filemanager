@@ -30,7 +30,7 @@ hiddenentry "[F1] HELP" --hotkey f1 {
 if [ -n "${user_menu}" ];
 then
 	hiddenentry "[F2] BOOT MENU" --hotkey f2 {
-	  configfile ${prefix}/menu.sh;
+	  configfile ${prefix}/user_menu.sh;
 	}
 
 	hiddenentry "[F3] FILE MANAGER" --hotkey f3 {

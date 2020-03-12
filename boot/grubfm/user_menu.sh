@@ -1,6 +1,6 @@
-if [ -f "${theme_menu}" ];
+if [ -f "${theme_user_menu}" ];
 then
-  export theme=${theme_menu};
+  export theme=${theme_user_menu};
 fi;
 
 videomode -c mode_current;
