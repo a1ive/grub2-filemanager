@@ -33,8 +33,25 @@ function iso_detect {
   set win_prefix=(loop)/sources/install;
   set w64_prefix=(loop)/x64/sources/install;
   set w32_prefix=(loop)/x86/sources/install;
-  if [ -f ${win_prefix}.wim -o -f ${win_prefix}.esd -o -f ${win_prefix}.swm \
-    -o -f ${w64_prefix}.wim -o -f ${w64_prefix}.esd -o -f ${w64_prefix}.swm \
+  if [ -f (loop)/sources/boot.wim -a \
+       -f ${win_prefix}.wim -o -f ${win_prefix}.esd -o -f ${win_prefix}.swm ];
+  then
+    export linux_extra=" ";
+    export icon=nt6;
+    export distro="Windows";
+    export src=win;
+    return;
+  fi;
+  if [ -f (loop)/x64/sources/boot.wim -a \
+    -o -f ${w64_prefix}.wim -o -f ${w64_prefix}.esd -o -f ${w64_prefix}.swm ];
+  then
+    export linux_extra=" ";
+    export icon=nt6;
+    export distro="Windows";
+    export src=win;
+    return;
+  fi;
+  if [ -f (loop)/x86/sources/boot.wim -a \
     -o -f ${w32_prefix}.wim -o -f ${w32_prefix}.esd -o -f ${w32_prefix}.swm ];
   then
     export linux_extra=" ";
