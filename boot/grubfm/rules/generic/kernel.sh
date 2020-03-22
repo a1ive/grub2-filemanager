@@ -24,7 +24,7 @@ then
   }
 fi;
 
-if file ---is-x86-bios-bootsector "${grubfm_file}";
+if file --is-x86-bios-bootsector "${grubfm_file}";
 then
   menuentry $"Chainload BIOS Boot Sector" --class bin {
     chainloader --force "${grubfm_file}";
