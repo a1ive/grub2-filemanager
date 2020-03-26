@@ -35,6 +35,9 @@ i = 0
 grub.enum_file (enum_mo_file,locale_dir .. "/")
 table.sort (f_table)
 
+command = "export lang=en_US; configfile ${prefix}/settings.sh;"
+grub.add_icon_menu ("lang", command, "en_US")
+
 for j, name in ipairs(f_table) do
   command = "export lang=" .. name .. "; configfile ${prefix}/settings.sh;"
   grub.add_icon_menu ("lang", command, name)
