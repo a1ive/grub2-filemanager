@@ -33,11 +33,11 @@ then
     fi;
     efiload --nc ${prefix}/CrScreenshotDxe.efi;
     getenv -t uint8 SecureBoot grub_secureboot;
-    if [ "${grub_secureboot}" = "0" ];
+    if [ "${grub_secureboot}" = "1" ];
     then
-        export grub_secureboot="Disabled";
-    else
         export grub_secureboot="Enabled";
+    else
+        export grub_secureboot="Disabled";
     fi;
 else
     search -s -f -q /fmldr;
@@ -67,7 +67,6 @@ set color_highlight=black/white;
 
 export theme_std=${prefix}/themes/slack/theme.txt;
 export theme_fm=${prefix}/themes/slack/fm.txt;
-export theme_open=${prefix}/themes/slack/open.txt;
 export theme_help=${prefix}/themes/slack/help.txt;
 export theme_info=${prefix}/themes/slack/info.txt;
 

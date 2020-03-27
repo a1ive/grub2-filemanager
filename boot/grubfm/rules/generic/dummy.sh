@@ -1,9 +1,8 @@
 source ${prefix}/func.sh;
-if [ -f "${theme_open}" ];
+if [ -f "${theme_fm}" ];
 then
-  export theme=${theme_open};
+  export theme=${theme_fm};
 fi;
-set grubfm_test=1;
 
 hiddenentry "[F1] HELP" --hotkey f1 {
   configfile ${prefix}/help.sh;

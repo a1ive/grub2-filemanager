@@ -105,7 +105,7 @@ fi;
 if [ "${grub_platform}" = "efi" ];
 then
   getenv -t uint8 SecureBoot secureboot;
-  if [ "${secureboot}" != "0" ];
+  if [ "${secureboot}" = "1" ];
   then
     menuentry $"Install override security policy" --class uefi {
       sbpolicy --install;
