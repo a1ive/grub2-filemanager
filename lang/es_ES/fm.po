@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-31 15:58\n"
+"PO-Revision-Date: 2020-03-31 16:07\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -32,7 +32,7 @@ msgid "Open As Syslinux Menu"
 msgstr "Abrir como Abrir como menú syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr "Abrir como menu pxelinux"
+msgstr "Abrir como menú pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
 msgstr "Abrir como menú GRUB4DOS"
