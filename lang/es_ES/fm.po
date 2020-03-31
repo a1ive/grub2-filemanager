@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-03-10 03:03\n"
+"PO-Revision-Date: 2020-03-31 15:58\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -101,7 +101,7 @@ msgid "Boot NT5.x WIM (NTBOOT)"
 msgstr "Arrancar NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Arranxar NT5.x PE (NTBOOT)"
+msgstr "Arrancar NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "Arrancar Windows NT6.x VHD/VHDX (NTBOOT)"
@@ -140,10 +140,10 @@ msgid "Boot ISO (partnew)"
 msgstr "Arrancar ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr "Inatalar Windows (x64)"
+msgstr "Instalar Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr "Inatalar Windows (x86)"
+msgstr "Instalar Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
 msgstr "Instalar Windows sin autounattend.xml"
