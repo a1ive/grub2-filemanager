@@ -397,8 +397,7 @@ msgstr "Uruchom ponownie (R)"
 msgid "Halt"
 msgstr "Zatrzymaj"
 
-msgid "Halt (H)"
-msgstr "Zatrzymaj (H)"
+msgid "Halt (H)msgstr "Zatrzymaj (H)"
 
 msgid "File: "
 msgstr "Plik: "
@@ -459,4 +458,3 @@ msgstr "Data kompilacji GRUB: %s"
 
 msgid "License: GNU GPLv3"
 msgstr "Licencja: GNU GPLv3"
-

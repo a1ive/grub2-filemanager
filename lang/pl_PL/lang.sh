@@ -1,0 +1,1 @@
+export lang=pl_PL;
