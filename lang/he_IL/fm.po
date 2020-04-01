@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2020-02-29 03:27\n"
+"PO-Revision-Date: 2020-03-31 22:57\n"
 
 msgid "Back"
 msgstr "חזרה"
@@ -20,7 +20,7 @@ msgid "Enabled"
 msgstr ""
 
 msgid "Not available"
-msgstr ""
+msgstr "לא זמין"
 
 msgid "Set BGRT (Windows boot logo)"
 msgstr ""
@@ -71,7 +71,7 @@ msgid "Boot Floppy Image (memdisk)"
 msgstr "אתחול מדמות כונן תקליטונים (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "אתחול מדמות כונן תקליטונים (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "אתחול מדמות כונן קשיח (GRUB4DOS)"
@@ -80,7 +80,7 @@ msgid "Boot Hard Drive Image (memdisk)"
 msgstr "אתחול מדמות כונן קשיח (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "אתחול מדמות כונן קשיח (map)"
 
 msgid "Boot IMG (map)"
 msgstr "אתחול מ־IMG‏ (map)"
@@ -134,10 +134,10 @@ msgid "Boot ISO (Easy2Boot)"
 msgstr "אתחול מ־ISO‏ (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "אתחול מ־ISO‏ (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "אתחול מ־ISO‏ (partnew)"
 
 msgid "Install Windows (x64)"
 msgstr "התקנת Windows‏ (x64)"
@@ -191,7 +191,7 @@ msgid "Boot Linux Kernel"
 msgstr "אתחול ליבה של לינוקס"
 
 msgid "User menu"
-msgstr ""
+msgstr "תפריט משתמש"
 
 msgid "Text Viewer"
 msgstr "מציג טקסט"
@@ -200,34 +200,34 @@ msgid "Hex Viewer"
 msgstr "מציג הקסדצימלי"
 
 msgid "Rename"
-msgstr ""
+msgstr "שינוי שם"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "העתקה אל ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "מחיקה"
 
 msgid "Paste here"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "ביטול"
 
 msgid "File Info"
 msgstr "מידע קובץ"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "מידע קובץ (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
 msgstr ""
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "סוג: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "נתיב:"
 
 msgid "Size: ${hsize} (${size})"
 msgstr ""
@@ -242,7 +242,7 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr ""
 
 msgid "Language"
-msgstr ""
+msgstr "שפה"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "השבתת PatchGuard ו־DSE בזמן האתחול"
@@ -263,7 +263,7 @@ msgid "Sort files by name"
 msgstr "סידור הקבצים לפי השם"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "לא למיין קבצים לפי שם"
 
 msgid "Disable secondary boot options menu"
 msgstr ""
@@ -272,7 +272,7 @@ msgid "Enable secondary boot options menu"
 msgstr ""
 
 msgid "Display all files"
-msgstr ""
+msgstr "הצגת כל הקבצים"
 
 msgid "Hide non-bootable files"
 msgstr ""
@@ -356,13 +356,13 @@ msgid "Please input the username. Default:user Super User:root Devuan:devuan"
 msgstr "נא להקליד את שם המשתמש. בררת מחדל: user, משתמש על: root,‏ Devuan: devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "אזהרה: כל הנתונים שב־(${grubfm_disk},4) יימחקו לצמיתות"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "אזהרה: כל הנתונים שב־(hd0,4) יימחקו לצמיתות."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "אזהרה: ${grubfm_file} יימחק"
 
 msgid "Press [1] to continue. Press any other key to return."
 msgstr ""
@@ -377,7 +377,7 @@ msgid "File path contains spaces.This may cause problems!Press any key to contin
 msgstr "נתיב הקובץ מכיל רווחים. מה שעשוי לגרום לתקלות! יש ללחוץ על מקש כלשהו כדי להמשיך."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "נא להכניס את שם הקובץ"
 
 msgid "Bad file name."
 msgstr ""
@@ -386,7 +386,7 @@ msgid "Press any key to exit."
 msgstr ""
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "נא להמתין ..."
 
 msgid "Reboot"
 msgstr "הפעלה מחדש"
@@ -446,17 +446,17 @@ msgid "FILE: %s (%s) ENCODING: %s"
 msgstr ""
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "פלטפורמה: %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "שפה: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "גרסת GRUB: ‏%s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "תאריך בניית GRUB: ‏%s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "רישיון: GNU GPLv3"
 
