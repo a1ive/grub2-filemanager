@@ -1,3 +1,5 @@
+source ${prefix}/func.sh;
+
 set icon="fedora";
 set vmlinuz_img="(loop)/isolinux/vmlinuz*";
 set initrd_img="(loop)/isolinux/initrd*";
@@ -37,7 +39,8 @@ if test -f $vmlinuz_img -a -d (loop)/LiveOS; then
 fi;
 if test -f (loop)/images/pxeboot/vmlinuz*; then
     menuentry $"Fedora Minimal Install" --class $icon{
-        linux (loop)/images/pxeboot/vmlinuz* boot=images quiet iso-scan/filename="$iso_path" inst.stage2=hd:UUID="$iso_uuid";
+        probe --set=loopuuid -u (loop);
+        linux (loop)/images/pxeboot/vmlinuz* boot=images quiet iso-scan/filename="${grubfm_path}" inst.stage2=hd:UUID="${loopuuid}";
         initrd (loop)/images/pxeboot/initrd*;
     }
 fi;

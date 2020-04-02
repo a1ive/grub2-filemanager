@@ -297,6 +297,14 @@ function iso_detect {
     export src=tinycore;
     return;
   fi;
+  if [ -f (loop)/boot/*/loader/linux -a -d (loop)/LiveOS ];
+  then
+    export linux_extra="root=live:CDLABEL=${looplabel} iso-scan/filename=${grubfm_path}";
+    export icon=opensuse;
+    export distro="openSUSE";
+    export src=suse64;
+    return;
+  fi;
   if [ -d (loop)/LiveOS ];
   then
     export linux_extra="root=live:CDLABEL=${looplabel} iso-scan/filename=${grubfm_path}";
@@ -311,14 +319,6 @@ function iso_detect {
     export icon=fedora;
     export distro="Fedora";
     export src=fedora;
-    return;
-  fi;
-  if [ -f (loop)/boot/x86_64/loader/linux -o -f (loop)/boot/i386/loader/linux -o -f (loop)/boot/ix86/loader/linux ];
-  then
-    export linux_extra="isofrom_system=${grubfm_path} isofrom_device=/dev/disk/by-uuid/${rootuuid}";
-    export icon=opensuse;
-    export distro="OpenSUSE";
-    export src=suse64;
     return;
   fi;
   if [ -f (loop)/boot/isolinux/minirt.gz ];
