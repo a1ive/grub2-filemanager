@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2020-03-31 17:31\n"
+"PO-Revision-Date: 2020-04-02 06:48\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -65,19 +65,19 @@ msgid "Mount Image"
 msgstr "Abbild mounten"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "Boot Floppy Image (GRUB4DOS)"
+msgstr "Boote Disketten Abbild (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "Boot Floppy Image (memdisk)"
+msgstr "Boote Disketten Abbild (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr "Boote Floppy Abbild (map)"
+msgstr "Boote Disketten Abbild (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "Boot Hard Drive Image (GRUB4DOS)"
+msgstr "Boote Festplatten Abbild (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "Boot Hard Drive Image (memdisk)"
+msgstr "Boote Festplatten Abbild (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
 msgstr "Boote Festplatten Abbild (map)"
