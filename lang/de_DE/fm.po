@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2020-04-02 07:15\n"
+"PO-Revision-Date: 2020-04-02 08:22\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -170,13 +170,13 @@ msgid "Insert Grub2 Module"
 msgstr "Grub2 Modul einfügen"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr "Chainload BIOS-Boot-Sektor"
+msgstr "Befehlskette BIOS-Boot-Sektor"
 
 msgid "Chainload NTLDR"
-msgstr "Chainload NTLDR"
+msgstr "Befehlskette NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr "Chainload BOOTMGR"
+msgstr "Befehlskette BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
 msgstr "Als GRUB4DOS MOD öffnen"
@@ -191,10 +191,10 @@ msgid "Boot Linux Kernel"
 msgstr "Linux-Kernel starten"
 
 msgid "User menu"
-msgstr "Benutzermenü"
+msgstr "Benutzer-Menü"
 
 msgid "Text Viewer"
-msgstr "Textbetrachter"
+msgstr "Text-Betrachter"
 
 msgid "Hex Viewer"
 msgstr "Hex-Betrachter"
@@ -215,7 +215,7 @@ msgid "Cancel"
 msgstr "Abbrechen"
 
 msgid "File Info"
-msgstr "Dateiinfo"
+msgstr "Datei-Info"
 
 msgid "File Info (${grubfm_name})"
 msgstr "Datei-Info (${grubfm_name})"
@@ -257,7 +257,7 @@ msgid "Disable graphics mode (T)"
 msgstr "Grafikmodus deaktivieren (T)"
 
 msgid "Encoding: "
-msgstr "Kodierung: "
+msgstr "Verschlüsselung: "
 
 msgid "Sort files by name"
 msgstr "Dateien nach Namen sortieren"
@@ -434,10 +434,10 @@ msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
 msgstr "LStrg+LAlt+F12 - Screenshots erstellen (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr "<unk> Seite hoch <unk> Seite runter  [ESC] verlassen"
+msgstr "↑ Seite hoch ↓ Seite runter  [ESC] verlassen"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr "<unk> Seite hoch <unk> Seite runter  [e] Entschlüsseln[ESC] beenden"
+msgstr "↑ Seite hoch ↓ Seite runter  [e] Entschlüsseln [ESC] beenden"
 
 msgid "FILE: %s (%s)"
 msgstr "DATEI: %s (%s)"
