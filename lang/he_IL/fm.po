@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2020-03-31 22:57\n"
+"PO-Revision-Date: 2020-04-01 17:22\n"
 
 msgid "Back"
 msgstr "חזרה"
@@ -419,10 +419,10 @@ msgid "F4 - Settings"
 msgstr "F4 - הגדרות"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - תפריט אתחול PXE"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - כיבוי"
 
 msgid "[A] About GRUB2-FileManager"
 msgstr ""
