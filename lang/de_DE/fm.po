@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2020-04-02 08:11\n"
+"PO-Revision-Date: 2020-04-02 08:22\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -191,10 +191,10 @@ msgid "Boot Linux Kernel"
 msgstr "Linux-Kernel starten"
 
 msgid "User menu"
-msgstr "Benutzermenü"
+msgstr "Benutzer-Menü"
 
 msgid "Text Viewer"
-msgstr "Textbetrachter"
+msgstr "Text-Betrachter"
 
 msgid "Hex Viewer"
 msgstr "Hex-Betrachter"
@@ -215,7 +215,7 @@ msgid "Cancel"
 msgstr "Abbrechen"
 
 msgid "File Info"
-msgstr "Dateiinfo"
+msgstr "Datei-Info"
 
 msgid "File Info (${grubfm_name})"
 msgstr "Datei-Info (${grubfm_name})"
@@ -257,7 +257,7 @@ msgid "Disable graphics mode (T)"
 msgstr "Grafikmodus deaktivieren (T)"
 
 msgid "Encoding: "
-msgstr "Kodierung: "
+msgstr "Verschlüsselung: "
 
 msgid "Sort files by name"
 msgstr "Dateien nach Namen sortieren"
