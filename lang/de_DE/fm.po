@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2020-03-31 17:31\n"
+"PO-Revision-Date: 2020-04-02 07:15\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -65,19 +65,19 @@ msgid "Mount Image"
 msgstr "Abbild mounten"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "Boot Floppy Image (GRUB4DOS)"
+msgstr "Boote Disketten Abbild (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "Boot Floppy Image (memdisk)"
+msgstr "Boote Disketten Abbild (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr "Boote Floppy Abbild (map)"
+msgstr "Boote Disketten Abbild (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "Boot Hard Drive Image (GRUB4DOS)"
+msgstr "Boote Festplatten Abbild (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "Boot Hard Drive Image (memdisk)"
+msgstr "Boote Festplatten Abbild (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
 msgstr "Boote Festplatten Abbild (map)"
@@ -92,58 +92,58 @@ msgid "Open As Archiver"
 msgstr "Als Archiv öffnen"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "Boot NT6.x WIM (wimboot)"
+msgstr "Boote NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "Boot NT6.x WIM (NTBOOT)"
+msgstr "Boote NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "Boot NT5.x WIM (NTBOOT)"
+msgstr "Boote NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Boot NT5.x PE (NTBOOT)"
+msgstr "Boote NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "Boote Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "RamOS VHD booten (GRUB4DOS map --mem --top)"
+msgstr "Boote RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "RamOS VHD booten (GRUB4DOS map --mem --top)"
+msgstr "Boote RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot VHD (vboot)"
-msgstr "Boot VHD (vboot)"
+msgstr "Boote VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr "Boote IMG (map)"
+msgstr "Boote VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr "Boote IMG (map --mem)"
+msgstr "Boote VHD (map --mem)"
 
 msgid "Mount ISO"
 msgstr "ISO einbinden"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "Boot ISO (GRUB4DOS)"
+msgstr "Boote ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr "Boot ISO (memdisk)"
+msgstr "Boote ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "Boot ISO (Easy2Boot)"
+msgstr "Boote ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr "ISO booten (loopback.cfg)"
+msgstr "Boote ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
 msgstr "Boote ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr "Windows installieren (x64)"
+msgstr "Installiere Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr "Windows installieren (x86)"
+msgstr "Installiere Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
 msgstr "Installiere Windows ohne autounattend.xml"
@@ -152,13 +152,13 @@ msgid "Load ${xml_name}"
 msgstr "Lade ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr "Boote IMG (map)"
+msgstr "Boote ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr "Boote IMG (map --mem)"
+msgstr "Boote ISO (map --mem)"
 
 msgid "Boot EFI Files"
-msgstr "Boot EFI Dateien"
+msgstr "Boote EFI Dateien"
 
 msgid "Open As iPXE Script"
 msgstr "Als iPXE-Skript öffnen"
