@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-04-04 22:09\n"
+"PO-Revision-Date: 2020-04-04 22:20\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -71,7 +71,7 @@ msgid "Boot Floppy Image (memdisk)"
 msgstr "Загрузить образ дискеты (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr "Загрузить образ дискеты (memdisk)"
+msgstr "Загрузить образ дискеты (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "Загрузить образ HDD (GRUB4DOS)"
@@ -86,82 +86,82 @@ msgid "Boot IMG (map)"
 msgstr "Загрузить IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Загрузить IMG (map --mem)"
 
 msgid "Open As Archiver"
 msgstr "Открыть как архив"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Загрузка NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Загрузка NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Загрузка NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Загрузите NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Загрузить Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Загрузить RamOS VHD (GRUB4DOS карта --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Загрузить RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Загрузить VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Загрузить VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Загрузить VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Смонтировать ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Загрузить ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Загрузить ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Загрузить ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Загрузить ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Загрузить ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Установка Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Установка Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Установить Windows без autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Загрузить ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Загрузить ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Загрузить ISO (map --mem)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Загрузить файлы EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Открыть как iPXE Script"
 
 msgid "Open As Font"
 msgstr ""
