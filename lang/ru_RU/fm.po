@@ -8,22 +8,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-02-29 03:27\n"
+"PO-Revision-Date: 2020-04-04 22:33\n"
 
 msgid "Back"
 msgstr "Назад"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Отключено"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Включено"
 
 msgid "Not available"
-msgstr ""
+msgstr "Не доступно"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "Установить BGRT (логотип загрузки Windows)"
 
 msgid "Open As Grub2 Menu"
 msgstr "Открыть Grub2 как меню"
@@ -71,145 +71,145 @@ msgid "Boot Floppy Image (memdisk)"
 msgstr "Загрузить образ дискеты (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Загрузить образ дискеты (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "Загрузить образ HDD (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Загрузить образ жесткого диска (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Загрузить образ HDD (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Загрузить IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Загрузить IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Открыть как архив"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Загрузка NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Загрузка NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Загрузка NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Загрузите NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Загрузить Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Загрузить RamOS VHD (GRUB4DOS карта --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Загрузить RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Загрузить VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Загрузить VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Загрузить VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Смонтировать ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Загрузить ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Загрузить ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Загрузить ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Загрузить ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Загрузить ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Установка Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Установка Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Установить Windows без autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Загрузить ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Загрузить ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Загрузить ISO (map --mem)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Загрузить файлы EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Открыть как iPXE Script"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Открыть как шрифт"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Вставить модуль Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Цепная загрузка BIOS Boot Sector"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Цепная загрузка NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Цепная загрузка BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Открыть как GRUB4DOS MOD"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Загрузить ядро Multiboot"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Загрузить ядро Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Загрузить ядро Linux"
 
 msgid "User menu"
-msgstr ""
+msgstr "Меню пользователя"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Просмотреть текст"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Просмотр шестнадцатеричного кода"
 
 msgid "Rename"
-msgstr ""
+msgstr "Переименовать"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Копировать в ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Вставить сюда"
 
 msgid "Cancel"
 msgstr ""
@@ -413,19 +413,19 @@ msgid "F2 - File Manager"
 msgstr "F2 - Просмотр файлов"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - Обнаружение ОС"
 
 msgid "F4 - Settings"
 msgstr "F4 - Настройки"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - Загрузочное меню PXE"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - Выключить"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] Информация об GRUB2-FileManager"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
 msgstr ""
