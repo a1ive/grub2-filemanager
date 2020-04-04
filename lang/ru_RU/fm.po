@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-04-04 22:20\n"
+"PO-Revision-Date: 2020-04-04 22:33\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -164,52 +164,52 @@ msgid "Open As iPXE Script"
 msgstr "Открыть как iPXE Script"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Открыть как шрифт"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Вставить модуль Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Цепная загрузка BIOS Boot Sector"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Цепная загрузка NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Цепная загрузка BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Открыть как GRUB4DOS MOD"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Загрузить ядро Multiboot"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Загрузить ядро Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Загрузить ядро Linux"
 
 msgid "User menu"
-msgstr ""
+msgstr "Меню пользователя"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Просмотреть текст"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Просмотр шестнадцатеричного кода"
 
 msgid "Rename"
-msgstr ""
+msgstr "Переименовать"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Копировать в ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Вставить сюда"
 
 msgid "Cancel"
 msgstr ""
@@ -413,19 +413,19 @@ msgid "F2 - File Manager"
 msgstr "F2 - Просмотр файлов"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - Обнаружение ОС"
 
 msgid "F4 - Settings"
 msgstr "F4 - Настройки"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - Загрузочное меню PXE"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - Выключить"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] Информация об GRUB2-FileManager"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
 msgstr ""
