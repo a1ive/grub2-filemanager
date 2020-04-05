@@ -8,13 +8,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-04-05 08:11\n"
+"PO-Revision-Date: 2020-04-05 10:57\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Заборонено"
 
 msgid "Enabled"
 msgstr ""
