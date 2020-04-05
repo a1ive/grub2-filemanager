@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-04-05 08:11\n"
+"PO-Revision-Date: 2020-04-05 12:37\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -41,10 +41,10 @@ msgid "Open As GRUB-Legacy Menu"
 msgstr "Открыть меню как GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr "Открыть как Lua Script"
+msgstr "Открыть как сценарий Lua"
 
 msgid "Open As Python Script"
-msgstr "Открыть как скрипт на Python"
+msgstr "Открыть как сценарий Python"
 
 msgid "Open As EFI Application"
 msgstr "Открыть как приложение EFI"
@@ -65,7 +65,7 @@ msgid "Mount Image"
 msgstr "Смонтировать образ"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "Загрузить образ для дискеты (GRUB4DOS)"
+msgstr "Загрузить образ дискеты (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
 msgstr "Загрузить образ дискеты (memdisk)"
@@ -74,13 +74,13 @@ msgid "Boot Floppy Image (map)"
 msgstr "Загрузить образ дискеты (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "Загрузить образ HDD (GRUB4DOS)"
+msgstr "Загрузить образ жесткого диска (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr "Загрузить образ жесткого диска (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr "Загрузить образ HDD (map)"
+msgstr "Загрузить образ жесткого диска (map)"
 
 msgid "Boot IMG (map)"
 msgstr "Загрузить IMG (map)"
@@ -92,16 +92,16 @@ msgid "Open As Archiver"
 msgstr "Открыть как архив"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "Загрузка NT6.x WIM (wimboot)"
+msgstr "Загрузить NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "Загрузка NT6.x WIM (NTBOOT)"
+msgstr "Загрузить NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "Загрузка NT5.x WIM (NTBOOT)"
+msgstr "Загрузить NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Загрузите NT5.x PE (NTBOOT)"
+msgstr "Загрузить NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "Загрузить Windows NT6.x VHD/VHDX (NTBOOT)"
@@ -161,7 +161,7 @@ msgid "Boot EFI Files"
 msgstr "Загрузить файлы EFI"
 
 msgid "Open As iPXE Script"
-msgstr "Открыть как iPXE Script"
+msgstr "Открыть как сценарий iPXE"
 
 msgid "Open As Font"
 msgstr "Открыть как шрифт"
@@ -236,7 +236,7 @@ msgid "Offset on disk: ${offset}"
 msgstr "Смещение на диске: ${offset}"
 
 msgid "File is contiguous."
-msgstr "Файл не фрагментирован (непрерывный)."
+msgstr "Файл цельный."
 
 msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "Файл фрагментирован. (${frag} фрагментов)"
@@ -320,10 +320,10 @@ msgid "UEFI DUET"
 msgstr "UEFI (для разработчиков)"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr "Загрузить внешнее меню на (${device}) ${info}"
+msgstr "Загрузить внешнее меню с (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr "Загрузить Windows Boot Manager из ${device} ${info}"
+msgstr "Загрузить Windows Boot Manager с ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
 msgstr "Загрузить macOS из ${device} ${info}"
@@ -332,16 +332,16 @@ msgid "Boot ${winver} on ${device} ${info}"
 msgstr "Загрузить ${winver} из ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr "Загрузка ${device} ${info}"
+msgstr "Загрузить ${device} ${info}"
 
 msgid "Boot ISO (Loopback)"
-msgstr "Загрузить ISO (как CDROM)"
+msgstr "Загрузить ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
 msgstr "Загрузить ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr "Определение типа ISO-образа ..."
+msgstr "Определение типа ISO ..."
 
 msgid "Boot ${distro} From ISO"
 msgstr "Загрузить ${distro} из ISO"
