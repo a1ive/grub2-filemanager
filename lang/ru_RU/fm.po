@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-04-05 07:42\n"
+"PO-Revision-Date: 2020-04-05 07:47\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -251,7 +251,7 @@ msgid "Install override security policy"
 msgstr "Установить переопределение политики безопасности"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Запретить shim-валидацию и перезагрузку"
 
 msgid "Disable graphics mode (T)"
 msgstr "Отключить графический режим (T)"
@@ -323,13 +323,13 @@ msgid "Load External Menu on (${device}) ${info}"
 msgstr "Загрузить внешнее меню на (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Загрузить Windows Boot Manager из ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "Загрузить macOS из ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr "Загрузить ${winver} на ${device} ${info}"
+msgstr "Загрузить ${winver} из ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
 msgstr "Загрузка ${device} ${info}"
