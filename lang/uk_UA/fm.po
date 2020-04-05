@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-04-05 11:33\n"
+"PO-Revision-Date: 2020-04-05 11:44\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -62,103 +62,103 @@ msgid "Press [ESC] to continue..."
 msgstr "Натисніть [ESC], щоб продовжити..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Змонтувати знімок"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Завантажити знімок дискети (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Завантажити знімок дискети (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Завантажити знімок дискети (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Завантажити знімок жорсткого диску (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Завантажити знімок жорсткого диску (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Завантажити знімок жорсткого диску (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Завантажити IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Завантажити IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Відкрити як архів"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Завантажити NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Завантажити NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Завантажити NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Завантажити NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Завантажити Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Завантажити RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Завантажити RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Завантажити VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Завантажити VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Завантажити VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Змонтувати ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Завантажити ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Завантажити ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Завантажити ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Завантажити ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Завантажити ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Встановити Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Встановити Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Встановити Windows без autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Завантажити ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Завантажити ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Завантажити ISO (map --mem)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Завантажити файли EFI"
 
 msgid "Open As iPXE Script"
 msgstr ""
