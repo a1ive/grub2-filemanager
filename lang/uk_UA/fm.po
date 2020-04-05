@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-04-05 11:44\n"
+"PO-Revision-Date: 2020-04-05 11:54\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -311,49 +311,49 @@ msgid "EFI Firmware Setup"
 msgstr ""
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "Консоль GRUB"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "Консоль EFI"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI (для розробників)"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "Завантажити зовнішнє меню на (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Завантажити Windows Boot Manager із ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "Завантажити macOS із ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "Завантажити ${winver} із ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "Завантажити ${device} ${info}"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Завантажити ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Завантажити ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "Визначення типу знімку ISO..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "Завантажити ${distro} із ISO"
 
 msgid "Boot "
-msgstr ""
+msgstr "Завантаження "
 
 msgid " From ISO"
-msgstr ""
+msgstr " зі знімку ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Будь ласка, введіть ім'я користувача. За замовчуванням:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
 msgstr ""
