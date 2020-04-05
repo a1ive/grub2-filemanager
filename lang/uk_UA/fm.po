@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-04-05 10:57\n"
+"PO-Revision-Date: 2020-04-05 11:07\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -17,28 +17,28 @@ msgid "Disabled"
 msgstr "Заборонено"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Дозволено"
 
 msgid "Not available"
-msgstr ""
+msgstr "Не доступно"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "Встановити BGRT (логотип завантаження Windows)"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Відкрити як меню Grub2"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Відкрити як меню Syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Відкрити як меню PXELINUX"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Відкрити як меню GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Відкрити як меню GRUB-Legacy"
 
 msgid "Open As Lua Script"
 msgstr ""
