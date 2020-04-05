@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-04-05 07:47\n"
+"PO-Revision-Date: 2020-04-05 08:11\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -251,7 +251,7 @@ msgid "Install override security policy"
 msgstr "Установить переопределение политики безопасности"
 
 msgid "Disable shim validation and reboot"
-msgstr "Запретить shim-валидацию и перезагрузку"
+msgstr "Запретить shim-валидацию и перезагрузить"
 
 msgid "Disable graphics mode (T)"
 msgstr "Отключить графический режим (T)"
