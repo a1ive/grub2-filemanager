@@ -36,7 +36,7 @@ submenu $"Resolution (R): ${mode_current}" --class screen --hotkey "r" {
   menuentry "AUTO DETECT" {
     set gfxmode=auto;
     terminal_output gfxterm;
-    source ${prefix}/lang.sh;
+    set lang=${grubfm_lang};
     configfile ${prefix}/settings.sh;
   }
   for item in ${mode_list};
@@ -44,7 +44,7 @@ submenu $"Resolution (R): ${mode_current}" --class screen --hotkey "r" {
     menuentry "${item}" {
       set gfxmode=${1};
       terminal_output gfxterm;
-      source ${prefix}/lang.sh;
+      set lang=${grubfm_lang};
       configfile ${prefix}/settings.sh;
     }
   done;

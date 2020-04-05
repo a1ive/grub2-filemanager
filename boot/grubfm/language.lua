@@ -39,7 +39,7 @@ command = "export lang=en_US; configfile ${prefix}/settings.sh;"
 grub.add_icon_menu ("lang", command, "en_US")
 
 for j, name in ipairs(f_table) do
-  command = "export lang=" .. name .. "; configfile ${prefix}/settings.sh;"
+  command = "export lang=" .. name .. "; export grubfm_lang=${lang}; configfile ${prefix}/settings.sh;"
   grub.add_icon_menu ("lang", command, name)
 end
 

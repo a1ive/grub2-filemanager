@@ -81,6 +81,7 @@ then
   source (${user})/boot/grubfm/config;
 fi;
 
+export grubfm_lang="${lang}";
 source ${prefix}/pxeinit.sh;
 net_detect;
 if [ "${grub_netboot}" = "1" ];
