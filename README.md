@@ -63,3 +63,4 @@ GRUB2: https://github.com/a1ive/grub
 *	[GRUB2 File Explorer](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=320715) 
 *	[RUN](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=191301) 
 *	[G4D AUTOMENU](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=203607) 
+* [GrubFM Installer](https://github.com/QuestYouCraft/grubfm-installer) 
