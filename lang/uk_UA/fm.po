@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-04-05 11:07\n"
+"PO-Revision-Date: 2020-04-05 11:30\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -41,10 +41,10 @@ msgid "Open As GRUB-Legacy Menu"
 msgstr "Відкрити як меню GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Відкрити як сценарій Lua"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Відкрити як сценарій Script"
 
 msgid "Open As EFI Application"
 msgstr ""
