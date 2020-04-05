@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-04-04 23:05\n"
+"PO-Revision-Date: 2020-04-05 07:37\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -245,73 +245,73 @@ msgid "Language"
 msgstr "Язык"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "Отключить PatchGuard и DSE во время загрузки"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Установить переопределение политики безопасности"
 
 msgid "Disable shim validation and reboot"
 msgstr ""
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Отключить графический режим (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Кодировка: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Сортировать файлы по имени"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Не сортировать файлы по имени"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Отключить дополнительное меню параметров загрузки"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Включить дополнительное меню параметров загрузки"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Показать все файлы"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Скрыть файлы, которые не являются загрузочными"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Разрешение (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Разрешить ESC (не рекомендуется)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Разрешить сообщения отладки"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Показать скрытые диски"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Загрузить дополнительные модули"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Включить регистрозависимые имена файлов"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Выключить регистрозависимые имена файлов"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Загрузить драйвер AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Монтировать зашифрованные тома (LUKS and geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Включить последовательный терминал"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Настройки прошивки EFI"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "Консоль GRUB"
 
 msgid "EFI Shell"
 msgstr "Консоль EFI"
