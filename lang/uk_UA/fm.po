@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-04-05 12:03\n"
+"PO-Revision-Date: 2020-04-05 12:31\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -161,154 +161,154 @@ msgid "Boot EFI Files"
 msgstr "Завантажити файли EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Відкрити як сценарій iPXE"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Відкрити як шрифт"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Вставити модуль Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Ланцюгове завантаження BIOS Boot Sector"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Ланцюгове завантаження NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Ланцюгове завантаження BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Відкрити як GRUB4DOS MOD"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Завантажити ядро Multiboot"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Завантажити ядро Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Завантажити ядро Linux"
 
 msgid "User menu"
-msgstr ""
+msgstr "Меню користувача"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Перегляд тексту"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Перегляд шістнадцяткового коду"
 
 msgid "Rename"
-msgstr ""
+msgstr "Перейменувати"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Копіювати до..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Видалити"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Вставити тут"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Скасувати"
 
 msgid "File Info"
-msgstr ""
+msgstr "Інформація про файл"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Інформація про файл (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Інформація про файл -- Натисніть [ENTER], щоб вийти"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Тип: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Шлях:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Розмір: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "Зсув на диску: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "Файл суцільний."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "Файл фрагментований. (${frag} фрагментів)"
 
 msgid "Language"
-msgstr ""
+msgstr "Мова"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "Вимкнути PatchGuard і DSE під час завантаження"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Встановити перевизначення політики безпеки"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Заборонити shim-перевірку та перезавантажити"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Вимкнути графічний режим (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Кодування: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Сортувати файли за іменем"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Не сортувати файли за іменем"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Вимкнути додаткове меню параметрів завантаження"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Увімкнути додаткове меню параметрів завантаження"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Показувати всі файли"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Приховати файли, які не є завантажувальними"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Роздільна здатність (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Дозволити ESC (не рекомендовано)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Дозволити повідомлення зневадження"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Показати приховані диски"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Завантажити додаткові модулі"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Увімкнути чутливі до регістру імена файлів"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Вимкнути чутливі до регістру імена файлів"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Завантажити драйвер AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Монтувати зашифровані розділи (LUKS and geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Увімкнути послідовний термінал"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Налаштування прошивки EFI"
 
 msgid "GRUB Console"
 msgstr "Консоль GRUB"
@@ -449,14 +449,14 @@ msgid "Platform: %s-%s"
 msgstr "Платформа: %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "Мова: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "Версія GRUB: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "Дата збірки GRUB: %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "Ліцензія: GNU GPLv3"
 
