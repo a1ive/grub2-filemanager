@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-04-05 12:31\n"
+"PO-Revision-Date: 2020-04-06 14:42\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -419,7 +419,7 @@ msgid "F4 - Settings"
 msgstr "F4 - Налаштування"
 
 msgid "F5 - PXE Boot Menu"
-msgstr "F5 - меню завантаження PXE"
+msgstr "F5 - Меню завантаження PXE"
 
 msgid "F6 - Power Off"
 msgstr "F6 - Вимкнути"
