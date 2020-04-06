@@ -1,11 +1,27 @@
-[简体中文](https://a1ive.github.io/grub2-filemanager/) 
+[Website of repo](https://a1ive.github.io/grub2-filemanager/) 
 
-# grub2-filemanager 
+# Grub2 File Manager 
 ![](https://img.shields.io/github/license/a1ive/grub2-filemanager.svg?style=flat) ![](https://img.shields.io/github/downloads/a1ive/grub2-filemanager/total.svg?style=flat) ![](https://img.shields.io/github/release/a1ive/grub2-filemanager.svg?style=flat) [![Crowdin](https://badges.crowdin.net/grub2-filemanager/localized.svg)](https://crowdin.com/project/grub2-filemanager)
-
+## Content
+- [Preview](#preview)
+- [Support files](#support-files)
+- [Download](#download)
+- [Build](#build)
+- [Boot](#boot)
+    - [i386-PC](#i386-pc)
+        - [Grub4Dos](#grub4dos)
+	- [Grub 2](#grub-2)
+    - [x86_64-efi](#x86_64-efi)
+        - [Grub 2](#grub-2-1)
+	- [rEFInd](#refind)
+	- [Systemd-boot](#systemd-boot)
+    - [Source code](#source-code)
+    - [Help to translate](#help-to-translate)
+    - [Similar projects](#similar-projects)
 ## Preview
 
 ![preview.png](https://github.com/a1ive/grub2-filemanager/raw/gh-pages/preview.png)
+## Support types of files
 
 | Type                                                         | i386-pc | i386-efi | x86_64-efi |
 | :----------------------------------------------------------- | :-----: | :------: | :--------: |
@@ -55,6 +71,8 @@ GRUB2: https://github.com/a1ive/grub
 [Crowdin](https://crowdin.com/project/grub2-filemanager) 
 
 ## Similar projects 
+
+* [GrubFM Installer](https://github.com/QuestYouCraft/grubfm-installer) 
 *	[Multiboot USB](http://mbusb.aguslr.com/) 
 *	[grub-iso-boot](https://github.com/Jimmy-Z/grub-iso-boot) 
 *	[grub-iso-multiboot](https://github.com/mpolitzer/grub-iso-multiboot) 
@@ -63,4 +81,3 @@ GRUB2: https://github.com/a1ive/grub
 *	[GRUB2 File Explorer](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=320715) 
 *	[RUN](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=191301) 
 *	[G4D AUTOMENU](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=203607) 
-* [GrubFM Installer](https://github.com/QuestYouCraft/grubfm-installer) 
