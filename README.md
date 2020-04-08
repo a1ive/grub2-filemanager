@@ -1,4 +1,4 @@
-[Website of repo](https://a1ive.github.io/grub2-filemanager/) 
+[项目主页 (简体中文)](https://a1ive.github.io/grub2-filemanager/) 
 
 # Grub2 File Manager 
 ![](https://img.shields.io/github/license/a1ive/grub2-filemanager.svg?style=flat) ![](https://img.shields.io/github/downloads/a1ive/grub2-filemanager/total.svg?style=flat) ![](https://img.shields.io/github/release/a1ive/grub2-filemanager.svg?style=flat) [![Crowdin](https://badges.crowdin.net/grub2-filemanager/localized.svg)](https://crowdin.com/project/grub2-filemanager)
@@ -17,7 +17,7 @@
 	- [Systemd-boot](#systemd-boot)
 - [Source code](#source-code)
 - [Help to translate](#help-to-translate)
-- [Similar projects](#similar-projects)
+- [Related projects](#related-projects)
 ## Preview
 
 ![preview.png](https://github.com/a1ive/grub2-filemanager/raw/gh-pages/preview.png)
@@ -70,14 +70,15 @@ GRUB2: https://github.com/a1ive/grub
 
 [Crowdin](https://crowdin.com/project/grub2-filemanager) 
 
-## Similar projects 
+## Related projects 
 
-* [GrubFM Installer](https://github.com/QuestYouCraft/grubfm-installer) 
-*	[Multiboot USB](http://mbusb.aguslr.com/) 
+*	[Easy2Boot](http://www.easy2boot.com/) 
+*	[GLIM](https://github.com/thias/glim) 
 *	[grub-iso-boot](https://github.com/Jimmy-Z/grub-iso-boot) 
 *	[grub-iso-multiboot](https://github.com/mpolitzer/grub-iso-multiboot) 
-*	[GLIM](https://github.com/thias/glim) 
-*	[Easy2Boot](http://www.easy2boot.com/) 
+*	[GrubFM Installer](https://github.com/QuestYouCraft/grubfm-installer) 
 *	[GRUB2 File Explorer](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=320715) 
-*	[RUN](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=191301) 
 *	[G4D AUTOMENU](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=203607) 
+*	[Multiboot USB](http://mbusb.aguslr.com/) 
+*	[RUN](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=191301) 
+*	[Ventoy](https://github.com/ventoy/Ventoy)
