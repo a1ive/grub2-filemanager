@@ -15,9 +15,9 @@
         - [Grub 2](#grub-2-1)
 	- [rEFInd](#refind)
 	- [Systemd-boot](#systemd-boot)
-    - [Source code](#source-code)
-    - [Help to translate](#help-to-translate)
-    - [Similar projects](#similar-projects)
+- [Source code](#source-code)
+- [Help to translate](#help-to-translate)
+- [Similar projects](#similar-projects)
 ## Preview
 
 ![preview.png](https://github.com/a1ive/grub2-filemanager/raw/gh-pages/preview.png)
