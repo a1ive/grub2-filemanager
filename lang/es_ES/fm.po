@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-04-08 21:07\n"
+"PO-Revision-Date: 2020-04-08 21:17\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -92,43 +92,43 @@ msgid "Open As Archiver"
 msgstr "Abrir Con El Manejador de Archivos"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "Arrancar NT6.x WIM (wimboot)"
+msgstr "Iniciar NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "Arrancar NT6.x WIM (NTBOOT)"
+msgstr "Iniciar el NT6.x con imagen WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "Arrancar NT5.x WIM (NTBOOT)"
+msgstr "Iniciar el NT5.x con fornato WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Arrancar NT5.x PE (NTBOOT)"
+msgstr "Iniciar el NT5.x en modo PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "Arrancar Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "Iniciar Windows NT6.x con extension VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "Arrancar RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr "Iniciar RamOS con extension VHD (GRUB4DOS map --mem --top, extension de entorno virtualizado)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "Arrancar RamOS VHD (GRUB4DOS map --mem)"
+msgstr "Iniciar RamOS con extension VHD (GRUB4DOS map --mem, extension de entorno girtualizado)"
 
 msgid "Boot VHD (vboot)"
-msgstr "Arrancar VHD (vboot)"
+msgstr "Iniciar con extension VHD (vboot, arranque virtual)"
 
 msgid "Boot VHD (map)"
-msgstr "Arrancar VHD (map)"
+msgstr "Iniciar con extension VHD (map, entorno virtual)"
 
 msgid "Boot VHD (map --mem)"
-msgstr "Arrancar VHD (map --mem)"
+msgstr "Iniciar con extension VHD (map, entorno virtual)"
 
 msgid "Mount ISO"
-msgstr "Montar ISO"
+msgstr "Montar imagen ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "Arrancar ISO (GRUB4DOS)"
+msgstr "Iniciar con imagen IO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr "Arrancar ISO (memdisk)"
+msgstr "Iniciar con imagen ISO (memdisk, disco de memoria)"
 
 msgid "Boot ISO (Easy2Boot)"
 msgstr "Arrancar ISO (Easy2Boot)"
