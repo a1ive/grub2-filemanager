@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-04-08 09:46\n"
+"PO-Revision-Date: 2020-04-08 21:17\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -17,43 +17,43 @@ msgid "Disabled"
 msgstr "Deshabilitado"
 
 msgid "Enabled"
-msgstr "Activo"
+msgstr "Activado"
 
 msgid "Not available"
-msgstr "No disponible"
+msgstr "No esta disponible"
 
 msgid "Set BGRT (Windows boot logo)"
 msgstr "Establecer BGRT (logo de arranque de Windows)"
 
 msgid "Open As Grub2 Menu"
-msgstr "Abrir como menú grub2"
+msgstr "Abrir con el menú de grub2"
 
 msgid "Open As Syslinux Menu"
-msgstr "Abrir como Abrir como menú syslinux"
+msgstr "Abrir como Abrir como menú en syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr "Abrir como menú pxelinux"
+msgstr "Abrir como Menú pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr "Abrir como menú GRUB4DOS"
+msgstr "Abrir como menú con GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr "Abrir como menú GRUB-Legacy"
+msgstr "Abrir como menú en modo GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr "Abrir como Script Lua"
+msgstr "Abrir como Script en Lua"
 
 msgid "Open As Python Script"
-msgstr "Abrir como Script Python"
+msgstr "Abrir como Script en Python"
 
 msgid "Open As EFI Application"
-msgstr "Abrir como aplicación EFI"
+msgstr "Abrir como aplicación en modo EFI"
 
 msgid "Load UEFI driver"
 msgstr "Cargar driver UEFI"
 
 msgid "Open As EFI Shell Script"
-msgstr "Abrir como script de shell EFI"
+msgstr "Abrir como script de shell en EFI"
 
 msgid "Open As Image"
 msgstr "Abrir como imagen"
@@ -62,73 +62,73 @@ msgid "Press [ESC] to continue..."
 msgstr "Presione [ESC] para continuar..."
 
 msgid "Mount Image"
-msgstr "Montar imagen"
+msgstr "Montar como imagen"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "Arrancar imagen de disquete (GRUB4DOS)"
+msgstr "Arrancar en imagen de disquete (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "Imagen de disquete de arranque (memdisk)"
+msgstr "Imagen del disquete de arranque (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr "Arrancar imagen de disquete (map)"
+msgstr "Arrancar imagen con el disquete (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "Arrancar imagen de disco duro (GRUB4DOS)"
+msgstr "Iniciar la imagen de disco duro (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "Arrancar imagen de disco duro (memdisk)"
+msgstr "Iniciar la imagen de disco duro (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr "Arrancar imagen de disco duro (map)"
+msgstr "Cargar la imagen de disco duro (map)"
 
 msgid "Boot IMG (map)"
-msgstr "Arrancar IMG (map)"
+msgstr "Arrancar en formato IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr "Arrancar IMG (map --mem)"
+msgstr "Arrancar como extension IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr "Abrir como archivador"
+msgstr "Abrir Con El Manejador de Archivos"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "Arrancar NT6.x WIM (wimboot)"
+msgstr "Iniciar NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "Arrancar NT6.x WIM (NTBOOT)"
+msgstr "Iniciar el NT6.x con imagen WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "Arrancar NT5.x WIM (NTBOOT)"
+msgstr "Iniciar el NT5.x con fornato WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Arrancar NT5.x PE (NTBOOT)"
+msgstr "Iniciar el NT5.x en modo PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "Arrancar Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "Iniciar Windows NT6.x con extension VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "Arrancar RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr "Iniciar RamOS con extension VHD (GRUB4DOS map --mem --top, extension de entorno virtualizado)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "Arrancar RamOS VHD (GRUB4DOS map --mem)"
+msgstr "Iniciar RamOS con extension VHD (GRUB4DOS map --mem, extension de entorno girtualizado)"
 
 msgid "Boot VHD (vboot)"
-msgstr "Arrancar VHD (vboot)"
+msgstr "Iniciar con extension VHD (vboot, arranque virtual)"
 
 msgid "Boot VHD (map)"
-msgstr "Arrancar VHD (map)"
+msgstr "Iniciar con extension VHD (map, entorno virtual)"
 
 msgid "Boot VHD (map --mem)"
-msgstr "Arrancar VHD (map --mem)"
+msgstr "Iniciar con extension VHD (map, entorno virtual)"
 
 msgid "Mount ISO"
-msgstr "Montar ISO"
+msgstr "Montar imagen ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "Arrancar ISO (GRUB4DOS)"
+msgstr "Iniciar con imagen IO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr "Arrancar ISO (memdisk)"
+msgstr "Iniciar con imagen ISO (memdisk, disco de memoria)"
 
 msgid "Boot ISO (Easy2Boot)"
 msgstr "Arrancar ISO (Easy2Boot)"
