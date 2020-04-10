@@ -265,6 +265,14 @@ function iso_detect {
     export src=debian;
     return;
   fi;
+  if [ -f (loop)/syslinux/alt0/vmlinuz -a -f (loop)/syslinux/alt0/full.cz ];
+  then
+    export linux_extra="automatic=method:disk,uuid:${rootuuid},directory:${grubfm_path}";
+    export icon=gnu-linux;
+    export distro="ALT Linux";
+    export src=alt;
+    return;
+  fi;
   if [ -f (loop)/isolinux/gentoo -o -f (loop)/isolinux/gentoo64 ];
   then
     export linux_extra="isoboot=${grubfm_path}";
