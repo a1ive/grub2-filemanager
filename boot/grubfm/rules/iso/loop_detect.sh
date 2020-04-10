@@ -273,6 +273,14 @@ function iso_detect {
     export src=alt;
     return;
   fi;
+  if [ -d (loop)/austrumi ];
+  then
+    export linux_extra="sr=${grubfm_path}";
+    export icon=slackware;
+    export distro="Austrumi";
+    export src=austrumi;
+    return;
+  fi;
   if [ -f (loop)/isolinux/gentoo -o -f (loop)/isolinux/gentoo64 ];
   then
     export linux_extra="isoboot=${grubfm_path}";
