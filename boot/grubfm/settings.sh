@@ -102,21 +102,6 @@ else
   }
 fi;
 
-if [ "${grub_platform}" = "efi" ];
-then
-  getenv -t uint8 SecureBoot secureboot;
-  if [ "${secureboot}" = "1" ];
-  then
-    menuentry $"Install override security policy" --class uefi {
-      sbpolicy --install;
-      fucksb -i -b;
-      fucksb --off;
-      sleep 2;
-      configfile ${prefix}/settings.sh;
-    }
-  fi;
-fi;
-
 menuentry $"Load AHCI Driver" --class pmagic {
   insmod ahci;
 }
