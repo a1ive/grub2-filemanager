@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-04-12 02:22\n"
+"PO-Revision-Date: 2020-04-12 10:37\n"
 
 msgid "Back"
 msgstr "Retour"
@@ -161,13 +161,13 @@ msgid "Boot EFI Files"
 msgstr "Démarrer les fichiers EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Ouvrir comme un script iPXE"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Ouvrir en tant que police"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Insérer module Grub2"
 
 msgid "Chainload BIOS Boot Sector"
 msgstr ""
@@ -179,136 +179,136 @@ msgid "Chainload BOOTMGR"
 msgstr ""
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Ouvrir comme MOD GRUB4DOS"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Démarrer le kernel Multiboot"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Démarrer le kernel Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Démarrer le Kernel Linux"
 
 msgid "User menu"
-msgstr ""
+msgstr "Menu utilisateur"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Vue Texte"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Vue Hexa"
 
 msgid "Rename"
-msgstr ""
+msgstr "Renommer"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Copier vers..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Supprimer"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Coller ici"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 msgid "File Info"
-msgstr ""
+msgstr "Informations du fichier"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Informations du fichier (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Informations du fichier -- Appuyez sur [ENTER] pour quitter"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Type : ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Chemin d'accès :"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Taille: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "Décalage sur le disque: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "Le fichier est contigu."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "Le fichier n'est pas contiguë. (${frag} fragments)"
 
 msgid "Language"
-msgstr ""
+msgstr "Langue"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "Désactiver PatchGuard et DSE au démarrage"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Mise en place d'une politique de sécurité prioritaire"
 
 msgid "Disable shim validation and reboot"
 msgstr ""
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Désactiver le mode graphique (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Encodage : "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Trier les fichiers par nom"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Ne pas trier les fichiers par nom"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Désactiver le second menu des options de démarrage"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Activer le second menu des options de démarrage"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Afficher tous les fichiers"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Masquer les fichiers non amorçables"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Résolution (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Activer ESC (non recommandé)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Activer les messages de débogage"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Afficher les lecteurs cachés"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Charger des modules supplémentaires"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Activer les noms de fichiers sensibles à la casse"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Désactiver les noms de fichiers sensibles à la casse"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Charger les drivers AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Monter des volumes chiffrés (LUKS et geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Activer le terminal série"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Configuration du Firmware EFI"
 
 msgid "GRUB Console"
 msgstr "Console GRUB"
@@ -323,7 +323,7 @@ msgid "Load External Menu on (${device}) ${info}"
 msgstr "Charger le menu externe sur (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Charger gestionnaire de démarrage de Windows sur ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
 msgstr "Démarrez macOS sur ${device} ${info}"
@@ -431,32 +431,32 @@ msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
 msgstr "Ctrl+l/Ctrl+r - Faire défiler le texte du menu"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl+LAlt+F12 - Captures d'écran (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ Début  ↓ Fin  [ESC] Quitter"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ Début  ↓ Fin  [e] Encodage  [ESC] Quitter"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "FICHIER: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "FICHIER: %s (%s) ENCODAGE: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "Plateforme : %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "Langue : %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "Version de GRUB: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "Date de compilation GRUB : %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "Licence : GNU GPLv3"
 
