@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-04-12 10:15\n"
+"PO-Revision-Date: 2020-04-12 10:37\n"
 
 msgid "Back"
 msgstr "Retour"
@@ -248,7 +248,7 @@ msgid "Disable PatchGuard and DSE at boot time"
 msgstr "Désactiver PatchGuard et DSE au démarrage"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Mise en place d'une politique de sécurité prioritaire"
 
 msgid "Disable shim validation and reboot"
 msgstr ""
@@ -278,37 +278,37 @@ msgid "Hide non-bootable files"
 msgstr "Masquer les fichiers non amorçables"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Résolution (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Activer ESC (non recommandé)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Activer les messages de débogage"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Afficher les lecteurs cachés"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Charger des modules supplémentaires"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Activer les noms de fichiers sensibles à la casse"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Désactiver les noms de fichiers sensibles à la casse"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Charger les drivers AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Monter des volumes chiffrés (LUKS et geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Activer le terminal série"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Configuration du Firmware EFI"
 
 msgid "GRUB Console"
 msgstr "Console GRUB"
@@ -323,7 +323,7 @@ msgid "Load External Menu on (${device}) ${info}"
 msgstr "Charger le menu externe sur (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Charger gestionnaire de démarrage de Windows sur ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
 msgstr "Démarrez macOS sur ${device} ${info}"
@@ -431,32 +431,32 @@ msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
 msgstr "Ctrl+l/Ctrl+r - Faire défiler le texte du menu"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl+LAlt+F12 - Captures d'écran (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ Début  ↓ Fin  [ESC] Quitter"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ Début  ↓ Fin  [e] Encodage  [ESC] Quitter"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "FICHIER: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "FICHIER: %s (%s) ENCODAGE: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "Plateforme : %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "Langue : %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "Version de GRUB: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "Date de compilation GRUB : %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "Licence : GNU GPLv3"
 
