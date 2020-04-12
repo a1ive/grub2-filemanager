@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-04-12 01:52\n"
+"PO-Revision-Date: 2020-04-12 02:02\n"
 
 msgid "Back"
 msgstr "Retour"
@@ -95,70 +95,70 @@ msgid "Boot NT6.x WIM (wimboot)"
 msgstr "Démarrer NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Démarrer NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Démarrer NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Démarrer NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Démarrer Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Démarrer RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Démarrer RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Démarrer VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Démarrer VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Démarrer VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Monter l'ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Démarrer l'ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Démarrer l'ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Démarrer l'ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Démarrer l'ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Démarrer l'ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Installer Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Installer Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Installer Windows sans autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Charger ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Démarrer l'ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Démarrer l'ISO (map --mem)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Démarrer les fichiers EFI"
 
 msgid "Open As iPXE Script"
 msgstr ""
@@ -311,52 +311,52 @@ msgid "EFI Firmware Setup"
 msgstr ""
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "Console GRUB"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI Shell"
 
 msgid "UEFI DUET"
 msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "Charger le menu externe sur (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
 msgstr ""
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "Démarrez macOS sur ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "Démarrer ${winver} sur ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "Démarrer ${device} ${info}"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Démarrer l'ISO (loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Démarrer L'ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "Détection du type d'ISO ..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "Démarrer ${distro} à partir de l'ISO"
 
 msgid "Boot "
-msgstr ""
+msgstr "Démarrer "
 
 msgid " From ISO"
-msgstr ""
+msgstr " À partir de l'ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Veuillez entrer le nom d'utilisateur. Par défaut:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "AVERTISSEMENT : effacera toutes les données sur (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr ""
