@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-04-12 02:02\n"
+"PO-Revision-Date: 2020-04-12 02:22\n"
 
 msgid "Back"
 msgstr "Retour"
@@ -359,76 +359,76 @@ msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
 msgstr "AVERTISSEMENT : effacera toutes les données sur (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "AVERTISSEMENT : effacera toutes les données sur (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "AVERTISSEMENT : supprimera ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "Appuyez sur [1] pour continuer. Appuyez sur une autre touche pour revenir."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Appuyez sur [Y] pour continuer. Appuyez sur [N] pour quitter."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Annulé."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "Le chemin du fichier contient des espaces. Cela peut causer des problèmes! Appuyez sur n'importe quelle touche pour continuer."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "Entrez le nom"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "Mauvais nom de fichier."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "Appuyez sur n'importe quelle touche pour quitter."
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "Veuillez patienter ..."
 
 msgid "Reboot"
-msgstr ""
+msgstr "Redémarrer"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "Redémarrer (R)"
 
 msgid "Halt"
-msgstr ""
+msgstr "Arrêter"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "Arrêter (H)"
 
 msgid "File: "
-msgstr ""
+msgstr "Fichier: "
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "Raccourcis clavier"
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - Aide"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - Gestionnaire de Fichiers"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - détection de l'OS"
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - Paramètres"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - Menu de démarrage PXE"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - Arrêt"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] À propos de GRUB2-FileManager"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr ""
+msgstr "Ctrl+l/Ctrl+r - Faire défiler le texte du menu"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
 msgstr ""
