@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-04-12 01:42\n"
+"PO-Revision-Date: 2020-04-12 01:52\n"
 
 msgid "Back"
 msgstr "Retour"
@@ -35,64 +35,64 @@ msgid "Open As pxelinux Menu"
 msgstr "Ouvrir comme menu pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Ouvrir comme menu GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Ouvrir comme menu Grub legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Ouvrir comme un script Lua"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Ouvrir comme un script Python"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Ouvrir comme une application EFI"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "Charger les drivers UEFI"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "Ouvrir comme un script Shell EFI"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "Ouvrir en tant qu'image"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "Appuyez sur [ESC] pour continuer..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Monter l'image"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Démarrer l'image de la disquette (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Démarrer l'image de la disquette (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Démarrer l'image de la disquette (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Démarrer l'image du disque dur (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Démarrer l'image du disque dur (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Démarrer l'image du disque dur (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Démarrer L'IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Démarrer L'IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Ouvrir en tant qu'archiveur"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Démarrer NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
 msgstr ""
