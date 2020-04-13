@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-04-12 10:37\n"
+"PO-Revision-Date: 2020-04-12 16:46\n"
 
 msgid "Back"
 msgstr "Retour"
@@ -251,7 +251,7 @@ msgid "Install override security policy"
 msgstr "Mise en place d'une politique de sécurité prioritaire"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Désactiver la validation shim et redémarrer"
 
 msgid "Disable graphics mode (T)"
 msgstr "Désactiver le mode graphique (T)"
