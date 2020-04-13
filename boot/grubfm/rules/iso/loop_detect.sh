@@ -339,7 +339,7 @@ function iso_detect {
   fi;
   if [ -f (loop)/boot/isolinux/minirt.gz ];
   then
-    export linux_extra="bootfrom=/dev/disk/by-uuid/${rootuuid}${grubfm_path}";
+    export linux_extra="bootfrom=/dev/*${grubfm_path}";
     export icon=knoppix;
     export distro="Knoppix";
     export src=knoppix;
