@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-04-12 16:46\n"
+"PO-Revision-Date: 2020-04-13 21:52\n"
 
 msgid "Back"
 msgstr "Retour"
@@ -215,13 +215,13 @@ msgid "Cancel"
 msgstr "Annuler"
 
 msgid "File Info"
-msgstr "Informations du fichier"
+msgstr "Informations sur le fichier"
 
 msgid "File Info (${grubfm_name})"
-msgstr "Informations du fichier (${grubfm_name})"
+msgstr "Informations sur le fichier (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr "Informations du fichier -- Appuyez sur [ENTER] pour quitter"
+msgstr "Informations sur le fichier -- Appuyez sur [ENTREE] pour quitter"
 
 msgid "Type: ${grubfm_fileext}"
 msgstr "Type : ${grubfm_fileext}"
