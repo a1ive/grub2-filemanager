@@ -28,6 +28,11 @@ terminal-box: "term_bkg_*.png"
         + label {text = "Resolution: " color = "#ffffff"}
         + label {text = "@@gfxmode" color = "#ffffff"}
     }
+    + hbox {
+        + label {text = "RAM: " color = "#ffffff"}
+        + label {text = "@@RAM" color = "#ffffff"}
+        + label {text = " MiB" color = "#ffffff"}
+    }
 }
 
 # Show the boot menu

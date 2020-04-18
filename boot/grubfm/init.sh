@@ -56,6 +56,7 @@ then
 else
   export CPU=32;
 fi
+stat -r -q -s RAM;
 
 loadfont ${prefix}/fonts/unicode.xz;
 
