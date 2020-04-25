@@ -106,6 +106,15 @@ else
   }
 fi;
 
+if [ "${grub_platform}" = "efi" -a -z "${grubfm_fixmmap}" ];
+then
+  menuentry $"Fix \"BlInitializeLibrary failed XXX\" error" --class mem {
+    fixmmap;
+    export grubfm_fixmmap=1453;
+    configfile ${prefix}/settings.sh;
+  }
+fi;
+
 menuentry $"Load AHCI Driver" --class pmagic {
   insmod ahci;
 }
