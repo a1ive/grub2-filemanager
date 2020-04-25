@@ -21,6 +21,10 @@ menuentry $"Language" --class lang {
   lua ${prefix}/language.lua;
 }
 
+menuentry $"Keyboard layouts" --class gkb {
+  lua ${prefix}/kbd.lua;
+}
+
 if [ "${mode_current}" != "0x0" ];
 then
   menuentry $"Disable graphics mode (T)" --class ms-dos --hotkey "t" {
