@@ -138,11 +138,21 @@ do
     probe --set=bootable -b ${device};
     if regexp 'bootable' "${bootable}";
     then
-      menuentry $"Boot ${device} ${info}" "${device}" --class hdd {
+      unset tmp;
+      regexp --set=1:tmp '(hd[0-9]+),[a-zA-Z]*[0-9]+' "${device}";
+      if [ -n "${tmp}" ];
+      then
+        stat -m -q --set=tmpsize "(${tmp})";
+        menuentry $"Boot ${tmp} (MBR) [${tmpsize}]" "${tmp}" --class hdd {
+          set root="${2}";
+          auto_swap;
+          chainloader --force --bpb "(${2})+1";
+        }
+      fi;
+      menuentry $"Boot ${device} (PBR) ${info}" "${device}" --class hdd {
         set root="${2}";
         auto_swap;
-        regexp --set=1:tmp '(hd[0-9]+),[a-zA-Z]*[0-9]+' "${2}";
-        chainloader --force --bpb "(${tmp})+1";
+        chainloader --force --bpb "(${2})+1";
       }
     fi;
     if ntversion "(${device})" sysver;
