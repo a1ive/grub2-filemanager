@@ -31,6 +31,14 @@ else
     echo "not found\nPlease install grub."
     exit
 fi
+echo -n "checking for mtools ... "
+if [ -e "$(which mtools)" ]
+then
+    echo "ok"
+else
+    echo "not found\nPlease install mtools."
+    exit
+fi
 
 if [ -d "build" ]
 then
@@ -173,6 +181,16 @@ cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 cp arch/legacy/MAP build/
 cp -r arch/legacy/ntboot/* build/
+touch build/ventoy.dat
 
 $geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
+
+dd if=/dev/zero of=build/efi.img bs=1M count=16
+mkfs.vfat build/efi.img
+mmd -i build/efi.img ::EFI
+mmd -i build/efi.img ::EFI/BOOT
+mcopy -i build/efi.img grubfmx64.efi ::EFI/BOOT/BOOTX64.EFI
+mcopy -i build/efi.img grubfmia32.efi ::EFI/BOOT/BOOTIA32.EFI
+$geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -eltorito-alt-boot -eltorito-platform 0xEF -eltorito-boot efi.img -no-emul-boot -o grubfm_all.iso build
+
 rm -r build
