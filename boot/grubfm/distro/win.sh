@@ -11,6 +11,11 @@ function auto_swap {
   fi;
 }
 
+if [ -z "${grubfm_startbat}" -o ! -f "${grubfm_startbat}" ];
+then
+  set grubfm_startbat="(install)/start.bat";
+fi;
+
 function win_isoboot {
   set lang=en_US;
   terminal_output console;
@@ -34,7 +39,7 @@ function win_isoboot {
                newc:null.cfg:(envblk)/null.cfg \
                newc:mount_x64.exe:(install)/mount_x64.exe \
                newc:mount_x86.exe:(install)/mount_x86.exe \
-               newc:start.bat:(install)/start.bat \
+               newc:start.bat:${grubfm_startbat} \
                newc:winpeshl.ini:(install)/winpeshl.ini \
                newc:boot.wim:"${1}";
     else
@@ -45,7 +50,7 @@ function win_isoboot {
                newc:null.cfg:(envblk)/null.cfg \
                newc:mount_x64.exe:(install)/mount_x64.exe \
                newc:mount_x86.exe:(install)/mount_x86.exe \
-               newc:start.bat:(install)/start.bat \
+               newc:start.bat:${grubfm_startbat} \
                newc:winpeshl.ini:(install)/winpeshl.ini \
                newc:autounattend.xml:"${2}" \
                newc:boot.wim:"${1}";
@@ -63,7 +68,7 @@ function win_isoboot {
               @:null.cfg:(envblk)/null.cfg \
               @:mount_x64.exe:(install)/mount_x64.exe \
               @:mount_x86.exe:(install)/mount_x86.exe \
-              @:start.bat:(install)/start.bat \
+              @:start.bat:${grubfm_startbat} \
               @:winpeshl.ini:(install)/winpeshl.ini \
               @:boot.wim:"${1}";
     else
@@ -73,7 +78,7 @@ function win_isoboot {
               @:null.cfg:(envblk)/null.cfg \
               @:mount_x64.exe:(install)/mount_x64.exe \
               @:mount_x86.exe:(install)/mount_x86.exe \
-              @:start.bat:(install)/start.bat \
+              @:start.bat:${grubfm_startbat} \
               @:winpeshl.ini:(install)/winpeshl.ini \
               @:autounattend.xml:"${2}" \
               @:boot.wim:"${1}";
