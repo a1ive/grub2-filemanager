@@ -235,6 +235,12 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
+msgid "Keyboard layouts"
+msgstr ""
+
+msgid "Fix \"BlInitializeLibrary failed XXX\" error"
+msgstr ""
+
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr ""
 
@@ -323,6 +329,12 @@ msgid "Boot ${winver} on ${device} ${info}"
 msgstr ""
 
 msgid "Boot ${device} ${info}"
+msgstr ""
+
+msgid "Boot ${device} (PBR) ${info}"
+msgstr ""
+
+msgid "Boot ${tmp} (MBR) [${tmpsize}]"
 msgstr ""
 
 msgid "Boot ISO (Loopback)"

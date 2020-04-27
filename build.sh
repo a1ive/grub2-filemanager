@@ -191,6 +191,6 @@ mmd -i build/efi.img ::EFI
 mmd -i build/efi.img ::EFI/BOOT
 mcopy -i build/efi.img grubfmx64.efi ::EFI/BOOT/BOOTX64.EFI
 mcopy -i build/efi.img grubfmia32.efi ::EFI/BOOT/BOOTIA32.EFI
-$geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -eltorito-alt-boot -eltorito-platform 0xEF -eltorito-boot efi.img -no-emul-boot -o grubfm_all.iso build
+$geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -eltorito-alt-boot -eltorito-platform 0xEF -eltorito-boot efi.img -no-emul-boot -o grubfm_multiarch.iso build
 
 rm -r build

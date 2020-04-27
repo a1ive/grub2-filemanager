@@ -101,7 +101,7 @@ do
     if [ "${grub_cpu}" = "x86_64" ];
     then
       set boot_file="/efi/boot/bootx64.efi";
-    elif [ "${grub_cpu}" = "x86_64" ];
+    elif [ "${grub_cpu}" = "i386" ];
     then
       set boot_file="/efi/boot/bootia32.efi";
     fi;
