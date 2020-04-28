@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-03-31 13:23\n"
+"PO-Revision-Date: 2020-04-28 01:36\n"
 
 msgid "Back"
 msgstr "Wstecz"
@@ -244,6 +244,12 @@ msgstr "Plik nie jest ciągły. (${frag} fragmentów)"
 msgid "Language"
 msgstr "Język"
 
+msgid "Keyboard layouts"
+msgstr ""
+
+msgid "Fix \"BlInitializeLibrary failed XXX\" error"
+msgstr ""
+
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "Wyłącz PatchGuard i DSE podczas uruchamiania"
 
@@ -333,6 +339,12 @@ msgstr "Uruchom ${winver} na ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
 msgstr "Uruchom ${device} ${info}"
+
+msgid "Boot ${device} (PBR) ${info}"
+msgstr ""
+
+msgid "Boot ${tmp} (MBR) [${tmpsize}]"
+msgstr ""
 
 msgid "Boot ISO (Loopback)"
 msgstr "Uruchom ISO (Loopback)"
