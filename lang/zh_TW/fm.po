@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2020-04-28 01:36\n"
+"PO-Revision-Date: 2020-04-28 02:00\n"
 
 msgid "Back"
 msgstr "返回"
@@ -245,10 +245,10 @@ msgid "Language"
 msgstr "語言"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "鍵盤佈局"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "修復 \"BlInitializeLibrary failed XXX\" 錯誤"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "在啟動時禁用 PatchGuard 和 DSE"
@@ -341,10 +341,10 @@ msgid "Boot ${device} ${info}"
 msgstr "啟動 ${device} ${info}"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "啟動 ${device} (PBR) ${info}"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "啟動 ${tmp} (MBR) [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
 msgstr "作為 Loopback ISO 啟動"
