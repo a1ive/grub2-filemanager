@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-04-28 01:36\n"
+"PO-Revision-Date: 2020-04-28 02:00\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -341,10 +341,10 @@ msgid "Boot ${device} ${info}"
 msgstr "Önyükle ${device} ${info}"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "Önyükle ${device} (PBR) ${info}"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "Önyükle ${tmp} (MBR) [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
 msgstr "ISO Önyükle (Loopback)"
