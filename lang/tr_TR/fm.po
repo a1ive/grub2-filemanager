@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-02-29 09:23\n"
+"PO-Revision-Date: 2020-04-28 02:00\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -244,6 +244,12 @@ msgstr "Dosya bitişik değil. (${frag} fragments)"
 msgid "Language"
 msgstr "Dil"
 
+msgid "Keyboard layouts"
+msgstr ""
+
+msgid "Fix \"BlInitializeLibrary failed XXX\" error"
+msgstr ""
+
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "Yama Korumasını ve DSE'yi (Sürücü İmza Uygulaması) önyüklemede devre dışı bırak"
 
@@ -333,6 +339,12 @@ msgstr "${device} ${info} üzerinde ${winver} dosyasını önyükleyin"
 
 msgid "Boot ${device} ${info}"
 msgstr "Önyükle ${device} ${info}"
+
+msgid "Boot ${device} (PBR) ${info}"
+msgstr "Önyükle ${device} (PBR) ${info}"
+
+msgid "Boot ${tmp} (MBR) [${tmpsize}]"
+msgstr "Önyükle ${tmp} (MBR) [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
 msgstr "ISO Önyükle (Loopback)"

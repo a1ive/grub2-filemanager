@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-04-05 12:37\n"
+"PO-Revision-Date: 2020-04-28 02:00\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -244,6 +244,12 @@ msgstr "Файл фрагментирован. (${frag} фрагментов)"
 msgid "Language"
 msgstr "Язык"
 
+msgid "Keyboard layouts"
+msgstr ""
+
+msgid "Fix \"BlInitializeLibrary failed XXX\" error"
+msgstr ""
+
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "Отключить PatchGuard и DSE во время загрузки"
 
@@ -333,6 +339,12 @@ msgstr "Загрузить ${winver} из ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
 msgstr "Загрузить ${device} ${info}"
+
+msgid "Boot ${device} (PBR) ${info}"
+msgstr "Загрузить ${device} (PBR) ${info}"
+
+msgid "Boot ${tmp} (MBR) [${tmpsize}]"
+msgstr "Загрузить ${tmp} (MBR) [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
 msgstr "Загрузить ISO (Loopback)"
