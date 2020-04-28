@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-04-08 21:17\n"
+"PO-Revision-Date: 2020-04-28 01:36\n"
 
 msgid "Back"
 msgstr "Atrás"
@@ -244,6 +244,12 @@ msgstr "El archivo no es contiguo. (${frag} fragmentos)"
 msgid "Language"
 msgstr "Idioma"
 
+msgid "Keyboard layouts"
+msgstr ""
+
+msgid "Fix \"BlInitializeLibrary failed XXX\" error"
+msgstr ""
+
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "Desactivar PatchGuard y DSE al arrancar"
 
@@ -333,6 +339,12 @@ msgstr "Arrancar ${winver} en ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
 msgstr "Arrancar ${device} ${info}"
+
+msgid "Boot ${device} (PBR) ${info}"
+msgstr ""
+
+msgid "Boot ${tmp} (MBR) [${tmpsize}]"
+msgstr ""
 
 msgid "Boot ISO (Loopback)"
 msgstr "Arrancar ISO (Loopback)"
