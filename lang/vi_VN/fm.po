@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2020-04-28 01:36\n"
+"PO-Revision-Date: 2020-04-28 02:00\n"
 
 msgid "Back"
 msgstr "Quay về"
@@ -347,10 +347,10 @@ msgid "Boot ${tmp} (MBR) [${tmpsize}]"
 msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Khởi động ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Khởi động ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
 msgstr ""
@@ -359,7 +359,7 @@ msgid "Boot ${distro} From ISO"
 msgstr ""
 
 msgid "Boot "
-msgstr ""
+msgstr "Khởi động "
 
 msgid " From ISO"
 msgstr ""
