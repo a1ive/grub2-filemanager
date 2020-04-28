@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-02-29 03:40\n"
+"PO-Revision-Date: 2020-04-28 01:36\n"
 
 msgid "Back"
 msgstr "返回"
@@ -244,6 +244,12 @@ msgstr "文件有碎片。(${frag} 个碎片)"
 msgid "Language"
 msgstr "语言"
 
+msgid "Keyboard layouts"
+msgstr ""
+
+msgid "Fix \"BlInitializeLibrary failed XXX\" error"
+msgstr ""
+
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "在启动时禁用 PatchGuard 和 DSE"
 
@@ -333,6 +339,12 @@ msgstr "启动 ${device} ${info} 上的 ${winver}"
 
 msgid "Boot ${device} ${info}"
 msgstr "启动 ${device} ${info}"
+
+msgid "Boot ${device} (PBR) ${info}"
+msgstr ""
+
+msgid "Boot ${tmp} (MBR) [${tmpsize}]"
+msgstr ""
 
 msgid "Boot ISO (Loopback)"
 msgstr "作为 Loopback ISO 启动"
