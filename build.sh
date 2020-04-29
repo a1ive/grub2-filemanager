@@ -7,23 +7,13 @@ else
     echo "not found\nPlease install gettext."
     exit
 fi
-echo -n "checking for mkisofs ... "
-if [ -e "$(which mkisofs)" ]
+echo -n "checking for xorriso ... "
+if [ -e "$(which xorriso)" ]
 then
     echo "ok"
-    geniso=$(which mkisofs)
-    efioption="-eltorito-platform 0xEF -eltorito-boot"
 else
-    echo -n "not found\nchecking for genisoimage ... "
-    if [ -e "$(which genisoimage)" ]
-    then
-        echo "ok"
-        geniso=$(which genisoimage)
-        efioption="-efi-boot"
-    else
-        echo "not found\nPlease install mkisofs or genisoimage."
-        exit
-    fi
+    echo "not found\nPlease install xorriso."
+    exit
 fi
 echo -n "checking for grub ... "
 if [ -e "$(which grub-mkimage)" ]
@@ -185,7 +175,7 @@ cp arch/legacy/MAP build/
 cp -r arch/legacy/ntboot/* build/
 touch build/ventoy.dat
 
-$geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
+xorriso -as mkisofs -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 
 dd if=/dev/zero of=build/efi.img bs=1M count=16
 mkfs.vfat build/efi.img
@@ -193,6 +183,6 @@ mmd -i build/efi.img ::EFI
 mmd -i build/efi.img ::EFI/BOOT
 mcopy -i build/efi.img grubfmx64.efi ::EFI/BOOT/BOOTX64.EFI
 mcopy -i build/efi.img grubfmia32.efi ::EFI/BOOT/BOOTIA32.EFI
-$geniso -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -eltorito-alt-boot $efioption efi.img -no-emul-boot -o grubfm_multiarch.iso build
+xorriso -as mkisofs -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -eltorito-alt-boot -eltorito-platform 0xEF -eltorito-boot efi.img -no-emul-boot -o grubfm_multiarch.iso build
 
 rm -r build
