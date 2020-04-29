@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-04-28 02:00\n"
+"PO-Revision-Date: 2020-04-29 03:52\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -233,7 +233,7 @@ msgid "Size: ${hsize} (${size})"
 msgstr "Boyut: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "Disk üzerindeki dağılımı: ${offset}"
 
 msgid "File is contiguous."
 msgstr "Dosya bitişik."
@@ -245,10 +245,10 @@ msgid "Language"
 msgstr "Dil"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "Klavye Düzeni"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "\"BlInitializeLibrary failed XXX\" hatasını düzelt"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "Yama Korumasını ve DSE'yi (Sürücü İmza Uygulaması) önyüklemede devre dışı bırak"
