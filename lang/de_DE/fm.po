@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2020-04-28 02:00\n"
+"PO-Revision-Date: 2020-05-01 08:52\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -245,10 +245,10 @@ msgid "Language"
 msgstr "Sprache"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "Tastatur-Belegungen"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "Behebung des Fehlers \"BlInitializeLibrary failed XXX\""
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "PatchGuard und DSE beim Booten deaktivieren"
