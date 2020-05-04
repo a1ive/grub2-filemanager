@@ -115,10 +115,6 @@ then
   }
 fi;
 
-menuentry $"Load AHCI Driver" --class pmagic {
-  insmod ahci;
-}
-
 menuentry $"Mount encrypted volumes (LUKS and geli)" --class konboot {
   insmod luks;
   insmod geli;

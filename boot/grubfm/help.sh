@@ -57,12 +57,6 @@ then
       echo;
     }
   fi;
-  if [ "$grub_platform" = "efi" ];
-  then
-    menuentry $"LCtrl+LAlt+F12 - Take Screenshots (EFI)" {
-      echo;
-    }
-  fi;
 fi;
 
 menuentry $"[A] About GRUB2-FileManager" --hotkey a {
@@ -109,8 +103,4 @@ hiddenentry "[F5] PXE BOOT MENU" --hotkey f5 {
 
 hiddenentry "[F6] POWER OFF" --hotkey f6 {
   configfile ${prefix}/power.sh;
-}
-
-hiddenentry "LCtrl + LAlt + F12 - Take Screenshots (EFI)" { 
-  echo;
 }

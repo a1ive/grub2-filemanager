@@ -119,13 +119,13 @@ do
     echo "copying ${modules}.mod"
     cp grub/x86_64-efi/${modules}.mod build/boot/grubfm/x86_64-efi/
 done
-cp arch/x64/*.efi build/boot/grubfm
+# cp arch/x64/*.efi build/boot/grubfm
 cp arch/x64/*.gz build/boot/grubfm
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
 rm -r build/boot/grubfm/x86_64-efi
-rm build/boot/grubfm/*.efi
+# rm build/boot/grubfm/*.efi
 rm build/boot/grubfm/*.gz
 modules=$(cat arch/x64/builtin.lst)
 grub-mkimage -m ./build/memdisk.cpio -d ./grub/x86_64-efi -p "(memdisk)/boot/grubfm" -c arch/x64/config.cfg -o grubfmx64.efi -O x86_64-efi $modules
@@ -137,13 +137,13 @@ do
     echo "copying ${modules}.mod"
     cp grub/i386-efi/${modules}.mod build/boot/grubfm/i386-efi/
 done
-cp arch/ia32/*.efi build/boot/grubfm
+# cp arch/ia32/*.efi build/boot/grubfm
 cp arch/ia32/*.gz build/boot/grubfm
 cd build
 find ./boot | cpio -o -H newc > ./memdisk.cpio
 cd ..
 rm -r build/boot/grubfm/i386-efi
-rm build/boot/grubfm/*.efi
+# rm build/boot/grubfm/*.efi
 rm build/boot/grubfm/*.gz
 modules=$(cat arch/ia32/builtin.lst)
 grub-mkimage -m ./build/memdisk.cpio -d ./grub/i386-efi -p "(memdisk)/boot/grubfm" -c arch/ia32/config.cfg -o grubfmia32.efi -O i386-efi $modules
