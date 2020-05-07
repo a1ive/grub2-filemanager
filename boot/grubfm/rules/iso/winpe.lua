@@ -19,8 +19,8 @@ local winpe_wim_list =
 {
   "(loop)/boot/boot.wim",
   "(loop)/sources/boot.wim",
-  "(loop)/wim/w10pe64.win",
-  "(loop)/wim/w10pe32.win",
+  "(loop)/wim/w10pe64.wim",
+  "(loop)/wim/w10pe32.wim",
   "(loop)/DLC1/W10PE/W10x64.wim",
   "(loop)/DLC1/W10PE/W10x86.wim",
   "(loop)/HKBoot/PE/W10x64PE.wim",
