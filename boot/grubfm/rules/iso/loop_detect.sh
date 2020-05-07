@@ -60,6 +60,18 @@ function iso_detect {
     export src=win;
     return;
   fi;
+  lua ${prefix}/rules/iso/winpe.lua;
+  if [ ${wim_count} -ge 1 ];
+  then
+    export icon=nt6;
+    export distro="Windows PE";
+    menuentry $"Boot ${distro} From ISO" --class ${icon} {
+      loopback -d loop;
+      loopback loop "${grubfm_file}";
+      set do_list=1;
+      lua ${prefix}/rules/iso/winpe.lua;
+    }
+  fi;
   if [ -d (loop)/casper ];
   then
     export linux_extra="iso-scan/filename=${grubfm_path}";
