@@ -19,6 +19,16 @@ function to_g4d_path {
   lua ${prefix}/g4d_path.lua;
 }
 
+function unmap_cd {
+  for dev in (cd*);
+  do
+    if [ -e ${dev} ];
+    then
+      map -x ${dev};
+    fi;
+  done;
+}
+
 regexp --set=1:grubfm_path '(/.*)$' "${grubfm_file}";
 regexp --set=1:grubfm_dir '^(.*/).*$' "${grubfm_path}";
 regexp --set=1:grubfm_device '^\(([0-9a-zA-Z,]+)\)/.*' "${grubfm_file}";

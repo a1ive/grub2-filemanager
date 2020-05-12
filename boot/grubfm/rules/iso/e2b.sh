@@ -22,6 +22,7 @@ then
   partnew --type=0x00 --file="${grubfm_file}" "${grubfm_disk}" 4;
   if [ "$grub_platform" = "efi" ];
   then
+    unmap_cd;
     map "${grubfm_file}";
   elif [ "$grub_platform" = "pc" ];
   then
