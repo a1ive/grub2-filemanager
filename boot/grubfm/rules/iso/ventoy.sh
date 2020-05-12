@@ -398,6 +398,7 @@ function iso_menu_func
   get_os_type (loop)
   if [ "$grub_platform" = "efi" ];
   then
+    unmap_cd
     set vt_efi_dir=NO
     if [ -d (loop)/EFI -o -d (loop)/efi ];
     then
