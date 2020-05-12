@@ -51,3 +51,14 @@ hiddenentry "[F5] PXE BOOT MENU" --hotkey f5 {
 hiddenentry "[F6] POWER OFF" --hotkey f6 {
   configfile ${prefix}/power.sh;
 }
+
+hiddenentry " " --hotkey f {
+  if [ -n "${grubfm_current_path}" ];
+  then
+    export srcdir=$grubfm_current_path;
+    configfile $prefix/search.sh;
+  else
+    export srcdir=(*);
+    configfile $prefix/search.sh;
+  fi;
+}

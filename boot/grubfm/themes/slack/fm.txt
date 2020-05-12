@@ -63,3 +63,10 @@ terminal-box: "term_bkg_*.png"
         + image {file = "dock/logout.png"}
     }
 }
+
++ hbox {
+    top = 100%-21
+    left = 0%
+    + image {file = "dock/search.png"}
+    + label {text = "[F]" color = "#ffffff"}
+}
