@@ -14,6 +14,8 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
+source ${prefix}/func.sh;
+
 function uefi_load_iso_driver
 {
   if [ "${LoadIsoEfiDriver}" = "on" ];
@@ -133,7 +135,12 @@ function uefi_windows_menu_func
       vt_windows_locate_wim $ventoy_wim_file
     fi
   fi
-  vt_windows_chain_data "${1}"
+  if [ -z "${2}" ];
+  then
+    vt_windows_chain_data "${1}"
+  else
+    vt_windows_chain_data "${1}" "${2}"
+  fi
   if [ -n "${vtdebug_flag}" ];
   then
     sleep 5
@@ -154,7 +161,12 @@ function uefi_linux_menu_func
 {
   if [ "$ventoy_compatible" = "NO" ];
   then
-    vt_load_cpio ${vtoy_path}/ventoy.cpio
+    if [ -z "${2}" ];
+    then
+      vt_load_cpio $vtoy_path/ventoy.cpio
+    else
+      vt_load_cpio $vtoy_path/ventoy.cpio "${2}"
+    fi
     vt_linux_clear_initrd
     if [ -d (loop)/pmagic ];
     then
@@ -210,48 +222,6 @@ function uefi_linux_menu_func
   fi
 }
 
-function uefi_iso_menu_func
-{
-  loopback -d loop
-  if [ -n "$vtisouefi" ];
-  then
-    set LoadIsoEfiDriver=on
-    unset vtisouefi
-  elif [ -n "$VTOY_ISO_UEFI_DRV" ];
-  then
-    set LoadIsoEfiDriver=on
-  else
-    unset LoadIsoEfiDriver
-  fi
-  loopback loop "${1}"
-  get_os_type (loop)
-  if [ -d (loop)/EFI -o -d (loop)/efi ];
-  then
-    set vt_efi_dir=YES
-  else
-    set vt_efi_dir=NO
-  fi
-  if [ -n "$vtcompat" ];
-  then
-    set ventoy_compatible=YES
-    unset vtcompat
-  else
-    vt_check_compatible (loop)
-  fi
-  vt_img_sector "${1}"
-  if [ "$vtoy_os" = "Windows" ];
-  then
-    if [ -f (loop)/HBCD_PE.ini ];
-    then
-      set ventoy_compatible=YES
-    fi
-    uefi_windows_menu_func "${1}"
-  else
-    uefi_linux_menu_func "${1}"
-  fi
-  terminal_output  gfxterm
-}
-
 function legacy_windows_menu_func
 {
   vt_windows_reset
@@ -266,7 +236,12 @@ function legacy_windows_menu_func
       echo No wim file found
     fi
   fi
-  vt_windows_chain_data "${1}"
+  if [ -z "${2}" ];
+  then
+    vt_windows_chain_data "${1}"
+  else
+    vt_windows_chain_data "${1}" "${2}"
+  fi
   if [ -n "${vtdebug_flag}" ];
   then
     sleep 5
@@ -286,7 +261,12 @@ function legacy_linux_menu_func
 {
   if [ "$ventoy_compatible" = "NO" ];
   then
-    vt_load_cpio $vtoy_path/ventoy.cpio
+    if [ -z "${2}" ];
+    then
+      vt_load_cpio $vtoy_path/ventoy.cpio
+    else
+      vt_load_cpio $vtoy_path/ventoy.cpio "${2}"
+    fi
     vt_linux_clear_initrd
     if [ -d (loop)/pmagic ];
     then
@@ -341,11 +321,89 @@ function legacy_linux_menu_func
   fi
 }
 
-function legacy_iso_menu_func
+function windows_iso_boot
+{
+  if [ "$grub_platform" = "efi" ];
+  then
+    uefi_windows_menu_func "${1}" "${2}"
+  else
+    legacy_windows_menu_func "${1}" "${2}"
+  fi;
+}
+
+function linux_iso_boot
+{
+  if [ "$grub_platform" = "efi" ];
+  then
+    uefi_linux_menu_func "${1}" "${2}"
+  else
+    legacy_linux_menu_func "${1}" "${2}"
+  fi;
+}
+
+function lin_auto_list
+{
+  # autounattend.xml
+  if [ -f "(${grubfm_device})${grubfm_dir}"*_kickstart.cfg -o \
+       -f "(${grubfm_device})${grubfm_dir}"*_autoyast.xml -o \
+       -f "(${grubfm_device})${grubfm_dir}"*.seed ];
+  then
+    clear_menu;
+    menuentry $"Boot Linux without auto_install scripts" "${1}" --class gnu-linux {
+      linux_iso_boot "${2}";
+    }
+    for xml in "(${grubfm_device})${grubfm_dir}"*_kickstart.cfg \
+               "(${grubfm_device})${grubfm_dir}"*_autoyast.xml \
+               "(${grubfm_device})${grubfm_dir}"*.seed;
+    do
+      if [ -f "${xml}" ];
+      then
+        regexp --set=1:xml_name '^.*/(.*)$' "${xml}";
+        menuentry $"Load ${xml_name}" "${1}" "${xml}" --class gnu-linux {
+          linux_iso_boot "${2}" "${3}";
+        }
+      fi;
+    done;
+  else
+    linux_iso_boot "${1}";
+  fi;
+}
+
+function win_auto_list
+{
+  # autounattend.xml
+  if [ -f "(${grubfm_device})${grubfm_dir}"*.xml ];
+  then
+    clear_menu;
+    menuentry $"Install Windows without autounattend.xml" "${1}" --class nt6 {
+      windows_iso_boot "${2}";
+    }
+    for xml in "(${grubfm_device})${grubfm_dir}"*.xml;
+    do
+      regexp --set=1:xml_name '^.*/(.*)$' "${xml}";
+      menuentry $"Load ${xml_name}" "${1}" "${xml}" --class nt6 {
+        windows_iso_boot "${2}" "${3}";
+      }
+    done;
+    source ${prefix}/global.sh;
+  else
+    windows_iso_boot "${1}";
+  fi;
+}
+
+function iso_menu_func
 {
   loopback -d loop
   loopback loop "${1}"
   get_os_type (loop)
+  if [ "$grub_platform" = "efi" ];
+  then
+    set vt_efi_dir=NO
+    if [ -d (loop)/EFI -o -d (loop)/efi ];
+    then
+      set vt_efi_dir=YES
+    fi
+  fi
   if [ -n "$vtcompat" ];
   then
     set ventoy_compatible=YES
@@ -360,15 +418,10 @@ function legacy_iso_menu_func
     then
       set ventoy_compatible=YES
     fi
-    legacy_windows_menu_func "${1}"
+    win_auto_list "${1}"
   else
-    legacy_linux_menu_func "${1}"
+    lin_auto_list "${1}"
   fi
 }
 
-if [ "$grub_platform" = "pc" ];
-then
-  legacy_iso_menu_func "${grubfm_file}"
-else
-  uefi_iso_menu_func "${grubfm_file}"
-fi;
+iso_menu_func "${grubfm_file}"
