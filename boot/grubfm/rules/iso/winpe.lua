@@ -53,6 +53,8 @@ local function gen_wimboot (wim)
   local platform = grub.getenv ("grub_platform")
   local iso_path = string.match (grub.getenv ("grubfm_file"), "^%([%w,]+%)(.*)$")
   local cmd = "set installiso=\"" .. iso_path .. "\"\n" ..
+        "terminal_output console\n" ..
+        "set lang=en_US\n" ..
         "tr --set=installiso \"/\" \"\\\\\"\n" ..
         "loopback -m envblk ${prefix}/null.cpio\n" ..
         "save_env -s -f (envblk)/null.cfg installiso\n" ..
@@ -60,8 +62,7 @@ local function gen_wimboot (wim)
         "loopback wimboot ${prefix}/wimboot.gz\n" ..
         "loopback install ${prefix}/install.gz\n"
   if platform == "efi" then
-    cmd = cmd .. "set lang=en_US\n" ..
-          "terminal_output console\n" ..
+    cmd = cmd ..
           "wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi" ..
           " @:bcd:(wimboot)/bcd @:boot.sdi:(wimboot)/boot.sdi" ..
           " @:null.cfg:(envblk)/null.cfg" ..

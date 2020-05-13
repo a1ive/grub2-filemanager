@@ -72,6 +72,14 @@ function iso_detect {
       lua ${prefix}/rules/iso/winpe.lua;
     }
   fi;
+  if [ -f (loop)/WIN51 ];
+  then
+    export linux_extra=" ";
+    export icon=nt5;
+    export distro="Windows XP";
+    export src=winxp;
+    return;
+  fi;
   if [ -d (loop)/casper ];
   then
     export linux_extra="iso-scan/filename=${grubfm_path}";
