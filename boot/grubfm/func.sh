@@ -29,6 +29,17 @@ function unmap_cd {
   done;
 }
 
+function auto_swap {
+  if regexp '^hd[0-9a-zA-Z,]+$' ${grubfm_disk};
+  then
+    regexp -s devnum '^hd([0-9]+).*$' ${grubfm_disk};
+    if test "devnum" != "0";
+    then
+      drivemap -s (hd0) (${grubfm_disk});
+    fi;
+  fi;
+}
+
 regexp --set=1:grubfm_path '(/.*)$' "${grubfm_file}";
 regexp --set=1:grubfm_dir '^(.*/).*$' "${grubfm_path}";
 regexp --set=1:grubfm_device '^\(([0-9a-zA-Z,]+)\)/.*' "${grubfm_file}";
