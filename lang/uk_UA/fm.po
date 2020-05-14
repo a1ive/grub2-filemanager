@@ -8,241 +8,241 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-04-28 02:00\n"
+"PO-Revision-Date: 2020-05-14 09:22\n"
 
 msgid "Back"
-msgstr "Назад"
+msgstr ""
 
 msgid "Disabled"
-msgstr "Заборонено"
+msgstr ""
 
 msgid "Enabled"
-msgstr "Дозволено"
+msgstr ""
 
 msgid "Not available"
-msgstr "Не доступно"
+msgstr ""
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr "Встановити BGRT (логотип завантаження Windows)"
+msgstr ""
 
 msgid "Open As Grub2 Menu"
-msgstr "Відкрити як меню Grub2"
+msgstr ""
 
 msgid "Open As Syslinux Menu"
-msgstr "Відкрити як меню Syslinux"
+msgstr ""
 
 msgid "Open As pxelinux Menu"
-msgstr "Відкрити як меню PXELINUX"
+msgstr ""
 
 msgid "Open As GRUB4DOS Menu"
-msgstr "Відкрити як меню GRUB4DOS"
+msgstr ""
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr "Відкрити як меню GRUB-Legacy"
+msgstr ""
 
 msgid "Open As Lua Script"
-msgstr "Відкрити як сценарій Lua"
+msgstr ""
 
 msgid "Open As Python Script"
-msgstr "Відкрити як сценарій Python"
+msgstr ""
 
 msgid "Open As EFI Application"
-msgstr "Відкрити як програму EFI"
+msgstr ""
 
 msgid "Load UEFI driver"
-msgstr "Завантажити драйвер UEFI"
+msgstr ""
 
 msgid "Open As EFI Shell Script"
-msgstr "Відкрити як сценарій EFI Shell"
+msgstr ""
 
 msgid "Open As Image"
-msgstr "Переглянути як зображення"
+msgstr ""
 
 msgid "Press [ESC] to continue..."
-msgstr "Натисніть [ESC], щоб продовжити..."
+msgstr ""
 
 msgid "Mount Image"
-msgstr "Змонтувати знімок"
+msgstr ""
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "Завантажити знімок дискети (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "Завантажити знімок дискети (memdisk)"
+msgstr ""
 
 msgid "Boot Floppy Image (map)"
-msgstr "Завантажити знімок дискети (map)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "Завантажити знімок жорсткого диску (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "Завантажити знімок жорсткого диску (memdisk)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (map)"
-msgstr "Завантажити знімок жорсткого диску (map)"
+msgstr ""
 
 msgid "Boot IMG (map)"
-msgstr "Завантажити IMG (map)"
+msgstr ""
 
 msgid "Boot IMG (map --mem)"
-msgstr "Завантажити IMG (map --mem)"
+msgstr ""
 
 msgid "Open As Archiver"
-msgstr "Відкрити як архів"
+msgstr ""
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "Завантажити NT6.x WIM (wimboot)"
+msgstr ""
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "Завантажити NT6.x WIM (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "Завантажити NT5.x WIM (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Завантажити NT5.x PE (NTBOOT)"
+msgstr ""
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "Завантажити Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "Завантажити RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "Завантажити RamOS VHD (GRUB4DOS map --mem)"
+msgstr ""
 
 msgid "Boot VHD (vboot)"
-msgstr "Завантажити VHD (vboot)"
+msgstr ""
 
 msgid "Boot VHD (map)"
-msgstr "Завантажити VHD (map)"
+msgstr ""
 
 msgid "Boot VHD (map --mem)"
-msgstr "Завантажити VHD (map --mem)"
+msgstr ""
 
 msgid "Mount ISO"
-msgstr "Змонтувати ISO"
+msgstr ""
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "Завантажити ISO (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot ISO (memdisk)"
-msgstr "Завантажити ISO (memdisk)"
+msgstr ""
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "Завантажити ISO (Easy2Boot)"
+msgstr ""
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr "Завантажити ISO (loopback.cfg)"
+msgstr ""
 
 msgid "Boot ISO (partnew)"
-msgstr "Завантажити ISO (partnew)"
+msgstr ""
 
 msgid "Install Windows (x64)"
-msgstr "Встановити Windows (x64)"
+msgstr ""
 
 msgid "Install Windows (x86)"
-msgstr "Встановити Windows (x86)"
+msgstr ""
 
 msgid "Install Windows without autounattend.xml"
-msgstr "Встановити Windows без autounattend.xml"
+msgstr ""
 
 msgid "Load ${xml_name}"
-msgstr "Завантажити ${xml_name}"
+msgstr ""
 
 msgid "Boot ISO (map)"
-msgstr "Завантажити ISO (map)"
+msgstr ""
 
 msgid "Boot ISO (map --mem)"
-msgstr "Завантажити ISO (map --mem)"
+msgstr ""
 
 msgid "Boot EFI Files"
-msgstr "Завантажити файли EFI"
+msgstr ""
 
 msgid "Open As iPXE Script"
-msgstr "Відкрити як сценарій iPXE"
+msgstr ""
 
 msgid "Open As Font"
-msgstr "Відкрити як шрифт"
+msgstr ""
 
 msgid "Insert Grub2 Module"
-msgstr "Вставити модуль Grub2"
+msgstr ""
 
 msgid "Chainload BIOS Boot Sector"
-msgstr "Ланцюгове завантаження BIOS Boot Sector"
+msgstr ""
 
 msgid "Chainload NTLDR"
-msgstr "Ланцюгове завантаження NTLDR"
+msgstr ""
 
 msgid "Chainload BOOTMGR"
-msgstr "Ланцюгове завантаження BOOTMGR"
+msgstr ""
 
 msgid "Open As GRUB4DOS MOD"
-msgstr "Відкрити як GRUB4DOS MOD"
+msgstr ""
 
 msgid "Boot Multiboot Kernel"
-msgstr "Завантажити ядро Multiboot"
+msgstr ""
 
 msgid "Boot Multiboot2 Kernel"
-msgstr "Завантажити ядро Multiboot2"
+msgstr ""
 
 msgid "Boot Linux Kernel"
-msgstr "Завантажити ядро Linux"
+msgstr ""
 
 msgid "User menu"
-msgstr "Меню користувача"
+msgstr ""
 
 msgid "Text Viewer"
-msgstr "Перегляд тексту"
+msgstr ""
 
 msgid "Hex Viewer"
-msgstr "Перегляд шістнадцяткового коду"
+msgstr ""
 
 msgid "Rename"
-msgstr "Перейменувати"
+msgstr ""
 
 msgid "Copy to ..."
-msgstr "Копіювати до..."
+msgstr ""
 
 msgid "Delete"
-msgstr "Видалити"
+msgstr ""
 
 msgid "Paste here"
-msgstr "Вставити тут"
+msgstr ""
 
 msgid "Cancel"
-msgstr "Скасувати"
+msgstr ""
 
 msgid "File Info"
-msgstr "Інформація про файл"
+msgstr ""
 
 msgid "File Info (${grubfm_name})"
-msgstr "Інформація про файл (${grubfm_name})"
+msgstr ""
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr "Інформація про файл -- Натисніть [ENTER], щоб вийти"
+msgstr ""
 
 msgid "Type: ${grubfm_fileext}"
-msgstr "Тип: ${grubfm_fileext}"
+msgstr ""
 
 msgid "Path:"
-msgstr "Шлях:"
+msgstr ""
 
 msgid "Size: ${hsize} (${size})"
-msgstr "Розмір: ${hsize} (${size})"
+msgstr ""
 
 msgid "Offset on disk: ${offset}"
-msgstr "Зсув на диску: ${offset}"
+msgstr ""
 
 msgid "File is contiguous."
-msgstr "Файл суцільний."
+msgstr ""
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr "Файл фрагментований. (${frag} фрагментів)"
+msgstr ""
 
 msgid "Language"
-msgstr "Мова"
+msgstr ""
 
 msgid "Keyboard layouts"
 msgstr ""
@@ -251,224 +251,224 @@ msgid "Fix \"BlInitializeLibrary failed XXX\" error"
 msgstr ""
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr "Вимкнути PatchGuard і DSE під час завантаження"
+msgstr ""
 
 msgid "Install override security policy"
-msgstr "Встановити перевизначення політики безпеки"
+msgstr ""
 
 msgid "Disable shim validation and reboot"
-msgstr "Заборонити shim-перевірку та перезавантажити"
+msgstr ""
 
 msgid "Disable graphics mode (T)"
-msgstr "Вимкнути графічний режим (T)"
+msgstr ""
 
 msgid "Encoding: "
-msgstr "Кодування: "
+msgstr ""
 
 msgid "Sort files by name"
-msgstr "Сортувати файли за іменем"
+msgstr ""
 
 msgid "Do not sort files by name"
-msgstr "Не сортувати файли за іменем"
+msgstr ""
 
 msgid "Disable secondary boot options menu"
-msgstr "Вимкнути додаткове меню параметрів завантаження"
+msgstr ""
 
 msgid "Enable secondary boot options menu"
-msgstr "Увімкнути додаткове меню параметрів завантаження"
+msgstr ""
 
 msgid "Display all files"
-msgstr "Показувати всі файли"
+msgstr ""
 
 msgid "Hide non-bootable files"
-msgstr "Приховати файли, які не є завантажувальними"
+msgstr ""
 
 msgid "Resolution (R): ${mode_current}"
-msgstr "Роздільна здатність (R): ${mode_current}"
+msgstr ""
 
 msgid "Enable ESC (not recommended)"
-msgstr "Дозволити ESC (не рекомендовано)"
+msgstr ""
 
 msgid "Enable debug messages"
-msgstr "Дозволити повідомлення зневадження"
+msgstr ""
 
 msgid "Show hidden drives"
-msgstr "Показати приховані диски"
+msgstr ""
 
 msgid "Load extra modules"
-msgstr "Завантажити додаткові модулі"
+msgstr ""
 
 msgid "Enable case-sensitive filenames"
-msgstr "Увімкнути чутливі до регістру імена файлів"
+msgstr ""
 
 msgid "Disable case-sensitive filenames"
-msgstr "Вимкнути чутливі до регістру імена файлів"
+msgstr ""
 
 msgid "Load AHCI Driver"
-msgstr "Завантажити драйвер AHCI"
+msgstr ""
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr "Монтувати зашифровані розділи (LUKS and geli)"
+msgstr ""
 
 msgid "Enable serial terminal"
-msgstr "Увімкнути послідовний термінал"
+msgstr ""
 
 msgid "EFI Firmware Setup"
-msgstr "Налаштування прошивки EFI"
+msgstr ""
 
 msgid "GRUB Console"
-msgstr "Консоль GRUB"
+msgstr ""
 
 msgid "EFI Shell"
-msgstr "Консоль EFI"
+msgstr ""
 
 msgid "UEFI DUET"
-msgstr "UEFI (для розробників)"
+msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr "Завантажити зовнішнє меню на (${device}) ${info}"
+msgstr ""
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr "Завантажити Windows Boot Manager із ${device} ${info}"
+msgstr ""
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr "Завантажити macOS із ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr "Завантажити ${winver} із ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${device} ${info}"
-msgstr "Завантажити ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr "Завантажити ${device} (PBR) ${info}"
+msgstr ""
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr "Завантажити ${tmp} (MBR) [${tmpsize}]"
+msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr "Завантажити ISO (Loopback)"
+msgstr ""
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr "Завантажити ISO (ISOLINUX)"
+msgstr ""
 
 msgid "Detecting ISO type ..."
-msgstr "Визначення типу знімку ISO..."
+msgstr ""
 
 msgid "Boot ${distro} From ISO"
-msgstr "Завантажити ${distro} із ISO"
+msgstr ""
 
 msgid "Boot "
-msgstr "Завантаження "
+msgstr ""
 
 msgid " From ISO"
-msgstr " зі знімку ISO"
+msgstr ""
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr "Будь ласка, введіть ім'я користувача. За замовчуванням:user Super User:root Devuan:devuan"
+msgstr ""
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr "УВАГА: Буде видалено ВСІ дані на (${grubfm_disk},4)"
+msgstr ""
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr "УВАГА: Буде видалено ВСІ дані на (hd0,4)."
+msgstr ""
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr "УВАГА: Буде видалено ${grubfm_file}"
+msgstr ""
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr "Натисніть [1], щоб продовжити. Натисніть будь-яку клавішу, щоб повернутися."
+msgstr ""
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr "Натисніть [Y], щоб продовжити. Натисніть [N], щоб вийти."
+msgstr ""
 
 msgid "Canceled."
-msgstr "Скасовано."
+msgstr ""
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr "Шлях доступу містить пробіли. Це може призвести до проблем! Натисніть будь-яку клавішу, щоб продовжити."
+msgstr ""
 
 msgid "Enter the name"
-msgstr "Введіть назву"
+msgstr ""
 
 msgid "Bad file name."
-msgstr "Хибне ім'я файлу."
+msgstr ""
 
 msgid "Press any key to exit."
-msgstr "Натисніть будь-яку клавішу, щоб вийти."
+msgstr ""
 
 msgid "Please wait ..."
-msgstr "Будь ласка, зачекайте ..."
+msgstr ""
 
 msgid "Reboot"
-msgstr "Перезавантажити"
+msgstr ""
 
 msgid "Reboot (R)"
-msgstr "Перезавантажити (R)"
+msgstr ""
 
 msgid "Halt"
-msgstr "Вимкнути"
+msgstr ""
 
 msgid "Halt (H)"
-msgstr "Вимкнути (H)"
+msgstr ""
 
 msgid "File: "
-msgstr "Файл: "
+msgstr ""
 
 msgid "Hotkeys"
-msgstr "Гарячі клавіші"
+msgstr ""
 
 msgid "F1 - Help"
-msgstr "F1 - Допомога"
+msgstr ""
 
 msgid "F2 - File Manager"
-msgstr "F2 - Файловий менеджер"
+msgstr ""
 
 msgid "F3 - OS Detect"
-msgstr "F3 - Визначення ОС"
+msgstr ""
 
 msgid "F4 - Settings"
-msgstr "F4 - Налаштування"
+msgstr ""
 
 msgid "F5 - PXE Boot Menu"
-msgstr "F5 - Меню завантаження PXE"
+msgstr ""
 
 msgid "F6 - Power Off"
-msgstr "F6 - Вимкнути"
+msgstr ""
 
 msgid "[A] About GRUB2-FileManager"
-msgstr "[A] Про GRUB2-FileManager"
+msgstr ""
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr "Ctrl+l/Ctrl+r - Прогорнути текст пунктів меню"
+msgstr ""
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr "LCtrl+LAlt+F12 - Зробити скріншоти (EFI)"
+msgstr ""
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr "↑ Стор. вверх ↓ Стор. вниз  [ESC] Вихід"
+msgstr ""
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr "↑ Стор. вверх ↓ Стор. вниз  [e] Кодування  [ESC] Вихід"
+msgstr ""
 
 msgid "FILE: %s (%s)"
-msgstr "ФАЙЛ: %s (%s)"
+msgstr ""
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr "ФАЙЛ: %s (%s) КОДУВАННЯ: %s"
+msgstr ""
 
 msgid "Platform: %s-%s"
-msgstr "Платформа: %s-%s"
+msgstr ""
 
 msgid "Language: %s"
-msgstr "Мова: %s"
+msgstr ""
 
 msgid "GRUB version: %s"
-msgstr "Версія GRUB: %s"
+msgstr ""
 
 msgid "GRUB build date: %s"
-msgstr "Дата збірки GRUB: %s"
+msgstr ""
 
 msgid "License: GNU GPLv3"
-msgstr "Ліцензія: GNU GPLv3"
+msgstr ""
 
