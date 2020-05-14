@@ -8,467 +8,467 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-04-28 02:00\n"
+"PO-Revision-Date: 2020-05-14 09:22\n"
 
 msgid "Back"
-msgstr "返回"
+msgstr ""
 
 msgid "Disabled"
-msgstr "已禁用"
+msgstr ""
 
 msgid "Enabled"
-msgstr "已启用"
+msgstr ""
 
 msgid "Not available"
-msgstr "不可用"
+msgstr ""
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr "设置 BGRT (Windows 启动图片)"
+msgstr ""
 
 msgid "Open As Grub2 Menu"
-msgstr "作为 Grub2 菜单打开"
+msgstr ""
 
 msgid "Open As Syslinux Menu"
-msgstr "作为 Syslinux 菜单打开"
+msgstr ""
 
 msgid "Open As pxelinux Menu"
-msgstr "作为 pxelinux 菜单打开"
+msgstr ""
 
 msgid "Open As GRUB4DOS Menu"
-msgstr "作为 GRUB4DOS 菜单打开"
+msgstr ""
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr "作为 GRUB-Legacy 菜单打开"
+msgstr ""
 
 msgid "Open As Lua Script"
-msgstr "作为 Lua 脚本加载"
+msgstr ""
 
 msgid "Open As Python Script"
-msgstr "执行 Python 脚本"
+msgstr ""
 
 msgid "Open As EFI Application"
-msgstr "作为 EFI 可执行文件运行"
+msgstr ""
 
 msgid "Load UEFI driver"
-msgstr "加载 UEFI 驱动"
+msgstr ""
 
 msgid "Open As EFI Shell Script"
-msgstr "作为 EFI Shell 脚本打开"
+msgstr ""
 
 msgid "Open As Image"
-msgstr "作为图像打开"
+msgstr ""
 
 msgid "Press [ESC] to continue..."
-msgstr "按 [ESC] 继续 ..."
+msgstr ""
 
 msgid "Mount Image"
-msgstr "挂载镜像"
+msgstr ""
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "使用 GRUB4DOS 加载为软盘"
+msgstr ""
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "使用 memdisk 加载为软盘"
+msgstr ""
 
 msgid "Boot Floppy Image (map)"
-msgstr "启动软盘镜像 (map)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "使用 GRUB4DOS 加载为硬盘"
+msgstr ""
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "使用 memdisk 加载为硬盘"
+msgstr ""
 
 msgid "Boot Hard Drive Image (map)"
-msgstr "启动硬盘镜像 (map)"
+msgstr ""
 
 msgid "Boot IMG (map)"
-msgstr "启动 IMG (map)"
+msgstr ""
 
 msgid "Boot IMG (map --mem)"
-msgstr "启动 IMG (map --mem)"
+msgstr ""
 
 msgid "Open As Archiver"
-msgstr "作为压缩文件打开"
+msgstr ""
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "使用 wimboot 加载 NT6.x WIM"
+msgstr ""
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "使用 NTBOOT 加载 NT6.x WIM"
+msgstr ""
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "使用 NTBOOT 加载 NT5.x WIM"
+msgstr ""
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "使用 NTBOOT 加载 NT5.x PE"
+msgstr ""
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "使用 NTBOOT 加载 Windows NT6.x VHD/VHDX"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "启动 RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "启动 RamOS VHD (GRUB4DOS map --mem)"
+msgstr ""
 
 msgid "Boot VHD (vboot)"
-msgstr "使用 vboot 启动 VHD"
+msgstr ""
 
 msgid "Boot VHD (map)"
-msgstr "启动 VHD (map)"
+msgstr ""
 
 msgid "Boot VHD (map --mem)"
-msgstr "启动 VHD (map --mem)"
+msgstr ""
 
 msgid "Mount ISO"
-msgstr "查看 ISO 内容"
+msgstr ""
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "使用 GRUB4DOS 加载 ISO"
+msgstr ""
 
 msgid "Boot ISO (memdisk)"
-msgstr "使用 memdisk 加载 ISO"
+msgstr ""
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "使用 Easy2Boot 方式加载 ISO"
+msgstr ""
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr "启动 ISO (loopback.cfg)"
+msgstr ""
 
 msgid "Boot ISO (partnew)"
-msgstr "启动 ISO (partnew)"
+msgstr ""
 
 msgid "Install Windows (x64)"
-msgstr "安装 Windows (x64)"
+msgstr ""
 
 msgid "Install Windows (x86)"
-msgstr "安装 Windows (x86)"
+msgstr ""
 
 msgid "Install Windows without autounattend.xml"
-msgstr "不加载 autounattend.xml 安装 Windows"
+msgstr ""
 
 msgid "Load ${xml_name}"
-msgstr "加载 ${xml_name}"
+msgstr ""
 
 msgid "Boot ISO (map)"
-msgstr "启动 ISO (map)"
+msgstr ""
 
 msgid "Boot ISO (map --mem)"
-msgstr "启动 ISO (map --mem)"
+msgstr ""
 
 msgid "Boot EFI Files"
-msgstr "仅加载 EFI 文件"
+msgstr ""
 
 msgid "Open As iPXE Script"
-msgstr "作为 iPXE 脚本打开"
+msgstr ""
 
 msgid "Open As Font"
-msgstr "加载 pf2 字库文件"
+msgstr ""
 
 msgid "Insert Grub2 Module"
-msgstr "加载 Grub2 模块"
+msgstr ""
 
 msgid "Chainload BIOS Boot Sector"
-msgstr "作为 BIOS 引导扇区加载"
+msgstr ""
 
 msgid "Chainload NTLDR"
-msgstr "作为 NTLDR 加载"
+msgstr ""
 
 msgid "Chainload BOOTMGR"
-msgstr "作为 BOOTMGR 加载"
+msgstr ""
 
 msgid "Open As GRUB4DOS MOD"
-msgstr "作为 GRUB4DOS 外部命令加载"
+msgstr ""
 
 msgid "Boot Multiboot Kernel"
-msgstr "作为 multiboot 内核加载"
+msgstr ""
 
 msgid "Boot Multiboot2 Kernel"
-msgstr "作为 multiboot2 内核加载"
+msgstr ""
 
 msgid "Boot Linux Kernel"
-msgstr "作为 Linux 内核加载"
+msgstr ""
 
 msgid "User menu"
-msgstr "用户菜单"
+msgstr ""
 
 msgid "Text Viewer"
-msgstr "文本查看"
+msgstr ""
 
 msgid "Hex Viewer"
-msgstr "十六进制查看"
+msgstr ""
 
 msgid "Rename"
-msgstr "重命名"
+msgstr ""
 
 msgid "Copy to ..."
-msgstr "复制到 ..."
+msgstr ""
 
 msgid "Delete"
-msgstr "删除"
+msgstr ""
 
 msgid "Paste here"
-msgstr "粘贴到这里"
+msgstr ""
 
 msgid "Cancel"
-msgstr "取消"
+msgstr ""
 
 msgid "File Info"
-msgstr "查看文件信息"
+msgstr ""
 
 msgid "File Info (${grubfm_name})"
-msgstr "文件信息 (${grubfm_name})"
+msgstr ""
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr "文件信息 -- 按 [ENTER] 返回"
+msgstr ""
 
 msgid "Type: ${grubfm_fileext}"
-msgstr "类型： ${grubfm_fileext}"
+msgstr ""
 
 msgid "Path:"
-msgstr "路径:"
+msgstr ""
 
 msgid "Size: ${hsize} (${size})"
-msgstr "大小: ${hsize} (${size})"
+msgstr ""
 
 msgid "Offset on disk: ${offset}"
-msgstr "磁盘偏移: ${offset}"
+msgstr ""
 
 msgid "File is contiguous."
-msgstr "文件是连续的。"
+msgstr ""
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr "文件有碎片。(${frag} 个碎片)"
+msgstr ""
 
 msgid "Language"
-msgstr "语言"
+msgstr ""
 
 msgid "Keyboard layouts"
-msgstr "键盘布局"
+msgstr ""
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr "修复 \"BlInitializeLibrary failed XXX\" 错误"
+msgstr ""
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr "在启动时禁用 PatchGuard 和 DSE"
+msgstr ""
 
 msgid "Install override security policy"
-msgstr "安装覆盖安全策略"
+msgstr ""
 
 msgid "Disable shim validation and reboot"
-msgstr "禁用 shim 安全启动验证并重启"
+msgstr ""
 
 msgid "Disable graphics mode (T)"
-msgstr "禁用图形模式 (T)"
+msgstr ""
 
 msgid "Encoding: "
-msgstr "编码设置: "
+msgstr ""
 
 msgid "Sort files by name"
-msgstr "按文件名排序"
+msgstr ""
 
 msgid "Do not sort files by name"
-msgstr "取消按名称排序文件"
+msgstr ""
 
 msgid "Disable secondary boot options menu"
-msgstr "禁用次要引导选项菜单"
+msgstr ""
 
 msgid "Enable secondary boot options menu"
-msgstr "启用次要引导选项菜单"
+msgstr ""
 
 msgid "Display all files"
-msgstr "显示所有文件"
+msgstr ""
 
 msgid "Hide non-bootable files"
-msgstr "隐藏不可启动的文件"
+msgstr ""
 
 msgid "Resolution (R): ${mode_current}"
-msgstr "分辨率(R): ${mode_current}"
+msgstr ""
 
 msgid "Enable ESC (not recommended)"
-msgstr "启用 ESC (不推荐)"
+msgstr ""
 
 msgid "Enable debug messages"
-msgstr "显示调试信息"
+msgstr ""
 
 msgid "Show hidden drives"
-msgstr "显示隐藏磁盘"
+msgstr ""
 
 msgid "Load extra modules"
-msgstr "加载额外模块"
+msgstr ""
 
 msgid "Enable case-sensitive filenames"
-msgstr "启用大小写敏感文件名"
+msgstr ""
 
 msgid "Disable case-sensitive filenames"
-msgstr "禁用大小写敏感文件名"
+msgstr ""
 
 msgid "Load AHCI Driver"
-msgstr "加载 AHCI 驱动"
+msgstr ""
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr "挂载加密卷 (LUKS 和 geli)"
+msgstr ""
 
 msgid "Enable serial terminal"
-msgstr "启用串行终端"
+msgstr ""
 
 msgid "EFI Firmware Setup"
-msgstr "EFI固件设置"
+msgstr ""
 
 msgid "GRUB Console"
-msgstr "GRUB 命令行"
+msgstr ""
 
 msgid "EFI Shell"
-msgstr "EFI Shell"
+msgstr ""
 
 msgid "UEFI DUET"
-msgstr "UEFI模拟"
+msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr "加载外部菜单 (${device}) ${info}"
+msgstr ""
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr "加载 ${device} ${info} 上的 Windows 启动管理器"
+msgstr ""
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr "启动 ${device} ${info} 上的 macOS"
+msgstr ""
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr "启动 ${device} ${info} 上的 ${winver}"
+msgstr ""
 
 msgid "Boot ${device} ${info}"
-msgstr "启动 ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr "启动 ${device} (PBR) ${info}"
+msgstr ""
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr "启动 ${tmp} (MBR) [${tmpsize}]"
+msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr "作为 Loopback ISO 启动"
+msgstr ""
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr "作为 ISOLINUX ISO 启动"
+msgstr ""
 
 msgid "Detecting ISO type ..."
-msgstr "正在检测 ISO 类型..."
+msgstr ""
 
 msgid "Boot ${distro} From ISO"
-msgstr "从 ISO 启动 ${distro}"
+msgstr ""
 
 msgid "Boot "
-msgstr "启动 "
+msgstr ""
 
 msgid " From ISO"
-msgstr " ISO"
+msgstr ""
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr "请输入登录用户名。默认:user 超级用户:root Devuan:devuan"
+msgstr ""
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr "警告：即将删除 (${grubfm_disk}，4) 上的所有数据"
+msgstr ""
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr "警告：即将删除(hd0,4)的分区数据。"
+msgstr ""
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr "警告：即将删除 ${grubfm_file}。"
+msgstr ""
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr "按 [1] 继续。按下任何其他键返回。"
+msgstr ""
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr "按[Y]继续。按[N]退出。"
+msgstr ""
 
 msgid "Canceled."
-msgstr "已取消。"
+msgstr ""
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr "文件路径包含空格。这可能会造成问题。按任意键继续。"
+msgstr ""
 
 msgid "Enter the name"
-msgstr "请在此输入名称"
+msgstr ""
 
 msgid "Bad file name."
-msgstr "错误的文件名。"
+msgstr ""
 
 msgid "Press any key to exit."
-msgstr "按任意键退出。"
+msgstr ""
 
 msgid "Please wait ..."
-msgstr "请稍候......"
+msgstr ""
 
 msgid "Reboot"
-msgstr "重启"
+msgstr ""
 
 msgid "Reboot (R)"
-msgstr "重启 (R)"
+msgstr ""
 
 msgid "Halt"
-msgstr "关机"
+msgstr ""
 
 msgid "Halt (H)"
-msgstr "关机 (H)"
+msgstr ""
 
 msgid "File: "
-msgstr "文件: "
+msgstr ""
 
 msgid "Hotkeys"
-msgstr "快捷键"
+msgstr ""
 
 msgid "F1 - Help"
-msgstr "F1 - 帮助"
+msgstr ""
 
 msgid "F2 - File Manager"
-msgstr "F2 - 文件管理器"
+msgstr ""
 
 msgid "F3 - OS Detect"
-msgstr "F3 - 检测并启动操作系统"
+msgstr ""
 
 msgid "F4 - Settings"
-msgstr "F4 - 设置"
+msgstr ""
 
 msgid "F5 - PXE Boot Menu"
-msgstr "F5 - PXE 启动菜单"
+msgstr ""
 
 msgid "F6 - Power Off"
-msgstr "F6 - 关机"
+msgstr ""
 
 msgid "[A] About GRUB2-FileManager"
-msgstr "[A] 关于 GRUB2-FileManager"
+msgstr ""
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr "Ctrl+l/Ctrl+r - 滚动菜单项的文本"
+msgstr ""
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr "LCtrl+LAlt+F12 - 屏幕截图 (EFI)"
+msgstr ""
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr "↑ 上一页  ↓ 下一页  [ESC] 退出"
+msgstr ""
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr "↑ 上一页  ↓ 下一页  [e] 编码设置  [ESC] 退出"
+msgstr ""
 
 msgid "FILE: %s (%s)"
-msgstr "文件: %s (%s)"
+msgstr ""
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr "文件: %s (%s) 编码: %s"
+msgstr ""
 
 msgid "Platform: %s-%s"
-msgstr "平台: %s-%s"
+msgstr ""
 
 msgid "Language: %s"
-msgstr "语言: %s"
+msgstr ""
 
 msgid "GRUB version: %s"
-msgstr "GRUB 版本: %s"
+msgstr ""
 
 msgid "GRUB build date: %s"
-msgstr "GRUB 构建日期: %s"
+msgstr ""
 
 msgid "License: GNU GPLv3"
-msgstr "许可证: GNU GPLv3"
+msgstr ""
 
