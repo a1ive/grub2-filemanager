@@ -8,10 +8,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2020-04-28 01:36\n"
+"PO-Revision-Date: 2020-05-14 09:22\n"
 
 msgid "Back"
-msgstr "חזרה"
+msgstr ""
 
 msgid "Disabled"
 msgstr ""
@@ -20,130 +20,130 @@ msgid "Enabled"
 msgstr ""
 
 msgid "Not available"
-msgstr "לא זמין"
+msgstr ""
 
 msgid "Set BGRT (Windows boot logo)"
 msgstr ""
 
 msgid "Open As Grub2 Menu"
-msgstr "פתיחה כתפריט Grub2"
+msgstr ""
 
 msgid "Open As Syslinux Menu"
-msgstr "פתיחה כתפריט Syslinux"
+msgstr ""
 
 msgid "Open As pxelinux Menu"
-msgstr "פתיחה כתפריט pxelinux"
+msgstr ""
 
 msgid "Open As GRUB4DOS Menu"
-msgstr "פתיחה כתפריט GRUB4DOS"
+msgstr ""
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr "פתיחה כתפריט GRUB-Legacy (מיושן)"
+msgstr ""
 
 msgid "Open As Lua Script"
-msgstr "פתיחה כסקריפט Lua"
+msgstr ""
 
 msgid "Open As Python Script"
-msgstr "פתיחה כסקריפט Python"
+msgstr ""
 
 msgid "Open As EFI Application"
-msgstr "פתיחה כיישום EFI"
+msgstr ""
 
 msgid "Load UEFI driver"
-msgstr "טעינת מנהל התקן UEFI"
+msgstr ""
 
 msgid "Open As EFI Shell Script"
-msgstr "פתיחה כסקריפט מעטפת של EFI"
+msgstr ""
 
 msgid "Open As Image"
-msgstr "פתיחה כתמונה"
+msgstr ""
 
 msgid "Press [ESC] to continue..."
-msgstr "יש ללחוץ על [ESC] כדי להמשיך…"
+msgstr ""
 
 msgid "Mount Image"
-msgstr "עיגון דמות"
+msgstr ""
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "אתחול מדמות כונן תקליטונים (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "אתחול מדמות כונן תקליטונים (memdisk)"
+msgstr ""
 
 msgid "Boot Floppy Image (map)"
-msgstr "אתחול מדמות כונן תקליטונים (map)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "אתחול מדמות כונן קשיח (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "אתחול מדמות כונן קשיח (memdisk)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (map)"
-msgstr "אתחול מדמות כונן קשיח (map)"
+msgstr ""
 
 msgid "Boot IMG (map)"
-msgstr "אתחול מ־IMG‏ (map)"
+msgstr ""
 
 msgid "Boot IMG (map --mem)"
-msgstr "אתחול מ־IMG‏ (map --mem)"
+msgstr ""
 
 msgid "Open As Archiver"
-msgstr "פתיחה כקובץ ארכיון"
+msgstr ""
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "אתחול מ־WIM בתצורת NT6.x‏ (wimboot)"
+msgstr ""
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "אתחול מ־WIM בתצורת NT6.x‏ (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "אתחול מ־WIM בתצורת NT5.x‏ (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "אתחול מ־PE בתצורת NT5.x‏ (NTBOOT)"
+msgstr ""
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "אתחול מ־VHD/VHDX בתצורת Windows NT6.x ‏(NTBOOT)"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "אתחול מ־VHD בתצורת RamOS‏ (GRUB4DOS map --mem --top)"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "אתחול מ־VHD בתצורת RamOS‏ (GRUB4DOS map --mem)"
+msgstr ""
 
 msgid "Boot VHD (vboot)"
-msgstr "אתחול מ־VHD‏ (vboot)"
+msgstr ""
 
 msgid "Boot VHD (map)"
-msgstr "אתחול מ־VHD‏ (map)"
+msgstr ""
 
 msgid "Boot VHD (map --mem)"
-msgstr "אתחול מ־VHD‏ (map --mem)"
+msgstr ""
 
 msgid "Mount ISO"
-msgstr "עיגון ISO"
+msgstr ""
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "אתחול מ־ISO‏ (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot ISO (memdisk)"
-msgstr "אתחול מ־ISO‏ (memdisk)"
+msgstr ""
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "אתחול מ־ISO‏ (Easy2Boot)"
+msgstr ""
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr "אתחול מ־ISO‏ (loopback.cfg)"
+msgstr ""
 
 msgid "Boot ISO (partnew)"
-msgstr "אתחול מ־ISO‏ (partnew)"
+msgstr ""
 
 msgid "Install Windows (x64)"
-msgstr "התקנת Windows‏ (x64)"
+msgstr ""
 
 msgid "Install Windows (x86)"
-msgstr "התקנת Windows‏ (x86)"
+msgstr ""
 
 msgid "Install Windows without autounattend.xml"
 msgstr ""
@@ -152,82 +152,82 @@ msgid "Load ${xml_name}"
 msgstr ""
 
 msgid "Boot ISO (map)"
-msgstr "אתחול מ־ISO‏ (map)"
+msgstr ""
 
 msgid "Boot ISO (map --mem)"
-msgstr "אתחול מ־ISO‏ (map --mem)"
+msgstr ""
 
 msgid "Boot EFI Files"
-msgstr "אתחול מקובצי EFI"
+msgstr ""
 
 msgid "Open As iPXE Script"
-msgstr "פתיחה כסקריפט iPXE"
+msgstr ""
 
 msgid "Open As Font"
-msgstr "פתיחה כגופן"
+msgstr ""
 
 msgid "Insert Grub2 Module"
-msgstr "הוספת מודול Grub2"
+msgstr ""
 
 msgid "Chainload BIOS Boot Sector"
-msgstr "טעינת שרשרת של סקטור האתחול ל־BIOS"
+msgstr ""
 
 msgid "Chainload NTLDR"
-msgstr "טעינת שרשרת של NTLDR"
+msgstr ""
 
 msgid "Chainload BOOTMGR"
-msgstr "טעינת שרשרת של BOOTMGR"
+msgstr ""
 
 msgid "Open As GRUB4DOS MOD"
-msgstr "פתיחה כ־MOD של GRUB4DOS"
+msgstr ""
 
 msgid "Boot Multiboot Kernel"
-msgstr "אתחול ליבה בתצורת Multiboot"
+msgstr ""
 
 msgid "Boot Multiboot2 Kernel"
-msgstr "אתחול ליבה בתצורת Multiboot2"
+msgstr ""
 
 msgid "Boot Linux Kernel"
-msgstr "אתחול ליבה של לינוקס"
+msgstr ""
 
 msgid "User menu"
-msgstr "תפריט משתמש"
+msgstr ""
 
 msgid "Text Viewer"
-msgstr "מציג טקסט"
+msgstr ""
 
 msgid "Hex Viewer"
-msgstr "מציג הקסדצימלי"
+msgstr ""
 
 msgid "Rename"
-msgstr "שינוי שם"
+msgstr ""
 
 msgid "Copy to ..."
-msgstr "העתקה אל ..."
+msgstr ""
 
 msgid "Delete"
-msgstr "מחיקה"
+msgstr ""
 
 msgid "Paste here"
 msgstr ""
 
 msgid "Cancel"
-msgstr "ביטול"
+msgstr ""
 
 msgid "File Info"
-msgstr "מידע קובץ"
+msgstr ""
 
 msgid "File Info (${grubfm_name})"
-msgstr "מידע קובץ (${grubfm_name})"
+msgstr ""
 
 msgid "File Info -- Press [ENTER] to exit"
 msgstr ""
 
 msgid "Type: ${grubfm_fileext}"
-msgstr "סוג: ${grubfm_fileext}"
+msgstr ""
 
 msgid "Path:"
-msgstr "נתיב:"
+msgstr ""
 
 msgid "Size: ${hsize} (${size})"
 msgstr ""
@@ -242,7 +242,7 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr ""
 
 msgid "Language"
-msgstr "שפה"
+msgstr ""
 
 msgid "Keyboard layouts"
 msgstr ""
@@ -251,25 +251,25 @@ msgid "Fix \"BlInitializeLibrary failed XXX\" error"
 msgstr ""
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr "השבתת PatchGuard ו־DSE בזמן האתחול"
+msgstr ""
 
 msgid "Install override security policy"
-msgstr "הפעלת דריסת מדיניות אבטחה"
+msgstr ""
 
 msgid "Disable shim validation and reboot"
-msgstr "השבתת אימות shim והפעלה מחדש"
+msgstr ""
 
 msgid "Disable graphics mode (T)"
 msgstr ""
 
 msgid "Encoding: "
-msgstr "קידוד: "
+msgstr ""
 
 msgid "Sort files by name"
-msgstr "סידור הקבצים לפי השם"
+msgstr ""
 
 msgid "Do not sort files by name"
-msgstr "לא למיין קבצים לפי שם"
+msgstr ""
 
 msgid "Disable secondary boot options menu"
 msgstr ""
@@ -278,7 +278,7 @@ msgid "Enable secondary boot options menu"
 msgstr ""
 
 msgid "Display all files"
-msgstr "הצגת כל הקבצים"
+msgstr ""
 
 msgid "Hide non-bootable files"
 msgstr ""
@@ -287,16 +287,16 @@ msgid "Resolution (R): ${mode_current}"
 msgstr ""
 
 msgid "Enable ESC (not recommended)"
-msgstr "הפעלת ESC (לא מומלץ)"
+msgstr ""
 
 msgid "Enable debug messages"
-msgstr "הפעלת הודעות ניפוי שגיאות"
+msgstr ""
 
 msgid "Show hidden drives"
-msgstr "הצגת כוננים נסתרים"
+msgstr ""
 
 msgid "Load extra modules"
-msgstr "טעינת מודולים נוספים"
+msgstr ""
 
 msgid "Enable case-sensitive filenames"
 msgstr ""
@@ -305,25 +305,25 @@ msgid "Disable case-sensitive filenames"
 msgstr ""
 
 msgid "Load AHCI Driver"
-msgstr "טעינת מנהל התקן AHCI"
+msgstr ""
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr "עיגון כרכים מוצפנים (LUKS ו־geli)"
+msgstr ""
 
 msgid "Enable serial terminal"
-msgstr "הפעלת מסוף טורי"
+msgstr ""
 
 msgid "EFI Firmware Setup"
-msgstr "הגדרת קושחת EFI"
+msgstr ""
 
 msgid "GRUB Console"
-msgstr "מסוף GRUB"
+msgstr ""
 
 msgid "EFI Shell"
-msgstr "מעטפת EFI"
+msgstr ""
 
 msgid "UEFI DUET"
-msgstr "DUET ל־UEFI"
+msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
 msgstr ""
@@ -347,10 +347,10 @@ msgid "Boot ${tmp} (MBR) [${tmpsize}]"
 msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr "אתחול מ־ISO‏ (לולאה פנימית - Loopback)"
+msgstr ""
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr "אתחול מ־ISO‏ (ISOLINUX)"
+msgstr ""
 
 msgid "Detecting ISO type ..."
 msgstr ""
@@ -359,37 +359,37 @@ msgid "Boot ${distro} From ISO"
 msgstr ""
 
 msgid "Boot "
-msgstr "אתחול "
+msgstr ""
 
 msgid " From ISO"
-msgstr " מ־ISO"
+msgstr ""
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr "נא להקליד את שם המשתמש. בררת מחדל: user, משתמש על: root,‏ Devuan: devuan"
+msgstr ""
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr "אזהרה: כל הנתונים שב־(${grubfm_disk},4) יימחקו לצמיתות"
+msgstr ""
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr "אזהרה: כל הנתונים שב־(hd0,4) יימחקו לצמיתות."
+msgstr ""
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr "אזהרה: ${grubfm_file} יימחק"
+msgstr ""
 
 msgid "Press [1] to continue. Press any other key to return."
 msgstr ""
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr "יש ללחוץ על [Y] כדי להמשיך. על [N] כדי לצאת."
+msgstr ""
 
 msgid "Canceled."
-msgstr "בוטל."
+msgstr ""
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr "נתיב הקובץ מכיל רווחים. מה שעשוי לגרום לתקלות! יש ללחוץ על מקש כלשהו כדי להמשיך."
+msgstr ""
 
 msgid "Enter the name"
-msgstr "נא להכניס את שם הקובץ"
+msgstr ""
 
 msgid "Bad file name."
 msgstr ""
@@ -398,43 +398,43 @@ msgid "Press any key to exit."
 msgstr ""
 
 msgid "Please wait ..."
-msgstr "נא להמתין ..."
+msgstr ""
 
 msgid "Reboot"
-msgstr "הפעלה מחדש"
+msgstr ""
 
 msgid "Reboot (R)"
 msgstr ""
 
 msgid "Halt"
-msgstr "עצירה"
+msgstr ""
 
 msgid "Halt (H)"
 msgstr ""
 
 msgid "File: "
-msgstr "קובץ: "
+msgstr ""
 
 msgid "Hotkeys"
-msgstr "מקשי קיצור"
+msgstr ""
 
 msgid "F1 - Help"
-msgstr "F1 - עזרה"
+msgstr ""
 
 msgid "F2 - File Manager"
-msgstr "F2 - מנהל קבצים"
+msgstr ""
 
 msgid "F3 - OS Detect"
 msgstr ""
 
 msgid "F4 - Settings"
-msgstr "F4 - הגדרות"
+msgstr ""
 
 msgid "F5 - PXE Boot Menu"
-msgstr "F5 - תפריט אתחול PXE"
+msgstr ""
 
 msgid "F6 - Power Off"
-msgstr "F6 - כיבוי"
+msgstr ""
 
 msgid "[A] About GRUB2-FileManager"
 msgstr ""
@@ -458,17 +458,17 @@ msgid "FILE: %s (%s) ENCODING: %s"
 msgstr ""
 
 msgid "Platform: %s-%s"
-msgstr "פלטפורמה: %s-%s"
+msgstr ""
 
 msgid "Language: %s"
-msgstr "שפה: %s"
+msgstr ""
 
 msgid "GRUB version: %s"
-msgstr "גרסת GRUB: ‏%s"
+msgstr ""
 
 msgid "GRUB build date: %s"
-msgstr "תאריך בניית GRUB: ‏%s"
+msgstr ""
 
 msgid "License: GNU GPLv3"
-msgstr "רישיון: GNU GPLv3"
+msgstr ""
 
