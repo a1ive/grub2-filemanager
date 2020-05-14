@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-04-29 03:52\n"
+"PO-Revision-Date: 2020-05-14 09:17\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -173,10 +173,10 @@ msgid "Chainload BIOS Boot Sector"
 msgstr "Chainload BIOS Önyükleme Sektörü"
 
 msgid "Chainload NTLDR"
-msgstr "Chainload NTLDR"
+msgstr ""
 
 msgid "Chainload BOOTMGR"
-msgstr "Chainload BOOTMGR"
+msgstr ""
 
 msgid "Open As GRUB4DOS MOD"
 msgstr "GRUB4DOS MOD Olarak Aç"
@@ -320,7 +320,7 @@ msgid "GRUB Console"
 msgstr "GRUB Konsolu"
 
 msgid "EFI Shell"
-msgstr "EFI Shell"
+msgstr ""
 
 msgid "UEFI DUET"
 msgstr "UEFI DUET Önyükle"
@@ -458,7 +458,7 @@ msgid "FILE: %s (%s) ENCODING: %s"
 msgstr "Dosya: %s (%s) Kodlama: %s"
 
 msgid "Platform: %s-%s"
-msgstr "Platform: %s-%s"
+msgstr ""
 
 msgid "Language: %s"
 msgstr "Dil: %s"
