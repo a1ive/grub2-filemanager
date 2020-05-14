@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-04-28 02:00\n"
+"PO-Revision-Date: 2020-05-14 09:17\n"
 
 msgid "Back"
 msgstr "返回"
@@ -320,7 +320,7 @@ msgid "GRUB Console"
 msgstr "GRUB 命令行"
 
 msgid "EFI Shell"
-msgstr "EFI Shell"
+msgstr ""
 
 msgid "UEFI DUET"
 msgstr "UEFI模拟"
