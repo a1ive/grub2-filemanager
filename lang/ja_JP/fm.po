@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2020-04-28 01:36\n"
+"PO-Revision-Date: 2020-05-14 09:22\n"
 
 msgid "Back"
 msgstr ""
@@ -242,7 +242,7 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr ""
 
 msgid "Language"
-msgstr "言語"
+msgstr ""
 
 msgid "Keyboard layouts"
 msgstr ""
