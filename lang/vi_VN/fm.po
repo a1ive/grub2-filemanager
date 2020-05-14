@@ -8,10 +8,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2020-04-28 02:00\n"
+"PO-Revision-Date: 2020-05-14 09:22\n"
 
 msgid "Back"
-msgstr "Quay về"
+msgstr ""
 
 msgid "Disabled"
 msgstr ""
@@ -26,40 +26,40 @@ msgid "Set BGRT (Windows boot logo)"
 msgstr ""
 
 msgid "Open As Grub2 Menu"
-msgstr "Mở Menu Grub2"
+msgstr ""
 
 msgid "Open As Syslinux Menu"
-msgstr "Mở Menu Syslinux"
+msgstr ""
 
 msgid "Open As pxelinux Menu"
-msgstr "Mở Menu pxelinux"
+msgstr ""
 
 msgid "Open As GRUB4DOS Menu"
-msgstr "Mở Menu GRUB4DOS"
+msgstr ""
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr "Mở Menu GRUB-Legacy"
+msgstr ""
 
 msgid "Open As Lua Script"
-msgstr "Mở Script Lua"
+msgstr ""
 
 msgid "Open As Python Script"
-msgstr "Mở Script Python"
+msgstr ""
 
 msgid "Open As EFI Application"
-msgstr "Mở Ứng dụng EFI"
+msgstr ""
 
 msgid "Load UEFI driver"
-msgstr "Tải driver UEFI"
+msgstr ""
 
 msgid "Open As EFI Shell Script"
-msgstr "Mở Script EFI Shell"
+msgstr ""
 
 msgid "Open As Image"
-msgstr "Mở Hình ảnh"
+msgstr ""
 
 msgid "Press [ESC] to continue..."
-msgstr "Nhấn [ESC] để tiếp tục..."
+msgstr ""
 
 msgid "Mount Image"
 msgstr ""
@@ -83,55 +83,55 @@ msgid "Boot Hard Drive Image (map)"
 msgstr ""
 
 msgid "Boot IMG (map)"
-msgstr "Khởi động IMG (map)"
+msgstr ""
 
 msgid "Boot IMG (map --mem)"
-msgstr "Khởi động ISO (map --mem)"
+msgstr ""
 
 msgid "Open As Archiver"
-msgstr "Mở Trình giải nén"
+msgstr ""
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "Khởi động NT6.x WIM (wimboot)"
+msgstr ""
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "Khởi động NT6.x WIM (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "Khởi động NT5.x WIM (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Khởi động NT5.x PE (NTBOOT)"
+msgstr ""
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "Khởi động Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "Khởi động RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "Khởi động RamOS VHD (GRUB4DOS map --mem)"
+msgstr ""
 
 msgid "Boot VHD (vboot)"
-msgstr "Khởi động VHD (vboot)"
+msgstr ""
 
 msgid "Boot VHD (map)"
-msgstr "Khởi động VHD (map)"
+msgstr ""
 
 msgid "Boot VHD (map --mem)"
-msgstr "Khởi Động VHD (map --mem)"
+msgstr ""
 
 msgid "Mount ISO"
 msgstr ""
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "Khởi động ISO (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot ISO (memdisk)"
-msgstr "Khởi động ISO (memdisk)"
+msgstr ""
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "Khởi động ISO (Easy2Boot)"
+msgstr ""
 
 msgid "Boot ISO (loopback.cfg)"
 msgstr ""
@@ -140,10 +140,10 @@ msgid "Boot ISO (partnew)"
 msgstr ""
 
 msgid "Install Windows (x64)"
-msgstr "Cài đặt Windows (x64)"
+msgstr ""
 
 msgid "Install Windows (x86)"
-msgstr "Cài đặt Windows (x86)"
+msgstr ""
 
 msgid "Install Windows without autounattend.xml"
 msgstr ""
@@ -152,22 +152,22 @@ msgid "Load ${xml_name}"
 msgstr ""
 
 msgid "Boot ISO (map)"
-msgstr "Khởi động ISO (map)"
+msgstr ""
 
 msgid "Boot ISO (map --mem)"
-msgstr "Khởi động ISO (map --mem)"
+msgstr ""
 
 msgid "Boot EFI Files"
-msgstr "Khởi động Tập tin EFI"
+msgstr ""
 
 msgid "Open As iPXE Script"
-msgstr "Mở Script iPXE"
+msgstr ""
 
 msgid "Open As Font"
-msgstr "Mở Font"
+msgstr ""
 
 msgid "Insert Grub2 Module"
-msgstr "Chèn Module Grub2"
+msgstr ""
 
 msgid "Chainload BIOS Boot Sector"
 msgstr ""
@@ -179,25 +179,25 @@ msgid "Chainload BOOTMGR"
 msgstr ""
 
 msgid "Open As GRUB4DOS MOD"
-msgstr "Mở MOD GRUB4DOS"
+msgstr ""
 
 msgid "Boot Multiboot Kernel"
-msgstr "Khởi động Kernel Multiboot"
+msgstr ""
 
 msgid "Boot Multiboot2 Kernel"
-msgstr "Khởi động Kernel Multiboot2"
+msgstr ""
 
 msgid "Boot Linux Kernel"
-msgstr "Khởi động Kernel Linux"
+msgstr ""
 
 msgid "User menu"
 msgstr ""
 
 msgid "Text Viewer"
-msgstr "Trình Hiển Thị Văn Bản"
+msgstr ""
 
 msgid "Hex Viewer"
-msgstr "Trình Hiển Thị Hex"
+msgstr ""
 
 msgid "Rename"
 msgstr ""
@@ -215,7 +215,7 @@ msgid "Cancel"
 msgstr ""
 
 msgid "File Info"
-msgstr "Thông Tin Tập Tin"
+msgstr ""
 
 msgid "File Info (${grubfm_name})"
 msgstr ""
@@ -242,7 +242,7 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr ""
 
 msgid "Language"
-msgstr "Ngôn ngữ"
+msgstr ""
 
 msgid "Keyboard layouts"
 msgstr ""
@@ -251,10 +251,10 @@ msgid "Fix \"BlInitializeLibrary failed XXX\" error"
 msgstr ""
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr "Vô Hiệu Hóa PatchGuard và DSE trong khi khởi động"
+msgstr ""
 
 msgid "Install override security policy"
-msgstr "Ghi đè chính sách bảo mật"
+msgstr ""
 
 msgid "Disable shim validation and reboot"
 msgstr ""
@@ -263,10 +263,10 @@ msgid "Disable graphics mode (T)"
 msgstr ""
 
 msgid "Encoding: "
-msgstr "Mã Hóa: "
+msgstr ""
 
 msgid "Sort files by name"
-msgstr "Sắp xếp theo tên"
+msgstr ""
 
 msgid "Do not sort files by name"
 msgstr ""
@@ -287,13 +287,13 @@ msgid "Resolution (R): ${mode_current}"
 msgstr ""
 
 msgid "Enable ESC (not recommended)"
-msgstr "Bật ESC (không khuyến khích)"
+msgstr ""
 
 msgid "Enable debug messages"
-msgstr "Bật chế độ gỡ lỗi"
+msgstr ""
 
 msgid "Show hidden drives"
-msgstr "Hiện ổ đĩa ẩn"
+msgstr ""
 
 msgid "Load extra modules"
 msgstr ""
@@ -347,10 +347,10 @@ msgid "Boot ${tmp} (MBR) [${tmpsize}]"
 msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr "Khởi động ISO (Loopback)"
+msgstr ""
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr "Khởi động ISO (ISOLINUX)"
+msgstr ""
 
 msgid "Detecting ISO type ..."
 msgstr ""
@@ -359,19 +359,19 @@ msgid "Boot ${distro} From ISO"
 msgstr ""
 
 msgid "Boot "
-msgstr "Khởi động "
+msgstr ""
 
 msgid " From ISO"
 msgstr ""
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr "Hãy nhập tên người dùng. Default:user Super User:root Devuan:devuan"
+msgstr ""
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
 msgstr ""
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr "CẢNH BÁO: TOÀN BỘ dữ liệu sẽ bị xóa khỏi (hd0,4)."
+msgstr ""
 
 msgid "WARNING: Will delete ${grubfm_file}"
 msgstr ""
@@ -380,13 +380,13 @@ msgid "Press [1] to continue. Press any other key to return."
 msgstr ""
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr "Nhấn [Y] để tiếp tục. Nhấn [N] để thoát."
+msgstr ""
 
 msgid "Canceled."
-msgstr "Đã hủy."
+msgstr ""
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr "Đường dẫn tập tin chứa khoảng trắng. Điều này có thể gây ra lỗi! Nhấn phím bất kỳ để tiếp tục."
+msgstr ""
 
 msgid "Enter the name"
 msgstr ""
@@ -401,7 +401,7 @@ msgid "Please wait ..."
 msgstr ""
 
 msgid "Reboot"
-msgstr "Khởi động lại"
+msgstr ""
 
 msgid "Reboot (R)"
 msgstr ""
@@ -413,22 +413,22 @@ msgid "Halt (H)"
 msgstr ""
 
 msgid "File: "
-msgstr "Tập tin: "
+msgstr ""
 
 msgid "Hotkeys"
-msgstr "Phím nóng"
+msgstr ""
 
 msgid "F1 - Help"
-msgstr "F1 - Trợ giúp"
+msgstr ""
 
 msgid "F2 - File Manager"
-msgstr "F2 - Quản lý Tập tin"
+msgstr ""
 
 msgid "F3 - OS Detect"
 msgstr ""
 
 msgid "F4 - Settings"
-msgstr "F4 - Cài đặt"
+msgstr ""
 
 msgid "F5 - PXE Boot Menu"
 msgstr ""
