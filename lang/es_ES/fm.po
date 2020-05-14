@@ -8,241 +8,241 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-04-28 02:00\n"
+"PO-Revision-Date: 2020-05-14 09:22\n"
 
 msgid "Back"
-msgstr "Atrás"
+msgstr ""
 
 msgid "Disabled"
-msgstr "Deshabilitado"
+msgstr ""
 
 msgid "Enabled"
-msgstr "Activado"
+msgstr ""
 
 msgid "Not available"
-msgstr "No esta disponible"
+msgstr ""
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr "Establecer BGRT (logo de arranque de Windows)"
+msgstr ""
 
 msgid "Open As Grub2 Menu"
-msgstr "Abrir con el menú de grub2"
+msgstr ""
 
 msgid "Open As Syslinux Menu"
-msgstr "Abrir como Abrir como menú en syslinux"
+msgstr ""
 
 msgid "Open As pxelinux Menu"
-msgstr "Abrir como Menú pxelinux"
+msgstr ""
 
 msgid "Open As GRUB4DOS Menu"
-msgstr "Abrir como menú con GRUB4DOS"
+msgstr ""
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr "Abrir como menú en modo GRUB-Legacy"
+msgstr ""
 
 msgid "Open As Lua Script"
-msgstr "Abrir como Script en Lua"
+msgstr ""
 
 msgid "Open As Python Script"
-msgstr "Abrir como Script en Python"
+msgstr ""
 
 msgid "Open As EFI Application"
-msgstr "Abrir como aplicación en modo EFI"
+msgstr ""
 
 msgid "Load UEFI driver"
-msgstr "Cargar driver UEFI"
+msgstr ""
 
 msgid "Open As EFI Shell Script"
-msgstr "Abrir como script de shell en EFI"
+msgstr ""
 
 msgid "Open As Image"
-msgstr "Abrir como imagen"
+msgstr ""
 
 msgid "Press [ESC] to continue..."
-msgstr "Presione [ESC] para continuar..."
+msgstr ""
 
 msgid "Mount Image"
-msgstr "Montar como imagen"
+msgstr ""
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "Arrancar en imagen de disquete (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "Imagen del disquete de arranque (memdisk)"
+msgstr ""
 
 msgid "Boot Floppy Image (map)"
-msgstr "Arrancar imagen con el disquete (map)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "Iniciar la imagen de disco duro (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "Iniciar la imagen de disco duro (memdisk)"
+msgstr ""
 
 msgid "Boot Hard Drive Image (map)"
-msgstr "Cargar la imagen de disco duro (map)"
+msgstr ""
 
 msgid "Boot IMG (map)"
-msgstr "Arrancar en formato IMG (map)"
+msgstr ""
 
 msgid "Boot IMG (map --mem)"
-msgstr "Arrancar como extension IMG (map --mem)"
+msgstr ""
 
 msgid "Open As Archiver"
-msgstr "Abrir Con El Manejador de Archivos"
+msgstr ""
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "Iniciar NT6.x WIM (wimboot)"
+msgstr ""
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "Iniciar el NT6.x con imagen WIM (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "Iniciar el NT5.x con fornato WIM (NTBOOT)"
+msgstr ""
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Iniciar el NT5.x en modo PE (NTBOOT)"
+msgstr ""
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "Iniciar Windows NT6.x con extension VHD/VHDX (NTBOOT)"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "Iniciar RamOS con extension VHD (GRUB4DOS map --mem --top, extension de entorno virtualizado)"
+msgstr ""
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "Iniciar RamOS con extension VHD (GRUB4DOS map --mem, extension de entorno girtualizado)"
+msgstr ""
 
 msgid "Boot VHD (vboot)"
-msgstr "Iniciar con extension VHD (vboot, arranque virtual)"
+msgstr ""
 
 msgid "Boot VHD (map)"
-msgstr "Iniciar con extension VHD (map, entorno virtual)"
+msgstr ""
 
 msgid "Boot VHD (map --mem)"
-msgstr "Iniciar con extension VHD (map, entorno virtual)"
+msgstr ""
 
 msgid "Mount ISO"
-msgstr "Montar imagen ISO"
+msgstr ""
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "Iniciar con imagen IO (GRUB4DOS)"
+msgstr ""
 
 msgid "Boot ISO (memdisk)"
-msgstr "Iniciar con imagen ISO (memdisk, disco de memoria)"
+msgstr ""
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "Arrancar ISO (Easy2Boot)"
+msgstr ""
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr "Arrancar ISO (loopback.cfg)"
+msgstr ""
 
 msgid "Boot ISO (partnew)"
-msgstr "Arrancar ISO (partnew)"
+msgstr ""
 
 msgid "Install Windows (x64)"
-msgstr "Instalar Windows (x64)"
+msgstr ""
 
 msgid "Install Windows (x86)"
-msgstr "Instalar Windows (x86)"
+msgstr ""
 
 msgid "Install Windows without autounattend.xml"
-msgstr "Instalar Windows sin autounattend.xml"
+msgstr ""
 
 msgid "Load ${xml_name}"
-msgstr "Cargar ${xml_name}"
+msgstr ""
 
 msgid "Boot ISO (map)"
-msgstr "Arrancar ISO (map)"
+msgstr ""
 
 msgid "Boot ISO (map --mem)"
-msgstr "Arrancar ISO (map --mem)"
+msgstr ""
 
 msgid "Boot EFI Files"
-msgstr "Arrancar archivos EFI"
+msgstr ""
 
 msgid "Open As iPXE Script"
-msgstr "Abrir como script iPXE"
+msgstr ""
 
 msgid "Open As Font"
-msgstr "Abrir como fuente"
+msgstr ""
 
 msgid "Insert Grub2 Module"
-msgstr "Insertar módulo Grub2"
+msgstr ""
 
 msgid "Chainload BIOS Boot Sector"
-msgstr "Chainload sector de arranque de BIOS"
+msgstr ""
 
 msgid "Chainload NTLDR"
-msgstr "Chainload NTLDR"
+msgstr ""
 
 msgid "Chainload BOOTMGR"
-msgstr "Chainload BOOTMGR"
+msgstr ""
 
 msgid "Open As GRUB4DOS MOD"
-msgstr "Abrir como GRUB4DOS MOD"
+msgstr ""
 
 msgid "Boot Multiboot Kernel"
-msgstr "Arrancar Kernel Multiboot"
+msgstr ""
 
 msgid "Boot Multiboot2 Kernel"
-msgstr "Arrancar Kernel Multiboot2"
+msgstr ""
 
 msgid "Boot Linux Kernel"
-msgstr "Arrancar Kernel de Linux"
+msgstr ""
 
 msgid "User menu"
-msgstr "Menú del usuario"
+msgstr ""
 
 msgid "Text Viewer"
-msgstr "Visor de texto"
+msgstr ""
 
 msgid "Hex Viewer"
-msgstr "Visor hexadecimal"
+msgstr ""
 
 msgid "Rename"
-msgstr "Renombrar"
+msgstr ""
 
 msgid "Copy to ..."
-msgstr "Copiar a..."
+msgstr ""
 
 msgid "Delete"
-msgstr "Borrar"
+msgstr ""
 
 msgid "Paste here"
-msgstr "Pegar aquí"
+msgstr ""
 
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr ""
 
 msgid "File Info"
-msgstr "Información del archivo"
+msgstr ""
 
 msgid "File Info (${grubfm_name})"
-msgstr "Información del archivo (${grubfm_name})"
+msgstr ""
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr "Información del archivo -- Pulsa [ENTER] para salir"
+msgstr ""
 
 msgid "Type: ${grubfm_fileext}"
-msgstr "Tipear: ${grubfm_fileext}"
+msgstr ""
 
 msgid "Path:"
-msgstr "Ruta:"
+msgstr ""
 
 msgid "Size: ${hsize} (${size})"
-msgstr "Tamaño: ${hsize} (${size})"
+msgstr ""
 
 msgid "Offset on disk: ${offset}"
-msgstr "Desplazamiento en el disco: ${offset}"
+msgstr ""
 
 msgid "File is contiguous."
-msgstr "El archivo es contiguo."
+msgstr ""
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr "El archivo no es contiguo. (${frag} fragmentos)"
+msgstr ""
 
 msgid "Language"
-msgstr "Idioma"
+msgstr ""
 
 msgid "Keyboard layouts"
 msgstr ""
@@ -251,224 +251,224 @@ msgid "Fix \"BlInitializeLibrary failed XXX\" error"
 msgstr ""
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr "Desactivar PatchGuard y DSE al arrancar"
+msgstr ""
 
 msgid "Install override security policy"
-msgstr "Instalar anulación de la política de seguridad"
+msgstr ""
 
 msgid "Disable shim validation and reboot"
-msgstr "Deshabilitar la validación de shim y reiniciar"
+msgstr ""
 
 msgid "Disable graphics mode (T)"
-msgstr "Deshabilitar modo gráfico (T)"
+msgstr ""
 
 msgid "Encoding: "
-msgstr "Codificando: "
+msgstr ""
 
 msgid "Sort files by name"
-msgstr "Ordenar archivos por nombre"
+msgstr ""
 
 msgid "Do not sort files by name"
-msgstr "No ordenar archivos por nombre"
+msgstr ""
 
 msgid "Disable secondary boot options menu"
-msgstr "Desactivar menú de opciones de arranque secundario"
+msgstr ""
 
 msgid "Enable secondary boot options menu"
-msgstr "Activar menú de opciones de arranque secundario"
+msgstr ""
 
 msgid "Display all files"
-msgstr "Mostrar todos los archivos"
+msgstr ""
 
 msgid "Hide non-bootable files"
-msgstr "Ocultar archivos no arrancables"
+msgstr ""
 
 msgid "Resolution (R): ${mode_current}"
-msgstr "Resolución (R): ${mode_current}"
+msgstr ""
 
 msgid "Enable ESC (not recommended)"
-msgstr "Habilitar ESC (no recomendado)"
+msgstr ""
 
 msgid "Enable debug messages"
-msgstr "Habilitar mensajes de depuración"
+msgstr ""
 
 msgid "Show hidden drives"
-msgstr "Mostrar unidades ocultas"
+msgstr ""
 
 msgid "Load extra modules"
-msgstr "Cargar módulos extra"
+msgstr ""
 
 msgid "Enable case-sensitive filenames"
-msgstr "Habilitar nombres de archivo sensibles a mayúsculas"
+msgstr ""
 
 msgid "Disable case-sensitive filenames"
-msgstr "Desactivar nombres de archivo sensibles a mayúsculas"
+msgstr ""
 
 msgid "Load AHCI Driver"
-msgstr "Cargar driver AHCI"
+msgstr ""
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr "Montar volúmenes cifrados (LUKS y geli)"
+msgstr ""
 
 msgid "Enable serial terminal"
-msgstr "Activar terminal serie"
+msgstr ""
 
 msgid "EFI Firmware Setup"
-msgstr "Configuración de firmware EFI"
+msgstr ""
 
 msgid "GRUB Console"
-msgstr "Consola de GRUB"
+msgstr ""
 
 msgid "EFI Shell"
-msgstr "EFI Shell"
+msgstr ""
 
 msgid "UEFI DUET"
-msgstr "UEFI DUET"
+msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr "Cargar menú externo en (${device}) ${info}"
+msgstr ""
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr "Cargar el boot manager de Windows en ${device} ${info}"
+msgstr ""
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr "Arrancar macOS en ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr "Arrancar ${winver} en ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${device} ${info}"
-msgstr "Arrancar ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr "Arrancar ${device} (PBR) ${info}"
+msgstr ""
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr "Arrancar ${tmp} (MBR) [${tmpsize}]"
+msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr "Arrancar ISO (Loopback)"
+msgstr ""
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr "Arrancar ISO (ISOLINUX)"
+msgstr ""
 
 msgid "Detecting ISO type ..."
-msgstr "Detectando el tipo de ISO ..."
+msgstr ""
 
 msgid "Boot ${distro} From ISO"
-msgstr "Arrancar ${distro} desde ISO"
+msgstr ""
 
 msgid "Boot "
-msgstr "Arrancar "
+msgstr ""
 
 msgid " From ISO"
-msgstr " Desde ISO"
+msgstr ""
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr "Por favor ingrese el nombre de usuario. Predeterminado:user Superusuario:root Debian:devuan"
+msgstr ""
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr "ADVERTENCIA: borrará TODOS los datos en (${grubfm_disk},4)"
+msgstr ""
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr "ADVERTENCIA: borrará TODOS los datos en (hd0,4)."
+msgstr ""
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr "ADVERTENCIA: eliminará ${grubfm_file}"
+msgstr ""
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr "Presione [1] para continuar. Presione cualquier otra tecla para regresar."
+msgstr ""
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr "Presione [Y] para continuar. Presione [N] para salir."
+msgstr ""
 
 msgid "Canceled."
-msgstr "Cancelado."
+msgstr ""
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr "La ruta del archivo contiene espacios.¡Esto puede causar problemas!Presione cualquier tecla para continuar."
+msgstr ""
 
 msgid "Enter the name"
-msgstr "Introducir el nombre"
+msgstr ""
 
 msgid "Bad file name."
-msgstr "Nombre de archivo incorrecto."
+msgstr ""
 
 msgid "Press any key to exit."
-msgstr "Presiona cualquier tecla para salir."
+msgstr ""
 
 msgid "Please wait ..."
-msgstr "Por favor espere ..."
+msgstr ""
 
 msgid "Reboot"
-msgstr "Reiniciar"
+msgstr ""
 
 msgid "Reboot (R)"
-msgstr "Reiniciar (R)"
+msgstr ""
 
 msgid "Halt"
-msgstr "Apagar"
+msgstr ""
 
 msgid "Halt (H)"
-msgstr "Apagar (H)"
+msgstr ""
 
 msgid "File: "
-msgstr "Archivo: "
+msgstr ""
 
 msgid "Hotkeys"
-msgstr "Teclas de acceso rápido"
+msgstr ""
 
 msgid "F1 - Help"
-msgstr "F1 - Ayuda"
+msgstr ""
 
 msgid "F2 - File Manager"
-msgstr "F2 - Administrador de archivos"
+msgstr ""
 
 msgid "F3 - OS Detect"
-msgstr "F3 - Detectar OS"
+msgstr ""
 
 msgid "F4 - Settings"
-msgstr "F4 - Configuración"
+msgstr ""
 
 msgid "F5 - PXE Boot Menu"
-msgstr "F5 - Menú de arranque PXE"
+msgstr ""
 
 msgid "F6 - Power Off"
-msgstr "F6 - Apagado"
+msgstr ""
 
 msgid "[A] About GRUB2-FileManager"
-msgstr "[A] Acerca de GRUB2-FileManager"
+msgstr ""
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr "Ctrl+l/Ctrl+r - Desplazar el texto de la entrada del menú"
+msgstr ""
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr "LCtrl+LAlt+F12 - Tomar capturas de pantalla (EFI)"
+msgstr ""
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr "↑ Página arriba  ↓ Página abajo  [ESC] Salir"
+msgstr ""
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr "↑ Página arriba  ↓ Página abajo [e] Codificación  [ESC] Salir"
+msgstr ""
 
 msgid "FILE: %s (%s)"
-msgstr "ARCHIVO: %s (%s)"
+msgstr ""
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr "ARCHIVO: %s (%s) CODIFICANDO: %s"
+msgstr ""
 
 msgid "Platform: %s-%s"
-msgstr "Plataforma: %s-%s"
+msgstr ""
 
 msgid "Language: %s"
-msgstr "Idioma: %s"
+msgstr ""
 
 msgid "GRUB version: %s"
-msgstr "Versión GRUB: %s"
+msgstr ""
 
 msgid "GRUB build date: %s"
-msgstr "Fecha de compilación GRUB: %s"
+msgstr ""
 
 msgid "License: GNU GPLv3"
-msgstr "Licencia: GNU GPLv3"
+msgstr ""
 
