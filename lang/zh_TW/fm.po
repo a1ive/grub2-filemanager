@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2020-05-14 09:34\n"
+"PO-Revision-Date: 2020-05-14 11:02\n"
 
 msgid "Back"
 msgstr "返回"
@@ -320,7 +320,7 @@ msgid "GRUB Console"
 msgstr "GRUB 命令列"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI Shell"
 
 msgid "UEFI DUET"
 msgstr "UEFI模擬"
@@ -473,7 +473,7 @@ msgid "License: GNU GPLv3"
 msgstr ""
 
 msgid "File not found"
-msgstr ""
+msgstr "找不到檔案"
 
 msgid "Please select the type of file you want to search:"
 msgstr ""
