@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2020-05-01 08:52\n"
+"PO-Revision-Date: 2020-05-14 09:17\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -323,7 +323,7 @@ msgid "EFI Shell"
 msgstr "EFI-Shell"
 
 msgid "UEFI DUET"
-msgstr "UEFI DUET"
+msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
 msgstr "Lade Externes Menü auf (${device}) ${info}"
