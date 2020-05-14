@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-05-14 11:02\n"
+"PO-Revision-Date: 2020-05-14 11:11\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -26,37 +26,37 @@ msgid "Set BGRT (Windows boot logo)"
 msgstr "BGRT Ayarla (Windows Önyükleme Logosu)"
 
 msgid "Open As Grub2 Menu"
-msgstr "Grub2 Menüsünü Aç"
+msgstr "Grub2 Menüsü Olarak Aç"
 
 msgid "Open As Syslinux Menu"
-msgstr "Syslinux Menüsünü Aç"
+msgstr "Syslinux Menüsü Olarak Aç"
 
 msgid "Open As pxelinux Menu"
-msgstr "Pxlinux Menüsünü Aç"
+msgstr "Pxlinux Menüsü Olarak Aç"
 
 msgid "Open As GRUB4DOS Menu"
 msgstr "GRUB4DOS MOD Olarak Aç"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr "Grub-Legacy Menüsünü Aç"
+msgstr "Grub-Legacy Menüsü Olarak Aç"
 
 msgid "Open As Lua Script"
-msgstr "Lua Betiğini Aç"
+msgstr "Lua Betiği Olarak Aç"
 
 msgid "Open As Python Script"
-msgstr "Python Betiğini Aç"
+msgstr "Python Betiği Olarak Aç"
 
 msgid "Open As EFI Application"
-msgstr "EFI Uygulamasını Aç"
+msgstr "EFI Uygulaması Olarak Aç"
 
 msgid "Load UEFI driver"
 msgstr "UEFI Sürücüsünü Yükle"
 
 msgid "Open As EFI Shell Script"
-msgstr "EFI Shell Betiğini Aç"
+msgstr "EFI Shell Betiği Olarak Aç"
 
 msgid "Open As Image"
-msgstr "İmaj Aç"
+msgstr "İmaj Olarak Aç"
 
 msgid "Press [ESC] to continue..."
 msgstr "Devam etmek için [ESC] tuşuna basın..."
@@ -164,7 +164,7 @@ msgid "Open As iPXE Script"
 msgstr "iPXE Betiği Olarak Aç"
 
 msgid "Open As Font"
-msgstr "Font Aç"
+msgstr "Yazı Tipi Olarak Aç"
 
 msgid "Insert Grub2 Module"
 msgstr "Grub2 Modülü Ekle"
