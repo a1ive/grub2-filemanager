@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2020-04-28 02:00\n"
+"PO-Revision-Date: 2020-05-14 09:34\n"
 
 msgid "Back"
 msgstr "Quay về"
@@ -470,5 +470,17 @@ msgid "GRUB build date: %s"
 msgstr ""
 
 msgid "License: GNU GPLv3"
+msgstr ""
+
+msgid "File not found"
+msgstr ""
+
+msgid "Please select the type of file you want to search:"
+msgstr ""
+
+msgid "Install Windows XP - STEP 1"
+msgstr ""
+
+msgid "Install Windows XP - STEP 2"
 msgstr ""
 
