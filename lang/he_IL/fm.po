@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2020-04-28 01:36\n"
+"PO-Revision-Date: 2020-05-14 09:34\n"
 
 msgid "Back"
 msgstr "חזרה"
@@ -471,4 +471,16 @@ msgstr "תאריך בניית GRUB: ‏%s"
 
 msgid "License: GNU GPLv3"
 msgstr "רישיון: GNU GPLv3"
+
+msgid "File not found"
+msgstr ""
+
+msgid "Please select the type of file you want to search:"
+msgstr ""
+
+msgid "Install Windows XP - STEP 1"
+msgstr ""
+
+msgid "Install Windows XP - STEP 2"
+msgstr ""
 
