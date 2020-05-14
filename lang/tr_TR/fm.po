@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-05-14 09:34\n"
+"PO-Revision-Date: 2020-05-14 11:02\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -35,7 +35,7 @@ msgid "Open As pxelinux Menu"
 msgstr "Pxlinux Menüsünü Aç"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr "GRUB4DOS Menüsünü Aç"
+msgstr "GRUB4DOS MOD Olarak Aç"
 
 msgid "Open As GRUB-Legacy Menu"
 msgstr "Grub-Legacy Menüsünü Aç"
@@ -173,10 +173,10 @@ msgid "Chainload BIOS Boot Sector"
 msgstr "Chainload BIOS Önyükleme Sektörü"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Chainload NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Chainload BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
 msgstr "GRUB4DOS MOD Olarak Aç"
@@ -320,7 +320,7 @@ msgid "GRUB Console"
 msgstr "GRUB Konsolu"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI Shell"
 
 msgid "UEFI DUET"
 msgstr "UEFI DUET Önyükle"
@@ -458,7 +458,7 @@ msgid "FILE: %s (%s) ENCODING: %s"
 msgstr "Dosya: %s (%s) Kodlama: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "Platform: %s-%s"
 
 msgid "Language: %s"
 msgstr "Dil: %s"
@@ -473,14 +473,14 @@ msgid "License: GNU GPLv3"
 msgstr "Lisans: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "Dosya bulunamadı"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "Lütfen aramak istediğiniz dosya türünü seçin:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Windows XP'yi yükleyin - ADIM 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Windows XP'yi yükleyin - ADIM 2"
 
