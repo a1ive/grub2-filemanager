@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-04-28 02:00\n"
+"PO-Revision-Date: 2020-05-14 11:02\n"
 
 msgid "Back"
 msgstr "返回"
@@ -471,4 +471,16 @@ msgstr "GRUB 构建日期: %s"
 
 msgid "License: GNU GPLv3"
 msgstr "许可证: GNU GPLv3"
+
+msgid "File not found"
+msgstr "未找到文件"
+
+msgid "Please select the type of file you want to search:"
+msgstr "请选择你想要搜索的文件类型:"
+
+msgid "Install Windows XP - STEP 1"
+msgstr "安装 Windows XP - 步骤 1"
+
+msgid "Install Windows XP - STEP 2"
+msgstr "安装 Windows XP - 步骤 2"
 
