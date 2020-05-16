@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-05-14 09:34\n"
+"PO-Revision-Date: 2020-05-14 11:38\n"
 
 msgid "Back"
 msgstr "Wstecz"
@@ -323,7 +323,7 @@ msgid "EFI Shell"
 msgstr "Powłoka EFI"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu on (${device}) ${info}"
 msgstr "Załaduj menu zewnętrzne na (${device}) ${info}"
@@ -473,14 +473,14 @@ msgid "License: GNU GPLv3"
 msgstr "Licencja: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "Nie znaleziono pliku"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "Wybierz typ plku do wyszukania:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Zainstaluj Windows XP - KROK 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Zainstaluj Windows XP - KROK 2"
 
