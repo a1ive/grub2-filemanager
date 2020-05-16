@@ -35,8 +35,8 @@ then
     if [ "${grub_secureboot}" = "1" ];
     then
         export grub_secureboot="Enabled";
-        sbpolicy --install;
-        fucksb -i -b;
+        sbpolicy -i;
+        fucksb -i;
         fucksb --off;
     fi;
     if [ "${grub_secureboot}" = "0" ];
