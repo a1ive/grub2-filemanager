@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
-"PO-Revision-Date: 2020-05-17 09:23\n"
+"PO-Revision-Date: 2020-05-17 09:44\n"
 
 msgid "Back"
 msgstr "Tilbage"
@@ -290,25 +290,25 @@ msgid "Enable ESC (not recommended)"
 msgstr "Aktivér ESC (anbefales ikke)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Aktivér fejlfinding (debug) meddelelser"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Vis skjulte drev"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Indlæs ekstra moduler"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Aktivér filnavne, der er store og små bogstaver"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Deaktivér filnavne, der er store og små bogstaver"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Indlæs AHCI driver"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Monter krypterede diskenheder (LUKS og geli)"
 
 msgid "Enable serial terminal"
 msgstr "Aktivér seriel terminal"
