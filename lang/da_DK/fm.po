@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
-"PO-Revision-Date: 2020-05-17 08:22\n"
+"PO-Revision-Date: 2020-05-17 08:43\n"
 
 msgid "Back"
 msgstr "Tilbage"
@@ -158,7 +158,7 @@ msgid "Boot ISO (map --mem)"
 msgstr "Boot ISO (map/folder --mem)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Boot EFI filer"
 
 msgid "Open As iPXE Script"
 msgstr ""
@@ -311,100 +311,100 @@ msgid "Mount encrypted volumes (LUKS and geli)"
 msgstr ""
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Aktivér seriel terminal"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "EFI Firmware opsætning"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "GRUB konsol"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI Shell"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "Indlæs ekstern menu til (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Indlæs Windows Boot Manager på ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "Boot macOS på ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "Boot ${winver} på ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "Boot ${device} ${info}"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "Boot ${device} (PBR) ${info}"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "Boot ${tmp} (MBR) [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Boot ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Boot ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "Registrerer ISO-type ..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "Boot ${distro} fra ISO"
 
 msgid "Boot "
-msgstr ""
+msgstr "Boot "
 
 msgid " From ISO"
-msgstr ""
+msgstr " Fra ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Indtast venligst brugernavnet. Default:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "ADVARSEL: Vil slette ALLE data på (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "ADVARSEL: Vil slette ALLE data på (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "ADVARSEL: Vil slette ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "Tryk på [1] for at fortsætte. Tryk på vilkårlig tast for at vende tilbage."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Tryk på [Y] for at fortsætte. Tryk på [N] for at afslutte."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Annulleret."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "Fil-stien indeholder mellemrum. Dette kan forårsage problemer! Tryk på en vilkårlig tast for at fortsætte."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "Indtast navnet"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "Dårligt filnavn."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "Tryk på en vilkårlig tast for at afslutte."
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "Vent venligst ..."
 
 msgid "Reboot"
-msgstr ""
+msgstr "Genstart"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "Genstart (R)"
 
 msgid "Halt"
 msgstr ""
