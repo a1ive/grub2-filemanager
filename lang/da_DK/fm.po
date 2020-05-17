@@ -8,19 +8,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
-"PO-Revision-Date: 2020-05-16 22:02\n"
+"PO-Revision-Date: 2020-05-17 07:22\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Tilbage"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Deaktiveret"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Aktiveret"
 
 msgid "Not available"
-msgstr ""
+msgstr "Ikke tilgængelig"
 
 msgid "Set BGRT (Windows boot logo)"
 msgstr ""
