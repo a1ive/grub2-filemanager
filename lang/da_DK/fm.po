@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
-"PO-Revision-Date: 2020-05-17 09:16\n"
+"PO-Revision-Date: 2020-05-17 09:23\n"
 
 msgid "Back"
 msgstr "Tilbage"
@@ -251,43 +251,43 @@ msgid "Fix \"BlInitializeLibrary failed XXX\" error"
 msgstr "Rettelse af \"BlInitializeLibrary failed XXX\" fejl"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "Deaktiver PatchGuard og DSE ved boot tid"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Installer tilsidesættelse af sikkerhedspolitik"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Deaktiver shim validering og genstart"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Deaktiver grafiktilstand (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Indkodning: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Sorter filer efter navn"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Sorter ikke filer efter navn"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Deaktiver menuen for sekundær startindstillinger"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Aktivér menuen for sekundær startindstillinger"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Vis alle filer"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Skjul ikke-boot-bare filer"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Opløsning (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Aktivér ESC (anbefales ikke)"
 
 msgid "Enable debug messages"
 msgstr ""
