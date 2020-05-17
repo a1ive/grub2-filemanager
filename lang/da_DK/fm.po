@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
-"PO-Revision-Date: 2020-05-17 07:22\n"
+"PO-Revision-Date: 2020-05-17 07:33\n"
 
 msgid "Back"
 msgstr "Tilbage"
@@ -23,28 +23,28 @@ msgid "Not available"
 msgstr "Ikke tilgængelig"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "Indstil (Windows boot logo) i Boot Graphics Resource Table (BGRT)"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Åbn som Grub2 menu"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Åbn som Syslinux menu"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Åbn som pxelinux menu"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Åbn som GRUB4DOS menu"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Åbn som GRUB-Legacy menu"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Åben som Lua script"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Åben som Python script"
 
 msgid "Open As EFI Application"
 msgstr ""
