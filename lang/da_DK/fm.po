@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
-"PO-Revision-Date: 2020-05-17 07:42\n"
+"PO-Revision-Date: 2020-05-17 08:12\n"
 
 msgid "Back"
 msgstr "Tilbage"
@@ -62,22 +62,22 @@ msgid "Press [ESC] to continue..."
 msgstr "Tryk på [ESC] for at fortsætte..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Monter afbildning"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Boot Floppy afbildning (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Boot Floppy afbildning (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Boot Floppy afbildning (map/folder)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Boot Floppy afbildning (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Boot Floppy afbildning (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
 msgstr ""
