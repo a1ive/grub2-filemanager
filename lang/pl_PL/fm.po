@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-05-14 11:38\n"
+"PO-Revision-Date: 2020-05-17 10:12\n"
 
 msgid "Back"
 msgstr "Wstecz"
@@ -476,7 +476,7 @@ msgid "File not found"
 msgstr "Nie znaleziono pliku"
 
 msgid "Please select the type of file you want to search:"
-msgstr "Wybierz typ plku do wyszukania:"
+msgstr "Wybierz typ pliku do wyszukania:"
 
 msgid "Install Windows XP - STEP 1"
 msgstr "Zainstaluj Windows XP - KROK 1"
