@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
-"PO-Revision-Date: 2020-05-17 08:12\n"
+"PO-Revision-Date: 2020-05-17 08:22\n"
 
 msgid "Back"
 msgstr "Tilbage"
@@ -80,82 +80,82 @@ msgid "Boot Hard Drive Image (memdisk)"
 msgstr "Boot Floppy afbildning (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Boot fastdisk afbildning (map/folder)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Boot IMG (map/folder)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Boot IMG (map/folder -mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Åben som arkiver"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Boot NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Boot NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Boot NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Boot NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Boot RamOS VHD (GRUB4DOS map/folder --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Boot RamOS VHD (GRUB4DOS map/folder --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Boot VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Boot VHD (map/folder)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Boot VHD (map/folder --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Monter ISO afbildning"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Boot ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Boot ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Boot ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Boot ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Boot ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Installer Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Installer Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Installer Windows uden autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Indlæs ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Boot ISO (map/folder)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Boot ISO (map/folder --mem)"
 
 msgid "Boot EFI Files"
 msgstr ""
