@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
-"PO-Revision-Date: 2020-05-17 08:53\n"
+"PO-Revision-Date: 2020-05-17 09:16\n"
 
 msgid "Back"
 msgstr "Tilbage"
@@ -161,94 +161,94 @@ msgid "Boot EFI Files"
 msgstr "Boot EFI filer"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Åben som iPXE script"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Åben som skrifttype (font)"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Indsæt Grub2 modul"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Kædeladning af BIOS boot sektor (Chainload BIOS Boot Sector)"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Kædeladning NTLDR (Chainload NTLDR)"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Kædeladning BOOTMGR (Chainload BOOTMGR) "
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Åben som GRUB4DOS MOD"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Boot multiboot kernel"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Boot multiboot2 kernel"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Boot Linux Kernel"
 
 msgid "User menu"
-msgstr ""
+msgstr "Brugermenu"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Tekstvisning"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Hex visning"
 
 msgid "Rename"
-msgstr ""
+msgstr "Omdøb"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Kopier til ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Slet"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Indsæt her"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Annuller"
 
 msgid "File Info"
-msgstr ""
+msgstr "Fil information"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Fil information (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Fil information - Tryk på [ENTER] for at afslutte"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Type: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Sti:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Størrelse: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "Forskudt (Offset) på disk: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "Filen er sammenhængende."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "Filen er ikke sammenhængende.. (${frag} fragments)"
 
 msgid "Language"
-msgstr ""
+msgstr "Sprog"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "Tastaturlayouts"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "Rettelse af \"BlInitializeLibrary failed XXX\" fejl"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr ""
@@ -449,38 +449,38 @@ msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
 msgstr "↑ Side op ↓ Side ned [ESC] Afslut"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ Side op ↓ Side ned [e] Indkodning [ESC] Afslut"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "FIL: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "FIL: %s (%s) INDKODNING: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "Platform: %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "Sprog: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "GRUB version: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "GRUB build dato: %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "Licens: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "Fil ikke fundet"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "Vælg den filtype, du vil søge:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Installer Windows XP - TRIN 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Installer Windows XP - TRIN 2"
 
