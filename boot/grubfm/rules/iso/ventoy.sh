@@ -42,6 +42,25 @@ function get_os_type
   fi
 }
 
+function vt_check_pe
+{
+  unset VT_PE_SUPPORT
+  if [ -f $1/HBCD_PE.ini ];
+  then
+    set ventoy_compatible=YES
+    set VT_PE_SUPPORT=YES
+  elif [ -f $1/easyu.flg ];
+  then
+    set VT_PE_SUPPORT=YES
+  elif [ -f $1/USM.ICO ];
+  then
+    set VT_PE_SUPPORT=YES
+  elif [ -d $1/USM_TOOL ];
+  then
+    set VT_PE_SUPPORT=YES
+  fi
+}
+
 function locate_initrd
 {
   vt_linux_locate_initrd
@@ -55,7 +74,11 @@ function locate_initrd
 function find_wim_file
 {
   unset ventoy_wim_file
-  for file in "sources/boot.wim" "sources/BOOT.WIM" "Sources/Win10PEx64.WIM" "boot/BOOT.WIM" "winpe_x64.wim" "x64/sources/boot.wim";
+  for file in "sources/boot.wim" "sources/BOOT.WIM" \
+              "Sources/Win10PEx64.WIM" "boot/BOOT.WIM" \
+              "winpe_x64.wim" "boot/10pex64.wim" \
+              "BOOT/USM1PE6L.WIM" "BOOT/USM1PE6F.WIM" \
+              "x64/sources/boot.wim";
   do
     if [ -e $1/$file ];
     then
@@ -115,12 +138,18 @@ function distro_specify_initrd_file_phase2
   if [ -f (loop)/boot/initrd.img ];
   then
     vt_linux_specify_initrd_file /boot/initrd.img
-  elif [ -f (loop)/Setup/initrd.gz ]; then
+  elif [ -f (loop)/Setup/initrd.gz ];
+  then
     vt_linux_specify_initrd_file /Setup/initrd.gz
-  elif [ -f (loop)/isolinux/initramfs ]; then
+  elif [ -f (loop)/isolinux/initramfs ];
+  then
     vt_linux_specify_initrd_file /isolinux/initramfs
-  elif [ -f (loop)/boot/iniramfs.igz ]; then
+  elif [ -f (loop)/boot/iniramfs.igz ];
+  then
     vt_linux_specify_initrd_file /boot/iniramfs.igz
+  elif [ -f (loop)/initrd-x86_64 ];
+  then
+    vt_linux_specify_initrd_file /initrd-x86_64
   fi
 }
 
@@ -248,8 +277,7 @@ function legacy_windows_menu_func
   fi
   if [ -n "$vtoy_chain_mem_addr" ];
   then
-    linux16   $vtoy_path/ipxe.krn ${vtdebug_flag} ibft
-    initrd16  mem:${vtoy_chain_mem_addr}:size:${vtoy_chain_mem_size}
+    linux16   $vtoy_path/ipxe.krn ${vtdebug_flag} ibft mem:${vtoy_chain_mem_addr}:size:${vtoy_chain_mem_size}
     boot
   else
     echo "chain empty failed"
@@ -312,8 +340,7 @@ function legacy_linux_menu_func
   fi
   if [ -n "$vtoy_chain_mem_addr" ];
   then
-    linux16 $vtoy_path/ipxe.krn ${vtdebug_flag}
-    initrd16 mem:${vtoy_chain_mem_addr}:size:${vtoy_chain_mem_size}
+    linux16 $vtoy_path/ipxe.krn ${vtdebug_flag}  mem:${vtoy_chain_mem_addr}:size:${vtoy_chain_mem_size}
     boot
   else
     echo "chain empty failed"
@@ -415,9 +442,13 @@ function iso_menu_func
   vt_img_sector "${1}"
   if [ "$vtoy_os" = "Windows" ];
   then
-    if [ -f (loop)/HBCD_PE.ini ];
+    vt_check_pe (loop)
+    if [ "$VT_PE_SUPPORT" != "YES" ];
     then
-      set ventoy_compatible=YES
+      if [ "$ventoy_fs_probe" = "iso9660" ];
+      then
+        set ventoy_compatible=YES
+      fi
     fi
     win_auto_list "${1}"
   else
