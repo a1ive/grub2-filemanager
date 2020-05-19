@@ -173,6 +173,14 @@ function iso_detect {
     export src=sysresccd;
     return;
   fi;
+  if [ -d (loop)/proxmox ];
+  then
+    export linux_extra="grubfm_path=${grubfm_path}";
+    export icon=debian;
+    export distro="Proxmox";
+    export src=proxmox;
+    return;
+  fi;
   if [ -f (loop)/ipfire*.media ];
   then
     export linux_extra="bootfromiso=${grubfm_path}";
