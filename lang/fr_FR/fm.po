@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-05-14 09:34\n"
+"PO-Revision-Date: 2020-05-23 08:00\n"
 
 msgid "Back"
 msgstr "Retour"
@@ -156,6 +156,9 @@ msgstr "Démarrer l'ISO (map)"
 
 msgid "Boot ISO (map --mem)"
 msgstr "Démarrer l'ISO (map --mem)"
+
+msgid "Boot ISO (Ventoy)"
+msgstr ""
 
 msgid "Boot EFI Files"
 msgstr "Démarrer les fichiers EFI"
