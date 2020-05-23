@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-05-14 11:11\n"
+"PO-Revision-Date: 2020-05-23 08:22\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -156,6 +156,9 @@ msgstr "ISO Önyükle (map)"
 
 msgid "Boot ISO (map --mem)"
 msgstr "ISO Önyükle (map --mem)"
+
+msgid "Boot ISO (Ventoy)"
+msgstr "ISO Önyükle (Ventoy)"
 
 msgid "Boot EFI Files"
 msgstr "EFI Dosyasını Önyükle"

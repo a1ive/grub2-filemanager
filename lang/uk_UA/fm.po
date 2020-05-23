@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-05-14 09:34\n"
+"PO-Revision-Date: 2020-05-23 08:22\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -156,6 +156,9 @@ msgstr "Завантажити ISO (map)"
 
 msgid "Boot ISO (map --mem)"
 msgstr "Завантажити ISO (map --mem)"
+
+msgid "Boot ISO (Ventoy)"
+msgstr "Завантажити ISO (Ventoy)"
 
 msgid "Boot EFI Files"
 msgstr "Завантажити файли EFI"
