@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2020-05-14 11:02\n"
+"PO-Revision-Date: 2020-05-23 08:01\n"
 
 msgid "Back"
 msgstr "返回"
@@ -156,6 +156,9 @@ msgstr "啟動 ISO (map)"
 
 msgid "Boot ISO (map --mem)"
 msgstr "啟動 ISO (map --mem)"
+
+msgid "Boot ISO (Ventoy)"
+msgstr ""
 
 msgid "Boot EFI Files"
 msgstr "僅載入 EFI 檔案"
