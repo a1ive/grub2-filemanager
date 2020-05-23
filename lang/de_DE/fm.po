@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2020-05-23 06:54\n"
+"PO-Revision-Date: 2020-05-23 07:24\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -473,14 +473,14 @@ msgid "License: GNU GPLv3"
 msgstr "Lizenz: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "Datei nicht gefunden"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "Bitte wählen Sie den Dateityp aus, nach dem Sie suchen möchten:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Installiere Windows XP - SCHRITT 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Installiere Windows XP - SCHRITT 2"
 
