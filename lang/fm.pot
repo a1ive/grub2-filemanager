@@ -148,6 +148,9 @@ msgstr ""
 msgid "Boot ISO (map --mem)"
 msgstr ""
 
+msgid "Boot ISO (Ventoy)"
+msgstr ""
+
 msgid "Boot EFI Files"
 msgstr ""
 

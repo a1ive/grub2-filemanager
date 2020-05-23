@@ -181,6 +181,14 @@ function iso_detect {
     export src=proxmox;
     return;
   fi;
+  if [ -f (loop)/veket*.sfs ];
+  then
+    export linux_extra="grubfm_path=${grubfm_path}";
+    export icon=slackware;
+    export distro="Veket";
+    export src=veket;
+    return;
+  fi;
   if [ -f (loop)/ipfire*.media ];
   then
     export linux_extra="bootfromiso=${grubfm_path}";
