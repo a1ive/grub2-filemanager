@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2020-05-23 08:01\n"
+"PO-Revision-Date: 2020-05-23 08:22\n"
 
 msgid "Back"
 msgstr "返回"
@@ -158,7 +158,7 @@ msgid "Boot ISO (map --mem)"
 msgstr "啟動 ISO (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "啟動 ISO (Ventoy)"
 
 msgid "Boot EFI Files"
 msgstr "僅載入 EFI 檔案"
@@ -482,8 +482,8 @@ msgid "Please select the type of file you want to search:"
 msgstr ""
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "安裝 Windows XP - 步驟 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "安裝 Windows XP - 步驟 2"
 
