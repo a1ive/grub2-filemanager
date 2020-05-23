@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2020-05-23 08:00\n"
+"PO-Revision-Date: 2020-05-23 08:22\n"
 
 msgid "Back"
 msgstr "Zurück"
@@ -158,7 +158,7 @@ msgid "Boot ISO (map --mem)"
 msgstr "Boote ISO (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "Boote ISO (Ventoy)"
 
 msgid "Boot EFI Files"
 msgstr "Boote EFI Dateien"
@@ -326,7 +326,7 @@ msgid "EFI Shell"
 msgstr "EFI-Shell"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu on (${device}) ${info}"
 msgstr "Lade Externes Menü auf (${device}) ${info}"
