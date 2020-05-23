@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2020-05-23 08:01\n"
+"PO-Revision-Date: 2020-05-23 08:22\n"
 
 msgid "Back"
 msgstr "Quay về"
@@ -134,10 +134,10 @@ msgid "Boot ISO (Easy2Boot)"
 msgstr "Khởi động ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Khởi động ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Khởi động ISO (partnew)"
 
 msgid "Install Windows (x64)"
 msgstr "Cài đặt Windows (x64)"
@@ -158,7 +158,7 @@ msgid "Boot ISO (map --mem)"
 msgstr "Khởi động ISO (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "Khởi động ISO (Ventoy)"
 
 msgid "Boot EFI Files"
 msgstr "Khởi động Tập tin EFI"
