@@ -1,0 +1,486 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: grub2-filemanager\n"
+"X-Crowdin-Language: da\n"
+"X-Crowdin-File: /master/lang/fm.pot\n"
+"Project-Id-Version: grub2-filemanager\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Danish\n"
+"Language: da_DK\n"
+"PO-Revision-Date: 2020-05-17 09:44\n"
+
+msgid "Back"
+msgstr "Tilbage"
+
+msgid "Disabled"
+msgstr "Deaktiveret"
+
+msgid "Enabled"
+msgstr "Aktiveret"
+
+msgid "Not available"
+msgstr "Ikke tilgængelig"
+
+msgid "Set BGRT (Windows boot logo)"
+msgstr "Indstil (Windows boot logo) i Boot Graphics Resource Table (BGRT)"
+
+msgid "Open As Grub2 Menu"
+msgstr "Åbn som Grub2 menu"
+
+msgid "Open As Syslinux Menu"
+msgstr "Åbn som Syslinux menu"
+
+msgid "Open As pxelinux Menu"
+msgstr "Åbn som pxelinux menu"
+
+msgid "Open As GRUB4DOS Menu"
+msgstr "Åbn som GRUB4DOS menu"
+
+msgid "Open As GRUB-Legacy Menu"
+msgstr "Åbn som GRUB-Legacy menu"
+
+msgid "Open As Lua Script"
+msgstr "Åben som Lua script"
+
+msgid "Open As Python Script"
+msgstr "Åben som Python script"
+
+msgid "Open As EFI Application"
+msgstr "Åben som EFI-applikation"
+
+msgid "Load UEFI driver"
+msgstr "Indlæs UEFI-driver"
+
+msgid "Open As EFI Shell Script"
+msgstr "Åben som EFI Shell Script"
+
+msgid "Open As Image"
+msgstr "Åben som et billede"
+
+msgid "Press [ESC] to continue..."
+msgstr "Tryk på [ESC] for at fortsætte..."
+
+msgid "Mount Image"
+msgstr "Monter afbildning"
+
+msgid "Boot Floppy Image (GRUB4DOS)"
+msgstr "Boot Floppy afbildning (GRUB4DOS)"
+
+msgid "Boot Floppy Image (memdisk)"
+msgstr "Boot Floppy afbildning (memdisk)"
+
+msgid "Boot Floppy Image (map)"
+msgstr "Boot Floppy afbildning (map/folder)"
+
+msgid "Boot Hard Drive Image (GRUB4DOS)"
+msgstr "Boot Floppy afbildning (GRUB4DOS)"
+
+msgid "Boot Hard Drive Image (memdisk)"
+msgstr "Boot Floppy afbildning (memdisk)"
+
+msgid "Boot Hard Drive Image (map)"
+msgstr "Boot fastdisk afbildning (map/folder)"
+
+msgid "Boot IMG (map)"
+msgstr "Boot IMG (map/folder)"
+
+msgid "Boot IMG (map --mem)"
+msgstr "Boot IMG (map/folder -mem)"
+
+msgid "Open As Archiver"
+msgstr "Åben som arkiver"
+
+msgid "Boot NT6.x WIM (wimboot)"
+msgstr "Boot NT6.x WIM (wimboot)"
+
+msgid "Boot NT6.x WIM (NTBOOT)"
+msgstr "Boot NT6.x WIM (NTBOOT)"
+
+msgid "Boot NT5.x WIM (NTBOOT)"
+msgstr "Boot NT5.x WIM (NTBOOT)"
+
+msgid "Boot NT5.x PE (NTBOOT)"
+msgstr "Boot NT5.x PE (NTBOOT)"
+
+msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr "Boot RamOS VHD (GRUB4DOS map/folder --mem --top)"
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
+msgstr "Boot RamOS VHD (GRUB4DOS map/folder --mem)"
+
+msgid "Boot VHD (vboot)"
+msgstr "Boot VHD (vboot)"
+
+msgid "Boot VHD (map)"
+msgstr "Boot VHD (map/folder)"
+
+msgid "Boot VHD (map --mem)"
+msgstr "Boot VHD (map/folder --mem)"
+
+msgid "Mount ISO"
+msgstr "Monter ISO afbildning"
+
+msgid "Boot ISO (GRUB4DOS)"
+msgstr "Boot ISO (GRUB4DOS)"
+
+msgid "Boot ISO (memdisk)"
+msgstr "Boot ISO (memdisk)"
+
+msgid "Boot ISO (Easy2Boot)"
+msgstr "Boot ISO (Easy2Boot)"
+
+msgid "Boot ISO (loopback.cfg)"
+msgstr "Boot ISO (loopback.cfg)"
+
+msgid "Boot ISO (partnew)"
+msgstr "Boot ISO (partnew)"
+
+msgid "Install Windows (x64)"
+msgstr "Installer Windows (x64)"
+
+msgid "Install Windows (x86)"
+msgstr "Installer Windows (x86)"
+
+msgid "Install Windows without autounattend.xml"
+msgstr "Installer Windows uden autounattend.xml"
+
+msgid "Load ${xml_name}"
+msgstr "Indlæs ${xml_name}"
+
+msgid "Boot ISO (map)"
+msgstr "Boot ISO (map/folder)"
+
+msgid "Boot ISO (map --mem)"
+msgstr "Boot ISO (map/folder --mem)"
+
+msgid "Boot EFI Files"
+msgstr "Boot EFI filer"
+
+msgid "Open As iPXE Script"
+msgstr "Åben som iPXE script"
+
+msgid "Open As Font"
+msgstr "Åben som skrifttype (font)"
+
+msgid "Insert Grub2 Module"
+msgstr "Indsæt Grub2 modul"
+
+msgid "Chainload BIOS Boot Sector"
+msgstr "Kædeladning af BIOS boot sektor (Chainload BIOS Boot Sector)"
+
+msgid "Chainload NTLDR"
+msgstr "Kædeladning NTLDR (Chainload NTLDR)"
+
+msgid "Chainload BOOTMGR"
+msgstr "Kædeladning BOOTMGR (Chainload BOOTMGR) "
+
+msgid "Open As GRUB4DOS MOD"
+msgstr "Åben som GRUB4DOS MOD"
+
+msgid "Boot Multiboot Kernel"
+msgstr "Boot multiboot kernel"
+
+msgid "Boot Multiboot2 Kernel"
+msgstr "Boot multiboot2 kernel"
+
+msgid "Boot Linux Kernel"
+msgstr "Boot Linux Kernel"
+
+msgid "User menu"
+msgstr "Brugermenu"
+
+msgid "Text Viewer"
+msgstr "Tekstvisning"
+
+msgid "Hex Viewer"
+msgstr "Hex visning"
+
+msgid "Rename"
+msgstr "Omdøb"
+
+msgid "Copy to ..."
+msgstr "Kopier til ..."
+
+msgid "Delete"
+msgstr "Slet"
+
+msgid "Paste here"
+msgstr "Indsæt her"
+
+msgid "Cancel"
+msgstr "Annuller"
+
+msgid "File Info"
+msgstr "Fil information"
+
+msgid "File Info (${grubfm_name})"
+msgstr "Fil information (${grubfm_name})"
+
+msgid "File Info -- Press [ENTER] to exit"
+msgstr "Fil information - Tryk på [ENTER] for at afslutte"
+
+msgid "Type: ${grubfm_fileext}"
+msgstr "Type: ${grubfm_fileext}"
+
+msgid "Path:"
+msgstr "Sti:"
+
+msgid "Size: ${hsize} (${size})"
+msgstr "Størrelse: ${hsize} (${size})"
+
+msgid "Offset on disk: ${offset}"
+msgstr "Forskudt (Offset) på disk: ${offset}"
+
+msgid "File is contiguous."
+msgstr "Filen er sammenhængende."
+
+msgid "File is non-contiguous. (${frag} fragments)"
+msgstr "Filen er ikke sammenhængende.. (${frag} fragments)"
+
+msgid "Language"
+msgstr "Sprog"
+
+msgid "Keyboard layouts"
+msgstr "Tastaturlayouts"
+
+msgid "Fix \"BlInitializeLibrary failed XXX\" error"
+msgstr "Rettelse af \"BlInitializeLibrary failed XXX\" fejl"
+
+msgid "Disable PatchGuard and DSE at boot time"
+msgstr "Deaktiver PatchGuard og DSE ved boot tid"
+
+msgid "Install override security policy"
+msgstr "Installer tilsidesættelse af sikkerhedspolitik"
+
+msgid "Disable shim validation and reboot"
+msgstr "Deaktiver shim validering og genstart"
+
+msgid "Disable graphics mode (T)"
+msgstr "Deaktiver grafiktilstand (T)"
+
+msgid "Encoding: "
+msgstr "Indkodning: "
+
+msgid "Sort files by name"
+msgstr "Sorter filer efter navn"
+
+msgid "Do not sort files by name"
+msgstr "Sorter ikke filer efter navn"
+
+msgid "Disable secondary boot options menu"
+msgstr "Deaktiver menuen for sekundær startindstillinger"
+
+msgid "Enable secondary boot options menu"
+msgstr "Aktivér menuen for sekundær startindstillinger"
+
+msgid "Display all files"
+msgstr "Vis alle filer"
+
+msgid "Hide non-bootable files"
+msgstr "Skjul ikke-boot-bare filer"
+
+msgid "Resolution (R): ${mode_current}"
+msgstr "Opløsning (R): ${mode_current}"
+
+msgid "Enable ESC (not recommended)"
+msgstr "Aktivér ESC (anbefales ikke)"
+
+msgid "Enable debug messages"
+msgstr "Aktivér fejlfinding (debug) meddelelser"
+
+msgid "Show hidden drives"
+msgstr "Vis skjulte drev"
+
+msgid "Load extra modules"
+msgstr "Indlæs ekstra moduler"
+
+msgid "Enable case-sensitive filenames"
+msgstr "Aktivér filnavne, der er store og små bogstaver"
+
+msgid "Disable case-sensitive filenames"
+msgstr "Deaktivér filnavne, der er store og små bogstaver"
+
+msgid "Load AHCI Driver"
+msgstr "Indlæs AHCI driver"
+
+msgid "Mount encrypted volumes (LUKS and geli)"
+msgstr "Monter krypterede diskenheder (LUKS og geli)"
+
+msgid "Enable serial terminal"
+msgstr "Aktivér seriel terminal"
+
+msgid "EFI Firmware Setup"
+msgstr "EFI Firmware opsætning"
+
+msgid "GRUB Console"
+msgstr "GRUB konsol"
+
+msgid "EFI Shell"
+msgstr "EFI Shell"
+
+msgid "UEFI DUET"
+msgstr "UEFI DUET"
+
+msgid "Load External Menu on (${device}) ${info}"
+msgstr "Indlæs ekstern menu til (${device}) ${info}"
+
+msgid "Load Windows Boot Manager on ${device} ${info}"
+msgstr "Indlæs Windows Boot Manager på ${device} ${info}"
+
+msgid "Boot macOS on ${device} ${info}"
+msgstr "Boot macOS på ${device} ${info}"
+
+msgid "Boot ${winver} on ${device} ${info}"
+msgstr "Boot ${winver} på ${device} ${info}"
+
+msgid "Boot ${device} ${info}"
+msgstr "Boot ${device} ${info}"
+
+msgid "Boot ${device} (PBR) ${info}"
+msgstr "Boot ${device} (PBR) ${info}"
+
+msgid "Boot ${tmp} (MBR) [${tmpsize}]"
+msgstr "Boot ${tmp} (MBR) [${tmpsize}]"
+
+msgid "Boot ISO (Loopback)"
+msgstr "Boot ISO (Loopback)"
+
+msgid "Boot ISO (ISOLINUX)"
+msgstr "Boot ISO (ISOLINUX)"
+
+msgid "Detecting ISO type ..."
+msgstr "Registrerer ISO-type ..."
+
+msgid "Boot ${distro} From ISO"
+msgstr "Boot ${distro} fra ISO"
+
+msgid "Boot "
+msgstr "Boot "
+
+msgid " From ISO"
+msgstr " Fra ISO"
+
+msgid "Please input the username. Default:user Super User:root Devuan:devuan"
+msgstr "Indtast venligst brugernavnet. Default:user Super User:root Devuan:devuan"
+
+msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
+msgstr "ADVARSEL: Vil slette ALLE data på (${grubfm_disk},4)"
+
+msgid "WARNING: Will erase ALL data on (hd0,4)."
+msgstr "ADVARSEL: Vil slette ALLE data på (hd0,4)."
+
+msgid "WARNING: Will delete ${grubfm_file}"
+msgstr "ADVARSEL: Vil slette ${grubfm_file}"
+
+msgid "Press [1] to continue. Press any other key to return."
+msgstr "Tryk på [1] for at fortsætte. Tryk på vilkårlig tast for at vende tilbage."
+
+msgid "Press [Y] to continue. Press [N] to quit."
+msgstr "Tryk på [Y] for at fortsætte. Tryk på [N] for at afslutte."
+
+msgid "Canceled."
+msgstr "Annulleret."
+
+msgid "File path contains spaces.This may cause problems!Press any key to continue."
+msgstr "Fil-stien indeholder mellemrum. Dette kan forårsage problemer! Tryk på en vilkårlig tast for at fortsætte."
+
+msgid "Enter the name"
+msgstr "Indtast navnet"
+
+msgid "Bad file name."
+msgstr "Dårligt filnavn."
+
+msgid "Press any key to exit."
+msgstr "Tryk på en vilkårlig tast for at afslutte."
+
+msgid "Please wait ..."
+msgstr "Vent venligst ..."
+
+msgid "Reboot"
+msgstr "Genstart"
+
+msgid "Reboot (R)"
+msgstr "Genstart (R)"
+
+msgid "Halt"
+msgstr "Stop"
+
+msgid "Halt (H)"
+msgstr "Stop (H)"
+
+msgid "File: "
+msgstr "Fil: "
+
+msgid "Hotkeys"
+msgstr "Genvejstaster"
+
+msgid "F1 - Help"
+msgstr "F1 - Hjælp"
+
+msgid "F2 - File Manager"
+msgstr "F2 - Filhåndtering"
+
+msgid "F3 - OS Detect"
+msgstr "F3 - Detekter operativsystemet (OS)"
+
+msgid "F4 - Settings"
+msgstr "F4 - Indstillinger"
+
+msgid "F5 - PXE Boot Menu"
+msgstr "F5 - PXE Boot menu"
+
+msgid "F6 - Power Off"
+msgstr "F6 - Sluk"
+
+msgid "[A] About GRUB2-FileManager"
+msgstr "[A] Om GRUB2-Filhåndtering"
+
+msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
+msgstr "Ctrl+l/Ctrl+r - Rul menuindgangens tekst"
+
+msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
+msgstr "(Ctrl+Alt+F12) - Tag skærmbilleder (EFI) "
+
+msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
+msgstr "↑ Side op ↓ Side ned [ESC] Afslut"
+
+msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
+msgstr "↑ Side op ↓ Side ned [e] Indkodning [ESC] Afslut"
+
+msgid "FILE: %s (%s)"
+msgstr "FIL: %s (%s)"
+
+msgid "FILE: %s (%s) ENCODING: %s"
+msgstr "FIL: %s (%s) INDKODNING: %s"
+
+msgid "Platform: %s-%s"
+msgstr "Platform: %s-%s"
+
+msgid "Language: %s"
+msgstr "Sprog: %s"
+
+msgid "GRUB version: %s"
+msgstr "GRUB version: %s"
+
+msgid "GRUB build date: %s"
+msgstr "GRUB build dato: %s"
+
+msgid "License: GNU GPLv3"
+msgstr "Licens: GNU GPLv3"
+
+msgid "File not found"
+msgstr "Fil ikke fundet"
+
+msgid "Please select the type of file you want to search:"
+msgstr "Vælg den filtype, du vil søge:"
+
+msgid "Install Windows XP - STEP 1"
+msgstr "Installer Windows XP - TRIN 1"
+
+msgid "Install Windows XP - STEP 2"
+msgstr "Installer Windows XP - TRIN 2"
+

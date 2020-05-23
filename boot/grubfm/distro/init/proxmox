@@ -1,0 +1,382 @@
+#!/bin/sh
+
+# (C) 2009-2019 Proxmox Server Solutions GmbH <support@proxmox.com>
+
+export PATH=/sbin:/bin:/usr/bin:/usr/sbin
+
+if [ -f /.cd-info ]; then
+    . /.cd-info
+else
+    /bin/echo "Could not source .cd-info file!"
+fi
+
+# busybox needs full paths until proc is mounted
+
+/bin/echo "Welcome to the $PRODUCTLONG $RELEASE installer"
+/bin/echo "initial setup startup"
+
+/bin/echo "mounting proc filesystem"
+/bin/mount -nt proc proc /proc
+
+echo "mounting sys filesystem"
+mount -nt sysfs sysfs /sys
+if [ -d /sys/firmware/efi ]; then
+    echo "EFI boot mode detected, mounting efivars filesystem"
+    mount -nt efivarfs efivarfs /sys/firmware/efi/efivars
+fi
+
+# ensure we have a devtmpfs, so that we see the changes from the chroot /dev
+# managed by udev here too, and thus normal path look ups on devices are in
+# sync from the kernel root POV and the installer (ch)root POV
+mount -t devtmpfs devtmpfs /dev
+
+KERNEL_VER=`uname -r`
+
+parse_cmdline() {
+    root=
+    lvm2root=
+    grubfm_path=
+    proxdebug=0
+    for par in $(cat /proc/cmdline); do
+	case $par in
+	    lvm2root=*)
+		lvm2root=${par#lvm2root=}
+		;;
+	    root=/dev/mapper/*)
+		lvm2root=${par#root=}
+		;;
+	    root=*)
+		root=${par#root=}
+		;;
+		iso=*)
+		iso=${par#iso=}
+		;;
+		grubfm_path=*)
+		grubfm_path=${par#grubfm_path=}
+		;;
+	    proxdebug)
+		proxdebug=1
+		;;
+	esac
+    done;
+}
+
+myreboot() {
+    echo b > /proc/sysrq-trigger
+    echo "rebooting..."
+    sleep 100
+    exit 0
+}
+
+debugsh() {
+    setsid sh -c '/bin/sh </dev/tty1 >/dev/tty1 2>&1'
+}
+
+debugsh_err_reboot() {
+    errmsg=$1
+
+    echo "$errmsg"
+    echo "unable to continue (type exit or CTRL-D to reboot)"
+    debugsh
+    myreboot
+}
+
+echo "comandline: $(cat /proc/cmdline)"
+parse_cmdline
+
+# use mdev as firmware loader
+echo /sbin/mdev >/proc/sys/kernel/hotplug
+# initially populate /dev through /sys with cold-plugged devices
+/sbin/mdev -s
+
+DRIVERS="msdos isofs ntfs udf"
+for mod in $DRIVERS; do
+    modprobe -q "$mod"
+done
+
+filenames=
+# Note: skip filenames with spaces (avoid problems with bash IFS)
+# Note: busybox only support -regextype 'posix-basic'
+for fn in $(find /sys/devices/* -regex '^[^\ ]*/modalias'); do
+    filenames="$filenames $fn"
+done
+
+modlist=
+
+load_alias() {
+    alias_fn=$1
+
+    alias=$(cat "${alias_fn}")
+    if [ -n "$alias" ]; then
+        for mod in $(modprobe -q -R $alias ); do
+            mod_found=0
+            for m in $modlist; do
+                if [ "$m" = "$mod" ]; then
+                    mod_found=1
+                fi
+            done
+            if [ ${mod_found} -eq "0" ]; then
+                modlist="$modlist $mod"
+            fi
+        done
+    fi
+}
+
+load_mods() {
+    class_prefix=$1
+    for fn in $filenames; do
+	dirname=${fn%/*}
+	if [ -n "$class_prefix" ]; then
+	    if [ -f "$dirname/class" ]; then
+		class=$(cat "$dirname/class")
+		class=${class:2:8}
+		if [ ${class_prefix} = ${class:0:${#class_prefix}} ]; then
+		    load_alias "$fn"
+		fi
+	    fi
+	else
+	    load_alias "$fn"
+	fi
+    done
+}
+
+# for PCI Device classes and subclasses see linux-src/include/linux/pci_ids.h
+# load storage drivers
+
+load_mods  06   # PCI_BASE_CLASS_BRIDGE
+load_mods  03   # PCI_BASE_CLASS_DISPLAY
+
+# we try to have a load order, so that /dev/sda is on IDE
+load_mods  0101 # PCI_CLASS_STORAGE_IDE
+load_mods  0106 # PCI_CLASS_STORAGE_SATA
+load_mods  0107 # PCI_CLASS_STORAGE_SAS
+load_mods  0100 # PCI_CLASS_STORAGE_SCSI
+load_mods  01   # PCI_BASE_CLASS_STORAGE
+
+load_mods  02   # PCI_BASE_CLASS_NETWORK
+
+load_mods # all other
+
+echo "loading drivers: $modlist"
+
+for mod in $modlist; do
+    modprobe "$mod"
+done
+
+stdmod="usb-storage usbhid usbkbd hid_generic mac_hid virtio_blk"
+for mod in $stdmod; do
+    modprobe "$mod"
+done
+
+# we have no iscsi daemon, so we need to scan iscsi device manually.
+# else we cant boot from iscsi hba because devices are not detected.
+for i in /sys/class/scsi_host/host*; do
+    host=${i##*/}
+    if [ -d $i ] && [ -f $i/scan ] && [ -d /sys/class/iscsi_host/$host ] ; then
+	echo "Scanning iSCSI $host"
+	echo "- - -" > $i/scan
+    fi
+done
+
+if [ -n "$lvm2root" ]; then
+
+    echo -n "Finding device mapper major and minor numbers: "
+
+    MAJOR=$(sed -n 's/^ *\([0-9]\+\) \+misc$/\1/p' /proc/devices)
+    MINOR=$(sed -n 's/^ *\([0-9]\+\) \+device-mapper$/\1/p' /proc/misc)
+    if test -n "$MAJOR" -a -n "$MINOR" ; then
+        mkdir -p -m 755 /dev/mapper
+        mknod -m 600 /dev/mapper/control c $MAJOR $MINOR
+    fi
+
+    echo "($MAJOR,$MINOR)"
+
+    vg=${lvm2root}
+    vg=${vg#/dev/mapper/}
+    if [ "$vg" = "$1" ]; then
+	echo "activating all volume groups"
+	lvm vgchange --ignorelockingfailure -aly
+    else
+	# Split volume group from logical volume.
+	vg=$(echo ${vg} | sed -e 's#\(.*\)\([^-]\)-[^-].*#\1\2#')
+	# Reduce padded --'s to -'s
+	vg=$(echo ${vg} | sed -e 's#--#-#g')
+	echo "activating volume group $vg"
+	lvm vgchange -aly --ignorelockingfailure ${vg}
+    fi
+
+    echo "create /dev/mapper/ entries using vgscan"
+    lvm vgscan --mknodes
+
+    echo "trying to mount lvm root: ($lvm2root)"
+
+    found=
+    for try in 5 4 3 2 1; do
+	for t in ext4 auto; do
+	    if mount -n -t $t -r $lvm2root /mnt; then
+		found=ok
+		break;
+	    fi
+	done
+	if test -n "$found"; then
+	    break;
+	fi
+	if test $try -gt 1; then
+	    echo "testing again in 5 seconds"
+	    sleep 5
+	fi
+    done
+
+elif [ -n "$root" ]; then
+
+    case $root in
+	/dev/*)
+	    real_root=$root
+	    ;;
+	*:*)
+	    dev_min=$((0x${root#*:}))
+	    dev_maj=$((0x${root%:*}))
+	    mknod /tmp/rootdev b $dev_maj $dev_min
+	    real_root=/tmp/rootdev
+	    ;;
+	*)
+	    dev_min=$((0x$root & 255))
+	    dev_maj=$((0x$root >> 8))
+	    mknod /tmp/rootdev b $dev_maj $dev_min
+	    real_root=/tmp/rootdev
+	    ;;
+    esac
+
+    echo "trying to mount root: $real_root ($root)"
+
+    found=
+    for try in 5 4 3 2 1; do
+	for t in ext4 auto; do
+	    if mount -n -t $t -r $real_root /mnt; then
+		found=ok
+		break;
+	    fi
+	done
+	if test -n "$found"; then
+	    break;
+	fi
+	if test $try -gt 1; then
+	    echo "testing again in 5 seconds"
+	    sleep 5
+	fi
+    done
+
+else
+
+    cdrom=
+
+    initrdisoimage="/proxmox.iso"
+
+    if [ -f $initrdisoimage ]; then
+	# this is useful for PXE boot
+	echo "found proxmox ISO image inside initrd image"
+	if mount -t iso9660 -o loop,ro $initrdisoimage /mnt >/dev/null 2>&1; then
+	    cdrom=$initrdisoimage
+	fi
+    else
+	echo "searching for block device containing the ISO $ISONAME-$RELEASE-$ISORELEASE"
+	reqid="$(cat /.pve-cd-id.txt)"
+	echo "with ISO ID '$reqid'"
+	for try in 5 4 3 2 1; do
+	    for device in `cat /proc/partitions | grep -v loop | awk '{print $4}'`; do
+			DEV=/mnt1/$device; mkdir -p $DEV
+			mount /dev/$device $DEV 2>/dev/null
+			if [ -f ${DEV}${grubfm_path} ]; then
+				echo "ISO FOUND AT $device $grubfm_path"
+				losetup /dev/loop0 ${DEV}${grubfm_path}
+				cdrom=/dev/loop0
+				mount /dev/loop0 /mnt
+				break
+			else
+				umount $DEV 2>/dev/null
+				continue
+			fi
+		done
+	    if test -n "$cdrom"; then
+		break;
+	    fi
+	    if test $try -gt 1; then
+		echo "testing again in 5 seconds"
+		sleep 5
+	    fi
+	done
+    fi
+
+    if [ -z $cdrom ]; then
+	debugsh_err_reboot "no cdrom found"
+    fi
+fi
+
+if [ $proxdebug -ne 0 ]; then
+    echo "Debugging mode (type 'exit' or press CTRL-D to continue startup)"
+    debugsh
+fi
+
+if [ -f /mnt/pve-installer.squashfs ]; then
+    # this is a Proxmox VE installation CD
+
+    # hostid (gethostid(3)) is used by zfs to identify which system imported a
+    # pool last it needs to be present in /etc/hostid before spl.ko is loaded
+    # create it in the installer and copy it over to the targetdir after
+    # installation
+    dd if=/dev/urandom of=/etc/hostid bs=1 count=4 status=none
+
+    if ! mount -t squashfs -o ro,loop /mnt/pve-base.squashfs /mnt/.pve-base; then
+	debugsh_err_reboot "mount pve-base.squashfs failed"
+    fi
+
+    if ! mount -t squashfs -o ro,loop /mnt/pve-installer.squashfs /mnt/.pve-installer; then
+	debugsh_err_reboot "mount pve-installer.squashfs failed"
+    fi
+
+    if ! mount -t tmpfs tmpfs /mnt/.workdir; then
+	debugsh_err_reboot "mount overlay workdir failed"
+    fi
+
+    mkdir /mnt/.workdir/work
+    mkdir /mnt/.workdir/upper
+
+    if ! mount -t overlay -o lowerdir=/mnt/.pve-installer:/mnt/.pve-base,upperdir=/mnt/.workdir/upper,workdir=/mnt/.workdir/work  none /mnt/.pve-installer-mp; then
+	debugsh_err_reboot "mount overlayfs failed"
+    fi
+
+    if ! mount --bind /mnt /mnt/.pve-installer-mp/cdrom; then
+	debugsh_err_reboot "bind mount cdrom failed"
+    fi
+
+    cp /etc/hostid /mnt/.pve-installer-mp/etc/
+    cp /.cd-info /mnt/.pve-installer-mp/ || true
+
+    if [ -x "/mnt/.pve-installer-mp/sbin/unconfigured.sh" ]; then
+	# and run the installer
+	setsid sh -c 'chroot /mnt/.pve-installer-mp /sbin/unconfigured.sh </dev/tty1 >/dev/tty1 2>&1'
+    else
+	debugsh_err_reboot "unableto find installer (/sbin/unconfigured.sh)"
+    fi
+
+    cd /
+
+    # Send a SIGKILL to all processes, except for init.
+    kill -s KILL -1
+    sleep 1
+
+    umount /mnt/.pve-installer-mp/cdrom
+    umount /mnt/.pve-installer-mp
+    umount /mnt/.workdir/
+    umount /mnt/.pve-installer
+    umount /mnt/.pve-base
+
+    exec /sbin/ejectcd.sh
+
+else
+    # or begin normal sysvinit
+    umount /sys
+    umount /proc
+
+    exec /sbin/switch_root -c /dev/console /mnt sbin/init
+fi
