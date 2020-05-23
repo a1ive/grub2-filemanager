@@ -32,7 +32,7 @@ i = 0
 grub.enum_file (enum_kbd_file, kbd_dir .. "/")
 table.sort (f_table)
 
-command = "setkey -r; setkey -d; source ${prefix}/settings.sh;"
+command = "setkey -r; setkey -d; configfile ${prefix}/settings.sh;"
 grub.add_icon_menu ("gkb", command, "QWERTY_USA")
 
 for j, name in ipairs(f_table) do
