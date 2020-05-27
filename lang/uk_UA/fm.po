@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-05-23 08:22\n"
+"PO-Revision-Date: 2020-05-27 06:55\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -248,7 +248,7 @@ msgid "Language"
 msgstr "Мова"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "Розкладки клавіатури"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
 msgstr ""
@@ -476,14 +476,14 @@ msgid "License: GNU GPLv3"
 msgstr "Ліцензія: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "Файл не знайдений"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "Будь ласка, виберіть тип файлу, який Ви шукаєте:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Встановити Windows XP - КРОК 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Встановити Windows XP - КРОК 2"
 
