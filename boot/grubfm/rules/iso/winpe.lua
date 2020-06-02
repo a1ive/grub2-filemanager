@@ -35,6 +35,16 @@ local winpe_wim_list =
   "(loop)/SSTR/strelec10Eng.wim",
   "(loop)/SSTR/strelec8Eng.wim",
   "(loop)/SSTR/strelec8NEEng.wim",
+  "(loop)/BOOT/USM1PE6F.wim", 
+  "(loop)/BOOT/USM8PE6F.wim",
+  "(loop)/BOOT/USM1PE6L.wim",
+  "(loop)/BOOT/USM1PE8F.wim",
+  "(loop)/BOOT/USM1PE8L.wim",
+  "(loop)/BOOT/USM8PE6L.wim",
+  "(loop)/BOOT/USM8PE8F.wim",
+  "(loop)/BOOT/USM7PE6L.wim",
+  "(loop)/BOOT/USM8PE8L.wim",
+  "(loop)/BOOT/USM7PE8L.wim",
 }
 
 local function search_wim (wim_table)
