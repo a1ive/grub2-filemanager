@@ -20,9 +20,3 @@ menu = vhd/map.sh
 title = "Boot VHD (map)"
 icon = img
 enable = all
-
-[3]
-menu = vhd/vboot.sh
-title = "Boot VHD (vboot)"
-icon = img
-enable = bios

@@ -21,8 +21,7 @@ function win_isoboot {
     linux16 (wimboot)/wimboot;
     if [ -z "${2}" ];
     then
-      initrd16 newc:bootmgr:(wimboot)/bootmgr \
-               newc:bootmgr.exe:(wimboot)/bootmgr.exe \
+      initrd16 newc:bootmgr.exe:(wimboot)/bootmgr.exe \
                newc:bcd:(wimboot)/bcd \
                newc:boot.sdi:(wimboot)/boot.sdi \
                newc:null.cfg:(envblk)/null.cfg \
@@ -32,8 +31,7 @@ function win_isoboot {
                newc:winpeshl.ini:(install)/winpeshl.ini \
                newc:boot.wim:"${1}";
     else
-      initrd16 newc:bootmgr:(wimboot)/bootmgr \
-               newc:bootmgr.exe:(wimboot)/bootmgr.exe \
+      initrd16 newc:bootmgr.exe:(wimboot)/bootmgr.exe \
                newc:bcd:(wimboot)/bcd \
                newc:boot.sdi:(wimboot)/boot.sdi \
                newc:null.cfg:(envblk)/null.cfg \

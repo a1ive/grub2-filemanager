@@ -21,10 +21,3 @@ menu = iso/map.sh
 title = "Boot ISO (map)"
 icon = iso
 enable = all
-
-[3]
-menu = iso/ventoy.sh
-condition = iso/vt_test.sh
-title = "Boot ISO (Ventoy)"
-icon = gnu-linux
-enable = all

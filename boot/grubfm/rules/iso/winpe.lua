@@ -45,6 +45,13 @@ local winpe_wim_list =
   "(loop)/BOOT/USM7PE6L.wim",
   "(loop)/BOOT/USM8PE8L.wim",
   "(loop)/BOOT/USM7PE8L.wim",
+  "(loop)/BOOT/H3_1064.WIM",
+  "(loop)/BOOT/H3_8164.WIM",
+  "(loop)/BOOT/H3_864.WIM",
+  "(loop)/BOOT/H3_10PE.WIM",
+  "(loop)/BOOT/H3_81PE.WIM",
+  "(loop)/BOOT/H3_8PE.WIM",
+  "(loop)/BOOT/H3_7PE.WIM",
 }
 
 local function search_wim (wim_table)
@@ -84,8 +91,7 @@ local function gen_wimboot (wim)
   else
     cmd = cmd .. "set enable_progress_indicator=1\n" ..
           "linux16 (wimboot)/wimboot\n" ..
-          "initrd16 newc:bootmgr:(wimboot)/bootmgr" ..
-          " newc:bootmgr.exe:(wimboot)/bootmgr.exe" ..
+          "initrd16 newc:bootmgr.exe:(wimboot)/bootmgr.exe" ..
           " newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi" ..
           " newc:null.cfg:(envblk)/null.cfg" ..
           " newc:mount_x64.exe:(install)/mount_x64.exe" ..

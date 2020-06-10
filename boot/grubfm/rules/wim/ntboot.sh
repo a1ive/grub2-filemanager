@@ -1,19 +1,20 @@
 source ${prefix}/func.sh;
-
+set lang=en_US;
+terminal_output console;
+loopback wimboot ${prefix}/wimboot.gz;
 if [ "$grub_platform" = "efi" ];
 then
-  set lang=en_US;
-  loopback wimboot ${prefix}/wimboot.gz;
   ntboot --efi=(wimboot)/bootmgfw.efi \
          --sdi=(wimboot)/boot.sdi \
          "${grubfm_file}";
 elif [ "$grub_platform" = "pc" ];
 then
-  to_g4d_path "${grubfm_file}";
-  if [ -n "${g4d_path}" ];
-  then
-    set g4d_cmd="find --set-root --ignore-floppies /fm.loop ; echo !BAT > (md)0x300+1; echo -e set h=${g4d_path} >> (md)0x300+1;call (md)0x300+1;/NTBOOT NT6=%h%";
-    linux ${prefix}/grub.exe --config-file=${g4d_cmd};
-    boot;
-  fi;
+  ntboot --wim "${grubfm_file}";
+  linux16 (wimboot)/wimboot;
+  initrd16 newc:bootmgr.exe:(wimboot)/bootmgr.exe \
+           newc:bcd:(proc)/bcd \
+           newc:boot.sdi:(wimboot)/boot.sdi;
+  set gfxmode=1920x1080,1366x768,1024x768,800x600,auto;
+  terminal_output gfxterm;
+  boot;
 fi;

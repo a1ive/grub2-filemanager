@@ -158,19 +158,24 @@ do
     if ntversion "(${device})" sysver;
     then
       to_win_ver "${sysver}";
-      menuentry $"Boot ${winver} on ${device} ${info}" "${device}" "${sysver}" --class nt6 {
-        regexp --set=1:tmp --set=2:num '(hd[0-9]+,)[a-zA-Z]*([0-9]+)' "${2}";
-        expr --set=num "${num} - 1";
-        set g4d_dev="(${tmp}${num})";
-        if regexp '^5\.' "${3}";
-        then
-          set nt="NT5";
-        else
-          set nt="NT6";
-        fi;
-        set g4d_cmd="find --set-root --ignore-floppies /fm.loop;/NTBOOT ${nt}=${g4d_dev};";
-        linux ${prefix}/grub.exe --config-file=${g4d_cmd};
-      }
+      if regexp '^5\.' "${sysver}";
+      then
+        echo "Skip NT ${sysver}";
+      else
+        menuentry $"Boot ${winver} on ${device} ${info}" "${device}" --class nt6 {
+          set root="${2}";
+          set lang=en_US;
+          terminal_output console;
+          loopback wimboot ${prefix}/wimboot.gz;
+          ntboot --win "(${root})";
+          linux16 (wimboot)/wimboot;
+          initrd16 newc:bootmgr.exe:(wimboot)/bootmgr.exe \
+                   newc:bcd:(proc)/bcd;
+          set gfxmode=1920x1080,1366x768,1024x768,800x600,auto;
+          terminal_output gfxterm;
+          boot;
+        }
+      fi;
       unset sysver;
       unset winver;
     fi;
