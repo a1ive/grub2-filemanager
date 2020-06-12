@@ -10,6 +10,7 @@
 - [Boot](#boot)
 - [Source code](#source-code)
 - [Help to translate](#help-to-translate)
+- [USB Installers](#usb-installers)
 - [Related projects](#related-projects)
 ## Preview
 
@@ -63,13 +64,17 @@ GRUB2: https://github.com/a1ive/grub
 
 [Crowdin](https://crowdin.com/project/grub2-filemanager) 
 
-## Related projects 
+## USB Installers
 
-*	[Easy2Boot](http://www.easy2boot.com/) 
+- [Easy2Boot](https://www.easy2boot.com/uefi-mbr-a1ive-grub2-file-manager/) 
+- [GrubFM Installer](https://github.com/QuestYouCraft/grubfm-installer) 
+- [SecureBoot-Grub2FM-Suite](https://github.com/abdullah-erturk/SecureBoot-Grub2FM-Suite)
+
+## Related projects
+
 *	[GLIM](https://github.com/thias/glim) 
 *	[grub-iso-boot](https://github.com/Jimmy-Z/grub-iso-boot) 
 *	[grub-iso-multiboot](https://github.com/mpolitzer/grub-iso-multiboot) 
-*	[GrubFM Installer](https://github.com/QuestYouCraft/grubfm-installer) 
 *	[GRUB2 File Explorer](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=320715) 
 *	[G4D AUTOMENU](http://bbs.wuyou.net/forum.php?mod=viewthread&tid=203607) 
 *	[Multiboot USB](http://mbusb.aguslr.com/) 

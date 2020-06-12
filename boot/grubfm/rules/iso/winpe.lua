@@ -52,6 +52,7 @@ local winpe_wim_list =
   "(loop)/BOOT/H3_81PE.WIM",
   "(loop)/BOOT/H3_8PE.WIM",
   "(loop)/BOOT/H3_7PE.WIM",
+  "(loop)/Rescue/Rescue.wim",
 }
 
 local function search_wim (wim_table)
