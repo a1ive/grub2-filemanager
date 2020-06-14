@@ -86,7 +86,7 @@ local function gen_wimboot (wim)
           " @:null.cfg:(envblk)/null.cfg" ..
           " @:mount_x64.exe:(install)/mount_x64.exe" ..
           " @:mount_x86.exe:(install)/mount_x64.exe" ..
-          " @:start.bat:(install)/silent.bat" ..
+          " @:start.bat:${grubfm_startpebat}" ..
           " @:winpeshl.ini:(install)/winpeshl.ini" ..
           " @:boot.wim:\"" .. wim .. "\"\n"
   else
@@ -97,7 +97,7 @@ local function gen_wimboot (wim)
           " newc:null.cfg:(envblk)/null.cfg" ..
           " newc:mount_x64.exe:(install)/mount_x64.exe" ..
           " newc:mount_x86.exe:(install)/mount_x64.exe" ..
-          " newc:start.bat:(install)/silent.bat" ..
+          " newc:start.bat:${grubfm_startpebat}" ..
           " newc:winpeshl.ini:(install)/winpeshl.ini" ..
           " newc:boot.wim:\"" .. wim .. "\"\n" ..
           "set gfxmode=1920x1080,1366x768,1024x768,800x600,auto\n" ..
