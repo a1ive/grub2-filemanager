@@ -35,6 +35,10 @@ local winpe_wim_list =
   "(loop)/SSTR/strelec10Eng.wim",
   "(loop)/SSTR/strelec8Eng.wim",
   "(loop)/SSTR/strelec8NEEng.wim",
+  "(loop)/SSTR/strelec10x64.wim",
+  "(loop)/SSTR/strelec10.wim",
+  "(loop)/SSTR/strelec8.wim",
+  "(loop)/SSTR/strelec8NE.wim",
   "(loop)/BOOT/USM1PE6F.wim", 
   "(loop)/BOOT/USM8PE6F.wim",
   "(loop)/BOOT/USM1PE6L.wim",
@@ -53,6 +57,11 @@ local winpe_wim_list =
   "(loop)/BOOT/H3_8PE.WIM",
   "(loop)/BOOT/H3_7PE.WIM",
   "(loop)/Rescue/Rescue.wim",
+  "(loop)/boot/images/w7x64/w7x64.wim",
+  "(loop)/boot/images/w7x86/w7x86.wim",
+  "(loop)/boot/images/w7x86/w7x86n.wim",
+  "(loop)/boot/images/w10x64/w10x64.wim",
+  "(loop)/boot/images/w10x86/w10x86.wim",
 }
 
 local function search_wim (wim_table)
@@ -85,7 +94,7 @@ local function gen_wimboot (wim)
           " @:bcd:(wimboot)/bcd @:boot.sdi:(wimboot)/boot.sdi" ..
           " @:null.cfg:(envblk)/null.cfg" ..
           " @:mount_x64.exe:(install)/mount_x64.exe" ..
-          " @:mount_x86.exe:(install)/mount_x64.exe" ..
+          " @:mount_x86.exe:(install)/mount_x86.exe" ..
           " @:start.bat:${grubfm_startpebat}" ..
           " @:winpeshl.ini:(install)/winpeshl.ini" ..
           " @:boot.wim:\"" .. wim .. "\"\n"
@@ -96,7 +105,7 @@ local function gen_wimboot (wim)
           " newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi" ..
           " newc:null.cfg:(envblk)/null.cfg" ..
           " newc:mount_x64.exe:(install)/mount_x64.exe" ..
-          " newc:mount_x86.exe:(install)/mount_x64.exe" ..
+          " newc:mount_x86.exe:(install)/mount_x86.exe" ..
           " newc:start.bat:${grubfm_startpebat}" ..
           " newc:winpeshl.ini:(install)/winpeshl.ini" ..
           " newc:boot.wim:\"" .. wim .. "\"\n" ..
