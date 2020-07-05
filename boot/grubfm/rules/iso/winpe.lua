@@ -87,32 +87,14 @@ local function gen_wimboot (wim)
         "save_env -s -f (envblk)/null.cfg installiso\n" ..
         "cat (envblk)/null.cfg\n" ..
         "loopback wimboot ${prefix}/wimboot.gz\n" ..
-        "loopback install ${prefix}/install.gz\n"
-  if platform == "efi" then
-    cmd = cmd ..
-          "wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi" ..
-          " @:bcd:(wimboot)/bcd @:boot.sdi:(wimboot)/boot.sdi" ..
-          " @:null.cfg:(envblk)/null.cfg" ..
-          " @:mount_x64.exe:(install)/mount_x64.exe" ..
-          " @:mount_x86.exe:(install)/mount_x86.exe" ..
-          " @:start.bat:${grubfm_startpebat}" ..
-          " @:winpeshl.ini:(install)/winpeshl.ini" ..
-          " @:boot.wim:\"" .. wim .. "\"\n"
-  else
-    cmd = cmd .. "set enable_progress_indicator=1\n" ..
-          "linux16 (wimboot)/wimboot\n" ..
-          "initrd16 newc:bootmgr.exe:(wimboot)/bootmgr.exe" ..
-          " newc:bcd:(wimboot)/bcd newc:boot.sdi:(wimboot)/boot.sdi" ..
-          " newc:null.cfg:(envblk)/null.cfg" ..
-          " newc:mount_x64.exe:(install)/mount_x64.exe" ..
-          " newc:mount_x86.exe:(install)/mount_x86.exe" ..
-          " newc:start.bat:${grubfm_startpebat}" ..
-          " newc:winpeshl.ini:(install)/winpeshl.ini" ..
-          " newc:boot.wim:\"" .. wim .. "\"\n" ..
-          "set gfxmode=1920x1080,1366x768,1024x768,800x600,auto\n" ..
-          "terminal_output gfxterm\n" ..
-          "boot\n"
-  end
+        "loopback install ${prefix}/install.gz\n" ..
+        "wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi" ..
+        " @:null.cfg:(envblk)/null.cfg" ..
+        " @:mount_x64.exe:(install)/mount_x64.exe" ..
+        " @:mount_x86.exe:(install)/mount_x86.exe" ..
+        " @:start.bat:${grubfm_startpebat}" ..
+        " @:winpeshl.ini:(install)/winpeshl.ini" ..
+        " @:boot.wim:\"" .. wim .. "\"\n"
   return cmd
 end
 

@@ -17,59 +17,26 @@ function win_isoboot {
   loopback install ${prefix}/install.gz;
   if [ "$grub_platform" = "pc" ];
   then
-    set enable_progress_indicator=1;
-    linux16 (wimboot)/wimboot;
-    if [ -z "${2}" ];
-    then
-      initrd16 newc:bootmgr.exe:(wimboot)/bootmgr.exe \
-               newc:bcd:(wimboot)/bcd \
-               newc:boot.sdi:(wimboot)/boot.sdi \
-               newc:null.cfg:(envblk)/null.cfg \
-               newc:mount_x64.exe:(install)/mount_x64.exe \
-               newc:mount_x86.exe:(install)/mount_x86.exe \
-               newc:start.bat:${grubfm_startbat} \
-               newc:winpeshl.ini:(install)/winpeshl.ini \
-               newc:boot.wim:"${1}";
-    else
-      initrd16 newc:bootmgr.exe:(wimboot)/bootmgr.exe \
-               newc:bcd:(wimboot)/bcd \
-               newc:boot.sdi:(wimboot)/boot.sdi \
-               newc:null.cfg:(envblk)/null.cfg \
-               newc:mount_x64.exe:(install)/mount_x64.exe \
-               newc:mount_x86.exe:(install)/mount_x86.exe \
-               newc:start.bat:${grubfm_startbat} \
-               newc:winpeshl.ini:(install)/winpeshl.ini \
-               newc:autounattend.xml:"${2}" \
-               newc:boot.wim:"${1}";
-    fi;
     auto_swap;
-    set gfxmode=1920x1080,1366x768,1024x768,800x600,auto;
-    terminal_output gfxterm;
-    boot;
+  fi;
+  if [ -z "${2}" ];
+  then
+    wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
+            @:null.cfg:(envblk)/null.cfg \
+            @:mount_x64.exe:(install)/mount_x64.exe \
+            @:mount_x86.exe:(install)/mount_x86.exe \
+            @:start.bat:${grubfm_startbat} \
+            @:winpeshl.ini:(install)/winpeshl.ini \
+            @:boot.wim:"${1}";
   else
-    if [ -z "${2}" ];
-    then
-      wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
-              @:bcd:(wimboot)/bcd \
-              @:boot.sdi:(wimboot)/boot.sdi \
-              @:null.cfg:(envblk)/null.cfg \
-              @:mount_x64.exe:(install)/mount_x64.exe \
-              @:mount_x86.exe:(install)/mount_x86.exe \
-              @:start.bat:${grubfm_startbat} \
-              @:winpeshl.ini:(install)/winpeshl.ini \
-              @:boot.wim:"${1}";
-    else
-      wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
-              @:bcd:(wimboot)/bcd \
-              @:boot.sdi:(wimboot)/boot.sdi \
-              @:null.cfg:(envblk)/null.cfg \
-              @:mount_x64.exe:(install)/mount_x64.exe \
-              @:mount_x86.exe:(install)/mount_x86.exe \
-              @:start.bat:${grubfm_startbat} \
-              @:winpeshl.ini:(install)/winpeshl.ini \
-              @:autounattend.xml:"${2}" \
-              @:boot.wim:"${1}";
-    fi;
+    wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
+            @:null.cfg:(envblk)/null.cfg \
+            @:mount_x64.exe:(install)/mount_x64.exe \
+            @:mount_x86.exe:(install)/mount_x86.exe \
+            @:start.bat:${grubfm_startbat} \
+            @:winpeshl.ini:(install)/winpeshl.ini \
+            @:autounattend.xml:"${2}" \
+            @:boot.wim:"${1}";
   fi;
 }
 

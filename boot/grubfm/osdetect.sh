@@ -128,7 +128,7 @@ do
         set lang=en_US;
         terminal_output console;
         loopback wimboot ${prefix}/wimboot.gz;
-        ntboot --gui --win --efi=(wimboot)/bootmgfw.efi "(${root})";
+        ntboot --win --efi=(wimboot)/bootmgfw.efi "(${root})";
       }
       unset sysver;
       unset winver;
@@ -167,13 +167,7 @@ do
           set lang=en_US;
           terminal_output console;
           loopback wimboot ${prefix}/wimboot.gz;
-          ntboot --win "(${root})";
-          linux16 (wimboot)/wimboot;
-          initrd16 newc:bootmgr.exe:(wimboot)/bootmgr.exe \
-                   newc:bcd:(proc)/bcd;
-          set gfxmode=1920x1080,1366x768,1024x768,800x600,auto;
-          terminal_output gfxterm;
-          boot;
+          ntboot --win --efi=(wimboot)/bootmgfw.efi "(${root})";
         }
       fi;
       unset sysver;
