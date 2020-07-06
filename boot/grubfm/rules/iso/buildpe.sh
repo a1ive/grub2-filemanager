@@ -1,0 +1,42 @@
+
+# build_pe WIM_FILE
+function bootpe {
+  if wimtools --is64 --index=2 "${1}";
+  then
+    set explorer="(install)/explorerpp64.exe";
+    set winxshell="(install)/WinXShell64.exe";
+  else
+    set explorer="(install)/explorerpp32.exe";
+    set winxshell="(install)/WinXShell32.exe";
+  fi;
+  set lang=en_US;
+  terminal_output console;
+  loopback wimboot ${prefix}/wimboot.xz;
+  loopback install ${prefix}/explorer.xz;
+  wimboot --index=2 \
+            @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
+            @:explorer.exe:"${explorer}" \
+            @:WinXShell.exe:"${winxshell}" \
+            @:WinXShell.jcfg:(install)/WinXShell.jcfg \
+            @:winpeshl.ini:(install)/winpeshl.ini \
+            @:boot.wim:"${1}";
+}
+
+set distro="Windows PE";
+
+menuentry $"Boot ${distro} From ISO" --class nt6 {
+  loopback -d loop;
+  loopback loop "${grubfm_file}";
+  set wim="(loop)/sources/boot.wim";
+  set wim32="(loop)/x86/sources/boot.wim";
+  set wim64="(loop)/x64/sources/boot.wim";
+  if [ -f "${wim32}" -a "${grub_cpu}" = "i386" ];
+  then
+    bootpe "${wim32}";
+  elif [ -f "${wim64}" -a "${grub_cpu}" = "x86_64" ];
+  then
+    bootpe "${wim64}";
+  else
+    bootpe "${wim}";
+  fi;
+}

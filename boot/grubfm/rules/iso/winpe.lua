@@ -86,8 +86,8 @@ local function gen_wimboot (wim)
         "loopback -m envblk ${prefix}/null.cpio\n" ..
         "save_env -s -f (envblk)/null.cfg installiso\n" ..
         "cat (envblk)/null.cfg\n" ..
-        "loopback wimboot ${prefix}/wimboot.gz\n" ..
-        "loopback install ${prefix}/install.gz\n" ..
+        "loopback wimboot ${prefix}/wimboot.xz\n" ..
+        "loopback install ${prefix}/install.xz\n" ..
         "wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi" ..
         " @:null.cfg:(envblk)/null.cfg" ..
         " @:mount_x64.exe:(install)/mount_x64.exe" ..

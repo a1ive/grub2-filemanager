@@ -36,9 +36,9 @@ then
 elif [ "$grub_platform" = "pc" ];
 then
   menuentry $"UEFI DUET" --class uefi {
-    g4d_cmd="find --set-root /fm.loop;/MAP nomem cd (rd)+1;";
+    g4d_cmd="find --set-root /fm.loop;/MAP mem cd (rd)+1;";
     linux ${prefix}/grub.exe --config-file=$g4d_cmd;
-    initrd $prefix/duet64.iso;
+    initrd ${prefix}/duet64.iso;
   }
 fi;
 

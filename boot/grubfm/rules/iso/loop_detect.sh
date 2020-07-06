@@ -412,4 +412,8 @@ then
     loopback loop "${grubfm_file}";
     configfile ${prefix}/distro/${src}.sh;
   }
+  if [ "${src}" = "win" ];
+  then
+    source ${prefix}/rules/iso/buildpe.sh;
+  fi;
 fi;

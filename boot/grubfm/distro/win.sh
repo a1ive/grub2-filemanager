@@ -13,8 +13,8 @@ function win_isoboot {
   loopback -m envblk ${prefix}/null.cpio;
   save_env -s -f (envblk)/null.cfg installiso;
   cat (envblk)/null.cfg;
-  loopback wimboot ${prefix}/wimboot.gz;
-  loopback install ${prefix}/install.gz;
+  loopback wimboot ${prefix}/wimboot.xz;
+  loopback install ${prefix}/install.xz;
   if [ "$grub_platform" = "pc" ];
   then
     auto_swap;

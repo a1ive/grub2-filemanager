@@ -127,7 +127,7 @@ do
         set root="${2}";
         set lang=en_US;
         terminal_output console;
-        loopback wimboot ${prefix}/wimboot.gz;
+        loopback wimboot ${prefix}/wimboot.xz;
         ntboot --win --efi=(wimboot)/bootmgfw.efi "(${root})";
       }
       unset sysver;
@@ -166,7 +166,7 @@ do
           set root="${2}";
           set lang=en_US;
           terminal_output console;
-          loopback wimboot ${prefix}/wimboot.gz;
+          loopback wimboot ${prefix}/wimboot.xz;
           ntboot --win --efi=(wimboot)/bootmgfw.efi "(${root})";
         }
       fi;
