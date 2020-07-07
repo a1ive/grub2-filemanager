@@ -3,11 +3,9 @@
 function bootpe {
   if wimtools --is64 --index=2 "${1}";
   then
-    set explorer="(install)/explorerpp64.exe";
-    set winxshell="(install)/WinXShell64.exe";
+    set sfx="(install)/sfx64.exe";
   else
-    set explorer="(install)/explorerpp32.exe";
-    set winxshell="(install)/WinXShell32.exe";
+    set sfx="(install)/sfx32.exe";
   fi;
   set lang=en_US;
   terminal_output console;
@@ -15,9 +13,7 @@ function bootpe {
   loopback install ${prefix}/explorer.xz;
   wimboot --index=2 \
             @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
-            @:explorer.exe:"${explorer}" \
-            @:WinXShell.exe:"${winxshell}" \
-            @:WinXShell.jcfg:(install)/WinXShell.jcfg \
+            @:sfx64.exe:${sfx} \
             @:winpeshl.ini:(install)/winpeshl.ini \
             @:boot.wim:"${1}";
 }
