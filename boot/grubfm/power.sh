@@ -42,7 +42,7 @@ then
   }
 fi;
 
-menuentry "GRUB Console" --class ms-dos {
+menuentry $"GRUB Console" --class ms-dos {
   commandline;
 }
 
