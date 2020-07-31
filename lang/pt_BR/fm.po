@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-07-31 13:17\n"
+"PO-Revision-Date: 2020-07-31 13:25\n"
 
 msgid "Back"
 msgstr "Voltar"
@@ -100,67 +100,67 @@ msgid "Boot NT6.x WIM (NTBOOT)"
 msgstr "Iniciar NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Iniciar NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Iniciar NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Iniciar Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Iniciar RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Iniciar RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Iniciar VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Iniciar VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Iniciar IMG (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Montar ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Iniciar ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Iniciar ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Iniciar ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Iniciar ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Iniciar ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Instalar Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Instalar Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Instalar o Windows sem o autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Carregar ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Iniciar ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Iniciar ISO (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "Iniciar ISO (Ventoy)"
 
 msgid "Boot EFI Files"
 msgstr ""
@@ -313,10 +313,10 @@ msgid "Load AHCI Driver"
 msgstr ""
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Montar volumes criptografados (LUKS e geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Ativar terminal serial"
 
 msgid "EFI Firmware Setup"
 msgstr ""
