@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-07-31 14:13\n"
+"PO-Revision-Date: 2020-07-31 14:25\n"
 
 msgid "Back"
 msgstr "Voltar"
@@ -253,64 +253,64 @@ msgid "Keyboard layouts"
 msgstr "Layouts do Teclado"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "Corrigir erro \"BlInitializeLibrary falhou XXX\""
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "Desativar PatchGuard e DSE na hora de iniciar"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Instalar substitui política de segurança"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Desativar a validação do shim e reiniciar"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Desativar modo gráfico (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Codificação: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Ordenar arquivos pelo nome"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Não classifique arquivos por nome"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Desativar menu de opções de inicialização secundário"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Aativar menu de opções de inicialização secundário"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Mostrar todos os arquivos"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Ocultar arquivos não-iniciável"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Resolução (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Ativar ESC (não recomendado)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Ativar mensagens de depuração"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Mostrar unidades ocultas"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Carregar módulos extras"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Ativar nomes de arquivos diferenciados"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Desativar nomes de arquivos diferenciados"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Carregar a unidade AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
 msgstr "Montar volumes criptografados (LUKS e geli)"
