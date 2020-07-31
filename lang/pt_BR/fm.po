@@ -10,58 +10,58 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-07-31 09:05\n"
+"PO-Revision-Date: 2020-07-31 13:05\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Voltar"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Desativado"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Ativado"
 
 msgid "Not available"
-msgstr ""
+msgstr "Não disponível"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "Definir BGRT (Logotipo de inicialização do Windows)"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Abrir Com o Menu Grub2"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Abrir Com o Menu Syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Abrir Com o Menu Pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Abrir Com o Menu GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Abrir Com o Menu GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Abrir Com o Lua Script"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Abrir Com o Python Script"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Abrir Com o Aplicativo EFI"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "Carregar o driver UEFI"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "Abrir Com o EFI Shell Script"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "Abrir Com a Imagem"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "Pressione [ESC] para continuar..."
 
 msgid "Mount Image"
 msgstr ""
