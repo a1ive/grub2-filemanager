@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-07-31 13:05\n"
+"PO-Revision-Date: 2020-07-31 13:17\n"
 
 msgid "Back"
 msgstr "Voltar"
@@ -64,40 +64,40 @@ msgid "Press [ESC] to continue..."
 msgstr "Pressione [ESC] para continuar..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Montar Imagem"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Iniciar Imagem Floppy (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Iniciar Imagem Floppy (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Iniciar Imagem Floppy (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Iniciar Imagem Hard Drive (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Iniciar Imagem Hard Drive (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Iniciar Imagem Hard Drive (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Iniciar IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Iniciar IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Abrir Com o Arquivo"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Iniciar NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Iniciar NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
 msgstr ""
