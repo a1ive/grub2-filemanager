@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-07-31 13:37\n"
+"PO-Revision-Date: 2020-07-31 13:44\n"
 
 msgid "Back"
 msgstr "Voltar"
@@ -376,46 +376,46 @@ msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
 msgstr "AVISO: Isso apagará TODOS os dados em (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "AVISO: Isso apagará TODOS os dados em (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "AVISO: Irá excluir ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "Pressione [1] para continuar. Pressione qualquer outra tecla para retornar."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Pressione [Y] para continuar. Pressione [N] para sair."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Cancelado."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "O caminho do arquivo contém espaços. Isto pode causar problemas!Pressione qualquer tecla para continuar."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "Digite o nome"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "Nome do arquivo ruim."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "Pressione qualquer tecla para sair."
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "Por favor, aguarde ..."
 
 msgid "Reboot"
-msgstr ""
+msgstr "Reiniciar"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "Reiniciar (R)"
 
 msgid "Halt"
-msgstr ""
+msgstr "Parar"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "Parar (H)"
 
 msgid "File: "
 msgstr ""
