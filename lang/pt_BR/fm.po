@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-07-31 13:54\n"
+"PO-Revision-Date: 2020-07-31 14:05\n"
 
 msgid "Back"
 msgstr "Voltar"
@@ -175,70 +175,70 @@ msgid "Insert Grub2 Module"
 msgstr "Inserir Módulo Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Setor de Inicialização BIOS em Chainload"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Chainload NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Chainload BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Abrir Com o MOD GRUB4DOS"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Iniciar o Multiboot Kernel"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Iniciar o Multiboot2 Kernel"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Iniciar Linux Kernel"
 
 msgid "User menu"
-msgstr ""
+msgstr "Menu de usuário"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Visualizador de Texto"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Visualizador de Hex"
 
 msgid "Rename"
-msgstr ""
+msgstr "Renomear"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Copiar para ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Apagar"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Colar aqui"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 msgid "File Info"
-msgstr ""
+msgstr "Informação do Arquivo"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Informação do arquivo (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Informação do arquivo -- Pressione [ENTER] para sair"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Tipo: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Caminho:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Tamanho: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "Deslocamento em disco: ${offset}"
 
 msgid "File is contiguous."
 msgstr ""
