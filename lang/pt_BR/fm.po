@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-07-31 14:05\n"
+"PO-Revision-Date: 2020-07-31 14:13\n"
 
 msgid "Back"
 msgstr "Voltar"
@@ -241,16 +241,16 @@ msgid "Offset on disk: ${offset}"
 msgstr "Deslocamento em disco: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "O arquivo é contíguo."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "O arquivo não é contíguo. (${frag} fragmentos)"
 
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "Layouts do Teclado"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
 msgstr ""
