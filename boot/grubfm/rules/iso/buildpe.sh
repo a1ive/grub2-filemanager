@@ -11,7 +11,7 @@ function bootpe {
   terminal_output console;
   loopback wimboot ${prefix}/wimboot.xz;
   loopback install ${prefix}/explorer.xz;
-  wimboot --index=2 \
+  wimboot  --testmode=no \
             @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
             @:sfx64.exe:${sfx} \
             @:winpeshl.ini:(install)/winpeshl.ini \
