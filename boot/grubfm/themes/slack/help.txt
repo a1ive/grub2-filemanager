@@ -79,7 +79,7 @@ terminal-box: "term_bkg_*.png"
     + image {file = "dock/space.png"}
     + vbox {
         + label {text = "[F5]" color = "#ffffff"}
-        + image {file = "dock/net.png"}
+        + image {file = "dock/f5.png"}
     }
     + image {file = "dock/space.png"}
     + vbox {

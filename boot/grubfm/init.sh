@@ -86,8 +86,23 @@ then
 fi;
 
 export grubfm_lang="${lang}";
-source ${prefix}/pxeinit.sh;
-net_detect;
+
+search --set=aioboot -f -q -n /AIO/grub/grub.cfg;
+search --set=ventoy -f -q -n /ventoy/ventoy.cpio;
+if [ -n "${aioboot}" ];
+then
+  dd --if=${prefix}/themes/slack/dock/aioboot.png \
+     --of=${prefix}/themes/slack/dock/f5.png --bs=512;
+elif [ -n "${ventoy}" ];
+then
+  dd --if=${prefix}/themes/slack/dock/ventoy.png \
+     --of=${prefix}/themes/slack/dock/f5.png --bs=512;
+else
+  dd --if=${prefix}/themes/slack/dock/net.png \
+     --of=${prefix}/themes/slack/dock/f5.png --bs=512;
+  source ${prefix}/pxeinit.sh;
+  net_detect;
+fi;
 if [ "${grub_netboot}" = "1" ];
 then
   configfile ${prefix}/netboot.sh;

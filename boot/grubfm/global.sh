@@ -19,15 +19,11 @@ then
   export theme=${theme_fm};
 fi;
 
-hiddenentry "---- HOTKEY MENU ----" {
-  echo;
-}
-
-hiddenentry "[F1] HELP" --hotkey f1 {
+hiddenentry " " --hotkey f1 {
   configfile ${prefix}/help.sh;
 }
 
-hiddenentry "[F2] FILE MANAGER" --hotkey f2 {
+hiddenentry " " --hotkey f2 {
   if [ -n "${grubfm_current_path}" ];
   then
     grubfm "${grubfm_current_path}";
@@ -36,19 +32,19 @@ hiddenentry "[F2] FILE MANAGER" --hotkey f2 {
   fi;
 }
 
-hiddenentry "[F3] OS DETECT" --hotkey f3 {
+hiddenentry " " --hotkey f3 {
   configfile ${prefix}/osdetect.sh;
 }
 
-hiddenentry "[F4] SETTINGS" --hotkey f4 {
+hiddenentry " " --hotkey f4 {
   configfile ${prefix}/settings.sh;
 }
 
-hiddenentry "[F5] PXE BOOT MENU" --hotkey f5 {
-  configfile ${prefix}/netboot.sh;
+hiddenentry " " --hotkey f5 {
+  configfile ${prefix}/f5.sh;
 }
 
-hiddenentry "[F6] POWER OFF" --hotkey f6 {
+hiddenentry " " --hotkey f6 {
   configfile ${prefix}/power.sh;
 }
 

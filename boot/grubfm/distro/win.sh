@@ -21,7 +21,8 @@ function win_isoboot {
   fi;
   if [ -z "${2}" ];
   then
-    wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
+    wimboot --highest=no --testmode=no \
+            @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
             @:null.cfg:(envblk)/null.cfg \
             @:mount_x64.exe:(install)/mount_x64.exe \
             @:mount_x86.exe:(install)/mount_x86.exe \
@@ -29,7 +30,8 @@ function win_isoboot {
             @:winpeshl.ini:(install)/winpeshl.ini \
             @:boot.wim:"${1}";
   else
-    wimboot @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
+    wimboot --highest=no --testmode=no \
+            @:bootmgfw.efi:(wimboot)/bootmgfw.efi \
             @:null.cfg:(envblk)/null.cfg \
             @:mount_x64.exe:(install)/mount_x64.exe \
             @:mount_x86.exe:(install)/mount_x86.exe \
