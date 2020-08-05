@@ -98,13 +98,7 @@ do
         chainloader -t (${root})/efi/microsoft/boot/bootmgfw.efi;
       }
     fi;
-    if [ "${grub_cpu}" = "x86_64" ];
-    then
-      set boot_file="/efi/boot/bootx64.efi";
-    elif [ "${grub_cpu}" = "i386" ];
-    then
-      set boot_file="/efi/boot/bootia32.efi";
-    fi;
+    set boot_file="/efi/boot/boot${EFI_ARCH}.efi";
     if [ -f "(${device})${boot_file}" ];
     then
       menuentry $"Boot ${device} ${info}" "${device}" "${boot_file}" --class uefi {

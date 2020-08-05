@@ -18,35 +18,36 @@ set pager=0;
 cat --set=modlist ${prefix}/insmod.lst;
 for module in ${modlist};
 do
-    insmod ${module};
+  insmod ${module};
 done;
 export enable_progress_indicator=0;
 export grub_secureboot="Not available";
 if [ "${grub_platform}" = "efi" ];
 then
-    search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
-    if [ "${grub_cpu}" = "i386" ];
-    then
-        search -s -f -q /efi/boot/bootia32.efi;
-    else
-        search -s -f -q /efi/boot/bootx64.efi;
-    fi;
-    getenv -t uint8 SecureBoot grub_secureboot;
-    if [ "${grub_secureboot}" = "1" ];
-    then
-        export grub_secureboot="Enabled";
-        sbpolicy -i;
-        fucksb -i;
-        fucksb --off;
-    fi;
-    if [ "${grub_secureboot}" = "0" ];
-    then
-        export grub_secureboot="Disabled";
-    fi;
-    # enable mouse/touchpad
-    # terminal_input --append mouse;
+  search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
+  if [ "${grub_cpu}" = "i386" ];
+  then
+    set EFI_ARCH="ia32";
+  else
+    set EFI_ARCH="x64";
+  fi;
+  search -s -f -q /efi/boot/boot${EFI_ARCH}.efi;
+  getenv -t uint8 SecureBoot grub_secureboot;
+  if [ "${grub_secureboot}" = "1" ];
+  then
+    export grub_secureboot="Enabled";
+    sbpolicy -i;
+    fucksb -i;
+    fucksb --off;
+  fi;
+  if [ "${grub_secureboot}" = "0" ];
+  then
+    export grub_secureboot="Disabled";
+  fi;
+  # enable mouse/touchpad
+  # terminal_input --append mouse;
 else
-    search -s -f -q /fmldr;
+  search -s -f -q /fmldr;
 fi;
 
 if cpuid -l;

@@ -16,16 +16,18 @@
 
 if [ -n "${aioboot}" ];
 then
-  set root=${aioboot};
-  set prefix=(${root})/AIO/grub;
-  unset theme;
-  terminal_output console;
-  configfile ${prefix}/grub.cfg;
+  if [ "${grub_platform}" = "efi" ];
+  then
+    chainloader -t (${aioboot})/efi/boot/boot${EFI_ARCH}.efi;
+  else
+    multiboot (${aioboot})/AIO/grub/i386-pc/core.img;
+  fi;
+  boot;
 elif [ -n "${ventoy}" ];
 then
   if [ "${grub_platform}" = "efi" ];
   then
-    chainloader -t (${ventoy})/EFI/BOOT/BOOTX64.EFI;
+    chainloader -t (${ventoy})/efi/boot/boot${EFI_ARCH}.efi;
   else
     regexp --set=1:vtdisk '(hd[0-9]+)[0-9,]*' "${ventoy}";
     chainloader (${vtdisk})+1;
