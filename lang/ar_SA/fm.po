@@ -10,482 +10,482 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Arabic\n"
 "Language: ar_SA\n"
-"PO-Revision-Date: 2020-08-13 00:20\n"
+"PO-Revision-Date: 2020-08-18 01:13\n"
 
 msgid "Back"
-msgstr ""
+msgstr "للخلف"
 
 msgid "Disabled"
-msgstr ""
+msgstr "تعطيل"
 
 msgid "Enabled"
-msgstr ""
+msgstr "تمكين"
 
 msgid "Not available"
-msgstr ""
+msgstr "غير متوفر"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "ضبط BGRT (شعار تمهيد ويندوز)"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "فتح باستخدام قائمة Grub2"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "فتح باستخدام قائمة Syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "فتح باستخدام قائمة pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "فتح باستخدام قائمة GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "فتح باستخدام قائمة GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "فتح باستخدام البرنامج النصي Lua"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "فتح باستخدام البرنامج النصي Python"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "فتح باستخدام تطبيق EFI"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "تحميل قرص UEFI"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "فتح باستخدام  البرنامج النصي شل UEFI"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "فتح باستخدام  الصور"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "الرجاء اضغط خروج للاستمرار ... [ESC]"
 
 msgid "Mount Image"
-msgstr ""
+msgstr "تركيب صورة"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "الاقلاع بصورة الفلوبي ديسك (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "الاقلاع بصورة الفلوبي ديسك (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "الاقلاع بصورة الفلوبي ديسك (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "الاقلاع بصورة بمحرك القرص (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "الاقلاع بصورة بمحرك القرص (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "الاقلاع بصورة بمحرك القرص (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "الاقلاع IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "الاقلاع IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "فتح باستخدام الارشيف"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "الاقلاع بالويم NT6.x WIM (wimboot"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "الاقلاع بالويم NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "الاقلاع بالويم NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "الاقلاع بـ NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "الاقلاع بويندوز NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "اقلاع RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "اقلاع RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "اقلاع VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "اقلاع VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "اقلاع VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "تركيب الايزوا ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "اقلاع ايزوا ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "اقلاع ايزوا ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "اقلاع ايزوا ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "اقلاع ايزوا ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "اقلاع ايزوا ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "تنصيب ويندوز (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "تنصيب ويندوز (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "تنصيب ويندوز باستخدام ملف الاجوبة autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "تحميل ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "اقلاع ايزوا ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "اقلاع ايزوا ISO (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "اقلاع ايزوا ISO (Ventoy)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "اقلاع ملفات EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "فتح باستخدام البرنامج النصي iPXE"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "فتح باستخدام الخطوط"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "أدخال وحدة Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "تحميل سلسلة قطاع تمهيد البيوس"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "تحميل سلسلة NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "تحميل سلسلة BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "فتح باستخدام نمط GRUB4DOS"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "التمهيد Multiboot Kernel"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "التمهيد Multiboot2 Kernel"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "التمهيد نواة لينكس"
 
 msgid "User menu"
-msgstr ""
+msgstr "قائمة المستخدم"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "عارض النص"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "عارض الهيكس"
 
 msgid "Rename"
-msgstr ""
+msgstr "اعادة تسمية"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "نسخ الى ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 msgid "Paste here"
-msgstr ""
+msgstr "لصق هنا"
 
 msgid "Cancel"
-msgstr ""
+msgstr "الغاء الامر"
 
 msgid "File Info"
-msgstr ""
+msgstr "معلومات الملف"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "معلومات الملف (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "معلومات الملف -- الرجاء اضعط ادخال للخروج [ENTER] "
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "النوع : ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "المسار :"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "الحجم : ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "تعويض على القرص: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "الملف متجاور ."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "الملف غير متجاور . (${frag} fragments)"
 
 msgid "Language"
-msgstr ""
+msgstr "اللغة"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "تخطيط لوحة المفاتيح"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
 msgstr ""
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "تعطيل PatchGuard و DSE في وقت التمهيد"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "تثبيت تجاوز سياسة الأمان"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "التحقق من صحة الرقائق تعطيل وإعادة تشغيل الكمبيوتر"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "تعطيل وضع الرسومات (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "شفرة الترميز : "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "فرز الملفات بالاسم"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "لا تفرز الملفات بالاسم"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "تعطيل قائمة خيارات التمهيد الثانوية"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "تفعيل قائمة خيارات التمهيد الثانوية"
 
 msgid "Display all files"
-msgstr ""
+msgstr "عرض كل الملفات"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "إخفاء الملفات غير القابلة للتمهيد"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "الدقة (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "تمكين ESC (لا ينصح به)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "تفعيل رسائل تصحيح الاخطاء"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "إظهار الأقراص المخفية"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "تحميل وحدات إضافية"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "تفعيل أسماء الملفات الحساسة لحالة الأحرف"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "تعطيل أسماء الملفات الحساسة لحالة الأحرف"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "تحميل برنامج تشغيل AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "تحميل مجلدات مشفرة (LUKS و geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "تفعيل المحطة التسلسلية الطرفية لسطر الاوامر"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "إعداد البرنامج الثابت EFI"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "وحدة التحكم GRUB"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI Shell صدفة الشيل"
 
 msgid "UEFI DUET"
 msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "تحميل القائمة الخارجية في (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "تحميل إدارة تمهيد ويندوز في ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "تمهيد نظام التشغيل ماك ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "تمهيد ${winver} في ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "تمهيد ${device} ${info}"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "تمهيد ${device} (PBR) ${info}"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "تمهيد ${tmp} (MBR) [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "تمهيد الايزوا ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "تمهيد الايزوا ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "الكشف عن نوع الايزوا ISO ..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "تمهيد ${distro} من الايزوا ISO"
 
 msgid "Boot "
-msgstr ""
+msgstr "الاقلاع"
 
 msgid " From ISO"
-msgstr ""
+msgstr " من الايزوا ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "الرجاء إدخال اسم المستخدم. Default:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "نحذير : سيمحو كل البيانات الموجودة على قرص (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "نحذير : سيمحو كل البيانات الموجودة على قرص (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "تحذير : سيتم الحذف ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "الرجاء اضعط [1] للاستمرار . وللعودة اضغط اي زر."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "الرجاء اضعط غ [Y] للاستمرار . واضغط ى [N] للخروج ."
 
 msgid "Canceled."
-msgstr ""
+msgstr "ملغي."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "مسار الملف يحتوي على مسافات وهذا قد يسبب مشاكل ! اضغط على أي مفتاح للمتابعة."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "ادخل الاسم"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "خطأ في اسم الملف ."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "الرجاء اضعط اي زر للخروج ."
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "الرجاء الانتظار ..."
 
 msgid "Reboot"
-msgstr ""
+msgstr "اعادة تشغيل"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "اعادة تشغيل"
 
 msgid "Halt"
-msgstr ""
+msgstr "ايقاف"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "ايقاف (H)"
 
 msgid "File: "
-msgstr ""
+msgstr "ملف"
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "الاختصارات"
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - المساعدة"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - استعراض الملفات"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - كشف نظام التشغيل"
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - الخيارات"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - PXE قائمة اقلاع"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - اطفاء الجهاز"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] حول تعريب ثامرموسى GRUB2-FileManager"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr ""
+msgstr "Ctrl+l/Ctrl+r - إدخال قائمة تمرير النص"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl+LAlt+F12 - تأخذ لقطة للشاشة (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ صفحة لفوق  ↓ صفحة لتحت  [ESC] Exit"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ صفحة لفوق  ↓ صفحة لتحت  [e] الترميز  [ESC] للخروج"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "ملف : %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "ملف : %s (%s) الترميز : %s"
 
 msgid "Platform: %s-%s"
 msgstr ""
 
 msgid "Language: %s"
-msgstr ""
+msgstr "اللغة : %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "نسخة GRUB : %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "بيانات البناء GRUB : %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "الاتفاقية : GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "لم يجد الملف او غير موجود"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "الرجاء تحديد نوع الملف للبحث عنه"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "تنصيب ويندوز اكس بي - STEP 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "تنصيب ويندوز اكس بي - STEP 2"
 
