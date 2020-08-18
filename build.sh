@@ -63,6 +63,7 @@ echo "11. Ukrainian"
 echo "12. French"
 echo "13. Danish"
 echo "14. Portuguese (Brazil)"
+echo "15. Arabic"
 read -p "Please make a choice: " choice
 case "$choice" in
     2)
@@ -115,6 +116,10 @@ case "$choice" in
     14)
         echo "pt_BR"
         cp lang/pt_BR/lang.sh build/boot/grubfm/
+        ;;
+    15)
+        echo "ar_SA"
+        cp lang/ar_SA/lang.sh build/boot/grubfm/
         ;;
     *)
         echo "zh_CN"
