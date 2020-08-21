@@ -72,6 +72,21 @@ terminal_output gfxterm;
 set color_normal=white/black;
 set color_highlight=black/white;
 
+search --set=aioboot -f -q -n /AIO/grub/grub.cfg;
+search --set=ventoy -f -q -n /ventoy/ventoy.cpio;
+if [ -n "${aioboot}" ];
+then
+  dd --if=${prefix}/themes/slack/dock/aioboot.png \
+     --of=${prefix}/themes/slack/dock/f5.png --bs=512;
+elif [ -n "${ventoy}" ];
+then
+  dd --if=${prefix}/themes/slack/dock/ventoy.png \
+     --of=${prefix}/themes/slack/dock/f5.png --bs=512;
+else
+  dd --if=${prefix}/themes/slack/dock/net.png \
+     --of=${prefix}/themes/slack/dock/f5.png --bs=512;
+fi;
+
 export theme_std=${prefix}/themes/slack/theme.txt;
 export theme_fm=${prefix}/themes/slack/fm.txt;
 export theme_help=${prefix}/themes/slack/help.txt;
@@ -88,19 +103,7 @@ fi;
 
 export grubfm_lang="${lang}";
 
-search --set=aioboot -f -q -n /AIO/grub/grub.cfg;
-search --set=ventoy -f -q -n /ventoy/ventoy.cpio;
-if [ -n "${aioboot}" ];
-then
-  dd --if=${prefix}/themes/slack/dock/aioboot.png \
-     --of=${prefix}/themes/slack/dock/f5.png --bs=512;
-elif [ -n "${ventoy}" ];
-then
-  dd --if=${prefix}/themes/slack/dock/ventoy.png \
-     --of=${prefix}/themes/slack/dock/f5.png --bs=512;
-else
-  dd --if=${prefix}/themes/slack/dock/net.png \
-     --of=${prefix}/themes/slack/dock/f5.png --bs=512;
+if [ -z "${aioboot}" -a -z "${ventoy}" ];
   source ${prefix}/pxeinit.sh;
   net_detect;
 fi;
