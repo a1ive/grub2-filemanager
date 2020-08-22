@@ -28,6 +28,9 @@ then
   if [ "${grub_cpu}" = "i386" ];
   then
     set EFI_ARCH="ia32";
+  elif [ "${grub_cpu}" = "arm64" ];
+  then
+    set EFI_ARCH="aa64";
   else
     set EFI_ARCH="x64";
   fi;
