@@ -21,48 +21,45 @@ fi;
 
 videomode -c mode_current;
 
+menuentry $"Hotkeys" {
+  echo;
+}
+
+menuentry $"F1 - Help" {
+  echo;
+}
+
+menuentry $"F2 - File Manager" {
+  echo;
+}
+
+menuentry $"F3 - OS Detect" {
+  echo;
+}
+
+menuentry $"F4 - Settings" {
+  echo;
+}
+
+menuentry $"F5 - PXE Boot Menu" {
+  echo;
+}
+
+menuentry $"F6 - Power Off" {
+  echo;
+}
+
 if [ "${mode_current}" != "0x0" ];
 then
-  menuentry $"Hotkeys" {
+  menuentry $"Ctrl+l/Ctrl+r - Scroll menu entry's text" {
     echo;
   }
-
-  menuentry $"F1 - Help" {
+fi;
+if [ "$grub_platform" = "efi" ];
+then
+  menuentry $"LCtrl+LAlt+F12 - Take Screenshots (EFI)" {
     echo;
   }
-
-  menuentry $"F2 - File Manager" {
-    echo;
-  }
-
-  menuentry $"F3 - OS Detect" {
-    echo;
-  }
-
-  menuentry $"F4 - Settings" {
-    echo;
-  }
-
-  menuentry $"F5 - PXE Boot Menu" {
-    echo;
-  }
-
-  menuentry $"F6 - Power Off" {
-    echo;
-  }
-
-  if [ "${mode_current}" != "0x0" ];
-  then
-    menuentry $"Ctrl+l/Ctrl+r - Scroll menu entry's text" {
-      echo;
-    }
-  fi;
-  if [ "$grub_platform" = "efi" ];
-  then
-    menuentry $"LCtrl+LAlt+F12 - Take Screenshots (EFI)" {
-      echo;
-    }
-  fi;
 fi;
 
 menuentry $"[A] About GRUB2-FileManager" --hotkey a {
@@ -78,15 +75,11 @@ menuentry $"[A] About GRUB2-FileManager" --hotkey a {
   fi;
 }
 
-hiddenentry "---- HOTKEY MENU ----" {
+hiddenentry "" --hotkey f1 {
   echo;
 }
 
-hiddenentry "[F1] HELP" --hotkey f1 {
-  echo;
-}
-
-hiddenentry "[F2] FILE MANAGER" --hotkey f2 {
+hiddenentry "" --hotkey f2 {
   if [ -n "${grubfm_current_path}" ];
   then
     grubfm "${grubfm_current_path}";
@@ -95,22 +88,18 @@ hiddenentry "[F2] FILE MANAGER" --hotkey f2 {
   fi;
 }
 
-hiddenentry "[F3] OS DETECT" --hotkey f3 {
+hiddenentry "" --hotkey f3 {
   configfile ${prefix}/osdetect.sh;
 }
 
-hiddenentry "[F4] SETTINGS" --hotkey f4 {
+hiddenentry "" --hotkey f4 {
   configfile ${prefix}/settings.sh;
 }
 
-hiddenentry "[F5] PXE BOOT MENU" --hotkey f5 {
-  configfile ${prefix}/netboot.sh;
+hiddenentry "" --hotkey f5 {
+  configfile ${prefix}/f5.sh;
 }
 
-hiddenentry "[F6] POWER OFF" --hotkey f6 {
+hiddenentry "" --hotkey f6 {
   configfile ${prefix}/power.sh;
-}
-
-hiddenentry "LCtrl + LAlt + F12 - Take Screenshots (EFI)" { 
-  echo;
 }
