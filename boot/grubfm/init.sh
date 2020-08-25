@@ -107,6 +107,7 @@ fi;
 export grubfm_lang="${lang}";
 
 if [ -z "${aioboot}" -a -z "${ventoy}" ];
+then
   source ${prefix}/pxeinit.sh;
   net_detect;
 fi;
