@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-07 15:34\n"
+"PO-Revision-Date: 2020-09-07 15:44\n"
 
 msgid "Back"
 msgstr "뒤로"
@@ -94,52 +94,52 @@ msgid "Open As Archiver"
 msgstr ""
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "NT6.x WIM 부팅 (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "NT6.x WIM 부팅 (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "NT5.x WIM 부팅 (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "NT5.x PE 부팅 (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Windows NT6.x VHD/VHDX 부팅 (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "RamOS VHD 부팅 (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "RamOS VHD 부팅 (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "VHD 부팅 (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "VHD 부팅 (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "VHD 부팅 (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "ISO 마운트"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "ISO 부팅 (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "ISO 부팅 (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "ISO 부팅 (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "ISO 부팅 (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "ISO 부팅 (partnew)"
 
 msgid "Install Windows (x64)"
 msgstr "Windows 설치 (x64)"
@@ -154,13 +154,13 @@ msgid "Load ${xml_name}"
 msgstr "${xml_name} 로드"
 
 msgid "Boot ISO (map)"
-msgstr "ISO 부트 (map)"
+msgstr "ISO 부팅 (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr "ISO 부트 (map --mem)"
+msgstr "ISO 부팅 (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr "ISO 부트 (Ventoy)"
+msgstr "ISO 부팅 (Ventoy)"
 
 msgid "Boot EFI Files"
 msgstr ""
@@ -172,7 +172,7 @@ msgid "Open As Font"
 msgstr ""
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Grub2 모듈 삽입"
 
 msgid "Chainload BIOS Boot Sector"
 msgstr ""
@@ -226,10 +226,10 @@ msgid "File Info (${grubfm_name})"
 msgstr "파일 정보 (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "파일 정보 -- [ENTER] 를 눌러 나가기"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "유형: ${grubfm_fileext}"
 
 msgid "Path:"
 msgstr "경로:"
@@ -403,7 +403,7 @@ msgid "Press any key to exit."
 msgstr ""
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "잠시 기다려 주십시오..."
 
 msgid "Reboot"
 msgstr "다시 시작"
@@ -421,7 +421,7 @@ msgid "File: "
 msgstr "파일: "
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "단축키"
 
 msgid "F1 - Help"
 msgstr "F1 - 도움말"
@@ -430,7 +430,7 @@ msgid "F2 - File Manager"
 msgstr "F2 - 파일 관리자"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - OS 감지"
 
 msgid "F4 - Settings"
 msgstr "F4 - 설정"
