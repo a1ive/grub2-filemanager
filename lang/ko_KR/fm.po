@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-07 15:53\n"
+"PO-Revision-Date: 2020-09-07 16:04\n"
 
 msgid "Back"
 msgstr "뒤로"
@@ -91,7 +91,7 @@ msgid "Boot IMG (map --mem)"
 msgstr "IMG 부팅 (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Archiver로 열기"
 
 msgid "Boot NT6.x WIM (wimboot)"
 msgstr "NT6.x WIM 부팅 (wimboot)"
@@ -238,7 +238,7 @@ msgid "Size: ${hsize} (${size})"
 msgstr "크기: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "디스크 오프셋: ${offset}"
 
 msgid "File is contiguous."
 msgstr "파일이 연속적입니다."
@@ -256,7 +256,7 @@ msgid "Fix \"BlInitializeLibrary failed XXX\" error"
 msgstr "\"BlInitializeLibrary failed XXX\" 에러 수정"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "부팅시 PatchGuard와 DSE 비활성화"
 
 msgid "Install override security policy"
 msgstr "보안 정책 무시 설치"
@@ -277,10 +277,10 @@ msgid "Do not sort files by name"
 msgstr "이름으로 파일 정렬하지 않기"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "보조 부트 옵션 메뉴 비활성화"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "보조 부트 옵션 메뉴 활성화"
 
 msgid "Display all files"
 msgstr "모든 파일 표시"
@@ -313,10 +313,10 @@ msgid "Load AHCI Driver"
 msgstr "AHCI 드라이버 로드"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "암호화된 볼륨 마운트 (LUKS 와 geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "시리얼 터미널 활성화"
 
 msgid "EFI Firmware Setup"
 msgstr "EFI 펌웨어 설정"
@@ -328,28 +328,28 @@ msgid "EFI Shell"
 msgstr "EFI 쉘"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "(${device}) ${info} 에 있는 외부 메뉴 로드"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "${device} ${info} 에 있는 Windows 부트 매니저 로드"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "${device} ${info} 에 있는 macOS 부팅"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "${device} ${info} 에 있는 ${winver} 부팅"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "${device} ${info} 부팅"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "${device} (PBR) ${info} 부팅"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "${tmp} (MBR) 부팅 [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
 msgstr "ISO 부팅 (Loopback)"
@@ -379,28 +379,28 @@ msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "경고: (hd0,4) 에 있는 모든 데이터를 삭제합니다."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "경고: ${grubfm_file} 를 삭제합니다."
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "[1] 을 눌러 계속하거나 아무 키나 눌러 돌아갑니다."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "[Y] 를 눌러 계속하거나 [N] 을 눌러 나갑니다."
 
 msgid "Canceled."
 msgstr "취소됨."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "파일 경로가 공백을 포함합니다. 이는 많은 문제를 일으킬 수 있습니다! 아무 키나 눌러 계속합니다."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "파일 이름 입력"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "잘못된 파일 이름입니다."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "아무 키나 눌러서 나가기."
 
 msgid "Please wait ..."
 msgstr "잠시 기다려 주십시오..."
@@ -445,16 +445,16 @@ msgid "[A] About GRUB2-FileManager"
 msgstr "[A] GRUB2-FileManager에 대하여"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr ""
+msgstr "Ctrl+l/Ctrl+r - 메뉴 엔트리의 텍스트 스크롤"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl+LAlt+F12 - 스크린샷 찍기 (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ 페이지 올리기  ↓ 페이지 내리기  [ESC] 나가기"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ 페이지 올리기  ↓ 페이지 내리기  [e] 인코딩   [ESC] 나가기"
 
 msgid "FILE: %s (%s)"
 msgstr "파일: %s (%s)"
