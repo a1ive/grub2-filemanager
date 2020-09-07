@@ -10,16 +10,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-07 15:23\n"
+"PO-Revision-Date: 2020-09-07 15:34\n"
 
 msgid "Back"
 msgstr "뒤로"
 
 msgid "Disabled"
-msgstr ""
+msgstr "비활성"
 
 msgid "Enabled"
-msgstr ""
+msgstr "활성"
 
 msgid "Not available"
 msgstr "사용할 수 없음"
@@ -61,34 +61,34 @@ msgid "Open As Image"
 msgstr "이미지로 열기"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "계속하려면 [ESC] 키를 누르십시오..."
 
 msgid "Mount Image"
 msgstr "이미지 마운트"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "플로피 이미지 부팅 (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "플로피 이미지 부팅 (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "플로피 이미지 부팅 (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "하드 디스크 이미지 부팅 (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "하드 디스크 이미지 부팅 (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "하드 디스크 이미지 부팅 (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "IMG 부팅 (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "IMG 부팅 (map --mem)"
 
 msgid "Open As Archiver"
 msgstr ""
@@ -142,10 +142,10 @@ msgid "Boot ISO (partnew)"
 msgstr ""
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Windows 설치 (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Windows 설치 (x86)"
 
 msgid "Install Windows without autounattend.xml"
 msgstr "Autounattend.xml 없이 Windows 설치"
@@ -196,34 +196,34 @@ msgid "Boot Linux Kernel"
 msgstr ""
 
 msgid "User menu"
-msgstr ""
+msgstr "사용자 메뉴"
 
 msgid "Text Viewer"
 msgstr "텍스트 뷰어"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "헥스 뷰어"
 
 msgid "Rename"
-msgstr ""
+msgstr "이름 바꾸기"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "복사 ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "삭제"
 
 msgid "Paste here"
-msgstr ""
+msgstr "여기에 붙여넣기"
 
 msgid "Cancel"
-msgstr ""
+msgstr "취소"
 
 msgid "File Info"
-msgstr ""
+msgstr "파일 정보"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "파일 정보 (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
 msgstr ""
@@ -232,10 +232,10 @@ msgid "Type: ${grubfm_fileext}"
 msgstr ""
 
 msgid "Path:"
-msgstr ""
+msgstr "경로:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "크기: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
 msgstr ""
@@ -250,10 +250,10 @@ msgid "Language"
 msgstr "언어"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "키보드 레이아웃"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "\"BlInitializeLibrary failed XXX\" 에러 수정"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr ""
@@ -268,10 +268,10 @@ msgid "Disable graphics mode (T)"
 msgstr ""
 
 msgid "Encoding: "
-msgstr ""
+msgstr "인코딩: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "이름으로 파일 정렬"
 
 msgid "Do not sort files by name"
 msgstr ""
@@ -283,16 +283,16 @@ msgid "Enable secondary boot options menu"
 msgstr ""
 
 msgid "Display all files"
-msgstr ""
+msgstr "모든 파일 표시"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "부팅 불가능한 파일 숨기기"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "해상도 (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "ESC 활성화 (권장하지 않음)"
 
 msgid "Enable debug messages"
 msgstr ""
@@ -310,7 +310,7 @@ msgid "Disable case-sensitive filenames"
 msgstr ""
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "AHCI 드라이버 로드"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
 msgstr ""
@@ -319,13 +319,13 @@ msgid "Enable serial terminal"
 msgstr ""
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "EFI 펌웨어 설정"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "GRUB 콘솔"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI 쉘"
 
 msgid "UEFI DUET"
 msgstr ""
@@ -352,31 +352,31 @@ msgid "Boot ${tmp} (MBR) [${tmpsize}]"
 msgstr ""
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "ISO 부팅 (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "ISO 부팅 (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "ISO 유형 감지 중..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "ISO로부터 ${distro} 부팅"
 
 msgid "Boot "
 msgstr "부팅 "
 
 msgid " From ISO"
-msgstr ""
+msgstr " ISO로 부터"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "사용자 이름을 입력하세요. 기본값: user 슈퍼유저: root Devuan: devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "경고: (${grubfm_disk},4)에 있는 모든 데이터를 삭제합니다."
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "경고: (hd0,4) 에 있는 모든 데이터를 삭제합니다."
 
 msgid "WARNING: Will delete ${grubfm_file}"
 msgstr ""
@@ -475,13 +475,13 @@ msgid "GRUB build date: %s"
 msgstr ""
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "라이센스: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "파일을 찾을 수 없음"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "찾고자 하는 파일의 유형을 선택하여 주십시오:"
 
 msgid "Install Windows XP - STEP 1"
 msgstr "Windows XP 설치 - 1단계"
