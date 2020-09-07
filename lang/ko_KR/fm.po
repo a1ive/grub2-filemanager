@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-07 16:04\n"
+"PO-Revision-Date: 2020-09-07 16:27\n"
 
 msgid "Back"
 msgstr "뒤로"
@@ -148,7 +148,7 @@ msgid "Install Windows (x86)"
 msgstr "Windows 설치 (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr "Autounattend.xml 없이 Windows 설치"
+msgstr "autounattend.xml 없이 Windows 설치"
 
 msgid "Load ${xml_name}"
 msgstr "${xml_name} 로드"
