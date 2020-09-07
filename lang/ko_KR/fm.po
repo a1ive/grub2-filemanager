@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-07 15:44\n"
+"PO-Revision-Date: 2020-09-07 15:53\n"
 
 msgid "Back"
 msgstr "뒤로"
@@ -163,37 +163,37 @@ msgid "Boot ISO (Ventoy)"
 msgstr "ISO 부팅 (Ventoy)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "EFI 파일 부팅"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "iPXE 스크립트로 열기"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "폰트로 열기"
 
 msgid "Insert Grub2 Module"
 msgstr "Grub2 모듈 삽입"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "BIOS 부트섹터로 체인로딩"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "NTLDR로 체인로딩"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "BOOTMGR로 체인로딩"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "GRUB4DOS MOD로 열기"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Multiboot 커널 부팅"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Multiboot2 커널 부팅"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "리눅스 커널 부팅"
 
 msgid "User menu"
 msgstr "사용자 메뉴"
@@ -241,10 +241,10 @@ msgid "Offset on disk: ${offset}"
 msgstr ""
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "파일이 연속적입니다."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "파일이 연속적이지 않습니다. (${frag} 조각)"
 
 msgid "Language"
 msgstr "언어"
@@ -259,13 +259,13 @@ msgid "Disable PatchGuard and DSE at boot time"
 msgstr ""
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "보안 정책 무시 설치"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "shim 검증 비활성화 및 재부팅"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "그래픽 모드 비활성화 (T)"
 
 msgid "Encoding: "
 msgstr "인코딩: "
@@ -274,7 +274,7 @@ msgid "Sort files by name"
 msgstr "이름으로 파일 정렬"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "이름으로 파일 정렬하지 않기"
 
 msgid "Disable secondary boot options menu"
 msgstr ""
@@ -295,19 +295,19 @@ msgid "Enable ESC (not recommended)"
 msgstr "ESC 활성화 (권장하지 않음)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "디버그 메시지 활성화"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "숨겨진 드라이브 표시"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "추가 모듈 불러오기"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "대소문자 구별 파일 이름 활성화"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "대소문자 구별 파일 이름 비활성화"
 
 msgid "Load AHCI Driver"
 msgstr "AHCI 드라이버 로드"
@@ -457,22 +457,22 @@ msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
 msgstr ""
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "파일: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "파일: %s (%s) 인코딩: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "플랫폼: %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "언어: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "GRUB 버전: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "GRUB 빌드 날짜: %s"
 
 msgid "License: GNU GPLv3"
 msgstr "라이센스: GNU GPLv3"
