@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-07 15:15\n"
+"PO-Revision-Date: 2020-09-07 15:23\n"
 
 msgid "Back"
 msgstr "뒤로"
@@ -28,43 +28,43 @@ msgid "Set BGRT (Windows boot logo)"
 msgstr "BGRT (Windows 부트 로고) 설정"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Grub2 메뉴로 열기"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Syslinux 메뉴로 열기"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "pxelinux 메뉴로 열기"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "GRUB4DOS 메뉴로 열기"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "GRUB 레거시 메뉴로 열기"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Lua 스크립트로 열기"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Python 스크립트로 열기"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "EFI 애플리케이션으로 열기"
 
 msgid "Load UEFI driver"
 msgstr "UEFI 드라이버 로드"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "EFI 쉘 스크립트로 열기"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "이미지로 열기"
 
 msgid "Press [ESC] to continue..."
 msgstr ""
 
 msgid "Mount Image"
-msgstr ""
+msgstr "이미지 마운트"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
 msgstr ""
@@ -154,13 +154,13 @@ msgid "Load ${xml_name}"
 msgstr "${xml_name} 로드"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "ISO 부트 (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "ISO 부트 (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "ISO 부트 (Ventoy)"
 
 msgid "Boot EFI Files"
 msgstr ""
@@ -199,7 +199,7 @@ msgid "User menu"
 msgstr ""
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "텍스트 뷰어"
 
 msgid "Hex Viewer"
 msgstr ""
@@ -364,7 +364,7 @@ msgid "Boot ${distro} From ISO"
 msgstr ""
 
 msgid "Boot "
-msgstr ""
+msgstr "부팅 "
 
 msgid " From ISO"
 msgstr ""
@@ -388,7 +388,7 @@ msgid "Press [Y] to continue. Press [N] to quit."
 msgstr ""
 
 msgid "Canceled."
-msgstr ""
+msgstr "취소됨."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
 msgstr ""
@@ -406,43 +406,43 @@ msgid "Please wait ..."
 msgstr ""
 
 msgid "Reboot"
-msgstr ""
+msgstr "다시 시작"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "다시 시작 (R)"
 
 msgid "Halt"
-msgstr ""
+msgstr "종료"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "종료 (H)"
 
 msgid "File: "
-msgstr ""
+msgstr "파일: "
 
 msgid "Hotkeys"
 msgstr ""
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - 도움말"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - 파일 관리자"
 
 msgid "F3 - OS Detect"
 msgstr ""
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - 설정"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - PXE 부팅 메뉴"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - 전원 끄기"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] GRUB2-FileManager에 대하여"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
 msgstr ""
@@ -484,8 +484,8 @@ msgid "Please select the type of file you want to search:"
 msgstr ""
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Windows XP 설치 - 1단계"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Windows XP 설치 - 2단계"
 
