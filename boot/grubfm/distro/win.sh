@@ -15,10 +15,7 @@ function win_isoboot {
   cat (envblk)/null.cfg;
   loopback wimboot ${prefix}/wimboot.xz;
   loopback install ${prefix}/install.xz;
-  if [ "$grub_platform" = "pc" ];
-  then
-    auto_swap;
-  fi;
+  swap_hd01;
   if [ -z "${2}" ];
   then
     wimboot --highest=no --testmode=no \

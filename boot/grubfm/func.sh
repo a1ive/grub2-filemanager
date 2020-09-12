@@ -40,6 +40,16 @@ function auto_swap {
   fi;
 }
 
+function swap_hd01 {
+  if [ "$grub_platform" = "pc" ];
+  then
+    if [ "${bootdev}" = "hd0" ];
+    then
+      drivemap -s (hd0) (hd1);
+    fi;
+  fi;
+}
+
 regexp --set=1:grubfm_path '(/.*)$' "${grubfm_file}";
 regexp --set=1:grubfm_dir '^(.*/).*$' "${grubfm_path}";
 regexp --set=1:grubfm_device '^\(([0-9a-zA-Z,]+)\)/.*' "${grubfm_file}";
