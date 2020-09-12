@@ -13,6 +13,7 @@ fi;
 if file --is-x86-multiboot "${grubfm_file}";
 then
   menuentry $"Boot Multiboot Kernel" --class exe {
+    set root="${grubfm_device}";
     multiboot "${grubfm_file}";
   }
 fi;
