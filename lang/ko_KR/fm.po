@@ -10,482 +10,482 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-08-18 01:13\n"
+"PO-Revision-Date: 2020-09-07 16:27\n"
 
 msgid "Back"
-msgstr ""
+msgstr "뒤로"
 
 msgid "Disabled"
-msgstr ""
+msgstr "비활성"
 
 msgid "Enabled"
-msgstr ""
+msgstr "활성"
 
 msgid "Not available"
-msgstr ""
+msgstr "사용할 수 없음"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "BGRT (Windows 부트 로고) 설정"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Grub2 메뉴로 열기"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Syslinux 메뉴로 열기"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "pxelinux 메뉴로 열기"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "GRUB4DOS 메뉴로 열기"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "GRUB 레거시 메뉴로 열기"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Lua 스크립트로 열기"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Python 스크립트로 열기"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "EFI 애플리케이션으로 열기"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "UEFI 드라이버 로드"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "EFI 쉘 스크립트로 열기"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "이미지로 열기"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "계속하려면 [ESC] 키를 누르십시오..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "이미지 마운트"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "플로피 이미지 부팅 (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "플로피 이미지 부팅 (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "플로피 이미지 부팅 (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "하드 디스크 이미지 부팅 (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "하드 디스크 이미지 부팅 (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "하드 디스크 이미지 부팅 (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "IMG 부팅 (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "IMG 부팅 (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Archiver로 열기"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "NT6.x WIM 부팅 (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "NT6.x WIM 부팅 (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "NT5.x WIM 부팅 (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "NT5.x PE 부팅 (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Windows NT6.x VHD/VHDX 부팅 (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "RamOS VHD 부팅 (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "RamOS VHD 부팅 (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "VHD 부팅 (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "VHD 부팅 (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "VHD 부팅 (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "ISO 마운트"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "ISO 부팅 (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "ISO 부팅 (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "ISO 부팅 (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "ISO 부팅 (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "ISO 부팅 (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Windows 설치 (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Windows 설치 (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "autounattend.xml 없이 Windows 설치"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "${xml_name} 로드"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "ISO 부팅 (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "ISO 부팅 (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "ISO 부팅 (Ventoy)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "EFI 파일 부팅"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "iPXE 스크립트로 열기"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "폰트로 열기"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Grub2 모듈 삽입"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "BIOS 부트섹터로 체인로딩"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "NTLDR로 체인로딩"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "BOOTMGR로 체인로딩"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "GRUB4DOS MOD로 열기"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Multiboot 커널 부팅"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Multiboot2 커널 부팅"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "리눅스 커널 부팅"
 
 msgid "User menu"
-msgstr ""
+msgstr "사용자 메뉴"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "텍스트 뷰어"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "헥스 뷰어"
 
 msgid "Rename"
-msgstr ""
+msgstr "이름 바꾸기"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "복사 ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "삭제"
 
 msgid "Paste here"
-msgstr ""
+msgstr "여기에 붙여넣기"
 
 msgid "Cancel"
-msgstr ""
+msgstr "취소"
 
 msgid "File Info"
-msgstr ""
+msgstr "파일 정보"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "파일 정보 (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "파일 정보 -- [ENTER] 를 눌러 나가기"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "유형: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "경로:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "크기: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "디스크 오프셋: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "파일이 연속적입니다."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "파일이 연속적이지 않습니다. (${frag} 조각)"
 
 msgid "Language"
 msgstr "언어"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "키보드 레이아웃"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "\"BlInitializeLibrary failed XXX\" 에러 수정"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "부팅시 PatchGuard와 DSE 비활성화"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "보안 정책 무시 설치"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "shim 검증 비활성화 및 재부팅"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "그래픽 모드 비활성화 (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "인코딩: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "이름으로 파일 정렬"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "이름으로 파일 정렬하지 않기"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "보조 부트 옵션 메뉴 비활성화"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "보조 부트 옵션 메뉴 활성화"
 
 msgid "Display all files"
-msgstr ""
+msgstr "모든 파일 표시"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "부팅 불가능한 파일 숨기기"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "해상도 (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "ESC 활성화 (권장하지 않음)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "디버그 메시지 활성화"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "숨겨진 드라이브 표시"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "추가 모듈 불러오기"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "대소문자 구별 파일 이름 활성화"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "대소문자 구별 파일 이름 비활성화"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "AHCI 드라이버 로드"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "암호화된 볼륨 마운트 (LUKS 와 geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "시리얼 터미널 활성화"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "EFI 펌웨어 설정"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "GRUB 콘솔"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI 쉘"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "(${device}) ${info} 에 있는 외부 메뉴 로드"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "${device} ${info} 에 있는 Windows 부트 매니저 로드"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "${device} ${info} 에 있는 macOS 부팅"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "${device} ${info} 에 있는 ${winver} 부팅"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "${device} ${info} 부팅"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "${device} (PBR) ${info} 부팅"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "${tmp} (MBR) 부팅 [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "ISO 부팅 (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "ISO 부팅 (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "ISO 유형 감지 중..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "ISO로부터 ${distro} 부팅"
 
 msgid "Boot "
-msgstr ""
+msgstr "부팅 "
 
 msgid " From ISO"
-msgstr ""
+msgstr " ISO로 부터"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "사용자 이름을 입력하세요. 기본값: user 슈퍼유저: root Devuan: devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "경고: (${grubfm_disk},4)에 있는 모든 데이터를 삭제합니다."
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "경고: (hd0,4) 에 있는 모든 데이터를 삭제합니다."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "경고: ${grubfm_file} 를 삭제합니다."
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "[1] 을 눌러 계속하거나 아무 키나 눌러 돌아갑니다."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "[Y] 를 눌러 계속하거나 [N] 을 눌러 나갑니다."
 
 msgid "Canceled."
-msgstr ""
+msgstr "취소됨."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "파일 경로가 공백을 포함합니다. 이는 많은 문제를 일으킬 수 있습니다! 아무 키나 눌러 계속합니다."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "파일 이름 입력"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "잘못된 파일 이름입니다."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "아무 키나 눌러서 나가기."
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "잠시 기다려 주십시오..."
 
 msgid "Reboot"
-msgstr ""
+msgstr "다시 시작"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "다시 시작 (R)"
 
 msgid "Halt"
-msgstr ""
+msgstr "종료"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "종료 (H)"
 
 msgid "File: "
-msgstr ""
+msgstr "파일: "
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "단축키"
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - 도움말"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - 파일 관리자"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - OS 감지"
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - 설정"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - PXE 부팅 메뉴"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - 전원 끄기"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] GRUB2-FileManager에 대하여"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr ""
+msgstr "Ctrl+l/Ctrl+r - 메뉴 엔트리의 텍스트 스크롤"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl+LAlt+F12 - 스크린샷 찍기 (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ 페이지 올리기  ↓ 페이지 내리기  [ESC] 나가기"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ 페이지 올리기  ↓ 페이지 내리기  [e] 인코딩   [ESC] 나가기"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "파일: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "파일: %s (%s) 인코딩: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "플랫폼: %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "언어: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "GRUB 버전: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "GRUB 빌드 날짜: %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "라이센스: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "파일을 찾을 수 없음"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "찾고자 하는 파일의 유형을 선택하여 주십시오:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Windows XP 설치 - 1단계"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Windows XP 설치 - 2단계"
 
