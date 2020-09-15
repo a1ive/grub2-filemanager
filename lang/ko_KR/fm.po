@@ -10,10 +10,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-07 16:27\n"
+"PO-Revision-Date: 2020-09-15 16:30\n"
 
 msgid "Back"
-msgstr "뒤로"
+msgstr "적용"
 
 msgid "Disabled"
 msgstr "비활성"
