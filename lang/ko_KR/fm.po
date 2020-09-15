@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-15 16:30\n"
+"PO-Revision-Date: 2020-09-15 20:43\n"
 
 msgid "Back"
 msgstr "적용"
@@ -76,7 +76,7 @@ msgid "Boot Floppy Image (map)"
 msgstr "플로피 이미지 부팅 (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "하드 디스크 이미지 부팅 (GRUB4DOS)"
+msgstr "하드 디스크 이미지 부팅 (map)"
 
 msgid "Boot Hard Drive Image (memdisk)"
 msgstr "하드 디스크 이미지 부팅 (memdisk)"
