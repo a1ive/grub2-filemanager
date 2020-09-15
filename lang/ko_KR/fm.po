@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-15 20:43\n"
+"PO-Revision-Date: 2020-09-15 20:54\n"
 
 msgid "Back"
 msgstr "적용"
@@ -79,7 +79,7 @@ msgid "Boot Hard Drive Image (GRUB4DOS)"
 msgstr "하드 디스크 이미지 부팅 (map)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "하드 디스크 이미지 부팅 (memdisk)"
+msgstr "하드 디스크 이미지 부팅 (map)"
 
 msgid "Boot Hard Drive Image (map)"
 msgstr "하드 디스크 이미지 부팅 (map)"
@@ -247,7 +247,7 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "파일이 연속적이지 않습니다. (${frag} 조각)"
 
 msgid "Language"
-msgstr "언어"
+msgstr "언어 선택"
 
 msgid "Keyboard layouts"
 msgstr "키보드 레이아웃"
