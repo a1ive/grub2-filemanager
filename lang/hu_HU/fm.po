@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 15:53\n"
+"PO-Revision-Date: 2020-09-26 16:03\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -172,58 +172,58 @@ msgid "Open As Font"
 msgstr "Megnyitás Betűtipuskènt"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Grub2 modul beillesztèse"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "BIOS boot szektor betöltèse"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "NTLDR Betöltèse"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "BOOTMGR Betöltèse"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Megnyitás mint GRUB4DOS MÓD"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Multiboot Kernel indìtása"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Multiboot2 Kernel Indìtása"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Linux Kernel betöltèse"
 
 msgid "User menu"
-msgstr ""
+msgstr "Felhasználói menü"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Szövegnèző"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Hexnèző"
 
 msgid "Rename"
-msgstr ""
+msgstr "Átnevezés"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Másolás ide ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Törlés"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Beillesztès ide"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Mégse"
 
 msgid "File Info"
-msgstr ""
+msgstr "Fájl infó"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Fájl Infó (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
 msgstr ""
@@ -376,13 +376,13 @@ msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
 msgstr ""
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "Minden adatot töröl ezen a helyen: (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "FIGYELEM: Minden adat törlődik itt: ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "Nyomj [1]-est a folytatáshoz, vagy egyèb gombot a visszalèpèshez."
 
 msgid "Press [Y] to continue. Press [N] to quit."
 msgstr ""
