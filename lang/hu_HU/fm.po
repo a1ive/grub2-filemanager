@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 16:14\n"
+"PO-Revision-Date: 2020-09-26 16:25\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -190,7 +190,7 @@ msgid "Boot Multiboot Kernel"
 msgstr "Multiboot Kernel indìtása"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr "Multiboot2 Kernel Indìtása"
+msgstr "Multiboot2 Kernel Betöltèse"
 
 msgid "Boot Linux Kernel"
 msgstr "Linux Kernel betöltèse"
@@ -448,44 +448,44 @@ msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
 msgstr "Ctrl+l/Ctrl+r - menü görgetèse"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl+LAlt+F12 - Kèpernyőkèp Kèszìtèse (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ Page Up  ↓ Page Down  [ESC]  Kilèpès"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ Page Up  ↓ Page Down  [e] Kódolás  [ESC]  Kilèpès"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "Fájl: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "Fájl: %s (%s) Kódolás: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "Platform: %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "Nyelv: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "GRUB verzió: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "GRUB Fordìtás dátuma: %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "Licensz: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "A fájl nem található"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "Válassza ki a létrehozandó fájl típusát:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Windows XP Telepìtèse - 1. Lèpès"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Windows XP Telepìtèse - 2. Lèpès"
 
