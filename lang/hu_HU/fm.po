@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 16:33\n"
+"PO-Revision-Date: 2020-09-26 16:43\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -106,7 +106,7 @@ msgid "Boot NT5.x PE (NTBOOT)"
 msgstr "Boot NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "Windows NT6.x VHD/VHDX Indìtása (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
 msgstr "RamOS VHD Indìtása (GRUB4DOS map --mem --top)"
@@ -226,64 +226,64 @@ msgid "File Info (${grubfm_name})"
 msgstr "Fájl Infó (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Fájl infó - Nyomj [ENTER]-t a kilépéshez"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Típus: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Útvonal:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Méret: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "Offset a lemezen: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "A fájl folytonos."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "A fájl Töredezett. (${frag} Töredezett.)"
 
 msgid "Language"
-msgstr ""
+msgstr "Nyelv"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "Billentyűzetkiosztás"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "Javítsd a \"BlInitializeLibrary failed XXX\" hibát"
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "PatchGuard és DSE kikapcsolása indításkor"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Override security policy Telepítése"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Shim ellenőrzés kikapcsolása majd újraindítás"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Grafikus mód kikapcsolása (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Kódolás: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Rendezze név szerint"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Ne rendezze név szerint"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Másodlagos indítási beállítások Letiltása"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Másodlagos indítási belállítások Engedélyezése"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Minden fájl megjelenítése"
 
 msgid "Hide non-bootable files"
 msgstr ""
