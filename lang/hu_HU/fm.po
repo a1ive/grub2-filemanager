@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 16:43\n"
+"PO-Revision-Date: 2020-09-26 17:03\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -25,7 +25,7 @@ msgid "Not available"
 msgstr "Nem elérhető"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr "Windows Bootlogo Beállìtása"
+msgstr "BGRT Beállítása (Windows indítólogó)"
 
 msgid "Open As Grub2 Menu"
 msgstr "Megnyitás grub2 alatt"
@@ -70,40 +70,40 @@ msgid "Boot Floppy Image (GRUB4DOS)"
 msgstr "Bootolható floppy lemezkèp (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "Bootolható floppy lemezkèp (memdisk)"
+msgstr "Floppy lemezkèp indítása (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr "Bootolható floppy lemezkèp (map)"
+msgstr "Floppy lemezkèp indítása (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr "Virtuális HDD boot (GRUB4DOS)"
+msgstr "Virtuális HDD indítása (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr "Virtuális Hdd boot (Memdisk)"
+msgstr "Virtuális Hdd indítása (Memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr "Virtuális Hdd boot (map)"
+msgstr "Virtuális Hdd indítása (map)"
 
 msgid "Boot IMG (map)"
-msgstr "Boot IMG (map)"
+msgstr "IMG indítása (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr "Boot IMG (map --mem)"
+msgstr "IMG indítása (map --mem)"
 
 msgid "Open As Archiver"
 msgstr "Megnyitás archìvumkènt"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr "Boot NT6.x WIM (wimboot)"
+msgstr "NT6.x WIM indítása (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr "Boot NT6.x WIM (NTBOOT)"
+msgstr "NT6.x WIM indítása (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr "Boot NT5.x WIM (NTBOOT)"
+msgstr "NT5.x WIM indítása (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr "Boot NT5.x PE (NTBOOT)"
+msgstr "NT5.x PE indítása (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "Windows NT6.x VHD/VHDX Indìtása (NTBOOT)"
@@ -190,10 +190,10 @@ msgid "Boot Multiboot Kernel"
 msgstr "Multiboot Kernel indìtása"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr "Multiboot2 Kernel Betöltèse"
+msgstr "Multiboot2 Kernel indítása"
 
 msgid "Boot Linux Kernel"
-msgstr "Linux Kernel betöltèse"
+msgstr "Linux Kernel indítása"
 
 msgid "User menu"
 msgstr "Felhasználói menü"
@@ -241,7 +241,7 @@ msgid "Offset on disk: ${offset}"
 msgstr "Offset a lemezen: ${offset}"
 
 msgid "File is contiguous."
-msgstr "A fájl folytonos."
+msgstr "A fájl nem töredezett."
 
 msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "A fájl Töredezett. (${frag} Töredezett.)"
@@ -286,94 +286,94 @@ msgid "Display all files"
 msgstr "Minden fájl megjelenítése"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Nem indítható fájlok elrejtése"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Felbontás (R):${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "ESC Engedélyezése (nem ajánlott)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Hibakeresési mód engedélyezése"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Rejtett Meghajtók megjelenítése"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Extra modulok betöltése"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Kis és nagybetűk engedélyezése fájlneveknél"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Kis és nagybetűk tiltása fájlneveknél"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "AHCI driver betöltése"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Kódolt partíciók csatolása (LUKS and geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Serial Konzol Engedélyezése"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "EFI Beállítások"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "GRUB konzol"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "EFI Parancssor"
 
 msgid "UEFI DUET"
-msgstr ""
+msgstr "UEFI DUET"
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "Külső menü betöltése: (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Windows Indítómenü betöltése innen: ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "MacOS Indítása innen: ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "Induljon el ${winver} innen ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "Indítás ${device} ${info}"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "Indítás ${device} (PBR) ${info}"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "Indítás ${tmp} (MBR) ${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "ISO Indìtása (loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "ISO indítása (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "ISO Típusának felismerése ..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "ISO-ból ${distro} indítása"
 
 msgid "Boot "
-msgstr ""
+msgstr "Rendszerbetöltés "
 
 msgid " From ISO"
-msgstr ""
+msgstr " ISO-ból"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Írd be a felhasználónevet. Default:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "Minden adatot töröl ezen a helyen: (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "Minden adatot töröl ezen a helyen: (hd0,4)."
