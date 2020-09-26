@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 13:13\n"
+"PO-Revision-Date: 2020-09-26 15:53\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -76,100 +76,100 @@ msgid "Boot Floppy Image (map)"
 msgstr "Bootolható floppy lemezkèp (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Virtuális HDD boot (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Virtuális Hdd boot (Memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Virtuális Hdd boot (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Boot IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Boot IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Megnyitás archìvumkènt"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Boot NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Boot NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Boot NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Boot NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Boot RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Boot RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Boot VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Boot VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Boot VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "ISO Csatolása"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Boot ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Boot ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Boot ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Boot ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Boot ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Windows Telepìtèse (X64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Windows Telepìtèse (X86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Windows Telepìtèse"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Betölt ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Boot ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Boot ISO (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "Boot ISO (Ventoy)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "EFI Fájlok bootolása"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Megnyitás Ipxe Scriptkènt"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Megnyitás Betűtipuskènt"
 
 msgid "Insert Grub2 Module"
 msgstr ""
