@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 17:13\n"
+"PO-Revision-Date: 2020-09-26 17:43\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -67,10 +67,10 @@ msgid "Mount Image"
 msgstr "Lemezkèp csatolása"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr "Bootolható floppy lemezkèp (GRUB4DOS)"
+msgstr "Floppy lemezkèp indítása (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr "Floppy lemezkèp indítása (memdisk)"
+msgstr "Floppy lemezkép indítása (memdisk)"
 
 msgid "Boot Floppy Image (map)"
 msgstr "Floppy lemezkèp indítása (map)"
