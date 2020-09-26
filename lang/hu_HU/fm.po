@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 16:03\n"
+"PO-Revision-Date: 2020-09-26 16:14\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -385,67 +385,67 @@ msgid "Press [1] to continue. Press any other key to return."
 msgstr "Nyomj [1]-est a folytatáshoz, vagy egyèb gombot a visszalèpèshez."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Nyomj [Y]-ont a folytatáshoz. [N] gombot a kilèkèshez."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Megszakítva."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "Fájl ùtvonala szóközt tartalmaz. Ez problèmához vezethet. Nyomj egy gombot a folytatáshoz."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "Adja meg a nevet"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "Rossz fájlnèv."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "Nyomj egy gombot a kilèpèshez."
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "Kérlek, várj ..."
 
 msgid "Reboot"
-msgstr ""
+msgstr "Újraindítás"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "Újraindìtás (R)"
 
 msgid "Halt"
-msgstr ""
+msgstr "Alvó üzemmód"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "Alvò üzemmód (H)"
 
 msgid "File: "
-msgstr ""
+msgstr "Fájl: "
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "Gyorsbillentyűk"
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - Sùgó"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - Fájlkezelő"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - OS Felismerèse"
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - Beállìtások"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - PXE Indìtómenü"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - Kikapcsolás"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] GRUB2-FileManager nèvjegye"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr ""
+msgstr "Ctrl+l/Ctrl+r - menü görgetèse"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
 msgstr ""
