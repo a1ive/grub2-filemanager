@@ -10,22 +10,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 12:03\n"
+"PO-Revision-Date: 2020-09-26 12:55\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Vissza"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Letiltva"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Engedélyezve"
 
 msgid "Not available"
-msgstr ""
+msgstr "Nem elérhető"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "Windows Bootlogo Beállìtása"
 
 msgid "Open As Grub2 Menu"
 msgstr ""
