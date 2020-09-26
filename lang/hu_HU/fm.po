@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 16:25\n"
+"PO-Revision-Date: 2020-09-26 16:33\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -109,37 +109,37 @@ msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 msgstr "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr "Boot RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr "RamOS VHD Indìtása (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr "Boot RamOS VHD (GRUB4DOS map --mem)"
+msgstr "RamOS VHD indìtása (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr "Boot VHD (vboot)"
+msgstr "VHD indìtása (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr "Boot VHD (map)"
+msgstr "VHD Indìtása (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr "Boot VHD (map --mem)"
+msgstr "VHD Indìtása (map --mem)"
 
 msgid "Mount ISO"
 msgstr "ISO Csatolása"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr "Boot ISO (GRUB4DOS)"
+msgstr "ISO Indìtása (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr "Boot ISO (memdisk)"
+msgstr "ISO Indìtása (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr "Boot ISO (Easy2Boot)"
+msgstr "ISO Indìtása (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr "Boot ISO (loopback.cfg)"
+msgstr "ISO Indìtása (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr "Boot ISO (partnew)"
+msgstr "ISO Indìtása (partnew)"
 
 msgid "Install Windows (x64)"
 msgstr "Windows Telepìtèse (X64)"
@@ -148,22 +148,22 @@ msgid "Install Windows (x86)"
 msgstr "Windows Telepìtèse (X86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr "Windows Telepìtèse"
+msgstr "Windows Telepìtèse unattended.xml használata nèlkül"
 
 msgid "Load ${xml_name}"
 msgstr "Betölt ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr "Boot ISO (map)"
+msgstr "ISO Indìtása (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr "Boot ISO (map --mem)"
+msgstr "ISO Indìtása (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr "Boot ISO (Ventoy)"
+msgstr "ISO Indìtása (Ventoy)"
 
 msgid "Boot EFI Files"
-msgstr "EFI Fájlok bootolása"
+msgstr "EFI Fájlok Indìtása"
 
 msgid "Open As iPXE Script"
 msgstr "Megnyitás Ipxe Scriptkènt"
