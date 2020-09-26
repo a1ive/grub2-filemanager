@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 17:03\n"
+"PO-Revision-Date: 2020-09-26 17:13\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -289,13 +289,13 @@ msgid "Hide non-bootable files"
 msgstr "Nem indítható fájlok elrejtése"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr "Felbontás (R):${mode_current}"
+msgstr "Felbontás (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
 msgstr "ESC Engedélyezése (nem ajánlott)"
 
 msgid "Enable debug messages"
-msgstr "Hibakeresési mód engedélyezése"
+msgstr "Hibakeresési üzenetek engedélyezése"
 
 msgid "Show hidden drives"
 msgstr "Rejtett Meghajtók megjelenítése"
@@ -379,7 +379,7 @@ msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "Minden adatot töröl ezen a helyen: (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr "FIGYELEM: Minden adat törlődik itt: ${grubfm_file}"
+msgstr "FIGYELEM: Le lesz törölve: ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
 msgstr "Nyomj [1]-est a folytatáshoz, vagy egyèb gombot a visszalèpèshez."
@@ -481,7 +481,7 @@ msgid "File not found"
 msgstr "A fájl nem található"
 
 msgid "Please select the type of file you want to search:"
-msgstr "Válassza ki a létrehozandó fájl típusát:"
+msgstr "Válaszd ki a keresendő fájl típusát:"
 
 msgid "Install Windows XP - STEP 1"
 msgstr "Windows XP Telepìtèse - 1. Lèpès"
