@@ -10,28 +10,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-25 11:51\n"
+"PO-Revision-Date: 2020-09-27 14:54\n"
 
 msgid "Back"
-msgstr ""
+msgstr "Kembali"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Dinonaktifkan"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Diaktifkan"
 
 msgid "Not available"
-msgstr ""
+msgstr "Tidak tersedia"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "Atur BGRT (Logo but Windows)"
 
 msgid "Open As Grub2 Menu"
-msgstr ""
+msgstr "Buka Sebagai Menu Grub2"
 
 msgid "Open As Syslinux Menu"
-msgstr ""
+msgstr "Buka Sebagai Menu Syslinux"
 
 msgid "Open As pxelinux Menu"
 msgstr ""
