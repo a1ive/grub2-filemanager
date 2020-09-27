@@ -1,0 +1,491 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: grub2-filemanager\n"
+"X-Crowdin-Project-ID: 310644\n"
+"X-Crowdin-Language: hu\n"
+"X-Crowdin-File: /master/lang/fm.pot\n"
+"X-Crowdin-File-ID: 16\n"
+"Project-Id-Version: grub2-filemanager\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Hungarian\n"
+"Language: hu_HU\n"
+"PO-Revision-Date: 2020-09-26 17:43\n"
+
+msgid "Back"
+msgstr "Vissza"
+
+msgid "Disabled"
+msgstr "Letiltva"
+
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+msgid "Not available"
+msgstr "Nem elérhető"
+
+msgid "Set BGRT (Windows boot logo)"
+msgstr "BGRT Beállítása (Windows indítólogó)"
+
+msgid "Open As Grub2 Menu"
+msgstr "Megnyitás grub2 alatt"
+
+msgid "Open As Syslinux Menu"
+msgstr "Megnyitás syslinux alatt"
+
+msgid "Open As pxelinux Menu"
+msgstr "Megnyitás pxelinux alatt"
+
+msgid "Open As GRUB4DOS Menu"
+msgstr "Megnyitás GRUB4DOS alatt"
+
+msgid "Open As GRUB-Legacy Menu"
+msgstr "Megnyitás GRUB-Legacy alatt"
+
+msgid "Open As Lua Script"
+msgstr "Megnyitás mint LUA Script"
+
+msgid "Open As Python Script"
+msgstr "Megnyitás mint Python script"
+
+msgid "Open As EFI Application"
+msgstr "Megnyitás mint EFI Alkalmazás"
+
+msgid "Load UEFI driver"
+msgstr "UEFI driver betöltèse"
+
+msgid "Open As EFI Shell Script"
+msgstr "Megnyitás mint EFI script"
+
+msgid "Open As Image"
+msgstr "Megnyitás lemezkèpkènt"
+
+msgid "Press [ESC] to continue..."
+msgstr "Nyomj ESC-t a folytatáshoz"
+
+msgid "Mount Image"
+msgstr "Lemezkèp csatolása"
+
+msgid "Boot Floppy Image (GRUB4DOS)"
+msgstr "Floppy lemezkèp indítása (GRUB4DOS)"
+
+msgid "Boot Floppy Image (memdisk)"
+msgstr "Floppy lemezkép indítása (memdisk)"
+
+msgid "Boot Floppy Image (map)"
+msgstr "Floppy lemezkèp indítása (map)"
+
+msgid "Boot Hard Drive Image (GRUB4DOS)"
+msgstr "Virtuális HDD indítása (GRUB4DOS)"
+
+msgid "Boot Hard Drive Image (memdisk)"
+msgstr "Virtuális Hdd indítása (Memdisk)"
+
+msgid "Boot Hard Drive Image (map)"
+msgstr "Virtuális Hdd indítása (map)"
+
+msgid "Boot IMG (map)"
+msgstr "IMG indítása (map)"
+
+msgid "Boot IMG (map --mem)"
+msgstr "IMG indítása (map --mem)"
+
+msgid "Open As Archiver"
+msgstr "Megnyitás archìvumkènt"
+
+msgid "Boot NT6.x WIM (wimboot)"
+msgstr "NT6.x WIM indítása (wimboot)"
+
+msgid "Boot NT6.x WIM (NTBOOT)"
+msgstr "NT6.x WIM indítása (NTBOOT)"
+
+msgid "Boot NT5.x WIM (NTBOOT)"
+msgstr "NT5.x WIM indítása (NTBOOT)"
+
+msgid "Boot NT5.x PE (NTBOOT)"
+msgstr "NT5.x PE indítása (NTBOOT)"
+
+msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
+msgstr "Windows NT6.x VHD/VHDX Indìtása (NTBOOT)"
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
+msgstr "RamOS VHD Indìtása (GRUB4DOS map --mem --top)"
+
+msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
+msgstr "RamOS VHD indìtása (GRUB4DOS map --mem)"
+
+msgid "Boot VHD (vboot)"
+msgstr "VHD indìtása (vboot)"
+
+msgid "Boot VHD (map)"
+msgstr "VHD Indìtása (map)"
+
+msgid "Boot VHD (map --mem)"
+msgstr "VHD Indìtása (map --mem)"
+
+msgid "Mount ISO"
+msgstr "ISO Csatolása"
+
+msgid "Boot ISO (GRUB4DOS)"
+msgstr "ISO Indìtása (GRUB4DOS)"
+
+msgid "Boot ISO (memdisk)"
+msgstr "ISO Indìtása (memdisk)"
+
+msgid "Boot ISO (Easy2Boot)"
+msgstr "ISO Indìtása (Easy2Boot)"
+
+msgid "Boot ISO (loopback.cfg)"
+msgstr "ISO Indìtása (loopback.cfg)"
+
+msgid "Boot ISO (partnew)"
+msgstr "ISO Indìtása (partnew)"
+
+msgid "Install Windows (x64)"
+msgstr "Windows Telepìtèse (X64)"
+
+msgid "Install Windows (x86)"
+msgstr "Windows Telepìtèse (X86)"
+
+msgid "Install Windows without autounattend.xml"
+msgstr "Windows Telepìtèse unattended.xml használata nèlkül"
+
+msgid "Load ${xml_name}"
+msgstr "Betölt ${xml_name}"
+
+msgid "Boot ISO (map)"
+msgstr "ISO Indìtása (map)"
+
+msgid "Boot ISO (map --mem)"
+msgstr "ISO Indìtása (map --mem)"
+
+msgid "Boot ISO (Ventoy)"
+msgstr "ISO Indìtása (Ventoy)"
+
+msgid "Boot EFI Files"
+msgstr "EFI Fájlok Indìtása"
+
+msgid "Open As iPXE Script"
+msgstr "Megnyitás Ipxe Scriptkènt"
+
+msgid "Open As Font"
+msgstr "Megnyitás Betűtipuskènt"
+
+msgid "Insert Grub2 Module"
+msgstr "Grub2 modul beillesztèse"
+
+msgid "Chainload BIOS Boot Sector"
+msgstr "BIOS boot szektor betöltèse"
+
+msgid "Chainload NTLDR"
+msgstr "NTLDR Betöltèse"
+
+msgid "Chainload BOOTMGR"
+msgstr "BOOTMGR Betöltèse"
+
+msgid "Open As GRUB4DOS MOD"
+msgstr "Megnyitás mint GRUB4DOS MÓD"
+
+msgid "Boot Multiboot Kernel"
+msgstr "Multiboot Kernel indìtása"
+
+msgid "Boot Multiboot2 Kernel"
+msgstr "Multiboot2 Kernel indítása"
+
+msgid "Boot Linux Kernel"
+msgstr "Linux Kernel indítása"
+
+msgid "User menu"
+msgstr "Felhasználói menü"
+
+msgid "Text Viewer"
+msgstr "Szövegnèző"
+
+msgid "Hex Viewer"
+msgstr "Hexnèző"
+
+msgid "Rename"
+msgstr "Átnevezés"
+
+msgid "Copy to ..."
+msgstr "Másolás ide ..."
+
+msgid "Delete"
+msgstr "Törlés"
+
+msgid "Paste here"
+msgstr "Beillesztès ide"
+
+msgid "Cancel"
+msgstr "Mégse"
+
+msgid "File Info"
+msgstr "Fájl infó"
+
+msgid "File Info (${grubfm_name})"
+msgstr "Fájl Infó (${grubfm_name})"
+
+msgid "File Info -- Press [ENTER] to exit"
+msgstr "Fájl infó - Nyomj [ENTER]-t a kilépéshez"
+
+msgid "Type: ${grubfm_fileext}"
+msgstr "Típus: ${grubfm_fileext}"
+
+msgid "Path:"
+msgstr "Útvonal:"
+
+msgid "Size: ${hsize} (${size})"
+msgstr "Méret: ${hsize} (${size})"
+
+msgid "Offset on disk: ${offset}"
+msgstr "Offset a lemezen: ${offset}"
+
+msgid "File is contiguous."
+msgstr "A fájl nem töredezett."
+
+msgid "File is non-contiguous. (${frag} fragments)"
+msgstr "A fájl Töredezett. (${frag} Töredezett.)"
+
+msgid "Language"
+msgstr "Nyelv"
+
+msgid "Keyboard layouts"
+msgstr "Billentyűzetkiosztás"
+
+msgid "Fix \"BlInitializeLibrary failed XXX\" error"
+msgstr "Javítsd a \"BlInitializeLibrary failed XXX\" hibát"
+
+msgid "Disable PatchGuard and DSE at boot time"
+msgstr "PatchGuard és DSE kikapcsolása indításkor"
+
+msgid "Install override security policy"
+msgstr "Override security policy Telepítése"
+
+msgid "Disable shim validation and reboot"
+msgstr "Shim ellenőrzés kikapcsolása majd újraindítás"
+
+msgid "Disable graphics mode (T)"
+msgstr "Grafikus mód kikapcsolása (T)"
+
+msgid "Encoding: "
+msgstr "Kódolás: "
+
+msgid "Sort files by name"
+msgstr "Rendezze név szerint"
+
+msgid "Do not sort files by name"
+msgstr "Ne rendezze név szerint"
+
+msgid "Disable secondary boot options menu"
+msgstr "Másodlagos indítási beállítások Letiltása"
+
+msgid "Enable secondary boot options menu"
+msgstr "Másodlagos indítási belállítások Engedélyezése"
+
+msgid "Display all files"
+msgstr "Minden fájl megjelenítése"
+
+msgid "Hide non-bootable files"
+msgstr "Nem indítható fájlok elrejtése"
+
+msgid "Resolution (R): ${mode_current}"
+msgstr "Felbontás (R): ${mode_current}"
+
+msgid "Enable ESC (not recommended)"
+msgstr "ESC Engedélyezése (nem ajánlott)"
+
+msgid "Enable debug messages"
+msgstr "Hibakeresési üzenetek engedélyezése"
+
+msgid "Show hidden drives"
+msgstr "Rejtett Meghajtók megjelenítése"
+
+msgid "Load extra modules"
+msgstr "Extra modulok betöltése"
+
+msgid "Enable case-sensitive filenames"
+msgstr "Kis és nagybetűk engedélyezése fájlneveknél"
+
+msgid "Disable case-sensitive filenames"
+msgstr "Kis és nagybetűk tiltása fájlneveknél"
+
+msgid "Load AHCI Driver"
+msgstr "AHCI driver betöltése"
+
+msgid "Mount encrypted volumes (LUKS and geli)"
+msgstr "Kódolt partíciók csatolása (LUKS and geli)"
+
+msgid "Enable serial terminal"
+msgstr "Serial Konzol Engedélyezése"
+
+msgid "EFI Firmware Setup"
+msgstr "EFI Beállítások"
+
+msgid "GRUB Console"
+msgstr "GRUB konzol"
+
+msgid "EFI Shell"
+msgstr "EFI Parancssor"
+
+msgid "UEFI DUET"
+msgstr "UEFI DUET"
+
+msgid "Load External Menu on (${device}) ${info}"
+msgstr "Külső menü betöltése: (${device}) ${info}"
+
+msgid "Load Windows Boot Manager on ${device} ${info}"
+msgstr "Windows Indítómenü betöltése innen: ${device} ${info}"
+
+msgid "Boot macOS on ${device} ${info}"
+msgstr "MacOS Indítása innen: ${device} ${info}"
+
+msgid "Boot ${winver} on ${device} ${info}"
+msgstr "Induljon el ${winver} innen ${device} ${info}"
+
+msgid "Boot ${device} ${info}"
+msgstr "Indítás ${device} ${info}"
+
+msgid "Boot ${device} (PBR) ${info}"
+msgstr "Indítás ${device} (PBR) ${info}"
+
+msgid "Boot ${tmp} (MBR) [${tmpsize}]"
+msgstr "Indítás ${tmp} (MBR) ${tmpsize}]"
+
+msgid "Boot ISO (Loopback)"
+msgstr "ISO Indìtása (loopback)"
+
+msgid "Boot ISO (ISOLINUX)"
+msgstr "ISO indítása (ISOLINUX)"
+
+msgid "Detecting ISO type ..."
+msgstr "ISO Típusának felismerése ..."
+
+msgid "Boot ${distro} From ISO"
+msgstr "ISO-ból ${distro} indítása"
+
+msgid "Boot "
+msgstr "Rendszerbetöltés "
+
+msgid " From ISO"
+msgstr " ISO-ból"
+
+msgid "Please input the username. Default:user Super User:root Devuan:devuan"
+msgstr "Írd be a felhasználónevet. Default:user Super User:root Devuan:devuan"
+
+msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
+msgstr "Minden adatot töröl ezen a helyen: (${grubfm_disk},4)"
+
+msgid "WARNING: Will erase ALL data on (hd0,4)."
+msgstr "Minden adatot töröl ezen a helyen: (hd0,4)."
+
+msgid "WARNING: Will delete ${grubfm_file}"
+msgstr "FIGYELEM: Le lesz törölve: ${grubfm_file}"
+
+msgid "Press [1] to continue. Press any other key to return."
+msgstr "Nyomj [1]-est a folytatáshoz, vagy egyèb gombot a visszalèpèshez."
+
+msgid "Press [Y] to continue. Press [N] to quit."
+msgstr "Nyomj [Y]-ont a folytatáshoz. [N] gombot a kilèkèshez."
+
+msgid "Canceled."
+msgstr "Megszakítva."
+
+msgid "File path contains spaces.This may cause problems!Press any key to continue."
+msgstr "Fájl ùtvonala szóközt tartalmaz. Ez problèmához vezethet. Nyomj egy gombot a folytatáshoz."
+
+msgid "Enter the name"
+msgstr "Adja meg a nevet"
+
+msgid "Bad file name."
+msgstr "Rossz fájlnèv."
+
+msgid "Press any key to exit."
+msgstr "Nyomj egy gombot a kilèpèshez."
+
+msgid "Please wait ..."
+msgstr "Kérlek, várj ..."
+
+msgid "Reboot"
+msgstr "Újraindítás"
+
+msgid "Reboot (R)"
+msgstr "Újraindìtás (R)"
+
+msgid "Halt"
+msgstr "Alvó üzemmód"
+
+msgid "Halt (H)"
+msgstr "Alvò üzemmód (H)"
+
+msgid "File: "
+msgstr "Fájl: "
+
+msgid "Hotkeys"
+msgstr "Gyorsbillentyűk"
+
+msgid "F1 - Help"
+msgstr "F1 - Sùgó"
+
+msgid "F2 - File Manager"
+msgstr "F2 - Fájlkezelő"
+
+msgid "F3 - OS Detect"
+msgstr "F3 - OS Felismerèse"
+
+msgid "F4 - Settings"
+msgstr "F4 - Beállìtások"
+
+msgid "F5 - PXE Boot Menu"
+msgstr "F5 - PXE Indìtómenü"
+
+msgid "F6 - Power Off"
+msgstr "F6 - Kikapcsolás"
+
+msgid "[A] About GRUB2-FileManager"
+msgstr "[A] GRUB2-FileManager nèvjegye"
+
+msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
+msgstr "Ctrl+l/Ctrl+r - menü görgetèse"
+
+msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
+msgstr "LCtrl+LAlt+F12 - Kèpernyőkèp Kèszìtèse (EFI)"
+
+msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
+msgstr "↑ Page Up  ↓ Page Down  [ESC]  Kilèpès"
+
+msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
+msgstr "↑ Page Up  ↓ Page Down  [e] Kódolás  [ESC]  Kilèpès"
+
+msgid "FILE: %s (%s)"
+msgstr "Fájl: %s (%s)"
+
+msgid "FILE: %s (%s) ENCODING: %s"
+msgstr "Fájl: %s (%s) Kódolás: %s"
+
+msgid "Platform: %s-%s"
+msgstr "Platform: %s-%s"
+
+msgid "Language: %s"
+msgstr "Nyelv: %s"
+
+msgid "GRUB version: %s"
+msgstr "GRUB verzió: %s"
+
+msgid "GRUB build date: %s"
+msgstr "GRUB Fordìtás dátuma: %s"
+
+msgid "License: GNU GPLv3"
+msgstr "Licensz: GNU GPLv3"
+
+msgid "File not found"
+msgstr "A fájl nem található"
+
+msgid "Please select the type of file you want to search:"
+msgstr "Válaszd ki a keresendő fájl típusát:"
+
+msgid "Install Windows XP - STEP 1"
+msgstr "Windows XP Telepìtèse - 1. Lèpès"
+
+msgid "Install Windows XP - STEP 2"
+msgstr "Windows XP Telepìtèse - 2. Lèpès"
+
