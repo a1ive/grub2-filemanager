@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-08-18 01:13\n"
+"PO-Revision-Date: 2020-09-27 20:18\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -250,10 +250,10 @@ msgid "Language"
 msgstr "Язык"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "Раскладка клавиатуры"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "Исправте ошибку \"BlInitializeLibrary failed XXX\""
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "Отключить PatchGuard и DSE во время загрузки"
@@ -478,14 +478,14 @@ msgid "License: GNU GPLv3"
 msgstr "Лицензия: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "Файл не найден"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "Выберите тип файла для поиска:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Установить Windows XP - Шаг 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Установить Windows XP - Шаг 2"
 
