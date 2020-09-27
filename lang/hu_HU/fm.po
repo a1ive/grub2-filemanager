@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-26 17:43\n"
+"PO-Revision-Date: 2020-09-27 13:24\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -277,10 +277,10 @@ msgid "Do not sort files by name"
 msgstr "Ne rendezze név szerint"
 
 msgid "Disable secondary boot options menu"
-msgstr "Másodlagos indítási beállítások Letiltása"
+msgstr "Másodlagos indítási beállítások Letiltva"
 
 msgid "Enable secondary boot options menu"
-msgstr "Másodlagos indítási belállítások Engedélyezése"
+msgstr "Másodlagos indítási belállítások Engedélyezve"
 
 msgid "Display all files"
 msgstr "Minden fájl megjelenítése"
