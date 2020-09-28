@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-27 14:54\n"
+"PO-Revision-Date: 2020-09-28 22:35\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -34,10 +34,10 @@ msgid "Open As Syslinux Menu"
 msgstr "Buka Sebagai Menu Syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Buka Sebagai Menu pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Buka Sebagai Menu GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
 msgstr ""
