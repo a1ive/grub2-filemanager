@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-28 22:43\n"
+"PO-Revision-Date: 2020-09-28 22:53\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -70,31 +70,31 @@ msgid "Boot Floppy Image (GRUB4DOS)"
 msgstr "Jalankan (boot) Floppy Image (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Jalankan (boot) Floppy Image (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Jalankan (boot) Floppy Image (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Jalankan (boot) Hard Drive Image (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Jalankan (boot) Hard Drive Image (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Jalankan (boot) Hard Drive Image (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Jalankan (boot) IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Jalankan (boot) IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Buka Sebagai Pengarsip"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Jalankan (boot) NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
 msgstr ""
