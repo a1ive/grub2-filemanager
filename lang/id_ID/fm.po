@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-28 22:35\n"
+"PO-Revision-Date: 2020-09-28 22:43\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -40,34 +40,34 @@ msgid "Open As GRUB4DOS Menu"
 msgstr "Buka Sebagai Menu GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Buka Sebagai Menu GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Buka Sebagai Skrip Lua"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Buka Sebagai Skrip Phyton"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Buka Sebagai Aplikasi EFI"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "Memuat driver UEFI"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "Buka Sebagai Skrip Kerangka EFI"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "Buka Sebagai Image"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "Tekan [ESC] untuk melanjutkan..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Muatkan Image"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Jalankan (boot) Floppy Image (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
 msgstr ""
