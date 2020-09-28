@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-28 22:53\n"
+"PO-Revision-Date: 2020-09-28 23:03\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -97,7 +97,7 @@ msgid "Boot NT6.x WIM (wimboot)"
 msgstr "Jalankan (boot) NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Jalankan (boot) NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
 msgstr ""
