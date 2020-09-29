@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-29 04:38\n"
+"PO-Revision-Date: 2020-09-29 04:45\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -175,79 +175,79 @@ msgid "Insert Grub2 Module"
 msgstr "Masukkan Modul Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Esekusi Sektor Boot BIOS"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Esekusi NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Esekusi BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Buka sebagai MOD GRUB4DOS"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Jalankan (boot) Kernel Multiboot"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Jalankan (boot) Kernel Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Jalakan (boot) Kernel Linux"
 
 msgid "User menu"
-msgstr ""
+msgstr "Menu Pengguna"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Penampil Teks"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Penampil Hex"
 
 msgid "Rename"
-msgstr ""
+msgstr "Ganti Nama"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Salin ke..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Hapus"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Tempel Di sini"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 msgid "File Info"
-msgstr ""
+msgstr "Informasi Berkas"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Informasi Berkas (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Informasi Berkas -- Tekan [ENTER] untuk keluar"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Jenis: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Jalur:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Ukuran: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "Keseimbangan pada disk: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "Berkas ini berdampingan."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "Berkas ini tidak berdampingan. (${frag} fragments)"
 
 msgid "Language"
-msgstr ""
+msgstr "Bahasa"
 
 msgid "Keyboard layouts"
 msgstr ""
