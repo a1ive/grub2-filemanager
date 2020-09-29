@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-08-18 01:13\n"
+"PO-Revision-Date: 2020-09-29 12:38\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -253,7 +253,7 @@ msgid "Keyboard layouts"
 msgstr "Розкладки клавіатури"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "Виправлено помилку \"BlInitializeLibrary failed XXX\""
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "Вимкнути PatchGuard і DSE під час завантаження"
