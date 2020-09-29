@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-29 04:53\n"
+"PO-Revision-Date: 2020-09-29 05:03\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -253,151 +253,151 @@ msgid "Keyboard layouts"
 msgstr "Tata Letak Papan Ketik"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "Perbaiki kesalahan \"BlInitializeLibrary failed XXX\""
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "Matikan PatchGuard dan DSE ketika setiap boot"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Pasang dengan kesampingkan kebijakan keamanan"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Matikan validasi shim dan nyalakan ulang"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Matikan mode antar muka grafis (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Sandikan: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Aturkan berkas dari nama"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Jangan aturkan berkas dari nama"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Matikan menu pilihan boot kedua"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Aktifkan menu pilihan boot kedua"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Tampilkan semua berkas"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Sembunyikan berkas non-bootable"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Resolusi (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Aktifkan ESC (tidak disarankan)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Aktifkan pesan debug"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Tampilkan drive tersembunyi"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Muat modul ekstra"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Aktifkan kepekaan kapital pada nama berkas"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Matikan kepekaan kapital pada nama berkas"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Muat Driver AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Muatkan volume terenkripsi (LUKS dan geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Aktifkan terminal serial"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Persiapan Firma EFI"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "Konsol GRUB"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "Kerangka EFI"
 
 msgid "UEFI DUET"
 msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "Muat Menu Eksternal pada (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Muat Windows Boot Manager pada ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "Jalankan (boot) macOS pada ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "Jalankan (boot) ${winver} pada ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "Jalankan (boot) ${device} ${info}"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "Jalankan (boot) ${device} (PBR) ${info}"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "Jalankan (boot) ${tmp} (MBR) [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "Mendeteksi jenis ISO ..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "Jalankan (boot) ${distro} Dari ISO"
 
 msgid "Boot "
-msgstr ""
+msgstr "Jalankan (boot) "
 
 msgid " From ISO"
-msgstr ""
+msgstr " Dari ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Silakan masukkan nama pengguna. Umum:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "PERINGATAN: Ini akan menghapus SEMUA DATA pada (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "PERINGATAN: Ini akan menghapus SEMUA DATA pada (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "PERINGATAN: Ini akan menghapus ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "Tekan [1] untuk melanjutkkan. Tekan sembarang tombol untuk kembali."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Tekan [Y] untuk melanjutkkan. Tekan [N] untuk keluar."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Dibatalkan."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "Jalur berkas mengandung spasi. Ini mungkin menyebabkan masalah! Tekan sembarang tombol untuk melanjutkkan."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "Masukkan nama"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "Nama berkas buruk."
 
 msgid "Press any key to exit."
 msgstr ""
