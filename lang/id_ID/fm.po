@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-29 05:03\n"
+"PO-Revision-Date: 2020-09-29 05:13\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -400,7 +400,7 @@ msgid "Bad file name."
 msgstr "Nama berkas buruk."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "Tekan sembarang tombol untuk keluar."
 
 msgid "Please wait ..."
 msgstr "Silakan Tunggu ..."
@@ -424,7 +424,7 @@ msgid "Hotkeys"
 msgstr "Kunci Tombol"
 
 msgid "F1 - Help"
-msgstr "F1 - Bantuan\""
+msgstr "F1 - Bantuan"
 
 msgid "F2 - File Manager"
 msgstr "F2 - Manajemen Berkas"
