@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-28 23:43\n"
+"PO-Revision-Date: 2020-09-29 04:38\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -103,76 +103,76 @@ msgid "Boot NT5.x WIM (NTBOOT)"
 msgstr "Jalankan (boot) NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Jalankan (boot) NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Jalankan (boot) Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Jalankan (boot) RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Jalankan (boot) RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Jalankan (boot) VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Jalankan (boot) VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Jalankan (boot) VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Muatkan ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Pasang Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Pasang Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Pasang Windows tanpa autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Memuat ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (Ventoy)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Jalankan (boot) Berkas EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Buka Sebagai Skrip iPXE"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Buka Sebagai Fon Huruf"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Masukkan Modul Grub2"
 
 msgid "Chainload BIOS Boot Sector"
 msgstr ""
