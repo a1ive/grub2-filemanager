@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-09-27 14:54\n"
+"PO-Revision-Date: 2020-09-29 05:13\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -34,458 +34,458 @@ msgid "Open As Syslinux Menu"
 msgstr "Buka Sebagai Menu Syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr ""
+msgstr "Buka Sebagai Menu pxelinux"
 
 msgid "Open As GRUB4DOS Menu"
-msgstr ""
+msgstr "Buka Sebagai Menu GRUB4DOS"
 
 msgid "Open As GRUB-Legacy Menu"
-msgstr ""
+msgstr "Buka Sebagai Menu GRUB-Legacy"
 
 msgid "Open As Lua Script"
-msgstr ""
+msgstr "Buka Sebagai Skrip Lua"
 
 msgid "Open As Python Script"
-msgstr ""
+msgstr "Buka Sebagai Skrip Phyton"
 
 msgid "Open As EFI Application"
-msgstr ""
+msgstr "Buka Sebagai Aplikasi EFI"
 
 msgid "Load UEFI driver"
-msgstr ""
+msgstr "Memuat driver UEFI"
 
 msgid "Open As EFI Shell Script"
-msgstr ""
+msgstr "Buka Sebagai Skrip Kerangka EFI"
 
 msgid "Open As Image"
-msgstr ""
+msgstr "Buka Sebagai Image"
 
 msgid "Press [ESC] to continue..."
-msgstr ""
+msgstr "Tekan [ESC] untuk melanjutkan..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Muatkan Image"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Jalankan (boot) Floppy Image (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Jalankan (boot) Floppy Image (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Jalankan (boot) Floppy Image (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Jalankan (boot) Hard Drive Image (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Jalankan (boot) Hard Drive Image (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Jalankan (boot) Hard Drive Image (map)"
 
 msgid "Boot IMG (map)"
-msgstr ""
+msgstr "Jalankan (boot) IMG (map)"
 
 msgid "Boot IMG (map --mem)"
-msgstr ""
+msgstr "Jalankan (boot) IMG (map --mem)"
 
 msgid "Open As Archiver"
-msgstr ""
+msgstr "Buka Sebagai Pengarsip"
 
 msgid "Boot NT6.x WIM (wimboot)"
-msgstr ""
+msgstr "Jalankan (boot) NT6.x WIM (wimboot)"
 
 msgid "Boot NT6.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Jalankan (boot) NT6.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x WIM (NTBOOT)"
-msgstr ""
+msgstr "Jalankan (boot) NT5.x WIM (NTBOOT)"
 
 msgid "Boot NT5.x PE (NTBOOT)"
-msgstr ""
+msgstr "Jalankan (boot) NT5.x PE (NTBOOT)"
 
 msgid "Boot Windows NT6.x VHD/VHDX (NTBOOT)"
-msgstr ""
+msgstr "Jalankan (boot) Windows NT6.x VHD/VHDX (NTBOOT)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-msgstr ""
+msgstr "Jalankan (boot) RamOS VHD (GRUB4DOS map --mem --top)"
 
 msgid "Boot RamOS VHD (GRUB4DOS map --mem)"
-msgstr ""
+msgstr "Jalankan (boot) RamOS VHD (GRUB4DOS map --mem)"
 
 msgid "Boot VHD (vboot)"
-msgstr ""
+msgstr "Jalankan (boot) VHD (vboot)"
 
 msgid "Boot VHD (map)"
-msgstr ""
+msgstr "Jalankan (boot) VHD (map)"
 
 msgid "Boot VHD (map --mem)"
-msgstr ""
+msgstr "Jalankan (boot) VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Muatkan ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (GRUB4DOS)"
 
 msgid "Boot ISO (memdisk)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (memdisk)"
 
 msgid "Boot ISO (Easy2Boot)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (Easy2Boot)"
 
 msgid "Boot ISO (loopback.cfg)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (loopback.cfg)"
 
 msgid "Boot ISO (partnew)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (partnew)"
 
 msgid "Install Windows (x64)"
-msgstr ""
+msgstr "Pasang Windows (x64)"
 
 msgid "Install Windows (x86)"
-msgstr ""
+msgstr "Pasang Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Pasang Windows tanpa autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Memuat ${xml_name}"
 
 msgid "Boot ISO (map)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (map)"
 
 msgid "Boot ISO (map --mem)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (map --mem)"
 
 msgid "Boot ISO (Ventoy)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (Ventoy)"
 
 msgid "Boot EFI Files"
-msgstr ""
+msgstr "Jalankan (boot) Berkas EFI"
 
 msgid "Open As iPXE Script"
-msgstr ""
+msgstr "Buka Sebagai Skrip iPXE"
 
 msgid "Open As Font"
-msgstr ""
+msgstr "Buka Sebagai Fon Huruf"
 
 msgid "Insert Grub2 Module"
-msgstr ""
+msgstr "Masukkan Modul Grub2"
 
 msgid "Chainload BIOS Boot Sector"
-msgstr ""
+msgstr "Esekusi Sektor Boot BIOS"
 
 msgid "Chainload NTLDR"
-msgstr ""
+msgstr "Esekusi NTLDR"
 
 msgid "Chainload BOOTMGR"
-msgstr ""
+msgstr "Esekusi BOOTMGR"
 
 msgid "Open As GRUB4DOS MOD"
-msgstr ""
+msgstr "Buka sebagai MOD GRUB4DOS"
 
 msgid "Boot Multiboot Kernel"
-msgstr ""
+msgstr "Jalankan (boot) Kernel Multiboot"
 
 msgid "Boot Multiboot2 Kernel"
-msgstr ""
+msgstr "Jalankan (boot) Kernel Multiboot2"
 
 msgid "Boot Linux Kernel"
-msgstr ""
+msgstr "Jalakan (boot) Kernel Linux"
 
 msgid "User menu"
-msgstr ""
+msgstr "Menu Pengguna"
 
 msgid "Text Viewer"
-msgstr ""
+msgstr "Penampil Teks"
 
 msgid "Hex Viewer"
-msgstr ""
+msgstr "Penampil Hex"
 
 msgid "Rename"
-msgstr ""
+msgstr "Ganti Nama"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Salin ke..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Hapus"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Tempel Di sini"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 msgid "File Info"
-msgstr ""
+msgstr "Informasi Berkas"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Informasi Berkas (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Informasi Berkas -- Tekan [ENTER] untuk keluar"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Jenis: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Jalur:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Ukuran: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
-msgstr ""
+msgstr "Keseimbangan pada disk: ${offset}"
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "Berkas ini berdampingan."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "Berkas ini tidak berdampingan. (${frag} fragments)"
 
 msgid "Language"
-msgstr ""
+msgstr "Bahasa"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "Tata Letak Papan Ketik"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "Perbaiki kesalahan \"BlInitializeLibrary failed XXX\""
 
 msgid "Disable PatchGuard and DSE at boot time"
-msgstr ""
+msgstr "Matikan PatchGuard dan DSE ketika setiap boot"
 
 msgid "Install override security policy"
-msgstr ""
+msgstr "Pasang dengan kesampingkan kebijakan keamanan"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Matikan validasi shim dan nyalakan ulang"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Matikan mode antar muka grafis (T)"
 
 msgid "Encoding: "
-msgstr ""
+msgstr "Sandikan: "
 
 msgid "Sort files by name"
-msgstr ""
+msgstr "Aturkan berkas dari nama"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Jangan aturkan berkas dari nama"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Matikan menu pilihan boot kedua"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Aktifkan menu pilihan boot kedua"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Tampilkan semua berkas"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Sembunyikan berkas non-bootable"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Resolusi (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
-msgstr ""
+msgstr "Aktifkan ESC (tidak disarankan)"
 
 msgid "Enable debug messages"
-msgstr ""
+msgstr "Aktifkan pesan debug"
 
 msgid "Show hidden drives"
-msgstr ""
+msgstr "Tampilkan drive tersembunyi"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Muat modul ekstra"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Aktifkan kepekaan kapital pada nama berkas"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Matikan kepekaan kapital pada nama berkas"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Muat Driver AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Muatkan volume terenkripsi (LUKS dan geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Aktifkan terminal serial"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Persiapan Firma EFI"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "Konsol GRUB"
 
 msgid "EFI Shell"
-msgstr ""
+msgstr "Kerangka EFI"
 
 msgid "UEFI DUET"
 msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "Muat Menu Eksternal pada (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Muat Windows Boot Manager pada ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "Jalankan (boot) macOS pada ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "Jalankan (boot) ${winver} pada ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "Jalankan (boot) ${device} ${info}"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "Jalankan (boot) ${device} (PBR) ${info}"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "Jalankan (boot) ${tmp} (MBR) [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (Loopback)"
 
 msgid "Boot ISO (ISOLINUX)"
-msgstr ""
+msgstr "Jalankan (boot) ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "Mendeteksi jenis ISO ..."
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "Jalankan (boot) ${distro} Dari ISO"
 
 msgid "Boot "
-msgstr ""
+msgstr "Jalankan (boot) "
 
 msgid " From ISO"
-msgstr ""
+msgstr " Dari ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
-msgstr ""
+msgstr "Silakan masukkan nama pengguna. Umum:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "PERINGATAN: Ini akan menghapus SEMUA DATA pada (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
-msgstr ""
+msgstr "PERINGATAN: Ini akan menghapus SEMUA DATA pada (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "PERINGATAN: Ini akan menghapus ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "Tekan [1] untuk melanjutkkan. Tekan sembarang tombol untuk kembali."
 
 msgid "Press [Y] to continue. Press [N] to quit."
-msgstr ""
+msgstr "Tekan [Y] untuk melanjutkkan. Tekan [N] untuk keluar."
 
 msgid "Canceled."
-msgstr ""
+msgstr "Dibatalkan."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr ""
+msgstr "Jalur berkas mengandung spasi. Ini mungkin menyebabkan masalah! Tekan sembarang tombol untuk melanjutkkan."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "Masukkan nama"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "Nama berkas buruk."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "Tekan sembarang tombol untuk keluar."
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "Silakan Tunggu ..."
 
 msgid "Reboot"
-msgstr ""
+msgstr "Mulai Ulang"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "Mulai Ulang (R)"
 
 msgid "Halt"
-msgstr ""
+msgstr "Matikan"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "Matikan (H)"
 
 msgid "File: "
-msgstr ""
+msgstr "Berkas: "
 
 msgid "Hotkeys"
-msgstr ""
+msgstr "Kunci Tombol"
 
 msgid "F1 - Help"
-msgstr ""
+msgstr "F1 - Bantuan"
 
 msgid "F2 - File Manager"
-msgstr ""
+msgstr "F2 - Manajemen Berkas"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - Deteksi Sistem Operasi"
 
 msgid "F4 - Settings"
-msgstr ""
+msgstr "F4 - Setelan"
 
 msgid "F5 - PXE Boot Menu"
-msgstr ""
+msgstr "F5 - Menu PXE Boot"
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - Mematikan Daya"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] Tentang GRUB2-FileManager"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr ""
+msgstr "Ctrl+l/Ctrl+r - Gulirkan teks daftar menu"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl+LAlt+F12 - Lakukan Tangkapan Layar (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ Page Up  ↓ Page Down  [ESC] Keluar"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ Page Up  ↓ Page Down  [e] Menyandikan  [ESC] Keluar"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "BERKAS: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "BERKAS: %s (%s) MENYANDIKAN: %s"
 
 msgid "Platform: %s-%s"
 msgstr ""
 
 msgid "Language: %s"
-msgstr ""
+msgstr "Bahasa: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "Versi GRUB: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "Tanggal dibuat GRUB: %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "Lisensi: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "Berkas tidak ditemukan"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "Silakan pilih tipe berkas yang anda ingin cari:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Pasang Windows XP - TAHAP 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Pasang Windows XP - TAHAP 1"
 
