@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-11-01 10:33\n"
+"PO-Revision-Date: 2020-11-01 14:04\n"
 
 msgid "Back"
 msgstr "返回"
@@ -343,7 +343,7 @@ msgid "Boot ${winver} on ${device} ${info}"
 msgstr "启动 ${device} ${info} 上的 ${winver}"
 
 msgid "Boot Windows Recovery on ${device} ${info}"
-msgstr ""
+msgstr "启动 ${device} ${info} 上的 Windows 恢复环境"
 
 msgid "Boot ${device} ${info}"
 msgstr "启动 ${device} ${info}"
