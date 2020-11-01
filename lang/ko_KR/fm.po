@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-09-16 02:44\n"
+"PO-Revision-Date: 2020-11-01 10:33\n"
 
 msgid "Back"
 msgstr "뒤로"
@@ -341,6 +341,9 @@ msgstr "${device} ${info} 에 있는 macOS 부팅"
 
 msgid "Boot ${winver} on ${device} ${info}"
 msgstr "${device} ${info} 에 있는 ${winver} 부팅"
+
+msgid "Boot Windows Recovery on ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${device} ${info}"
 msgstr "${device} ${info} 부팅"
