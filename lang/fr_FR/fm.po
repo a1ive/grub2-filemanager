@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-08-18 01:13\n"
+"PO-Revision-Date: 2020-11-01 10:33\n"
 
 msgid "Back"
 msgstr "Retour"
@@ -341,6 +341,9 @@ msgstr "Démarrez macOS sur ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
 msgstr "Démarrer ${winver} sur ${device} ${info}"
+
+msgid "Boot Windows Recovery on ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${device} ${info}"
 msgstr "Démarrer ${device} ${info}"
