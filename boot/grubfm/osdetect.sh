@@ -168,6 +168,24 @@ do
       unset winver;
     fi;
   fi;
+  if [ -f "(${device})/Recovery/WindowsRE/winre.wim" ];
+  then
+    menuentry $"Boot Windows Recovery on ${device} ${info}" "${device}" --class nt6 {
+        set lang=en_US;
+        terminal_output console;
+        loopback wimboot ${prefix}/wimboot.xz;
+        ntboot --efi=(wimboot)/bootmgfw.efi "(${2})/Recovery/WindowsRE/winre.wim";
+    }
+  fi;
+  if [ -f "(${device})/Recovery/winre.wim" ];
+  then
+    menuentry $"Boot Windows Recovery on ${device} ${info}" "${device}" --class nt6 {
+        set lang=en_US;
+        terminal_output console;
+        loopback wimboot ${prefix}/wimboot.xz;
+        ntboot --efi=(wimboot)/bootmgfw.efi "(${2})/Recovery/winre.wim";
+    }
+  fi;
 done;
 
 source ${prefix}/global.sh;

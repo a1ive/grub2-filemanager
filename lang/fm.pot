@@ -331,6 +331,9 @@ msgstr ""
 msgid "Boot ${winver} on ${device} ${info}"
 msgstr ""
 
+msgid "Boot Windows Recovery on ${device} ${info}"
+msgstr ""
+
 msgid "Boot ${device} ${info}"
 msgstr ""
 
