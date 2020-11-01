@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-27 13:34\n"
+"PO-Revision-Date: 2020-11-01 10:33\n"
 
 msgid "Back"
 msgstr "Vissza"
@@ -341,6 +341,9 @@ msgstr "MacOS Indítása innen: ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
 msgstr "Induljon el ${winver} innen ${device} ${info}"
+
+msgid "Boot Windows Recovery on ${device} ${info}"
+msgstr ""
 
 msgid "Boot ${device} ${info}"
 msgstr "Indítás ${device} ${info}"
