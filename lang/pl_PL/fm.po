@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-07-26 10:03\n"
+"PO-Revision-Date: 2020-11-01 18:53\n"
 
 msgid "Back"
 msgstr "Wstecz"
@@ -341,6 +341,9 @@ msgstr "Uruchom macOS na ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
 msgstr "Uruchom ${winver} na ${device} ${info}"
+
+msgid "Boot Windows Recovery on ${device} ${info}"
+msgstr "Uruchom odzyskiwanie Windows na ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
 msgstr "Uruchom ${device} ${info}"

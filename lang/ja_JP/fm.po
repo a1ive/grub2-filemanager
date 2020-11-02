@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2020-08-18 01:13\n"
+"PO-Revision-Date: 2020-11-01 10:33\n"
 
 msgid "Back"
 msgstr ""
@@ -340,6 +340,9 @@ msgid "Boot macOS on ${device} ${info}"
 msgstr ""
 
 msgid "Boot ${winver} on ${device} ${info}"
+msgstr ""
+
+msgid "Boot Windows Recovery on ${device} ${info}"
 msgstr ""
 
 msgid "Boot ${device} ${info}"
