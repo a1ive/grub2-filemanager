@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-11-01 10:33\n"
+"PO-Revision-Date: 2020-11-02 12:44\n"
 
 msgid "Back"
 msgstr "Voltar"
@@ -343,7 +343,7 @@ msgid "Boot ${winver} on ${device} ${info}"
 msgstr "Iniciar ${winver} em ${device} ${info}"
 
 msgid "Boot Windows Recovery on ${device} ${info}"
-msgstr ""
+msgstr "Iniciar a Recuperação do Windows em ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
 msgstr "Iniciar ${device} ${info}"
