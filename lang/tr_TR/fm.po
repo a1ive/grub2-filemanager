@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-11-01 10:33\n"
+"PO-Revision-Date: 2020-11-03 10:07\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -343,7 +343,7 @@ msgid "Boot ${winver} on ${device} ${info}"
 msgstr "${device} ${info} üzerinde ${winver} dosyasını önyükleyin"
 
 msgid "Boot Windows Recovery on ${device} ${info}"
-msgstr ""
+msgstr "${device} ${info} üzerinden Windows Kurtarmayı açın"
 
 msgid "Boot ${device} ${info}"
 msgstr "Önyükle ${device} ${info}"
