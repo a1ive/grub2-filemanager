@@ -2,10 +2,7 @@ source ${prefix}/func.sh;
 
 if [ "$grub_platform" = "efi" ];
 then
-  unmap_cd;
-  fucksb -i;
-  fucksb --off;
-  map "${grubfm_file}";
+  map -f "${grubfm_file}";
 elif [ "$grub_platform" = "pc" ];
 then
   to_g4d_path "${grubfm_file}";
