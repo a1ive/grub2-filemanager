@@ -2,6 +2,7 @@ grubfm*.efi
 grubfm*.efi.signed
 grubfm*.iso
 grubfm*.7z
+grubfm*.elf
 build
 *.crt
 test*.cer
