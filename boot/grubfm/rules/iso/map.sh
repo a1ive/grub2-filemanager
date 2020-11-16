@@ -12,7 +12,7 @@ then
     linux ${prefix}/grub.exe --config-file=${g4d_cmd};
   else
     set enable_progress_indicator=1;
-    linux16 ${prefix}/memdisk iso raw;
+    linux16 ${prefix}/memdisk.xz iso raw;
     initrd16 "${grubfm_file}";
   fi;
   boot;
