@@ -144,7 +144,7 @@ do
     echo "copying ${modules}.mod"
     cp grub/x86_64-efi/${modules}.mod build/boot/grubfm/x86_64-efi/
 done
-# cp arch/x64/*.efi build/boot/grubfm
+# cp grub/x86_64-efi/efiemu*.o build/boot/grubfm/x86_64-efi/
 cp arch/x64/*.xz build/boot/grubfm
 cd build
 find ./boot | cpio -o -H newc | xz -9 -e > ./memdisk.xz
@@ -202,11 +202,15 @@ do
     cp grub/i386-multiboot/${modules}.mod build/boot/grubfm/i386-multiboot/
 done
 cp arch/multiboot/*.xz build/boot/grubfm/
+cp arch/multiboot/memdisk build/boot/grubfm/
+cp arch/multiboot/grub.exe build/boot/grubfm/
 cd build
 find ./boot | cpio -o -H newc | xz -9 -e > ./memdisk.xz
 cd ..
 rm -r build/boot/grubfm/i386-multiboot
 rm build/boot/grubfm/*.xz
+rm build/boot/grubfm/memdisk
+rm build/boot/grubfm/grub.exe
 modules=$(cat arch/multiboot/builtin.lst)
 grub-mkimage -m ./build/memdisk.xz -d ./grub/i386-multiboot -p "(memdisk)/boot/grubfm" -c arch/multiboot/config.cfg -o grubfm.elf -O i386-multiboot $modules
 rm build/memdisk.xz

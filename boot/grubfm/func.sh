@@ -19,14 +19,11 @@ function to_g4d_path {
   lua ${prefix}/g4d_path.lua;
 }
 
-function unmap_cd {
-  for dev in (cd*);
-  do
-    if [ -e ${dev} ];
-    then
-      map -x ${dev};
-    fi;
-  done;
+function to_g4d_menu {
+  set g4d_menu="${1}";
+  loopback -d rd;
+  loopback -m rd ${prefix}/initrd.img.xz;
+  lua ${prefix}/g4d_menu.lua;
 }
 
 function auto_swap {
@@ -35,17 +32,17 @@ function auto_swap {
     regexp -s devnum '^hd([0-9]+).*$' ${grubfm_disk};
     if test "devnum" != "0";
     then
-      drivemap -s (hd0) (${grubfm_disk});
+      map -s (hd0) (${grubfm_disk});
     fi;
   fi;
 }
 
 function swap_hd01 {
-  if [ "$grub_platform" = "pc" ];
+  if [ "$grub_platform" != "efi" ];
   then
     if [ "${bootdev}" = "hd0" ];
     then
-      drivemap -s (hd0) (hd1);
+      map -s (hd0) (hd1);
     fi;
   fi;
 }

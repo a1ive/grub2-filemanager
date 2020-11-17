@@ -14,7 +14,7 @@ elif test -d (loop)/wifislax; then
     initrd $initrd_img;
 elif test -d (loop)/wifiway; then
     set kcmdline="";
-    if [ "$grub_platform" = "pc" ]; then
+    if [ "$grub_platform" != "efi" ]; then
         kcmdline="${kcmdline} autoexec=telinit~4 vga=788 noload=efi";
     fi;
     linux $vmlinuz_img $kcmdline $linux_extra;
