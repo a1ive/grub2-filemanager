@@ -201,11 +201,9 @@ do
     echo "copying ${modules}.mod"
     cp grub/i386-multiboot/${modules}.mod build/boot/grubfm/i386-multiboot/
 done
-cp arch/legacy/grub.exe build/boot/grubfm/
-cp arch/legacy/memdisk build/boot/grubfm/
-cp arch/legacy/duet64.iso build/boot/grubfm/
-cp arch/legacy/winvblk.img build/boot/grubfm/
-cp arch/legacy/*.xz build/boot/grubfm/
+cp arch/multiboot/*.xz build/boot/grubfm/
+cp arch/multiboot/memdisk build/boot/grubfm/
+cp arch/multiboot/grub.exe build/boot/grubfm/
 cd build
 find ./boot | cpio -o -H newc | xz -9 -e > ./memdisk.xz
 cd ..
@@ -213,8 +211,6 @@ rm -r build/boot/grubfm/i386-multiboot
 rm build/boot/grubfm/*.xz
 rm build/boot/grubfm/memdisk
 rm build/boot/grubfm/grub.exe
-rm build/boot/grubfm/duet64.iso
-rm build/boot/grubfm/winvblk.img
 modules=$(cat arch/multiboot/builtin.lst)
 grub-mkimage -m ./build/memdisk.xz -d ./grub/i386-multiboot -p "(memdisk)/boot/grubfm" -c arch/multiboot/config.cfg -o grubfm.elf -O i386-multiboot $modules
 rm build/memdisk.xz
@@ -229,11 +225,9 @@ do
     cp grub/i386-pc/${modules}.mod build/boot/grubfm/i386-pc/
 done
 cp arch/legacy/insmod.lst build/boot/grubfm/
-cp arch/legacy/grub.exe build/boot/grubfm/
-cp arch/legacy/memdisk build/boot/grubfm/
-cp arch/legacy/duet64.iso build/boot/grubfm/
-cp arch/legacy/winvblk.img build/boot/grubfm/
-cp arch/legacy/*.xz build/boot/grubfm/
+cp arch/multiboot/*.xz build/boot/grubfm/
+cp arch/multiboot/memdisk build/boot/grubfm/
+cp arch/multiboot/grub.exe build/boot/grubfm/
 cd build
 find ./boot | cpio -o -H newc | xz -9 -e > ./fm.loop
 cd ..
@@ -241,10 +235,18 @@ rm -r build/boot
 grub-mkimage -d ./grub/i386-pc -p "(memdisk)/boot/grubfm" -c arch/legacy/config.cfg -o ./build/core.img -O i386-pc $builtin
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
-cp arch/legacy/MAP build/
-cp -r arch/legacy/ntboot/* build/
 touch build/ventoy.dat
+xorriso -as mkisofs -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm_pc.iso build
+rm build/fmldr
+rm build/fm.loop
 
+echo "i386-pc preloader"
+builtin=$(cat arch/legacy/preloader.lst)
+grub-mkimage -d ./grub/i386-pc -p "(cd)/boot/grub" -c arch/legacy/preloader.cfg -o ./build/core.img -O i386-pc $builtin
+cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
+rm build/core.img
+cp grubfm.elf build/
+touch build/ventoy.dat
 xorriso -as mkisofs -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 
 dd if=/dev/zero of=build/efi.img bs=1M count=16

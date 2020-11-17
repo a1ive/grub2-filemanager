@@ -40,8 +40,6 @@ then
   then
     export grub_secureboot="Enabled";
     sbpolicy -i;
-    # fucksb -i;
-    # fucksb --off;
   fi;
   if [ "${grub_secureboot}" = "0" ];
   then

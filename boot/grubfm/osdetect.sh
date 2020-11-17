@@ -127,8 +127,7 @@ do
       unset sysver;
       unset winver;
     fi;
-  elif [ "$grub_platform" = "pc" ];
-  then
+  else
     probe --set=bootable -b ${device};
     if regexp 'bootable' "${bootable}";
     then

@@ -76,7 +76,7 @@ function iso_detect {
       lua ${prefix}/rules/iso/winpe.lua;
     }
   fi;
-  if [ -f (loop)/WIN51 -a "${grub_platform}" = "pc" ];
+  if [ -f (loop)/WIN51 -a "${grub_platform}" != "efi" ];
   then
     export linux_extra=" ";
     export icon=nt5;

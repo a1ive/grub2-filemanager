@@ -4,8 +4,7 @@ if [ "$grub_platform" = "efi" ];
 then
   vhd -d vhd0; vhd -p vhd0 "${grubfm_file}";
   map --type=HD (vhd0);
-elif [ "$grub_platform" = "pc" ];
-then
+else
   to_g4d_path "${grubfm_file}";
   if [ -n "${g4d_path}" ];
   then

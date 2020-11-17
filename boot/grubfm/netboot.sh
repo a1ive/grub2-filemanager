@@ -18,8 +18,7 @@ if [ "$grub_platform" = "efi" ];
 then
   set netbootxyz=netboot.xyz.efi
   set chain=chainloader
-elif [ "$grub_platform" = "pc" ];
-then
+else
   set netbootxyz=netboot.xyz.lkrn
   set chain=linux16
 fi;
