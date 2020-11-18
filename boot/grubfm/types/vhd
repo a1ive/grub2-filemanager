@@ -10,12 +10,6 @@ icon = img
 enable = all
 
 [1]
-menu = vhd/ramos.sh
-title = "Boot RamOS VHD (GRUB4DOS map --mem --top)"
-icon = img
-enable = bios
-
-[2]
 menu = vhd/map.sh
 title = "Boot VHD (map)"
 icon = img
