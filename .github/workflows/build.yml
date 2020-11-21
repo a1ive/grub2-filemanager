@@ -1,0 +1,39 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+    - name: initialize
+      run: |
+        sudo -E apt-get -y install gettext grub2-common genisoimage p7zip-full mtools xorriso
+
+    - name: update_grub2
+      run: ./update_grub2.sh
+
+    - name: build
+      run: |
+        echo "3" | ./build.sh
+
+    - name: upload
+      uses: marvinpinto/action-automatic-releases@latest
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: false
+        title: "Development Build"
+        files: |
+          grubfm.iso
+          grubfm_pc.iso
+          grubfm_multiarch.iso
+          grubfm.elf
+          grubfmx64.efi
+          grubfmia32.efi
+          grubfmaa64.efi
