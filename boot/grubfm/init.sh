@@ -73,6 +73,11 @@ terminal_output gfxterm;
 set color_normal=white/black;
 set color_highlight=black/white;
 
+if [ "${grub_mb_firmware}" = "unknown" ];
+then
+  terminal_input at_keyboard;
+fi;
+
 search --set=aioboot -f -q -n /AIO/grub/grub.cfg;
 search --set=ventoy -f -q -n /ventoy/ventoy.cpio;
 if [ -n "${aioboot}" ];
