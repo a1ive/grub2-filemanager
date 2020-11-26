@@ -20,14 +20,24 @@ then
   then
     chainloader -t (${aioboot})/efi/boot/boot${EFI_ARCH}.efi;
   else
-    multiboot (${aioboot})/AIO/grub/i386-pc/core.img;
+    set root=${aioboot};
+    multiboot /AIO/grub/i386-pc/core.img;
   fi;
   boot;
 elif [ -n "${ventoy}" ];
 then
   if [ "${grub_platform}" = "efi" ];
   then
-    chainloader -t (${ventoy})/efi/boot/boot${EFI_ARCH}.efi;
+    if [ -f (${ventoy})/efi/boot/VENTOY${EFI_ARCH}.efi ];
+    then
+      chainloader -t (${ventoy})/efi/boot/VENTOY${EFI_ARCH}.efi;
+    else
+      chainloader -t (${ventoy})/efi/boot/BOOT${EFI_ARCH}.efi;
+    fi;
+  elif [ -f "(${ventoy})/ventoy/core.img" ];
+  then
+    set root=${ventoy};
+    multiboot /ventoy/core.img;
   else
     regexp --set=1:vtdisk '(hd[0-9]+)[0-9,]*' "${ventoy}";
     chainloader (${vtdisk})+1;
