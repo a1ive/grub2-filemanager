@@ -51,6 +51,11 @@ hiddenentry " " --hotkey f6 {
 if [ -n "${grubfm_current_path}" ];
 then
   hiddenentry " " --hotkey 0x02000066 {
-    configfile $prefix/search.sh;
+    if [ -f "(${user})/boot/grubfm/search.sh" ];
+    then
+      configfile (${user})/boot/grubfm/search.sh;
+    else
+      configfile $prefix/search.sh;
+    fi;
   }
 fi;
