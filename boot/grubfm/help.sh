@@ -41,9 +41,21 @@ menuentry $"F4 - Settings" {
   echo;
 }
 
-menuentry $"F5 - PXE Boot Menu" {
-  echo;
-}
+if [ -n "${aioboot}" ];
+then
+  menuentry $"F5 - AIO Boot" {
+    echo;
+  }
+elif [ -n "${ventoy}" ];
+then
+  menuentry $"F5 - Ventoy" {
+    echo;
+  }
+else
+  menuentry $"F5 - PXE Boot Menu" {
+    echo;
+  }
+fi;
 
 menuentry $"F6 - Power Off" {
   echo;
