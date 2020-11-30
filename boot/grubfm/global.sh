@@ -48,6 +48,9 @@ hiddenentry " " --hotkey f6 {
   configfile ${prefix}/power.sh;
 }
 
-#hiddenentry " " --hotkey 0x02000066 {
-#  lua $prefix/search.lua;
-#}
+if [ -n "${grubfm_current_path}" ];
+then
+  hiddenentry " " --hotkey 0x02000066 {
+    configfile $prefix/search.sh;
+  }
+fi;
