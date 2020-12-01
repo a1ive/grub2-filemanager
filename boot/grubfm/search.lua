@@ -25,7 +25,7 @@ local function enum_subdir (name, isdir)
   then
     local title = search_path .. subdir .. name
     --print (title)
-    grub.add_icon_menu (search_ico, "grubfm_open " .. title, title)
+    grub.add_icon_menu (search_ico, "grubfm_open \"" .. title .. "\"", title)
   end
 end
 
@@ -40,7 +40,7 @@ local function enum_file (name, isdir)
   then
     local title = search_path .. name
     --print (title)
-    grub.add_icon_menu (search_ico, "grubfm_open " .. title, title)
+    grub.add_icon_menu (search_ico, "grubfm_open \"" .. title .. "\"", title)
   end
 end
 
