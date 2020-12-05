@@ -15,7 +15,7 @@
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
 menuentry $"Reboot (R)" --class reboot --hotkey "r" {
-  reboot;
+  reset -w;
 }
 
 menuentry $"Halt (H)" --class halt --hotkey "h" {
