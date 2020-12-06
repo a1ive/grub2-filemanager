@@ -9,4 +9,4 @@ community_bridge: # grub2-filemanager
 liberapay: # Replace with a single Liberapay username
 issuehunt: # Replace with a single IssueHunt username
 otechie: # Replace with a single Otechie username
-custom: ["https://www.paypal.me/a1ive", "https://raw.githubusercontent.com/a1ive/a1ive.github.io/master/images/alipay.jpg"]
+custom: ["https://www.paypal.me/a1ive", "https://gitee.com/a1ive/a1ive/blob/master/images/alipay.jpg"]
