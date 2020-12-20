@@ -36,7 +36,7 @@ then
 else
   menuentry $"UEFI DUET" --class uefi {
     g4d_cmd="map --mem (rd)+1 (0xff);map --hook;chainloader (0xff)";
-    linux ${prefix}/grub.exe --config-file=$g4d_cmd;
+    linux ${prefix}/grub.exe --config-file=${g4d_cmd};
     initrd ${prefix}/duet64.iso.xz;
   }
 fi;
