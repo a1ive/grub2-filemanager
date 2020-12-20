@@ -33,6 +33,18 @@ terminal-box: "term_bkg_*.png"
         + label {text = "@@RAM" color = "#ffffff"}
         + label {text = " MiB" color = "#ffffff"}
     }
+    + hbox {
+        + label {text = "CPU: " color = "#ffffff"}
+        + label {text = "@@cpu_brand" color = "#ffffff"}
+    }
+    + hbox {
+        + label {text = "CPU Temperature: " color = "#ffffff"}
+        + label {text = "@@cpu_temp" color = "#ffffff"}
+    }
+    + hbox {
+        + label {text = "Hypervisor: " color = "#ffffff"}
+        + label {text = "@@cpu_hyper" color = "#ffffff"}
+    }
 }
 
 # Show the boot menu
