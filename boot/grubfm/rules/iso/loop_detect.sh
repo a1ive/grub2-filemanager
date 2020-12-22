@@ -137,14 +137,6 @@ function iso_detect {
     export src=kaos;
     return;
   fi;
-  if [ -d (loop)/manjaro ];
-  then
-    export linux_extra="img_dev=/dev/disk/by-uuid/${rootuuid} img_loop=${grubfm_path} misolabel=${looplabel}";
-    export icon=manjaro;
-    export distro="Manjaro";
-    export src=manjaro;
-    return;
-  fi;
   if [ -d (loop)/chakra ];
   then
     export linux_extra="img_dev=/dev/disk/by-uuid/${rootuuid} img_loop=${grubfm_path} chakraisolabel=${looplabel}";
