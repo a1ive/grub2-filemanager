@@ -94,7 +94,7 @@ function iso_detect {
   fi;
   if [ -d (loop)/arch ];
   then
-    if [ -f (loop)/boot/vmlinuz_* ];
+    if [ -f (loop)/boot/vmlinuz_x86_64 ];
     then
       export linux_extra="iso_loop_dev=/dev/disk/by-uuid/${rootuuid} iso_loop_path=${grubfm_path}";
     else
