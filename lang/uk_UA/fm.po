@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-11-01 10:33\n"
+"PO-Revision-Date: 2020-12-25 10:04\n"
 
 msgid "Back"
 msgstr "Назад"
@@ -343,7 +343,7 @@ msgid "Boot ${winver} on ${device} ${info}"
 msgstr "Завантажити ${winver} із ${device} ${info}"
 
 msgid "Boot Windows Recovery on ${device} ${info}"
-msgstr ""
+msgstr "Завантажити Windows Recovery на ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
 msgstr "Завантажити ${device} ${info}"
