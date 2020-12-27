@@ -21,7 +21,7 @@ hiddenentry " " --hotkey f4 {
 }
 
 hiddenentry " " --hotkey f5 {
-  configfile ${prefix}/f5.sh;
+  configfile ${prefix}/hwinfo.sh;
 }
 
 hiddenentry " " --hotkey f6 {

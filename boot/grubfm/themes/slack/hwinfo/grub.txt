@@ -1,0 +1,145 @@
+# Global Property
+title-text: ""
+title-color: "#000000"
+message-color: "#333333"
+message-bg-color: "#f2f2f2"
+desktop-color: "#000000"
+desktop-image: "background.png"
+terminal-box: "term_bkg_*.png"
+
++ vbox {
+  left = 38%
+  top = 22%
+  width = 23%
+  height = 54%
+  + label {text = "GRUB" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {translate = "Time" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {translate = "Build date" color = "#ffffff"}
+  + label {translate = "Platform" color = "#ffffff"}
+  + label {translate = "UEFI Version" color = "#ffffff"}
+  + label {translate = "SecureBoot" color = "#ffffff"}
+  + label {translate = "RAM" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {translate = "Language" color = "#ffffff"}
+  + label {translate = "Resolution" color = "#ffffff"}
+  + label {translate = "Case-sensitive" color = "#ffffff"}
+  + label {translate = "Progress indicator" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "PAGER" color = "#ffffff"}
+  + label {text = "BOOTDEV" color = "#ffffff"}
+  + label {text = "CMDPATH" color = "#ffffff"}
+  + label {text = "GFXPAYLOAD" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "Ventoy" color = "#ffffff"}
+  + label {text = "AIO-Boot" color = "#ffffff"}
+}
+
++ vbox {
+  left = 61%
+  top = 22%
+  width = 23%
+  height = 54%
+  + label {text = "@@grub_pkg_version" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {var = "var_time" hook = "date --human --set=var_time" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "@@grub_build_date" color = "#ffffff"}
+  + hbox {
+    + label {text = "@@grub_cpu" color = "#ffffff"}
+    + label {text = "-" color = "#ffffff"}
+    + label {text = "@@grub_platform" color = "#ffffff"}
+  }
+  + label {text = "@@grub_uefi_version" color = "#ffffff"}
+  + label {text = "@@grub_secureboot" color = "#ffffff"}
+  + hbox {
+    + label {text = "@@RAM" color = "#ffffff"}
+    + label {text = "MB" color = "#ffffff"}
+  }
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "@@gfxmode" color = "#ffffff"}
+  + label {text = "@@lang" color = "#ffffff"}
+  + label {text = "@@grub_fs_case_sensitive" color = "#ffffff"}
+  + label {text = "@@enable_progress_indicator" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "@@pager" color = "#ffffff"}
+  + label {text = "@@bootdev" color = "#ffffff"}
+  + label {text = "@@cmdpath" color = "#ffffff"}
+  + label {text = "@@gfxpayload" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "@@ventoy" color = "#ffffff"}
+  + label {text = "@@aioboot" color = "#ffffff"}
+}
+
+# Show the boot menu
++ boot_menu {
+  left = 10%
+  width = 20%
+  top = 15%
+  height = 70%
+  item_color = "#f5f5f5"
+  selected_item_color = "#f5f5f5"
+  item_height = 54
+  item_padding = 15
+  item_spacing = 5
+  icon_width = 48
+  icon_height = 48
+  item_icon_space = 20
+  selected_item_pixmap_style= "select_bkg_*.png"
+  menu_pixmap_style = "menu_bkg_*.png"
+  scrollbar = false
+}
+
++ canvas {
+  left = 32%
+  width = 58%
+  top = 15%
+  height = 70%
+  + image {file = "menu_bkg_c.png"}
+}
+
++ hbox {
+  top = 100%-55
+  left = 36%
+  width = 27%
+  + vbox {
+    + label {text = "[F1]" color = "#ffffff"}
+    + image {file = "dock/help.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F2]" color = "#ffffff"}
+    + image {file = "dock/fm.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F3]" color = "#ffffff"}
+    + image {file = "dock/boot.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F4]" color = "#ffffff"}
+    + image {file = "dock/settings.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F5]" color = "#ffffff"}
+    + image {file = "dock/hwinfo.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F6]" color = "#ffffff"}
+    + image {file = "dock/logout.png"}
+  }
+}

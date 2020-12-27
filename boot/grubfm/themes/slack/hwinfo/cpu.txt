@@ -1,0 +1,146 @@
+# Global Property
+title-text: ""
+title-color: "#000000"
+message-color: "#333333"
+message-bg-color: "#f2f2f2"
+desktop-color: "#000000"
+desktop-image: "background.png"
+terminal-box: "term_bkg_*.png"
+
++ vbox {
+  left = 38%
+  top = 22%
+  width = 23%
+  height = 54%
+  + label {text = "@@cpu_brand" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {translate = "Manufacturer" color = "#ffffff"}
+  + label {translate = "Socket Designation" color = "#ffffff"}
+  + label {translate = "Temperature" color = "#ffffff"}
+  + label {translate = "Current Speed" color = "#ffffff"}
+  + label {translate = "Max Speed" color = "#ffffff"}
+  + label {translate = "External Clock Frequency" color = "#ffffff"}
+  + label {translate = "Voltage" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {translate = "Hypervisor presents" color = "#ffffff"}
+  + label {translate = "Hypervisor signature" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {translate = "Supported features" color = "#ffffff"}
+  + label {translate = "Long mode" color = "#ffffff"}
+  + label {translate = "PAE" color = "#ffffff"}
+  + label {translate = "Virtual 8086 mode" color = "#ffffff"}
+  + label {translate = "Page Size Extension" color = "#ffffff"}
+  + label {translate = "Time Stamp Counter" color = "#ffffff"}
+  + label {translate = "Model-specific registers" color = "#ffffff"}
+  + label {translate = "MTRR" color = "#ffffff"}
+  + label {translate = "Supported instructions" color = "#ffffff"}
+}
+
++ vbox {
+  left = 61%
+  top = 22%
+  width = 23%
+  height = 54%
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "@@cpu_vendor" color = "#ffffff"}
+  + label {text = "@@cpu_socket" color = "#ffffff"}
+  + hbox {
+    + label {var = "cpu_temp" hook = "cputemp cpu_temp" color = "#ffffff"}
+    + label {text = " (℃)" color = "#ffffff"}
+  }
+  + hbox {
+    + label {text = "@@cpu_cur_speed" color = "#ffffff"}
+    + label {text = "MHz" color = "#ffffff"}
+  }
+  + hbox {
+    + label {text = "@@cpu_max_speed" color = "#ffffff"}
+    + label {text = "MHz" color = "#ffffff"}
+  }
+  + hbox {
+    + label {text = "@@cpu_clock" color = "#ffffff"}
+    + label {text = "MHz" color = "#ffffff"}
+  }
+  + label {text = "@@cpu_volt" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "@@cpu_hyperv" color = "#ffffff"}
+  + label {text = "@@cpu_vmsign" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "" color = "#ffffff"}
+  + label {text = "@@cpu_long" color = "#ffffff"}
+  + label {text = "@@cpu_pae" color = "#ffffff"}
+  + label {text = "@@cpu_vme" color = "#ffffff"}
+  + label {text = "@@cpu_pse" color = "#ffffff"}
+  + label {text = "@@cpu_tsc" color = "#ffffff"}
+  + label {text = "@@cpu_msr" color = "#ffffff"}
+  + label {text = "@@cpu_mtrr" color = "#ffffff"}
+  + label {text = "@@cpu_ins" color = "#ffffff"}
+}
+
+# Show the boot menu
++ boot_menu {
+  left = 10%
+  width = 20%
+  top = 15%
+  height = 70%
+  item_color = "#f5f5f5"
+  selected_item_color = "#f5f5f5"
+  item_height = 54
+  item_padding = 15
+  item_spacing = 5
+  icon_width = 48
+  icon_height = 48
+  item_icon_space = 20
+  selected_item_pixmap_style= "select_bkg_*.png"
+  menu_pixmap_style = "menu_bkg_*.png"
+  scrollbar = false
+}
+
++ canvas {
+  left = 32%
+  width = 58%
+  top = 15%
+  height = 70%
+  + image {file = "menu_bkg_c.png"}
+}
+
++ hbox {
+  top = 100%-55
+  left = 36%
+  width = 27%
+  + vbox {
+    + label {text = "[F1]" color = "#ffffff"}
+    + image {file = "dock/help.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F2]" color = "#ffffff"}
+    + image {file = "dock/fm.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F3]" color = "#ffffff"}
+    + image {file = "dock/boot.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F4]" color = "#ffffff"}
+    + image {file = "dock/settings.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F5]" color = "#ffffff"}
+    + image {file = "dock/hwinfo.png"}
+  }
+  + image {file = "dock/space.png"}
+  + vbox {
+    + label {text = "[F6]" color = "#ffffff"}
+    + image {file = "dock/logout.png"}
+  }
+}

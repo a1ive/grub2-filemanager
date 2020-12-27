@@ -14,17 +14,6 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-set cpu_brand="unknown";
-set cpu_hyper="unknown";
-set cpu_temp="unknown";
-
-if type cpuid;
-then
-  cpuid --brand --set=cpu_brand;
-  cpuid --hypervisor --set=cpu_hyper;
-  cputemp cpu_temp;
-fi;
-
 if [ -f "${theme_help}" ];
 then
   export theme=${theme_help};
@@ -120,7 +109,7 @@ hiddenentry "" --hotkey f4 {
 }
 
 hiddenentry "" --hotkey f5 {
-  configfile ${prefix}/f5.sh;
+  configfile ${prefix}/hwinfo.sh;
 }
 
 hiddenentry "" --hotkey f6 {
