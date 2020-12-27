@@ -36,7 +36,7 @@ function display_bmp (filename)
   else
     video.bitmap_blit (bitmap, (scr_w - w) / 2, (scr_h - h) / 2, 0, 0, scr_w, scr_h)
   end
-  video.draw_string (grub.gettext ("Press any key to exit."), "unifont", {r=255, g=255, b=255}, 0, scr_h - 16)
+  video.draw_string (grub.gettext ("Press any key to exit."), "Unifont Regular 16", {r=255, g=255, b=255}, 0, scr_h - 16)
   grub.refresh ()
   video.bitmap_close (bitmap)
   input.getkey ()

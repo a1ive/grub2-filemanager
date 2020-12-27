@@ -233,6 +233,15 @@ function check_board {
   check_smbios;
 }
 
+function hwinfo_set_theme {
+  if [ -f "${1}" ];
+  then
+    export theme=${1};
+  else
+    unset theme;
+  fi;
+}
+
 videomode -c mode_current;
 
 if [ "${mode_current}" != "0x0" ];
@@ -240,17 +249,17 @@ then
   if [ "${hwinfo_op}" = "cpu" ];
   then
     check_cpu;
-    export theme=${prefix}/themes/slack/hwinfo/cpu.txt;
+    hwinfo_set_theme "${theme_hw_cpu}";
   elif [ "${hwinfo_op}" = "ram" ];
   then
     check_ram;
-    export theme=${prefix}/themes/slack/hwinfo/ram.txt;
+    hwinfo_set_theme "${theme_hw_ram}";
   elif [ "${hwinfo_op}" = "board" ];
   then
     check_board;
-    export theme=${prefix}/themes/slack/hwinfo/board.txt;
+    hwinfo_set_theme "${theme_hw_board}";
   else
-    export theme=${prefix}/themes/slack/hwinfo/grub.txt;
+    hwinfo_set_theme "${theme_hw_grub}";
   fi;
   unset hwinfo_op;
 
@@ -268,7 +277,7 @@ then
     configfile ${prefix}/hwinfo.sh;
   }
 
-  menuentry $"MOTHERBOARD" --class board {
+  menuentry $"MAINBOARD (B)" --class board --hotkey=b {
     export hwinfo_op=board;
     configfile ${prefix}/hwinfo.sh;
   }

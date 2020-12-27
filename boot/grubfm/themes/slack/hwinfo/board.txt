@@ -80,7 +80,7 @@ terminal-box: "term_bkg_*.png"
   item_spacing = 5
   icon_width = 48
   icon_height = 48
-  item_icon_space = 20
+  item_icon_space = 10
   selected_item_pixmap_style= "select_bkg_*.png"
   menu_pixmap_style = "menu_bkg_*.png"
   scrollbar = false
