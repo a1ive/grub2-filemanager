@@ -83,7 +83,6 @@ search --set=ventoy -f -q -n /ventoy/ventoy.cpio;
 
 export theme_std=${prefix}/themes/slack/theme.txt;
 export theme_fm=${prefix}/themes/slack/fm.txt;
-export theme_help=${prefix}/themes/slack/help.txt;
 export theme_info=${prefix}/themes/slack/info.txt;
 export theme_hw_grub=${prefix}/themes/slack/hwinfo/grub.txt;
 export theme_hw_cpu=${prefix}/themes/slack/hwinfo/cpu.txt;
