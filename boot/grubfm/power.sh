@@ -14,8 +14,12 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-menuentry $"Reboot (R)" --class reboot --hotkey "r" {
+menuentry $"Warm Reboot (R)" --class reboot --hotkey "r" {
   reset -w;
+}
+
+menuentry $"Cold Reboot (S)" --class reboot --hotkey "s" {
+  reset -c;
 }
 
 menuentry $"Halt (H)" --class halt --hotkey "h" {
@@ -25,24 +29,13 @@ menuentry $"Halt (H)" --class halt --hotkey "h" {
 if [ "$grub_platform" = "efi" ];
 then
   menuentry $"EFI Firmware Setup" --class mem {
-    fwsetup;
+    reset -f;
   }
 
-  menuentry $"EFI Shell" --class ms-dos {
-    set lang=en_US;
-    terminal_output console;
-    shell;
-  }
 else
-  menuentry $"UEFI DUET" --class uefi {
-    g4d_cmd="map --mem (rd)+1 (0xff);map --hook;chainloader (0xff)";
-    linux ${prefix}/grub.exe --config-file=${g4d_cmd};
-    initrd ${prefix}/duet64.iso.xz;
+  menuentry $"Halt (don't use APM)" --class uefi {
+    halt -n;
   }
 fi;
-
-menuentry $"GRUB Console" --class ms-dos {
-  commandline;
-}
 
 source ${prefix}/global.sh;

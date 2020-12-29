@@ -5,7 +5,7 @@ then
 fi;
 
 hiddenentry " " --hotkey f1 {
-  configfile ${prefix}/help.sh;
+  configfile ${prefix}/hwinfo.sh;
 }
 
 hiddenentry " " --hotkey f2 {
@@ -21,7 +21,7 @@ hiddenentry " " --hotkey f4 {
 }
 
 hiddenentry " " --hotkey f5 {
-  configfile ${prefix}/hwinfo.sh;
+  configfile ${prefix}/util.sh;
 }
 
 hiddenentry " " --hotkey f6 {

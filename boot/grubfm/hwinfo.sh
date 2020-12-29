@@ -281,70 +281,64 @@ then
     export hwinfo_op=board;
     configfile ${prefix}/hwinfo.sh;
   }
-fi;
 
-menuentry $"PXE (P)" --class net --hotkey=p {
-  configfile ${prefix}/netboot.sh;
-}
-
-if [ -n "${ventoy}" ];
-then
-  menuentry $"VENTOY (V)" --class ventoy --hotkey=v {
-    if [ "${grub_platform}" = "efi" ];
+  hiddenentry " " --hotkey f2 {
+    if [ -n "${grubfm_current_path}" ];
     then
-      if [ -f (${ventoy})/efi/boot/VENTOY${EFI_ARCH}.efi ];
-      then
-        chainloader -t (${ventoy})/efi/boot/VENTOY${EFI_ARCH}.efi;
-      else
-        chainloader -t (${ventoy})/efi/boot/BOOT${EFI_ARCH}.efi;
-      fi;
-    elif [ -f "(${ventoy})/ventoy/core.img" ];
-    then
-      set root=${ventoy};
-      multiboot /ventoy/core.img;
+      grubfm "${grubfm_current_path}";
     else
-      regexp --set=1:vtdisk '(hd[0-9]+)[0-9,]*' "${ventoy}";
-      chainloader (${vtdisk})+1;
+      grubfm;
     fi;
-    boot;
+  }
+
+  hiddenentry " " --hotkey f3 {
+    configfile ${prefix}/osdetect.sh;
+  }
+
+  hiddenentry " " --hotkey f4 {
+    configfile ${prefix}/settings.sh;
+  }
+
+  hiddenentry " " --hotkey f5 {
+    configfile ${prefix}/util.sh;
+  }
+
+  hiddenentry " " --hotkey f6 {
+    configfile ${prefix}/power.sh;
+  }
+else
+  menuentry "Hotkeys" {
+    echo;
+  }
+
+  menuentry "F1 - Help" {
+    echo;
+  }
+
+  menuentry "F2 - File Manager" --hotkey f2 {
+    if [ -n "${grubfm_current_path}" ];
+    then
+      grubfm "${grubfm_current_path}";
+    else
+      grubfm;
+    fi;
+  }
+
+  menuentry "F3 - OS Detect" --hotkey f3 {
+    configfile ${prefix}/osdetect.sh;
+  }
+
+  menuentry "F4 - Settings" --hotkey f4 {
+    configfile ${prefix}/settings.sh;
+  }
+
+  menuentry "F5 - Multiboot Toolkits" --hotkey f5 {
+    configfile ${prefix}/util.sh;
+  }
+
+  menuentry "F6 - Power Off" --hotkey f6 {
+    configfile ${prefix}/power.sh;
   }
 fi;
 
-if [ -n "${aioboot}" ];
-then
-  menuentry $"AIOBOOT (A)" --class aioboot --hotkey=a {
-    if [ "${grub_platform}" = "efi" ];
-    then
-      chainloader -t (${aioboot})/efi/boot/boot${EFI_ARCH}.efi;
-    else
-      set root=${aioboot};
-      multiboot /AIO/grub/i386-pc/core.img;
-    fi;
-    boot;
-  }
-fi;
 
-hiddenentry " " --hotkey f1 {
-  configfile ${prefix}/help.sh;
-}
-
-hiddenentry " " --hotkey f2 {
-  if [ -n "${grubfm_current_path}" ];
-  then
-    grubfm "${grubfm_current_path}";
-  else
-    grubfm;
-  fi;
-}
-
-hiddenentry " " --hotkey f3 {
-  configfile ${prefix}/osdetect.sh;
-}
-
-hiddenentry " " --hotkey f4 {
-  configfile ${prefix}/settings.sh;
-}
-
-hiddenentry " " --hotkey f6 {
-  configfile ${prefix}/power.sh;
-}

@@ -23,22 +23,19 @@ terminal-box: "term_bkg_*.png"
   + label {translate = "UEFI Version" color = "#ffffff"}
   + label {translate = "SecureBoot" color = "#ffffff"}
   + label {translate = "RAM" color = "#ffffff"}
-  + label {text = "" color = "#ffffff"}
-  + label {text = "" color = "#ffffff"}
   + label {translate = "Language" color = "#ffffff"}
   + label {translate = "Resolution" color = "#ffffff"}
-  + label {translate = "Case-sensitive" color = "#ffffff"}
-  + label {translate = "Progress indicator" color = "#ffffff"}
   + label {text = "" color = "#ffffff"}
   + label {text = "" color = "#ffffff"}
-  + label {text = "PAGER" color = "#ffffff"}
-  + label {text = "BOOTDEV" color = "#ffffff"}
-  + label {text = "CMDPATH" color = "#ffffff"}
-  + label {text = "GFXPAYLOAD" color = "#ffffff"}
-  + label {text = "" color = "#ffffff"}
-  + label {text = "" color = "#ffffff"}
-  + label {text = "Ventoy" color = "#ffffff"}
-  + label {text = "AIO-Boot" color = "#ffffff"}
+  + label {translate = "Hotkeys" color = "#ffffff"}
+  + label {translate = "F1 - System Information" color = "#ffffff"}
+  + label {translate = "F2 - File Manager" color = "#ffffff"}
+  + label {translate = "F3 - OS Detect" color = "#ffffff"}
+  + label {translate = "F4 - Settings" color = "#ffffff"}
+  + label {translate = "F5 - Multiboot Toolkits" color = "#ffffff"}
+  + label {translate = "F6 - Power Off" color = "#ffffff"}
+  + label {translate = "Ctrl+l/Ctrl+r - Scroll menu entry's text" color = "#ffffff"}
+  + label {translate = "LCtrl+LAlt+F12 - Take Screenshots (EFI)" color = "#ffffff"}
 }
 
 + vbox {
@@ -64,22 +61,11 @@ terminal-box: "term_bkg_*.png"
     + label {text = "@@RAM" color = "#ffffff"}
     + label {text = "MB" color = "#ffffff"}
   }
-  + label {text = "" color = "#ffffff"}
-  + label {text = "" color = "#ffffff"}
   + label {text = "@@gfxmode" color = "#ffffff"}
   + label {text = "@@lang" color = "#ffffff"}
-  + label {text = "@@grub_fs_case_sensitive" color = "#ffffff"}
-  + label {text = "@@enable_progress_indicator" color = "#ffffff"}
   + label {text = "" color = "#ffffff"}
   + label {text = "" color = "#ffffff"}
-  + label {text = "@@pager" color = "#ffffff"}
-  + label {text = "@@bootdev" color = "#ffffff"}
-  + label {text = "@@cmdpath" color = "#ffffff"}
-  + label {text = "@@gfxpayload" color = "#ffffff"}
   + label {text = "" color = "#ffffff"}
-  + label {text = "" color = "#ffffff"}
-  + label {text = "@@ventoy" color = "#ffffff"}
-  + label {text = "@@aioboot" color = "#ffffff"}
 }
 
 # Show the boot menu
@@ -115,7 +101,7 @@ terminal-box: "term_bkg_*.png"
   width = 27%
   + vbox {
     + label {text = "[F1]" color = "#ffffff"}
-    + image {file = "dock/help.png"}
+    + image {file = "dock/hwinfo.png"}
   }
   + image {file = "dock/space.png"}
   + vbox {
@@ -135,7 +121,7 @@ terminal-box: "term_bkg_*.png"
   + image {file = "dock/space.png"}
   + vbox {
     + label {text = "[F5]" color = "#ffffff"}
-    + image {file = "dock/hwinfo.png"}
+    + image {file = "dock/util.png"}
   }
   + image {file = "dock/space.png"}
   + vbox {
