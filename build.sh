@@ -236,7 +236,7 @@ rm -r build/boot
 cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 touch build/ventoy.dat
-xorriso -as mkisofs -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm_pc.iso build
+xorriso -as mkisofs -l -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm_pc.iso build
 rm build/fmldr
 rm build/fm.loop
 
@@ -247,7 +247,7 @@ cat grub/i386-pc/cdboot.img build/core.img > build/fmldr
 rm build/core.img
 cp grubfm.elf build/
 touch build/ventoy.dat
-xorriso -as mkisofs -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
+xorriso -as mkisofs -l -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -o grubfm.iso build
 
 dd if=/dev/zero of=build/efi.img bs=1M count=16
 mkfs.vfat build/efi.img
@@ -255,6 +255,6 @@ mmd -i build/efi.img ::EFI
 mmd -i build/efi.img ::EFI/BOOT
 mcopy -i build/efi.img grubfmx64.efi ::EFI/BOOT/BOOTX64.EFI
 mcopy -i build/efi.img grubfmia32.efi ::EFI/BOOT/BOOTIA32.EFI
-xorriso -as mkisofs -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e efi.img -no-emul-boot -o grubfm_multiarch.iso build
+xorriso -as mkisofs -l -R -hide-joliet boot.catalog -b fmldr -no-emul-boot -allow-lowercase -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e efi.img -no-emul-boot -o grubfm_multiarch.iso build
 
 rm -r build
