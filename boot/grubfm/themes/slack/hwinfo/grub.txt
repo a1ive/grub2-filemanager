@@ -61,8 +61,8 @@ terminal-box: "term_bkg_*.png"
     + label {text = "@@RAM" color = "#ffffff"}
     + label {text = "MB" color = "#ffffff"}
   }
-  + label {text = "@@gfxmode" color = "#ffffff"}
   + label {text = "@@lang" color = "#ffffff"}
+  + label {text = "@@gfxmode" color = "#ffffff"}
   + label {text = "" color = "#ffffff"}
   + label {text = "" color = "#ffffff"}
   + label {text = "" color = "#ffffff"}
