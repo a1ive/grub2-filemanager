@@ -4,8 +4,8 @@ title-color: "#000000"
 message-color: "#333333"
 message-bg-color: "#f2f2f2"
 desktop-color: "#000000"
-desktop-image: "background.png"
-terminal-box: "term_bkg_*.png"
+desktop-image: "../background.png"
+terminal-box: "../term_bkg_*.png"
 
 + vbox {
   left = 38%
@@ -103,7 +103,7 @@ terminal-box: "term_bkg_*.png"
   width = 58%
   top = 15%
   height = 70%
-  + image {file = "menu_bkg_c.png"}
+  + image {file = "../menu_bkg_c.png"}
 }
 
 + hbox {
@@ -112,31 +112,31 @@ terminal-box: "term_bkg_*.png"
   width = 27%
   + vbox {
     + label {text = "[F1]" color = "#ffffff"}
-    + image {file = "dock/hwinfo.png"}
+    + image {file = "../dock/hwinfo.png"}
   }
-  + image {file = "dock/space.png"}
+  + image {file = "../dock/space.png"}
   + vbox {
     + label {text = "[F2]" color = "#ffffff"}
-    + image {file = "dock/fm.png"}
+    + image {file = "../dock/fm.png"}
   }
-  + image {file = "dock/space.png"}
+  + image {file = "../dock/space.png"}
   + vbox {
     + label {text = "[F3]" color = "#ffffff"}
-    + image {file = "dock/boot.png"}
+    + image {file = "../dock/boot.png"}
   }
-  + image {file = "dock/space.png"}
+  + image {file = "../dock/space.png"}
   + vbox {
     + label {text = "[F4]" color = "#ffffff"}
-    + image {file = "dock/settings.png"}
+    + image {file = "../dock/settings.png"}
   }
-  + image {file = "dock/space.png"}
+  + image {file = "../dock/space.png"}
   + vbox {
     + label {text = "[F5]" color = "#ffffff"}
-    + image {file = "dock/util.png"}
+    + image {file = "../dock/util.png"}
   }
-  + image {file = "dock/space.png"}
+  + image {file = "../dock/space.png"}
   + vbox {
     + label {text = "[F6]" color = "#ffffff"}
-    + image {file = "dock/logout.png"}
+    + image {file = "../dock/logout.png"}
   }
 }
