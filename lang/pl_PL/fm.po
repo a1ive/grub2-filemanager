@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-12-31 01:39\n"
+"PO-Revision-Date: 2020-12-31 10:24\n"
 
 msgid "Back"
 msgstr "Wstecz"
@@ -247,118 +247,118 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "Plik nie jest ciągły. (${frag} fragmentów)"
 
 msgid "GRUB (G)"
-msgstr ""
+msgstr "GRUB (G)"
 
 msgid "CPU (U)"
-msgstr ""
+msgstr "CPU (U)"
 
 msgid "RAM (R)"
-msgstr ""
+msgstr "RAM (R)"
 
 msgid "MAINBOARD (B)"
-msgstr ""
+msgstr "PŁYTA GŁÓWNA (B)"
 
 msgid "SecureBoot"
-msgstr ""
+msgstr "SecureBoot"
 
 msgid "UEFI Version"
-msgstr ""
+msgstr "Wersja UEFI"
 
 msgid "Platform"
-msgstr ""
+msgstr "Platforma"
 
 msgid "Build date"
-msgstr ""
+msgstr "Data kompilacji"
 
 msgid "Real Time Clock"
-msgstr ""
+msgstr "Zegar czasu rzeczywistego"
 
 msgid "RAM"
-msgstr ""
+msgstr "RAM"
 
 msgid "Manufacturer"
-msgstr ""
+msgstr "Producent"
 
 msgid "Socket Designation"
-msgstr ""
+msgstr "Oznaczenie gniazda"
 
 msgid "Temperature"
-msgstr ""
+msgstr "Temperatura"
 
 msgid "Current Speed"
-msgstr ""
+msgstr "Bieżąca prędkość"
 
 msgid "Max Speed"
-msgstr ""
+msgstr "Maksymalna prędkość"
 
 msgid "External Clock Frequency"
-msgstr ""
+msgstr "Częstotliwość zegara zewnętrznego"
 
 msgid "Voltage"
-msgstr ""
+msgstr "Napięcie"
 
 msgid "Hypervisor presents"
-msgstr ""
+msgstr "Obecność hipernadzorcy"
 
 msgid "Hypervisor signature"
-msgstr ""
+msgstr "Sygnatura hipernadzorcy"
 
 msgid "Supported features"
-msgstr ""
+msgstr "Obsługiwane funkcje"
 
 msgid "Supported instructions"
-msgstr ""
+msgstr "Obsługiwane instrukcje"
 
 msgid "Size"
-msgstr ""
+msgstr "Rozmiar"
 
 msgid "Speed"
-msgstr ""
+msgstr "Prędkość"
 
 msgid "Configured voltage"
-msgstr ""
+msgstr "Skonfigurowane napięcie"
 
 msgid "Version"
-msgstr ""
+msgstr "Wersja"
 
 msgid "Product name"
-msgstr ""
+msgstr "Nazwa produktu"
 
 msgid "Board name"
-msgstr ""
+msgstr "Nazwa płyty"
 
 msgid "Board manufacturer"
-msgstr ""
+msgstr "Producent płyty"
 
 msgid "Board version"
-msgstr ""
+msgstr "Wersja płyty"
 
 msgid "BIOS ROM size"
-msgstr ""
+msgstr "Rozmiar ROM BIOS"
 
 msgid "BIOS manufacturer"
-msgstr ""
+msgstr "Producent BIOS"
 
 msgid "BIOS version"
-msgstr ""
+msgstr "Wersja BIOS"
 
 msgid "BIOS release date"
-msgstr ""
+msgstr "Data wydania BIOS"
 
 msgid "ACPI OEMID"
-msgstr ""
+msgstr "OEMID ACPI"
 
 msgid "ACPI RSDP version"
-msgstr ""
+msgstr "Wersja RSDP ACPI"
 
 msgid "SMBIOS version"
-msgstr ""
+msgstr "Wersja SMBIOS"
 
 msgid "Language"
 msgstr "Język"
 
 msgid "Resolution"
-msgstr ""
+msgstr "Rozdzielczość"
 
 msgid "Keyboard layouts"
 msgstr "Układy klawiatury"
@@ -532,13 +532,13 @@ msgid "Halt (H)"
 msgstr "Zatrzymaj (H)"
 
 msgid "Halt (don't use APM)"
-msgstr ""
+msgstr "Zatrzymaj (nie używaj APM)"
 
 msgid "Warm Reboot (R)"
-msgstr ""
+msgstr "Uruchom ponownie na ciepło (R)"
 
 msgid "Cold Reboot (S)"
-msgstr ""
+msgstr "Uruchom ponownie na zimno (S)"
 
 msgid "File: "
 msgstr "Plik: "
@@ -547,7 +547,7 @@ msgid "Hotkeys"
 msgstr "Skróty klawiszowe"
 
 msgid "F1 - System Information"
-msgstr ""
+msgstr "F1 - Informacje systemowe"
 
 msgid "F2 - File Manager"
 msgstr "F2 - Menedżer plików"
@@ -559,7 +559,7 @@ msgid "F4 - Settings"
 msgstr "F4 - Ustawienia"
 
 msgid "F5 - Multiboot Toolkits"
-msgstr ""
+msgstr "F5 - Zestawy narzędzi wielorozruchowych"
 
 msgid "F6 - Power Off"
 msgstr "F6 - Wyłącz"
