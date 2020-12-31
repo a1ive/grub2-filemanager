@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-12-31 08:54\n"
+"PO-Revision-Date: 2020-12-31 11:44\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -259,7 +259,7 @@ msgid "MAINBOARD (B)"
 msgstr "ANAKART (B)"
 
 msgid "SecureBoot"
-msgstr "Güvenli Önyükleme (Secure Boot)"
+msgstr "Güvenli Önyükleme"
 
 msgid "UEFI Version"
 msgstr "UEFI Versiyon"
