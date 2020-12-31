@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-12-31 01:39\n"
+"PO-Revision-Date: 2020-12-31 08:24\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -247,16 +247,16 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "Dosya bitişik değil. (${frag} fragments)"
 
 msgid "GRUB (G)"
-msgstr ""
+msgstr "GRUB (G)"
 
 msgid "CPU (U)"
-msgstr ""
+msgstr "CPU (U)"
 
 msgid "RAM (R)"
-msgstr ""
+msgstr "RAM (R)"
 
 msgid "MAINBOARD (B)"
-msgstr ""
+msgstr "ANAKART (B)"
 
 msgid "SecureBoot"
 msgstr ""
