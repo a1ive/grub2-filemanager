@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-12-31 08:34\n"
+"PO-Revision-Date: 2020-12-31 08:44\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -307,7 +307,7 @@ msgid "Supported features"
 msgstr "Desteklenen özellikler"
 
 msgid "Supported instructions"
-msgstr "Deteklenen bilgiler"
+msgstr "Desteklenen bilgiler"
 
 msgid "Size"
 msgstr "Boyut"
@@ -319,46 +319,46 @@ msgid "Configured voltage"
 msgstr "Yapılandırılmış voltaj"
 
 msgid "Version"
-msgstr ""
+msgstr "Versiyon"
 
 msgid "Product name"
-msgstr ""
+msgstr "Ürün adı"
 
 msgid "Board name"
-msgstr ""
+msgstr "Anakart adı"
 
 msgid "Board manufacturer"
-msgstr ""
+msgstr "Anakart üreticisi"
 
 msgid "Board version"
-msgstr ""
+msgstr "Anakart versiyonu"
 
 msgid "BIOS ROM size"
-msgstr ""
+msgstr "BIOS ROM boyutu"
 
 msgid "BIOS manufacturer"
-msgstr ""
+msgstr "BIOS üreticisi"
 
 msgid "BIOS version"
-msgstr ""
+msgstr "BIOS versiyon"
 
 msgid "BIOS release date"
-msgstr ""
+msgstr "BIOS yayın tarihi"
 
 msgid "ACPI OEMID"
-msgstr ""
+msgstr "ACPI OEMID"
 
 msgid "ACPI RSDP version"
-msgstr ""
+msgstr "ACPI RSDP versiyon"
 
 msgid "SMBIOS version"
-msgstr ""
+msgstr "SMBIOS versiyon"
 
 msgid "Language"
 msgstr "Dil"
 
 msgid "Resolution"
-msgstr ""
+msgstr "Çözünürlük"
 
 msgid "Keyboard layouts"
 msgstr "Klavye Düzeni"
@@ -532,7 +532,7 @@ msgid "Halt (H)"
 msgstr "Kapat (H)"
 
 msgid "Halt (don't use APM)"
-msgstr ""
+msgstr "Kapat (APM ile kullanmayın)"
 
 msgid "Warm Reboot (R)"
 msgstr ""
