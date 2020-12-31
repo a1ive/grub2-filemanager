@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-12-31 08:24\n"
+"PO-Revision-Date: 2020-12-31 08:34\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -259,64 +259,64 @@ msgid "MAINBOARD (B)"
 msgstr "ANAKART (B)"
 
 msgid "SecureBoot"
-msgstr ""
+msgstr "SecureBoot"
 
 msgid "UEFI Version"
-msgstr ""
+msgstr "UEFI Versiyon"
 
 msgid "Platform"
-msgstr ""
+msgstr "Platform"
 
 msgid "Build date"
-msgstr ""
+msgstr "Yapım tarihi"
 
 msgid "Real Time Clock"
-msgstr ""
+msgstr "Gerçek Zaman Saati"
 
 msgid "RAM"
-msgstr ""
+msgstr "RAM"
 
 msgid "Manufacturer"
-msgstr ""
+msgstr "Üretici"
 
 msgid "Socket Designation"
-msgstr ""
+msgstr "Soket Tahsisi"
 
 msgid "Temperature"
-msgstr ""
+msgstr "Sıcaklık"
 
 msgid "Current Speed"
-msgstr ""
+msgstr "Geçerli Hız"
 
 msgid "Max Speed"
-msgstr ""
+msgstr "Maksimum Hız"
 
 msgid "External Clock Frequency"
-msgstr ""
+msgstr "Arttırılmış Hız Frekansı"
 
 msgid "Voltage"
-msgstr ""
+msgstr "Voltaj"
 
 msgid "Hypervisor presents"
-msgstr ""
+msgstr "Hypervisor desteği"
 
 msgid "Hypervisor signature"
-msgstr ""
+msgstr "Hypervisor  imzası"
 
 msgid "Supported features"
-msgstr ""
+msgstr "Desteklenen özellikler"
 
 msgid "Supported instructions"
-msgstr ""
+msgstr "Deteklenen bilgiler"
 
 msgid "Size"
-msgstr ""
+msgstr "Boyut"
 
 msgid "Speed"
-msgstr ""
+msgstr "Hız"
 
 msgid "Configured voltage"
-msgstr ""
+msgstr "Yapılandırılmış voltaj"
 
 msgid "Version"
 msgstr ""
