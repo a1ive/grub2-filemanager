@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-12-31 01:39\n"
+"PO-Revision-Date: 2020-12-31 08:54\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -247,118 +247,118 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "Dosya bitişik değil. (${frag} fragments)"
 
 msgid "GRUB (G)"
-msgstr ""
+msgstr "GRUB (G)"
 
 msgid "CPU (U)"
-msgstr ""
+msgstr "CPU (U)"
 
 msgid "RAM (R)"
-msgstr ""
+msgstr "RAM (R)"
 
 msgid "MAINBOARD (B)"
-msgstr ""
+msgstr "ANAKART (B)"
 
 msgid "SecureBoot"
-msgstr ""
+msgstr "Güvenli Önyükleme (Secure Boot)"
 
 msgid "UEFI Version"
-msgstr ""
+msgstr "UEFI Versiyon"
 
 msgid "Platform"
-msgstr ""
+msgstr "Platform"
 
 msgid "Build date"
-msgstr ""
+msgstr "Yapım tarihi"
 
 msgid "Real Time Clock"
-msgstr ""
+msgstr "Gerçek Zaman Saati"
 
 msgid "RAM"
-msgstr ""
+msgstr "RAM"
 
 msgid "Manufacturer"
-msgstr ""
+msgstr "Üretici"
 
 msgid "Socket Designation"
-msgstr ""
+msgstr "Soket Tahsisi"
 
 msgid "Temperature"
-msgstr ""
+msgstr "Sıcaklık"
 
 msgid "Current Speed"
-msgstr ""
+msgstr "Geçerli Hız"
 
 msgid "Max Speed"
-msgstr ""
+msgstr "Maksimum Hız"
 
 msgid "External Clock Frequency"
-msgstr ""
+msgstr "Arttırılmış Hız Frekansı"
 
 msgid "Voltage"
-msgstr ""
+msgstr "Voltaj"
 
 msgid "Hypervisor presents"
-msgstr ""
+msgstr "Hypervisor desteği"
 
 msgid "Hypervisor signature"
-msgstr ""
+msgstr "Hypervisor  imzası"
 
 msgid "Supported features"
-msgstr ""
+msgstr "Desteklenen özellikler"
 
 msgid "Supported instructions"
-msgstr ""
+msgstr "Desteklenen bilgiler"
 
 msgid "Size"
-msgstr ""
+msgstr "Boyut"
 
 msgid "Speed"
-msgstr ""
+msgstr "Hız"
 
 msgid "Configured voltage"
-msgstr ""
+msgstr "Yapılandırılmış voltaj"
 
 msgid "Version"
-msgstr ""
+msgstr "Versiyon"
 
 msgid "Product name"
-msgstr ""
+msgstr "Ürün adı"
 
 msgid "Board name"
-msgstr ""
+msgstr "Anakart adı"
 
 msgid "Board manufacturer"
-msgstr ""
+msgstr "Anakart üreticisi"
 
 msgid "Board version"
-msgstr ""
+msgstr "Anakart versiyon"
 
 msgid "BIOS ROM size"
-msgstr ""
+msgstr "BIOS ROM boyutu"
 
 msgid "BIOS manufacturer"
-msgstr ""
+msgstr "BIOS üreticisi"
 
 msgid "BIOS version"
-msgstr ""
+msgstr "BIOS versiyon"
 
 msgid "BIOS release date"
-msgstr ""
+msgstr "BIOS yayın tarihi"
 
 msgid "ACPI OEMID"
-msgstr ""
+msgstr "ACPI OEMID"
 
 msgid "ACPI RSDP version"
-msgstr ""
+msgstr "ACPI RSDP versiyon"
 
 msgid "SMBIOS version"
-msgstr ""
+msgstr "SMBIOS versiyon"
 
 msgid "Language"
 msgstr "Dil"
 
 msgid "Resolution"
-msgstr ""
+msgstr "Çözünürlük"
 
 msgid "Keyboard layouts"
 msgstr "Klavye Düzeni"
@@ -532,13 +532,13 @@ msgid "Halt (H)"
 msgstr "Kapat (H)"
 
 msgid "Halt (don't use APM)"
-msgstr ""
+msgstr "Kapat (APM ile kullanmayın)"
 
 msgid "Warm Reboot (R)"
-msgstr ""
+msgstr "Yeniden Başlat (Sıcak)"
 
 msgid "Cold Reboot (S)"
-msgstr ""
+msgstr "Yeniden Başlat (Soğuk)"
 
 msgid "File: "
 msgstr "Dosya: "
@@ -547,7 +547,7 @@ msgid "Hotkeys"
 msgstr "Kısayol tuşları"
 
 msgid "F1 - System Information"
-msgstr ""
+msgstr "F1 - Sistem Bilgisi"
 
 msgid "F2 - File Manager"
 msgstr "F2 - Dosya Yöneticisi"
@@ -559,7 +559,7 @@ msgid "F4 - Settings"
 msgstr "F4 - Ayarlar"
 
 msgid "F5 - Multiboot Toolkits"
-msgstr ""
+msgstr "F5 - Çoklu Önyükleme Araçları"
 
 msgid "F6 - Power Off"
 msgstr "F6 - Kapat"
