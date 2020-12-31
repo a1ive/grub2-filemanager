@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-12-31 01:39\n"
+"PO-Revision-Date: 2020-12-31 10:06\n"
 
 msgid "Back"
 msgstr "Wstecz"
@@ -262,70 +262,70 @@ msgid "SecureBoot"
 msgstr ""
 
 msgid "UEFI Version"
-msgstr ""
+msgstr "Wersja UEFI"
 
 msgid "Platform"
-msgstr ""
+msgstr "Platforma"
 
 msgid "Build date"
-msgstr ""
+msgstr "Data kompilacji"
 
 msgid "Real Time Clock"
-msgstr ""
+msgstr "Zegar czasu rzeczywistego"
 
 msgid "RAM"
 msgstr ""
 
 msgid "Manufacturer"
-msgstr ""
+msgstr "Producent"
 
 msgid "Socket Designation"
-msgstr ""
+msgstr "Oznaczenie gniazda"
 
 msgid "Temperature"
-msgstr ""
+msgstr "Temperatura"
 
 msgid "Current Speed"
-msgstr ""
+msgstr "Bieżąca prędkość"
 
 msgid "Max Speed"
-msgstr ""
+msgstr "Maksymalna prędkość"
 
 msgid "External Clock Frequency"
-msgstr ""
+msgstr "Częstotliwość zegara zewnętrznego"
 
 msgid "Voltage"
-msgstr ""
+msgstr "Napięcie"
 
 msgid "Hypervisor presents"
-msgstr ""
+msgstr "Obecność hipernadzorcy"
 
 msgid "Hypervisor signature"
-msgstr ""
+msgstr "Sygnatura hipernadzorcy"
 
 msgid "Supported features"
-msgstr ""
+msgstr "Obsługiwane funkcje"
 
 msgid "Supported instructions"
-msgstr ""
+msgstr "Obsługiwane instrukcje"
 
 msgid "Size"
-msgstr ""
+msgstr "Rozmiar"
 
 msgid "Speed"
-msgstr ""
+msgstr "Prędkość"
 
 msgid "Configured voltage"
-msgstr ""
+msgstr "Skonfigurowane napięcie"
 
 msgid "Version"
-msgstr ""
+msgstr "Wersja"
 
 msgid "Product name"
-msgstr ""
+msgstr "Nazwa produktu"
 
 msgid "Board name"
-msgstr ""
+msgstr "Nazwa płyty"
 
 msgid "Board manufacturer"
 msgstr ""
