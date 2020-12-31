@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-11-04 19:34\n"
+"PO-Revision-Date: 2020-12-31 01:30\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -246,8 +246,119 @@ msgstr "Dosya bitişik."
 msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "Dosya bitişik değil. (${frag} fragments)"
 
+msgid "GRUB (G)"
+msgstr ""
+
+msgid "CPU (U)"
+msgstr ""
+
+msgid "RAM (R)"
+msgstr ""
+
+msgid "MAINBOARD (B)"
+msgstr ""
+
+msgid "SecureBoot"
+msgstr ""
+
+msgid "UEFI Version"
+msgstr ""
+
+msgid "Platform"
+msgstr ""
+
+msgid "Build date"
+msgstr ""
+
+msgid "Real Time Clock"
+msgstr ""
+
+msgid "RAM"
+msgstr ""
+
+msgid "Manufacturer"
+msgstr ""
+
+msgid "Socket Designation"
+msgstr ""
+
+msgid "Temperature"
+msgstr ""
+
+msgid "Current Speed"
+msgstr ""
+
+msgid "Max Speed"
+msgstr ""
+
+msgid "External Clock Frequency"
+msgstr ""
+
+msgid "Voltage"
+msgstr ""
+
+msgid "Hypervisor presents"
+msgstr ""
+
+msgid "Hypervisor signature"
+msgstr ""
+
+msgid "Supported features"
+msgstr ""
+
+msgid "Supported instructions"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Speed"
+msgstr ""
+
+msgid "Configured voltage"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Product name"
+msgstr ""
+
+msgid "Board name"
+msgstr ""
+
+msgid "Board manufacturer"
+msgstr ""
+
+msgid "Board version"
+msgstr ""
+
+msgid "BIOS ROM size"
+msgstr ""
+
+msgid "BIOS manufacturer"
+msgstr ""
+
+msgid "BIOS version"
+msgstr ""
+
+msgid "BIOS release date"
+msgstr ""
+
+msgid "ACPI OEMID"
+msgstr ""
+
+msgid "ACPI RSDP version"
+msgstr ""
+
+msgid "SMBIOS version"
+msgstr ""
+
 msgid "Language"
 msgstr "Dil"
+
+msgid "Resolution"
+msgstr ""
 
 msgid "Keyboard layouts"
 msgstr "Klavye Düzeni"
@@ -420,14 +531,23 @@ msgstr "Kapat"
 msgid "Halt (H)"
 msgstr "Kapat (H)"
 
+msgid "Halt (don't use APM)"
+msgstr ""
+
+msgid "Warn Reboot (R)"
+msgstr ""
+
+msgid "Cold Reboot (S)"
+msgstr ""
+
 msgid "File: "
 msgstr "Dosya: "
 
 msgid "Hotkeys"
 msgstr "Kısayol tuşları"
 
-msgid "F1 - Help"
-msgstr "F1 - Yardım"
+msgid "F1 - System Information"
+msgstr ""
 
 msgid "F2 - File Manager"
 msgstr "F2 - Dosya Yöneticisi"
@@ -438,8 +558,8 @@ msgstr "F3 - İşletim Sistemini Algıla"
 msgid "F4 - Settings"
 msgstr "F4 - Ayarlar"
 
-msgid "F5 - PXE Boot Menu"
-msgstr "F5 - PXE Önyükleme Menüsü"
+msgid "F5 - Multiboot Toolkits"
+msgstr ""
 
 msgid "F6 - Power Off"
 msgstr "F6 - Kapat"
