@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-12-31 01:30\n"
+"PO-Revision-Date: 2020-12-31 01:39\n"
 
 msgid "Back"
 msgstr "返回"
@@ -247,118 +247,118 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "文件有碎片。(${frag} 个碎片)"
 
 msgid "GRUB (G)"
-msgstr ""
+msgstr "GRUB (G)"
 
 msgid "CPU (U)"
-msgstr ""
+msgstr "处理器 (U)"
 
 msgid "RAM (R)"
-msgstr ""
+msgstr "内存 (R)"
 
 msgid "MAINBOARD (B)"
-msgstr ""
+msgstr "主板 (B)"
 
 msgid "SecureBoot"
-msgstr ""
+msgstr "安全启动"
 
 msgid "UEFI Version"
-msgstr ""
+msgstr "UEFI 版本"
 
 msgid "Platform"
-msgstr ""
+msgstr "平台"
 
 msgid "Build date"
-msgstr ""
+msgstr "编译日期"
 
 msgid "Real Time Clock"
-msgstr ""
+msgstr "实时时钟"
 
 msgid "RAM"
-msgstr ""
+msgstr "内存"
 
 msgid "Manufacturer"
-msgstr ""
+msgstr "制造商"
 
 msgid "Socket Designation"
-msgstr ""
+msgstr "CPU 插座"
 
 msgid "Temperature"
-msgstr ""
+msgstr "温度"
 
 msgid "Current Speed"
-msgstr ""
+msgstr "当前频率"
 
 msgid "Max Speed"
-msgstr ""
+msgstr "最高频率"
 
 msgid "External Clock Frequency"
-msgstr ""
+msgstr "外部时钟频率"
 
 msgid "Voltage"
-msgstr ""
+msgstr "电压"
 
 msgid "Hypervisor presents"
-msgstr ""
+msgstr "虚拟机是否存在"
 
 msgid "Hypervisor signature"
-msgstr ""
+msgstr "虚拟机签名"
 
 msgid "Supported features"
-msgstr ""
+msgstr "支持的特性"
 
 msgid "Supported instructions"
-msgstr ""
+msgstr "支持的指令集"
 
 msgid "Size"
-msgstr ""
+msgstr "大小"
 
 msgid "Speed"
-msgstr ""
+msgstr "频率"
 
 msgid "Configured voltage"
-msgstr ""
+msgstr "配置电压"
 
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 msgid "Product name"
-msgstr ""
+msgstr "产品名称"
 
 msgid "Board name"
-msgstr ""
+msgstr "主板名称"
 
 msgid "Board manufacturer"
-msgstr ""
+msgstr "主板制造商"
 
 msgid "Board version"
-msgstr ""
+msgstr "主板版本"
 
 msgid "BIOS ROM size"
-msgstr ""
+msgstr "BIOS ROM 大小"
 
 msgid "BIOS manufacturer"
-msgstr ""
+msgstr "BIOS 制造商"
 
 msgid "BIOS version"
-msgstr ""
+msgstr "BIOS 版本"
 
 msgid "BIOS release date"
-msgstr ""
+msgstr "BIOS 发布日期"
 
 msgid "ACPI OEMID"
-msgstr ""
+msgstr "ACPI OEMID"
 
 msgid "ACPI RSDP version"
-msgstr ""
+msgstr "ACPI RSDP 版本"
 
 msgid "SMBIOS version"
-msgstr ""
+msgstr "SMBIOS 版本"
 
 msgid "Language"
 msgstr "语言"
 
 msgid "Resolution"
-msgstr ""
+msgstr "分辨率"
 
 msgid "Keyboard layouts"
 msgstr "键盘布局"
@@ -532,9 +532,9 @@ msgid "Halt (H)"
 msgstr "关机 (H)"
 
 msgid "Halt (don't use APM)"
-msgstr ""
+msgstr "关机 (不使用 APM)"
 
-msgid "Warn Reboot (R)"
+msgid "Warm Reboot (R)"
 msgstr ""
 
 msgid "Cold Reboot (S)"
