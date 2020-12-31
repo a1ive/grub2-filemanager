@@ -21,7 +21,7 @@ do
   insmod ${module};
 done;
 export enable_progress_indicator=0;
-export grub_secureboot="Not available";
+export grub_secureboot=$"Not available";
 if [ "${grub_platform}" = "efi" ];
 then
   search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
@@ -38,12 +38,12 @@ then
   getenv -t uint8 SecureBoot grub_secureboot;
   if [ "${grub_secureboot}" = "1" ];
   then
-    export grub_secureboot="Enabled";
+    export grub_secureboot=$"Enabled";
     sbpolicy -i;
   fi;
   if [ "${grub_secureboot}" = "0" ];
   then
-    export grub_secureboot="Disabled";
+    export grub_secureboot=$"Disabled";
   fi;
   # enable mouse/touchpad
   # terminal_input --append mouse;
