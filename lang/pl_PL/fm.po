@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-12-31 10:06\n"
+"PO-Revision-Date: 2020-12-31 10:14\n"
 
 msgid "Back"
 msgstr "Wstecz"
@@ -247,19 +247,19 @@ msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "Plik nie jest ciągły. (${frag} fragmentów)"
 
 msgid "GRUB (G)"
-msgstr ""
+msgstr "GRUB (G)"
 
 msgid "CPU (U)"
-msgstr ""
+msgstr "CPU (U)"
 
 msgid "RAM (R)"
-msgstr ""
+msgstr "RAM (R)"
 
 msgid "MAINBOARD (B)"
-msgstr ""
+msgstr "PŁYTA GŁÓWNA (B)"
 
 msgid "SecureBoot"
-msgstr ""
+msgstr "SecureBoot"
 
 msgid "UEFI Version"
 msgstr "Wersja UEFI"
@@ -274,7 +274,7 @@ msgid "Real Time Clock"
 msgstr "Zegar czasu rzeczywistego"
 
 msgid "RAM"
-msgstr ""
+msgstr "RAM"
 
 msgid "Manufacturer"
 msgstr "Producent"
@@ -328,37 +328,37 @@ msgid "Board name"
 msgstr "Nazwa płyty"
 
 msgid "Board manufacturer"
-msgstr ""
+msgstr "Producent płyty"
 
 msgid "Board version"
-msgstr ""
+msgstr "Wersja płyty"
 
 msgid "BIOS ROM size"
-msgstr ""
+msgstr "Rozmiar ROM BIOS"
 
 msgid "BIOS manufacturer"
-msgstr ""
+msgstr "Producent BIOS"
 
 msgid "BIOS version"
-msgstr ""
+msgstr "Wersja BIOS"
 
 msgid "BIOS release date"
-msgstr ""
+msgstr "Data wydania BIOS"
 
 msgid "ACPI OEMID"
-msgstr ""
+msgstr "OEMID ACPI"
 
 msgid "ACPI RSDP version"
-msgstr ""
+msgstr "Wersja RSDP ACPI"
 
 msgid "SMBIOS version"
-msgstr ""
+msgstr "Wersja SMBIOS"
 
 msgid "Language"
 msgstr "Język"
 
 msgid "Resolution"
-msgstr ""
+msgstr "Rozdzielczość"
 
 msgid "Keyboard layouts"
 msgstr "Układy klawiatury"
@@ -532,13 +532,13 @@ msgid "Halt (H)"
 msgstr "Zatrzymaj (H)"
 
 msgid "Halt (don't use APM)"
-msgstr ""
+msgstr "Zatrzymanie (nie używaj APM)"
 
 msgid "Warm Reboot (R)"
-msgstr ""
+msgstr "Ciepły restart (R)"
 
 msgid "Cold Reboot (S)"
-msgstr ""
+msgstr "Zimny restart (S)"
 
 msgid "File: "
 msgstr "Plik: "
@@ -547,7 +547,7 @@ msgid "Hotkeys"
 msgstr "Skróty klawiszowe"
 
 msgid "F1 - System Information"
-msgstr ""
+msgstr "F1 - Informacje systemowe"
 
 msgid "F2 - File Manager"
 msgstr "F2 - Menedżer plików"
@@ -559,7 +559,7 @@ msgid "F4 - Settings"
 msgstr "F4 - Ustawienia"
 
 msgid "F5 - Multiboot Toolkits"
-msgstr ""
+msgstr "F5 - Zestawy narzędzi multirozruchowych"
 
 msgid "F6 - Power Off"
 msgstr "F6 - Wyłącz"
