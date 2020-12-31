@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2020-11-01 10:33\n"
+"PO-Revision-Date: 2020-12-31 01:39\n"
 
 msgid "Back"
 msgstr "뒤로"
@@ -246,8 +246,119 @@ msgstr "파일이 연속적입니다."
 msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "파일이 연속적이지 않습니다. (${frag} 조각)"
 
+msgid "GRUB (G)"
+msgstr ""
+
+msgid "CPU (U)"
+msgstr ""
+
+msgid "RAM (R)"
+msgstr ""
+
+msgid "MAINBOARD (B)"
+msgstr ""
+
+msgid "SecureBoot"
+msgstr ""
+
+msgid "UEFI Version"
+msgstr ""
+
+msgid "Platform"
+msgstr ""
+
+msgid "Build date"
+msgstr ""
+
+msgid "Real Time Clock"
+msgstr ""
+
+msgid "RAM"
+msgstr ""
+
+msgid "Manufacturer"
+msgstr ""
+
+msgid "Socket Designation"
+msgstr ""
+
+msgid "Temperature"
+msgstr ""
+
+msgid "Current Speed"
+msgstr ""
+
+msgid "Max Speed"
+msgstr ""
+
+msgid "External Clock Frequency"
+msgstr ""
+
+msgid "Voltage"
+msgstr ""
+
+msgid "Hypervisor presents"
+msgstr ""
+
+msgid "Hypervisor signature"
+msgstr ""
+
+msgid "Supported features"
+msgstr ""
+
+msgid "Supported instructions"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Speed"
+msgstr ""
+
+msgid "Configured voltage"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Product name"
+msgstr ""
+
+msgid "Board name"
+msgstr ""
+
+msgid "Board manufacturer"
+msgstr ""
+
+msgid "Board version"
+msgstr ""
+
+msgid "BIOS ROM size"
+msgstr ""
+
+msgid "BIOS manufacturer"
+msgstr ""
+
+msgid "BIOS version"
+msgstr ""
+
+msgid "BIOS release date"
+msgstr ""
+
+msgid "ACPI OEMID"
+msgstr ""
+
+msgid "ACPI RSDP version"
+msgstr ""
+
+msgid "SMBIOS version"
+msgstr ""
+
 msgid "Language"
 msgstr "언어"
+
+msgid "Resolution"
+msgstr ""
 
 msgid "Keyboard layouts"
 msgstr "키보드 레이아웃"
@@ -420,14 +531,23 @@ msgstr "종료"
 msgid "Halt (H)"
 msgstr "종료 (H)"
 
+msgid "Halt (don't use APM)"
+msgstr ""
+
+msgid "Warm Reboot (R)"
+msgstr ""
+
+msgid "Cold Reboot (S)"
+msgstr ""
+
 msgid "File: "
 msgstr "파일: "
 
 msgid "Hotkeys"
 msgstr "단축키"
 
-msgid "F1 - Help"
-msgstr "F1 - 도움말"
+msgid "F1 - System Information"
+msgstr ""
 
 msgid "F2 - File Manager"
 msgstr "F2 - 파일 관리자"
@@ -438,8 +558,8 @@ msgstr "F3 - OS 감지"
 msgid "F4 - Settings"
 msgstr "F4 - 설정"
 
-msgid "F5 - PXE Boot Menu"
-msgstr "F5 - PXE 부팅 메뉴"
+msgid "F5 - Multiboot Toolkits"
+msgstr ""
 
 msgid "F6 - Power Off"
 msgstr "F6 - 전원 끄기"
