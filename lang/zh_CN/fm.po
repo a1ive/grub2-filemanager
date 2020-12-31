@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-11-01 14:04\n"
+"PO-Revision-Date: 2020-12-31 01:44\n"
 
 msgid "Back"
 msgstr "返回"
@@ -246,8 +246,119 @@ msgstr "文件是连续的。"
 msgid "File is non-contiguous. (${frag} fragments)"
 msgstr "文件有碎片。(${frag} 个碎片)"
 
+msgid "GRUB (G)"
+msgstr "GRUB (G)"
+
+msgid "CPU (U)"
+msgstr "处理器 (U)"
+
+msgid "RAM (R)"
+msgstr "内存 (R)"
+
+msgid "MAINBOARD (B)"
+msgstr "主板 (B)"
+
+msgid "SecureBoot"
+msgstr "安全启动"
+
+msgid "UEFI Version"
+msgstr "UEFI 版本"
+
+msgid "Platform"
+msgstr "平台"
+
+msgid "Build date"
+msgstr "编译日期"
+
+msgid "Real Time Clock"
+msgstr "实时时钟"
+
+msgid "RAM"
+msgstr "内存"
+
+msgid "Manufacturer"
+msgstr "制造商"
+
+msgid "Socket Designation"
+msgstr "CPU 插座"
+
+msgid "Temperature"
+msgstr "温度"
+
+msgid "Current Speed"
+msgstr "当前频率"
+
+msgid "Max Speed"
+msgstr "最高频率"
+
+msgid "External Clock Frequency"
+msgstr "外部时钟频率"
+
+msgid "Voltage"
+msgstr "电压"
+
+msgid "Hypervisor presents"
+msgstr "虚拟机是否存在"
+
+msgid "Hypervisor signature"
+msgstr "虚拟机签名"
+
+msgid "Supported features"
+msgstr "支持的特性"
+
+msgid "Supported instructions"
+msgstr "支持的指令集"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Speed"
+msgstr "频率"
+
+msgid "Configured voltage"
+msgstr "配置电压"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Product name"
+msgstr "产品名称"
+
+msgid "Board name"
+msgstr "主板名称"
+
+msgid "Board manufacturer"
+msgstr "主板制造商"
+
+msgid "Board version"
+msgstr "主板版本"
+
+msgid "BIOS ROM size"
+msgstr "BIOS ROM 大小"
+
+msgid "BIOS manufacturer"
+msgstr "BIOS 制造商"
+
+msgid "BIOS version"
+msgstr "BIOS 版本"
+
+msgid "BIOS release date"
+msgstr "BIOS 发布日期"
+
+msgid "ACPI OEMID"
+msgstr "ACPI OEMID"
+
+msgid "ACPI RSDP version"
+msgstr "ACPI RSDP 版本"
+
+msgid "SMBIOS version"
+msgstr "SMBIOS 版本"
+
 msgid "Language"
 msgstr "语言"
+
+msgid "Resolution"
+msgstr "分辨率"
 
 msgid "Keyboard layouts"
 msgstr "键盘布局"
@@ -420,14 +531,23 @@ msgstr "关机"
 msgid "Halt (H)"
 msgstr "关机 (H)"
 
+msgid "Halt (don't use APM)"
+msgstr "关机 (不使用 APM)"
+
+msgid "Warm Reboot (R)"
+msgstr "热重启 (R)"
+
+msgid "Cold Reboot (S)"
+msgstr "冷重启 (S)"
+
 msgid "File: "
 msgstr "文件: "
 
 msgid "Hotkeys"
 msgstr "快捷键"
 
-msgid "F1 - Help"
-msgstr "F1 - 帮助"
+msgid "F1 - System Information"
+msgstr "F1 - 系统信息"
 
 msgid "F2 - File Manager"
 msgstr "F2 - 文件管理器"
@@ -438,8 +558,8 @@ msgstr "F3 - 检测并启动操作系统"
 msgid "F4 - Settings"
 msgstr "F4 - 设置"
 
-msgid "F5 - PXE Boot Menu"
-msgstr "F5 - PXE 启动菜单"
+msgid "F5 - Multiboot Toolkits"
+msgstr "F5 - 引导工具"
 
 msgid "F6 - Power Off"
 msgstr "F6 - 关机"
