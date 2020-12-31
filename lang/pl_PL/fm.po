@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-12-31 10:14\n"
+"PO-Revision-Date: 2020-12-31 10:24\n"
 
 msgid "Back"
 msgstr "Wstecz"
@@ -532,13 +532,13 @@ msgid "Halt (H)"
 msgstr "Zatrzymaj (H)"
 
 msgid "Halt (don't use APM)"
-msgstr "Zatrzymanie (nie używaj APM)"
+msgstr "Zatrzymaj (nie używaj APM)"
 
 msgid "Warm Reboot (R)"
-msgstr "Ciepły restart (R)"
+msgstr "Uruchom ponownie na ciepło (R)"
 
 msgid "Cold Reboot (S)"
-msgstr "Zimny restart (S)"
+msgstr "Uruchom ponownie na zimno (S)"
 
 msgid "File: "
 msgstr "Plik: "
@@ -559,7 +559,7 @@ msgid "F4 - Settings"
 msgstr "F4 - Ustawienia"
 
 msgid "F5 - Multiboot Toolkits"
-msgstr "F5 - Zestawy narzędzi multirozruchowych"
+msgstr "F5 - Zestawy narzędzi wielorozruchowych"
 
 msgid "F6 - Power Off"
 msgstr "F6 - Wyłącz"
