@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-12-31 08:44\n"
+"PO-Revision-Date: 2020-12-31 08:54\n"
 
 msgid "Back"
 msgstr "Geri"
@@ -259,7 +259,7 @@ msgid "MAINBOARD (B)"
 msgstr "ANAKART (B)"
 
 msgid "SecureBoot"
-msgstr "SecureBoot"
+msgstr "Güvenli Önyükleme (Secure Boot)"
 
 msgid "UEFI Version"
 msgstr "UEFI Versiyon"
@@ -331,7 +331,7 @@ msgid "Board manufacturer"
 msgstr "Anakart üreticisi"
 
 msgid "Board version"
-msgstr "Anakart versiyonu"
+msgstr "Anakart versiyon"
 
 msgid "BIOS ROM size"
 msgstr "BIOS ROM boyutu"
@@ -535,10 +535,10 @@ msgid "Halt (don't use APM)"
 msgstr "Kapat (APM ile kullanmayın)"
 
 msgid "Warm Reboot (R)"
-msgstr ""
+msgstr "Yeniden Başlat (Sıcak)"
 
 msgid "Cold Reboot (S)"
-msgstr ""
+msgstr "Yeniden Başlat (Soğuk)"
 
 msgid "File: "
 msgstr "Dosya: "
@@ -547,7 +547,7 @@ msgid "Hotkeys"
 msgstr "Kısayol tuşları"
 
 msgid "F1 - System Information"
-msgstr ""
+msgstr "F1 - Sistem Bilgisi"
 
 msgid "F2 - File Manager"
 msgstr "F2 - Dosya Yöneticisi"
@@ -559,7 +559,7 @@ msgid "F4 - Settings"
 msgstr "F4 - Ayarlar"
 
 msgid "F5 - Multiboot Toolkits"
-msgstr ""
+msgstr "F5 - Çoklu Önyükleme Araçları"
 
 msgid "F6 - Power Off"
 msgstr "F6 - Kapat"
