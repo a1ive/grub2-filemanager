@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-12-31 01:30\n"
+"PO-Revision-Date: 2020-12-31 01:39\n"
 
 msgid "Back"
 msgstr "Voltar"
@@ -534,7 +534,7 @@ msgstr "Parar (H)"
 msgid "Halt (don't use APM)"
 msgstr ""
 
-msgid "Warn Reboot (R)"
+msgid "Warm Reboot (R)"
 msgstr ""
 
 msgid "Cold Reboot (S)"
