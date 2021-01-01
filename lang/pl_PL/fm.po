@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-12-31 10:24\n"
+"PO-Revision-Date: 2021-01-01 10:45\n"
 
 msgid "Back"
 msgstr "Wstecz"
@@ -256,7 +256,7 @@ msgid "RAM (R)"
 msgstr "RAM (R)"
 
 msgid "MAINBOARD (B)"
-msgstr "PŁYTA GŁÓWNA (B)"
+msgstr "PŁYTA GŁ. (B)"
 
 msgid "SecureBoot"
 msgstr "SecureBoot"
@@ -292,7 +292,7 @@ msgid "Max Speed"
 msgstr "Maksymalna prędkość"
 
 msgid "External Clock Frequency"
-msgstr "Częstotliwość zegara zewnętrznego"
+msgstr "Częstotliwość zegara zewn."
 
 msgid "Voltage"
 msgstr "Napięcie"
@@ -439,7 +439,7 @@ msgid "EFI Shell"
 msgstr "Powłoka EFI"
 
 msgid "UEFI DUET"
-msgstr "UEFI DUET"
+msgstr "Emulator UEFI DUET"
 
 msgid "Load External Menu on (${device}) ${info}"
 msgstr "Załaduj menu zewnętrzne na (${device}) ${info}"
