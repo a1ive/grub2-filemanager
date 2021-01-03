@@ -244,7 +244,7 @@ function hwinfo_set_theme {
 
 videomode -c mode_current;
 
-if [ "${mode_current}" != "0x0" ];
+if [ "${mode_current}" != "0x0" -a -n "${theme}" ];
 then
   if [ "${hwinfo_op}" = "cpu" ];
   then
@@ -307,15 +307,15 @@ then
     configfile ${prefix}/power.sh;
   }
 else
-  menuentry "Hotkeys" {
+  menuentry $"Hotkeys" {
     echo;
   }
 
-  menuentry "F1 - Help" {
+  menuentry $"F1 - Help" {
     echo;
   }
 
-  menuentry "F2 - File Manager" --hotkey f2 {
+  menuentry $"F2 - File Manager" --hotkey f2 {
     if [ -n "${grubfm_current_path}" ];
     then
       grubfm "${grubfm_current_path}";
@@ -324,19 +324,19 @@ else
     fi;
   }
 
-  menuentry "F3 - OS Detect" --hotkey f3 {
+  menuentry $"F3 - OS Detect" --hotkey f3 {
     configfile ${prefix}/osdetect.sh;
   }
 
-  menuentry "F4 - Settings" --hotkey f4 {
+  menuentry $"F4 - Settings" --hotkey f4 {
     configfile ${prefix}/settings.sh;
   }
 
-  menuentry "F5 - Multiboot Toolkits" --hotkey f5 {
+  menuentry $"F5 - Multiboot Toolkits" --hotkey f5 {
     configfile ${prefix}/util.sh;
   }
 
-  menuentry "F6 - Power Off" --hotkey f6 {
+  menuentry $"F6 - Power Off" --hotkey f6 {
     configfile ${prefix}/power.sh;
   }
 fi;
