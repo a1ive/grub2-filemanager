@@ -16,16 +16,16 @@ msgid "Back"
 msgstr "Quay về"
 
 msgid "Disabled"
-msgstr ""
+msgstr "Hủy kích hoạt"
 
 msgid "Enabled"
-msgstr ""
+msgstr "Kích hoạt"
 
 msgid "Not available"
-msgstr ""
+msgstr "Không có sẵn"
 
 msgid "Set BGRT (Windows boot logo)"
-msgstr ""
+msgstr "Đặt BGRT (logo boot Windows)"
 
 msgid "Open As Grub2 Menu"
 msgstr "Mở Menu Grub2"
@@ -34,7 +34,7 @@ msgid "Open As Syslinux Menu"
 msgstr "Mở Menu Syslinux"
 
 msgid "Open As pxelinux Menu"
-msgstr "Mở Menu pxelinux"
+msgstr "Mở Menu PXELinux"
 
 msgid "Open As GRUB4DOS Menu"
 msgstr "Mở Menu GRUB4DOS"
@@ -64,25 +64,25 @@ msgid "Press [ESC] to continue..."
 msgstr "Nhấn [ESC] để tiếp tục..."
 
 msgid "Mount Image"
-msgstr ""
+msgstr "Gắn tệp hình ảnh"
 
 msgid "Boot Floppy Image (GRUB4DOS)"
-msgstr ""
+msgstr "Khởi động ảnh đĩa mềm (GRUB4DOS)"
 
 msgid "Boot Floppy Image (memdisk)"
-msgstr ""
+msgstr "Khởi động ảnh đĩa mềm (memdisk)"
 
 msgid "Boot Floppy Image (map)"
-msgstr ""
+msgstr "Khởi động ảnh đĩa mềm (map)"
 
 msgid "Boot Hard Drive Image (GRUB4DOS)"
-msgstr ""
+msgstr "Khởi động ảnh đĩa cứng (GRUB4DOS)"
 
 msgid "Boot Hard Drive Image (memdisk)"
-msgstr ""
+msgstr "Khởi động ảnh đĩa cứng (memdisk)"
 
 msgid "Boot Hard Drive Image (map)"
-msgstr ""
+msgstr "Khởii động ảnh đĩa cứng (map)"
 
 msgid "Boot IMG (map)"
 msgstr "Khởi động IMG (map)"
@@ -124,7 +124,7 @@ msgid "Boot VHD (map --mem)"
 msgstr "Khởi Động VHD (map --mem)"
 
 msgid "Mount ISO"
-msgstr ""
+msgstr "Gắn tệp ISO"
 
 msgid "Boot ISO (GRUB4DOS)"
 msgstr "Khởi động ISO (GRUB4DOS)"
@@ -148,10 +148,10 @@ msgid "Install Windows (x86)"
 msgstr "Cài đặt Windows (x86)"
 
 msgid "Install Windows without autounattend.xml"
-msgstr ""
+msgstr "Cài Windows không có autounattend.xml"
 
 msgid "Load ${xml_name}"
-msgstr ""
+msgstr "Tải ${xml_name}"
 
 msgid "Boot ISO (map)"
 msgstr "Khởi động ISO (map)"
@@ -196,7 +196,7 @@ msgid "Boot Linux Kernel"
 msgstr "Khởi động Kernel Linux"
 
 msgid "User menu"
-msgstr ""
+msgstr "Menu người dùng"
 
 msgid "Text Viewer"
 msgstr "Trình Hiển Thị Văn Bản"
@@ -205,46 +205,46 @@ msgid "Hex Viewer"
 msgstr "Trình Hiển Thị Hex"
 
 msgid "Rename"
-msgstr ""
+msgstr "Đổi tên"
 
 msgid "Copy to ..."
-msgstr ""
+msgstr "Sao chép đến ..."
 
 msgid "Delete"
-msgstr ""
+msgstr "Xóa"
 
 msgid "Paste here"
-msgstr ""
+msgstr "Dán ở đây"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Hủy"
 
 msgid "File Info"
-msgstr "Thông Tin Tập Tin"
+msgstr "Thông Tin Tệp"
 
 msgid "File Info (${grubfm_name})"
-msgstr ""
+msgstr "Thông tin tệp (${grubfm_name})"
 
 msgid "File Info -- Press [ENTER] to exit"
-msgstr ""
+msgstr "Thông tin tệp -- Nhấn [ENTER] để thoát"
 
 msgid "Type: ${grubfm_fileext}"
-msgstr ""
+msgstr "Kiểu: ${grubfm_fileext}"
 
 msgid "Path:"
-msgstr ""
+msgstr "Đường dẫn:"
 
 msgid "Size: ${hsize} (${size})"
-msgstr ""
+msgstr "Kích thước: ${hsize} (${size})"
 
 msgid "Offset on disk: ${offset}"
 msgstr ""
 
 msgid "File is contiguous."
-msgstr ""
+msgstr "Tệp liền nhau."
 
 msgid "File is non-contiguous. (${frag} fragments)"
-msgstr ""
+msgstr "Tệp không liền nhau. (${frag} fragments)"
 
 msgid "GRUB (G)"
 msgstr ""
@@ -259,112 +259,112 @@ msgid "MAINBOARD (B)"
 msgstr ""
 
 msgid "SecureBoot"
-msgstr ""
+msgstr "Secure Boot"
 
 msgid "UEFI Version"
-msgstr ""
+msgstr "Phiên bản UEFI"
 
 msgid "Platform"
-msgstr ""
+msgstr "Nền tảng"
 
 msgid "Build date"
-msgstr ""
+msgstr "Ngày xây dựng"
 
 msgid "Real Time Clock"
-msgstr ""
+msgstr "Thời gian thực"
 
 msgid "RAM"
 msgstr ""
 
 msgid "Manufacturer"
-msgstr ""
+msgstr "Nhà sản xuất"
 
 msgid "Socket Designation"
-msgstr ""
+msgstr "Chỉ định ổ cắm"
 
 msgid "Temperature"
-msgstr ""
+msgstr "Nhiệt độ"
 
 msgid "Current Speed"
-msgstr ""
+msgstr "Tốc độ hiện tại"
 
 msgid "Max Speed"
-msgstr ""
+msgstr "Tốc độ nhanh nhất"
 
 msgid "External Clock Frequency"
-msgstr ""
+msgstr "Tần số đồng hồ"
 
 msgid "Voltage"
-msgstr ""
+msgstr "Vôn"
 
 msgid "Hypervisor presents"
-msgstr ""
+msgstr "Người giám sát"
 
 msgid "Hypervisor signature"
-msgstr ""
+msgstr "Chữ ký người giám sát "
 
 msgid "Supported features"
-msgstr ""
+msgstr "Tính năng hỗ trợ"
 
 msgid "Supported instructions"
-msgstr ""
+msgstr "Hướng dẫn hỗ trợ"
 
 msgid "Size"
-msgstr ""
+msgstr "Kích thước"
 
 msgid "Speed"
-msgstr ""
+msgstr "Tốc độ"
 
 msgid "Configured voltage"
-msgstr ""
+msgstr "Cấu hình điện áp"
 
 msgid "Version"
-msgstr ""
+msgstr "Phiên bản"
 
 msgid "Product name"
-msgstr ""
+msgstr "Tên sản phẩm"
 
 msgid "Board name"
-msgstr ""
+msgstr "Tên Board"
 
 msgid "Board manufacturer"
-msgstr ""
+msgstr "Nhà sản xuất Board"
 
 msgid "Board version"
-msgstr ""
+msgstr "Phiên bản Board"
 
 msgid "BIOS ROM size"
-msgstr ""
+msgstr "Kích thước ROM BIOS"
 
 msgid "BIOS manufacturer"
-msgstr ""
+msgstr "Nhà sản xuất BIOS"
 
 msgid "BIOS version"
-msgstr ""
+msgstr "Phiên bản BIOS"
 
 msgid "BIOS release date"
-msgstr ""
+msgstr "Ngày phát hành BIOS"
 
 msgid "ACPI OEMID"
 msgstr ""
 
 msgid "ACPI RSDP version"
-msgstr ""
+msgstr "Phiên bản RSDP ACPI"
 
 msgid "SMBIOS version"
-msgstr ""
+msgstr "Phiên bản SMBIOS"
 
 msgid "Language"
 msgstr "Ngôn ngữ"
 
 msgid "Resolution"
-msgstr ""
+msgstr "Độ phân giải"
 
 msgid "Keyboard layouts"
-msgstr ""
+msgstr "Bố cục bàn phím"
 
 msgid "Fix \"BlInitializeLibrary failed XXX\" error"
-msgstr ""
+msgstr "Sửa \"BlInitializeLibrary failed XXX\" lỗi"
 
 msgid "Disable PatchGuard and DSE at boot time"
 msgstr "Vô Hiệu Hóa PatchGuard và DSE trong khi khởi động"
@@ -373,10 +373,10 @@ msgid "Install override security policy"
 msgstr "Ghi đè chính sách bảo mật"
 
 msgid "Disable shim validation and reboot"
-msgstr ""
+msgstr "Tắt xác thực shim và khởi động lại"
 
 msgid "Disable graphics mode (T)"
-msgstr ""
+msgstr "Tắt chế độ đò họa (T)"
 
 msgid "Encoding: "
 msgstr "Mã Hóa: "
@@ -385,22 +385,22 @@ msgid "Sort files by name"
 msgstr "Sắp xếp theo tên"
 
 msgid "Do not sort files by name"
-msgstr ""
+msgstr "Không sắp xếp theo tên"
 
 msgid "Disable secondary boot options menu"
-msgstr ""
+msgstr "Tắt menu tùy chọn khởi động phụ"
 
 msgid "Enable secondary boot options menu"
-msgstr ""
+msgstr "Bật menu tùy chọn khởi động phụ"
 
 msgid "Display all files"
-msgstr ""
+msgstr "Hiện tất cả tệp"
 
 msgid "Hide non-bootable files"
-msgstr ""
+msgstr "Ẩn tệp không khởi động được"
 
 msgid "Resolution (R): ${mode_current}"
-msgstr ""
+msgstr "Độ phân giải (R): ${mode_current}"
 
 msgid "Enable ESC (not recommended)"
 msgstr "Bật ESC (không khuyến khích)"
@@ -412,28 +412,28 @@ msgid "Show hidden drives"
 msgstr "Hiện ổ đĩa ẩn"
 
 msgid "Load extra modules"
-msgstr ""
+msgstr "Tải thêm các mô-đun"
 
 msgid "Enable case-sensitive filenames"
-msgstr ""
+msgstr "Bật phân biệt chữ hoa chữ thường"
 
 msgid "Disable case-sensitive filenames"
-msgstr ""
+msgstr "Tắt phân biệt chữ hoa chữ thường"
 
 msgid "Load AHCI Driver"
-msgstr ""
+msgstr "Tải trình điều kiển AHCI"
 
 msgid "Mount encrypted volumes (LUKS and geli)"
-msgstr ""
+msgstr "Gắn khối mã hóa (LUKS và geli)"
 
 msgid "Enable serial terminal"
-msgstr ""
+msgstr "Bật thiết bị đầu cuối nối tiếp"
 
 msgid "EFI Firmware Setup"
-msgstr ""
+msgstr "Thiết lập cơ sở EFI"
 
 msgid "GRUB Console"
-msgstr ""
+msgstr "Bảng điều khiển GRUB"
 
 msgid "EFI Shell"
 msgstr ""
@@ -442,28 +442,28 @@ msgid "UEFI DUET"
 msgstr ""
 
 msgid "Load External Menu on (${device}) ${info}"
-msgstr ""
+msgstr "Bật menu ngoài (${device}) ${info}"
 
 msgid "Load Windows Boot Manager on ${device} ${info}"
-msgstr ""
+msgstr "Tải Windows Boot Mânger trên ${device} ${info}"
 
 msgid "Boot macOS on ${device} ${info}"
-msgstr ""
+msgstr "Khởi động macOS trên ${device} ${info}"
 
 msgid "Boot ${winver} on ${device} ${info}"
-msgstr ""
+msgstr "Khởi động ${winver} trên ${device} ${info}"
 
 msgid "Boot Windows Recovery on ${device} ${info}"
-msgstr ""
+msgstr "Khởi động Windows Recovery trên ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
-msgstr ""
+msgstr "Khởi động ${device} ${info}"
 
 msgid "Boot ${device} (PBR) ${info}"
-msgstr ""
+msgstr "Khởi động ${device} (PBR) ${info}"
 
 msgid "Boot ${tmp} (MBR) [${tmpsize}]"
-msgstr ""
+msgstr "Khửi động ${tmp} (MBR) [${tmpsize}]"
 
 msgid "Boot ISO (Loopback)"
 msgstr "Khởi động ISO (Loopback)"
@@ -472,31 +472,31 @@ msgid "Boot ISO (ISOLINUX)"
 msgstr "Khởi động ISO (ISOLINUX)"
 
 msgid "Detecting ISO type ..."
-msgstr ""
+msgstr "Đang phát hiện loại ISO"
 
 msgid "Boot ${distro} From ISO"
-msgstr ""
+msgstr "Khởi động ${distro} Từ ISo"
 
 msgid "Boot "
 msgstr "Khởi động "
 
 msgid " From ISO"
-msgstr ""
+msgstr " Từ ISO"
 
 msgid "Please input the username. Default:user Super User:root Devuan:devuan"
 msgstr "Hãy nhập tên người dùng. Default:user Super User:root Devuan:devuan"
 
 msgid "WARNING: Will erase ALL data on (${grubfm_disk},4)"
-msgstr ""
+msgstr "CẢNH BÁO: Sẽ xóa TẤT CẢ dữ liệu trên (${grubfm_disk},4)"
 
 msgid "WARNING: Will erase ALL data on (hd0,4)."
 msgstr "CẢNH BÁO: TOÀN BỘ dữ liệu sẽ bị xóa khỏi (hd0,4)."
 
 msgid "WARNING: Will delete ${grubfm_file}"
-msgstr ""
+msgstr "CẢNH BÁO: Sẽ xóa ${grubfm_file}"
 
 msgid "Press [1] to continue. Press any other key to return."
-msgstr ""
+msgstr "Nhấn [1] để tiếp tục. Nhấn bất kỳ để thoát"
 
 msgid "Press [Y] to continue. Press [N] to quit."
 msgstr "Nhấn [Y] để tiếp tục. Nhấn [N] để thoát."
@@ -505,34 +505,34 @@ msgid "Canceled."
 msgstr "Đã hủy."
 
 msgid "File path contains spaces.This may cause problems!Press any key to continue."
-msgstr "Đường dẫn tập tin chứa khoảng trắng. Điều này có thể gây ra lỗi! Nhấn phím bất kỳ để tiếp tục."
+msgstr "Đường dẫn tập tin chứa khoảng trắng. Điều này có thể gây ra lỗi! Nhấn bất kỳ để tiếp tục."
 
 msgid "Enter the name"
-msgstr ""
+msgstr "Nhập tên"
 
 msgid "Bad file name."
-msgstr ""
+msgstr "Tên không hợp lệ."
 
 msgid "Press any key to exit."
-msgstr ""
+msgstr "Nhấn bất kỳ để thoát"
 
 msgid "Please wait ..."
-msgstr ""
+msgstr "Vui lòng đọi ..."
 
 msgid "Reboot"
 msgstr "Khởi động lại"
 
 msgid "Reboot (R)"
-msgstr ""
+msgstr "Khởi động lại (R)"
 
 msgid "Halt"
-msgstr ""
+msgstr "Tắt máy"
 
 msgid "Halt (H)"
-msgstr ""
+msgstr "Tắt máy (H)"
 
 msgid "Halt (don't use APM)"
-msgstr ""
+msgstr "Tắt máy (không dùng APM)"
 
 msgid "Warm Reboot (R)"
 msgstr ""
@@ -547,13 +547,13 @@ msgid "Hotkeys"
 msgstr "Phím nóng"
 
 msgid "F1 - System Information"
-msgstr ""
+msgstr "F1 - Thông tin hệ thống"
 
 msgid "F2 - File Manager"
 msgstr "F2 - Quản lý Tập tin"
 
 msgid "F3 - OS Detect"
-msgstr ""
+msgstr "F3 - Phát hiện OS"
 
 msgid "F4 - Settings"
 msgstr "F4 - Cài đặt"
@@ -562,53 +562,53 @@ msgid "F5 - Multiboot Toolkits"
 msgstr ""
 
 msgid "F6 - Power Off"
-msgstr ""
+msgstr "F6 - Tắt nguồn"
 
 msgid "[A] About GRUB2-FileManager"
-msgstr ""
+msgstr "[A] Về GRUB2-FileManager"
 
 msgid "Ctrl+l/Ctrl+r - Scroll menu entry's text"
-msgstr ""
+msgstr "Ctrl+l/Ctrl+r - Menu cuộn văn bản"
 
 msgid "LCtrl+LAlt+F12 - Take Screenshots (EFI)"
-msgstr ""
+msgstr "LCtrl+LAlt+F12 - Chụp màn hình (EFI)"
 
 msgid "↑ Page Up  ↓ Page Down  [ESC] Exit"
-msgstr ""
+msgstr "↑ Lên  ↓ Xuống  [ESC] Thoát"
 
 msgid "↑ Page Up  ↓ Page Down  [e] Encoding  [ESC] Exit"
-msgstr ""
+msgstr "↑ Lên  ↓ Xuống  [e] Mã hóa  [ESC] Thoát"
 
 msgid "FILE: %s (%s)"
-msgstr ""
+msgstr "Tệp: %s (%s)"
 
 msgid "FILE: %s (%s) ENCODING: %s"
-msgstr ""
+msgstr "Tệp: %s (%s) Mã hóa: %s"
 
 msgid "Platform: %s-%s"
-msgstr ""
+msgstr "Nền tảng: %s-%s"
 
 msgid "Language: %s"
-msgstr ""
+msgstr "Ngôn ngữ: %s"
 
 msgid "GRUB version: %s"
-msgstr ""
+msgstr "Phiên bản GRUB: %s"
 
 msgid "GRUB build date: %s"
-msgstr ""
+msgstr "Ngày xây dựng GRUB: %s"
 
 msgid "License: GNU GPLv3"
-msgstr ""
+msgstr "Giấy phép: GNU GPLv3"
 
 msgid "File not found"
-msgstr ""
+msgstr "Không tìm thấy tệp"
 
 msgid "Please select the type of file you want to search:"
-msgstr ""
+msgstr "Vui lòng chọn loại tệp bạn muốn tìm:"
 
 msgid "Install Windows XP - STEP 1"
-msgstr ""
+msgstr "Cài Windos XP - BƯỚC 1"
 
 msgid "Install Windows XP - STEP 2"
-msgstr ""
+msgstr "Cài Windows XP - BƯỚC 2"
 
