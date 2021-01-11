@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2021-01-11 09:47\n"
+"PO-Revision-Date: 2021-01-11 09:56\n"
 
 msgid "Back"
 msgstr "뒤로"
@@ -271,7 +271,7 @@ msgid "Build date"
 msgstr "빌드 날짜"
 
 msgid "Real Time Clock"
-msgstr ""
+msgstr "실시간 시계 (RTC)"
 
 msgid "RAM"
 msgstr "RAM"
@@ -292,22 +292,22 @@ msgid "Max Speed"
 msgstr "최대 속도"
 
 msgid "External Clock Frequency"
-msgstr ""
+msgstr "외부 클럭 주파수"
 
 msgid "Voltage"
 msgstr "전압"
 
 msgid "Hypervisor presents"
-msgstr ""
+msgstr "하이퍼바이저 지원"
 
 msgid "Hypervisor signature"
-msgstr ""
+msgstr "하이퍼바이저 시그니처"
 
 msgid "Supported features"
-msgstr ""
+msgstr "지원되는 기능"
 
 msgid "Supported instructions"
-msgstr ""
+msgstr "지원되는 인스트럭션"
 
 msgid "Size"
 msgstr "크기"
