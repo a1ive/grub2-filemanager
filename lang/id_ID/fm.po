@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-12-31 01:40\n"
+"PO-Revision-Date: 2021-02-13 10:10\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -250,115 +250,115 @@ msgid "GRUB (G)"
 msgstr ""
 
 msgid "CPU (U)"
-msgstr ""
+msgstr "Prosessor (U)"
 
 msgid "RAM (R)"
-msgstr ""
+msgstr "Memori Fisik (R)"
 
 msgid "MAINBOARD (B)"
-msgstr ""
+msgstr "Papan Induk (B)"
 
 msgid "SecureBoot"
 msgstr ""
 
 msgid "UEFI Version"
-msgstr ""
+msgstr "Versi UEFI"
 
 msgid "Platform"
-msgstr ""
+msgstr "Peron"
 
 msgid "Build date"
-msgstr ""
+msgstr "Tanggal dibuat"
 
 msgid "Real Time Clock"
-msgstr ""
+msgstr "Waktu Berlangsung"
 
 msgid "RAM"
-msgstr ""
+msgstr "Memori Fisik"
 
 msgid "Manufacturer"
-msgstr ""
+msgstr "Manufaktur"
 
 msgid "Socket Designation"
-msgstr ""
+msgstr "Desain Soket"
 
 msgid "Temperature"
-msgstr ""
+msgstr "Temperatur"
 
 msgid "Current Speed"
-msgstr ""
+msgstr "Kecepatan Sekarang"
 
 msgid "Max Speed"
-msgstr ""
+msgstr "Kecepatan Maksimum"
 
 msgid "External Clock Frequency"
-msgstr ""
+msgstr "Frekuensi Clock Eksternal"
 
 msgid "Voltage"
-msgstr ""
+msgstr "Voltase"
 
 msgid "Hypervisor presents"
-msgstr ""
+msgstr "Kehadiran Hypervisor"
 
 msgid "Hypervisor signature"
-msgstr ""
+msgstr "Tanda tangan Hypervisor"
 
 msgid "Supported features"
-msgstr ""
+msgstr "Fitur yang didukung"
 
 msgid "Supported instructions"
-msgstr ""
+msgstr "Instruksi yang didukung"
 
 msgid "Size"
-msgstr ""
+msgstr "Ukuran"
 
 msgid "Speed"
-msgstr ""
+msgstr "Kecepatan"
 
 msgid "Configured voltage"
-msgstr ""
+msgstr "Konfigurasi Voltase"
 
 msgid "Version"
-msgstr ""
+msgstr "Versi"
 
 msgid "Product name"
-msgstr ""
+msgstr "Nama Produk"
 
 msgid "Board name"
-msgstr ""
+msgstr "Nama Papan"
 
 msgid "Board manufacturer"
-msgstr ""
+msgstr "Manufatur papan"
 
 msgid "Board version"
-msgstr ""
+msgstr "Versi papan"
 
 msgid "BIOS ROM size"
-msgstr ""
+msgstr "Ukuran ROM BIOS"
 
 msgid "BIOS manufacturer"
-msgstr ""
+msgstr "Pembuat BIOS"
 
 msgid "BIOS version"
-msgstr ""
+msgstr "Versi BIOS"
 
 msgid "BIOS release date"
-msgstr ""
+msgstr "Tanggal rilisan BIOS"
 
 msgid "ACPI OEMID"
 msgstr ""
 
 msgid "ACPI RSDP version"
-msgstr ""
+msgstr "Versi ACPI RSDP"
 
 msgid "SMBIOS version"
-msgstr ""
+msgstr "Versi SMBIOS"
 
 msgid "Language"
 msgstr "Bahasa"
 
 msgid "Resolution"
-msgstr ""
+msgstr "Resolusi"
 
 msgid "Keyboard layouts"
 msgstr "Tata Letak Papan Ketik"
@@ -454,7 +454,7 @@ msgid "Boot ${winver} on ${device} ${info}"
 msgstr "Jalankan (boot) ${winver} pada ${device} ${info}"
 
 msgid "Boot Windows Recovery on ${device} ${info}"
-msgstr ""
+msgstr "Jalankan (Boot) Pemulihan Windows di ${device} ${info}"
 
 msgid "Boot ${device} ${info}"
 msgstr "Jalankan (boot) ${device} ${info}"
@@ -532,13 +532,13 @@ msgid "Halt (H)"
 msgstr "Matikan (H)"
 
 msgid "Halt (don't use APM)"
-msgstr ""
+msgstr "Matikan (Jangan gunakan APM)"
 
 msgid "Warm Reboot (R)"
-msgstr ""
+msgstr "Peringatan Mulai Ulang (R)"
 
 msgid "Cold Reboot (S)"
-msgstr ""
+msgstr "Mulai Ulang Dingin (S)"
 
 msgid "File: "
 msgstr "Berkas: "
@@ -547,7 +547,7 @@ msgid "Hotkeys"
 msgstr "Kunci Tombol"
 
 msgid "F1 - System Information"
-msgstr ""
+msgstr "F1 - Informasi Sistem"
 
 msgid "F2 - File Manager"
 msgstr "F2 - Manajemen Berkas"
@@ -559,7 +559,7 @@ msgid "F4 - Settings"
 msgstr "F4 - Setelan"
 
 msgid "F5 - Multiboot Toolkits"
-msgstr ""
+msgstr "F5 - Kotak Alat Multiboot"
 
 msgid "F6 - Power Off"
 msgstr "F6 - Mematikan Daya"
