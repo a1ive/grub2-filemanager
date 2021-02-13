@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2021-02-13 10:01\n"
+"PO-Revision-Date: 2021-02-13 10:10\n"
 
 msgid "Back"
 msgstr "Kembali"
@@ -265,7 +265,7 @@ msgid "UEFI Version"
 msgstr "Versi UEFI"
 
 msgid "Platform"
-msgstr ""
+msgstr "Peron"
 
 msgid "Build date"
 msgstr "Tanggal dibuat"
@@ -298,16 +298,16 @@ msgid "Voltage"
 msgstr "Voltase"
 
 msgid "Hypervisor presents"
-msgstr ""
+msgstr "Kehadiran Hypervisor"
 
 msgid "Hypervisor signature"
-msgstr ""
+msgstr "Tanda tangan Hypervisor"
 
 msgid "Supported features"
-msgstr ""
+msgstr "Fitur yang didukung"
 
 msgid "Supported instructions"
-msgstr ""
+msgstr "Instruksi yang didukung"
 
 msgid "Size"
 msgstr "Ukuran"
