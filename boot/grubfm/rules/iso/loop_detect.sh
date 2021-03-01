@@ -28,8 +28,11 @@ function iso_detect {
   unset src;
   unset linux_extra;
   probe --set=rootuuid -u "(${grubfm_device})";
+  export rootuuid;
   probe --set=looplabel -q --label (loop);
+  export looplabel;
   probe --set=loopuuid -u (loop);
+  export loopuuid;
   set win_prefix=(loop)/sources/install;
   set w64_prefix=(loop)/x64/sources/install;
   set w32_prefix=(loop)/x86/sources/install;
@@ -62,7 +65,7 @@ function iso_detect {
   fi;
   if [ -z "${grubfm_startpebat}" -o ! -f "${grubfm_startpebat}" ];
   then
-    set grubfm_startpebat="(install)/silent.bat";
+    export grubfm_startpebat="(install)/silent.bat";
   fi;
   lua ${prefix}/rules/iso/winpe.lua;
   if [ ${wim_count} -ge 1 ];
@@ -72,7 +75,7 @@ function iso_detect {
     menuentry $"Boot ${distro} From ISO" --class ${icon} {
       loopback -d loop;
       loopback loop "${grubfm_file}";
-      set do_list=1;
+      export do_list=1;
       lua ${prefix}/rules/iso/winpe.lua;
     }
   fi;

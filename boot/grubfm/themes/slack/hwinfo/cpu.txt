@@ -17,7 +17,10 @@ terminal-box: "../term_bkg_*.png"
   + label {text = "" color = "#ffffff"}
   + label {translate = "Manufacturer" color = "#ffffff"}
   + label {translate = "Socket Designation" color = "#ffffff"}
-  + label {translate = "Temperature" color = "#ffffff"}
+  + hbox {
+    + label {translate = "Temperature" color = "#ffffff"}
+    + label {text = " (℃)" color = "#ffffff"}
+  }
   + label {translate = "Current Speed" color = "#ffffff"}
   + label {translate = "Max Speed" color = "#ffffff"}
   + label {translate = "External Clock Frequency" color = "#ffffff"}
@@ -49,10 +52,7 @@ terminal-box: "../term_bkg_*.png"
   + label {text = "" color = "#ffffff"}
   + label {text = "@@cpu_vendor" color = "#ffffff"}
   + label {text = "@@cpu_socket" color = "#ffffff"}
-  + hbox {
-    + label {var = "cpu_temp" hook = "cputemp cpu_temp" color = "#ffffff"}
-    + label {text = " (℃)" color = "#ffffff"}
-  }
+  + label {var = "cpu_temp" hook = "cputemp cpu_temp" color = "#ffffff"}
   + hbox {
     + label {text = "@@cpu_cur_speed" color = "#ffffff"}
     + label {text = "MHz" color = "#ffffff"}

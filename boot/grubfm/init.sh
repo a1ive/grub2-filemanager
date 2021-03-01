@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with Grub2-FileManager.  If not, see <http://www.gnu.org/licenses/>.
 
-set pager=0;
+export pager=0;
 cat --set=modlist ${prefix}/insmod.lst;
 for module in ${modlist};
 do
@@ -27,12 +27,12 @@ then
   search -s -f -q /efi/microsoft/boot/bootmgfw.efi;
   if [ "${grub_cpu}" = "i386" ];
   then
-    set EFI_ARCH="ia32";
+    export EFI_ARCH="ia32";
   elif [ "${grub_cpu}" = "arm64" ];
   then
-    set EFI_ARCH="aa64";
+    export EFI_ARCH="aa64";
   else
-    set EFI_ARCH="x64";
+    export EFI_ARCH="x64";
   fi;
   search -s -f -q /efi/boot/boot${EFI_ARCH}.efi;
   getenv -t uint8 SecureBoot grub_secureboot;
@@ -58,6 +58,7 @@ else
   export CPU=32;
 fi
 stat -r -q -s RAM;
+export RAM;
 
 loadfont ${prefix}/fonts/unicode.xz;
 
@@ -70,8 +71,8 @@ export grub_disable_esc="1";
 export gfxmode=1024x768;
 export gfxpayload=keep;
 terminal_output gfxterm;
-set color_normal=white/black;
-set color_highlight=black/white;
+export color_normal=white/black;
+export color_highlight=black/white;
 
 if [ "${grub_mb_firmware}" = "unknown" ];
 then
@@ -79,7 +80,9 @@ then
 fi;
 
 search --set=aioboot -f -q -n /AIO/grub/grub.cfg;
+export aioboot;
 search --set=ventoy -f -q -n /ventoy/ventoy.cpio;
+export ventoy;
 
 export theme_std=${prefix}/themes/slack/theme.txt;
 export theme_fm=${prefix}/themes/slack/fm.txt;
@@ -92,6 +95,7 @@ export theme_hw_board=${prefix}/themes/slack/hwinfo/board.txt;
 export theme=${theme_std};
 
 search --set=user -f -q /boot/grubfm/config;
+export user;
 if [ -n "${user}" ];
 then
   grubfm_set -u "${user}";

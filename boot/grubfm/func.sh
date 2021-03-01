@@ -47,12 +47,24 @@ function swap_hd01 {
   fi;
 }
 
+unset grubfm_path;
 regexp --set=1:grubfm_path '(/.*)$' "${grubfm_file}";
+export grubfm_path;
+unset grubfm_dir;
 regexp --set=1:grubfm_dir '^(.*/).*$' "${grubfm_path}";
+export grubfm_dir;
+unset grubfm_device;
 regexp --set=1:grubfm_device '^\(([0-9a-zA-Z,]+)\)/.*' "${grubfm_file}";
+export grubfm_device;
+unset grubfm_disk;
 regexp --set=1:grubfm_disk '([chf]d[0-9]+)[0-9,]*' "${grubfm_device}";
+export grubfm_disk;
+unset grubfm_name;
 regexp --set=1:grubfm_name '^.*/(.*)$' "${grubfm_file}";
+export grubfm_name;
 unset grubfm_filename;
-unset grubfm_fileext;
 regexp --set=1:grubfm_filename '^(.*)\.(.*)$' "${grubfm_name}";
+export grubfm_filename;
+unset grubfm_fileext;
 regexp --set=1:grubfm_fileext '^.*\.(.*)$' "${grubfm_name}";
+export grubfm_fileext;

@@ -9,5 +9,5 @@ if [ -f "${theme_std}" ];
 then
   export theme=${theme_std};
 fi;
-set root=loop;
+export root=loop;
 configfile /boot/grub/loopback.cfg;

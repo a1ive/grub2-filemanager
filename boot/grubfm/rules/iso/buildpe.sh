@@ -18,7 +18,7 @@ function bootpe {
             @:boot.wim:"${1}";
 }
 
-set distro="Windows PE";
+export distro="Windows PE";
 
 menuentry $"Boot ${distro} From ISO" --class nt6 {
   loopback -d loop;
