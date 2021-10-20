@@ -56,6 +56,8 @@ local winpe_wim_list =
   "(loop)/BOOT/H3_81PE.WIM",
   "(loop)/BOOT/H3_8PE.WIM",
   "(loop)/BOOT/H3_7PE.WIM",
+  "(loop)/BOOT/NT10PEX64.WIM",
+  "(loop)/BOOT/NT63PEX86.WIM",
   "(loop)/Rescue/Rescue.wim",
   "(loop)/boot/images/w7x64/w7x64.wim",
   "(loop)/boot/images/w7x86/w7x86.wim",

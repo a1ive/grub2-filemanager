@@ -2,7 +2,7 @@ source ${prefix}/func.sh;
 
 if [ "$grub_platform" = "efi" ];
 then
-  map -f "${grubfm_file}";
+  map -f -g "${grubfm_file}";
 else
   to_g4d_path "${grubfm_file}";
   if [ -n "${g4d_path}" ];
