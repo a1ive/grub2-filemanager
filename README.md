@@ -1,3 +1,7 @@
+# THIS PROJECT IS NO LONGER BEING MAINTAINED 
+
+* * *
+
 [项目主页 (简体中文)](https://a1ive.github.io/grub2-filemanager/) 
 
 # Grub2 File Manager 
@@ -9,7 +13,6 @@
 - [Build](#build)
 - [Boot](#boot)
 - [Source code](#source-code)
-- [Help to translate](#help-to-translate)
 - [USB Installers](#usb-installers)
 - [Related projects](#related-projects)
 ## Preview
@@ -59,10 +62,6 @@ DO NOT boot grubfm.iso with memdisk!
 	efi /grubfmx64.efi
 ## Source code 
 GRUB2: https://github.com/a1ive/grub 
-
-## Help to translate 
-
-[Crowdin](https://crowdin.com/project/grub2-filemanager) 
 
 ## USB Installers
 

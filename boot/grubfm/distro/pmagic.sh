@@ -1,15 +1,17 @@
 set icon="pmagic";
-set vmlinuz_img="(loop)/pmagic/bzImage";
-set vmlinuz_img64="(loop)/pmagic/bzImage64";
-set initrd_img="(loop)/pmagic/initrd.img (loop)/pmagic/fu.img (loop)/pmagic/m32.img";
-set initrd_img64="(loop)/pmagic/initrd.img (loop)/pmagic/fu.img (loop)/pmagic/m64.img";
-menuentry $"Parted Magic (x86_64)" --class $icon{
-    set kcmdline="eject=no load_ramdisk=1";
-    linux $vmlinuz_img64 $kcmdline $linux_extra;
-    initrd $initrd_img64;
-}
-menuentry $"Parted Magic (i686)" --class $icon{
-    set kcmdline="eject=no load_ramdisk=1";
-    linux $vmlinuz_img $kcmdline $linux_extra;
-    initrd $initrd_img;
-}
+if test -f (loop)/pmagic/bzImage64;
+then
+  set vmlinuz_img="(loop)/pmagic/bzImage64";
+else
+  set vmlinuz_img="(loop)/pmagic/bzImage";
+fi;
+set initrd_img="(loop)/pmagic/initrd.img (loop)/pmagic/fu.img";
+if test -f (loop)/pmagic/m64.img;
+then
+  set initrd_img="${initrd_img} (loop)/pmagic/m64.img";
+else
+  set initrd_img="${initrd_img} (loop)/pmagic/m.img";
+fi;
+set kcmdline="eject=no edd=on vga=normal mem=32G boot=live";
+linux $vmlinuz_img $kcmdline $linux_extra;
+initrd $initrd_img;
