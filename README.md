@@ -1,3 +1,7 @@
+# THIS PROJECT IS NO LONGER BEING MAINTAINED 
+
+* * *
+
 [项目主页 (简体中文)](https://a1ive.github.io/grub2-filemanager/) 
 
 # Grub2 File Manager 
